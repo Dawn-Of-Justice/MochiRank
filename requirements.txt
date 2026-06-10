@@ -1,0 +1,26 @@
+# Core
+numpy>=1.26
+scipy>=1.12
+pandas>=2.1
+
+# Embeddings
+sentence-transformers>=3.0
+model2vec>=0.3           # fallback for fast CPU embeddings
+
+# BM25
+rank-bm25>=0.2.2
+
+# Learning to Rank
+xgboost>=2.0
+
+# SHAP for reasoning
+shap>=0.45
+
+# Reranking (optional but recommended)
+flashrank>=0.3           # no-torch fallback; OR use sentence-transformers CrossEncoder
+
+# Anthropic (offline labeling only — not used in rank.py)
+anthropic>=0.25
+
+# Validation
+# validate_submission.py uses only stdlib (csv, re, sys, pathlib)

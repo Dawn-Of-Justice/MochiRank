@@ -1,0 +1,34 @@
+# Large dataset files — never commit (487 MB); keep sample/schema/validator tracked
+dataset/candidates.jsonl
+dataset/candidates.jsonl.gz
+data/candidates.jsonl
+data/candidates.jsonl.gz
+
+# Large precomputed artifacts — embeddings regenerable via offline/ scripts
+# (keep small artifacts like ranker_model.json and hypothetical_resumes.json tracked)
+artifacts/candidate_embeddings.npy
+artifacts/bm25_index.pkl
+
+# Generated submissions (commit deliberately, not by default)
+submission*.csv
+!dataset/sample_submission.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local scratch / secrets
+note.txt
+.env
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
