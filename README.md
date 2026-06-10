@@ -38,7 +38,10 @@ XGBoost LambdaMART → artifacts/            → SHAP reasoning → submission.c
 
 1. Read [docs/problem.md](docs/problem.md) first — the traps in the dataset drive every design decision.
 2. Then [architecture/spec.md](architecture/spec.md) for the big picture; open the other docs only as needed.
-3. Follow [docs/build-plan.md](docs/build-plan.md) for the build order — first deliverable is `src/consistency_checks.py`.
+3. Follow [docs/build-plan.md](docs/build-plan.md) — work is split into two parallel workstreams
+   (**A: runtime ranker** in `src/`+`rank.py`, **B: offline ML pipeline** in `offline/`+`artifacts/`)
+   with explicit interface contracts and sync points. First deliverables: `src/consistency_checks.py` (A)
+   and `offline/precompute_embeddings.py` (B).
 
 ```powershell
 pip install -r requirements.txt

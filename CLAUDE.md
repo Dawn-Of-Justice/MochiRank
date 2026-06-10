@@ -24,7 +24,7 @@ a top-100 submission CSV (`candidate_id, rank, score, reasoning`). Hackathon sub
 | `architecture/pipeline.md` | Consistency engine, disqualifiers, retrieval/RRF, reranker, SHAP reasoning |
 | `docs/problem.md` | Problem framing, traps, evaluation mechanics |
 | `docs/offline-phase.md` | Embeddings, hypothetical/anti-persona resumes, sampler, teacher labeling, training |
-| `docs/build-plan.md` | Day-by-day build order + local validation/ablation plan |
+| `docs/build-plan.md` | Two-person workstream split (A: runtime `src/`+`rank.py`, B: offline ML), interface contracts, sync points, validation/ablation plan |
 | `docs/submission.md` | Metadata declarations, open decisions/risks, research references |
 
 Read only the doc relevant to the task — they are split precisely so you don't load all of them.
