@@ -139,7 +139,11 @@ def load_precomputed(artifacts_dir: Path) -> dict:
 
     if bm25_path.exists():
         with open(bm25_path, "rb") as f:
-            pre["bm25_index"] = pickle.load(f)
+            bm25_data = pickle.load(f)
+        pre["bm25_index"] = bm25_data["bm25"]
+        pre["bm25_cid_to_idx"] = {
+            cid: i for i, cid in enumerate(bm25_data["candidate_ids"])
+        }
 
     return pre
 
@@ -155,7 +159,7 @@ def _semantic_features(candidate: dict, precomputed: dict) -> list[float]:
     embeddings = precomputed.get("candidate_embeddings")
     jd_vecs = precomputed.get("jd_query_vectors")
 
-    if embeddings is None or cid not in cid_to_idx:
+    if embeddings is None or jd_vecs is None or cid not in cid_to_idx:
         return [0.0] * 8
 
     # candidate embedding row(s) — may be multiple chunks per candidate
@@ -167,10 +171,13 @@ def _semantic_features(candidate: dict, precomputed: dict) -> list[float]:
 
     cand_vecs = embeddings[rows].astype(np.float32)  # (n_chunks, dim)
 
-    hyp = precomputed.get("hypothetical_resumes", [])
-    ideal_vecs = jd_vecs[[i for i, h in enumerate(hyp) if h.get("type") == "ideal"]]
-    anti_vecs  = jd_vecs[[i for i, h in enumerate(hyp) if h.get("type") == "anti"]]
-    jd_summary_vec = jd_vecs[0:1]  # first vector is the JD summary
+    hyp_data = precomputed.get("hypothetical_resumes", {})
+    hyp = hyp_data.get("resumes", []) if isinstance(hyp_data, dict) else []
+    ideal_idxs = [i for i, h in enumerate(hyp) if h.get("is_positive", False)]
+    anti_idxs  = [i for i, h in enumerate(hyp) if not h.get("is_positive", True)]
+    ideal_vecs = jd_vecs[ideal_idxs] if ideal_idxs else np.zeros((1, jd_vecs.shape[1]))
+    anti_vecs  = jd_vecs[anti_idxs]  if anti_idxs  else np.zeros((1, jd_vecs.shape[1]))
+    jd_summary_vec = jd_vecs[0:1]  # first vector as JD proxy
 
     # Per-requirement query vectors (last 6 in jd_query_vectors by convention)
     req_vecs = jd_vecs[-6:] if len(jd_vecs) >= 6 else jd_vecs
@@ -206,26 +213,24 @@ def _semantic_features(candidate: dict, precomputed: dict) -> list[float]:
 def _bm25_features(candidate: dict, precomputed: dict) -> list[float]:
     """Group 6.2 — stubs until Sync 1 delivers bm25_index."""
     bm25 = precomputed.get("bm25_index")
-    if bm25 is None:
+    bm25_cid_to_idx = precomputed.get("bm25_cid_to_idx", {})
+    if bm25 is None or candidate["candidate_id"] not in bm25_cid_to_idx:
         return [0.0, 0.0]
 
-    # BM25 score against JD core query tokens
     jd_query_tokens = (
         "production embeddings retrieval vector database hybrid search "
         "NDCG evaluation LLM fine-tuning LoRA Python senior AI engineer "
         "ranking recommendation NLP information retrieval startup"
     ).lower().split()
 
-    ctext = career_text(candidate).split()
-    score = float(bm25.get_scores(jd_query_tokens)[
-        precomputed.get("cid_to_idx", {}).get(candidate["candidate_id"], 0)
-    ])
-
     all_scores = precomputed.get("bm25_all_scores")
-    if all_scores is not None:
-        rank_pct = float(np.mean(all_scores <= score))
-    else:
-        rank_pct = 0.0
+    if all_scores is None:
+        all_scores = bm25.get_scores(jd_query_tokens)
+        precomputed["bm25_all_scores"] = all_scores  # cache for reuse
+
+    idx = bm25_cid_to_idx[candidate["candidate_id"]]
+    score = float(all_scores[idx])
+    rank_pct = float(np.mean(all_scores <= score))
 
     return [score, rank_pct]
 

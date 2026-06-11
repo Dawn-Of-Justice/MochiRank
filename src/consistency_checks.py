@@ -51,18 +51,17 @@ def check_consistency(c: dict) -> tuple[bool, int, list[str]]:
                 honeypot_flags.append(msg)
 
     # ------------------------------------------------------------------ #
-    # Check 2: Worked at fictional company before it was founded
+    # Check 2: Worked at a fictional company (any tenure is impossible —
+    # these companies exist only in fiction/TV/film)
     # ------------------------------------------------------------------ #
     for job in career:
         company_lower = job.get("company", "").lower()
-        start_year = parse_year(job.get("start_date"))
-        for fictional_name, founded_year in FICTIONAL_COMPANIES.items():
-            if fictional_name in company_lower and start_year is not None:
-                if start_year < founded_year:
-                    msg = (f"worked at '{job['company']}' from {start_year} "
-                           f"but it was founded in {founded_year}")
-                    violations.append(msg)
-                    honeypot_flags.append(msg)
+        for fictional_name in FICTIONAL_COMPANIES:
+            if fictional_name in company_lower:
+                msg = f"worked at fictional company '{job['company']}'"
+                violations.append(msg)
+                honeypot_flags.append(msg)
+                break  # one flag per job is enough
 
     # ------------------------------------------------------------------ #
     # Check 3: Expert skill with 0 months duration

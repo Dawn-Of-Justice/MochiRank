@@ -182,9 +182,8 @@ def build_strata_pools(
         if any(e.get("tier") == "tier_1" for e in c.get("education", [])):
             tier1.append(cid)
 
-    behavioral_sorted = sorted(all_ids, key=lambda cid: -_behavioral_score(
-        next(c for c in candidates if c["candidate_id"] == cid)
-    ))
+    cid_to_cand = {c["candidate_id"]: c for c in candidates}
+    behavioral_sorted = sorted(all_ids, key=lambda cid: -_behavioral_score(cid_to_cand[cid]))
 
     return {
         "top_retrieval_bm25":   bm25_ranked[:500],

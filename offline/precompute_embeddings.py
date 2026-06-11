@@ -1,8 +1,11 @@
 """
-B1 — Precompute candidate embeddings with bge-small-en-v1.5.
+B1 — Precompute candidate embeddings with model2vec (potion-base-8M).
+
+Distilled from BAAI/bge-small-en-v1.5, produces 256d normalized static embeddings.
+~23K chunks/sec on CPU vs ~14 chunks/sec for bge-small — 1600x faster.
 
 Outputs:
-  artifacts/candidate_embeddings[_sample].npy  — float16, one row per chunk
+  artifacts/candidate_embeddings[_sample].npy  — float16, one row per chunk (256d)
   artifacts/candidate_ids[_sample].json        — candidate_id per row (same order)
 
 Usage:
@@ -18,6 +21,7 @@ import numpy as np
 
 ARTIFACTS = Path("artifacts")
 DATASET = Path("dataset")
+MODEL_ID = "minishlab/potion-base-8M"
 
 
 def candidate_to_chunks(c: dict) -> list[str]:
@@ -33,13 +37,14 @@ def candidate_to_chunks(c: dict) -> list[str]:
 
 
 def main(sample_mode: bool = False) -> None:
-    from sentence_transformers import SentenceTransformer
+    from model2vec import StaticModel
     from src.utils import load_candidates_json, stream_candidates
 
     ARTIFACTS.mkdir(exist_ok=True)
 
-    model = SentenceTransformer("BAAI/bge-small-en-v1.5")
-    dim = model.get_sentence_embedding_dimension()
+    print(f"Loading model2vec: {MODEL_ID}")
+    model = StaticModel.from_pretrained(MODEL_ID)
+    dim = model.dim
     print(f"Model loaded: {dim}d embeddings")
 
     if sample_mode:
@@ -56,16 +61,11 @@ def main(sample_mode: bool = False) -> None:
             all_chunks.append(chunk)
             all_ids.append(c["candidate_id"])
 
-    print(f"Total chunks: {len(all_chunks)}")
+    print(f"Total chunks: {len(all_chunks)} — encoding...")
 
-    embeddings = model.encode(
-        all_chunks,
-        batch_size=512,
-        show_progress_bar=True,
-        normalize_embeddings=True,
-        convert_to_numpy=True,
-    ).astype(np.float16)
+    embeddings = model.encode(all_chunks, show_progress_bar=True).astype(np.float16)
 
+    # model2vec outputs L2-normalized vectors by default
     print(f"Embedding shape: {embeddings.shape}")
 
     suffix = "_sample" if sample_mode else ""
