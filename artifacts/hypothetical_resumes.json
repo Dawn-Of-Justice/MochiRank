@@ -1,0 +1,501 @@
+{
+  "resumes": [
+    {
+      "id": "ideal_1",
+      "archetype": "IR veteran",
+      "is_positive": true,
+      "headline": "Senior Search Engineer | Information Retrieval & Learning-to-Rank | 8 Years",
+      "summary": "Eight years working on search and ranking at product companies. Owned catalog search stack end-to-end at Meesho and Sharechat — query understanding, candidate retrieval, LambdaMART reranker. Migrated retrieval to dense embeddings using BGE-M3 with hybrid BM25+ANN on Elasticsearch and Qdrant. NDCG@10 is a first-class metric in everything I ship.",
+      "roles": [
+        {
+          "title": "Senior Search Engineer",
+          "company_type": "E-commerce product company (Series C)",
+          "duration_months": 36,
+          "description": "Led ranking team for Meesho's catalog search (50M MAU). Migrated TF-IDF to hybrid BGE-M3+Elasticsearch ANN, +14pt NDCG@10 offline, +8% GMV in A/B. Built LambdaMART reranker on XGBoost with 200+ click/purchase signals. Owned evaluation harness and weekly regression dashboards."
+        },
+        {
+          "title": "Search Engineer",
+          "company_type": "Social media product company (Series D)",
+          "duration_months": 30,
+          "description": "Built content discovery ranking for Sharechat's video feed (10M DAU). Designed two-tower retrieval model in TensorFlow Serving, A/B tested six reranking strategies. Introduced BM25F in Solr. Led quarterly evaluation reviews with MAP and recall@k."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Information Retrieval",
+          "years_experience": 8
+        },
+        {
+          "name": "Elasticsearch",
+          "years_experience": 7
+        },
+        {
+          "name": "XGBoost LambdaMART",
+          "years_experience": 4
+        },
+        {
+          "name": "Python",
+          "years_experience": 8
+        },
+        {
+          "name": "BGE / Sentence Transformers",
+          "years_experience": 2
+        },
+        {
+          "name": "NDCG / MRR evaluation",
+          "years_experience": 6
+        },
+        {
+          "name": "A/B testing for ranking",
+          "years_experience": 5
+        }
+      ]
+    },
+    {
+      "id": "ideal_2",
+      "archetype": "Startup ML shipper",
+      "is_positive": true,
+      "headline": "ML Engineer | RAG Systems & Recommendation Engines | Shipped to 1M+ Users Across 3 Startups",
+      "summary": "Six years of ML at startups with no platform team — own everything from training to production endpoint. Shipped job recommendation engine, semantic legal search, and enterprise RAG pipeline. All served real users under latency SLAs with proper eval loops and rollback plans.",
+      "roles": [
+        {
+          "title": "Senior ML Engineer",
+          "company_type": "Enterprise SaaS startup (Seed→Series A)",
+          "duration_months": 22,
+          "description": "Built RAG retrieval pipeline for Docubase. Deployed Qdrant, fine-tuned E5-large with contrastive learning, built hybrid BM25+dense RRF. Eval framework: LLM-as-judge + 300 human-annotated pairs. Reduced MRR miss-rate 23% vs baseline OpenAI embeddings."
+        },
+        {
+          "title": "ML Engineer",
+          "company_type": "Legal-tech startup (Series A)",
+          "duration_months": 26,
+          "description": "Indexed 4M legal clauses in Weaviate, built query encoder with sentence-transformers then fine-tuned BGE, shipped cross-encoder reranker. Human relevance judgment pipeline: 1,000 query-clause pairs per quarter. Interleaved online tests before every reranking promotion."
+        }
+      ],
+      "skills": [
+        {
+          "name": "RAG system design",
+          "years_experience": 3
+        },
+        {
+          "name": "Sentence Transformers / BGE / E5",
+          "years_experience": 4
+        },
+        {
+          "name": "Qdrant",
+          "years_experience": 2
+        },
+        {
+          "name": "Weaviate",
+          "years_experience": 2
+        },
+        {
+          "name": "FAISS",
+          "years_experience": 4
+        },
+        {
+          "name": "NDCG / MAP / MRR",
+          "years_experience": 4
+        },
+        {
+          "name": "Contrastive fine-tuning",
+          "years_experience": 2
+        }
+      ]
+    },
+    {
+      "id": "ideal_3",
+      "archetype": "Platform engineer",
+      "is_positive": true,
+      "headline": "Search Infrastructure Engineer | Vector Databases, Hybrid Search at Scale | 7 Years",
+      "summary": "Career focused on the infrastructure layer that makes retrieval models useful in production. Built vector search clusters handling hundreds of millions of documents and tens of thousands of QPS. Strong opinions on HNSW vs IVF, sharding vs replication, and zero-downtime re-indexing.",
+      "roles": [
+        {
+          "title": "Staff Search Infrastructure Engineer",
+          "company_type": "Fintech product company (Series D)",
+          "duration_months": 32,
+          "description": "Led search infra for Kredivo (300M docs). Migrated Solr to Elasticsearch 8.x ANN, built hybrid BM25+HNSW retrieval, architected Qdrant cluster with zero-downtime re-indexing. Reduced P99 query latency from 420ms to 85ms. Owned on-call."
+        },
+        {
+          "title": "Senior Platform Engineer — Search",
+          "company_type": "EdTech product company (Series C)",
+          "duration_months": 28,
+          "description": "Owned Elasticsearch cluster (12 nodes, 50M docs) for Unacademy course discovery. Designed FAISS-based ANN search, built Kafka pipeline keeping dense embeddings in sync, set up Prometheus/Grafana recall@k production monitoring."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Elasticsearch",
+          "years_experience": 7
+        },
+        {
+          "name": "Qdrant",
+          "years_experience": 3
+        },
+        {
+          "name": "FAISS",
+          "years_experience": 4
+        },
+        {
+          "name": "Hybrid search (BM25 + dense)",
+          "years_experience": 4
+        },
+        {
+          "name": "Python",
+          "years_experience": 7
+        },
+        {
+          "name": "Kafka",
+          "years_experience": 4
+        },
+        {
+          "name": "Vector database operations",
+          "years_experience": 3
+        }
+      ]
+    },
+    {
+      "id": "ideal_4",
+      "archetype": "Applied researcher",
+      "is_positive": true,
+      "headline": "Applied ML Researcher → Engineer | Ranking Eval Frameworks, Embedding Fine-Tuning | MSc NLP",
+      "summary": "MSc Computational Linguistics from IIT Bombay, then five years moving toward full production ownership. Genuinely good at evaluation design — what offline metrics predict online gains, how to build annotation pipelines that don't drift. Last two roles: fine-tuned BGE/E5 with LoRA on domain data and ran A/B experiments confirming real gains.",
+      "roles": [
+        {
+          "title": "Applied Research Engineer",
+          "company_type": "HR-tech product company (Series B)",
+          "duration_months": 28,
+          "description": "Owned candidate-job matching eval and improvement cycle. Designed offline harness: 2,000 annotated pairs, stratified by role family. Fine-tuned BGE-M3 with LoRA, +9pt NDCG@10. Ran six A/B experiments over 18 months, three shipped to production."
+        },
+        {
+          "title": "ML Engineer — Search Relevance",
+          "company_type": "B2C marketplace (Series C)",
+          "duration_months": 24,
+          "description": "Built relevance judgment pipeline (crowdsource + expert hybrid), trained first LTR model (XGBoost MART) on click logs, introduced NDCG@5 and MAP as primary offline metrics. Shipped cross-encoder reranker improving P@5 by 11 points."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Ranking evaluation (NDCG/MAP/MRR)",
+          "years_experience": 5
+        },
+        {
+          "name": "Embedding fine-tuning (LoRA / contrastive)",
+          "years_experience": 3
+        },
+        {
+          "name": "BGE / E5 / Sentence Transformers",
+          "years_experience": 4
+        },
+        {
+          "name": "A/B testing design & analysis",
+          "years_experience": 4
+        },
+        {
+          "name": "XGBoost LambdaMART",
+          "years_experience": 3
+        },
+        {
+          "name": "Python",
+          "years_experience": 5
+        },
+        {
+          "name": "Pinecone",
+          "years_experience": 2
+        }
+      ]
+    },
+    {
+      "id": "ideal_5",
+      "archetype": "Product-ML hybrid",
+      "is_positive": true,
+      "headline": "Product Engineer (ex-PM) | Retrieval & Ranking Systems | 6 Years Building Things Users Use",
+      "summary": "Started as PM at a Series A HR-tech company, switched to engineering when I realized I couldn't evaluate technical trade-offs. PM background means I've translated NPS complaints about broken search into ranking signals. Owned full retrieval stack at two companies — embedding models, vector stores, reranking, A/B tests. Write production Python.",
+      "roles": [
+        {
+          "title": "Senior ML Engineer — Search & Matching",
+          "company_type": "HR-tech product company (Series B)",
+          "duration_months": 30,
+          "description": "Migrated candidate-to-job retrieval from keyword Elasticsearch to E5-base+BM25 hybrid, reducing zero-result searches 34%. Built cross-encoder reranker. Eval harness: NDCG@10, 800 labeled pairs. Three sequential A/B tests over 12 months."
+        },
+        {
+          "title": "ML Engineer",
+          "company_type": "EdTech startup (Series A)",
+          "duration_months": 24,
+          "description": "Built course search from scratch: Weaviate vector store, sentence-transformers pipeline for 200K monthly users. Shipped relevance feedback loop using dwell time + completion rate signals, +8pt NDCG@5 over three months."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "years_experience": 5
+        },
+        {
+          "name": "Retrieval system design",
+          "years_experience": 4
+        },
+        {
+          "name": "Weaviate",
+          "years_experience": 2
+        },
+        {
+          "name": "Elasticsearch",
+          "years_experience": 4
+        },
+        {
+          "name": "E5 / Sentence Transformers",
+          "years_experience": 3
+        },
+        {
+          "name": "A/B testing",
+          "years_experience": 3
+        },
+        {
+          "name": "NDCG / MRR",
+          "years_experience": 3
+        }
+      ]
+    },
+    {
+      "id": "anti_1",
+      "archetype": "Keyword stuffer",
+      "is_positive": false,
+      "headline": "Digital Marketing Manager | AI-Driven Growth | SEO, Content Strategy, LLM, RAG, Vector Search",
+      "summary": "Results-oriented marketing professional with 7 years driving digital growth for B2B SaaS. Recently upskilling in AI tools: LangChain for marketing automation, ChatGPT for content, AI-powered SEO tools. Familiar with RAG, embeddings, and vector databases from online courses and personal projects.",
+      "roles": [
+        {
+          "title": "Senior Digital Marketing Manager",
+          "company_type": "B2B SaaS company (Series B)",
+          "duration_months": 30,
+          "description": "Led digital marketing across SEO, paid search, and content. Managed $400K annual paid media budget. Used ChatGPT to accelerate drafts. Added 'AI tools' to every team retrospective. Listed vector search and embeddings on LinkedIn after watching YouTube tutorials."
+        },
+        {
+          "title": "Marketing Manager",
+          "company_type": "D2C e-commerce brand",
+          "duration_months": 28,
+          "description": "Owned influencer partnerships and performance marketing. Listed 'machine learning' and 'NLP' on resume after reading a McKinsey report about AI in retail. No technical projects or code written."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Digital Marketing",
+          "years_experience": 7
+        },
+        {
+          "name": "SEO",
+          "years_experience": 6
+        },
+        {
+          "name": "LangChain",
+          "years_experience": 1
+        },
+        {
+          "name": "Embeddings",
+          "years_experience": 1
+        },
+        {
+          "name": "Vector Search",
+          "years_experience": 1
+        },
+        {
+          "name": "RAG",
+          "years_experience": 1
+        },
+        {
+          "name": "Machine Learning",
+          "years_experience": 1
+        }
+      ]
+    },
+    {
+      "id": "anti_2",
+      "archetype": "Pure researcher",
+      "is_positive": false,
+      "headline": "Research Scientist | Neural IR, Dense Retrieval, Representation Learning | PhD + 2yr Postdoc",
+      "summary": "PhD from IISc in Information Retrieval, thesis on dense passage retrieval and bi-encoder architectures. Two-year postdoc at TIFR on multilingual retrieval. Published at SIGIR, ECIR, ACL. Deep theoretical grounding in retrieval models, but hands-on experience limited to research computing with curated benchmarks — no production serving infrastructure experience.",
+      "roles": [
+        {
+          "title": "Postdoctoral Research Fellow",
+          "company_type": "Academic research institute (TIFR)",
+          "duration_months": 24,
+          "description": "Research on cross-lingual dense retrieval. Published three papers (SIGIR 2024, ACL 2025, ECIR 2025). All experiments on HPC with BEIR and MIRACL benchmarks. Zero deployment work: no users, no latency constraints, no production infra."
+        },
+        {
+          "title": "PhD Researcher",
+          "company_type": "Academic institution (IISc)",
+          "duration_months": 54,
+          "description": "Dissertation on bi-encoder hard negative mining in PyTorch on MS MARCO, NQ, TriviaQA. No production code, no real users. Five papers, best paper honorable mention ECIR 2023."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Dense retrieval (DPR, ColBERT)",
+          "years_experience": 5
+        },
+        {
+          "name": "PyTorch",
+          "years_experience": 5
+        },
+        {
+          "name": "BEIR benchmark evaluation",
+          "years_experience": 4
+        },
+        {
+          "name": "Contrastive learning",
+          "years_experience": 4
+        },
+        {
+          "name": "Python",
+          "years_experience": 6
+        },
+        {
+          "name": "Hugging Face Transformers",
+          "years_experience": 4
+        }
+      ]
+    },
+    {
+      "id": "anti_3",
+      "archetype": "Consulting lifer",
+      "is_positive": false,
+      "headline": "Technology Consultant | AI & Analytics Practice | Infosys BPM | 9 Years",
+      "summary": "Nine-year career at Infosys and TCS spanning analytics and AI practices. Led delivery teams on AI transformation engagements for BFSI and manufacturing clients. Advises on AI adoption roadmaps and oversees offshore ML model development. Hands-on building done by delivery team rather than personally in recent years.",
+      "roles": [
+        {
+          "title": "Senior Technology Consultant — AI Practice",
+          "company_type": "IT services (Infosys BPM)",
+          "duration_months": 42,
+          "description": "Led 12-person delivery team on AI transformation for BFSI client. Oversaw OpenAI API-based document summarization tool built by juniors. Wrote solution architecture for semantic search POC handed to offshore team. No direct model training, no evaluation framework design, no production code written."
+        },
+        {
+          "title": "Technology Consultant",
+          "company_type": "IT services (TCS)",
+          "duration_months": 36,
+          "description": "Analytics practice: data warehousing and reporting. Managed a project to implement product recommendation — actually a rules-based engine. No ML model development, no retrieval systems."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Technology consulting",
+          "years_experience": 9
+        },
+        {
+          "name": "SQL",
+          "years_experience": 9
+        },
+        {
+          "name": "Python (review-level)",
+          "years_experience": 3
+        },
+        {
+          "name": "Project management",
+          "years_experience": 7
+        },
+        {
+          "name": "AI strategy (advisory)",
+          "years_experience": 3
+        }
+      ]
+    },
+    {
+      "id": "anti_4",
+      "archetype": "Framework enthusiast",
+      "is_positive": false,
+      "headline": "AI Engineer | LangChain, OpenAI API, RAG Pipelines | Building LLM-Powered Applications",
+      "summary": "Pivoted to AI in early 2024 after discovering LangChain and the OpenAI API. Background is frontend development. Built a dozen RAG apps and chatbots. Deeply familiar with LangChain ecosystem and prompt engineering. No traditional ML background — strength is rapid prototyping using foundation models and off-the-shelf tooling.",
+      "roles": [
+        {
+          "title": "AI Engineer (Freelance / Contract)",
+          "company_type": "Self-employed / various clients",
+          "duration_months": 14,
+          "description": "Built LLM applications: customer support chatbot (LangChain+GPT-4+Pinecone), document Q&A (LlamaIndex), AI recruiter bot calling OpenAI API. No custom model training, no evaluation frameworks. All projects are OpenAI API wrappers with text-embedding-3-small. Longest engagement: 3 months."
+        },
+        {
+          "title": "Frontend Developer",
+          "company_type": "Digital agency",
+          "duration_months": 24,
+          "description": "React and TypeScript developer. No ML or data science work. Switched to AI after ChatGPT wave. No prior ML, statistics, or information retrieval background before the LLM era."
+        }
+      ],
+      "skills": [
+        {
+          "name": "LangChain",
+          "years_experience": 1
+        },
+        {
+          "name": "OpenAI API",
+          "years_experience": 1
+        },
+        {
+          "name": "LlamaIndex",
+          "years_experience": 1
+        },
+        {
+          "name": "Prompt engineering",
+          "years_experience": 1
+        },
+        {
+          "name": "Python",
+          "years_experience": 2
+        },
+        {
+          "name": "React / TypeScript",
+          "years_experience": 4
+        }
+      ]
+    },
+    {
+      "id": "anti_5",
+      "archetype": "Title chaser",
+      "is_positive": false,
+      "headline": "Staff ML Engineer | Ex-Swiggy, Ex-Razorpay, Ex-CRED, Ex-Groww | Search & Recommendations",
+      "summary": "Six years across five companies progressing from ML Engineer to Staff at each hop. Broad exposure across search and recommendation systems. Career progression fast by identifying quick-impact work and moving on when the growth ceiling appears. Looking for founding-team role where the first six months is peak impact.",
+      "roles": [
+        {
+          "title": "Staff ML Engineer",
+          "company_type": "Fintech product company (Groww)",
+          "duration_months": 10,
+          "description": "Joined to lead fund recommendation revamp. Wrote design doc for two-tower retrieval model, got first prototype running. Left before system shipped to production for a more senior opportunity elsewhere. Work exists as design doc and notebook only — no production deployment."
+        },
+        {
+          "title": "Senior ML Engineer",
+          "company_type": "Fintech product company (CRED)",
+          "duration_months": 14,
+          "description": "Contributed to offer personalization retrieval pipeline: added one embedding feature, tuned XGBoost weights. Moved to Groww after 14 months for Staff title and 40% raise. Five engineers on same stack; did not own system end-to-end."
+        },
+        {
+          "title": "ML Engineer",
+          "company_type": "Fintech (Razorpay)",
+          "duration_months": 13,
+          "description": "Set up Elasticsearch cluster, added semantic search using sentence-transformers for developer docs. Left after 13 months. Project was reaching production when I departed — successor inherited half-complete migration."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "years_experience": 6
+        },
+        {
+          "name": "Sentence Transformers",
+          "years_experience": 3
+        },
+        {
+          "name": "Elasticsearch",
+          "years_experience": 4
+        },
+        {
+          "name": "XGBoost",
+          "years_experience": 3
+        },
+        {
+          "name": "Recommendation systems",
+          "years_experience": 5
+        },
+        {
+          "name": "FAISS",
+          "years_experience": 2
+        }
+      ]
+    }
+  ],
+  "jd_text": "Job Description: Senior AI Engineer — Founding Team\nCompany: Redrob AI (Series A AI-native talent intelligence platform)\nLocation: Pune/Noida, India (Hybrid — flexible cadence) | Open to relocation candidates from Tier-1 Indian cities\nEmployment Type: Full-time\nExperience Required: 5–9 years (see \"what we mean by this\" below)\nLet's be honest about this role\nWe're going to write this JD differently from most. We're a Series A company that just raised our round and we're building a new AI Engineering org from scratch. This is the kind of role where the JD changes every six months because the company changes every six months. So instead of pretending we have a fixed checklist, we're going to tell you what we actually need and what we've gotten wrong before.\nIf you've spent your career at Google or Meta and you want a well-scoped role with a defined ladder, this isn't it.\nIf you've spent your career bouncing between early-stage startups and you want to \"just code\" without having to think about product or recruiter workflows or eval frameworks, this also isn't it.\nWe need someone who is simultaneously comfortable with two things that sound contradictory:\nDeep technical depth in modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning.\nScrappy product-engineering attitude — willing to ship a working ranker in a week even if the underlying ML is \"obviously suboptimal,\" because we need to learn from real users before we know what to actually optimize for.\nThese are not contradictory in real life. They feel contradictory because of how engineering culture sorted itself into \"researcher\" vs \"shipper\" archetypes. We need both modes available in the same person, and we'd rather you tilt slightly toward shipper than toward researcher.\nWhat you'd actually be doing\nThe high-level mandate: own the intelligence layer of Redrob's product. That means the ranking, retrieval, and matching systems that decide what recruiters see when they search for candidates and what candidates see when they search for roles.\nIn practical terms, your first 90 days will probably look like:\nWeeks 1-3: Audit what we currently have (it's mostly BM25 + rule-based scoring, working but not great). Identify the 3-4 highest-leverage things to fix.\nWeeks 4-8: Ship a v2 ranking system that demonstrably improves recruiter-engagement metrics. This will involve embeddings, hybrid retrieval, and probably some LLM-based re-ranking, but the architecture is your call.\nWeeks 9-12: Set up the evaluation infrastructure — offline benchmarks, online A/B testing, recruiter-feedback loops — so we can keep improving without flying blind.\nBeyond that, you'll be driving the long-term architecture of how we do candidate-JD matching at scale, mentoring the next round of hires (we're growing the team from 4 to 12 engineers in the next year), and working closely with our recruiter-experience PM on what to build.\nWhat we mean by \"5-9 years\"\nThis is a range, not a requirement. Some people hit \"senior engineer\" judgment at 4 years; some never hit it after 15. We've used 5-9 because it's roughly where people we've hired into this kind of role have landed, but we'll seriously consider candidates outside the band if other signals are strong.\nThat said, here are the disqualifiers we actually apply:\nIf you've spent your career in pure research environments (academic labs, research-only roles) without any production deployment — we will not move forward. We are explicit about this. We've tried it twice and it didn't work for either side.\nIf your \"AI experience\" consists primarily of recent (under 12 months) projects using LangChain to call OpenAI — we will probably not move forward, unless you can demonstrate substantial pre-LLM-era ML production experience. We're looking for people who understood retrieval and ranking before it became fashionable.\nIf you are a senior engineer who hasn't written production code in the last 18 months because you've moved into \"architecture\" or \"tech lead\" roles — we will probably not move forward. This role writes code.\nThe skills inventory (please read carefully)\nMost JDs list 20 skills and you're supposed to have all of them. We're going to do this differently.\nThings you absolutely need\nProduction experience with embeddings-based retrieval systems (sentence-transformers, OpenAI embeddings, BGE, E5, or similar) deployed to real users. We don't care which model — we care that you've handled embedding drift, index refresh, retrieval-quality regression in production.\nProduction experience with vector databases or hybrid search infrastructure — Pinecone, Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, FAISS, or something similar. Again, the specific tech doesn't matter; the operational experience does.\nStrong Python. Yes really, we care about code quality.\nHands-on experience designing evaluation frameworks for ranking systems — NDCG, MRR, MAP, offline-to-online correlation, A/B test interpretation. If you've never thought about how to evaluate a ranking system rigorously, this role will be very painful.\nThings we'd like you to have but won't reject you for\nLLM fine-tuning experience (LoRA, QLoRA, PEFT)\nExperience with learning-to-rank models (XGBoost-based or neural)\nPrior exposure to HR-tech, recruiting tech, or marketplace products\nBackground in distributed systems or large-scale inference optimization\nOpen-source contributions in the AI/ML space\nThings we explicitly do NOT want\nThis is the section most JDs skip but we think it's the most important:\nTitle-chasers. If your career trajectory shows you optimizing for \"Senior\" → \"Staff\" → \"Principal\" titles by switching companies every 1.5 years, we're not a fit. We need someone who plans to be here for 3+ years.\nFramework enthusiasts. If your GitHub is full of LangChain tutorials and your blog posts are \"How I used [hot framework] to build [demo]\" — that's fine but it's not what we need. We need people who think about systems, not frameworks.\nPeople who have only worked at consulting firms (TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini, etc.) in their entire career. We've had bad fit experiences in both directions. If you're currently at one of these companies but have prior product-company experience, that's fine.\nPeople whose primary expertise is computer vision, speech, or robotics without significant NLP/IR exposure. We respect your work but you'd be re-learning fundamentals here.\nPeople whose work has been entirely on closed-source proprietary systems for 5+ years without external validation (papers, talks, open-source). We need to see how you think, not just trust that you can think.\nOn location, comp, and logistics\nLocation: Pune/Noida-preferred but flexible. We have offices in Noida and Pune(mostly used Tue/Thu). We don't require any specific number of in-office days but we expect quarterly travel for offsites. Candidates in Hyderabad, Pune, Mumbai, Delhi NCR welcome to apply. Outside India: case-by-case, but we don't sponsor work visas.\nNotice period: We'd love sub-30-day notice. We can buy out up to 30 days. 30+ day notice candidates are still in scope but the bar gets higher.\nThe vibe check\nWe genuinely believe culture-fit matters more at this stage than skills-fit. Skills are teachable; the rest mostly isn't.\nWe work async-first and write a lot. If you find writing painful, you'll find this role painful.\nWe disagree openly and decide quickly. If you find that style abrasive, you'll find this role abrasive.\nWe move fast and break things, with the caveat that \"things\" are usually our internal assumptions, not user-facing systems. If you need a stable, mature codebase to be productive, you'll find this role unstable.\nHow to read between the lines\nThe \"ideal candidate\" we're imagining is roughly:\n6-8 years total experience, of which 4-5 are in applied ML/AI roles at product companies (not pure services).\nHas shipped at least one end-to-end ranking, search, or recommendation system to real users at meaningful scale.\nHas strong opinions about retrieval (hybrid vs dense), evaluation (offline vs online), and LLM integration (when to fine-tune vs prompt) — and can defend them with reference to systems they actually built.\nLocated in or willing to relocate to Noida or Pune.\nActive on Redrob platform (or has clear signal of being in the job market) so we can actually talk to them.\nWe are aware this is a narrow profile. We're not expecting to find many matches in a 100K candidate pool. We're explicitly OK with that — we'd rather see 10 great matches than 1000 maybes.\nFinal note for the participants of the Redrob hackathon\nIf you're reading this in the context of the Intelligent Candidate Discovery & Ranking Challenge:\nThe \"right answer\" to this JD is not \"find candidates whose skills section contains the most AI keywords.\" That's a trap we've explicitly built into the dataset.\nThe right answer involves reasoning about the gap between what the JD says and what the JD means. A Tier 5 candidate may not use the words \"RAG\" or \"Pinecone\" in their profile, but if their career history shows they built a recommendation system at a product company, they're a fit. A candidate who has all the AI keywords listed as skills but whose title is \"Marketing Manager\" is not a fit, no matter how perfect their skill list looks.\nYour ranking system should also weigh behavioral signals — a perfect-on-paper candidate who hasn't logged in for 6 months and has a 5% recruiter response rate is, for hiring purposes, not actually available. Down-weight them appropriately.\nGood luck."
+}

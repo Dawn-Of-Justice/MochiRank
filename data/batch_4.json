@@ -1,0 +1,780 @@
+[
+  {
+    "candidate_id": "CAND_0000041",
+    "current_title": "Operations Manager",
+    "years_of_experience": 13.7,
+    "summary": "Professional with 13.7+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I c",
+    "career": [
+      {
+        "title": "Operations Manager",
+        "company": "Hooli",
+        "industry": "Software",
+        "company_size": "1001-5000",
+        "duration_months": 42,
+        "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to produ"
+      },
+      {
+        "title": "Business Analyst",
+        "company": "Acme Corp",
+        "industry": "Manufacturing",
+        "company_size": "201-500",
+        "duration_months": 21,
+        "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable "
+      },
+      {
+        "title": "Content Writer",
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "company_size": "10001+",
+        "duration_months": 24,
+        "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the"
+      },
+      {
+        "title": "Content Writer",
+        "company": "Infosys",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 52,
+        "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to produ"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "React",
+        "proficiency": "intermediate",
+        "endorsements": 15,
+        "duration_months": 22
+      },
+      {
+        "name": "Figma",
+        "proficiency": "beginner",
+        "endorsements": 14,
+        "duration_months": 16
+      },
+      {
+        "name": "Airflow",
+        "proficiency": "intermediate",
+        "endorsements": 13,
+        "duration_months": 20
+      },
+      {
+        "name": "Go",
+        "proficiency": "beginner",
+        "endorsements": 13,
+        "duration_months": 8
+      },
+      {
+        "name": "SQL",
+        "proficiency": "intermediate",
+        "endorsements": 12,
+        "duration_months": 12
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.S.",
+        "field": "Machine Learning",
+        "institution": "Local Engineering College",
+        "tier": "tier_4"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000042",
+    "current_title": "HR Manager",
+    "years_of_experience": 5.0,
+    "summary": "Professional with 5.0+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my ",
+    "career": [
+      {
+        "title": "HR Manager",
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "company_size": "10001+",
+        "duration_months": 26,
+        "description": "Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search "
+      },
+      {
+        "title": "Business Analyst",
+        "company": "Wipro",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 12,
+        "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prosp"
+      },
+      {
+        "title": "Customer Support",
+        "company": "Infosys",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 21,
+        "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performan"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "SAP",
+        "proficiency": "beginner",
+        "endorsements": 12,
+        "duration_months": 18
+      },
+      {
+        "name": "Illustrator",
+        "proficiency": "beginner",
+        "endorsements": 11,
+        "duration_months": 14
+      },
+      {
+        "name": "CSS",
+        "proficiency": "beginner",
+        "endorsements": 11,
+        "duration_months": 12
+      },
+      {
+        "name": "Marketing",
+        "proficiency": "intermediate",
+        "endorsements": 10,
+        "duration_months": 24
+      },
+      {
+        "name": "Figma",
+        "proficiency": "beginner",
+        "endorsements": 10,
+        "duration_months": 7
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech",
+        "field": "Civil Engineering",
+        "institution": "SRM Chennai",
+        "tier": "tier_3"
+      },
+      {
+        "degree": "B.E.",
+        "field": "Mathematics",
+        "institution": "Symbiosis International",
+        "tier": "tier_3"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000043",
+    "current_title": "Cloud Engineer",
+    "years_of_experience": 8.3,
+    "summary": "Software engineer with 8.3 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've worked across web frontends, REST APIs, and cloud deployments; comfortable in most parts of a typical SaaS stack. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, bui",
+    "career": [
+      {
+        "title": "Cloud Engineer",
+        "company": "Swiggy",
+        "industry": "Food Delivery",
+        "company_size": "5001-10000",
+        "duration_months": 30,
+        "description": "Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with develo"
+      },
+      {
+        "title": ".NET Developer",
+        "company": "HCL",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 24,
+        "description": "Cloud infrastructure and DevOps work at an enterprise SaaS company. Owned the AWS account architecture (VPC, IAM, networking), the Terraform modules for our service deployments, and the Kubernetes clu"
+      },
+      {
+        "title": "Frontend Engineer",
+        "company": "Mindtree",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 25,
+        "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system"
+      },
+      {
+        "title": "DevOps Engineer",
+        "company": "Initech",
+        "industry": "Software",
+        "company_size": "51-200",
+        "duration_months": 20,
+        "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "Elasticsearch",
+        "proficiency": "advanced",
+        "endorsements": 54,
+        "duration_months": 44
+      },
+      {
+        "name": "OpenCV",
+        "proficiency": "advanced",
+        "endorsements": 54,
+        "duration_months": 33
+      },
+      {
+        "name": "LangChain",
+        "proficiency": "intermediate",
+        "endorsements": 37,
+        "duration_months": 25
+      },
+      {
+        "name": "Image Classification",
+        "proficiency": "advanced",
+        "endorsements": 24,
+        "duration_months": 50
+      },
+      {
+        "name": "OpenSearch",
+        "proficiency": "intermediate",
+        "endorsements": 21,
+        "duration_months": 34
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.E.",
+        "field": "Electronics",
+        "institution": "Regional Technical Institute",
+        "tier": "tier_4"
+      },
+      {
+        "degree": "B.Sc",
+        "field": "Physics",
+        "institution": "Regional Technical Institute",
+        "tier": "tier_4"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000044",
+    "current_title": "Frontend Engineer",
+    "years_of_experience": 5.7,
+    "summary": "Software engineer with 5.7 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've spent most of my career on web and API development — Python/Django and Node.js mostly. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, built a small RAG side project",
+    "career": [
+      {
+        "title": "Frontend Engineer",
+        "company": "Tech Mahindra",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 50,
+        "description": "Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orche"
+      },
+      {
+        "title": "DevOps Engineer",
+        "company": "Hooli",
+        "industry": "Software",
+        "company_size": "1001-5000",
+        "duration_months": 18,
+        "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a le"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "Databricks",
+        "proficiency": "beginner",
+        "endorsements": 13,
+        "duration_months": 5
+      },
+      {
+        "name": "CI/CD",
+        "proficiency": "beginner",
+        "endorsements": 11,
+        "duration_months": 13
+      },
+      {
+        "name": "JavaScript",
+        "proficiency": "beginner",
+        "endorsements": 5,
+        "duration_months": 18
+      },
+      {
+        "name": "Hadoop",
+        "proficiency": "beginner",
+        "endorsements": 3,
+        "duration_months": 3
+      },
+      {
+        "name": "dbt",
+        "proficiency": "intermediate",
+        "endorsements": 3,
+        "duration_months": 16
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.Sc",
+        "field": "Information Technology",
+        "institution": "Chandigarh University",
+        "tier": "tier_3"
+      },
+      {
+        "degree": "B.E.",
+        "field": "Civil Engineering",
+        "institution": "Amity University",
+        "tier": "tier_3"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000045",
+    "current_title": "Project Manager",
+    "years_of_experience": 12.2,
+    "summary": "Professional with 12.2+ years of experience. My professional background is in marketing manager — I've built and led teams, owned KPIs, and driven business outcomes in this domain. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I ca",
+    "career": [
+      {
+        "title": "Project Manager",
+        "company": "Initech",
+        "industry": "Software",
+        "company_size": "51-200",
+        "duration_months": 15,
+        "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prosp"
+      },
+      {
+        "title": "Civil Engineer",
+        "company": "Pied Piper",
+        "industry": "Software",
+        "company_size": "11-50",
+        "duration_months": 13,
+        "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable "
+      },
+      {
+        "title": "Marketing Manager",
+        "company": "Infosys",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 12,
+        "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to produ"
+      },
+      {
+        "title": "Content Writer",
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "company_size": "10001+",
+        "duration_months": 16,
+        "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performan"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "Redux",
+        "proficiency": "intermediate",
+        "endorsements": 14,
+        "duration_months": 25
+      },
+      {
+        "name": "SAP",
+        "proficiency": "intermediate",
+        "endorsements": 13,
+        "duration_months": 27
+      },
+      {
+        "name": "Airflow",
+        "proficiency": "intermediate",
+        "endorsements": 5,
+        "duration_months": 18
+      },
+      {
+        "name": "Sales",
+        "proficiency": "intermediate",
+        "endorsements": 2,
+        "duration_months": 12
+      },
+      {
+        "name": "GCP",
+        "proficiency": "beginner",
+        "endorsements": 1,
+        "duration_months": 3
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.E.",
+        "field": "Statistics",
+        "institution": "Generic State University",
+        "tier": "tier_4"
+      },
+      {
+        "degree": "B.Tech",
+        "field": "Machine Learning",
+        "institution": "KIIT University",
+        "tier": "tier_3"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000046",
+    "current_title": "Mechanical Engineer",
+    "years_of_experience": 7.8,
+    "summary": "Professional with 7.8+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I ca",
+    "career": [
+      {
+        "title": "Mechanical Engineer",
+        "company": "Hooli",
+        "industry": "Software",
+        "company_size": "1001-5000",
+        "duration_months": 30,
+        "description": "Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to produ"
+      },
+      {
+        "title": "HR Manager",
+        "company": "Pied Piper",
+        "industry": "Software",
+        "company_size": "11-50",
+        "duration_months": 33,
+        "description": "Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performan"
+      },
+      {
+        "title": "Marketing Manager",
+        "company": "Hooli",
+        "industry": "Software",
+        "company_size": "1001-5000",
+        "duration_months": 30,
+        "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "Scrum",
+        "proficiency": "intermediate",
+        "endorsements": 11,
+        "duration_months": 28
+      },
+      {
+        "name": "React",
+        "proficiency": "beginner",
+        "endorsements": 7,
+        "duration_months": 7
+      },
+      {
+        "name": "SAP",
+        "proficiency": "intermediate",
+        "endorsements": 6,
+        "duration_months": 35
+      },
+      {
+        "name": "Azure",
+        "proficiency": "intermediate",
+        "endorsements": 3,
+        "duration_months": 36
+      },
+      {
+        "name": "ETL",
+        "proficiency": "beginner",
+        "endorsements": 2,
+        "duration_months": 8
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.Tech",
+        "field": "Electrical Engineering",
+        "institution": "Christ University",
+        "tier": "tier_3"
+      },
+      {
+        "degree": "B.E.",
+        "field": "Statistics",
+        "institution": "Chandigarh University",
+        "tier": "tier_3"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000047",
+    "current_title": "Project Manager",
+    "years_of_experience": 2.4,
+    "summary": "Professional with 2.4+ years of experience. My professional background is in marketing manager — I've built and led teams, owned KPIs, and driven business outcomes in this domain. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can",
+    "career": [
+      {
+        "title": "Project Manager",
+        "company": "TCS",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 28,
+        "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "SQL",
+        "proficiency": "intermediate",
+        "endorsements": 11,
+        "duration_months": 15
+      },
+      {
+        "name": "Excel",
+        "proficiency": "intermediate",
+        "endorsements": 10,
+        "duration_months": 9
+      },
+      {
+        "name": "Tally",
+        "proficiency": "intermediate",
+        "endorsements": 10,
+        "duration_months": 9
+      },
+      {
+        "name": "Hadoop",
+        "proficiency": "beginner",
+        "endorsements": 10,
+        "duration_months": 17
+      },
+      {
+        "name": "FastAPI",
+        "proficiency": "beginner",
+        "endorsements": 8,
+        "duration_months": 4
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Sc",
+        "field": "Mechanical Engineering",
+        "institution": "Amity University",
+        "tier": "tier_3"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000048",
+    "current_title": "Mobile Developer",
+    "years_of_experience": 9.7,
+    "summary": "Software engineer with 9.7 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've worked across web frontends, REST APIs, and cloud deployments; comfortable in most parts of a typical SaaS stack. I've been keeping up with AI/ML at a self-learner level — taken some online courses, played with the OpenAI and Anthropic APIs, bui",
+    "career": [
+      {
+        "title": "Mobile Developer",
+        "company": "CRED",
+        "industry": "Fintech",
+        "company_size": "1001-5000",
+        "duration_months": 28,
+        "description": "Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a le"
+      },
+      {
+        "title": "Full Stack Developer",
+        "company": "Cognizant",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 20,
+        "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system"
+      },
+      {
+        "title": "Mobile Developer",
+        "company": "Stark Industries",
+        "industry": "Manufacturing",
+        "company_size": "1001-5000",
+        "duration_months": 51,
+        "description": "Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orche"
+      },
+      {
+        "title": "Full Stack Developer",
+        "company": "Initech",
+        "industry": "Software",
+        "company_size": "51-200",
+        "duration_months": 15,
+        "description": "Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "Terraform",
+        "proficiency": "intermediate",
+        "endorsements": 13,
+        "duration_months": 26
+      },
+      {
+        "name": "Content Writing",
+        "proficiency": "intermediate",
+        "endorsements": 11,
+        "duration_months": 26
+      },
+      {
+        "name": "Hadoop",
+        "proficiency": "beginner",
+        "endorsements": 2,
+        "duration_months": 15
+      },
+      {
+        "name": "Vue.js",
+        "proficiency": "intermediate",
+        "endorsements": 2,
+        "duration_months": 24
+      },
+      {
+        "name": "AWS",
+        "proficiency": "intermediate",
+        "endorsements": 1,
+        "duration_months": 31
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.E.",
+        "field": "Data Science",
+        "institution": "VIT Chennai",
+        "tier": "tier_3"
+      },
+      {
+        "degree": "B.Tech",
+        "field": "Statistics",
+        "institution": "Anna University",
+        "tier": "tier_2"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000049",
+    "current_title": "Mechanical Engineer",
+    "years_of_experience": 11.8,
+    "summary": "Professional with 11.8+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and customer relationships. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I c",
+    "career": [
+      {
+        "title": "Mechanical Engineer",
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "company_size": "10001+",
+        "duration_months": 49,
+        "description": "Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prosp"
+      },
+      {
+        "title": "Business Analyst",
+        "company": "Hooli",
+        "industry": "Software",
+        "company_size": "1001-5000",
+        "duration_months": 54,
+        "description": "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness"
+      },
+      {
+        "title": "Sales Executive",
+        "company": "Wayne Enterprises",
+        "industry": "Conglomerate",
+        "company_size": "10001+",
+        "duration_months": 38,
+        "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "GraphQL",
+        "proficiency": "intermediate",
+        "endorsements": 14,
+        "duration_months": 16
+      },
+      {
+        "name": "Apache Beam",
+        "proficiency": "beginner",
+        "endorsements": 10,
+        "duration_months": 4
+      },
+      {
+        "name": "Data Pipelines",
+        "proficiency": "beginner",
+        "endorsements": 6,
+        "duration_months": 11
+      },
+      {
+        "name": "Kubernetes",
+        "proficiency": "intermediate",
+        "endorsements": 5,
+        "duration_months": 13
+      },
+      {
+        "name": "Rust",
+        "proficiency": "intermediate",
+        "endorsements": 1,
+        "duration_months": 16
+      }
+    ],
+    "education": [
+      {
+        "degree": "M.Tech",
+        "field": "Mathematics",
+        "institution": "Symbiosis International",
+        "tier": "tier_3"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND_0000050",
+    "current_title": "Business Analyst",
+    "years_of_experience": 13.5,
+    "summary": "Professional with 13.5+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and execution. Lately I've been curious about how AI tools could augment my work — I've experimented with ChatGPT and a few other tools for productivity and content creation, and I think the space is exciting. Open to roles where I can apply my",
+    "career": [
+      {
+        "title": "Business Analyst",
+        "company": "Infosys",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 45,
+        "description": "Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable "
+      },
+      {
+        "title": "Marketing Manager",
+        "company": "TCS",
+        "industry": "IT Services",
+        "company_size": "10001+",
+        "duration_months": 36,
+        "description": "Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the"
+      },
+      {
+        "title": "HR Manager",
+        "company": "Hooli",
+        "industry": "Software",
+        "company_size": "1001-5000",
+        "duration_months": 28,
+        "description": "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness"
+      },
+      {
+        "title": "Content Writer",
+        "company": "Acme Corp",
+        "industry": "Manufacturing",
+        "company_size": "201-500",
+        "duration_months": 51,
+        "description": "Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness"
+      }
+    ],
+    "skills_top5": [
+      {
+        "name": "Excel",
+        "proficiency": "intermediate",
+        "endorsements": 10,
+        "duration_months": 23
+      },
+      {
+        "name": "gRPC",
+        "proficiency": "intermediate",
+        "endorsements": 9,
+        "duration_months": 11
+      },
+      {
+        "name": "SEO",
+        "proficiency": "beginner",
+        "endorsements": 8,
+        "duration_months": 18
+      },
+      {
+        "name": "Kafka",
+        "proficiency": "beginner",
+        "endorsements": 7,
+        "duration_months": 13
+      },
+      {
+        "name": "Feature Engineering",
+        "proficiency": "advanced",
+        "endorsements": 4,
+        "duration_months": 42
+      }
+    ],
+    "education": [
+      {
+        "degree": "Ph.D",
+        "field": "Artificial Intelligence",
+        "institution": "VIT Chennai",
+        "tier": "tier_3"
+      },
+      {
+        "degree": "B.Sc",
+        "field": "Artificial Intelligence",
+        "institution": "Georgia Tech",
+        "tier": "tier_1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+candidate_id,score,rationale,stratum
+CAND_0000001,0.0,"Worked at Dunder Mifflin (honeypot company), which is an automatic disqualifier regardless of skills.",sample
+CAND_0000002,0.0,"Entire career at Infosys and Wipro (explicit disqualifier), with a non-technical operations/project management background and no real ML production experience.",sample
+CAND_0000003,0.4,"Entire career at TCS (explicit disqualifier for whole-career consultancy), despite having relevant RAG/Pinecone/hybrid retrieval skills that would otherwise score higher.",sample
+CAND_0000004,0.2,"Entire career at Accenture and Capgemini (explicit disqualifier), and core work is tabular/classification analytics rather than retrieval or ranking systems despite skills listing embeddings/retrieval.",sample
+CAND_0000005,1.0,"Expert sentence-transformers and FAISS with production deployment at Meesho (dense retrieval, BM25 hybrid, P@10 optimization), LLM fine-tuning, 9+ years at product companies, matching every must-have requirement.",sample
+CAND_0000006,0.2,"Pure research career at Microsoft Research India and IISc with explicitly no production deployments, directly triggering the pure research career disqualifier.",sample
+CAND_0000007,0.6,"Hands-on production experience with embeddings, FAISS, and RAG at two AI startups, but only 3.2 years and lacks evidence of large-scale retrieval or evaluation frameworks like NDCG/MRR.",sample
+CAND_0000008,0.2,"Entire career at Cognizant (explicit disqualifier), and current role is solution architecture/consulting with minimal hands-on coding rather than production ML engineering.",sample
+CAND_0000009,1.0,"Expert FAISS and Elasticsearch with production dense+hybrid retrieval at Swiggy and 50k QPS embedding serving at InMobi, strong sentence-transformers and ranking systems experience at product companies across 6.8 years.",sample
+CAND_0000010,0.2,"Primarily a data engineering profile (ETL, Spark, Airflow) with only 7 months of side-project vector DB/RAG exposure, insufficient depth in core retrieval and ranking requirements.",sample
+CAND_0000011,0.0,"Worked at Pied Piper (fictional company), automatic disqualifier scoring 0.0.",sample
+CAND_0000012,0.0,"Worked at Stark Industries (fictional company), automatic disqualifier scoring 0.0.",sample
+CAND_0000013,0.0,"Worked at Globex Inc (fictional company), automatic disqualifier scoring 0.0.",sample
+CAND_0000014,0.0,"Worked at Dunder Mifflin (fictional company), automatic disqualifier scoring 0.0.",sample
+CAND_0000015,0.2,"Has Qdrant (9 months) and PyTorch exposure, but 5.4 years are mostly cloud/DevOps/mobile with no production embeddings or retrieval engineering depth.",sample
+CAND_0000016,0.2,"Entire substantive career at TCS and Infosys (disqualifying firms), with skills limited to SQL, Figma, Photoshop, and accounting — no embeddings, vector DB, or Python ML experience.",sample
+CAND_0000017,0.2,"Career split across Wipro, Infosys (disqualifying firms), and Initech (fictional), with accounting/customer-support background and no embeddings, retrieval, or ML engineering skills.",sample
+CAND_0000018,0.0,"Worked at Pied Piper and Initech (fictional companies), automatic disqualifiers scoring 0.0.",sample
+CAND_0000019,0.0,"Entire career at Wayne Enterprises and Pied Piper (fictional companies), automatic disqualifiers scoring 0.0.",sample
+CAND_0000020,0.0,"Worked at Dunder Mifflin (fictional company), automatic disqualifier scoring 0.0.",sample
+CAND_0000021,0.0,"Worked at Dunder Mifflin and Stark Industries (fictional), with entire career at Wipro/Infosys disqualifiers and zero AI engineering skills.",sample
+CAND_0000022,0.2,"Only 1.1 years experience as a Mechanical Engineer with no AI/ML skills and no production embeddings, vector DB, or retrieval experience.",sample
+CAND_0000023,0.2,"Backend software engineer with 3.7 years whose AI exposure is limited to a small RAG side project; no production embeddings, vector DB, or evaluation framework experience.",sample
+CAND_0000024,0.0,Entire career at TCS and Infosys (disqualifying firms) in HR Manager and Accountant roles with no AI engineering skills.,sample
+CAND_0000025,0.2,"Frontend engineer with entire career at IT services firms (Tech Mahindra, Mindtree) and only LangChain wrapper experience — no pre-LLM ML, embeddings, or vector DB work.",sample
+CAND_0000026,0.0,Worked at Initech (fictional company disqualifier) as a Graphic Designer/Accountant with no AI engineering skills.,sample
+CAND_0000027,0.2,"Entire career at Infosys and Wipro (disqualifying firms) despite advanced ML skills (PEFT, W&B, YOLO) and IIT Bombay PhD; the disqualifier overrides the strong ML signals.",sample
+CAND_0000028,0.0,Operations Manager with 1.1 years at Wipro (disqualifier) and no AI engineering skills; entirely non-technical.,sample
+CAND_0000029,0.0,"Worked at Globex Inc (fictional disqualifier) with career at Wipro/TCS (disqualifying firms) in non-technical roles (Business Analyst, Civil Engineer).",sample
+CAND_0000030,0.0,Worked at Dunder Mifflin (fictional disqualifier) as a Marketing Manager with no AI engineering skills.,sample
+CAND_0000031,0.8,"Expert-level embeddings (60 months), led migration to embedding-based retrieval at Swiggy, strong production ML with XGBoost/LightGBM ranking across reputable product companies (Uber, Swiggy, Zomato), though no explicit vector DB or NDCG evaluation framework mentioned.",sample
+CAND_0000032,0.0,Worked at Globex Inc (fictional disqualifier); career is primarily .NET/cloud/QA backend engineering with no production ML or retrieval systems experience.,sample
+CAND_0000033,0.0,"Worked at Dunder Mifflin (fictional disqualifier); profile is a Graphic Designer/Marketing Manager with no AI engineering, embeddings, or retrieval skills.",sample
+CAND_0000034,0.2,"Entire career at Wipro, Infosys, TCS (disqualifiers) as a Business Analyst with no production ML or retrieval engineering experience.",sample
+CAND_0000035,0.2,Worked at Globex Inc (fictional disqualifier) and Wipro; profile is Full Stack Developer with only side-project RAG experience and no production embeddings or vector DB work.,sample
+CAND_0000036,0.0,Worked at both Initech and Dunder Mifflin (two fictional disqualifiers); profile is Project Manager/HR with no AI engineering or retrieval skills.,sample
+CAND_0000037,0.0,"Worked at Stark Industries (fictional disqualifier); profile is Business Analyst/Civil Engineer with no production ML, embeddings, or retrieval experience.",sample
+CAND_0000038,0.4,"Advanced Weaviate skill (27 months, 37 endorsements) is directly relevant, but career is primarily Java/frontend/DevOps with no demonstrated production embeddings or evaluation framework, and worked at Globex Inc (fictional).",sample
+CAND_0000039,0.0,Worked at Stark Industries (fictional disqualifier); profile is Marketing Manager/Mechanical Engineer with no AI engineering or retrieval experience.,sample
+CAND_0000040,0.0,Only 1.6 years in Customer Support at Globex Inc (fictional disqualifier) with no AI engineering skills.,sample
+CAND_0000041,0.0,Worked at Wayne Enterprises (fictional disqualifier); background is operations/marketing management with no AI/ML engineering skills.,sample
+CAND_0000042,0.0,"Worked at Wayne Enterprises (fictional disqualifier); career spans HR, business analysis, and marketing with no AI/ML or search engineering skills.",sample
+CAND_0000043,0.2,"Has advanced Elasticsearch and OpenSearch skills relevant to hybrid search, but worked at Initech (fictional disqualifier) and career is primarily cloud/DevOps/mobile with no production embeddings or vector DB experience.",sample
+CAND_0000044,0.2,Entire career at Tech Mahindra (IT services disqualifier) with frontend/DevOps focus; only minor AI exposure via a small RAG side project.,sample
+CAND_0000045,0.0,"Worked at both Initech and Pied Piper (fictional disqualifiers); career entirely in project management, sales, and marketing with zero AI/ML engineering skills.",sample
+CAND_0000046,0.0,"Worked at Pied Piper (fictional disqualifier); career spans mechanical engineering, HR, and marketing operations with no AI/ML relevance.",sample
+CAND_0000047,0.2,Entire career at TCS (disqualifying firm) in project management/operations; only adjacent skills are SQL and Hadoop with no embeddings or vector DB experience.,sample
+CAND_0000048,0.0,"Worked at both Stark Industries and Initech (fictional disqualifiers), disqualifying the candidate regardless of mobile development background.",sample
+CAND_0000049,0.0,Entire career at Wayne Enterprises (fictional disqualifier) in mechanical engineering and sales roles with no AI/ML skills.,sample
+CAND_0000050,0.2,Majority career at Infosys and TCS (disqualifying IT services firms) in non-technical marketing/HR/BA roles; advanced feature engineering skill noted but career profile is fundamentally misaligned.,sample
