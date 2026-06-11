@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0018771",
+    "score": 0.2,
+    "rationale": "8.4 years of technical experience (DevOps/mobile/QA) gives some engineering depth, but career spans IT-services firm Infosys plus fictional Pied Piper with zero production ML/IR work, and self-described AI exposure is purely hobbyist API calls.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018775",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (graphic design, project management, sales, HR) across multiple fictional companies (Stark Industries, Initech) with no engineering or ML background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018833",
+    "score": 0.0,
+    "rationale": "10.8 years entirely in business analyst, HR, and customer support roles at Wipro (IT services) and fictional companies (Hooli, Stark Industries), with no engineering or ML production experience despite recent online course interest in RAG.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0018852",
+    "score": 0.0,
+    "rationale": "Operations manager and accountant career at fictional companies Wayne Enterprises and Hooli with only 3.8 years total experience; BentoML listed as 'advanced' is inconsistent keyword inflation given the entirely non-technical career history.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018863",
+    "score": 0.0,
+    "rationale": "Marketing Manager with only 1.7 years of total experience at a manufacturing firm, no engineering or ML production work, and AI exposure limited to ChatGPT experimentation for productivity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018882",
+    "score": 0.0,
+    "rationale": "Entire 5.9-year career in HR and civil engineering roles exclusively at TCS and Wipro (pure IT-services firms), with all ML-adjacent skills (GCP, Kubernetes, Hadoop, Databricks) at beginner level and no production ML or IR work.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018887",
+    "score": 0.0,
+    "rationale": "9.2-year career entirely in graphic design and marketing roles at fictional companies Wayne Enterprises and Initech plus Wipro IT services, with no engineering or ML production work despite recent online AI course interest.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0018904",
+    "score": 0.0,
+    "rationale": "Only 1.2 years of experience as a mobile developer at IT-services firm Tech Mahindra with beginner-level skills and no ML, IR, or ranking system exposure of any kind.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018926",
+    "score": 0.2,
+    "rationale": "4.6 years of frontend and QA engineering at Razorpay (a legitimate product company) provides some product-company exposure, but roles are entirely frontend/QA with no production ML or IR work, and the 'advanced Machine Learning' skill claim (18 months) is inconsistent with the career history.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0018965",
+    "score": 0.2,
+    "rationale": "M.Tech AI from IIIT Hyderabad (tier_1) and 39 months as DevOps at Swiggy (major product company) are genuine positives, but the career is entirely infrastructure/DevOps with no production embeddings, ranking, or IR evaluation work, and includes a fictional company (Dunder Mifflin).",
+    "stratum": "title_match_strong"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0016128",
+    "score": 0.2,
+    "rationale": "Career spans Business Analyst, Mechanical Engineer, and customer support lead roles with no production ML or IR engineering; recent interest in RAG is confined to online courses only.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0016190",
+    "score": 0.2,
+    "rationale": "Sole job is Java backend at Wipro (IT services) with no production ML/IR work; top skills are YOLO (computer vision) and Feature Engineering with no retrieval or ranking system experience despite a Stanford B.Sc.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0016259",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical (Content Writer, HR Manager, Marketing Manager) and includes a role at Dunder Mifflin (fictional company), with zero engineering or ML credentials.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016301",
+    "score": 0.4,
+    "rationale": "Has 42 months as Mobile Developer at Swiggy (product company) and lists Milvus as an intermediate skill, but AI/ML exposure is limited to a self-learner RAG side project with no demonstrated production IR or ranking system ownership.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0016400",
+    "score": 0.0,
+    "rationale": "Both career roles are at Wayne Enterprises (a fictional company), and despite listing FAISS and Vector Search as advanced skills, these have only 4 endorsements each and no evidence of production deployment in a real engineering context.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016582",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical HR Manager and Accountant roles with no engineering depth; summary self-describes as a marketing manager background with only ChatGPT experimentation.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0016584",
+    "score": 0.2,
+    "rationale": "Has 6 years of software engineering experience but split between Acme Corp (manufacturing) and TCS (IT services) with no ML or IR skills; AI exposure is limited to a small self-learner RAG side project.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0016678",
+    "score": 0.6,
+    "rationale": "Built a production recommendation system at Unacademy using collaborative filtering and NLP pipelines with transformers at Genpact AI, demonstrating real applied ML at product companies, but lacks explicit IR/hybrid retrieval and ranking evaluation (NDCG/MAP) ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0016692",
+    "score": 0.0,
+    "rationale": "Only 2.2 years of experience as a Graphic Designer at TCS with a marketing manager background; no engineering or ML work of any kind.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0016699",
+    "score": 0.4,
+    "rationale": "IIT Roorkee M.Sc in Machine Learning and 28 months of Vector Search experience are strong signals, but current role is Frontend Engineer at Initech (fictional company) and all AI/ML work remains at self-learner level with no production IR or ranking system shipped.",
+    "stratum": "high_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0026640",
+    "score": 0.4,
+    "rationale": "Has production recommendation/IR work at Vedantu (collaborative filtering) and relevant skills (Information Retrieval advanced, Elasticsearch, LlamaIndex), but primary expertise is computer vision (ResNet/PyTorch at Observe.AI) — an explicitly negative signal for this NLP/IR role — and no evidence of NDCG/MAP evaluation framework ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0026862",
+    "score": 0.2,
+    "rationale": "Elasticsearch and Weaviate appear in skills but actual career is cloud infrastructure (AWS/Kubernetes at Hooli) and QA automation at fictional Pied Piper, with only 2.3 years total experience and zero ML or ranking system production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026992",
+    "score": 0.0,
+    "rationale": "Entire 12-year career is non-technical roles (Sales Executive, Marketing Manager, HR Manager, Graphic Designer) at TCS and fictional companies (Initech, Pied Piper), with zero production ML or IR engineering work despite a PhD in Data Science.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0027006",
+    "score": 0.2,
+    "rationale": "Entire career at IT services firms (Cognizant, Tech Mahindra) doing cloud infrastructure and mobile dev with no ML/IR production work; Pinecone listed as 'advanced' for 57 months appears keyword-inflated given all job descriptions describe only cloud/DevOps and Android work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027009",
+    "score": 0.0,
+    "rationale": "Only 1.1 years total experience in a non-technical operations/brand-design role at TCS, with AI exposure limited to ChatGPT experimentation and no engineering or ML background whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0027020",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning business analysis, graphic design, and customer support across multiple fictional companies (Pied Piper, Stark Industries) and TCS IT services, with no ML engineering or IR production work despite a B.Tech in AI from Thapar.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0027048",
+    "score": 0.0,
+    "rationale": "Entire 15-year career in non-technical HR, sales, and accounting roles at IT services firms (Wipro, TCS, Infosys) and fictional Dunder Mifflin, with zero ML or IR engineering experience and skills list showing no production ML depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027098",
+    "score": 0.0,
+    "rationale": "Career entirely as an Accountant at fictional Initech and Infosys IT services, self-described as a marketing manager, with no ML engineering or IR production work despite Image Classification appearing in skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027234",
+    "score": 0.2,
+    "rationale": "Holds an M.E. in Computer Engineering from Thapar (tier_2) and lists CNN as an advanced skill, but career is entirely business analysis at fictional Initech and Infosys IT services with no ML/IR ranking production experience and no evaluation metric ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027283",
+    "score": 0.0,
+    "rationale": "Career is mechanical engineering, accounting, and content writing at fictional Stark Industries and TCS IT services, with no ML, NLP, or IR engineering experience and a background entirely unrelated to the role.",
+    "stratum": "top_retrieval_dense"
+  }
+]

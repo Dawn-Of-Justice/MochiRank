@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0020407",
+    "score": 0.0,
+    "rationale": "HR Manager whose entire career spans HR, graphic design, and accounting roles at fictional companies (Pied Piper) with zero engineering or ML experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0020456",
+    "score": 0.2,
+    "rationale": "Full-stack engineer with 9.6 years, but career is entirely at IT services firms (TCS, Accenture) and a fictional company (Stark Industries), with only self-taught RAG side-project AI exposure and no production ML/IR work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020471",
+    "score": 0.0,
+    "rationale": "Non-technical Project Manager whose roles at fictional companies (Initech, Stark Industries) cover operations, business analysis, and HR with no AI/ML engineering background beyond recent online courses.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0020603",
+    "score": 0.0,
+    "rationale": "Graphic designer and content writer with career at fictional companies (Stark Industries, Dunder Mifflin) doing creative and marketing work; no ML or software engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020666",
+    "score": 0.4,
+    "rationale": "Has BM25 advanced skill (45 months) and work at product companies (CRED, Swiggy), but career is web/.NET development with no evidence of production embeddings, vector DB, or ranking evaluation framework work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020677",
+    "score": 0.2,
+    "rationale": "DevOps/Java engineer whose entire 7.2-year career is at IT services firms (Infosys x2, Wipro) with no product-company or production ML/IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020678",
+    "score": 0.2,
+    "rationale": "Claims advanced LLM fine-tuning (51 months) despite a career as a .NET developer at a manufacturing firm (Globex) and TCS, with no supporting IR or search work in role descriptions, indicating keyword inflation.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0020708",
+    "score": 0.8,
+    "rationale": "Search Engineer at PolicyBazaar who built production semantic search over 500K documents using sentence-transformers (bge-base) and FAISS, owns the RAG eval framework, and has Learning to Rank expert-level expertise — directly matching the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0020760",
+    "score": 0.0,
+    "rationale": "Sales Executive and accountant with no engineering or ML background, whose summary explicitly self-identifies as a marketing manager curious about AI tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020877",
+    "score": 0.8,
+    "rationale": "Applied ML Engineer with production IR experience across two product companies (CRED: sentence-transformers/FAISS semantic search; BYJU'S: RAG pipeline with Pinecone), Qdrant expertise, QLoRA fine-tuning, and Stanford tier_1 education.",
+    "stratum": "tier1_education"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0029719",
+    "score": 0.4,
+    "rationale": "Has Pinecone (advanced, 20 months) and product company experience at Paytm (IIT Kharagpur grad), but primary expertise is computer vision and ASR — a category the JD explicitly flags as a negative signal due to the need to re-learn NLP/IR fundamentals — and only 3.7 years total experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029739",
+    "score": 0.2,
+    "rationale": "Only 1.3 years of experience as a Java backend developer at Flipkart with no production ML or IR work; AI exposure is limited to self-directed online courses and a small RAG side project, making this fundamentally the wrong profile for a senior ranking/retrieval role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0029795",
+    "score": 0.2,
+    "rationale": "Career spans frontend work at Pied Piper (a fictional company — a hard negative signal) and DevOps at TCS (IT services), with AI exposure only at self-learner level via a small RAG side project; no production IR, ranking, or embeddings experience despite 6 years total.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029832",
+    "score": 0.0,
+    "rationale": "Entire 8.7-year career is non-technical — Sales Executive and Accountant at TCS and Content Writer at Acme Corp — with zero engineering or ML depth; AI curiosity is limited to casual ChatGPT experimentation, making this profile effectively identical to the non-fit anchor.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029867",
+    "score": 0.0,
+    "rationale": "11.9-year career is entirely non-technical (brand design, business analyst, sales) with stints at Pied Piper (fictional company) and Infosys (IT services), and the summary explicitly describes a marketing manager background with only casual ChatGPT experimentation as AI exposure.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0029879",
+    "score": 0.2,
+    "rationale": "Holds an IIT Kharagpur B.Sc in ML (strong education signal) but the entire 4.5-year career has been non-technical — customer support, sales executive at Globex/Infosys — with no production engineering or ML work whatsoever, and the summary mirrors the marketing manager non-fit template.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029920",
+    "score": 0.0,
+    "rationale": "Both career entries are at fictional companies (Stark Industries, Pied Piper) with mismatched role descriptions (customer support, content writing) contradicting the Mechanical Engineer title, tier_4 education only, and no ML or IR engineering experience of any kind.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029928",
+    "score": 0.2,
+    "rationale": "Data engineering background (Spark, Airflow, Snowflake/dbt) at Capgemini (IT services only) with 2.1 years total; skills list shows TensorFlow/CNN but those reflect general ML, not production IR or retrieval-ranking systems, and the sole employer is an IT-services firm.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0029965",
+    "score": 0.4,
+    "rationale": "Has Recommendation Systems listed as advanced skill with 34 months duration and product company experience at Zomato, but actual job descriptions describe cloud/DevOps work (AWS, Terraform, Kubernetes) with no evidence of production retrieval or ranking evaluation — skill claim outpaces demonstrated work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029980",
+    "score": 0.0,
+    "rationale": "Current role is Operations Manager at Wayne Enterprises (a fictional company — hard negative signal), prior role is Operations Manager at Infosys (IT services), with a marketing manager summary and no engineering or ML depth; only notable technical skill is OpenCV which is irrelevant to NLP/IR.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0017842",
+    "score": 0.0,
+    "rationale": "Career is entirely marketing/operations roles at fictional honeypot companies (Initech, Wayne Enterprises) with zero ML, IR, or engineering work; skills are Angular and Salesforce CRM with no retrieval or ranking signals.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017852",
+    "score": 0.2,
+    "rationale": "Only 2.6 years of experience, entire career at HCL (IT services) in frontend/backend web dev, and self-described AI exposure is limited to online courses and a small RAG side project with no production IR or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0017867",
+    "score": 0.0,
+    "rationale": "Career spans project management and sales at fictional honeypot companies (Dunder Mifflin, Pied Piper) and IT-services firms (Infosys, Wipro) with no ML, retrieval, or ranking experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017979",
+    "score": 0.2,
+    "rationale": "Despite an IIT Kanpur B.Sc (tier_1), the entire 13-year career is non-technical operations and business analyst roles at fictional companies (Pied Piper, Wayne Enterprises) and manufacturing firms, with no ML or IR production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0017982",
+    "score": 0.2,
+    "rationale": "Entire 3.7-year career is a single data-pipeline engineering role at Accenture (consulting-only disqualifier per JD), and while skills list Vector Search and pgvector, the actual work is Airflow/Spark ETL with no production IR or ranking system ownership.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018038",
+    "score": 0.0,
+    "rationale": "Career is HR management and accounting at fictional honeypot companies (Dunder Mifflin, Pied Piper) and IT-services firms (Infosys, Wipro) with no engineering, ML, or retrieval work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018065",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience in a customer support/accounting role at a manufacturing company, with no ML, IR, or even software engineering background despite a tier_4 Data Science degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018141",
+    "score": 0.0,
+    "rationale": "Career is mechanical engineering, marketing, and accounting roles exclusively at fictional honeypot companies (Wayne Enterprises, Pied Piper x2) and Wipro (IT services), with no ML or IR experience despite a tier_3 Data Science degree.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018211",
+    "score": 0.2,
+    "rationale": "IIIT Hyderabad M.S. in ML (tier_1) provides academic foundation, but the entire 3.5-year career is a sales/operations role at Wipro (IT services) with no production ML, IR, or ranking work performed.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018225",
+    "score": 0.0,
+    "rationale": "Twelve-year career is entirely marketing and sales across multiple fictional honeypot companies (Stark Industries, Pied Piper x2, Initech) with no engineering, ML, or technical work of any kind.",
+    "stratum": "random"
+  }
+]

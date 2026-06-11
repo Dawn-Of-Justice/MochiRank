@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0018327",
+    "score": 0.2,
+    "rationale": "9.6yr full-stack/DevOps career at a fictional company (Stark Industries) plus Accenture with no IR, embeddings, or ranking work; AI exposure is self-learner only with no production ML evidence.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0018366",
+    "score": 0.0,
+    "rationale": "Entirely non-technical profile — Wipro accountant and marketing manager roles plus content writing at fictional Initech — with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018439",
+    "score": 0.4,
+    "rationale": "IISc M.S. ML is a strong credential and IR/NLP skills are claimed as advanced, but career history shows data warehouse and ETL engineering (Snowflake/dbt/Airflow) with no evidence of production embedding-based retrieval or ranking systems deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018499",
+    "score": 1.0,
+    "rationale": "7.2yr career spanning Flipkart LTR/LLM fine-tuning, Google Staff ML, and Zomato hybrid BM25+BGE/FAISS pipeline at 50M+ QPS — with expert-level Learning to Rank (70 months) and Information Retrieval skills from MIT and NIT Surathkal; fully matches every core requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0018549",
+    "score": 0.8,
+    "rationale": "6.8yr production ML career at Uber (LTR ranking layer, relevance labeling pipeline) and Flipkart (sentence-transformer recommendation at 10M+ users) with expert Elasticsearch (73mo), Qdrant (74mo), and OpenSearch skills and a Stanford M.Tech — missing only explicit NDCG/MAP eval framework ownership.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0018643",
+    "score": 0.2,
+    "rationale": "9.9yr career entirely at IT services firms (Accenture, HCL, Mphasis) and fictional Wayne Enterprises doing QA/Java/mobile work; LangChain and Computer Vision skills signal framework enthusiasm and wrong domain, not production IR/search experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018684",
+    "score": 0.2,
+    "rationale": "Only 2.7yr of experience limited to frontend (Stark Industries) and mobile dev (Infosys IT services), with QLoRA/Feature Engineering skill claims inconsistent with that career trajectory and no evidence of IR, search, or ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018699",
+    "score": 0.0,
+    "rationale": "Single role at TCS doing marketing/demand-generation work described under a Mechanical Engineer title, with ASR as the top skill — entirely wrong domain with no ML engineering, IR, or production software development.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018728",
+    "score": 0.2,
+    "rationale": "4.3yr career entirely at IT services firms (Wipro, Accenture) in Android mobile and QA roles with self-learner AI exposure only; MLflow skill is relevant but no production ML, IR, or ranking experience exists.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018757",
+    "score": 0.0,
+    "rationale": "11.7yr non-technical career spanning marketing, graphic design, operations management, and content writing at Wipro, TCS, and fictional Wayne Enterprises — zero engineering or ML depth despite an M.S. ML credential from a tier_4 institution.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0014317",
+    "score": 0.2,
+    "rationale": "Career spans cloud/DevOps (Acme Corp) and Android development (Hooli) with only self-learner AI exposure via online courses; no production embeddings, retrieval, ranking, or IR system experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0014332",
+    "score": 0.4,
+    "rationale": "Strong data engineering background at product companies (Razorpay, Unacademy) with Python, Kafka, and Spark, but career is data infrastructure rather than production IR/ranking/embedding systems, with ML ambitions still self-directed rather than shipped.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014386",
+    "score": 0.0,
+    "rationale": "Career is accounting, marketing, and SEO content writing with current role at fictional company Dunder Mifflin; zero production engineering or ML work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014401",
+    "score": 0.0,
+    "rationale": "Entirely non-technical profile spanning sales, accounting, operations, and mechanical engineering at Wipro (IT services) and fictional companies (Stark Industries, Initech); no AI or software engineering experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0014440",
+    "score": 1.0,
+    "rationale": "MIT PhD + VJTI, 6.4yr at product companies (CRED, Freshworks, upGrad) with direct ownership of learning-to-rank systems, led keyword-to-embedding migration, and expert-level FAISS + advanced Elasticsearch skills aligned exactly with the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014458",
+    "score": 0.2,
+    "rationale": "8.2yr career is predominantly frontend React/Node.js work at Capgemini (IT services) and fictional company Dunder Mifflin, with AI exposure limited to self-learner API experimentation and no IR or ML production experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014527",
+    "score": 0.0,
+    "rationale": "Business analyst and customer support background with no engineering depth; recent AI curiosity limited to LangChain tutorials and online courses, with primary role at fictional company Dunder Mifflin.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014548",
+    "score": 0.0,
+    "rationale": "11yr career of brand design, graphic design, SEO content writing, and operations management at fictional companies (Stark Industries, Wayne Enterprises) and Infosys (IT services); no ML or software engineering background.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014554",
+    "score": 0.0,
+    "rationale": "Career is customer support, business consulting, and civil/mechanical engineering at fictional companies (Initech, Dunder Mifflin); the advanced Feature Engineering skill claim is contradicted by entirely non-technical roles.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014579",
+    "score": 0.0,
+    "rationale": "14.8yr career spans accounting, BA consulting, marketing, and operations at IT services firms (TCS, Wipro) and fictional companies (Pied Piper, Dunder Mifflin); no ML, IR, or software engineering work.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

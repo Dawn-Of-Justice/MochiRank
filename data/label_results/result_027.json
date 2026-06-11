@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0011056",
+    "score": 0.2,
+    "rationale": "4.7yr engineer with IT-services background (Mindtree, Mphasis) and only a self-built RAG side project for AI exposure — no production IR, embeddings, or ranking system experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0011059",
+    "score": 0.2,
+    "rationale": "7.3yr career entirely at IT-services firms (Tech Mahindra, Mindtree x2) doing frontend/QA/Java backend with zero production ML or IR work, despite an MS in AI from VIT.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0011077",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning customer support, graphic design, and civil engineering at fictional companies (Stark Industries, Initech) with no ML or engineering substance despite AI keyword listing.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0011117",
+    "score": 0.0,
+    "rationale": "14.4yr career entirely in non-technical roles (content writing, marketing, mechanical engineering, operations) across TCS, Wipro, and fictional Pied Piper with no ML or software engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011140",
+    "score": 0.6,
+    "rationale": "5.1yr ML engineer with production recommendation systems at Haptik and Ola, advanced Weaviate and RAG skills, but lacks demonstrated NDCG/evaluation-framework ownership and explicit hybrid retrieval experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0011187",
+    "score": 0.2,
+    "rationale": "4.5yr backend engineer at Razorpay and Mindtree with self-learner AI skills (LlamaIndex, Flask listed at 9 months each) and no production IR, ranking, or embeddings deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011220",
+    "score": 0.6,
+    "rationale": "3.3yr junior ML engineer at product companies (Zoho, Ola) with advanced BM25 (59 months) and Milvus skills plus production recommendation work, but limited seniority and no demonstrated evaluation-framework or LTR experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0011238",
+    "score": 0.0,
+    "rationale": "1.7yr Sales Executive at fictional Dunder Mifflin with only accounting/sales work and zero engineering or ML skills relevant to an AI ranking system role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011306",
+    "score": 0.0,
+    "rationale": "10yr non-technical career in brand design, enterprise sales, marketing, and HR across Wipro and multiple fictional companies (Pied Piper, Dunder Mifflin x2) with no ML or engineering substance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0011339",
+    "score": 0.0,
+    "rationale": "12.9yr career entirely in non-technical roles (mechanical engineering, project management, content writing, HR) at fictional companies (Wayne Enterprises x2, Pied Piper) with no ML or IR skills.",
+    "stratum": "title_match_strong"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0033502",
+    "score": 0.2,
+    "rationale": "Backend cloud engineer with two TCS IT-services stints; only AI exposure is self-learner courses and a small RAG side project with no production ML or IR deployment.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0033520",
+    "score": 0.4,
+    "rationale": "Has an advanced BM25 skill (56 months) and lightweight XGBoost/ML work at Flipkart, but career is primarily data engineering (ETL, Airflow, Spark) with no evidence of owning a production retrieval or ranking system.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033524",
+    "score": 0.0,
+    "rationale": "Marketing/operations professional with multiple fictional company entries (Initech, Wayne Enterprises, Dunder Mifflin) and zero engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033611",
+    "score": 0.0,
+    "rationale": "Entire career consists of enterprise sales and accounting at fictional companies (Hooli, Pied Piper) with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033659",
+    "score": 0.2,
+    "rationale": "Full-stack web/QA engineer at Zomato with self-learner AI exposure but no production ML or IR systems; Capgemini IT-services stint is an additional negative signal.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0033678",
+    "score": 0.2,
+    "rationale": "Only 3.2 years of experience, primarily frontend/DevOps at fictional companies (Stark Industries, Pied Piper), with no evidence of production ML or IR work despite a Pinecone skill listing.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033685",
+    "score": 0.2,
+    "rationale": "Mobile/full-stack developer with 4.1 years, including a stint at fictional Initech, with self-learner-only AI exposure and no production ML or IR systems despite some data-related skills listed.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033811",
+    "score": 0.0,
+    "rationale": "HR Manager at TCS with a brand design/marketing background across their entire 3-year career and zero ML or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033861",
+    "score": 1.0,
+    "rationale": "Senior NLP engineer with 8 years at AI/product companies (Sarvam AI, Mad Street Den, Paytm) who built a 35M-item hybrid BM25+dense retrieval system, shipped LoRA/QLoRA fine-tuning pipelines, ran live A/B tests, and holds an IIT Madras M.S. degree — directly matching all core JD requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0033890",
+    "score": 0.0,
+    "rationale": "Marketing/sales career spanning enterprise sales, SEO content writing, and business analysis including a stint at fictional Wayne Enterprises, with no technical or ML engineering work.",
+    "stratum": "random"
+  }
+]

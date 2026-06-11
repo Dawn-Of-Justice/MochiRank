@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0008048",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Accountant, Operations Manager, Customer Support) at IT-services and fictional companies with no ML, IR, or engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008049",
+    "score": 0.4,
+    "rationale": "Has 6 years of applied ML across product companies (Niramai, PolicyBazaar, Sarvam AI) with transformer-based NLP pipelines and lightweight recommendation systems, but no evidence of production vector retrieval, hybrid search, or ranking evaluation metrics (NDCG/MAP/MRR).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008199",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Content Writer, HR Manager, Marketing Manager) at fictional companies (Pied Piper, Initech, Dunder Mifflin) with no engineering or ML work of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0008202",
+    "score": 0.6,
+    "rationale": "IIT Bombay graduate with 5.7 years at product companies (Yellow.ai 43mo, Freshworks), advanced FAISS (58mo) and Haystack skills for production vector retrieval, NLP transformer pipelines, and LLM experience, though summary indicates primarily classical ML and no explicit ranking evaluation metric ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008238",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical roles (HR Manager, Mechanical Engineer, Marketing Manager, Content Writer) at fictional companies (Stark Industries, Dunder Mifflin) and TCS, with zero ML or engineering relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008312",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Mechanical Engineer, Marketing Manager, Graphic Designer) at fictional companies (Stark Industries, Dunder Mifflin, Pied Piper) with no ML, IR, or software engineering experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0008314",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career as Graphic Designer, Civil Engineer, and HR Manager at fictional (Initech, Dunder Mifflin) and IT-services (TCS) companies with no ML, AI, or software engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008315",
+    "score": 0.2,
+    "rationale": "Despite a PhD from IIT Roorkee in AI, the actual 12.7-year career is entirely sales, project management, and operations at fictional (Initech, Hooli) and IT-services (TCS) companies, with Sentence Transformers listed as 'advanced' after only 4 months indicating keyword inflation rather than genuine IR production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008419",
+    "score": 0.2,
+    "rationale": "8 years of software engineering across mostly IT-services firms (Tech Mahindra, Accenture, Mphasis) with self-admitted surface-level AI exposure; PEFT listed as advanced for 56 months is inconsistent with a career of QA, DevOps, and mobile development, suggesting keyword inflation.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0008430",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical HR and project management roles at Infosys and fictional companies (Dunder Mifflin, Initech) with no ML, search, or engineering experience, only ChatGPT-level AI curiosity mentioned in summary.",
+    "stratum": "low_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0009055",
+    "score": 0.0,
+    "rationale": "Honeypot profile with fictional companies (Dunder Mifflin, Initech, Stark Industries), a marketing-focused summary under a Civil Engineer title, and zero ML/IR skills — no relevance to the role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0009109",
+    "score": 0.2,
+    "rationale": "Entire 3.7-year career at Accenture (IT services only) doing .NET/mobile development with no production ML or IR experience; RAG and Milvus appear only as beginner side-project skills (9 months) with no embedding retrieval work shipped to real users.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0009128",
+    "score": 0.0,
+    "rationale": "Single role at Hooli is a marketing demand-generation position with skills limited to TTS, PowerPoint, SAP, and frontend frameworks — no engineering or ML experience whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0009169",
+    "score": 0.0,
+    "rationale": "Honeypot profile with fictional companies (Stark Industries, Wayne Enterprises); actual career is accounting and mechanical engineering with no ML/IR work, despite MLflow listed as a skill.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0009231",
+    "score": 0.2,
+    "rationale": "Only 1.8 years total experience at HCL (IT services) as a QA Engineer, well below the 5-9 year requirement; advanced-level skill claims for OpenSearch (43 months) and MLOps (40 months) far exceed their actual career duration, indicating keyword inflation.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0009328",
+    "score": 0.2,
+    "rationale": "7.2 years of experience is all at IT-services firms (Infosys, Wipro, Tech Mahindra) doing full-stack/mobile dev with no product company or IR/ranking experience, and the top skill is Computer Vision — a domain explicitly flagged as a negative signal for this NLP/IR role.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0009335",
+    "score": 0.0,
+    "rationale": "Project Manager with a marketing-focused summary whose career spans only fictional companies (Hooli, Pied Piper) in non-technical operations and PM roles, with no ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009494",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — Civil Engineer at fictional Dunder Mifflin, Graphic Designer, and Sales Executive at Infosys — with a marketing-manager summary and only beginner frontend skills at 3-5 months duration; no relevance to ML or IR.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009507",
+    "score": 0.0,
+    "rationale": "9.4 years across Customer Support, Mechanical Engineer, Business Analyst, and Marketing Manager roles at Initech, Wipro, Pied Piper, and Stark Industries (mix of fictional and IT-services companies) with no ML, search, or engineering production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009679",
+    "score": 0.2,
+    "rationale": "Only 1.4 years of experience as a BA/PM at a single consulting firm with no ML or IR production work; Statistical Modeling and Spark appear as intermediate skills but there is no evidence of embedding retrieval, ranking systems, or any deployed ML.",
+    "stratum": "random"
+  }
+]

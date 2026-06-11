@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0027297",
+    "score": 0.0,
+    "rationale": "Career is entirely in enterprise sales, project management, and operations (Acme Corp, Hooli, Initech, Pied Piper — two of which are fictional honeypot companies), with a marketing-manager profile and zero ML, IR, or engineering experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0027384",
+    "score": 0.2,
+    "rationale": "BITS Pilani tier_1 education with Python (advanced, 38 months) and Deep Learning (advanced, 52 months) provide some ML-adjacent foundation, but career is mobile dev / DevOps / frontend (Swiggy, Wayne Enterprises — fictional, Razorpay) with no production IR, embeddings, retrieval, or ranking experience, and AI/ML is explicitly described as self-learner level.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027391",
+    "score": 0.2,
+    "rationale": "Has product-company exposure at Flipkart (mobile/Android dev) and a B.E. in Data Science from PES University (tier_2), but the entire career is .NET and mobile development with no ML skills in the top-5 and no embeddings, retrieval, or ranking experience; Dunder Mifflin stint is a fictional company.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0027414",
+    "score": 0.0,
+    "rationale": "Content Writer and Graphic Designer roles at Wipro (IT services) and Hooli, a marketing-manager profile with ChatGPT curiosity, and no production engineering or ML work; Diffusion Models listed as advanced despite a wholly non-technical career indicates keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027415",
+    "score": 0.0,
+    "rationale": "Actual work across all three roles is marketing leadership, demand-generation, and SEO at Hooli, Initech (fictional), and Infosys (IT services) — entirely non-technical and non-ML, with beginner-level web skills (FastAPI, Vue.js) insufficient for a production AI/ranking role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0027442",
+    "score": 0.0,
+    "rationale": "Career spans accounting, customer support, project management, and sales across Wayne Enterprises (fictional) and Stark Industries (fictional) and Wipro (IT services), with a marketing-manager profile and zero engineering or ML depth despite an AI B.Tech title.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027461",
+    "score": 0.0,
+    "rationale": "Sole role is Customer Support team lead at Globex Inc with only 3.1 years of experience; skills are Marketing, Terraform, Excel, Tally, and Webpack — no ML, Python, or IR engineering work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027494",
+    "score": 0.0,
+    "rationale": "Career is brand design, creative direction, and operations at Globex Inc and Infosys (IT services) with a stint at Wayne Enterprises (fictional), an M.Sc in Commerce, and top skills in Content Writing and CSS — zero engineering, ML, or IR experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0027519",
+    "score": 0.0,
+    "rationale": "Sole employer is Initech (fictional company), actual role is marketing leadership per description despite Accountant title, and skills (Webpack, Photoshop, Object Detection, ETL) show no coherent ML or IR engineering background.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027595",
+    "score": 0.0,
+    "rationale": "Career is Content Writer at Pied Piper (fictional) and a business-analyst role at TCS (IT services), with skills dominated by SEO, Sales, and Redux — a marketing/IT-services profile with no production ML, embeddings, or ranking experience.",
+    "stratum": "low_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0002246",
+    "score": 0.2,
+    "rationale": "Eight years as a full-stack/DevOps/frontend engineer with self-learner AI exposure only; lists Haystack as an advanced skill but career shows no production IR or ranking work, and a role at fictional company Dunder Mifflin is a hard honeypot signal.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002332",
+    "score": 0.0,
+    "rationale": "Career is entirely in sales, marketing, and accounting (Wipro + Stark Industries fictional company); no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002344",
+    "score": 0.4,
+    "rationale": "Solid ML production experience (PyTorch, MLOps) with a strong IIT Delhi B.Sc AI pedigree, but specialization is entirely computer vision (ResNet, YOLO, Object Detection) with no evidence of NLP, IR, retrieval, or ranking work — a domain the JD explicitly flags as a disqualifier without NLP/IR crossover.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002345",
+    "score": 0.0,
+    "rationale": "Only three years of experience in a project-manager/operations role at fictional Wayne Enterprises with no technical engineering or ML skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002389",
+    "score": 0.6,
+    "rationale": "Advanced Milvus (59 months) and Semantic Search (28 months) skills are strong IR signals, with backend engineering at Flipkart and a startup, but career titles and summary skew data-engineering rather than ML ranking, and one stint at Accenture (IT services) is a mild negative.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0002417",
+    "score": 0.0,
+    "rationale": "Fourteen years in HR, project management, and customer support exclusively at IT-services firms (Infosys, TCS, Wipro) with no engineering or ML work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002432",
+    "score": 0.2,
+    "rationale": "Only 2.7 years of experience focused on data pipelines (Kafka, Spark, Airflow) with no IR, embeddings, or ranking work, and a significant stint at TCS (IT services) with no product-company ML exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002677",
+    "score": 0.0,
+    "rationale": "Career spans business analysis, accounting, and graphic design at IT-services and fictional companies (Stark Industries, Pied Piper) with no technical AI or engineering work despite listing BentoML as an intermediate skill.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002701",
+    "score": 0.0,
+    "rationale": "Entire career in content writing, operations, graphic design, and sales at fictional companies (Pied Piper, Dunder Mifflin) with no ML or engineering relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002779",
+    "score": 0.0,
+    "rationale": "14.4 years across customer support, HR, civil engineering, and accounting at fictional companies (Stark Industries, Dunder Mifflin) with zero AI or software engineering background.",
+    "stratum": "low_behavioral"
+  }
+]

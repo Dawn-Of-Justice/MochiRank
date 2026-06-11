@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0024543",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Graphic Designer, HR Manager, Marketing Manager) at multiple honeypot companies (Dunder Mifflin, Pied Piper, Initech) with zero ML/IR/NLP skills or production engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024550",
+    "score": 0.2,
+    "rationale": "IIT Bombay M.Tech in AI is a strong credential, but the entire career spans Sales Executive and Customer Support at TCS (IT services) plus Operations Manager at fictional Dunder Mifflin, with no production ML or IR work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024552",
+    "score": 0.2,
+    "rationale": "Only 2.6 years of experience, career limited to QA/DevOps at fictional Wayne Enterprises, and ML exposure is self-learner level only (small RAG side project, no production IR/ranking or embedding systems).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024615",
+    "score": 0.0,
+    "rationale": "Entire career in non-technical roles (Project Manager, Mechanical Engineer, Civil Engineer, Operations Manager) at honeypot companies (Wayne Enterprises, Pied Piper x2) with no ML, NLP, or IR production experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024620",
+    "score": 0.8,
+    "rationale": "Owned the production ranking layer at PharmEasy (evolved hand-tuned scoring to learning-to-rank), holds Elasticsearch and Information Retrieval expert-level skills, led embedding-based retrieval migration at a product company, and has startup experience at Saarthi.ai — directly matching the JD's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0024625",
+    "score": 0.0,
+    "rationale": "Career is entirely in Customer Support, Graphic Design, and Marketing Manager roles at honeypot companies (Pied Piper, Wayne Enterprises x2) with only beginner-level non-ML skills despite holding ML/DS degrees.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024672",
+    "score": 0.0,
+    "rationale": "Career spans Business Analyst at fictional Pied Piper companies and Sales Executive at TCS (IT services) with skills limited to dbt, SQL, and Tally — no ML, NLP, retrieval, or ranking experience of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024696",
+    "score": 0.0,
+    "rationale": "Entire career is in Marketing Manager, Civil Engineer, and HR roles at honeypot companies (Dunder Mifflin, Pied Piper x2) and Infosys (IT services), with skills limited to dbt, Vue.js, and Salesforce CRM — completely absent of ML/IR engineering.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024724",
+    "score": 0.0,
+    "rationale": "Career entirely at IT-services firms (TCS, Infosys) and manufacturing companies in non-technical roles (HR Manager, Project Manager, Business Analyst, Accountant) with no ML, NLP, or retrieval engineering experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024757",
+    "score": 0.0,
+    "rationale": "Career in Business Analyst, Mechanical Engineer, and Operations Manager roles at honeypot companies (Wayne Enterprises, Initech) and Infosys (IT services), with only beginner-level skills and YOLO (computer vision) being the sole ML signal — no NLP or IR work.",
+    "stratum": "random"
+  }
+]

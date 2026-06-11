@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0011372",
+    "score": 0.0,
+    "rationale": "QA Engineer with only 2 years at fictional company Pied Piper (honeypot signal), no embedding/retrieval/ranking experience, and AI exposure limited to self-learner side projects.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011380",
+    "score": 0.2,
+    "rationale": "Frontend Engineer with 4 years focused on test automation and UI work at Hooli and fictional Initech; skills (MLflow, Apache Beam) are data-pipeline adjacent but there is no embedding, retrieval, or ranking systems experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011396",
+    "score": 0.0,
+    "rationale": "Graphic Designer/marketing-manager profile at fictional Initech with skills in Marketing and Tally; no engineering or ML depth whatsoever, making this a non-technical profile entirely misaligned with the role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011453",
+    "score": 0.0,
+    "rationale": "HR Manager for 4.5 years (Infosys + Globex) whose described work is demand-generation marketing and mechanical engineering design, with no ML, IR, or software engineering substance despite tier_1 education at IIIT Bangalore.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0011480",
+    "score": 0.2,
+    "rationale": "8+ years entirely at TCS and Infosys (IT services only) in Java/Android and Cloud DevOps roles with no ML or information retrieval work, disqualifying under the JD's explicit consulting-only exclusion.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0011536",
+    "score": 0.2,
+    "rationale": "7 years entirely at IT-services firms HCL and Capgemini in DevOps/frontend roles; while RAG appears in skills (29 months intermediate), the entire career at consulting-only companies with no product-company ML deployment is a hard disqualifier per the JD.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0011720",
+    "score": 0.0,
+    "rationale": "Marketing Manager with only 1.8 years at Infosys doing demand-generation/SEO work; the advanced MLOps skill claim (59 months) is implausible keyword inflation for a pure marketing role with zero engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011739",
+    "score": 0.2,
+    "rationale": "Frontend/Java Developer with 3.7 years split between Hooli and fictional Wayne Enterprises; LoRA listed as a skill but the actual work history is mobile/Android development with no retrieval or ranking systems experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011764",
+    "score": 0.2,
+    "rationale": "Cloud Engineer with 2.6 years at Razorpay (product company, positive signal) but skills and work are in OpenCV, image classification, and speech recognition rather than NLP/IR — the JD explicitly flags CV/speech backgrounds without NLP as a poor fit.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011783",
+    "score": 0.2,
+    "rationale": "9.4 years as a .NET Developer with Milvus listed as a skill (19 months) and some product-company exposure at Razorpay, but the primary stint is at Cognizant (IT services) and two roles are at fictional Wayne Enterprises and Hooli, with no demonstrated IR/ranking system ownership.",
+    "stratum": "random"
+  }
+]

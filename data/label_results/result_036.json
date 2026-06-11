@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0013994",
+    "score": 0.0,
+    "rationale": "Operations Manager at TCS with only 1.5 years of experience; career is entirely marketing/operations at an IT-services firm with no ML, IR, or engineering work whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0014024",
+    "score": 0.0,
+    "rationale": "Career spans Marketing Manager at Dunder Mifflin and Mechanical Engineer at Wayne Enterprises — both fictional companies — with accounting and sales roles and zero ML or software engineering experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014060",
+    "score": 0.0,
+    "rationale": "Entirely HR Manager and Business Analyst roles at fictional companies (Pied Piper, Stark Industries, Dunder Mifflin) with no engineering or ML work; skills listed (Kafka, Terraform) are unsubstantiated by any technical career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014099",
+    "score": 0.4,
+    "rationale": "Genuine backend/data engineering experience at real product companies (CRED, PhonePe) with FAISS and LlamaIndex skills, but career is data-pipeline and forecasting focused with no direct IR/ranking system ownership, one role is at a fictional company (Initech), and education is tier_4.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0014100",
+    "score": 0.0,
+    "rationale": "Marketing Manager career (marketing, accounting, operations, graphic design) with no engineering or ML work; AI skills like YOLO and Databricks are entirely unsupported by any technical role description.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014126",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Content Writer, Sales Executive, Graphic Designer, Marketing Manager) with roles at fictional companies (Stark Industries) and IT services (TCS), and an M.Sc in Commerce — no engineering or ML background.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014159",
+    "score": 0.0,
+    "rationale": "Career is Accountant, Content Writer, and Graphic Designer at fictional companies (Pied Piper, Dunder Mifflin) and IT services (Wipro); Pinecone listed as an advanced skill has zero credibility given no technical roles in career history.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014191",
+    "score": 0.0,
+    "rationale": "Sales Executive at Wipro (IT-services firm) with only 1.5 years of experience, no ML or software engineering skills, and a career description that contradicts the title (mechanical engineering design work).",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014205",
+    "score": 0.0,
+    "rationale": "Entire career in Sales and Marketing at Infosys (IT services) and Stark Industries (fictional company), with no ML or engineering background; YOLO listed as advanced skill is unsupported by any technical work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014248",
+    "score": 0.0,
+    "rationale": "Business Analyst and Customer Support career across multiple fictional companies (Wayne Enterprises, Pied Piper, Dunder Mifflin) and IT services (Infosys) with no ML, IR, or engineering work at all.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

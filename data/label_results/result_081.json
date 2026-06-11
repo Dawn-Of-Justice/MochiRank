@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0031387",
+    "score": 0.2,
+    "rationale": "Holds a B.Sc CS from IIIT Bangalore (tier_1) and a Ph.D in AI, providing some educational adjacency, but the actual career is entirely accounting and content-writing with zero production ML or IR work and only 1.2 years of experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0031543",
+    "score": 0.0,
+    "rationale": "Mechanical engineer with 1.4 years of experience working as a customer support team lead at Initech (a fictional-company honeypot) with no ML, NLP, or IR skills and a self-described marketing-manager background.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031557",
+    "score": 0.0,
+    "rationale": "9.4-year career as a civil/mechanical engineer spanning Wipro (IT services) and Pied Piper (fictional company honeypot) in accounting and brand-design roles with no ML or IR skills whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031593",
+    "score": 0.8,
+    "rationale": "7.8-year ML engineer with expert-level Elasticsearch and BM25, hands-on learning-to-rank deployment for e-commerce search at Genpact AI, a RAG pipeline using OpenAI embeddings and Pinecone at Unacademy, and a sentence-transformer-based recommendation system serving 10M+ users at Aganitha — directly covering all core JD requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0031596",
+    "score": 0.0,
+    "rationale": "9.5-year career as content writer, accountant, and HR manager exclusively at IT-services firms (TCS, Infosys) and fictional companies (Initech twice), with skills limited to Forecasting, SEO, and Photoshop — no engineering or ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031678",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience, sole role is civil engineer at Wipro (IT services) performing marketing work, with a marketing-manager self-description and no ML or IR production experience despite a computer-vision skill listing.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0031811",
+    "score": 0.0,
+    "rationale": "14.6-year career comprising content writing, sales, and mechanical-engineering titles split between Wayne Enterprises (fictional-company honeypot) and Wipro (IT services), with only beginner-level miscellaneous skills and no ML or IR work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031837",
+    "score": 0.2,
+    "rationale": "Graphic designer whose entire career is at fictional companies (Initech, Wayne Enterprises, Hooli) in design, marketing, and support roles; the only ML signal is self-reported online courses in RAG and LangChain experimentation with no production ML deployment.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0031849",
+    "score": 0.2,
+    "rationale": "4.5-year Java/full-stack developer with cloud DevOps background and a small self-built RAG side project, but the production career is web APIs and Kubernetes at TCS (IT services) and Globex (manufacturing) with no production IR or ranking system ownership.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031869",
+    "score": 0.0,
+    "rationale": "9.2-year career entirely in operations management, accounting, and customer support across multiple fictional companies (Pied Piper twice, Initech) with YOLO/computer-vision as the top skill and no ML, NLP, or IR engineering experience.",
+    "stratum": "random"
+  }
+]

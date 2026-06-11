@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0015296",
+    "score": 0.0,
+    "rationale": "Operations Manager with 1.4 years of experience in manufacturing/accounting, no engineering or ML skills, and a honeypot profile with mismatched career description versus role title.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0015297",
+    "score": 0.2,
+    "rationale": "Content Writer with 1.7 years at a manufacturing firm whose career is entirely accounting/content work with no ML or IR experience, though the skills list includes Flask and FastAPI suggesting minimal adjacent technical exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015326",
+    "score": 0.0,
+    "rationale": "10-year career split across the fictional company Stark Industries plus Wipro and Infosys in non-technical Sales Executive, Marketing Manager, and Customer Support roles with no ML, IR, or engineering work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015331",
+    "score": 0.0,
+    "rationale": "6.7 years spent in Customer Support at Hooli (fictional) and as an Accountant at Wipro, with no engineering or ML content in either role description and skills limited to REST APIs, Photoshop, and Figma.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015340",
+    "score": 0.4,
+    "rationale": "5.3 years of solid data engineering (Kafka, Spark, Airflow, dbt) with advanced scikit-learn skills and a product-company stint at PharmEasy, but no production experience with embeddings, vector databases, or ranking/retrieval systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0015362",
+    "score": 0.2,
+    "rationale": "7.3 years as a web/mobile backend engineer but primary employer is the fictional Dunder Mifflin, AI exposure is self-learner level only, and top skills (Tailwind, Agile, PowerPoint) reveal no IR or ML depth.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015374",
+    "score": 0.0,
+    "rationale": "Pure Marketing Manager career across two fictional companies (Pied Piper and Dunder Mifflin) with demand-generation and enterprise sales roles, zero engineering or ML work of any kind.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0015389",
+    "score": 0.2,
+    "rationale": "Only 1.8 years of experience with a cloud/DevOps career description at Swiggy that contradicts the claimed advanced PyTorch skill, and the stated PhD credentials are implausible given the total experience timeline, indicating likely inflated profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015420",
+    "score": 0.0,
+    "rationale": "Civil Engineer with 1.8 years at the fictional Wayne Enterprises performing business analyst work, with skills limited to Accounting, Salesforce CRM, and Project Management — no technical or ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015435",
+    "score": 0.2,
+    "rationale": "7.1 years split between Capgemini (IT services, test automation) and Acme Corp (generic SaaS web development) with intermediate TensorFlow listed but no evidence of production IR, embeddings, or ranking work in any role description.",
+    "stratum": "top_retrieval_dense"
+  }
+]

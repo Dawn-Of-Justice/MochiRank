@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0010498",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (content writing, HR, operations, sales) at fictional companies (Dunder Mifflin, Stark Industries, Wayne Enterprises) with zero ML or engineering work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0010526",
+    "score": 0.0,
+    "rationale": "Entire career is at IT services firms (TCS, Infosys) or a fictional company (Wayne Enterprises) in sales and engineering roles with no ML, NLP, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010528",
+    "score": 0.0,
+    "rationale": "Both roles are at Initech (fictional company) as Civil Engineer and Accountant — non-technical profile with no ML or IR work despite some backend skill keywords listed.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010530",
+    "score": 0.2,
+    "rationale": "8.9 years of web/backend engineering (React, Node.js, Spring Boot) but AI/ML exposure is self-learner only — a small RAG side project — with no production IR or ranking experience, and primary employers include Cognizant and Accenture (IT services/consulting).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010547",
+    "score": 0.0,
+    "rationale": "Current title is Accountant with prior roles as Graphic Designer and Customer Support at fictional/IT-services companies (Initech, TCS), with AI interest limited to recent LangChain online courses — a clear career-pivot-to-AI profile with no engineering depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0010611",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience with a single DevOps role at Initech (fictional company); AI/ML exposure is self-learner level only with no production ML or IR work despite advanced Feature Engineering listed as a skill.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010641",
+    "score": 0.2,
+    "rationale": "5.8 years as a full-stack/QA engineer with backend fundamentals, but primary employer is Pied Piper (fictional) and Accenture (consulting), and AI/ML is self-learner level only with no production ranking, retrieval, or embedding systems experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0010685",
+    "score": 1.0,
+    "rationale": "6.7 years at product-focused AI companies (Rephrase.ai, Microsoft, Mad Street Den) with hands-on production experience in semantic search (sentence-transformers, FAISS, bge-base), learning-to-rank (XGBoost, LightGBM), Elasticsearch, and relevance evaluation pipelines — precisely matching every core requirement of the JD.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010742",
+    "score": 0.0,
+    "rationale": "Entire career is in Customer Support roles at fictional companies (Dunder Mifflin, Pied Piper) with a marketing manager background and no engineering or ML work at all.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010770",
+    "score": 0.8,
+    "rationale": "IIT Delhi M.Tech with 15+ years including Recommendation Systems Engineer roles at Indian AI-product companies (Aganitha, Verloop.io, Observe.AI), shipping XGBoost/LightGBM ranking models, semantic search with sentence-transformers and FAISS, and expert-level BM25, Qdrant, and pgvector — strong alignment with core JD requirements though TTS skill and some role repetition in descriptions are minor concerns.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

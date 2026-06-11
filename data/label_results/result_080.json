@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0030953",
+    "score": 0.8,
+    "rationale": "7.8-year search engineer across product companies (Nykaa, Vedantu, Observe.AI) who shipped XGBoost/LightGBM ranking models, semantic search with sentence-transformers + FAISS (bge-base), and led a keyword-to-embedding migration — directly matching core IR and ranking requirements, with Learning-to-Rank advanced for 51 months and Georgia Tech tier_1 education.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0031003",
+    "score": 0.0,
+    "rationale": "Graphic Designer at fictional Wayne Enterprises with a marketing/customer-support background and 2.5 years of experience; no ML, NLP, search, or retrieval engineering work of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031036",
+    "score": 0.2,
+    "rationale": "Cloud/DevOps engineer with only 2.2 years entirely at IT-services firms (HCL, Cognizant) doing test automation and frontend work; AI exposure is self-described as self-learner level with a small RAG side project, and listed ML skills (Object Detection, Image Classification) are CV-focused rather than IR/ranking.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031123",
+    "score": 0.0,
+    "rationale": "10.6-year career spent entirely in non-technical roles (HR Manager, Marketing Manager, Project Manager, Customer Support) at fictional Pied Piper and TCS; no engineering, ML, or information-retrieval work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031193",
+    "score": 0.0,
+    "rationale": "HR Manager career at IT-services firm Infosys and fictional Wayne Enterprises (two roles), with actual work in accounting, business analysis, and marketing; no ML or engineering depth despite a B.Tech EE background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031228",
+    "score": 0.0,
+    "rationale": "11-year career in Sales, HR, and Marketing across TCS (IT services) and fictional Initech; skills listed are mostly beginner-level non-ML tools (Excel, Terraform, Snowflake) with no evidence of any engineering or ML production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031284",
+    "score": 0.4,
+    "rationale": "DevOps engineer at product company Swiggy for 4 years with advanced Qdrant (32 months) and LlamaIndex skills, but the entire career description is cloud infrastructure (AWS, Terraform, Kubernetes) and the summary explicitly frames AI/ML as self-learner level with a side project — no production ML or IR system ownership demonstrated.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0031306",
+    "score": 0.4,
+    "rationale": "Junior ML engineer at upGrad (product company) with IISc tier_1 education and advanced Information Retrieval (39 months) and intermediate Milvus (35 months) skills, but only 3 years of experience, and the sole career description covers time-series forecasting for supply-chain — not production IR or ranking systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031353",
+    "score": 0.2,
+    "rationale": "6.2-year software engineer with a full-stack web/backend profile (React, Node.js, Java), a stint at Accenture consulting, and a role at fictional Dunder Mifflin; top ML skill is Diffusion Models (computer vision/generative), and AI exposure is self-learner level — no production NLP, search, or ranking work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0031380",
+    "score": 0.0,
+    "rationale": "10-year career across entirely non-technical roles (Business Analyst, HR Manager, Operations Manager, Civil Engineer) at multiple fictional companies (Stark Industries, Wayne Enterprises) and TCS; no ML, AI, or software engineering experience despite a Chemical Engineering PhD.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0033052",
+    "score": 0.0,
+    "rationale": "Career is in civil engineering and project management at fictional companies (Dunder Mifflin, Wayne Enterprises) with zero ML/AI engineering or IR/ranking experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0033058",
+    "score": 0.2,
+    "rationale": "Has a listed M.E. in Machine Learning but career consists entirely of IT-services work at Wipro (sales description) and fictional Wayne Enterprises, with no production embeddings or ranking systems experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0033065",
+    "score": 0.0,
+    "rationale": "Entire career is in marketing management and mechanical engineering at Wipro (IT services), with no ML or IR production work despite an advanced Weights & Biases skill listed.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0033088",
+    "score": 0.0,
+    "rationale": "Business analyst career spent at fictional companies (Pied Piper, Wayne Enterprises) with no production ML or IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033102",
+    "score": 0.0,
+    "rationale": "Career in graphic design and IT-services sales (TCS, Infosys) with no ML/IR production work; advanced object detection skill is inconsistent with the actual career history.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0033137",
+    "score": 0.0,
+    "rationale": "Entire career in marketing, operations, and civil engineering at IT-services firms (TCS, Infosys) and fictional Wayne Enterprises, with no ML or IR experience whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0033309",
+    "score": 0.2,
+    "rationale": "Has a listed Ph.D in Machine Learning from KIIT but actual career history shows only accounting, content writing, and graphic design roles at Hooli (fictional) with no ML engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033392",
+    "score": 0.4,
+    "rationale": "Software engineer with M.E. AI from Jadavpur University (tier_2), Semantic Search as a 35-month intermediate skill, and production backend/DevOps experience at Flipkart, but lacks any documented hands-on embeddings, NDCG, or ranking-system deployment.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0033403",
+    "score": 0.0,
+    "rationale": "HR manager career entirely at IT-services firms (Wipro, Infosys) with no technical engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033409",
+    "score": 0.0,
+    "rationale": "Civil engineer whose entire career is at three fictional companies (Pied Piper, Dunder Mifflin, Wayne Enterprises) with role descriptions completely mismatched to titles and no ML/IR background.",
+    "stratum": "title_match_strong"
+  }
+]

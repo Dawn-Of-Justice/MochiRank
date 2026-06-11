@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0013277",
+    "score": 0.2,
+    "rationale": "8.4 years as a full-stack/mobile developer at HCL and Swiggy with no production IR/search/ranking experience, self-learner AI only, and a role listed at fictional Dunder Mifflin signals a honeypot profile.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013336",
+    "score": 0.0,
+    "rationale": "Entire 12-year career spans non-technical roles (customer support, content writer, accountant, brand designer) at fictional companies Dunder Mifflin and Stark Industries with zero ML or engineering work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013350",
+    "score": 0.0,
+    "rationale": "HR Manager whose career consists of accounting, marketing, and operations roles at Wayne Enterprises (fictional) and IT-services firms Infosys/Wipro, with no ML engineering work despite a Weights & Biases skill listing.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013366",
+    "score": 0.0,
+    "rationale": "10.5-year career entirely in sales, mechanical engineering, customer support, and operations at fictional companies Stark Industries and Wayne Enterprises, with no programming or ML experience whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013393",
+    "score": 0.6,
+    "rationale": "Production experience with Pinecone, sentence-transformers, and OpenSearch at Freshworks (product company) plus collaborative filtering/XGBoost work, but primary deep-learning output is computer vision rather than IR/ranking systems and lacks demonstrated evaluation metric ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013433",
+    "score": 0.2,
+    "rationale": "5.2-year career is entirely web/API development (React, Node.js, Django) at Globex Inc and Razorpay with only a small self-built RAG side project representing AI exposure and no production ML or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013456",
+    "score": 0.6,
+    "rationale": "IIIT Bangalore graduate with advanced Vector Search (57 months) and Haystack skills, NLP pipeline work at Sarvam AI, and production ML at Flipkart, but career centers on CV/image moderation and time-series forecasting rather than ranking or IR systems with NDCG-style evaluation.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013478",
+    "score": 0.0,
+    "rationale": "Sales Executive with 2.7 years, sole employer is fictional Pied Piper (honeypot), actual work described as content writing and SEO, with zero engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013495",
+    "score": 0.2,
+    "rationale": "12-year career as graphic designer, business analyst, and operations manager at IT-services firms TCS/Wipro and fictional Initech, with only recent online courses on RAG/vector DBs and keyword-inflated MLflow skill listing indicating no production ML experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0013613",
+    "score": 0.8,
+    "rationale": "Built production semantic search with sentence-transformers and FAISS at Adobe, shipped XGBoost/LightGBM ranking models with NDCG evaluation at Razorpay, and delivered a 10M+ user recommendation system at Salesforce, with expert-level Weaviate and fine-tuning LLM skills — near-perfect IR/ranking profile held back only by 4.7 years total experience and tier_3 education.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

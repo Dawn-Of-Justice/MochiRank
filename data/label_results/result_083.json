@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0032488",
+    "score": 0.0,
+    "rationale": "Current title Civil Engineer with career entirely at fictional companies (Initech, Pied Piper), summary describes marketing manager background, and skills are beginner-level Django/GCP/Scrum with no ML or IR exposure whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0032514",
+    "score": 0.0,
+    "rationale": "Project Manager/Business Analyst career spanning sales, marketing leadership, and mechanical engineering at Globex/Initech (fictional) with no ML, NLP, or information retrieval experience; skills are BigQuery and Photoshop at beginner-intermediate level.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032515",
+    "score": 0.8,
+    "rationale": "5.1-year production search and ranking engineer at PharmEasy/Razorpay/Zoho (all product companies), evolved e-commerce ranking to LTR with XGBoost/LightGBM, owns RAG eval framework, Elasticsearch expert (62 months) and Milvus advanced, backed by Ph.D from Carnegie Mellon — strong on every core requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032520",
+    "score": 0.0,
+    "rationale": "11-year career is entirely in sales (Wayne Enterprises — fictional), marketing management (Wipro — IT services), and mechanical engineering with no ML or IR work; Reinforcement Learning listed as an intermediate skill with no supporting career evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032549",
+    "score": 0.0,
+    "rationale": "Operations Manager / Customer Support / Accountant career at Dunder Mifflin (fictional) and Infosys (IT services), with summary describing marketing-manager background and zero technical ML or IR skills in their profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032639",
+    "score": 0.2,
+    "rationale": "3.7-year frontend/Java/full-stack engineer at Initech (fictional) and Razorpay with self-learner AI interest and a small RAG side project, but no production ML or IR work and MLflow listed as advanced without any corroborating career evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032656",
+    "score": 0.0,
+    "rationale": "Entire 8-year career is Content Writer and Accountant at Infosys and Wipro (IT-services firms only), with a marketing-manager summary and beginner-level skills in HTML and Accounting — no engineering or ML background at all.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0032701",
+    "score": 0.2,
+    "rationale": "Only 2.4 years of experience as DevOps/Cloud Engineer at TCS (IT services) and Dunder Mifflin (fictional), acknowledges no production ML work in summary; Milvus listed as advanced (53 months) is inconsistent with a 2.4-year career and has no career-level support.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0032794",
+    "score": 0.0,
+    "rationale": "11.6-year career is Accountant and Marketing Manager at Stark Industries and Wayne Enterprises (both fictional) and Infosys (IT services), with a marketing-manager summary and skills limited to Snowflake/Apache Beam at beginner level — no ML or IR engineering.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032807",
+    "score": 0.8,
+    "rationale": "MLE at CRED (product-company fintech) for 4.2 years, led migration from keyword search to embedding-based retrieval, built RAG pipeline with Pinecone document ingestion, holds OpenSearch expert and Milvus advanced skills, and is backed by IIT Roorkee (tier_1) — directly aligned with the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

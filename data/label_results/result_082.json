@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0031903",
+    "score": 0.0,
+    "rationale": "Business Analyst at TCS with a background entirely in marketing/operations and no ML, IR, or engineering production experience despite an M.S. in Computer Engineering.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0031912",
+    "score": 0.0,
+    "rationale": "Operations Manager with only 1.2 years total experience at a fictional company (Stark Industries), no ML or engineering background, and beginner-level tools unrelated to AI/IR.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031958",
+    "score": 0.0,
+    "rationale": "HR Manager at a fictional company (Stark Industries) with 2 years of non-technical experience and no NLP, retrieval, or ML production work anywhere in the profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0032033",
+    "score": 0.2,
+    "rationale": "Predominantly backend/frontend engineer at Accenture (consulting) and a fictional company (Stark Industries) with Qdrant listed as a skill but only as a side-project RAG experiment, and no production IR, embeddings, or ranking evaluation experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032182",
+    "score": 0.2,
+    "rationale": "Claims advanced Vector Search (44 months) and PyTorch (59 months) but career descriptions describe Android and full-stack development at fictional companies (Wayne Enterprises, Hooli) and IT-services firms (Infosys, HCL), indicating keyword inflation with no verifiable IR/ranking production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032270",
+    "score": 0.4,
+    "rationale": "IIIT Bangalore graduate with advanced LLM fine-tuning and Qdrant experience, but 43 of 53 career months are at Tech Mahindra (IT services) with only 9 months at Zomato doing time-series forecasting, and no explicit ranking evaluation (NDCG/MAP) or hybrid retrieval production experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0032271",
+    "score": 0.6,
+    "rationale": "6.6 years across product companies (Mad Street Den, Freshworks, Razorpay) with production recommendation and ranking systems using XGBoost and collaborative filtering, Weaviate vector-DB experience, and PEFT fine-tuning, though explicit NDCG/MAP evaluation ownership and dense hybrid retrieval are not evidenced.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032278",
+    "score": 0.0,
+    "rationale": "Career spans content writing, marketing management, graphic design, and civil engineering entirely at IT-services firms (TCS, Wipro), with zero ML or engineering production work despite a Ph.D listed in Data Science.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0032290",
+    "score": 0.2,
+    "rationale": "IIT Roorkee graduate with strong data-engineering skills (Spark, Airflow, Spark) but career is predominantly pipeline/infrastructure work, one role is at a fictional company (Stark Industries), and the candidate self-describes as aspiring to transition into ML with no production IR or ranking system experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032444",
+    "score": 0.0,
+    "rationale": "Marketing Manager at Infosys for 4.8 years with no engineering background; claims advanced Vector Search with only 12 months and 3 endorsements — a clear case of keyword inflation from a non-technical profile at an IT-services firm.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

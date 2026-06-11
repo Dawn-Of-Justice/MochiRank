@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0032822",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (PM, BA, Sales, Customer Support) at IT-services firms (Infosys, TCS) and the fictional company Stark Industries, with zero ML/AI production experience and skills limited to beginner-level TypeScript and project management.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032842",
+    "score": 0.0,
+    "rationale": "All three roles are non-technical (Sales, Marketing, HR) and held entirely at fictional companies (Wayne Enterprises x2, Pied Piper), with no engineering or ML work whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032887",
+    "score": 0.4,
+    "rationale": "ML Engineer for 6+ years at product-focused HealthTech AI companies (Niramai, Wysa) with advanced Elasticsearch (30 months), XGBoost, NLP, and intermediate HuggingFace Transformers experience, but work history centres on predictive modeling and forecasting rather than retrieval or ranking systems, and there is no demonstrated NDCG/MAP evaluation framework experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032906",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (PM, Accountant, Operations Manager) split between IT-services firm Wipro and multiple fictional companies (Pied Piper, Dunder Mifflin), with no ML or engineering relevance whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032913",
+    "score": 0.0,
+    "rationale": "Career consists of Accountant and Customer Support roles at two fictional companies (Dunder Mifflin, Stark Industries) with no engineering or ML skills, making this a complete non-fit.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032928",
+    "score": 0.2,
+    "rationale": "Software engineering background (web, backend, DevOps) but career is spent entirely at IT-services firms (Wipro, Tech Mahindra) and the fictional company Pied Piper, with AI/ML only at self-learner level (online courses, API experimentation) and no production retrieval or ranking system experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032955",
+    "score": 0.4,
+    "rationale": "Has advanced Vector Search skill (43 months) and NLP/transformer work at product company Yellow.ai, but primary career identity is Computer Vision Engineer, LangChain is listed as the top advanced skill (a framework-enthusiasm red flag per JD), and one role is at IT-services firm Wipro, with no demonstrated ranking-evaluation metrics (NDCG/MAP) experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0032970",
+    "score": 0.0,
+    "rationale": "Only 1 year of experience as an HR Manager at Infosys (IT services) with no technical or ML skills and zero relevance to AI engineering or information retrieval.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033006",
+    "score": 0.2,
+    "rationale": "Software engineering background across IT-services firms (Wipro, Mindtree) and the fictional company Initech, with self-described self-learner AI/ML level that contradicts implausibly claimed 53-month QLoRA advanced skill (QLoRA was published in 2023), and no production IR or ranking system experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0033022",
+    "score": 0.0,
+    "rationale": "Entire career as a Mechanical Engineer at Stark Industries (fictional) and Acme Corp with no ML/AI production work; AI degree credentials from tier_3 Christ University are contradicted by a career purely in mechanical/manufacturing roles.",
+    "stratum": "random"
+  }
+]

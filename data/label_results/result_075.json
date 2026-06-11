@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0029367",
+    "score": 0.8,
+    "rationale": "Directly built production semantic search using sentence-transformers (all-MiniLM, bge-base) + FAISS and a RAG pipeline with Pinecone at product companies (Rephrase.ai, CRED, Vedantu), hitting the core retrieval stack the JD requires.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029397",
+    "score": 0.2,
+    "rationale": "Entire 2.3-year career is backend Java/Spring Boot at Infosys (IT services only) with self-learner-level AI exposure and no production ML or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029400",
+    "score": 0.2,
+    "rationale": "Current role is QA Engineer at fictional Stark Industries; prior work spans Capgemini (IT services) and Razorpay DevOps/cloud — no ML or retrieval experience despite 7.7 years.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029472",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience, entirely as a QA engineer at HCL (IT services), with self-learner AI exposure and no production ML or ranking system work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0029545",
+    "score": 0.2,
+    "rationale": "Cloud/full-stack background with no ML experience; current role is at fictional Initech and a prior role is at fictional Dunder Mifflin, and skills list (TypeScript, Tailwind, Photoshop, Sales) has zero IR or ML relevance.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029587",
+    "score": 0.0,
+    "rationale": "Career is entirely content writing and marketing management at fictional companies (Initech, Pied Piper) with no software engineering or ML production experience whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0029638",
+    "score": 0.2,
+    "rationale": "4.3 years spent entirely at Capgemini and Accenture (IT services) doing .NET/Java/Android work; primary ML signal is Speech Recognition, which is outside the NLP/IR domain required.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029653",
+    "score": 0.0,
+    "rationale": "Career spans civil engineering, content writing, and graphic design at IT services firms and fictional Stark Industries — zero ML, software engineering, or IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029680",
+    "score": 0.2,
+    "rationale": "Only 1.9 years of full-stack and mobile development work entirely at IT services firms (Mindtree, Cognizant) with no ML or retrieval experience and no production AI work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029685",
+    "score": 0.2,
+    "rationale": "13.5 years in marketing, HR, and customer support roles at TCS and multiple fictional companies (Dunder Mifflin, Wayne Enterprises); tier_1 Georgia Tech education is the sole positive signal against a fully non-technical career.",
+    "stratum": "tier1_education"
+  }
+]
