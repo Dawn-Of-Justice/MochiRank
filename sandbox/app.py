@@ -82,7 +82,7 @@ if uploaded is not None:
                 rows = []
                 for c in candidates:
                     is_hp, n_v, reasons = check_consistency(c)
-                    feats = compute_features(c, precomputed, n_v)
+                    feats = compute_features(c, precomputed, n_v, is_hp)
                     rows.append({
                         "candidate_id": c["candidate_id"],
                         "feats":        feats,

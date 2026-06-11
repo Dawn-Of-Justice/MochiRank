@@ -51,8 +51,12 @@ def build_feature_matrix(
     precomputed: dict,
     zero_out: set[str] | None = None,
 ) -> np.ndarray:
+    from src.consistency_checks import check_consistency
     from src.feature_engineering import FEATURE_NAMES, compute_features
-    rows = [compute_features(c, precomputed) for c in candidates]
+    rows = []
+    for c in candidates:
+        is_hp, n_v, _ = check_consistency(c)
+        rows.append(compute_features(c, precomputed, n_v, is_hp))
     X = np.array(rows, dtype=np.float32)
     if zero_out:
         for j, name in enumerate(FEATURE_NAMES):

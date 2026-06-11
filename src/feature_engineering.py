@@ -123,11 +123,19 @@ def load_precomputed(artifacts_dir: Path) -> dict:
 
     if emb_path.exists() and ids_path.exists():
         import json
+        from collections import defaultdict
         pre["candidate_embeddings"] = np.load(emb_path)
         with open(ids_path) as f:
             pre["candidate_ids"] = json.load(f)
-        # Build a fast cid → row-index lookup
-        pre["cid_to_idx"] = {cid: i for i, cid in enumerate(pre["candidate_ids"])}
+        # Fast lookups: cid → first index (existence check) and cid → all chunk indices
+        cid_to_idx: dict[str, int] = {}
+        cid_to_rows: dict[str, list[int]] = defaultdict(list)
+        for i, cid in enumerate(pre["candidate_ids"]):
+            if cid not in cid_to_idx:
+                cid_to_idx[cid] = i
+            cid_to_rows[cid].append(i)
+        pre["cid_to_idx"] = cid_to_idx
+        pre["cid_to_rows"] = dict(cid_to_rows)
 
     if jd_vec_path.exists():
         pre["jd_query_vectors"] = np.load(jd_vec_path)  # shape (n_queries, dim)
@@ -162,10 +170,8 @@ def _semantic_features(candidate: dict, precomputed: dict) -> list[float]:
     if embeddings is None or jd_vecs is None or cid not in cid_to_idx:
         return [0.0] * 8
 
-    # candidate embedding row(s) — may be multiple chunks per candidate
-    # cid_to_idx maps to the first chunk; handle multi-chunk via candidate_ids list
-    candidate_ids_list = precomputed.get("candidate_ids", [])
-    rows = [i for i, c in enumerate(candidate_ids_list) if c == cid]
+    # candidate embedding row(s) — O(1) lookup via prebuilt cid_to_rows index
+    rows = precomputed.get("cid_to_rows", {}).get(cid, [])
     if not rows:
         return [0.0] * 8
 
