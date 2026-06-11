@@ -22,5 +22,11 @@ flashrank>=0.3           # no-torch fallback; OR use sentence-transformers Cross
 # Anthropic (offline labeling only — not used in rank.py)
 anthropic>=0.25
 
+# JD extraction (offline only)
+python-docx>=1.1
+
+# Streamlit demo (sandbox/app.py)
+streamlit>=1.35
+
 # Validation
 # validate_submission.py uses only stdlib (csv, re, sys, pathlib)
