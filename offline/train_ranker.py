@@ -96,22 +96,26 @@ def train(
         for name in feature_names
     )
 
-    dtrain = xgb.DMatrix(X_train, label=y_train, feature_names=feature_names)
-    dtrain.set_group([len(y_train)])
-    dval = xgb.DMatrix(X_val, label=y_val, feature_names=feature_names)
-    dval.set_group([len(y_val)])
+    # Pointwise regression: predict relevance score in [0,1].
+    # LambdaMART (rank:ndcg) needs multiple query groups to compute
+    # pairwise gradients; with a single JD query and one big group the
+    # gradients collapse to ~0 and the model stalls at round 0.
+    # Regression on the 6-point rubric achieves the same ranking objective
+    # while giving XGBoost a dense, informative gradient signal.
+    dtrain = xgb.DMatrix(X_train, label=y_train.astype(np.float32), feature_names=feature_names)
+    dval = xgb.DMatrix(X_val, label=y_val.astype(np.float32), feature_names=feature_names)
 
     params = {
-        "objective":           "rank:ndcg",
-        "eval_metric":         ["ndcg@10", "ndcg@50"],
-        "eta":                 0.05,
-        "max_depth":           6,
-        "min_child_weight":    5,
-        "subsample":           0.8,
-        "colsample_bytree":    0.8,
-        "tree_method":         "hist",
+        "objective":            "reg:squarederror",
+        "eval_metric":          ["rmse"],
+        "eta":                  0.05,
+        "max_depth":            6,
+        "min_child_weight":     5,
+        "subsample":            0.8,
+        "colsample_bytree":     0.8,
+        "tree_method":          "hist",
         "monotone_constraints": str(mono).replace(" ", ""),
-        "seed":                42,
+        "seed":                 42,
     }
 
     model = xgb.train(
@@ -174,7 +178,7 @@ def main(ablate: str | None = None) -> None:
     print("Building feature matrix...")
     X = build_feature_matrix(candidates, precomputed, zero_out)
     y = np.array([labels[c["candidate_id"]] for c in candidates], dtype=np.float32)
-    print(f"  X shape: {X.shape}  y: [{y.min():.1f}, {y.max():.1f}]")
+    print(f"  X shape: {X.shape}  y: [{y.min():.1f}, {y.max():.1f}]  grade dist: {dict(zip(*np.unique(np.round(y*5).astype(int), return_counts=True)))}")
 
     rng = np.random.default_rng(42)
     val_mask = rng.random(len(candidates)) < 0.2
