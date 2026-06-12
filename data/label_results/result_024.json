@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0010179",
+    "score": 0.2,
+    "rationale": "Entire career at HCL (IT services) plus a role at fictional Wayne Enterprises; self-learner AI only with no production IR or embedding system deployment despite Milvus listed as a skill.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010190",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning business analyst, content writer, and customer support roles at TCS and Infosys with no ML or software engineering work whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0010234",
+    "score": 0.0,
+    "rationale": "14-year career is entirely content writing, SEO, and mechanical engineering with roles at multiple fictional companies (Stark Industries, Pied Piper, Wayne Enterprises) and zero AI/ML engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010245",
+    "score": 0.2,
+    "rationale": "Entire career at IT services firms (Wipro, Cognizant) and fictional Stark Industries doing DevOps/frontend work; Pinecone listed as advanced skill but no production IR or ranking system evidence in any role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010270",
+    "score": 0.0,
+    "rationale": "Full-stack web developer whose roles are predominantly at fictional companies (Pied Piper, Dunder Mifflin) and TCS, with no AI/ML or information retrieval work and multiple beginner skills listed with minimal duration.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010399",
+    "score": 0.2,
+    "rationale": "Strong data engineering background (Snowflake, Airflow, dbt) but primarily at TCS and fictional Pied Piper with no production retrieval or ranking work; CNN and Speech Recognition skills signal misaligned ML domain.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010457",
+    "score": 0.0,
+    "rationale": "11.7-year career consists entirely of sales, project management, mechanical, and civil engineering roles at non-technical and fictional companies (Dunder Mifflin), despite IIT Guwahati education; no ML or software engineering.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010461",
+    "score": 0.4,
+    "rationale": "Only 3.6 years experience but built at genuine product companies (Zomato, Paytm) with hands-on Milvus (advanced) and Vector Search (intermediate) skills and data pipeline work, though no ranking/evaluation framework or embedding retrieval system has been shipped to production users.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010469",
+    "score": 0.0,
+    "rationale": "3.5-year career limited to customer support at fictional Dunder Mifflin and marketing manager at Infosys with no engineering or ML work; GANs listed as advanced is unsupported by any technical role in the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010496",
+    "score": 0.2,
+    "rationale": "Entire 4.2-year career at IT services firms (Capgemini, Mphasis) doing frontend and Android mobile work; RL, Kubeflow, and ASR skills indicate CV/speech domain with no NLP, IR, or retrieval system experience.",
+    "stratum": "consulting_only"
+  }
+]

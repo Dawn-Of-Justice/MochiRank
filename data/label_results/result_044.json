@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0016725",
+    "score": 0.2,
+    "rationale": "Only 2.4 years of experience with no production ML or IR work — career is web/API development (Django, Node.js) at Razorpay and Wipro, with AI limited to self-learner side projects using OpenAI/Anthropic APIs.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016751",
+    "score": 0.0,
+    "rationale": "Non-technical marketing/graphic design profile with employment at fictional companies (Stark Industries, Dunder Mifflin) indicating a honeypot candidate, and zero engineering or ML experience throughout the career.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016824",
+    "score": 0.2,
+    "rationale": "Six years of web/mobile/QA engineering at TCS and product companies with advanced Hugging Face Transformers skill listed, but actual career history shows no production ML, IR, or ranking systems — skills appear aspirational rather than demonstrated.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016870",
+    "score": 0.0,
+    "rationale": "DevOps/cloud infrastructure engineer at Stark Industries (fictional company) and HCL (IT services) with no ML or IR skills — Terraform, SQL, and CSS skills confirm this is a completely wrong profile for a Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016877",
+    "score": 0.2,
+    "rationale": "Eight years of mobile development experience with CNN (advanced) showing computer vision bias rather than NLP/IR, employed at Initech (fictional company), with a Chemical Engineering degree from Amity — profile lacks any retrieval or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016888",
+    "score": 0.0,
+    "rationale": "Civil engineering background with a marketing manager self-summary, employed at Wayne Enterprises (fictional company) and TCS, with no actual ML or IR experience despite listing peripheral technical skills like GCP and Data Pipelines.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0016902",
+    "score": 0.4,
+    "rationale": "Strong data engineering background at Swiggy, Nykaa, and Paytm with Information Retrieval listed as an advanced skill (56 endorsements, 50 months), but actual career work centers on data pipelines, analytics engineering, and Spark — no demonstrated production embedding retrieval or LTR model ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0016918",
+    "score": 0.0,
+    "rationale": "Accountant with 4.2 years entirely at Infosys doing customer support, with FAISS listed as advanced skill for only 5 months — a clear keyword-stuffing pattern with no actual ML or engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016936",
+    "score": 0.0,
+    "rationale": "Customer support and accounting career at Wayne Enterprises (fictional company) with a marketing manager self-summary and skills in Tally, Six Sigma, and accounting — completely unrelated to AI engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017178",
+    "score": 0.4,
+    "rationale": "Production ML engineer at Swiggy with recommendation system experience (collaborative filtering, gradient boosting) and QLoRA/PEFT expertise from NIT Trichy (tier_1), but only 4.2 years of experience with primary focus on CV and recommendations rather than IR/ranking systems or NDCG-based evaluation frameworks.",
+    "stratum": "high_behavioral"
+  }
+]

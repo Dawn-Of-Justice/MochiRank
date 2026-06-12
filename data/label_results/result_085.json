@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0033052",
+    "score": 0.0,
+    "rationale": "Honeypot candidate with career at fictional companies (Dunder Mifflin, Wayne Enterprises), civil engineering and project management background, and zero ML or IR skills relevant to this role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0033058",
+    "score": 0.0,
+    "rationale": "Profile self-identifies as marketing manager background; career is enterprise sales at Wipro (IT-services) and content writing at fictional Wayne Enterprises with no ML, retrieval, or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0033065",
+    "score": 0.0,
+    "rationale": "Marketing Manager whose entire 8.5-year career spans IT-services (Wipro x2) and accounting at Hooli in non-technical roles; the 'advanced' Weights & Biases skill is keyword inflation unsupported by any described work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0033088",
+    "score": 0.0,
+    "rationale": "Business Analyst whose career consists of consulting, customer support, and accounting at fictional companies (Pied Piper, Wayne Enterprises) with no ML or IR engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033102",
+    "score": 0.0,
+    "rationale": "Graphic Designer with career at IT-services firms (TCS, Infosys) and fictional Wayne Enterprises in non-technical roles; 'advanced' Object Detection skill is inconsistent with the described career history.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0033137",
+    "score": 0.0,
+    "rationale": "Marketing Manager whose 11.5-year career covers marketing, operations, civil engineering, and HR roles entirely at IT-services firms (TCS, Infosys) and fictional Wayne Enterprises with no ML or IR engineering.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0033309",
+    "score": 0.2,
+    "rationale": "Claims a Ph.D and B.E. in Machine Learning from KIIT (tier_3), but actual career history shows only accounting, content writing, and graphic design roles with descriptions completely mismatched to titles and no ML engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033392",
+    "score": 0.4,
+    "rationale": "Software engineer with M.E. in AI from Jadavpur University (tier_2) and 35 months of Semantic Search experience, plus real product-company work at Flipkart, but career descriptions are web/backend/DevOps with no demonstrated production embeddings, NDCG evaluation, or ranking system deployment.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0033403",
+    "score": 0.0,
+    "rationale": "HR Manager with career entirely at IT-services firms (Wipro, Infosys) in HR and customer-support roles with no technical engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033409",
+    "score": 0.0,
+    "rationale": "Civil Engineer whose entire career is at three fictional companies (Pied Piper, Dunder Mifflin, Wayne Enterprises) with role descriptions mismatched to titles and no ML or IR background.",
+    "stratum": "title_match_strong"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0031387",
+    "score": 0.2,
+    "rationale": "Has tier_1 CS education (IIIT Bangalore B.Sc + Ph.D in AI) which provides minor adjacency, but the 1.2-year career is entirely content writing and accounting with zero production ML or IR work — a tier_1-education trap profile.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0031543",
+    "score": 0.0,
+    "rationale": "Only 1.4 years of experience as a Mechanical Engineer at fictional-company honeypot Initech, doing customer support work with a marketing-manager background and no ML, NLP, or IR skills whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031557",
+    "score": 0.0,
+    "rationale": "9.4 years in civil/mechanical engineering titles but actual work is accounting and brand design at Wipro (IT services, strong negative signal) and fictional-company Pied Piper, with no ML or IR skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031593",
+    "score": 0.8,
+    "rationale": "7.8-year ML engineer with expert-level Elasticsearch and BM25, built a learning-to-rank system for e-commerce search at Genpact AI, RAG pipeline using OpenAI embeddings and Pinecone at Unacademy, and a sentence-transformer recommendation system serving 10M+ users at Aganitha — covers all core JD requirements but held from 1.0 by Genpact's services-adjacent nature and tier_2 education.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0031596",
+    "score": 0.0,
+    "rationale": "Despite CMU M.E. Computer Engineering (tier_1 education), the 9.5-year career is entirely non-technical roles (content writer, accountant, HR manager) at IT-services firms TCS and Infosys and fictional company Initech, with skills limited to SEO, Photoshop, and ETL.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031678",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience at Wipro (IT services) in a marketing role despite the civil engineer title, tier_3/tier_4 education, and Computer Vision listed as primary skill — a disqualifying combination with no ML/IR relevance.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0031811",
+    "score": 0.0,
+    "rationale": "14.6 years of non-technical work (content writing, sales, accounting) at fictional-company honeypots Wayne Enterprises and Initech plus Wipro (IT services), tier_4 education, and only beginner miscellaneous skills — no engineering or ML relevance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031837",
+    "score": 0.2,
+    "rationale": "COEP Pune M.S. Computer Engineering (tier_2) and 28 months of Kubeflow experience provide minor adjacent signals, but the entire career is graphic design, marketing, and customer support at fictional-company honeypots (Initech, Wayne Enterprises) with only recent LangChain-course AI interest and no production ML deployment.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0031849",
+    "score": 0.2,
+    "rationale": "4.5-year software engineer with solid DevOps/cloud background and a self-built RAG side project plus LoRA exposure, but the production career is web APIs and Kubernetes at TCS (IT services) with no production IR or ranking system ownership and falls below the 5-year minimum.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031869",
+    "score": 0.0,
+    "rationale": "9.2 years entirely in operations management, accounting, and customer support at multiple fictional-company honeypots (Pied Piper twice, Initech) with YOLO/computer vision as the top skill and no ML, NLP, or IR engineering experience.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0019395",
+    "score": 0.2,
+    "rationale": "Only 1.2 years of experience in QA/test automation at Razorpay with no production ML or IR work; skills list (Object Detection 37 months, LLMs 34 months) is severely inflated relative to the stated tenure, and AI exposure is entirely self-learner/side-project level.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019440",
+    "score": 0.2,
+    "rationale": "Entire substantial tenure spent at Capgemini (IT services), skills are CV/cloud-focused with no NLP or IR production work, and a prior role at Dunder Mifflin (fictional honeypot company) flags profile integrity issues.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019447",
+    "score": 0.4,
+    "rationale": "IIT Kharagpur M.E. and real product-company ML experience (XGBoost churn models at PolicyBazaar), but career is dominated by computer vision (ResNet, YOLO, GANs at TCS) with only intermediate-level embeddings exposure and zero production IR/search/ranking work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0019480",
+    "score": 0.8,
+    "rationale": "~7 years shipping XGBoost/LightGBM ranking models across product companies (Meesho, Vedantu, Freshworks), built RAG pipeline with OpenAI embeddings and Pinecone at InMobi, holds expert Milvus and advanced BM25 skills, and explicitly led a keyword-to-embedding retrieval migration — directly matching the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0019500",
+    "score": 0.2,
+    "rationale": "Entire 5.3-year career split between Mindtree and Infosys (both IT services firms) doing data pipeline and analytics engineering; ML exposure is lightweight (clustering/churn in sklearn) with no production ranking, retrieval, or embedding systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019510",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (HR Manager, Accountant, Content Writer, Graphic Designer, Customer Support) with roles at multiple fictional companies (Initech, Pied Piper); AI interest is limited to ChatGPT for productivity with no engineering or ML work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019548",
+    "score": 0.0,
+    "rationale": "All three career roles are at fictional companies (Pied Piper, Initech, Wayne Enterprises) — a clear honeypot — and the work history is entirely non-technical (Operations Manager, Content Writer, Sales Executive) with no ML or engineering substance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019566",
+    "score": 0.2,
+    "rationale": "Java/full-stack backend engineer with a Wipro IT-services stint and self-learner-only AI exposure; MLflow skill (45 months) is an experiment tracker rather than IR/ranking evidence, and the claimed MIT M.Tech credential is implausible given this career trajectory.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019600",
+    "score": 0.2,
+    "rationale": "Entire 2.5-year career at Wipro (IT services) in a DevOps role; OpenSearch skill claimed at 52 months advanced — nearly double the stated total tenure — indicating skill inflation, and there is no production ML or IR work despite the relevant tool name.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0019614",
+    "score": 0.0,
+    "rationale": "Four years spent as Accountant and Civil Engineer at a manufacturing firm with no ML or engineering production work; skills are all beginner-level and unrelated to IR/ranking, and the M.Sc ML degree has not translated into any applicable technical experience.",
+    "stratum": "random"
+  }
+]

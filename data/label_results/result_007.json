@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0003252",
+    "score": 0.0,
+    "rationale": "Business Analyst with 1.5 years experience whose sole role is at the fictional company Pied Piper, with a marketing-manager background and zero ML/IR engineering skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003270",
+    "score": 0.0,
+    "rationale": "Customer Support role with 1.7 years experience, marketing manager background with no engineering or ML skills, and only beginner-level unrelated skills (Rust, TypeScript) with no IR/ranking exposure.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003290",
+    "score": 0.4,
+    "rationale": "5.9 years at product companies (Verloop.io, Haptik, Unacademy) with NLP pipelines and Weaviate (advanced, 29 months) exposure, but career is primarily CV/forecasting/analytics with no evidence of production retrieval evaluation metrics (NDCG, MAP) or hybrid search systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0003358",
+    "score": 0.2,
+    "rationale": "PhD in AI from NIT Warangal (tier_1) provides strong CS fundamentals, but 3.9 years experience is split between Acme Corp and HCL (IT services) with cloud/DevOps work and no production ML, retrieval, or ranking systems built.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0003381",
+    "score": 0.0,
+    "rationale": "12.8 years as Project Manager, Civil Engineer, and HR Manager across Infosys and fictional companies (Initech), with no technical ML or engineering work and only superficial AI curiosity.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0003486",
+    "score": 0.0,
+    "rationale": "Graphic Designer with 1.7 years experience at fictional company Dunder Mifflin, marketing manager background, and no relevant ML or IR skills despite an anomalous advanced BentoML endorsement inconsistent with the rest of the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003560",
+    "score": 0.2,
+    "rationale": "12.8-year career entirely in business analysis, operations, and marketing management at Wayne Enterprises and Stark Industries (fictional companies), with only recent online courses and beginner-level Pinecone (9 months) indicating a shallow AI pivot with no engineering depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0003609",
+    "score": 0.6,
+    "rationale": "6.1 years at product companies (Sarvam AI, InMobi, PharmEasy) including production recommendation-system engineering at InMobi and ML API deployment at Sarvam AI, but lacks explicit evidence of IR evaluation metrics (NDCG/MAP), hybrid search infrastructure, or embedding-based retrieval in production.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0003679",
+    "score": 0.2,
+    "rationale": "9.7 years predominantly at IT-services firms (Capgemini x2, Mphasis) in QA and mobile development roles; despite an advanced Learning-to-Rank skill listing (48 months), actual career descriptions show no IR/ranking systems and are inconsistent with that skill claim.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0003699",
+    "score": 0.0,
+    "rationale": "11.2 years entirely in non-technical roles (Customer Support, Accountant, Graphic Designer, Content Writer) at TCS and Infosys with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  }
+]

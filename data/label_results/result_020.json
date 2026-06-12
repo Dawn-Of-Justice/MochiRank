@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0008451",
+    "score": 0.0,
+    "rationale": "Civil Engineer with no ML/IR production experience whose entire career is at fictional honeypot companies (Initech, Stark Industries) doing business analysis, with only recent online courses in RAG/LangChain and no embeddings or ranking systems work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008467",
+    "score": 0.2,
+    "rationale": "8.4 years of frontend/QA engineering across IT-services firms (Infosys, Tech Mahindra) with no ML or IR production experience; top skills are Illustrator, dbt, and Figma with AI exposure limited to self-learner-level API experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008517",
+    "score": 0.4,
+    "rationale": "5.6 years of applied ML (NLP pipelines at Locobuzz, CV models at Dream11, recommendation features at Wipro) with PyTorch and feature engineering depth, but no embeddings-based retrieval, vector DB, NDCG/ranking evaluation experience, and a CV-heavy skew that does not align with the IR mandate.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008533",
+    "score": 0.4,
+    "rationale": "3.4 years is below the experience threshold, and while Pinecone (advanced), LoRA, and MLOps skills are relevant signals, the production work at Krutrim was fraud detection/API engineering rather than ranking or IR system design, and one role is at Infosys IT services.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008599",
+    "score": 0.2,
+    "rationale": "Strong tier_1/2 education (NIT Trichy, VIT) and Pinecone/Elasticsearch skills listed, but 6.4 years spent entirely on Android mobile development and cloud engineering at Zomato with self-learner-level AI exposure and no production ML, embeddings, or ranking systems work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0008635",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning Business Analyst, Graphic Designer, and HR Manager roles with multiple fictional honeypot companies (Pied Piper, Wayne Enterprises); no engineering or ML skills whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008640",
+    "score": 0.0,
+    "rationale": "Career is entirely marketing, sales, operations, and project management roles at Stark Industries (fictional), Acme Corp, and Infosys with no technical or ML work; TTS listed as advanced skill is inconsistent with a marketing/ops profile indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008642",
+    "score": 0.0,
+    "rationale": "Only 2 years of experience as Operations Manager at TCS doing brand design/ops work, with Data Science listed as advanced despite zero engineering history — classic keyword inflation from a non-technical marketing background.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0008644",
+    "score": 0.0,
+    "rationale": "4.6 years in Mechanical Engineer and HR Manager roles at fictional companies (Initech, Hooli) with skills limited to ETL, Tally, and Content Writing; the Ph.D. in ML from a tier_4 institution is contradicted by an entirely non-technical career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008733",
+    "score": 0.0,
+    "rationale": "12.6 years entirely as Marketing Manager and Project Manager at fictional honeypot companies (Dunder Mifflin x3, Wayne Enterprises) with no engineering background; AI interest is limited to ChatGPT productivity experimentation.",
+    "stratum": "random"
+  }
+]

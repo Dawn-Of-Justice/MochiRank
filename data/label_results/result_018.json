@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0007661",
+    "score": 0.2,
+    "rationale": "Entire 9.2-year career spent at IT-services firms (Wipro, Cognizant, Mindtree) in frontend/QA roles with no ML or IR production experience; only self-learner RAG experimentation with no shipped ranking systems.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0007743",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (PM, Operations Manager, Customer Support, Business Analyst) with a fictional company Initech in the history, no engineering or ML work, and 'Reinforcement Learning advanced' skill with 49 months claimed is clear keyword inflation inconsistent with any actual technical role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007782",
+    "score": 0.2,
+    "rationale": "Only 2.8 years total experience with current role at fictional honeypot Pied Piper; claims 'Learning to Rank advanced' for 55 months and 'Feature Engineering advanced' for 42 months — both impossible given the total career length, indicating severe keyword inflation with no credible IR production work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007794",
+    "score": 0.0,
+    "rationale": "Entire 8.4-year career at TCS in Project Manager and Civil Engineer roles covering accounting and BA work with zero ML or software engineering experience; online RAG/vector DB courses do not substitute for the required production ML depth.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007812",
+    "score": 0.0,
+    "rationale": "Career consists solely of Accountant roles at Pied Piper (fictional company) and TCS with no software engineering or ML work; skills listing Computer Vision and FastAPI are inconsistent with any actual technical experience described in the career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007847",
+    "score": 0.0,
+    "rationale": "Career is content writing and sales at fictional honeypot companies Wayne Enterprises and Stark Industries with a civil engineering stint at Infosys — entirely non-technical with no ML, IR, or software engineering experience whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0007876",
+    "score": 0.0,
+    "rationale": "HR Manager and Operations Manager career entirely at fictional honeypot companies Wayne Enterprises and Stark Industries with no ML or engineering work; skills (PostgreSQL, AWS, TypeScript) are inconsistent with any described role and there is zero IR or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007975",
+    "score": 0.0,
+    "rationale": "7-year career as HR Manager at Infosys and Accountant at fictional Pied Piper with no software engineering or ML work; skills listing Next.js, AWS, and dbt are entirely unsupported by the career history and indicate keyword inflation.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0007982",
+    "score": 0.2,
+    "rationale": "Only 2.0 years total experience at IT-services firms TCS and Mphasis; claims 'Milvus advanced' for 48 months which exceeds the entire career length, indicating keyword inflation; no credible production IR or ranking system deployment is evidenced.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0008042",
+    "score": 0.2,
+    "rationale": "Entire 2.6-year career is at fictional honeypot Dunder Mifflin (paper products), so the claimed 'Qdrant advanced' and other ML skills cannot be validated against any real production environment, and total experience is well below the 5-year minimum.",
+    "stratum": "random"
+  }
+]

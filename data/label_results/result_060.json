@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0022947",
+    "score": 0.2,
+    "rationale": "7.4 years of general software experience but current role is Mobile Developer at fictional company Pied Piper, prior roles are Cloud/Java developer at TCS (IT services), and the only AI exposure is self-learner level API experimentation with no embeddings, retrieval, or ranking production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022958",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager background with roles in project management, customer support, and operations across multiple fictional companies (Dunder Mifflin, Initech), zero engineering or ML/IR experience anywhere in the profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0022981",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Operations Manager, Customer Support, Marketing Manager) at fictional company Initech and Pied Piper with Infosys IT-services background, and the summary self-identifies as a marketing manager with no engineering or ML credentials.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023025",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Business Analyst, Project Manager, Customer Support at Wipro IT-services and fictional companies Initech/Pied Piper), and the 'Diffusion Models advanced' skill with 58 endorsements is clear keyword inflation inconsistent with a BA/PM/support career.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023133",
+    "score": 0.2,
+    "rationale": "Lists Information Retrieval as advanced skill (35 months) but the sole employer is Mphasis (IT services) where the actual work was test automation and QA engineering with Selenium/pytest, indicating no production ML/embeddings/retrieval systems and only 3.4 years total experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023151",
+    "score": 0.0,
+    "rationale": "Roles are Accountant, Customer Support, and Sales Executive at fictional companies Wayne Enterprises and Pied Piper plus Infosys IT-services, with a summary that self-identifies as a marketing manager and no ML, IR, or engineering work anywhere in the profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0023217",
+    "score": 0.2,
+    "rationale": "Lists Embeddings as an advanced skill (21 months) and has 10 years of backend/software engineering experience, but the entire career is at fictional companies (Wayne Enterprises, Dunder Mifflin) and HCL IT-services with DevOps/Mobile/Frontend work and no production ML or retrieval system deployment.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023268",
+    "score": 0.2,
+    "rationale": "Holds a Ph.D in Computer Engineering from Thapar University (tier_2) which suggests technical academic grounding, but the sole career role is Accountant at TCS doing content writing and SEO with no ML engineering work, and the summary self-identifies as a marketing manager with only ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023362",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical (Accountant, Customer Support, Business Analyst, Sales Executive) at fictional companies Dunder Mifflin and Initech with no engineering or ML work, and the summary self-identifies as a marketing manager only recently curious about AI tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023391",
+    "score": 0.2,
+    "rationale": "Has a Ph.D in Artificial Intelligence (Thapar, tier_2) and B.Sc in Machine Learning, but the entire 10.8-year career is non-engineering (Business Analyst, HR Manager, Customer Support) at fictional company Dunder Mifflin and TCS IT-services, with OpenCV as the primary advanced skill which is a computer vision mismatch for an IR/ranking role.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

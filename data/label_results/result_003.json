@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0001600",
+    "score": 0.4,
+    "rationale": "Has production ML at InMobi (time-series forecasting) and BYJU'S (collaborative filtering recommendation), but top skills are Object Detection and Diffusion Models with no evidence of IR/ranking evaluation frameworks (NDCG, MAP) or hybrid retrieval experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001610",
+    "score": 0.8,
+    "rationale": "Built semantic search from scratch with sentence-transformers and FAISS at Dream11, shipped content recommendation for 10M+ users at Flipkart using sentence-transformer embeddings, and trained XGBoost/LightGBM ranking models for a discovery feed at Zoho — directly matching the core IR/ranking requirements at product companies.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0001638",
+    "score": 0.4,
+    "rationale": "Strong data engineering depth (Airflow, Spark, Kafka at product companies CRED and Unacademy) and lists Vector Search advanced skill, but career work is entirely pipeline/infrastructure with no evidence of production embedding retrieval, ranking models, or NDCG/MAP evaluation ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001682",
+    "score": 0.2,
+    "rationale": "Entire career spent in IT services (Capgemini, Cognizant) doing QA automation and Android/frontend development, with top skills in YOLO and CNN (computer vision — explicitly undesired), and AI/ML only at self-learner level via online courses.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001705",
+    "score": 0.2,
+    "rationale": "Lists BM25 as an advanced skill but actual career work is frontend engineering (React/TypeScript) at Mindtree (IT services) and QA at Swiggy, with no production IR, ranking, or ML deployment evident in any described role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0001721",
+    "score": 0.2,
+    "rationale": "Only 1.2 years experience in a single QA/frontend role at Hooli (a fictional company), with skills limited to Agile and beginner-level Databricks — no production ML, IR, or ranking work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001782",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (enterprise sales, customer support lead, content writing/SEO), includes Dunder Mifflin as an employer (fictional company), and AI exposure is limited to ChatGPT for personal productivity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001788",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning business consulting, graphic design, accounting, and marketing across Wayne Enterprises and Pied Piper (both fictional companies), with zero engineering or ML work despite listing Kafka and Spark as skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001839",
+    "score": 0.0,
+    "rationale": "Career history is entirely non-technical (accounting, mechanical engineering design, marketing/business analysis) including Wayne Enterprises (fictional company), with no ML, IR, or software engineering work despite holding a Ph.D in CS.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001895",
+    "score": 0.2,
+    "rationale": "Java backend and QA career at Pied Piper (fictional company) and HCL (IT services) with no production ML work, though listing Weaviate intermediate suggests awareness of vector databases that is unsupported by any described role.",
+    "stratum": "high_behavioral"
+  }
+]

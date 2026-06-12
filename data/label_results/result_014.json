@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0006209",
+    "score": 0.4,
+    "rationale": "Has Information Retrieval listed as an advanced skill (49 months) and NLP pipeline work at Rephrase.ai, but career is dominated by computer vision and basic text classification with no production ranking/retrieval systems or vector DB experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0006418",
+    "score": 0.8,
+    "rationale": "Shipped XGBoost/LightGBM ranking models for a discovery feed at Verloop.io, holds expert-level skills in Elasticsearch, OpenSearch, Qdrant, and Embeddings, and currently owns the eval framework for a RAG feature — covering the core requirements of production IR, vector DBs, and evaluation rigor.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0006433",
+    "score": 0.0,
+    "rationale": "Graphic Designer with 1.7 years whose only employer is the fictional Stark Industries and whose actual work is warehouse operations management — no engineering or ML experience whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0006479",
+    "score": 0.0,
+    "rationale": "HR Manager whose career spans marketing, sales, and operations across fictional employer Pied Piper and TCS with zero engineering or ML work, and whose only technical skills are beginner-level JavaScript and Figma.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006538",
+    "score": 0.4,
+    "rationale": "Has production recommendation-system experience at Dream11 (product company) and strong IIT Delhi credentials, but skills are weighted toward CV, RL, and classical MLOps with no visible vector DB, hybrid retrieval, or ranking evaluation framework experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0006539",
+    "score": 0.0,
+    "rationale": "Business Analyst at Infosys whose actual work is brand design and creative direction, with skills limited to content writing and basic cloud tools, representing no technical ML or IR background.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0006547",
+    "score": 0.2,
+    "rationale": "Eight years of software engineering with a CMU degree and Haystack exposure (advanced, 56 months), but career at fictional Initech and IT-services HCL is focused on full-stack web and QA with ML limited to self-learner coursework and no production ranking or retrieval work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006567",
+    "score": 1.0,
+    "rationale": "7.9-year Senior AI Engineer from IIT Bombay who built search and ranking systems at Meta, owned end-to-end search and discovery at Razorpay, and designed offline experimentation and A/B testing infrastructure at Glance — expert-level Content Matching (85 months) and Ranking Systems (60 months) skills perfectly match every core requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006645",
+    "score": 0.2,
+    "rationale": "Five years split between Capgemini DevOps/cloud infra and fictional Pied Piper web dev, with scikit-learn listed as a skill but no production ML or IR work, and a Civil Engineering background from a tier_3 institution.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006665",
+    "score": 0.0,
+    "rationale": "12+ years as a Graphic Designer/Marketing Manager across TCS, Wipro, and two fictional employers (Stark Industries, Pied Piper), with a career entirely in marketing, sales, and operations and no engineering or ML experience.",
+    "stratum": "random"
+  }
+]

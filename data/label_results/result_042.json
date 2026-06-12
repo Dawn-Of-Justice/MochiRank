@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0015639",
+    "score": 0.0,
+    "rationale": "Career spans accounting, content writing, and marketing at fictional companies (Pied Piper, Wayne Enterprises) with no engineering or ML experience; skills are beginner-level Terraform and Illustrator with no IR or ranking relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015690",
+    "score": 0.4,
+    "rationale": "Has Elasticsearch advanced skill (56 months) and M.E. in ML from Anna University, but career work at Zomato and Accenture is full-stack/mobile Android development with no production IR, embeddings, or ranking system experience; RAG is only a side project.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015693",
+    "score": 0.0,
+    "rationale": "Business Analyst career entirely at Infosys and fictional Dunder Mifflin covering operations and mechanical engineering with no ML or IR skills; top skills are Salesforce CRM, Tally, and beginner MongoDB with zero relevance to ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0015842",
+    "score": 0.0,
+    "rationale": "9-year career as accountant and content writer at Infosys/Wipro/Acme with skills limited to Six Sigma, Photoshop, and REST APIs; no ML, embeddings, retrieval, or engineering depth whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015939",
+    "score": 0.2,
+    "rationale": "Mechanical Engineer career at Infosys doing marketing and operations work, with Computer Vision as primary advanced skill — an explicitly negative signal for this NLP/IR role — and no embeddings, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015940",
+    "score": 0.2,
+    "rationale": "IIT Kharagpur M.Sc Data Science is a strong education signal, but career is entirely operations/project management/marketing at Dunder Mifflin (fictional) and TCS, with AI exposure limited to recent LangChain and RAG courses — exactly the JD's anti-pattern of surface-level GenAI pivots.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0015984",
+    "score": 0.4,
+    "rationale": "Haystack advanced (50 months) and Qdrant advanced (21 months) are directly relevant IR/vector-DB skills, but the entire career is at HCL and Tech Mahindra (IT services only) with career descriptions showing DevOps and full-stack work rather than production retrieval or ranking system deployment.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0016012",
+    "score": 0.0,
+    "rationale": "Civil Engineer with 3.6 years at fictional Dunder Mifflin and TCS, career descriptions showing accounting and mechanical design work, with no ML or IR skills; summary acknowledges a marketing background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016063",
+    "score": 0.0,
+    "rationale": "Marketing Manager for 8.5 years at fictional companies (Pied Piper, Wayne Enterprises) with career spanning brand design, customer support, and demand generation; skills are entirely non-technical (Scrum, Photoshop, ETL beginner) with zero ML or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016125",
+    "score": 0.0,
+    "rationale": "HR Manager and Sales Executive career at Wipro and Hooli with both roles described as accounting work; skills are beginner Rust, Redis, and Sales with no ML, embeddings, or retrieval experience.",
+    "stratum": "random"
+  }
+]

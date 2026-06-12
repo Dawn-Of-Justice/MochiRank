@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0030001",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical marketing and HR roles at IT services firms (TCS, Wipro) and a fictional company (Initech), with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030031",
+    "score": 0.8,
+    "rationale": "Built a production content recommendation system serving 10M+ users using sentence-transformer embeddings at Microsoft, trained XGBoost/LightGBM ranking models at Google, and owns an eval framework for RAG; Vector Search expert and IIT Bombay graduate — closely matches the role requirements, with a slight downgrade from 1.0 due to big-tech-only background the JD flags as a cultural risk.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030044",
+    "score": 0.0,
+    "rationale": "Entire 13.8-year career spans HR management, content writing, operations, and sales at IT services firms (Wipro, Infosys) and fictional company Hooli, with zero engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030104",
+    "score": 0.2,
+    "rationale": "Holds an M.S. in Machine Learning from Delhi College of Engineering but the actual career consists entirely of business analyst and project manager roles at Infosys and fictional Dunder Mifflin, with no applied ML or IR work evident.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0030167",
+    "score": 0.2,
+    "rationale": "Entire career is at IT services firms (Infosys, Cognizant) in full-stack and DevOps roles; AI/ML exposure is self-learner level only (online courses, small RAG side project), with no production IR, ranking, or embedding systems built.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0030182",
+    "score": 0.0,
+    "rationale": "Only 1.8 years of experience, sole employer is fictional company Dunder Mifflin (a dataset honeypot signal), and the described work is QA/test automation — the Kubeflow and Pinecone skills listed are entirely unsupported by career evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0030253",
+    "score": 0.0,
+    "rationale": "11-year career is entirely project management and business analysis at IT services (Infosys) and fictional companies (Initech, Hooli), with no engineering, ML, or IR experience anywhere in the profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0030264",
+    "score": 0.2,
+    "rationale": "Has product-company experience (Razorpay, Zomato, Swiggy) which is a positive, but all roles are QA, DevOps, and frontend engineering; AI/ML exposure is self-learner level only, and the most recent entry is a fictional company (Dunder Mifflin).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030288",
+    "score": 0.0,
+    "rationale": "14-year career is entirely in accounting and graphic design, with multiple roles at fictional companies (Pied Piper twice, Hooli) flagging this as a honeypot; no engineering or ML experience anywhere.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0030317",
+    "score": 0.0,
+    "rationale": "Sole employer is fictional company Dunder Mifflin in a sales executive role; no engineering, ML, or IR experience of any kind, and only 3.7 years of non-technical work history.",
+    "stratum": "honeypot_flagged"
+  }
+]

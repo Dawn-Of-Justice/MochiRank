@@ -5,7 +5,7 @@ pandas>=2.1
 
 # Embeddings
 sentence-transformers>=3.0
-model2vec>=0.3           # fallback for fast CPU embeddings
+model2vec>=0.3           # potion-base-8M: 256d, 23K chunks/s CPU (primary embedding model)
 
 # BM25
 rank-bm25>=0.2.2

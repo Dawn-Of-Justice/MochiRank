@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0032488",
+    "score": 0.0,
+    "rationale": "Current title Civil Engineer at fictional company Initech with no ML, NLP, or IR experience — the summary's marketing manager background and ChatGPT curiosity confirm zero alignment with production AI engineering requirements.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0032514",
+    "score": 0.0,
+    "rationale": "Project Manager and Business Analyst career at manufacturing and fictional companies (Initech) with skills limited to BigQuery and Photoshop — no evidence of any ML, NLP, or search/ranking engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032515",
+    "score": 0.8,
+    "rationale": "Owns the ranking layer at PharmEasy (evolved hand-tuned scoring to learning-to-rank), shipped XGBoost/LightGBM ranking models at Zoho, holds Elasticsearch expert and Milvus advanced skills, and owns a RAG eval framework — backed by a CMU PhD in ML, covering the core production IR and evaluation requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032520",
+    "score": 0.0,
+    "rationale": "Entire career in sales, marketing, and mechanical engineering roles across fictional companies (Wayne Enterprises, Initech) and IT services (Wipro) with no production ML or IR engineering work despite holding a PhD in Computer Engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032549",
+    "score": 0.0,
+    "rationale": "Operations Manager and Customer Support roles at fictional Dunder Mifflin and Infosys IT services with no ML or AI engineering substance — a tier_3 PhD in AI does not correspond to any technical career evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032639",
+    "score": 0.2,
+    "rationale": "3.7 years as frontend/Java/fullstack engineer at mostly fictional or DevOps-focused companies with self-learner-level AI exposure only; no production IR, ranking, or ML deployment experience, and the MLflow advanced skill is inconsistent with the rest of the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032656",
+    "score": 0.0,
+    "rationale": "Entire 8-year career as Content Writer, Accountant, and Mechanical Engineer exclusively at IT services firms Infosys and Wipro — no engineering or ML substance whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0032701",
+    "score": 0.2,
+    "rationale": "Only 2.4 years total experience split between TCS IT services and fictional Dunder Mifflin in DevOps and Cloud roles; self-described as an ML self-learner with a small RAG side project and no production IR or ranking systems deployment.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0032794",
+    "score": 0.0,
+    "rationale": "11.6-year career entirely in accounting, marketing, and civil engineering at fictional companies (Stark Industries, Wayne Enterprises) and Infosys IT services — no technical AI or engineering experience despite an M.E. in AI from tier_3 SRM Chennai.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032807",
+    "score": 0.8,
+    "rationale": "Led end-to-end migration from keyword search to embedding-based retrieval at CRED and built a RAG pipeline using OpenAI embeddings and Pinecone, with expert-level OpenSearch and LLM fine-tuning skills from an IIT Roorkee M.E. — directly aligned with the role's core production IR requirements.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

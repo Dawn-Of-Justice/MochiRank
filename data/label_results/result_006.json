@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0002876",
+    "score": 0.2,
+    "rationale": "Career is dominated by data engineering (Airflow pipelines, Snowflake, dbt) with no production IR/ranking/embedding systems, and a current role at fictional Stark Industries is a honeypot signal; claimed PEFT advanced skill is unsupported by any actual ML project in the career history.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002888",
+    "score": 0.0,
+    "rationale": "Current title is HR Manager and the sole career entry describes brand design and creative direction at a consumer-products company, with zero engineering or ML work of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002894",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience split between IT-services (Tech Mahindra) and a short Swiggy stint doing full-stack web work, with AI exposure limited to a self-described side RAG project; claimed 'Embeddings: advanced' with 59 endorsements is implausible given the actual career history.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0002993",
+    "score": 0.0,
+    "rationale": "Ten years entirely in non-technical roles (accounting, operations, enterprise sales) at Wipro and Wayne Enterprises (a fictional company), with no engineering, ML, or IR work anywhere in the career.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002999",
+    "score": 0.0,
+    "rationale": "Nearly ten years as an Operations/Mechanical Engineer across Wayne Enterprises (fictional), Wipro IT-services, and Acme Corp manufacturing, with no technical ML or IR content and career descriptions copied from unrelated roles (logistics ops, enterprise sales).",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0003069",
+    "score": 0.0,
+    "rationale": "Six years entirely at Infosys/TCS/Wipro in Project Manager, Customer Support, and HR Manager roles with skill set of Salesforce CRM and SEO — no engineering or ML work present.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003138",
+    "score": 0.0,
+    "rationale": "Only 1.2 years of experience as a Customer Support / content writer at Acme Corp covering SEO and writing, with no engineering or ML work, despite listing an M.Tech in Data Science.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0003198",
+    "score": 0.2,
+    "rationale": "Entire 3.9-year career is at IT-services firms (Infosys, Cognizant) doing Java backend microservices and QA test automation with no IR, embedding, or ranking systems experience, though NIT Trichy tier_1 education is a mild positive signal.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0003201",
+    "score": 0.2,
+    "rationale": "Only 1.6 years of experience doing React/frontend engineering at Swiggy with AI exposure limited to a self-learner RAG side project, and top skills (Diffusion Models, Image Classification) point to computer vision rather than NLP/IR.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003206",
+    "score": 0.2,
+    "rationale": "7.6 years across Tech Mahindra, HCL, and Acme Corp in QA, .NET backend, and DevOps roles with no IR/ranking/embedding production work; IIT Kharagpur PhD is a strong credential but skills (Time Series, Next.js, Illustrator) and actual job descriptions show no NLP or search systems experience.",
+    "stratum": "high_behavioral"
+  }
+]

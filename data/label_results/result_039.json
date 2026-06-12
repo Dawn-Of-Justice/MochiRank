@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0014878",
+    "score": 0.0,
+    "rationale": "1.6 years total experience as a Business Analyst with no ML/AI engineering background; all five skills are at beginner level with under 13 months each, and the self-described identity is 'marketing manager' — no signal of production ML, retrieval, or ranking systems.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0014909",
+    "score": 0.4,
+    "rationale": "4.8 years of applied ML at product companies (Niramai HealthTech, Locobuzz) including recommendation-style features, XGBoost, and Kubeflow, but the current title is Computer Vision Engineer with no evidence of embeddings-based retrieval, vector databases, NDCG/ranking eval metrics, or hybrid search systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014937",
+    "score": 0.2,
+    "rationale": "7.5 years of experience is mostly frontend/QA (React, TypeScript) at Capgemini (IT services) and Wayne Enterprises (fictional company flag), with AI exposure limited to a small self-built RAG side project and no production ML, retrieval, or ranking systems work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0014942",
+    "score": 0.2,
+    "rationale": "Despite advanced-level Vector Search and Pinecone skills listed (35 and 18 months respectively), the actual career history is entirely frontend/mobile/DevOps at TCS (IT services) and Stark Industries (fictional company), with no credible production IR or ranking system work supporting those skill claims.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0015017",
+    "score": 0.0,
+    "rationale": "2.9 years as Customer Support at Acme Corp with no ML or engineering work; self-described as a marketing manager with only ChatGPT experimentation, and skills (Sales, Illustrator) have zero relevance to the AI engineering role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015059",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — Marketing Manager at fictional Initech and Operations Manager at fictional Stark Industries — with no engineering or ML work; beginner-level gRPC and Next.js skills do not offset the complete absence of production AI/ML experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0015065",
+    "score": 0.6,
+    "rationale": "3.9 years at Flipkart (e-commerce product company) and Nykaa with advanced skills in Learning to Rank, Information Retrieval (57 months), and LlamaIndex/RAG, plus an IIT Delhi M.Sc in ML — strong IR fundamentals, though relatively short tenure and lighter on production vector-DB and hybrid search operational experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015083",
+    "score": 0.0,
+    "rationale": "11.6 years spanning Business Analyst, Operations Manager, Graphic Designer, and Marketing Manager roles at Pied Piper (fictional), Wipro (IT services), and Acme Corp — no engineering or ML work whatsoever; recent online RAG/vector-DB courses do not compensate for a career with zero technical production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0015098",
+    "score": 0.0,
+    "rationale": "5.6 years entirely in Customer Support and Business Analyst roles at Wayne Enterprises (fictional) and Pied Piper (fictional), with skills limited to MongoDB and Excel at intermediate level; no ML, retrieval, or ranking engineering experience of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015221",
+    "score": 0.2,
+    "rationale": "9.8 years of experience but almost entirely frontend/DevOps/QA work at TCS (IT services), Swiggy, and Stark Industries (fictional); advanced MLOps and Weights & Biases skills plus intermediate FAISS show some relevant exposure, but no production retrieval/ranking system work and the RAG experience is limited to a self-described side project.",
+    "stratum": "honeypot_flagged"
+  }
+]

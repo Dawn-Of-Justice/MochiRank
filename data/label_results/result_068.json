@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0026268",
+    "score": 0.0,
+    "rationale": "Civil Engineer at fictional companies (Stark Industries, Wayne Enterprises) with a marketing manager summary and zero ML/engineering depth — no relevant skills for an IR/ranking role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026274",
+    "score": 0.2,
+    "rationale": "QA/frontend engineer at mostly IT services (Mindtree) and a fictional company (Dunder Mifflin) with no IR, retrieval, or ranking experience; only a brief cloud engineering stint at CRED provides any product-company signal.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026392",
+    "score": 0.0,
+    "rationale": "1.3-year career as a graphic designer at TCS (IT services only) with a marketing manager self-description and no ML or engineering work whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0026424",
+    "score": 0.4,
+    "rationale": "Advanced BM25 and pgvector skills plus NLP/transformer experience at product companies (Razorpay, Vedantu) are positive signals, but the bulk of production work is predictive modeling and computer vision rather than IR/search/ranking systems, and Infosys tenure adds a negative signal.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0026429",
+    "score": 0.0,
+    "rationale": "Despite IIT Kharagpur and MIT education, the entire 14-year career is in non-technical roles (sales, civil/mechanical engineering, project management) at IT services firms (Infosys, TCS) and a fictional company (Initech), with no AI/ML work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0026434",
+    "score": 0.0,
+    "rationale": "Operations manager and content writer career spanning fictional companies (Initech, Wayne Enterprises) and Infosys, with only beginner-level non-ML skills and no engineering or AI production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026532",
+    "score": 0.8,
+    "rationale": "Shipped production semantic search at Zomato using sentence-transformers (MiniLM → BGE) + FAISS over 500K documents, built a 10M-user hybrid recommendation system at Mad Street Den, owns the RAG eval framework, and carries expert-level embeddings and advanced information retrieval skills across 59 months — squarely hitting the JD's must-have requirements at product companies.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0026566",
+    "score": 0.0,
+    "rationale": "Customer support role at a manufacturing company for 2.2 years with beginner-level non-ML skills and a marketing manager self-description — no engineering or AI experience relevant to the role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0026576",
+    "score": 0.2,
+    "rationale": "Strong IIT Kanpur education and solid backend/data-engineering foundation (Kafka, Spark at PhonePe), but no IR/retrieval/ranking production experience, current role is at fictional Dunder Mifflin, and ML competence is self-described as still being built.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0026602",
+    "score": 0.0,
+    "rationale": "11-year career spanning HR manager, accountant, and business analyst roles at Wipro (IT services) and multiple fictional companies (Stark Industries, Initech, Pied Piper) with no ML or engineering work despite a 'Data Science advanced' skill listing.",
+    "stratum": "random"
+  }
+]

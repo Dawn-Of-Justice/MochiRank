@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0012414",
+    "score": 0.2,
+    "rationale": "7 years of frontend and DevOps engineering (HCL, Zomato) with zero production ML/IR experience; AI exposure is limited to self-directed online courses and a small RAG side project, making them fundamentally misaligned with the ranking/retrieval engineering requirements.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012430",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (content writing, mechanical engineering design, business analysis at Wipro IT services) with no software engineering or ML work, making them completely unable to perform the role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012517",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience, current role is enterprise sales at Initech (fictional company/honeypot), and the summary describes a marketing manager background with no engineering or ML depth despite a PhD credential from IIIT Hyderabad.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0012531",
+    "score": 0.0,
+    "rationale": "Operations and logistics management career with 5.1 years entirely in non-technical roles (warehouse ops, customer support) at fictional company Initech; IISc Bangalore education does not compensate for zero ML or engineering experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0012533",
+    "score": 0.2,
+    "rationale": "Data engineering background (Snowflake, SQL, Airflow) with Haystack listed as an intermediate skill provides minor IR adjacency, but the sole employer is fictional Stark Industries (honeypot signal), only 3.6 years of experience, and no production retrieval or ranking system deployment is evidenced.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0012544",
+    "score": 0.2,
+    "rationale": "Only 1.1 years of experience as a full-stack web developer at HCL IT services; AI exposure is entirely self-learner (OpenAI/Anthropic API, RAG side project), with no production ML or IR systems, making them a very early-career candidate with significant gaps on all core requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012552",
+    "score": 0.0,
+    "rationale": "Flagged honeypot: career history includes fictional companies (Dunder Mifflin, Initech) and spans HR management, content writing, and customer support with zero technical or ML work; completely unable to perform the role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0012566",
+    "score": 0.0,
+    "rationale": "Content writer at Infosys IT services for 1.9 years with a marketing manager background, tier_4 education, and no engineering or ML skills relevant to production IR/ranking systems.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0012606",
+    "score": 0.0,
+    "rationale": "Multiple fictional company employers (Pied Piper, Stark Industries, Wayne Enterprises) indicate a honeypot profile; actual career roles are mechanical engineer, civil engineer, HR manager, and accountant with no technical ML or software engineering relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012618",
+    "score": 0.0,
+    "rationale": "Marketing manager and graphic designer career across fictional companies Pied Piper and Initech (honeypot signals); zero engineering or ML work, making this a non-technical profile completely unable to perform the role.",
+    "stratum": "random"
+  }
+]

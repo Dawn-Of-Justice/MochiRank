@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0004256",
+    "score": 0.0,
+    "rationale": "Customer support role at fictional company Stark Industries with 1.1 years experience, marketing manager background, and zero engineering or ML skills — completely misaligned with a production IR/ranking engineering role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0004402",
+    "score": 0.4,
+    "rationale": "6 years at product companies (Yellow.ai, Zomato) with IIT Guwahati/Madras education and PEFT/PyTorch skills, but primary ML work is computer vision and TTS rather than retrieval/ranking/IR, with no evidence of embedding-based search, vector databases, or NDCG evaluation frameworks.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0004418",
+    "score": 0.0,
+    "rationale": "Career spans civil engineering, accounting, and content writing across Wipro and fictional Stark Industries, with no ML, NLP, or IR experience whatsoever despite superficial data-pipeline skill listing.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004457",
+    "score": 0.2,
+    "rationale": "5.9 years of backend/mobile engineering at CRED (a product company) shows solid software fundamentals, but all ML experience is self-learner level (online courses, small RAG side project) with no production ML, ranking, or retrieval work, and skills profile shows object detection and MLOps rather than IR.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0004514",
+    "score": 0.0,
+    "rationale": "Content writer at fictional Stark Industries for 2 years with a marketing manager background, Photoshop/PowerPoint as primary tools, and no engineering or ML experience at all.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004574",
+    "score": 0.2,
+    "rationale": "3.9 years of Java/Node.js backend engineering at Globex Inc and fictional Hooli with a Physics degree, self-learner AI exposure only, and skills dominated by ASR and reinforcement learning with no retrieval, ranking, or vector search experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004585",
+    "score": 0.2,
+    "rationale": "4.7 years at product companies (Swiggy, Zomato) in frontend and DevOps roles with no production ML; recommendation systems listed as an intermediate skill but with only 15 months duration and no evidence of retrieval, NDCG evaluation, or embedding-based systems in actual job descriptions.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004597",
+    "score": 0.0,
+    "rationale": "14 years across sales, operations, HR (at Infosys), and accounting at fictional Initech with SEO/Sales as primary skills — a non-technical career with zero ML or engineering work despite recent AI curiosity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004621",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (business analyst at Infosys, graphic designer at TCS, civil engineer at fictional Wayne Enterprises) with MLOps listed at intermediate for only 9 months — a clear anti-persona with no relevant IR, ML, or ranking engineering experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0004710",
+    "score": 0.0,
+    "rationale": "2.3 years as a civil engineer at Wipro (IT services) whose actual work was B2B SaaS marketing/demand-generation, with skills limited to Terraform, Angular, and Spring Boot and no ML or retrieval experience.",
+    "stratum": "consulting_only"
+  }
+]

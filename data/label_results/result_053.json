@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0020013",
+    "score": 0.2,
+    "rationale": "2.2 years at Cognizant (IT services) doing full-stack web/QA work with no production ML or IR experience; AI exposure is self-learner level (small RAG side project) only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020091",
+    "score": 0.0,
+    "rationale": "Career spans fictional companies (Dunder Mifflin, Stark Industries) and IT services (Accenture) with skills focused on Speech Recognition, Photoshop, and Accounting — no credible IR, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020107",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical (Content Writer, Graphic Designer, Operations Manager) at fictional companies (Initech, Pied Piper) and IT services (Infosys), with no AI/ML engineering work whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0020152",
+    "score": 0.2,
+    "rationale": "Only 1.9 years total at Tech Mahindra (IT services) doing QA/test automation; claims 'advanced' Qdrant skill with 24 months duration against a 22-month total career — clear keyword inflation with no production ML or retrieval work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020260",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager with enterprise sales experience at Wipro (IT services); YOLO/computer-vision as primary skill is explicitly a disqualifier, and there is no NLP, IR, or engineering work in the profile.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0020263",
+    "score": 0.2,
+    "rationale": "Blatant keyword inflation: claims 59 months Hugging Face Transformers and 43 months Learning to Rank against only 12 months total career, making all ML credentials unverifiable despite the ostensibly relevant keywords.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0020283",
+    "score": 0.0,
+    "rationale": "14.9 years spent entirely in non-technical roles (Business Analyst, Project Manager, Marketing Manager, HR Manager) at TCS, Wipro, and fictional companies (Stark Industries, Initech) with only superficial AI curiosity and no engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020342",
+    "score": 0.0,
+    "rationale": "Career history is entirely non-technical (Operations Manager, Content Writer, Graphic Designer) at fictional companies (Stark Industries, Wayne Enterprises) and IT services (Infosys), with no AI/ML engineering despite advanced academic degrees.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0020350",
+    "score": 0.8,
+    "rationale": "5.8 years of production ML at real product companies (InMobi AdTech, Zoho SaaS) including an 18-month recommendation/retrieval system project with expert-level BM25, NLP, and hands-on PEFT fine-tuning; gaps include no explicit vector-DB or evaluation-framework (NDCG/MRR) evidence.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0020371",
+    "score": 0.0,
+    "rationale": "13.8 years in non-technical roles (Graphic Designer, HR Manager, Mechanical Engineer — actual work per descriptions is accounting) at fictional companies (Pied Piper, Initech) and IT services (Infosys) with zero AI/ML engineering experience.",
+    "stratum": "random"
+  }
+]

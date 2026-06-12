@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0004729",
+    "score": 0.0,
+    "rationale": "Career is entirely enterprise sales and customer support at Wipro (IT services) and Initech (fictional company), with no ML/AI engineering, no IR or ranking experience, and skills limited to Project Management, Excel, and SQL.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0004793",
+    "score": 0.2,
+    "rationale": "Entire career is DevOps/cloud infrastructure at Cognizant (IT services only) with no production ML or IR work; AI exposure is self-learner level with a small RAG side project and LangChain skill, which the JD explicitly flags as insufficient.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0004845",
+    "score": 0.0,
+    "rationale": "Career spans demand-generation marketing, SEO, and accounting across Initech (fictional), TCS, and Hooli with zero engineering or ML work, making this a non-technical profile incompatible with the Senior AI Engineer role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0004848",
+    "score": 0.6,
+    "rationale": "Has advanced-level BM25 and Weaviate skills plus PEFT experience, worked on NLP pipelines at Freshworks (SaaS product company) and Haptik (Conversational AI), and holds tier_2 engineering degrees, but no explicit NDCG/ranking evaluation ownership or dense+hybrid retrieval system shipped to production users.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004872",
+    "score": 0.2,
+    "rationale": "Only 2.7 years of experience entirely at IT-services firms (Capgemini, Mphasis) doing frontend and mobile development, with skills skewed toward computer vision (Object Detection) rather than NLP/IR, which the JD explicitly disqualifies.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004912",
+    "score": 0.0,
+    "rationale": "Entire 4.6-year career is at Accenture (consulting only) doing QA automation and frontend React work; no ML, no IR, no ranking experience, and skills are CI/CD, JavaScript, and Tally — entirely misaligned with the role.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0004969",
+    "score": 0.2,
+    "rationale": "Current role is at Pied Piper (fictional company, a negative signal per the rubric), only 2.4 years of experience in full-stack and mobile development, and data-engineering skills (MLflow, Databricks, Hadoop, dbt) show no IR or ranking depth despite an IIT Roorkee education.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005017",
+    "score": 0.0,
+    "rationale": "10.4 years spent in marketing, HR, and sales roles at Stark Industries (fictional company), Wipro, and Infosys with no technical or ML engineering background, and Kubernetes listed as beginner with only 2 months duration indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005046",
+    "score": 0.0,
+    "rationale": "12.3-year career covers civil engineering, BA, customer support, and marketing exclusively at Initech (fictional), TCS, and Wipro (IT services), with no ML or software engineering work and skills limited to data pipeline tools with very low endorsements.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0005054",
+    "score": 0.2,
+    "rationale": "9.2 years of full-stack and QA work with roles at multiple fictional companies (Dunder Mifflin, Pied Piper) as negative signals; one product-company stint at Zomato but no IR/ranking/embedding experience, and ML skills are self-described as learner-level despite MLOps and Data Science listed.",
+    "stratum": "high_behavioral"
+  }
+]

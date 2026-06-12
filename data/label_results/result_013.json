@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0005858",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical operations/project management at IT-services firms (Wipro) with no ML, IR, or engineering depth — only superficial ChatGPT curiosity mentioned, and skills listed are beginner Vue.js/Docker unrelated to ranking or retrieval.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0005890",
+    "score": 0.0,
+    "rationale": "Entire career is in marketing manager and operations roles with zero engineering or ML production work; current employer Dunder Mifflin is a fictional company (honeypot signal), and no evidence of retrieval, ranking, or applied AI systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006034",
+    "score": 0.2,
+    "rationale": "Only 2.4 years of experience in frontend/QA at product companies (Swiggy, CRED) with no ML or IR background; top skills include Computer Vision and Weights & Biases which suggest adjacent but misaligned ML exposure, and the RAG side project is self-described as hobbyist-level with no production deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006050",
+    "score": 0.0,
+    "rationale": "Only 1.7 years of experience in operations management with no ML, retrieval, or ranking work whatsoever; skills (Flask, Figma, Terraform) are unrelated to the role's core requirements despite a tier_1 IIIT Bangalore education.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0006074",
+    "score": 0.2,
+    "rationale": "IIT Hyderabad CS MS is a strong education signal, but 7.4 years are spent entirely in full-stack/cloud web engineering (Accenture consulting, fictional Pied Piper, Flipkart frontend) with no production ML, embeddings, retrieval, or ranking experience evident in career history or skills.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0006082",
+    "score": 0.2,
+    "rationale": "5.9 years split between IT-services Java development (Tech Mahindra) and frontend work at Flipkart with no IR or ranking systems; the 'Fine-tuning LLMs' advanced skill with 34 months is a positive signal but is contradicted by a career history entirely in Java/frontend work with no production ML deployment context.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006092",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience as a Mechanical Engineer at Wipro doing content writing, with no engineering or ML production work; online courses in RAG/vector databases are mentioned but represent a very recent pivot with zero prior engineering depth.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0006097",
+    "score": 0.2,
+    "rationale": "9 years of experience but the career is dominated by Java development at TCS and Mphasis (IT-services firms) and frontend engineering at fictional Initech, with skills entirely in CSS/Vue.js/Airflow and no evidence of ML, embeddings, retrieval, or ranking systems in production.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006159",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — sales executive, operations manager, graphic designer, marketing manager — at fictional companies (Initech, Pied Piper) with no engineering or ML work; this is a clear honeypot candidate with mismatched role history and no relevant technical skills.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0006170",
+    "score": 0.0,
+    "rationale": "15 years entirely in customer support, project management, marketing, and mechanical engineering roles — including a stint at fictional Stark Industries and Pied Piper — with no ML, retrieval, or production engineering experience despite some backend skill keywords (Django, Node.js) with beginner proficiency.",
+    "stratum": "low_behavioral"
+  }
+]

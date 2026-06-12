@@ -1,0 +1,10002 @@
+[
+  {
+    "candidate_id": "CAND_0047721",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0078669",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015578",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0066376",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0019480",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0024620",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0010149",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0081778",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0081686",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0094023",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0088438",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0000273",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008202",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0050827",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091580",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0076904",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0048469",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095207",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0085199",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0092245",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095884",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0061244",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013613",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074621",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0067372",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0026532",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013456",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0011220",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0067643",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0028793",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0022720",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052195",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0068811",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074123",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008049",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0009691",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0016678",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091712",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0097472",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095619",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008533",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051630",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091890",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060715",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0010770",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0093193",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074024",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0073917",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0036184",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0096181",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0009837",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074735",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0044855",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0078106",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0053591",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014683",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0049831",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0034177",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0093883",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0006538",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015478",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0086062",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014858",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0023559",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0057701",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030953",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0005538",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0070202",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014909",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0007596",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0032807",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0097722",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0083852",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0098846",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060215",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013393",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0064020",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0088878",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0024466",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030550",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0043958",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0042506",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0084935",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0066713",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0089546",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0069905",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0020708",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051593",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030031",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001638",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060054",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0099401",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0090443",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0069248",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0025640",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0040887",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0039838",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0092278",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0076995",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015065",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0087494",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001218",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0088237",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0048166",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0025663",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0012888",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013002",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0037980",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0054394",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060472",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0086151",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0062462",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095060",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001600",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0035473",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0068932",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0081321",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0071457",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0067717",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0032955",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0040117",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0026640",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0043860",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030348",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0046924",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0094056",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0056262",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0065878",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0082973",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0076251",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0079387",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0027723",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0027691",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052335",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0080766",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0043304",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0007412",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015493",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0012837",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0004402",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0039383",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001930",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077784",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0070525",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0071115",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0042100",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0007460",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0085851",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0061683",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051615",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0023587",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0026424",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0041402",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0072304",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0034148",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0058426",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0046238",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0027663",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0089012",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0070716",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0055668",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0096964",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0005303",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0020350",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0041669",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0003290",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0064270",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052328",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0022254",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008918",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0036863",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0019845",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0072232",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052744",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0058575",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0068985",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077337",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014332",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0050454",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091909",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008517",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014440",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0037000",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0044262",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0016902",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0003609",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051004",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0025132",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0048509",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0086028",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0057134",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0082291",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0047466",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0054829",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0022812",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0084283",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0033861",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0011140",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077480",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0079284",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0044883",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029638",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0086647",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0055992",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0068588",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0087364",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0037344",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0061257",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015362",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0004969",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0070090",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0037467",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0095801",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0046064",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0073164",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0048691",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0037566",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0057382",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0000545",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0017722",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0085991",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029920",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0089962",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005770",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0095528",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007383",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034766",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0030945",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0031593",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0017836",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084807",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0041130",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0038882",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032515",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0030599",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0056042",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0027297",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0079369",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0083861",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0065215",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0087911",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006567",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084819",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0075850",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0046895",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0041611",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0088210",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0090757",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013714",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094353",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0049005",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0020263",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0089552",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0066641",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0022868",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0086022",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0018549",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0058715",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0054630",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0052682",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0068705",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013366",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0091534",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0092744",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0044222",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0002894",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0039521",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0014317",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0049980",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006547",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012957",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015435",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0054185",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0071974",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0068489",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034296",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0024401",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0052353",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0000600",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0045250",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0035814",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0017751",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0075439",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0050876",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0011056",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0030827",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0064480",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007009",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0042029",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0097820",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0078002",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0074757",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0061339",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0064387",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029367",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015528",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0053578",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0033058",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0089025",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094009",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034675",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0065195",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0076639",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0057163",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0066233",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0077414",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013208",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0001436",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0096172",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0003977",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007444",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0096142",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0047478",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0019129",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0066999",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0071475",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0066556",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084741",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0049262",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0027283",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0044775",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0020678",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0038650",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0078702",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0051962",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0045859",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0048265",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005260",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0083100",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005596",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0061269",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0086815",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015690",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005311",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0053555",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084145",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0048313",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0076831",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0010498",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0064446",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0018499",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032928",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093178",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012647",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0058693",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0070485",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0028570",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093112",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0029545",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0004457",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0085145",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0001610",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012544",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0051292",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0087978",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0052092",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084393",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093331",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0053605",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0044808",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005095",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0023887",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0085381",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0027391",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012798",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0047240",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0047872",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0050946",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0077513",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0060841",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0014733",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093990",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0032271",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0036437",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0019447",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0055168",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0081846",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0031353",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006717",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0028116",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0075574",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013233",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0001461",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0074346",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0040827",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034049",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094759",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007982",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034125",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093912",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006645",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007876",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093547",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0010641",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0074858",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007411",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0095814",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093501",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0083879",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0025081",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0067776",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076790",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014205",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0060778",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0090378",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0043404",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067819",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0006433",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008635",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0061195",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076842",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0031837",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062394",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0034857",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0070952",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063541",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0058854",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0075453",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008764",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014579",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0011856",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0028662",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0049752",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0007652",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0036023",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0017979",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062826",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088660",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0090664",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0081218",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0012723",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014126",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0010547",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0093838",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0018833",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088027",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0045260",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0036605",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0055236",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0012944",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0075382",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0022831",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047606",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0099626",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083761",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0023391",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0081338",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0004621",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0049495",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0039084",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0060081",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063873",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0007164",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008315",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0069842",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0033102",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0023966",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0027020",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0052029",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0040529",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0059146",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0084970",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0086828",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0012626",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014248",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0039517",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0035904",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062369",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0039993",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0096906",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0015083",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0020342",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0057805",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063575",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0051041",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0046042",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0044119",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047192",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0077867",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0031380",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0016128",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0092064",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062972",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0010190",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083186",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0029867",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0093305",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0042941",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083438",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0084342",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014648",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076006",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0036561",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088082",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0027846",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0098276",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0021953",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0051898",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083689",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0074866",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0082520",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076828",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0057331",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047281",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067166",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014831",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0028710",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0043106",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0053385",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0043648",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0098137",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0020107",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0070903",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088799",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0021645",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0056838",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0089567",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0099779",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0035369",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0026992",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0032444",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083892",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0082191",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0096567",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0015693",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0092366",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014527",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0013495",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0082599",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0099049",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0080807",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008908",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0005841",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0064568",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0050019",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067821",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014159",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0035587",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0087985",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047884",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0052815",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0003560",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0003381",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083004",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0056074",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0081272",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0094686",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0085719",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0020471",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0050741",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0071196",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0019149",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0079203",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092224",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0048434",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000688",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0079963",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0056188",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0026143",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0018965",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0083962",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0097859",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0080052",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0081972",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0026576",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0087339",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073978",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0041091",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0051070",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0008419",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0005702",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0037982",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0065707",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0017547",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010837",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0011339",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0053379",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0045672",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0061992",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0002065",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0047193",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0047236",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096048",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0066659",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0090639",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0041265",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0089982",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098964",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095928",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073922",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0036226",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004848",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0041544",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0090051",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0064923",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000772",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0062751",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0046231",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0075826",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0063571",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0029472",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004082",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0030182",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0016888",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0071362",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0027494",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0099601",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0042530",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0014099",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073153",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0065289",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0014937",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0067474",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0031284",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0085811",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004418",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0086505",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0036581",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0091276",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0080687",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073321",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0046085",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000426",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0052508",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0033409",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0082178",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0026429",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0060905",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010399",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0043528",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0068624",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073961",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0068895",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0052536",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0007226",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0012336",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095114",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0008312",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0074980",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004872",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004069",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0034364",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0028780",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0063361",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0097644",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0001291",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0002389",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084929",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0050254",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084394",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0071952",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084651",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0048578",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000805",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0087583",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0077261",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095176",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0079999",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0052057",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0078953",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0033659",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0024057",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095821",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0037900",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098242",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0040204",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0003679",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0057751",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0011904",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0059440",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0037029",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0062003",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098409",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084760",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0090419",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0087626",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0028180",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0025692",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0054887",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0058190",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0072206",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0042741",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0062569",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0083535",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0021997",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0024078",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0093388",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0076469",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0005441",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023133",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092934",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092181",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0055035",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0015340",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0099443",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023572",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0017852",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023983",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0050922",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0051039",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010611",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0032270",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0083813",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0030375",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0048289",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0071985",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0060423",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0039047",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0064841",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0032701",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0061641",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0053684",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0044359",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0028544",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0076129",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0050112",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0038716",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0030104",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0077982",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0022941",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0086455",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0064600",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000406",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0040798",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0070120",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023217",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0058059",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0039378",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0018926",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0075859",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010123",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0049743",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0044072",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0064928",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0077542",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0049216",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0063109",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0055220",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0044046",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092495",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0047558",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096698",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0007231",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0036633",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0074771",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0033502",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0085840",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0091234",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098182",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096750",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0081224",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0025466",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0093186",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0062219",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012619",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0058571",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0009128",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0013828",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0016301",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0061997",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0048380",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0088043",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0086163",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0082239",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0017364",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0016582",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0053396",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0011077",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0083961",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0036231",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059536",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024223",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0077212",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0034725",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024288",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059698",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0000417",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0023739",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0099278",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0022877",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0060302",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0057377",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0092926",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0014824",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0013249",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0085433",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0018887",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0041649",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0046150",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0099382",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0068186",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0019198",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0073499",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0005046",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0065854",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070503",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0099143",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0054900",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0051657",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0068625",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0079413",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0082536",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0077623",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0026566",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0084467",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012715",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0048079",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055124",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0026050",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0091851",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0060073",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0090873",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0028132",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012430",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0045849",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031912",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0027415",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031958",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0073271",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024887",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0007975",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0081512",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0000491",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0023151",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0085216",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0022958",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0007847",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0016584",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0018327",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0057894",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0060328",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0049548",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0066995",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0038938",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0003138",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0004729",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0092461",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0004845",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0073792",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0063523",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0014878",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0089761",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024724",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0029198",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031811",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070995",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0030253",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0000959",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0033392",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0008889",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070744",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0074246",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059442",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0001705",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0044840",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0079850",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0091266",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0072423",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0047680",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0056974",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0061914",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0015374",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0031849",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0053020",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0077902",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0069241",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0089612",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0088991",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059029",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0033137",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0053749",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055454",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0002999",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0091806",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0096758",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0038417",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0086120",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055759",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0041512",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0001950",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0029587",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0045518",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0098355",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0086243",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0011306",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0029739",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0008982",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0014401",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0050901",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0006050",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0002106",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0049606",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0021717",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0032278",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0046815",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0015059",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012140",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0072111",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070129",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0084830",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0045180",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0023837",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013815",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0049023",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018699",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0006539",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0030586",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0081188",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0094762",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0087271",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0016190",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0042234",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0004710",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0025126",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0071191",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0041365",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0074049",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0035490",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0066984",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040258",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0008642",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0084444",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0024877",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0011536",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0058305",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0030907",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0020904",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0051758",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0004912",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0094008",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040573",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0022392",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0051592",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0060986",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0072779",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0010496",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0037238",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0060202",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0011480",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0064905",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0003198",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0044945",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0027009",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0088011",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040876",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0017982",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0089586",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0054852",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0045000",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0073636",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0087779",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0096614",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0010106",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0009328",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0037596",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0000900",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0016692",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018882",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0023767",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0083464",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0084746",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0011059",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0053898",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0018211",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0006092",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0057931",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0047633",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0026392",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0029928",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013078",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0031678",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0010892",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0085158",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040870",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0076803",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013994",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0097669",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0007661",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0061645",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0093582",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0084792",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0052119",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0020260",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0077123",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0046359",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0012566",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0047328",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0095078",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0076042",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0065299",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0089631",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0025737",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0030167",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0074247",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0061364",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0097925",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0075903",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013809",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0025883",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0038545",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0098734",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0055641",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0099134",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0058392",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0028088",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0066687",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0089429",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0039439",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0055301",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0074886",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0052603",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0006159",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0099217",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0045854",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0087735",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0079724",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0094937",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0069591",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0002000",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0040338",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0053210",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0074570",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0014942",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0075283",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0046156",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0071399",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0036116",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0032656",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0034281",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065909",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0067695",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0082725",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0089220",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065880",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0013096",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0059933",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0088754",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0019799",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0092085",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065711",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0075031",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0034295",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0015221",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0078704",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0073770",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0009055",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0058995",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0039731",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0031903",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0015296",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0030288",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0027799",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0028972",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0017757",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0041401",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0007269",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0000232",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0047332",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0098552",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0030317",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0025880",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0061355",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0036664",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0045023",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0009169",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0028066",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0050972",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0064660",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0039272",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0080535",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0004031",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0041971",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0071918",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0046515",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0045341",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0018986",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0084529",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0040845",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065495",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0094732",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0090676",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0033052",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0017245",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0030557",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0066232",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0032488",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0043444",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0056260",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0071854",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0040297",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0012851",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0063167",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0073390",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0012552",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0072520",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0072459",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0044098",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0073250",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0064652",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0049719",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0059398",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0071156",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045517",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011990",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0065743",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091123",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083396",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093473",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0073083",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086154",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092692",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0048760",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0036257",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0060934",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093275",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0081668",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062772",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010685",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0034876",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0070514",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010179",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029795",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0050015",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0028422",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076456",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0019098",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064630",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0098695",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0068351",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082961",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0005460",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0080534",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031306",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099347",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099965",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0069253",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039291",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045027",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001895",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083727",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010866",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058146",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0072547",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092267",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0034164",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0030641",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0054221",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0019600",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041827",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0087990",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029680",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0043119",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0081792",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0097576",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074317",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0078272",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007782",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032290",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002246",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029213",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024878",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032887",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077956",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007568",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064664",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082314",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0089889",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076974",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0087263",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077772",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0017178",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029965",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045847",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045887",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099388",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086830",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0017471",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0012694",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045204",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011739",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0005054",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0053377",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039868",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0019922",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0096525",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011372",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085727",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011380",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0009109",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018904",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0090116",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086981",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079888",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064326",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058783",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0042404",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0042093",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0015984",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062584",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018728",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0048988",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049127",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0095136",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041079",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0098490",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0061655",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086987",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044063",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076778",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0060816",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0053943",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0075957",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0033006",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003206",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076910",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0042877",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0088186",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044030",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0030858",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001302",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074580",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0043191",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002876",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085703",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0006418",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0016699",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083085",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0038968",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0070892",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039754",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091601",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0090921",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0073809",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082417",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0012399",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045577",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013277",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047945",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0055251",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0043637",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0037160",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0070745",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045481",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001682",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079064",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074350",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083835",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0078042",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014458",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0075998",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086661",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032913",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085787",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021920",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002417",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041593",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0022661",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0069478",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049554",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021962",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032794",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0004256",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0056851",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032822",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003962",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0080098",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010528",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077346",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0097146",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0067363",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0066691",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039417",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0050309",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0059108",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0072709",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029832",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010997",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0008430",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074066",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0063572",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0033065",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0008811",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0040640",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0006170",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0084952",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076675",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079877",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0057729",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014024",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024847",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0087885",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058320",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0095468",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0017669",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027855",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0067806",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0094097",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0065317",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0073160",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0063067",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093779",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002115",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0096433",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062105",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092908",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035546",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085641",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0094060",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003270",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021191",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035940",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007794",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010907",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0078284",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027519",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074210",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0095698",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044355",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0080699",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001788",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002677",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0065606",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049798",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0009780",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013795",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024696",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0095032",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002779",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0008199",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027595",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058404",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010865",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062808",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0067353",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0050098",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014554",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077484",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003252",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0020407",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014548",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0066099",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077259",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018852",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002888",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041050",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0011396",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082172",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0061508",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024615",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0050428",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013128",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0089250",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0022582",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077509",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029070",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079189",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013765",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0055598",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093155",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0014191",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0046949",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047656",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044415",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047087",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0000212",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031003",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035771",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021678",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047162",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041414",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013336",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0005858",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064204",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0046828",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0017239",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031557",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002128",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0084247",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077199",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027721",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0060632",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0063270",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0032842",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035424",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0098856",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0028095",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0031543",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0059298",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041175",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092990",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099282",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0040796",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013644",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0036672",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0018141",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091406",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0012922",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010457",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0053612",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007111",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0054331",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0047931",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0053048",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0095897",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0093386",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0017492",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0056665",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0009231",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0043660",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0087132",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0029685",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0092766",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0083630",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0091582",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0027924",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0038461",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0015499",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085970",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0014803",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0083395",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0053907",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0095800",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0096726",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085997",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0056211",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0097730",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0051028",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019566",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0082247",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085857",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0077708",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028562",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0031387",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0096649",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0006737",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0035968",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0039160",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0030555",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0070702",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0072544",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0071670",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0038662",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0095449",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019716",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085964",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0090264",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0008599",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0035585",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0020877",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0093562",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0072660",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0044823",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0021655",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0012531",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0054522",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0056977",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0066997",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0006209",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0097478",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0011453",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0022074",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0007655",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0097699",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028308",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0078858",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0006074",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0081740",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019708",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0039469",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0051816",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0020004",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0012533",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0015500",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019510",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0023870",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0061780",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0012517",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0078209",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0062541",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0070551",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0078260",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0070736",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0044226",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028238",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0045619",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0004793",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0014814",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0045613",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0015940",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0061532",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0089255",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019039",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0003358",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0036119",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0008842",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0076214",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0067332",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0003770",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0093506",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0038577",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0018038",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098634",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092960",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084747",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059851",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007163",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040757",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005633",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098763",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018684",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050219",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093732",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074559",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087046",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037897",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051807",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080128",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078325",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005783",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082383",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008042",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033524",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036192",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055739",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041429",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037830",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084076",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052160",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099897",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009679",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015939",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029653",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092057",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057907",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033309",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095908",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070709",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057567",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010914",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048790",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056694",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056663",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024550",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074092",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043845",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098320",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051310",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073543",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053143",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005481",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055257",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084845",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075190",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028870",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042836",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055300",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089274",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027234",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087848",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072221",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075347",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085255",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013026",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096494",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096966",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049204",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054318",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066815",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012105",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090239",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039940",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067136",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043867",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007097",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066642",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006792",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035767",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042923",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045011",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012989",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076946",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045120",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023362",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005890",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041711",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021599",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059861",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095830",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086371",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028885",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031123",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024552",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091746",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077041",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040077",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079461",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008644",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057154",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072054",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017434",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090315",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009834",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011764",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080532",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096774",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033403",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060546",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008733",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080353",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079605",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077488",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071031",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099968",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016725",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082132",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044794",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008451",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047128",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020091",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080371",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080938",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030915",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063728",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051819",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005489",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047393",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079486",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092410",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055005",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043564",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074737",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097836",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057622",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046577",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059990",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007497",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040859",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068030",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008845",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078509",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079644",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092740",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017187",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097000",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036241",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099794",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096945",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092475",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063707",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026434",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001201",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085948",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078870",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021060",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099959",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098526",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073983",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067577",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079321",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050165",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010469",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029265",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083442",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075752",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060271",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015626",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043362",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096907",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087622",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056689",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024997",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076666",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075315",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044920",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053524",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057461",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046235",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023877",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053810",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019167",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070946",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016012",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078623",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018771",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082192",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074201",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065647",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023429",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020986",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015098",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033520",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054525",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095366",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003699",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054464",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018775",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073988",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015326",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039971",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093759",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071969",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040748",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046071",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024757",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012618",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033611",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024432",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022237",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055756",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099526",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002332",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042670",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010778",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030565",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052658",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043066",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074001",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013979",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044215",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053226",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058047",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021509",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011187",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015842",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001782",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012760",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012708",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009713",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052570",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018643",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070669",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090163",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007156",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061341",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045707",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068580",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063446",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078128",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019654",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016918",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021647",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010270",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082811",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041009",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070028",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025494",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072921",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077801",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030044",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034021",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017842",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060704",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064390",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037701",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017345",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090595",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030264",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035809",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099625",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079038",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084910",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022761",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018863",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097255",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062289",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069828",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070785",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051515",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059721",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075678",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045069",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058090",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061942",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052010",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051008",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068600",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016259",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065894",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027414",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063540",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062016",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023641",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059304",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060812",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067993",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052873",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024543",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063704",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060963",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036903",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029879",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023652",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052737",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004514",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036090",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086994",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031869",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065477",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075760",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045154",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080788",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071070",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080740",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050452",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033975",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098107",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048088",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055223",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032514",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084521",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050093",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093049",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044553",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012727",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085270",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076799",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044525",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039019",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055884",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010234",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090066",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001839",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032520",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046339",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056031",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099237",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062477",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039145",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057765",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006082",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001721",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007196",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082344",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027461",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058709",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002111",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083292",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001426",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089150",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088201",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080461",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034044",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004585",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008965",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007121",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065585",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036550",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016125",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066507",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041122",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056055",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007812",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030664",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031228",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093465",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021919",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074402",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044038",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006097",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052451",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063732",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063754",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010526",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094274",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088110",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045452",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000791",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074947",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087105",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097831",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023706",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063980",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098330",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072353",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015492",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091391",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075918",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022107",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058523",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028977",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042327",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087821",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052739",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023268",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085928",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093638",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001008",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075622",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052429",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050232",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004574",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009494",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063150",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053433",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042101",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056770",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072440",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015389",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067700",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052108",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023412",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024793",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092169",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007058",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002993",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033995",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098585",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053619",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073187",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006925",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024465",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047758",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023823",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098720",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013433",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046505",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009507",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022408",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035192",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010245",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063964",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023025",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076225",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007093",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070414",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072337",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041902",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057585",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049351",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034809",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095566",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062810",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004597",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014635",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070625",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094660",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020152",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010972",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036742",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080393",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049992",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025129",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039442",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020371",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094015",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082719",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074010",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063081",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019641",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040710",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095511",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028621",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083653",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011238",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058975",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049308",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093822",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092354",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006665",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018366",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039236",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073375",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055790",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021507",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065455",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058066",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089001",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043811",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071873",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086042",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052701",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077758",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021366",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048016",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061707",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060656",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038209",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016824",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020760",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040103",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081366",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032549",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040053",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095174",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034203",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043068",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074449",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091703",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066630",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091120",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086557",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022359",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061433",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032970",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064408",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044755",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061814",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067211",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010461",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033678",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005744",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085755",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021545",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073920",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013478",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037556",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013055",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072781",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011968",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073202",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052276",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068054",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041714",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092468",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095826",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077548",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028359",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089076",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092865",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026274",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012414",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011964",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033890",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065539",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030639",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070232",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061856",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063197",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050898",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018757",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005017",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017386",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087229",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025317",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098092",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025428",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063521",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076171",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054874",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034660",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054497",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017288",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007376",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098643",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000530",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079185",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002169",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016063",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062114",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060126",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031193",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073099",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094892",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010530",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063563",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095748",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035445",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063237",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019614",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045096",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080765",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044363",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008238",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001563",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054399",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026602",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030356",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038072",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016751",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091233",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070124",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095488",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090515",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043216",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052558",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064785",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033685",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074046",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075726",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087778",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029400",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032906",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090608",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040396",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074831",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020603",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020283",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085766",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027098",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095694",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078201",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027006",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056342",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039842",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073914",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049760",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072516",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022434",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040749",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018225",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092110",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046393",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062073",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082928",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071451",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076947",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024672",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092648",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024625",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079306",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034479",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038857",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022351",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062426",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077572",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024188",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092334",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035586",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074484",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051975",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084709",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042026",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020456",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023897",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028890",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084221",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033811",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050976",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022981",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076261",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054615",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009335",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019548",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060793",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014060",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030738",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037824",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030401",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093243",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039275",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015639",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079137",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017509",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080685",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062570",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000879",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030001",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028756",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084862",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017699",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089593",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073073",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029719",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002701",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097581",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029397",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085278",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019500",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081519",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005849",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042472",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017683",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040897",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041286",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074135",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053875",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033022",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056828",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086383",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076569",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059212",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060799",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013350",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073481",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092647",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012256",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079456",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076572",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083834",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063775",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080919",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013213",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041530",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052914",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089856",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098264",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049896",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081284",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045306",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022198",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078009",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091957",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016870",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063736",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003201",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047100",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074867",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026862",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061755",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015331",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099127",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013275",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070133",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036989",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037879",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041174",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090124",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053470",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082924",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061014",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011117",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012802",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007369",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028011",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080580",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072912",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095111",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055567",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030698",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025976",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072352",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038314",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046690",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077563",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049088",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097437",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073136",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076314",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047324",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006810",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062285",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020666",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047405",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082852",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021175",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083056",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003832",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022356",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002219",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079701",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016400",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018065",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008048",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019074",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097130",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015551",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048522",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032639",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017439",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054738",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064314",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016936",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006479",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024950",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073768",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094163",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000311",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060211",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039422",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087436",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077013",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057444",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003069",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031596",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082494",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064784",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071736",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042925",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008314",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010805",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049370",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073264",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023502",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092132",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055959",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033088",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022871",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022340",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077081",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036617",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005059",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074262",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099084",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015297",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043939",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076966",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052378",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047605",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054244",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021110",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021395",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047548",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022947",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094231",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090752",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082481",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013005",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076173",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085540",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084260",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047238",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019700",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088247",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013919",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047190",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009881",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053725",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0004246",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096261",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067473",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042110",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081514",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068608",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025804",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0031036",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062774",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008640",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039004",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067227",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079039",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003706",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035360",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049025",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098060",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051999",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087788",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084054",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074624",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040022",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043063",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067413",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076389",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020677",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007743",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054758",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0016877",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015555",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003763",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060295",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085146",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039659",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034906",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099604",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086174",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057441",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027048",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011720",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020013",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026231",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069076",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070829",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022453",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095279",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001098",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012606",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014100",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051378",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005124",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097410",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034442",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096899",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086269",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014797",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088597",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047752",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000056",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069396",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047673",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044400",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022180",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009791",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062372",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069458",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059313",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035018",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072322",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035933",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046750",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098085",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019152",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091662",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002432",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032182",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043540",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025166",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038550",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069771",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066228",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022160",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047684",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0018439",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041117",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099003",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086207",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077519",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073260",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067382",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003486",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022268",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021977",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047463",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099886",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067084",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000427",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041904",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091275",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094182",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096388",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013953",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067362",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015420",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026268",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082334",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041362",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006034",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019951",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048157",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0032033",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084720",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044422",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027442",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014386",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085234",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069274",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002344",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040060",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025643",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064310",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036586",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059294",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008467",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019395",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040564",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005619",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061487",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062472",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090389",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075379",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097828",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019125",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028259",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0027384",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060359",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061198",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095100",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082684",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071239",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035916",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061503",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059720",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075488",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074906",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068309",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049029",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034646",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045118",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019440",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008843",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010742",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096667",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028791",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051411",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059392",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066547",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043728",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029980",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068526",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026201",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094680",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002345",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091854",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093098",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046480",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036897",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050006",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073299",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052221",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051164",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035874",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022637",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043496",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060954",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082657",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098650",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066223",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044544",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024830",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037048",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017867",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011783",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088372",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028627",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015017",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045530",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063493",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044737",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024160",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078452",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043878",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024121",
+    "stratum": "random"
+  }
+]

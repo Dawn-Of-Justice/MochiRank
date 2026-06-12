@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0014635",
+    "score": 0.0,
+    "rationale": "Current title is Marketing Manager with career spanning HR, accounting, and customer support roles — no engineering or ML work present, and AI curiosity is limited to casual ChatGPT use.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014648",
+    "score": 0.0,
+    "rationale": "Entire career at IT services firms (Wipro, TCS, Infosys) plus the fictional Dunder Mifflin in non-technical PM/BA/Civil Engineer roles, with AI exposure limited to LangChain online courses and no production ML work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014683",
+    "score": 0.4,
+    "rationale": "Has production ML experience at Rephrase.ai and Dream11 with FAISS (advanced, 52mo) and pgvector skills, but work is primarily computer vision (ResNet fine-tuning) and lightweight collaborative filtering — limited NLP/IR/ranking depth the role specifically requires.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0014733",
+    "score": 0.0,
+    "rationale": "Only 2 years of experience, sole employer is the fictional Wayne Enterprises, skills are speech recognition and CNN with no NLP/IR/ranking background, and AI exposure is self-learner side projects only.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0014797",
+    "score": 0.2,
+    "rationale": "Data engineering background at Ola (product company) with Embeddings skill (advanced, 57mo) is a mild positive, but career has been data warehousing/SQL with top skills being GANs and YOLO — no production IR, retrieval, or ranking systems built; also includes the fictional Dunder Mifflin.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0014803",
+    "score": 0.2,
+    "rationale": "Product company experience at Flipkart and Swiggy plus NIT Trichy tier_1 education are positives, but all roles are DevOps/full-stack with no ML/IR work and top skills (Salesforce CRM, Redux) are entirely non-relevant to the role.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0014814",
+    "score": 0.0,
+    "rationale": "Despite an IIT Bombay M.Tech, the entire career is in Graphic Design, Project Management, and Business Analysis at TCS and fictional companies (Dunder Mifflin, Wayne Enterprises) with zero evidence of engineering or ML work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0014824",
+    "score": 0.0,
+    "rationale": "14.8-year career spans Business Analyst, Mechanical Engineer, Customer Support, and Marketing Manager roles at Hooli and the fictional Stark Industries, with no ML engineering or IR experience and only surface-level AI curiosity.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0014831",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Business Analyst, Graphic Designer, Accountant) across Acme Corp, Infosys, and the fictional companies Initech and Dunder Mifflin, with no ML/IR skills and only a Civil Engineering M.S. as technical credential.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0014858",
+    "score": 0.6,
+    "rationale": "Sentence Transformers (advanced, 55mo) and FAISS (advanced, 26mo) with pgvector signal genuine production embeddings/retrieval experience; NLP pipeline work (transformers-based classification) at Paytm and recommendation features at Aganitha demonstrate applied ML depth, though retrieval system ownership and evaluation metric experience are less explicitly evidenced.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

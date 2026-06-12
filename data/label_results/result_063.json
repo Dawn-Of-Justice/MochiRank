@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0024078",
+    "score": 0.2,
+    "rationale": "2.9 years of Java/Spring Boot backend at TCS (IT-services only) with no production ML or IR experience; AI exposure is limited to self-study courses and a small RAG side project.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0024121",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (accounting, operations, content writing) spanning fictional companies Initech and Wayne Enterprises, with zero engineering or ML production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024160",
+    "score": 0.0,
+    "rationale": "Non-technical career across HR, sales, and marketing roles at Wayne Enterprises (fictional) and Wipro/TCS, with no engineering or ML depth beyond casual ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024188",
+    "score": 0.0,
+    "rationale": "Career spans accounting, content writing, and civil engineering roles at Pied Piper (fictional) and TCS, with no NLP, IR, or ML engineering work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024223",
+    "score": 0.0,
+    "rationale": "Non-technical career (accounting, graphic design, HR) across fictional companies Dunder Mifflin and Wayne Enterprises with no engineering or ML production experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024288",
+    "score": 0.0,
+    "rationale": "Only 2.2 years total experience in non-technical HR roles, yet claims 60 months of advanced Reinforcement Learning — impossible duration indicating severe keyword inflation; no production ML work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024401",
+    "score": 0.2,
+    "rationale": "6.9 years of web/DevOps/QA engineering with some backend breadth, but career is split across TCS (IT-services) and fictional companies Wayne Enterprises and Dunder Mifflin, with no ML or IR production experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0024432",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (HR, project management, business analysis, customer support) across multiple fictional companies (Pied Piper, Wayne Enterprises, Stark Industries) with no engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024465",
+    "score": 0.4,
+    "rationale": "Backend and data engineering at real product companies Ola and Meesho shows genuine engineering depth, but no production IR/ranking system experience and skills list claims 53 months of Vector Search on a 43-month career, indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024466",
+    "score": 0.8,
+    "rationale": "5.2 years of production search and ranking engineering at PharmEasy and Mad Street Den — owned LTR model evolution, led keyword-to-embedding retrieval migration, built sentence-transformer recommendation system for 10M+ users, with expert-level Sentence Transformers and Pinecone skills and IISc Bangalore education.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

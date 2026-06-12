@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0019641",
+    "score": 0.0,
+    "rationale": "Operations Manager with marketing/brand-design background at a fictional company (Stark Industries), no engineering or ML skills, and only ChatGPT-level AI curiosity with zero production ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019654",
+    "score": 0.2,
+    "rationale": "Junior full-stack developer (2.2 years) at Swiggy with only web/API background; skills list (Illustrator, Photoshop, Figma, TTS) has no ML/IR relevance and self-reported AI exposure is limited to a small RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019700",
+    "score": 0.0,
+    "rationale": "Project Manager with a marketing-manager summary and career entirely in logistics operations and customer support (including at fictional Wayne Enterprises), with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019708",
+    "score": 0.2,
+    "rationale": "IIT Bombay B.Sc AI education is a strong signal, but career is entirely in sales and marketing/business analysis with no production ML or engineering work, making the degree credentials unactionable for this role.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019716",
+    "score": 0.2,
+    "rationale": "Holds strong credentials (IIT Bombay B.E. IT + Jadavpur M.S. ML) but has spent 5.7 years entirely in graphic design and customer support roles with no production ML or IR work in actual practice.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019799",
+    "score": 0.0,
+    "rationale": "Honeypot candidate: all three career roles are at fictional companies (Wayne Enterprises, Stark Industries, Initech) in non-technical positions (graphic designer, marketing manager, mechanical engineer) with no real ML experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0019845",
+    "score": 0.4,
+    "rationale": "Has genuine production recommendation/ranking work at Zomato (a product company) and hands-on Pinecone (vector DB) experience, but only 3.4 years total, the ranking systems are self-described as 'lighter weight,' and no evaluation-framework ownership (NDCG/MAP) is evidenced.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0019922",
+    "score": 0.2,
+    "rationale": "IIT Bombay M.S. CS is a strong educational signal, but only 1.5 years of experience, entire career at Cognizant (IT services) doing Java backend, and AI exposure is purely at self-learner/RAG-side-project level with no production ML.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0019951",
+    "score": 0.0,
+    "rationale": "Ten-year career spanning civil engineering, accounting, and HR management—all at fictional companies (Wayne Enterprises, Dunder Mifflin, Initech)—with zero ML or engineering relevance and only surface-level AI curiosity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0020004",
+    "score": 0.2,
+    "rationale": "NIT Trichy Ph.D and product-company stint at CRED provide some signal, but current role is at Wipro (IT services), top skill is 'Prompt Engineering' with no production IR/ranking experience, and the overall profile lacks any evidence of embeddings, retrieval, or evaluation-framework work.",
+    "stratum": "tier1_education"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0010778",
+    "score": 0.2,
+    "rationale": "Only 2.7 years of experience with QA/test automation at Wayne Enterprises (fictional company honeypot), self-learner AI side projects only, and no production IR, ranking, or embedding system work despite listing Fine-tuning LLMs as advanced skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010805",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career spanning content writing, customer support, project management, and sales with no engineering or ML work whatsoever, despite listing Time Series as an advanced skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010837",
+    "score": 0.2,
+    "rationale": "7 years split between IT services firms (Mindtree, TCS) doing Android/mobile dev and a fictional company (Stark Industries) doing DevOps, with OpenSearch listed as advanced but no described production IR or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010865",
+    "score": 0.0,
+    "rationale": "Civil Engineer at Initech (fictional company honeypot) with an accounting role description and generic marketing manager summary copy-paste, representing a complete non-fit with zero technical or AI/ML relevance.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010866",
+    "score": 0.2,
+    "rationale": "3.6 years entirely at Mindtree (IT services) doing Java backend microservices with Vector Search listed as advanced skill but no production ranking or IR work described, and Photoshop as a top-5 skill signals keyword inflation.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010892",
+    "score": 0.2,
+    "rationale": "3.1 years at HCL (IT services) doing data engineering with lightweight ML (sklearn/XGBoost, ~30% of time) and pgvector exposure, but no production retrieval or ranking system ownership and entirely IT-services background.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0010907",
+    "score": 0.0,
+    "rationale": "12.2 years of non-technical roles (sales, accounting, mechanical engineering, business analyst) spanning multiple fictional companies (Stark Industries, Pied Piper, Initech), with no engineering or ML experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0010914",
+    "score": 0.0,
+    "rationale": "9.3-year career entirely in HR management and business analyst roles at Infosys, Wayne Enterprises, and Wipro with no technical engineering work, despite listing Apache Beam and Databricks as skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010972",
+    "score": 0.0,
+    "rationale": "Operations manager at Dunder Mifflin (fictional company honeypot) with a career spanning content writing, sales, and graphic design — a complete non-fit with no technical or ML work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010997",
+    "score": 0.0,
+    "rationale": "3 years entirely in customer support at Infosys with a generic marketing manager summary, no engineering work, and Statistical Modeling listed as advanced skill with no supporting evidence in the described role.",
+    "stratum": "low_behavioral"
+  }
+]

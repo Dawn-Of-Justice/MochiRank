@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0034281",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Civil Engineer, Marketing Manager, Business Analyst at operations roles) with no ML, IR, or software engineering experience, and two employers are fictional companies (Pied Piper, Globex Inc); the AI interest is limited to casual ChatGPT experimentation.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0034295",
+    "score": 0.2,
+    "rationale": "IIIT Bangalore Ph.D and a real product-company stint at Meesho offer some credibility, but the career is data pipelines and analytics rather than IR/ranking, the skills list (GANs advanced, CNN advanced, Vector Search advanced) is inflated relative to the described work, and one employer is Dunder Mifflin (fictional honeypot signal).",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0034296",
+    "score": 0.2,
+    "rationale": "Eight years of web/backend engineering (React, .NET, Spring Boot) with no AI/ML or IR work, the AI exposure is purely self-learner (online courses, API experimentation), the career includes Accenture (IT services) and two fictional companies (Initech, Globex Inc), and none of the top-5 skills are relevant to search or ranking.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034364",
+    "score": 0.2,
+    "rationale": "Has genuine product-company experience at CRED and Razorpay (positive signal), but the work was Android mobile and full-stack web development with zero IR/embeddings/ranking exposure, the AI knowledge is self-learner only, and the current role is at Dunder Mifflin (fictional company).",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0034442",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical graphic design, project management, and operations roles at three fictional companies (Wayne Enterprises, Stark Industries) and Infosys, with no engineering or ML output; AI curiosity is limited to ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034479",
+    "score": 0.0,
+    "rationale": "Career spans content writing, graphic design, and sales exclusively across fictional companies (Wayne Enterprises, Initech, Hooli) with no software engineering or ML background; the AI interest is purely ChatGPT-level curiosity with no technical depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034646",
+    "score": 0.0,
+    "rationale": "Despite a Mechanical Engineer title, the actual roles are accountant, project manager, and customer support at TCS (IT services) and multiple fictional companies (Pied Piper, Wayne Enterprises), with no AI/ML or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034660",
+    "score": 0.2,
+    "rationale": "Only 2.5 years of experience at a real product company (upGrad) doing backend and data engineering, which is well below the role's experience band; the claimed advanced TTS and intermediate GANs skills are not supported by the described analytics/reporting work, and there is no IR or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034675",
+    "score": 0.2,
+    "rationale": "Entire 2.5-year career is at Infosys (IT services) doing web development, the AI/ML exposure is self-learner courses and a small RAG side project only, and the NLP/Data Science advanced skill claims are not backed by any production IR or ranking work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034725",
+    "score": 0.0,
+    "rationale": "Despite a B.Tech in AI from Georgia Tech (tier_1), the entire 14-year career consists of accounting, sales, content writing, and customer support at TCS and multiple fictional companies (Globex Inc, Initech, Acme Corp), with no ML or software engineering roles ever held.",
+    "stratum": "title_mismatch"
+  }
+]

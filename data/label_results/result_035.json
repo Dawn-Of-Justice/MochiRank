@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0013644",
+    "score": 0.0,
+    "rationale": "Career is entirely sales, accounting, and marketing (including at fictional companies Dunder Mifflin and Pied Piper) with zero ML, IR, or engineering work and only beginner-level web skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013714",
+    "score": 0.0,
+    "rationale": "Despite a Mechanical Engineer title, the career consists of content writing/SEO at Infosys and the fictional company Pied Piper, with no ML or IR experience and only beginner-level non-technical skills.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013765",
+    "score": 0.0,
+    "rationale": "Entire career in customer support and sales at Stark Industries (fictional honeypot) and TCS with no technical engineering or ML skills, making this profile completely irrelevant to the role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013795",
+    "score": 0.0,
+    "rationale": "Only 3.3 years of experience as an Operations Manager at TCS with a marketing/ops background and no ML, IR, or Python engineering skills whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013809",
+    "score": 0.2,
+    "rationale": "Sole role is Marketing Manager at Infosys (IT services) with a marketing/demand-generation career and no IR or ML production experience, though intermediate Airflow and Databricks skills suggest some adjacent data awareness.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013815",
+    "score": 0.2,
+    "rationale": "Entire 5.8-year career spent at IT-services firms HCL and Accenture in QA and frontend roles with no production IR or ranking experience; AI exposure is limited to self-study and a small RAG side project.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013828",
+    "score": 0.4,
+    "rationale": "6.5 years at EdTech product companies (Unacademy, Vedantu) with XGBoost/sklearn ML work and Recommendation Systems listed as advanced, but the role is primarily data engineering/pipelines with no demonstrated IR, embedding retrieval, or NDCG evaluation experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0013919",
+    "score": 0.2,
+    "rationale": "7 years of predominantly QA/frontend work including at fictional company Initech; Vector Search is listed as an intermediate skill (18 months) but primary advanced skill is Speech Recognition, which is a domain mismatch, and most product experience is in web/cloud rather than ML ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013953",
+    "score": 0.0,
+    "rationale": "Career is entirely Accountant, HR Manager, and Customer Support at non-technical companies including fictional Dunder Mifflin; Diffusion Models listed as advanced skill is clear keyword inflation with no supporting engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013979",
+    "score": 0.0,
+    "rationale": "10+ years as Project Manager and HR Manager at Acme Corp, TCS, and fictional companies Dunder Mifflin and Stark Industries with no ML or IR engineering work despite holding an M.Tech in Data Science.",
+    "stratum": "random"
+  }
+]

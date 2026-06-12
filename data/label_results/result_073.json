@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0028544",
+    "score": 0.0,
+    "rationale": "Despite B.E. in AI from Manipal (tier_2), the career summary explicitly describes 'marketing manager roles' with zero engineering work, and roles at fictional companies (Pied Piper, Wayne Enterprises) doing business analysis, operations, and brand design — no production ML, IR, or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0028562",
+    "score": 0.2,
+    "rationale": "Ph.D in Data Science from IIIT Hyderabad (tier_1) signals strong academic depth, but the entire 2.9-year career is a single QA Engineer role at Mindtree (IT services) doing Android development, with AI exposure limited to self-taught RAG side projects and no production IR/ranking or embedding system experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028570",
+    "score": 0.0,
+    "rationale": "Career of 14+ years is entirely non-technical (enterprise sales, operations management, customer support, SEO/content writing) split across IT services firms TCS and Infosys plus fictional Pied Piper, with no engineering or ML work and skills limited to Databricks (intermediate), Scrum, and Figma.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0028621",
+    "score": 0.2,
+    "rationale": "6.7 years of full-stack web development across product companies (Hooli, Globex) with Haystack listed as an intermediate skill (24 months) suggesting some NLP/search pipeline exposure, but there is no demonstrated production experience with embeddings, retrieval systems, or ranking — AI is self-learner/side project level only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028627",
+    "score": 0.0,
+    "rationale": "12+ year career is entirely non-technical sales, project management, and marketing roles at multiple fictional companies (Initech, Wayne Enterprises x2, Dunder Mifflin), with no engineering work and skills dominated by Marketing, YOLO (computer vision), and beginner-level GCP/Node.js.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028662",
+    "score": 0.0,
+    "rationale": "Career consists solely of business analysis at Infosys (IT services) and a sales role at Stark Industries (fictional company), with a summary describing 'marketing manager' experience; the MLOps 'advanced' skill claim is implausible given the non-technical background and no engineering work is evident.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0028710",
+    "score": 0.0,
+    "rationale": "Career is customer support, operations management, and marketing roles at fictional Initech (x2) and Infosys (IT services), and the summary explicitly cites LangChain courses and RAG video lectures as the AI exposure — precisely the 'recent LangChain to call OpenAI' profile the JD flags as a disqualifier.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0028756",
+    "score": 0.0,
+    "rationale": "10+ year career spans accounting, HR management, and project management at TCS, Infosys, and fictional Dunder Mifflin, with no technical engineering work; the top AI skill listed is TTS (text-to-speech, advanced) which is unrelated to IR/ranking, and education is tier_4 in civil engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028780",
+    "score": 0.2,
+    "rationale": "Python backend fundamentals (Flask intermediate 36 months, Django intermediate 17 months) and some QA/test-automation work in fintech provide a technical baseline, but 3.2 years of experience is entirely frontend/QA with AI exposure limited to online courses and a RAG side project, and education is tier_4.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0028791",
+    "score": 0.0,
+    "rationale": "Extreme keyword inflation is evident — Diffusion Models and YOLO each listed as 'advanced' for 55 months while total experience is only 2.8 years (33 months) doing Android development at Mindtree (IT services); actual background has no IR/NLP work and the AI skills claimed (all computer vision) are irrelevant to the role.",
+    "stratum": "random"
+  }
+]

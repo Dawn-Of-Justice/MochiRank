@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0003706",
+    "score": 0.2,
+    "rationale": "Career is data engineering and analytics with only 30% lightweight ML (sklearn/XGBoost for clustering and churn), top skills are Object Detection/YOLO/OpenCV indicating computer vision focus rather than NLP or IR, no embeddings/retrieval/ranking experience, and current role is at fictional company Stark Industries.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003763",
+    "score": 0.0,
+    "rationale": "Entire 10-year career spans non-technical roles (Accountant, Customer Support, Sales Executive) exclusively at IT services firms (Infosys, Wipro, TCS), with no engineering or ML work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003770",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Content Writer, Operations Manager, Project Manager, Graphic Designer) at Wipro and fictional company Initech, with only recent online courses on RAG/vectors representing a career pivot with no prior engineering depth.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0003832",
+    "score": 0.2,
+    "rationale": "Background is DevOps/cloud infrastructure and full-stack web development at HCL (IT services) and fictional Wayne Enterprises, with AI experience limited to self-learner courses and a small RAG side project — no production ML or IR/ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0003962",
+    "score": 0.0,
+    "rationale": "Thirteen-year career consists entirely of non-technical roles (HR Manager, Mechanical Engineer, Operations Manager) at fictional company Pied Piper and Hooli/Stark Industries, with Hugging Face Transformers listed at only 8 months duration indicating a very recent pivot with no production ML experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0003977",
+    "score": 0.8,
+    "rationale": "Led production migration from keyword-search to embedding-based retrieval (sentence-transformers BGE + FAISS) at Google and Rephrase.ai, holds expert-level skills in Semantic Search, Embeddings, and Learning to Rank with multi-year durations, and demonstrates evaluation rigor — directly matching the role's core requirements for hybrid retrieval and ranking systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0004031",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical sales and graphic design roles (Sales Executive at Hooli, Graphic Designer at Acme Corp) with no engineering or ML work, confirming honeypot_flagged stratum.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0004069",
+    "score": 0.0,
+    "rationale": "Career consists of Mechanical Engineer and Marketing Manager roles at fictional company Pied Piper and Hooli, with skills in Six Sigma and Photoshop — no ML, NLP, or IR experience whatsoever despite the title_match_strong stratum suggesting keyword inflation.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004082",
+    "score": 0.0,
+    "rationale": "Only 1.2 years of experience as a Civil Engineer at fictional company Initech, with a self-described marketing manager background and no engineering depth, making this candidate completely unqualified for a production ML/IR role.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0004246",
+    "score": 0.2,
+    "rationale": "Entire 2.9-year career is frontend engineering at Accenture (consulting firm) with AI experience limited to self-learner courses and a small RAG side project, and skills dominated by Azure, Photoshop, and Salesforce CRM rather than any ML/IR tooling.",
+    "stratum": "random"
+  }
+]

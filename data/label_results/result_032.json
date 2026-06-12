@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0012802",
+    "score": 0.2,
+    "rationale": "Entire career at IT-services firms (Wipro, Tech Mahindra) with Wayne Enterprises (fictional) and no production IR or ML experience beyond self-learner API experimentation, despite holding an intermediate Sentence Transformers skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012837",
+    "score": 0.4,
+    "rationale": "Product-company experience at CRED with collaborative filtering in production and advanced Weaviate skill, but primary expertise is time-series forecasting, CV, and speech recognition rather than search/ranking/retrieval systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0012851",
+    "score": 0.0,
+    "rationale": "Career is entirely in marketing, operations, and business analysis roles at fictional companies (Wayne Enterprises, Initech) with zero ML or engineering work and only superficial ChatGPT experimentation.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0012888",
+    "score": 0.2,
+    "rationale": "Junior ML Engineer with 6.4yr but skills are dominated by CV (ResNet image moderation) and TTS with no retrieval, search, or ranking experience, and primary employer is Genpact AI (large IT-services adjacent firm).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0012922",
+    "score": 0.0,
+    "rationale": "Titled Mechanical Engineer but career is entirely SEO content writing, HR management at TCS/Wipro, and operations at fictional Pied Piper, with no engineering or ML work whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0012944",
+    "score": 0.0,
+    "rationale": "Business Analyst and Project Manager career at Dunder Mifflin (fictional honeypot) and TCS with non-technical operations work; no ML, search, or engineering depth despite some peripheral tech skills listed.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0012957",
+    "score": 0.8,
+    "rationale": "Search Engineer at Razorpay who owned the ranking layer evolution from hand-tuned scoring to learning-to-rank, combined with NLP Engineer experience building sentence-transformer embedding-based recommendation at 10M+ user scale, with expert-level Embeddings skill and PEFT experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012989",
+    "score": 0.0,
+    "rationale": "Single role as Business Analyst at fictional Initech with actual work being senior accounting (GL, financial reporting), summary claims marketing background, and no ML or engineering skills despite a CS degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013002",
+    "score": 0.2,
+    "rationale": "45 of 52 months spent at TCS (IT services) on time-series forecasting with LightGBM, and only 7 months at a product company; Milvus skill listed but no production search or ranking system ownership evident.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0013005",
+    "score": 0.0,
+    "rationale": "Project Manager whose actual work is customer support team lead and accounting at Wipro/Hooli, with AI interest limited to recent online courses on RAG and zero production engineering experience.",
+    "stratum": "random"
+  }
+]

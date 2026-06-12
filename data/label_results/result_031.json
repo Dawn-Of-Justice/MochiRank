@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0012619",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (Business Analyst at fictional Dunder Mifflin, Operations Manager, Graphic Designer at Wipro) with skills limited to Figma and Photoshop — no ML, IR, or engineering background whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012626",
+    "score": 0.0,
+    "rationale": "All career roles are business analyst and consulting positions at fictional companies (Pied Piper, Initech) with skills limited to beginner SQL/Kafka and Accounting — only recent online course exposure to RAG with zero production ML or engineering experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0012647",
+    "score": 0.2,
+    "rationale": "7.6 years of backend/DevOps engineering (Java, .NET, Kubernetes, Selenium) provides some software engineering depth, but career descriptions show no ML or IR work, and the 'Feature Engineering advanced' and 'Kubeflow advanced' skill claims are directly contradicted by job descriptions that describe web APIs, infrastructure, and QA automation.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0012694",
+    "score": 0.2,
+    "rationale": "8.6 years across QA engineering, mobile development, and full-stack work at Razorpay (a real product company) and IT-services firms (TCS, Cognizant); skills list includes 'ASR advanced' but career descriptions contain no NLP/IR/ranking work and the current role is at fictional Stark Industries.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0012708",
+    "score": 0.2,
+    "rationale": "IIT Roorkee M.Sc (tier_1) is a strong signal, but the entire 9.2-year career is in Project Management, Business Analysis, and Mechanical Engineering roles at Wipro and fictional Wayne Enterprises with no ML, Python, or IR work visible in any job description.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012715",
+    "score": 0.0,
+    "rationale": "Career is entirely Graphic Designer and Business Analyst roles at fictional companies (Wayne Enterprises, Hooli) in manufacturing and marketing contexts, with skills limited to HTML, CSS, and SQL — no technical engineering or ML background of any kind.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012723",
+    "score": 0.0,
+    "rationale": "Career consists entirely of Sales Executive, HR Manager, and Operations Manager roles at Infosys, Initech (fictional), and Stark Industries (fictional) — non-technical roles throughout with no ML, Python, or engineering work despite a Ph.D in EE from Manipal.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0012727",
+    "score": 0.0,
+    "rationale": "Only 2.6 years of experience with a single Project Manager role at fictional Dunder Mifflin; skills are Azure beginner and Salesforce CRM with no engineering or ML depth, and the profile explicitly self-identifies as a marketing manager pivoting to AI via ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012760",
+    "score": 0.2,
+    "rationale": "IIT Guwahati M.E. in Machine Learning (tier_1) is notable, but 13.7 years of career history is exclusively Sales Executive and Graphic Designer roles at Infosys and fictional companies (Initech, Stark Industries), with all job descriptions describing marketing/demand-gen work — Kubeflow advanced skill claim (58 endorsements) is not supported by any role description.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012798",
+    "score": 0.6,
+    "rationale": "5.1 years of production ML at real product companies (Vedantu, Dream11) with hands-on XGBoost, PyTorch, collaborative filtering, and self-reported 'Learning to Rank advanced' and 'RAG advanced' skills; lacks explicit hybrid search/NDCG evaluation ownership and has an Infosys stint, but the production ML depth at product companies meets most core requirements.",
+    "stratum": "top_retrieval_dense"
+  }
+]
