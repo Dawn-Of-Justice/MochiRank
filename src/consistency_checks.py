@@ -44,34 +44,44 @@ def check_consistency(c: dict) -> tuple[bool, int, list[str]]:
         if end_years:
             latest_grad = max(end_years)
             max_possible_yoe = REFERENCE_DATE.year - latest_grad
-            if yoe > max_possible_yoe + 1.5:  # 1.5 yr buffer for estimation
-                msg = (f"yoe={yoe} impossible: graduated {latest_grad}, "
-                       f"max possible {max_possible_yoe:.0f}yr")
-                violations.append(msg)
-                honeypot_flags.append(msg)
+            if yoe > max_possible_yoe + 1.5:  # 1.5 yr buffer
+                msg = (f"yoe={yoe} claimed but latest graduation {latest_grad} "
+                       f"(max possible {max_possible_yoe:.0f}yr)")
+                violations.append(msg)  # soft only — noisy for hard-gate
 
     # ------------------------------------------------------------------ #
-    # Check 2: Worked at a fictional company (any tenure is impossible —
-    # these companies exist only in fiction/TV/film)
+    # Check 2: Job duration_months >> actual date span (impossible tenure)
+    # e.g., "8 years at a company founded 3 years ago"
     # ------------------------------------------------------------------ #
     for job in career:
-        company_lower = job.get("company", "").lower()
-        for fictional_name in FICTIONAL_COMPANIES:
-            if fictional_name in company_lower:
-                msg = f"worked at fictional company '{job['company']}'"
-                violations.append(msg)
-                honeypot_flags.append(msg)
-                break  # one flag per job is enough
+        dm = job.get("duration_months", 0)
+        sd = job.get("start_date", "")
+        ed = job.get("end_date", "")
+        if dm and sd:
+            try:
+                from datetime import date as _date
+                s = _date.fromisoformat(sd)
+                e = _date.fromisoformat(ed) if ed else REFERENCE_DATE
+                actual_months = (e.year - s.year) * 12 + (e.month - s.month)
+                if dm > actual_months + 12:  # >1yr discrepancy is impossible
+                    msg = (f"impossible tenure: claimed {dm}m at {job.get('company','?')}, "
+                           f"actual span {actual_months}m")
+                    violations.append(msg)
+                    honeypot_flags.append(msg)
+            except (ValueError, TypeError):
+                pass
 
     # ------------------------------------------------------------------ #
-    # Check 3: Expert skill with 0 months duration
+    # Check 3: Multiple expert skills with 0 months (keyword inflation trap)
     # ------------------------------------------------------------------ #
-    for skill in skills:
-        if (skill.get("proficiency") == "expert"
-                and skill.get("duration_months", 1) == 0):
-            msg = f"expert '{skill.get('name', '?')}' with 0 months experience"
-            violations.append(msg)
-            honeypot_flags.append(msg)
+    zero_expert_count = sum(
+        1 for s in skills
+        if s.get("proficiency") == "expert" and s.get("duration_months", 1) == 0
+    )
+    if zero_expert_count >= 3:
+        msg = f"{zero_expert_count} expert skills each with 0 months experience"
+        violations.append(msg)
+        honeypot_flags.append(msg)
 
     # ------------------------------------------------------------------ #
     # Check 4: Overlapping non-concurrent employment (soft)
