@@ -221,9 +221,10 @@ def main(candidates_path: str, output_path: str) -> None:
     # ------------------------------------------------------------------ #
     tick("Stage G: SHAP reasoning…")
     try:
-        import shap as _shap
-        explainer = _shap.TreeExplainer(model)
-        shap_values = explainer.shap_values(dmat)
+        # XGBoost native SHAP contributions — avoids shap/xgb base_score format bug
+        shap_full = model.predict(dmat, pred_contribs=True)  # (N, n_features+1)
+        shap_values = shap_full[:, :-1]                       # drop bias column
+        tick(f"SHAP contributions shape: {shap_values.shape}")
     except Exception as e:
         tick(f"SHAP unavailable ({e}), using stub reasoning")
         shap_values = None
@@ -234,12 +235,9 @@ def main(candidates_path: str, output_path: str) -> None:
     output_rows = []
     for rank_pos, cid in enumerate(final_100, start=1):
         c = candidates[cid]
-        # Score: cross-encoder if available, else XGBoost
-        if cid in reranked_scores_map:
-            score = reranked_scores_map[cid]
-        else:
-            idx = cid_to_matrix_idx.get(cid, -1)
-            score = float(scores[idx]) if idx >= 0 else 0.0
+        # Score: XGBoost prediction (0–1 relevance). Reranker only changes order.
+        idx = cid_to_matrix_idx.get(cid, -1)
+        score = float(scores[idx]) if idx >= 0 else 0.0
 
         # Reasoning
         if shap_values is not None and cid in cid_to_matrix_idx:
