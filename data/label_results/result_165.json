@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0065909",
+    "score": 0.2,
+    "rationale": "Backend/QA engineer with 6.3 years but currently at a fictional company (Pied Piper) as a Java Developer, no production IR/ranking/embedding experience, and only self-learner-level AI exposure with a small RAG side project.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0066099",
+    "score": 0.0,
+    "rationale": "Non-technical profile with career spanning Graphic Designer, Marketing Manager, and Accountant roles at Wipro and fictional Dunder Mifflin, with zero engineering or ML production experience despite AI keyword inflation in skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0066223",
+    "score": 0.2,
+    "rationale": "Mobile/DevOps engineer from IISc (tier_1) with strong infra background at Zomato and Flipkart, but career shows no NLP, IR, or ranking system work despite PEFT listed as an advanced skill with 33 months duration.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066228",
+    "score": 0.0,
+    "rationale": "Customer Support and Content Writer career entirely in non-technical operations/support roles at fictional companies (Wayne Enterprises, Dunder Mifflin), with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066232",
+    "score": 0.0,
+    "rationale": "Content Writer and Accountant at Infosys and fictional Initech with no engineering work, and despite BITS Pilani education the career shows purely non-technical marketing/accounting/project management roles with zero ML production experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0066233",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer/Marketing Manager/HR Manager career at fictional Wayne Enterprises with no software engineering or ML work, and summary explicitly states marketing manager background with only casual AI tool experimentation.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0066376",
+    "score": 0.8,
+    "rationale": "Applied ML Engineer at Dream11 with 5.7 years who built a content recommendation system for 10M+ users using sentence-transformer embeddings and BM25 hybrid retrieval, plus semantic search with FAISS at Salesforce, with IIT Kharagpur (tier_1) education and expert-level FAISS and BM25 skills.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0066507",
+    "score": 0.0,
+    "rationale": "Graphic Designer/Accountant at fictional Initech and Infosys whose actual career work is mechanical engineering design and brand creative direction, with no ML or software engineering experience despite holding a PhD in Electrical Engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066547",
+    "score": 0.0,
+    "rationale": "Mechanical/Civil Engineer career at fictional Wayne Enterprises, Pied Piper, and Infosys with 9 years in manufacturing/hardware design and sales roles, no software engineering or ML experience, and only superficial AI tool curiosity mentioned in summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066556",
+    "score": 0.4,
+    "rationale": "Cloud/full-stack engineer with 3.5 years at CRED (fintech product company) showing BM25 and RAG skills with meaningful duration (55 and 32 months respectively), but career roles are web/mobile development with only self-learner ML exposure and no demonstrated production IR or ranking system ownership.",
+    "stratum": "top_retrieval_dense"
+  }
+]

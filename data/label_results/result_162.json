@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0064600",
+    "score": 0.2,
+    "rationale": "Only 2.8 years of experience at Wipro (IT services only), career is DevOps/cloud infrastructure with no production ML or IR work, and AI exposure is self-learner side projects only.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0064630",
+    "score": 0.4,
+    "rationale": "Has product-company experience at PhonePe (data engineering with Kafka/Spark) and claims advanced Vector Search and LoRA skills, but career descriptions show no actual IR or ranking work, making the claimed ML skills appear inflated relative to a data-pipeline background.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064652",
+    "score": 0.0,
+    "rationale": "Title is 'Civil Engineer' but career shows only marketing, content writing, and customer support roles at fictional companies (Stark Industries, Initech) with zero engineering or ML substance.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0064660",
+    "score": 0.0,
+    "rationale": "14.5-year career is entirely non-technical (marketing, brand design, sales, business analysis) at fictional companies (Hooli), with no evidence of any ML, IR, or engineering work.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0064664",
+    "score": 0.4,
+    "rationale": "4.4yr ML Engineer at PolicyBazaar (product company) with advanced semantic search and NLP skills and hands-on PyTorch, but career work is primarily computer vision (ResNet image moderation) rather than retrieval or ranking systems, leaving core IR requirements unmet.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064784",
+    "score": 0.2,
+    "rationale": "5.4yr engineer at Initech (fictional company, negative signal) and Razorpay, but career descriptions show only Java backend and DevOps work with no actual ML or retrieval systems despite an advanced 'Recommendation Systems' skill claim.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064785",
+    "score": 0.0,
+    "rationale": "12.6-year HR/marketing manager career entirely at fictional companies (Pied Piper, Initech, Stark Industries) with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064841",
+    "score": 0.0,
+    "rationale": "Titled 'Mechanical Engineer' with all three roles at fictional Hooli, but career descriptions show SEO writing, accounting, and operations management — completely mismatched to any engineering or ML requirement.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0064905",
+    "score": 0.0,
+    "rationale": "3.3yr customer support role at Infosys (IT services) with career description showing enterprise sales work and no engineering, ML, or IR skills of any relevance.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0064923",
+    "score": 0.2,
+    "rationale": "Only 1.9 years experience, sole role at TCS (IT services) described as customer support team lead despite an advanced Object Detection skill claim, providing no evidence of production ML or IR work.",
+    "stratum": "title_match_strong"
+  }
+]

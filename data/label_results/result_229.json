@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0092064",
+    "score": 0.0,
+    "rationale": "Career is entirely non-ML: Civil Engineer at Infosys (IT services) and Business Analyst at Pied Piper (fictional company), with no production AI/IR experience and only surface-level recent curiosity about GenAI tools.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0092085",
+    "score": 0.0,
+    "rationale": "Marketing Manager at Wipro with a non-technical career history (customer support lead, mechanical design BA at Initech — a fictional company), zero engineering or ML work despite a Ph.D in Computer Engineering listed.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0092110",
+    "score": 0.0,
+    "rationale": "Despite 10.5 years of experience, the entire career spans IT services support (Wipro), enterprise sales, accounting at Pied Piper (fictional), and customer support — no ML, no IR, and no engineering depth whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092132",
+    "score": 0.0,
+    "rationale": "Business Analyst at Dunder Mifflin (fictional company) with an M.Sc in Commerce; despite GANs listed as an advanced skill, the actual career shows only business analysis and marketing operations with zero AI engineering evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092169",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience as Customer Support at Initech (fictional company) with content-writing background; BITS Pilani and Anna University education provides potential, but there is no production ML or IR work to speak of.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092181",
+    "score": 0.4,
+    "rationale": "IIT Bombay M.Tech ML with 4.6 years at Unacademy (product company) doing time-series forecasting and MLOps is a solid engineering foundation, but lacks any production retrieval, ranking, or search system experience that the role specifically demands.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092224",
+    "score": 0.2,
+    "rationale": "Only 2 years of experience as a Frontend Engineer at Wipro (IT services) with self-learner AI exposure and a small RAG side project; the claimed PEFT advanced skill is not supported by any production ML work in the career history.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092245",
+    "score": 0.8,
+    "rationale": "Senior Data Scientist at Ola (product company) who shipped XGBoost/LightGBM ranking models for a discovery feed, with advanced FAISS and embeddings skills and expert-level Hugging Face Transformers experience from IIT Delhi — strong alignment with ranking and retrieval requirements despite slightly short tenure at 4.1 years.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0092267",
+    "score": 0.2,
+    "rationale": "Nine years of backend/DevOps/frontend engineering across Wayne Enterprises and Dunder Mifflin (both fictional companies) with only self-learner AI exposure; strong software fundamentals but no production ML or IR experience and multiple honeypot signals.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092278",
+    "score": 1.0,
+    "rationale": "Senior NLP Engineer with 6.8 years at Microsoft, Paytm, and Saarthi.ai who built a production RAG ranking pipeline at 50M+ queries/month using BM25 + dense hybrid retrieval (BGE/FAISS HNSW), owned NDCG-based eval frameworks, and has QLoRA fine-tuning expertise — from IIT Delhi, this profile is a near-exact match for every hard requirement in the JD.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

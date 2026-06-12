@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0086505",
+    "score": 0.0,
+    "rationale": "Despite an IIT Bombay M.Sc in AI, the entire career is at Wipro in Mechanical Engineer/Customer Support/Content Writer roles with no ML, IR, or retrieval engineering work, plus employment at fictional company Dunder Mifflin — zero relevant technical depth for a Senior AI Engineer role.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0086557",
+    "score": 0.2,
+    "rationale": "3.3 years of experience entirely at IT-services firms (Mindtree, Wipro, Infosys) doing web/API and QA work, with only self-learner AI exposure (RAG side project, online courses) and no production IR/retrieval or ranking systems shipped.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086647",
+    "score": 0.0,
+    "rationale": "Career history consists of content writing/SEO at fictional company Wayne Enterprises and accounting/project management at TCS, with no ML or engineering work, and employment at fictional companies (Wayne Enterprises, Pied Piper) signals a honeypot profile.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0086661",
+    "score": 0.0,
+    "rationale": "3.7 years in Customer Support at fictional company Wayne Enterprises and Accountant roles with a Civil Engineering M.E. degree — no technical engineering, ML, or IR experience whatsoever and employment at a fictional company confirms honeypot.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086815",
+    "score": 0.0,
+    "rationale": "Content Writer and Customer Support roles at Dunder Mifflin (fictional) and Project Manager roles with no ML work, despite M.Tech AI and Ph.D ML credentials — career history completely mismatches claimed education and contains fictional employer (Dunder Mifflin), confirming honeypot.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0086828",
+    "score": 0.0,
+    "rationale": "Operations Manager, Accountant, Sales Executive, and Graphic Designer career history at Stark Industries (fictional) and Pied Piper (fictional) with no engineering or ML work — pure non-technical background with fictional employers confirming honeypot status.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0086830",
+    "score": 0.4,
+    "rationale": "3 years as a Data Engineer at Dream11 (product company) with XGBoost/sklearn ML exposure and strong NLP/Feature Engineering skills, but the role is primarily data pipelines (~70%) with only lightweight ML and no demonstrated production IR/retrieval/ranking systems or evaluation metric ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086981",
+    "score": 0.2,
+    "rationale": "4.7 years primarily in cloud/frontend engineering across Acme Corp, TCS (IT services), and fictional Wayne Enterprises with self-learner AI exposure only — strong Weights & Biases endorsements are mismatched against a career showing no production ML, retrieval, or ranking work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086987",
+    "score": 0.4,
+    "rationale": "5.4 years with Zomato (product company, 4.25 yrs) giving meaningful product-company experience, BM25 intermediate skill, and advanced Fine-tuning LLMs exposure, but career descriptions show QA/testing and full-stack web work with no demonstrated production IR/ranking system or evaluation framework ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086994",
+    "score": 0.0,
+    "rationale": "Content Writer career entirely at fictional companies (Pied Piper, Stark Industries, Initech) with mechanical engineering and operations descriptions that contradict the titles — classic honeypot with zero relevant ML, IR, or engineering experience.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0040897",
+    "score": 0.4,
+    "rationale": "Holds a Ph.D in ML from RV College and B.Tech from NIT Warangal (tier_1) with advanced Data Science/ML skills, and has product-company experience at Razorpay, but all career descriptions are cloud infrastructure and DevOps work with no production IR, embeddings, or retrieval system experience, and the current role is at fictional company Pied Piper.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041009",
+    "score": 0.2,
+    "rationale": "Lists FAISS (intermediate, 12 months) as a skill and has CRED product-company exposure, but career is entirely .NET/Java backend and cloud DevOps work, current role is at fictional Stark Industries, education is tier_4, and the summary self-rates AI as 'self-learner level' with only a small RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041050",
+    "score": 0.2,
+    "rationale": "Holds a B.Tech in Information Technology from VIT Vellore (tier_2), which provides minor adjacent relevance, but the entire 9.4-year career spans non-technical roles (sales, accounting, project management, business analysis) at fictional and IT-services companies with zero engineering or ML work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041079",
+    "score": 0.2,
+    "rationale": "Strong academic pedigree (IIT Guwahati B.Tech CS, tier_1) is a positive signal, but only 1.5 years of total experience at Infosys doing QA/test automation with no production ML or IR work, and advanced Deep Learning self-rating at this experience level appears inflated.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041091",
+    "score": 0.2,
+    "rationale": "Nine years of experience including time at Flipkart (major e-commerce product company) is a positive, but actual work at Flipkart was frontend engineering (React/TypeScript design system), not ML; skills are Angular/Apache Beam/Kubeflow with no IR or embedding experience, and education is tier_4 Civil Engineering.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0041117",
+    "score": 0.0,
+    "rationale": "Current role is at fictional company Dunder Mifflin in a marketing leadership capacity, prior role was sales/brand design at Hooli, and the entire career is non-technical marketing and sales work with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041122",
+    "score": 0.2,
+    "rationale": "Holds a B.Sc in Computer Science from SRM University (tier_2), providing minor adjacent relevance, but the sole work role is Accountant at Wipro (IT services) with marketing leadership descriptions, and skills like Spring Boot (28 months) exceed stated total experience of 1.9 years indicating inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041130",
+    "score": 0.2,
+    "rationale": "Has AI domain skills in ASR (advanced) and OpenCV (advanced), but the JD explicitly calls out computer vision and speech without significant NLP/IR exposure as a negative; the only employer is fictional Stark Industries, education is tier_4, and there is no retrieval, ranking, or embedding experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0041174",
+    "score": 0.0,
+    "rationale": "Entire 13.2-year career is non-technical operations, customer support, accounting, and content writing, with three of four employers being fictional companies (Dunder Mifflin, Wayne Enterprises, Pied Piper); no engineering, ML, or IR skills are evidenced in any role description.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041175",
+    "score": 0.0,
+    "rationale": "Despite a Mechanical Engineer title, the entire 4.1-year career is enterprise sales (carrying a $1.8M ARR quota at Hooli) with no engineering or ML work, the summary explicitly describes a marketing manager background, and the MLflow skill listing appears purely cosmetic against a purely non-technical career.",
+    "stratum": "low_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0075918",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Marketing Manager, Operations Manager, Project Manager, Mechanical Engineer titles with non-engineering descriptions) with no ML, IR, or software engineering experience, and current employer Dunder Mifflin is a fictional company honeypot.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075957",
+    "score": 0.2,
+    "rationale": "Despite listing FAISS as an advanced skill, the actual career history shows only Java backend/Spring Boot work at Mindtree (IT services) and DevOps at Acme Corp, with no production IR, embeddings, or ranking systems experience to substantiate the claim.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0075998",
+    "score": 0.2,
+    "rationale": "6.4 years of data engineering experience at Flipkart and Accenture with Snowflake/Spark/Airflow, but skills list is dominated by Image Classification, Diffusion Models, and ASR — computer vision/speech skills explicitly flagged as negative signals — with no production IR or ranking system evidence.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076006",
+    "score": 0.0,
+    "rationale": "Current title is HR Manager with 13.7 years in non-technical roles (marketing, business analyst, sales) at Initech and Dunder Mifflin (fictional companies), and superficial AI interest via LangChain courses does not compensate for zero engineering or ML production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076042",
+    "score": 0.0,
+    "rationale": "Entire career of 6.5 years spent at Wipro (IT services) in Business Analyst and Civil Engineer roles with marketing-oriented descriptions, representing exactly the consulting-only anti-profile the JD explicitly disqualifies.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0076129",
+    "score": 0.0,
+    "rationale": "Titles span Mechanical Engineer, Graphic Designer, and Marketing Manager across Infosys (IT services) and Initech (fictional company), with no AI, ML, or software engineering substance despite superficial AI curiosity mentioned in summary.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0076171",
+    "score": 0.0,
+    "rationale": "11.8 years spread across Civil Engineer, Operations Manager, and Content Writer roles — no software or ML engineering at all — with two stints at Pied Piper (fictional company) and employment at Wipro (IT services), representing a completely non-technical profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076173",
+    "score": 0.0,
+    "rationale": "Career consists entirely of Operations Manager, Business Analyst, and Marketing Manager roles at fictional companies Dunder Mifflin, Initech, and Stark Industries, with no engineering or ML skills and skills list showing only beginner-level SEO and Terraform.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076214",
+    "score": 0.2,
+    "rationale": "7.4 years of backend/QA engineering experience with NIT Trichy tier_1 education is a positive signal, but actual work at Swiggy and Hooli covers Android, test automation, and QA — not IR or ML — and skills are web-focused (JavaScript, CSS, Next.js) with no ranking or embeddings production experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0076225",
+    "score": 0.4,
+    "rationale": "3.8 years of data engineering at Paytm (Kafka, Spark, Airflow) and InMobi (XGBoost, sklearn) shows real engineering depth, and Semantic Search is listed as an advanced skill with 55 months duration, but there is no evidence of production IR/ranking or embeddings systems deployment and total experience is below the 5-year floor.",
+    "stratum": "random"
+  }
+]

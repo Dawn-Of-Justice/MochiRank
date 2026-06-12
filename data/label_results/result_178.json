@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0072221",
+    "score": 0.0,
+    "rationale": "Career is entirely in marketing/project management at TCS and fictional Dunder Mifflin with no ML, IR, or engineering production work — skills list shows Flask/Tailwind with no embeddings, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072232",
+    "score": 0.4,
+    "rationale": "Built recommendation-style production ML features at Yellow.ai and Sarvam AI (product companies), but skills are skewed toward TensorFlow/diffusion/forecasting with no explicit embeddings, vector search, hybrid retrieval, or ranking evaluation (NDCG/MAP) experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0072304",
+    "score": 0.2,
+    "rationale": "Entire career at IT-services firms (Infosys and TCS) doing data pipelines and analytics engineering with only lightweight sklearn/XGBoost work — no production IR, embeddings, or ranking system experience, and explicitly wants to transition into ML rather than already being there.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0072322",
+    "score": 0.2,
+    "rationale": "Backend/mobile engineer with 5.7 years primarily in web/fullstack at Swiggy and Capgemini, with only a self-learner RAG side project and no production ML, embeddings, or retrieval work — semantic search listed as an intermediate skill but no substantive career evidence supports it.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072337",
+    "score": 0.0,
+    "rationale": "Pure sales and marketing career at Infosys and fictional Initech with 3.4 years of experience — zero technical or ML engineering work, and the skills listed (CI/CD, Kafka, Redis) are beginner-level with no credible deployment context.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072352",
+    "score": 0.0,
+    "rationale": "Only 2.5 years of experience as a .NET Developer at fictional Stark Industries and Wipro (IT services), with QA automation and Android mobile background — self-learner AI level with no production ML or IR work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072353",
+    "score": 0.0,
+    "rationale": "Despite a Ph.D in CS from VIT, the entire 6.9-year career consists of marketing management, graphic design, and project management at Wipro and fictional Pied Piper — no engineering or ML production work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072423",
+    "score": 0.0,
+    "rationale": "10.2-year career entirely in sales, customer support, and accounting at Wipro, Hooli, and fictional Pied Piper — no technical or ML engineering background, with only casual ChatGPT experimentation mentioned and skills confined to Go/FastAPI/ETL at beginner-intermediate level.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0072440",
+    "score": 0.0,
+    "rationale": "8.7 years across customer support, accountant, mechanical engineer, and HR manager roles at fictional companies (Stark Industries, Initech) — zero ML or software engineering production experience despite recently taking online RAG and vector database courses.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072459",
+    "score": 0.0,
+    "rationale": "8.6-year career as graphic designer, civil engineer, business analyst, and sales executive at Hooli, Infosys, and non-tech firms — civil engineering degree from Amity, ASR listed as an advanced skill but no NLP/IR engineering career evidence exists.",
+    "stratum": "honeypot_flagged"
+  }
+]

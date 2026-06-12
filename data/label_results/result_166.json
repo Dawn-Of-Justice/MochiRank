@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0066630",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (civil engineering, TCS project management, marketing at fictional companies Wayne Enterprises and Dunder Mifflin) with zero ML, IR, or software engineering experience relevant to this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066641",
+    "score": 0.2,
+    "rationale": "Entire career is conventional backend/full-stack web development at IT services firms (Mphasis, Wipro) with no production ML or IR experience; the only AI signal is a self-described RAG side project built on OpenAI/Anthropic APIs.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0066642",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning accounting, marketing management, and project management roles at fictional companies (Stark Industries, Dunder Mifflin) with no engineering or ML background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066659",
+    "score": 0.2,
+    "rationale": "Backend/cloud engineering background at IT services firms (Capgemini, Mphasis) and fictional company Stark Industries, with no ML or IR experience; top skills are SEO and OpenCV (computer vision), not NLP or retrieval systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0066687",
+    "score": 0.0,
+    "rationale": "Flagged honeypot candidate with a career consisting entirely of operations and marketing management roles at Pied Piper (fictional) and Globex, with no technical or ML engineering experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0066691",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — content writing, HR management, and customer support across Dunder Mifflin (fictional) and Pied Piper (fictional) — with no engineering or ML work of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0066713",
+    "score": 0.6,
+    "rationale": "Production ML experience at real product companies (Flipkart, Unacademy) including recommendation systems with collaborative filtering, PyTorch-based model training, and Hugging Face Transformers usage, though lacking explicit retrieval/ranking/embedding or NDCG evaluation experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0066815",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical business functions — marketing management, HR, and project management at Hooli, Globex, and Infosys — with no software engineering or ML experience despite having some infrastructure tool keywords in the skills section.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0066984",
+    "score": 0.2,
+    "rationale": "Single role as a graphic designer at Wipro (IT services) with no ML or engineering work history; despite a B.Tech in AI from a tier_2 institution, there is no evidence of applied ML or IR experience in practice.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0066995",
+    "score": 0.0,
+    "rationale": "Career spans only non-technical business analyst, graphic designer, and operations manager roles at fictional companies (Pied Piper, Hooli) with no software engineering, ML, or IR experience.",
+    "stratum": "title_mismatch"
+  }
+]

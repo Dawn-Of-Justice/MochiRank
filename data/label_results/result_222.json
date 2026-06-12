@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0088878",
+    "score": 0.4,
+    "rationale": "Has production ML experience at product companies (Paytm fraud detection, Swiggy recommendations, Krutrim NLP) but lacks any demonstrated IR/retrieval/ranking depth, embedding-based search, or evaluation framework experience (NDCG/MAP), and tier_3 education limits signal.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0088991",
+    "score": 0.0,
+    "rationale": "Current role is Accountant at Dunder Mifflin (fictional company) with a career spanning sales and graphic design at IT-services firms (Infosys, Wipro), with zero engineering or ML work despite keyword-inflated skills listing Reinforcement Learning as 'advanced'.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0089001",
+    "score": 0.0,
+    "rationale": "Entire career is in Customer Support and Project Management at Acme Corp and Pied Piper (fictional company), with a marketing/non-technical background and no engineering, ML, or IR skills whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089012",
+    "score": 0.2,
+    "rationale": "Despite tier_1 education (IIIT Hyderabad) and NLP skills, the entire 4.2-year career is a single role at TCS (pure IT-services), which the JD explicitly flags as a disqualifier, and there is no evidence of production IR, embedding retrieval, or ranking system work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0089025",
+    "score": 0.2,
+    "rationale": "Career is .NET/full-stack web development at Pied Piper (fictional company) and QA at Mphasis (IT services), with only self-learner AI exposure via online courses — no production ML, IR, or ranking experience despite listing 'Information Retrieval' as an intermediate skill.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0089076",
+    "score": 0.2,
+    "rationale": "8.5 years of experience is primarily cloud/DevOps and full-stack web work at TCS and Infosys with only a small RAG side project as AI exposure, giving no production ML or IR/ranking credentials required for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089150",
+    "score": 0.2,
+    "rationale": "Skills list includes Weaviate (advanced) and NLP, but the actual career history is full-stack/DevOps at Wayne Enterprises and Stark Industries (both fictional companies) plus Accenture consulting, with no work history that substantiates the claimed retrieval or ML skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089220",
+    "score": 0.0,
+    "rationale": "Flagged as honeypot: career is Accountant/Business Analyst/Project Manager at Globex, Wipro, and Dunder Mifflin (fictional) with no engineering or ML work, and the profile is a classic keyword-stuffed non-technical candidate attempting to appear AI-relevant.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0089250",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career in sales and HR management across multiple fictional companies (Wayne Enterprises, Stark Industries, Dunder Mifflin x2) with no engineering, ML, or IR experience despite listing AWS and Docker as beginner skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0089255",
+    "score": 0.0,
+    "rationale": "Despite impressive tier_1 education credentials (UC Berkeley, CMU in CS/AI), the actual career is entirely non-technical — Accountant at Dunder Mifflin (fictional) and Sales Executive at Initech (fictional) — with zero engineering or ML work history to support the role.",
+    "stratum": "tier1_education"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0074757",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (sales, graphic design, marketing, customer support) with fictional company employers (Stark Industries, Wayne Enterprises) and zero ML/IR/engineering experience despite a misleading 'Mechanical Engineer' title.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0074771",
+    "score": 0.2,
+    "rationale": "Only 2.4 years of experience, career entirely at Capgemini (IT services), with lightweight ML exposure (30% of time on sklearn/XGBoost clustering) and no production embeddings, retrieval, or ranking system experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0074831",
+    "score": 0.2,
+    "rationale": "3.7 years of mostly web/mobile development at IT services firms (Infosys, Mindtree) with only a small RAG side project as AI exposure; no production ML, IR, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074858",
+    "score": 0.2,
+    "rationale": "6.7 years but career is entirely at IT services firms (Infosys, Capgemini) doing backend/.NET and DevOps work, with AI exposure limited to self-study RAG projects and prompt engineering; no production IR or ranking systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0074866",
+    "score": 0.0,
+    "rationale": "14+ years in non-technical roles (customer support, marketing manager, HR, mechanical engineering) at IT services and fictional companies (Initech) with no ML, IR, or engineering production experience whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0074867",
+    "score": 0.2,
+    "rationale": "7.7 years of backend/data engineering (Python/FastAPI, PostgreSQL) at a fictional company (Stark Industries) and Hooli, with self-directed ML projects but no production ML, embeddings, retrieval, or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074886",
+    "score": 0.2,
+    "rationale": "7.5 years as a data/backend engineer at product companies (Ola, Meesho, PharmEasy) with strong pipeline skills (Spark, Airflow, Kafka), but explicitly self-described as building ML competence with no production IR or ranking experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0074906",
+    "score": 0.0,
+    "rationale": "11+ years in non-technical roles (project manager, customer support, business analyst, sales executive) at fictional company Wayne Enterprises and IT services firm Wipro, with no engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074947",
+    "score": 0.0,
+    "rationale": "11+ years entirely in non-technical roles (customer support, HR manager, business analyst) at fictional companies (Stark Industries) and IT services (Wipro), with advanced 'Reinforcement Learning' skill that is clearly keyword inflation given zero engineering career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074980",
+    "score": 0.2,
+    "rationale": "3.1 years of full-stack/cloud engineering at fictional Stark Industries and Zomato, with only self-directed RAG side projects as AI exposure; no production ML, embeddings, or retrieval/ranking experience, and insufficient seniority for the role.",
+    "stratum": "title_match_strong"
+  }
+]

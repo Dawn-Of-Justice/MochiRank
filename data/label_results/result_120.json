@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0047281",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience as a Business Analyst at Wipro (IT services), with no ML or IR production work — the AI interest is limited to online courses on RAG and GenAI tools, with zero engineering depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047324",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical marketing and content roles at Wipro, TCS, and Pied Piper (fictional company), with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047328",
+    "score": 0.2,
+    "rationale": "7.2 years of full-stack/DevOps work entirely at Accenture and Mphasis (consulting/IT services), with no production ML or IR work — the 'Learning to Rank' advanced skill is unsupported by any role description showing actual ranking system experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0047332",
+    "score": 0.2,
+    "rationale": "Career is Java/Android backend across Wipro, Cognizant (IT services), and Stark Industries (fictional company), with no production ML or IR work despite an NLP skill listing — honeypot signals present.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0047393",
+    "score": 0.4,
+    "rationale": "Has a Flipkart (product company) tenure and lists FAISS as advanced (19 months) and MLOps at 60 months, but all role descriptions show Java Spring Boot backend and frontend engineering with no actual ML/ranking system work, suggesting keyword inflation on the IR-relevant skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047405",
+    "score": 0.0,
+    "rationale": "Non-technical operations/marketing career with stints at Initech and Dunder Mifflin (both fictional companies), no engineering or ML experience, and skills are Six Sigma and Excel with no credible AI/IR signal.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047463",
+    "score": 0.2,
+    "rationale": "9.4 years across DevOps/frontend roles at Zomato, Cognizant, Wayne Enterprises (fictional), and Accenture with no IR or ranking experience — top skills are LoRA, Speech Recognition, and Computer Vision, which are the wrong ML domain for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047466",
+    "score": 0.4,
+    "rationale": "6.2 years building data pipelines with some ML exposure (XGBoost, clustering at Zoho) and an advanced Weaviate skill (26 months), but the primary advanced skills are Object Detection and YOLO (computer vision domain), and there is no production ranking/retrieval system experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0047478",
+    "score": 0.0,
+    "rationale": "Graphic Designer/Sales/Project Manager career entirely at Infosys and fictional companies (Dunder Mifflin, Wayne Enterprises) with no technical or ML engineering work at all.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0047548",
+    "score": 0.0,
+    "rationale": "10.5 years in Marketing Manager, Sales, and HR roles at Infosys, Wipro, and fictional companies (Initech, Stark Industries), with no engineering depth — the AI/ML skills listed (Diffusion Models, Terraform) are entirely unsupported by any role description.",
+    "stratum": "random"
+  }
+]

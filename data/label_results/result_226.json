@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0090664",
+    "score": 0.0,
+    "rationale": "Business Analyst/Customer Support profile with no ML, IR, or engineering experience; skills are Azure, Vue.js, Photoshop — no relevance to embeddings, retrieval, or ranking; career at fictional companies (Wayne Enterprises, Stark Industries) and summary admits background is 'marketing manager' with only ChatGPT curiosity.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0090676",
+    "score": 0.4,
+    "rationale": "7.3-year data/analytics engineer with solid Python, Elasticsearch (intermediate, 31 months), MLflow, and feature engineering skills, but career is primarily data pipelines and analytics infrastructure with only 'a couple of small ML features', no production IR/retrieval or ranking system experience, and current role is at Stark Industries (fictional company flag).",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0090752",
+    "score": 0.0,
+    "rationale": "11-year profile spanning Business Analyst, Content Writer, and Civil Engineer roles at TCS, Dunder Mifflin (fictional), and Wayne Enterprises (fictional), with no ML or engineering depth; summary explicitly describes a marketing manager background with only ChatGPT curiosity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090757",
+    "score": 0.2,
+    "rationale": ".NET Developer with 5.3 years at Zomato/Flipkart in mobile and full-stack web, with FAISS listed as an advanced skill (33 months) but primary expertise is computer vision/object detection (YOLO advanced), not NLP/IR; AI experience appears self-learner level with no production retrieval or ranking system shipped.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0090873",
+    "score": 0.0,
+    "rationale": "14-year career as Accountant/Sales Executive/Graphic Designer entirely at non-engineering roles (TCS accounting, Wipro graphic design, Dunder Mifflin — fictional); no ML, IR, or software engineering skills; summary describes a marketing manager background with only ChatGPT curiosity.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0090921",
+    "score": 0.2,
+    "rationale": "7.4-year software engineer with mostly IT-services background (Infosys, Mphasis) doing frontend, QA automation, and Java backend; only ML exposure is self-learner courses and a small RAG side project; no production IR, embeddings, or ranking experience, and skills list (Kubernetes, Tailwind, SEO, Node.js, React) shows no IR/ML depth.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091120",
+    "score": 0.2,
+    "rationale": "4.5-year data/analytics engineer (Infosys, Zomato, CRED) with lightweight ML exposure (sklearn/XGBoost for clustering and churn prediction at ~30% of role) but no production IR, embeddings, or ranking systems; YOLO listed as advanced skill suggests computer vision tangent rather than NLP/retrieval focus.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091123",
+    "score": 0.4,
+    "rationale": "6.2-year engineer with Recommendation Systems listed as advanced skill (58 months), Weights & Biases (advanced), and Haystack (intermediate, 8 months), suggesting ML/ranking exposure, but career is primarily Java backend/mobile at Infosys and Zomato with current role at Dunder Mifflin (fictional company) and no explicit evidence of production embeddings-based retrieval or evaluation metric ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091233",
+    "score": 0.0,
+    "rationale": "10-year Graphic Designer/Mechanical Engineer profile at Stark Industries, Wipro (IT services), and Wayne Enterprises (fictional) with brand design and SEO content writing roles; Computer Vision listed as advanced skill but no NLP/IR work; summary is marketing manager background with only ChatGPT curiosity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091234",
+    "score": 0.0,
+    "rationale": "11.7-year Mechanical Engineer profile with career spanning enterprise sales, operations management, and brand design at fictional companies (Pied Piper, Initech, Stark Industries); skills are Statistical Modeling, Redis, Docker, Rust, Angular — no ML, IR, or ranking experience; summary describes marketing manager background with only ChatGPT curiosity.",
+    "stratum": "title_match_strong"
+  }
+]

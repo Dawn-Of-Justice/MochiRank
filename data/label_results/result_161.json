@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0064270",
+    "score": 0.8,
+    "rationale": "Built semantic search from scratch with sentence-transformers and FAISS in production, shipped XGBoost/LightGBM ranking models at Verloop.io, and owned the LTR ranking layer at Uber — directly matching core IR/ranking requirements, with only slight shortfall on YoE (4.2yr) and tier_3 education.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0064310",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Content Writer, Graphic Designer, Sales) at multiple fictional companies (Initech, Stark Industries, Wayne Enterprises) with no ML, IR, or software engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064314",
+    "score": 0.2,
+    "rationale": "Background is Java backend and full-stack web development (Spring Boot, React, Node.js) with ML limited to a self-described 'small RAG side project' — no production IR, ranking, or embedding systems experience, and one role at Infosys (IT services).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064326",
+    "score": 0.8,
+    "rationale": "7.6yr exp spanning Search Engineer at Sarvam AI, ML Engineer at Freshworks (RAG pipeline with OpenAI embeddings + Pinecone) and Apple, with hands-on XGBoost/LightGBM ranking model delivery, Weaviate expertise, and a relevance-labeling + LTR evolution story across multiple product companies.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0064387",
+    "score": 0.2,
+    "rationale": "Actual production work at CRED is test automation/QA (Selenium, Locust) and full-stack web at HCL (IT services), with Sentence Transformers listed as a skill but no evidence of production IR, ranking, or embedding system deployment.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0064390",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager background with roles at Infosys (IT services), Pied Piper (fictional), and Dunder Mifflin (fictional); no engineering or ML work present anywhere in the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064408",
+    "score": 0.2,
+    "rationale": "Only 2.4yr experience focused on data engineering (Airflow, Spark, Kafka pipelines) at Razorpay plus a role at Stark Industries (fictional); skills lean toward Diffusion Models and Computer Vision with no production NLP, retrieval, or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064446",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — content writing/SEO, HR management, operations management, and sales at Pied Piper (fictional) and other firms — with zero ML, IR, or software engineering experience despite 11.7yr tenure.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0064480",
+    "score": 0.0,
+    "rationale": "Profile shows Project Manager, Customer Support, Sales Executive, and Marketing Manager roles at Wayne Enterprises (fictional) and Dunder Mifflin (fictional), with no technical or ML background and only superficial AI curiosity mentioned.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0064568",
+    "score": 0.0,
+    "rationale": "14.2yr career consists entirely of operations manager and business analyst roles at Infosys (IT services), Initech (fictional), and Dunder Mifflin (fictional x2), with no ML, IR, or relevant engineering experience of any kind.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

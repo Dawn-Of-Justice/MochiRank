@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0082132",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (accountant, content writer, operations) including at the fictional Stark Industries, with no ML, IR, or engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082172",
+    "score": 0.0,
+    "rationale": "Career consists of customer support and non-technical roles at IT services firms (Wipro, Infosys) and fictional Pied Piper, with zero ML or information retrieval experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082178",
+    "score": 0.0,
+    "rationale": "Only 2.8 years of experience with a single role in content writing/SEO at the fictional Stark Industries, and skills are entirely frontend/web tools with no ML or IR relevance.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0082191",
+    "score": 0.2,
+    "rationale": "Business Analyst at TCS with only operations management work and no production ML experience; self-reported online courses in RAG/vector databases do not substitute for the required production IR system deployment.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0082192",
+    "score": 0.0,
+    "rationale": "Entire 13-year career is in non-technical roles (HR manager, accountant, sales) at TCS and fictional Stark Industries, with no engineering or ML work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082239",
+    "score": 0.0,
+    "rationale": "Career is in non-technical roles (accountant, customer support, sales) across fictional companies Wayne Enterprises and Dunder Mifflin plus TCS, with no ML or IR skills.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0082247",
+    "score": 0.2,
+    "rationale": "IIT Roorkee education and Sentence Transformers skill are positive signals, but the entire 6.9-year career is at IT services firms (Tech Mahindra, Wipro, Mphasis) doing Android/Java backend work with only a self-directed RAG side project.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0082291",
+    "score": 0.6,
+    "rationale": "5.8 years across genuine product companies (Glance, Verloop.io, Meesho) with advanced Sentence Transformers and Elasticsearch skills and production recommendation system experience, though the profile is lighter on explicit NDCG/ranking-metric ownership and dedicated IR system work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0082314",
+    "score": 0.4,
+    "rationale": "4 years of ML engineering at Genpact AI with strong PyTorch/LoRA skills and NLP pipeline production experience, but work is classification/analytics rather than IR/ranking, and Genpact is a services firm with no evidence of retrieval metric ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082334",
+    "score": 0.2,
+    "rationale": "Only 2.8 years of data engineering experience at the fictional Wayne Enterprises (honeypot signal), with skills skewed toward data pipelines and TensorFlow rather than IR/ranking systems.",
+    "stratum": "random"
+  }
+]

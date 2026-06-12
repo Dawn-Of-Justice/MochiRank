@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0077212",
+    "score": 0.0,
+    "rationale": "Career consists entirely of sales, HR, and customer support roles at fictional companies (Initech, Stark Industries) with no ML or engineering work; AI curiosity limited to ChatGPT experimentation.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0077259",
+    "score": 0.0,
+    "rationale": "Roles are in sales, marketing, and business analysis at fictional companies (Dunder Mifflin, Pied Piper) and Infosys IT services, with no ML, IR, or engineering experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077261",
+    "score": 0.6,
+    "rationale": "5.7 years of applied ML at product companies (Meesho, upGrad) including NLP pipelines, transformer-based classification, and vector search skills, but no explicit BM25/hybrid retrieval architecture or ranking evaluation metric (NDCG/MAP) ownership in production.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0077337",
+    "score": 1.0,
+    "rationale": "7 years building production hybrid BM25+dense retrieval systems at product companies (Paytm, Razorpay, Glance) serving 50M+ queries/month, with hands-on A/B testing, embedding fine-tuning, learning-to-rank, and expert-level skills in Sentence Transformers, Information Retrieval, and RAG.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077346",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience in a single operations/marketing role at Hooli with no engineering or ML background whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077414",
+    "score": 0.2,
+    "rationale": "2.3 years of backend development entirely at TCS (IT services) with self-reported Qdrant/Weaviate skills and a small RAG side project, but no production ML or IR system deployment and insufficient experience depth for this role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0077480",
+    "score": 0.4,
+    "rationale": "6.7 years of strong data engineering at product companies (Freshworks, Paytm, Vedantu) with Haystack exposure, but self-described as aspiring to move into ML — no production ranking, retrieval, or embedding system ownership demonstrated.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077484",
+    "score": 0.0,
+    "rationale": "13.4 years in operations, project management, and HR roles at Infosys and fictional companies (Wayne Enterprises), with no technical engineering or ML experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077488",
+    "score": 0.4,
+    "rationale": "6.6 years of solid data engineering at product companies (InMobi, Dream11, PharmEasy) with IIT Kanpur CS background, but work is entirely in data pipelines and warehousing — no production ranking, retrieval, or embedding systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077509",
+    "score": 0.0,
+    "rationale": "Career is entirely in customer support and sales at Acme Corp, Infosys, and fictional company Wayne Enterprises, with no ML, engineering, or IR background.",
+    "stratum": "low_behavioral"
+  }
+]

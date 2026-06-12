@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0038072",
+    "score": 0.0,
+    "rationale": "Career spans HR Manager, Civil Engineer, Customer Support, and Marketing Manager roles across three fictional companies (Stark Industries, Dunder Mifflin, Wayne Enterprises) with zero ML, IR, or engineering production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038209",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Accountant at Hooli, HR Manager at Acme Corp) with no ML or IR work; top skill is Image Classification in a wrong domain, and education is tier_3 with a marketing manager self-description.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038314",
+    "score": 0.0,
+    "rationale": "Civil Engineer and Operations Manager career across fictional company Wayne Enterprises, Initech, and IT services firms (Infosys, Wipro) with no ML/IR production experience and skills limited to Tailwind, dbt, and Six Sigma.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038417",
+    "score": 0.2,
+    "rationale": "BITS Pilani tier_1 education in Machine Learning is the sole positive signal, but the entire career is Accountant, HR Manager, and Marketing Manager at fictional companies (Pied Piper, Stark Industries) and Wipro with no ML/IR production work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0038461",
+    "score": 0.2,
+    "rationale": "IIIT Bangalore tier_1 AI degree is a positive credential, but the full career is Civil Engineer, HR Manager, and Mechanical Engineer at Pied Piper (fictional) and TCS (IT services) with no ML or information retrieval experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0038545",
+    "score": 0.2,
+    "rationale": "Has Python/backend software engineering fundamentals and a self-built RAG side project, but the only employer is Infosys (IT services, frontend work) with just 2.8 years of experience and no production ML or IR deployment.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0038550",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience as an Operations Manager at Acme Corp performing accounting work, with a marketing manager self-description and no engineering or ML/IR background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038577",
+    "score": 0.4,
+    "rationale": "IIT Kharagpur AI PhD is a strong academic signal and Weaviate (vector database) appears in skills with 15 months of use, but the actual career is Java developer at Mphasis (IT services) and Software Engineer at Pied Piper (fictional) with no demonstrated production IR or ranking system deployment.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0038650",
+    "score": 0.2,
+    "rationale": "At CRED (genuine product-company fintech) and shows Weights & Biases familiarity, but with only 1.4 years of .NET/full-stack web development, an Object Detection advanced skill (CV domain mismatch), and no IR or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0038662",
+    "score": 0.2,
+    "rationale": "IIT Kanpur tier_1 computer engineering degree is notable, but 12.5 years are spent entirely in Sales Executive and Graphic Designer roles at Hooli, Stark Industries (fictional), Wipro, and TCS with zero ML or IR technical work.",
+    "stratum": "tier1_education"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0078669",
+    "score": 0.4,
+    "rationale": "Has production recommendation systems experience at Nykaa (product company) and pgvector skills, but core IR/retrieval stack (hybrid search, FAISS, NDCG evaluation) is absent and most NLP work was at HCL (IT services) on internal dashboards rather than user-facing ranking systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0078702",
+    "score": 0.2,
+    "rationale": "Entire career is at IT services firms (Infosys x2, Accenture) doing full-stack/cloud/DevOps work with only self-learner-level AI exposure via a small RAG side project and online courses, with no production ML or IR systems deployed to real users.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0078704",
+    "score": 0.0,
+    "rationale": "Non-technical career in marketing, graphic design, operations, and accounting at fictional companies (Dunder Mifflin, Globex) with zero engineering or ML work; AI interest is limited to casual ChatGPT experimentation.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0078858",
+    "score": 0.2,
+    "rationale": "Data engineering and analytics focus with only lightweight sklearn/XGBoost ML (30% of time) and no IR/retrieval experience; one career entry is at fictional Stark Industries, and there is no evidence of embedding-based search, vector databases, or ranking evaluation frameworks.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0078870",
+    "score": 0.0,
+    "rationale": "Title is Civil Engineer with a marketing manager summary and only 2.9 years at fictional Hooli doing marketing leadership; no engineering or ML depth whatsoever, and the profile is internally inconsistent indicating a honeypot construct.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078953",
+    "score": 0.2,
+    "rationale": "10 years of software/cloud/frontend engineering experience across product companies (CRED, Zomato) and IT services (HCL), but AI engagement is entirely self-learner level with no production ML or IR systems, and one career entry is at fictional Globex Inc.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0079038",
+    "score": 0.0,
+    "rationale": "Non-technical career as Graphic Designer and Content Writer at fictional companies (Stark Industries, Wayne Enterprises) with no engineering, ML, or IR work; AI interest is limited to online RAG/vector database courses without any production implementation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079039",
+    "score": 0.2,
+    "rationale": "Only 2.6 years of experience entirely at Wipro (IT services) in DevOps/Java backend roles with self-learner AI exposure only; skills list shows Tally, Excel, and Six Sigma with no evidence of production ML, embeddings, or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079064",
+    "score": 0.8,
+    "rationale": "Built production semantic search over 500K documents using sentence-transformers and FAISS at Niramai, then shipped a RAG-based feature with Pinecone and OpenSearch at Razorpay while owning the eval framework; strong alignment on embeddings, hybrid retrieval, and ranking evaluation at product companies.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079137",
+    "score": 0.2,
+    "rationale": "7.4 years spent entirely at IT services firms (Mphasis, TCS, Cognizant) doing full-stack/DevOps work with self-learner-level AI via online courses and a small RAG side project; no production ML or IR engineering at product companies.",
+    "stratum": "random"
+  }
+]

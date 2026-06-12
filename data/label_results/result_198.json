@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0079185",
+    "score": 0.2,
+    "rationale": "6.9 years as a .NET Developer/Cloud Engineer (Accenture + Swiggy) with no ML/IR experience; self-described AI learner only and top skills are W&B, MongoDB, Docker — no embeddings, ranking, or retrieval work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079189",
+    "score": 0.0,
+    "rationale": "Career spans Sales Executive, Graphic Designer, and Marketing Manager roles at TCS and fictional companies (Wayne Enterprises, Initech) with zero engineering or ML depth; purely non-technical profile with AI curiosity only.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079203",
+    "score": 0.2,
+    "rationale": "3.6 years entirely at Capgemini (IT services) doing Android/mobile development with no NLP, retrieval, or ranking experience; Diffusion Models skill listed as advanced but no corroborating production IR work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0079284",
+    "score": 0.8,
+    "rationale": "4.9 years at Google and Swiggy shipping LambdaMART/XGBoost ranking models and sentence-transformer + Elasticsearch-based recommendation systems at 10M+ user scale, with expert-level Elasticsearch and Recommendation Systems skills from IIT Roorkee.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0079306",
+    "score": 0.0,
+    "rationale": "Entire career as Graphic Designer, Business Analyst, and Project Manager at Acme Corp, Infosys, and TCS with no ML, NLP, or retrieval engineering of any kind; skills list shows only HTML, PowerPoint, and basic data tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079321",
+    "score": 0.2,
+    "rationale": "8.5 years split across Mphasis, HCL, Mindtree (all IT services) in DevOps/QA roles with one product stint at Flipkart doing Android work; Milvus listed as an advanced skill but career shows no production ML or IR systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079369",
+    "score": 0.2,
+    "rationale": "7 years as a .NET/QA Engineer mostly at Mphasis (IT services) and a fictional company Pied Piper; Qdrant listed as an intermediate skill but career shows DevOps/QA work only, no production ML or retrieval systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0079387",
+    "score": 0.8,
+    "rationale": "6.9 years at Microsoft, upGrad, Ola, and BYJU's building sentence-transformer + FAISS semantic search (500K docs), RAG pipelines with Pinecone, and production ML pipelines — expert proficiency in Sentence Transformers and Haystack from IIIT Hyderabad.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0079413",
+    "score": 0.0,
+    "rationale": "9.2 years as Marketing Manager and Customer Support at TCS and fictional companies (Stark Industries, Initech); entirely non-technical career with AI curiosity expressed only through online courses, no engineering background.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0079456",
+    "score": 0.0,
+    "rationale": "4.6 years as Civil Engineer and Customer Support at Wayne Enterprises (fictional) and Wipro with no technical engineering, ML, or IR experience; profile summary is a marketing-manager boilerplate with no relevant skills.",
+    "stratum": "random"
+  }
+]

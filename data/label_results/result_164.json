@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0065585",
+    "score": 0.2,
+    "rationale": "Entire career at Capgemini (IT services) plus a fictional company (Wayne Enterprises) with no ML/IR production experience; AI exposure is only self-learner level with online courses and API experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065606",
+    "score": 0.0,
+    "rationale": "HR Manager with a single role at Wipro in IT services, no engineering or ML experience whatsoever; claimed AI interest consists of online courses on RAG/vector databases with no production evidence.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0065647",
+    "score": 0.0,
+    "rationale": "Graphic Designer with 1 year of experience at TCS in IT services, whose actual work history is enterprise sales; zero ML, NLP, or IR engineering skills relevant to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065707",
+    "score": 0.2,
+    "rationale": "Frontend Engineer with only 1.7 years of experience at Infosys doing web/API work; AI exposure limited to a small RAG side project with no production ML or IR systems experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0065711",
+    "score": 0.0,
+    "rationale": "Marketing Manager with 11+ years in non-technical roles (marketing, business analysis, accounting) across TCS and fictional companies (Initech, Stark Industries); no engineering or ML work throughout career.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065743",
+    "score": 0.4,
+    "rationale": "Java/Frontend engineer with 6.9 years including real product-company experience at Flipkart, but skills are entirely web/backend (CI/CD, Docker, FastAPI, Django) with no ML, IR, embeddings, or ranking system experience; AI interest is self-learner only.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0065854",
+    "score": 0.0,
+    "rationale": "Marketing Manager for 8.5+ years across Wipro, Infosys, and fictional company Initech in content/SEO/demand-generation roles with no engineering or ML experience; AI interest is purely superficial experimentation with ChatGPT.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0065878",
+    "score": 0.8,
+    "rationale": "7.8 years of production ML experience including owning ranking layers at e-commerce search (learning-to-rank, relevance labeling pipelines), recommendation systems with sentence-transformer embeddings at Uber and Glance, advanced vector search skills, and RAG eval framework ownership — strong match on IR, retrieval, and ranking fundamentals.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0065880",
+    "score": 0.0,
+    "rationale": "Business Analyst/Mechanical/Civil Engineer with 13.9 years at TCS and multiple fictional companies (Pied Piper, Wayne Enterprises) with no ML, IR, or software engineering experience relevant to the role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065894",
+    "score": 0.2,
+    "rationale": "Cloud Engineer with 3.9 years primarily doing Java backend and DevOps at Zomato (with a Wipro stint); lists Recommendation Systems as an advanced skill but career descriptions show no actual ML/IR work, and AI knowledge appears self-learner level only.",
+    "stratum": "random"
+  }
+]

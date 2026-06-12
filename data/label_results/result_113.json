@@ -1,0 +1,62 @@
+﻿[
+    {
+        "stratum":  "top_retrieval_dense",
+        "candidate_id":  "CAND_0044808",
+        "score":  0.2,
+        "rationale":  "8.5yr full-stack/web engineer with career entirely at IT-services firms (Tech Mahindra, Infosys) and a fictional company (Wayne Enterprises); no ML, NLP, or IR experience and skills are web-focused (AWS beginner, JavaScript beginner) with zero relevance to embeddings, retrieval, or ranking."
+    },
+    {
+        "stratum":  "tier1_education",
+        "candidate_id":  "CAND_0044823",
+        "score":  0.2,
+        "rationale":  "Career titles are Sales Executive and HR Manager at a fictional company (Initech) and TCS, with career descriptions revealing marketing/accounting work; the Ph.D from IIIT Bangalore is the only positive signal but the entire professional trajectory is non-technical with no ML or IR experience."
+    },
+    {
+        "stratum":  "title_mismatch",
+        "candidate_id":  "CAND_0044840",
+        "score":  0.2,
+        "rationale":  "7.6yr Java/DevOps engineer at Accenture (consulting) and Hooli with no ML, NLP, or IR work in any role; top skills are Spring Boot, Airflow, and Figma with commerce/math education and zero exposure to embeddings, retrieval, or ranking systems."
+    },
+    {
+        "stratum":  "top_retrieval_bm25",
+        "candidate_id":  "CAND_0044855",
+        "score":  0.8,
+        "rationale":  "6.6yr ML engineer with production embedding-based retrieval (sentence-transformers, FAISS, bge-base) at Verloop.io, recommendation systems at LinkedIn serving 10M+ users, and RAG pipeline with Pinecone at Flipkart; expert-level skills in Embeddings (76mo), Qdrant, and Pinecone demonstrate deep hands-on IR experience at product companies."
+    },
+    {
+        "stratum":  "top_retrieval_dense",
+        "candidate_id":  "CAND_0044883",
+        "score":  0.8,
+        "rationale":  "6.3yr AI engineer with XGBoost/LightGBM ranking models at Paytm, semantic search with sentence-transformers and FAISS at Meesho, Search Engineer role at Adobe, and RAG chatbot with Pinecone at Mad Street Den; PyTorch expert (86mo) and LLM fine-tuning expertise covering the full IR/ranking/recsys stack at product companies."
+    },
+    {
+        "stratum":  "random",
+        "candidate_id":  "CAND_0044920",
+        "score":  0,
+        "rationale":  "Career is entirely in non-technical roles (Customer Support, Civil Engineer, Project Manager) with the most recent role at fictional company Dunder Mifflin; no engineering, ML, or IR experience whatsoever."
+    },
+    {
+        "stratum":  "consulting_only",
+        "candidate_id":  "CAND_0044945",
+        "score":  0.2,
+        "rationale":  "Only 2.1 years of experience entirely at TCS (IT services) as a Java Developer doing DevOps/cloud work; advanced pgvector and PyTorch skills claiming 60+ months duration are inconsistent with total career length indicating keyword inflation, and there is no production ML or IR work in any role."
+    },
+    {
+        "stratum":  "consulting_only",
+        "candidate_id":  "CAND_0045000",
+        "score":  0,
+        "rationale":  "2.5yr Graphic Designer at TCS whose sole career role is described as marketing leadership (demand generation, SEO, email nurture); no engineering or ML experience, and skills (Spark beginner, Angular, Content Writing) reflect no IR or ranking capability."
+    },
+    {
+        "stratum":  "random",
+        "candidate_id":  "CAND_0045011",
+        "score":  0.2,
+        "rationale":  "5.9yr frontend engineer whose entire career is at Accenture and TCS doing cloud DevOps and test automation; Carnegie Mellon M.S. in ML is a strong educational credential but is entirely contradicted by the actual work history showing zero ML production experience."
+    },
+    {
+        "stratum":  "honeypot_flagged",
+        "candidate_id":  "CAND_0045023",
+        "score":  0.2,
+        "rationale":  "4.3yr DevOps/Java engineer at fictional Initech and Accenture with top skills in OpenCV and TTS (computer vision and speech domains the JD explicitly flags as negative signals) and no NLP, IR, or ranking experience in any role."
+    }
+]

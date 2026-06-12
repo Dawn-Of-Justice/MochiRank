@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0084862",
+    "score": 0.0,
+    "rationale": "Current title is Accountant at Infosys with a customer support background and no ML, IR, or ranking experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084910",
+    "score": 0.0,
+    "rationale": "Career spans operations management, mechanical engineering, and sales with one stint at fictional Wayne Enterprises; zero ML or retrieval engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084929",
+    "score": 0.0,
+    "rationale": "Civil engineer with marketing and sales roles at fictional companies Initech and Dunder Mifflin; ASR skill is speech/CV-adjacent and there is no IR or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084935",
+    "score": 0.4,
+    "rationale": "Strong Python data-engineering background at product companies (Flipkart, Dream11, Freshworks) with pgvector and LlamaIndex skills, but career has been entirely data pipelines with no production retrieval or ranking system ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0084952",
+    "score": 0.0,
+    "rationale": "HR Manager at fictional Wayne Enterprises with a marketing/operations background and no technical or ML skills relevant to the role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0084970",
+    "score": 0.2,
+    "rationale": "Entire career is in accounting and HR/consulting analyst roles at Hooli and Initech with only surface-level GenAI curiosity (LangChain courses) and no engineering or IR production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0085145",
+    "score": 0.0,
+    "rationale": "Mechanical engineer with roles at multiple fictional companies (Dunder Mifflin, Stark Industries, Pied Piper) in mechanical, civil, sales, and graphic design — no ML or IR experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0085146",
+    "score": 0.0,
+    "rationale": "HR Manager with 8.7 years entirely in HR, operations, and business analysis at fictional companies (Wayne Enterprises, Initech, Dunder Mifflin) with no ML or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085158",
+    "score": 0.0,
+    "rationale": "Entire career at TCS in sales executive and graphic designer roles with no ML, Python, or retrieval engineering experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0085199",
+    "score": 0.4,
+    "rationale": "Applied ML engineer at real product companies (Observe.AI, CRED, Flipkart) with XGBoost, PyTorch, and PEFT hands-on experience, but work is concentrated in CV, forecasting, and classification with no retrieval, ranking, or IR system ownership.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

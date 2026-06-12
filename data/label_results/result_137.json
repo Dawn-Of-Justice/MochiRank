@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0053907",
+    "score": 0.0,
+    "rationale": "Current title is HR Manager with a career entirely in non-technical roles (HR, sales) at IT services firms (TCS, Wipro) and a fictional company (Wayne Enterprises), with no ML or engineering experience despite an M.Tech in AI from IISc.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0053943",
+    "score": 0.2,
+    "rationale": "4.2 years as a Java/web developer with no production ML or IR experience; AI exposure is limited to self-learner online courses and a small RAG side project, with no embeddings, vector search, or ranking systems in production.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0054185",
+    "score": 0.2,
+    "rationale": "6.4 years primarily as a .NET developer and QA engineer at TCS (IT services) and fintech, with LoRA listed as an advanced skill but no evidence of production IR, retrieval, or ranking systems in actual job roles.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0054221",
+    "score": 0.2,
+    "rationale": "8.7 years of mobile development, DevOps, and QA work with no ML or IR production experience; AI exposure is self-learner only (online courses, small RAG project), and two roles are at fictional companies (Wayne Enterprises, Pied Piper).",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0054244",
+    "score": 0.0,
+    "rationale": "Entire career is in civil engineering and sales roles with no engineering or ML work; summary explicitly identifies as a marketing manager with only ChatGPT experimentation, and a role is listed at fictional Stark Industries.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054318",
+    "score": 0.4,
+    "rationale": "3.5 years at BYJU's with NLP classification and information extraction pipelines plus strong advanced skills in Information Retrieval and PyTorch, but no demonstrated production experience with embeddings-based retrieval, vector databases, or ranking system evaluation (NDCG/MRR).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054331",
+    "score": 0.4,
+    "rationale": "IIT Bombay M.Tech with advanced OpenSearch skill (26 months) and Kubeflow experience, but actual career roles are DevOps, .NET development, and frontend engineering with no demonstrated production ML or ranking system work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0054394",
+    "score": 0.8,
+    "rationale": "4.1 years of directly relevant production experience: built semantic search with sentence-transformers and FAISS at PharmEasy, owned the learning-to-rank evolution of an e-commerce search product at Netflix including relevance labeling pipelines, with expert-level skills in Haystack, fine-tuning LLMs, and Hugging Face Transformers, graduating from NIT Surathkal.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0054399",
+    "score": 0.2,
+    "rationale": "7.9 years across QA, DevOps, and full-stack roles at product companies (Flipkart, Swiggy) with advanced Semantic Search listed as a skill, but no evidence of actual production ML or IR systems in any job description, and the skill appears to be keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054464",
+    "score": 0.0,
+    "rationale": "12.3 years as an accountant, mechanical engineer, and marketing manager at IT services firms (Infosys, TCS) and fictional companies (Wayne Enterprises, Stark Industries), with zero engineering or ML work despite a Ph.D in Chemical Engineering.",
+    "stratum": "random"
+  }
+]

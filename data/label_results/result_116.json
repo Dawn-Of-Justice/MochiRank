@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0045672",
+    "score": 0.0,
+    "rationale": "Marketing manager background with roles at Acme Corp and fictional Pied Piper; skills are basic web tech (Go, Java, CSS, Django) with zero ML, IR, or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0045707",
+    "score": 0.2,
+    "rationale": "Has intermediate OpenSearch (33 months) and Elasticsearch skills at a product company (CRED), but only 2.7 years total experience, career is primarily web/full-stack development, and AI exposure is limited to a self-built RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045847",
+    "score": 0.2,
+    "rationale": "8.2 years experience but career is frontend/web development at IT services firm HCL and two fictional companies (Wayne Enterprises, Initech); vector search listed as an intermediate skill but no production ML or IR system evidence.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045849",
+    "score": 0.0,
+    "rationale": "Content writer/marketing manager profile with only 2.4 years at fictional Initech; skills (CI/CD, Azure, Webpack, Kubernetes) are unrelated to ML/IR and the summary explicitly describes a marketing management background.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0045854",
+    "score": 0.0,
+    "rationale": "Honeypot candidate: 12.9 years in business analyst, accountant, and marketing manager roles spread across fictional companies (Hooli, Initech); no engineering or ML production experience whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0045859",
+    "score": 0.2,
+    "rationale": "Embeddings listed as an intermediate skill (15 months) and an M.Sc in Machine Learning, but the bulk of 7.2 years is spent at TCS (IT services) and fictional Hooli, with no evidence of production IR or ranking system work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0045887",
+    "score": 0.4,
+    "rationale": "Genuine ML engineer at product company PharmEasy with advanced ML, LLM fine-tuning, and embeddings skills (tier_2 education), but primary domain is computer vision and speech recognition — an explicit negative signal in the JD — with no demonstrated IR or ranking system experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0046042",
+    "score": 0.0,
+    "rationale": "Operations manager with no engineering depth whose entire career is at fictional companies (Stark Industries, Hooli); recent AI interest is limited to online courses on RAG with no shipped ML systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0046064",
+    "score": 1.0,
+    "rationale": "Near-perfect fit: 8.9 years at Amazon, Salesforce, and Verloop.io building production BM25+dense hybrid retrieval (BGE, FAISS, Pinecone) and LTR pipelines at 50M+ queries/month, directly owns NDCG@10 improvements (0.72→0.91), with LLM fine-tuning via LoRA/QLoRA and IIT Hyderabad + BITS Pilani tier_1 education.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0046071",
+    "score": 0.0,
+    "rationale": "Only 1.4 years experience as a content writer at fictional Initech with a marketing manager summary; infrastructure skills (Airflow, Kubernetes, Terraform) are entry-level and no ML or IR experience is present.",
+    "stratum": "random"
+  }
+]

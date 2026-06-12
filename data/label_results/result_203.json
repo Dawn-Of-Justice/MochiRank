@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0081512",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Accountant, HR Manager, Customer Support) with stints at fictional companies Dunder Mifflin and Pied Piper, and IT-services firm Wipro — zero ML, IR, or engineering experience relevant to this role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0081514",
+    "score": 0.0,
+    "rationale": "Operations Manager and Marketing Manager background with career entirely at IT-services firms (Infosys, TCS) and non-technical roles; self-described marketing manager in summary with no engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081519",
+    "score": 0.0,
+    "rationale": "Civil Engineer/Project Manager/Graphic Designer career at Wayne Enterprises (fictional), Infosys, and Wipro with no ML, NLP, or IR work — AI skills listed (Reinforcement Learning, ETL) are at beginner level with negligible duration and no supporting career evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081668",
+    "score": 0.2,
+    "rationale": "Primarily a Java/full-stack web developer at Initech (fictional company) with no production ML or IR experience; the only relevant signal is a 33-month intermediate 'Learning to Rank' skill and a small RAG side project, which fall well short of the production retrieval/ranking depth required.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0081686",
+    "score": 0.8,
+    "rationale": "Six years of production IR/ranking experience at Netflix (evolved e-commerce ranking to LtR with relevance labeling pipeline), Niramai (semantic search over 500K docs using sentence-transformers + FAISS + BGE), and Zoho (recommendation system for 10M+ users with embedding-based similarity); expert Python, Milvus, and Semantic Search skills backed by IIT Kanpur M.S.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0081740",
+    "score": 0.4,
+    "rationale": "IIT Kharagpur M.Sc is a strong education signal and 'Vector Search' advanced skill (40 months) suggests some IR exposure, but the entire career history shows Android mobile development and QA engineering at Acme Corp and Swiggy — no evidence of production ML or retrieval systems behind the claimed skills.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0081778",
+    "score": 0.6,
+    "rationale": "6.4 years of production ML at AI-native product companies (Sarvam AI x2, Zomato) covering recommendation systems with collaborative filtering, QLoRA fine-tuning, and pgvector; however, lacks explicit hybrid retrieval (BM25+dense), NDCG/ranking evaluation ownership, and IR-focused work that the role requires.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0081792",
+    "score": 0.2,
+    "rationale": "Only 3 years of experience focused on data warehouse and analytics infrastructure (Snowflake, dbt) at a manufacturing company; Haystack advanced skill (60 months) is anomalously long relative to career tenure and unsupported by any IR or ML project evidence in the career history.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0081846",
+    "score": 1.0,
+    "rationale": "Directly rebuilt a candidate-JD matching pipeline achieving NDCG@10 of 0.91 serving 50M+ queries/month using BM25+BGE+FAISS HNSW hybrid retrieval at Razorpay, plus 52 months owning large-scale semantic search migration at Paytm; expert-level Information Retrieval, Learning to Rank, Vector Search, and BM25 skills backed by IIT Hyderabad B.E. and IIT Delhi Ph.D.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0081972",
+    "score": 0.0,
+    "rationale": "2.7 years of frontend web development at Dunder Mifflin (fictional company — honeypot signal) with no ML, IR, or production engineering experience relevant to this role.",
+    "stratum": "title_match_strong"
+  }
+]

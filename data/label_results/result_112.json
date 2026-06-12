@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0044400",
+    "score": 0.2,
+    "rationale": "8+ years of backend/cloud engineering across IT services firms (Wipro, HCL) and fictional company Initech with no production IR, retrieval, or ranking experience; AI exposure is entirely self-learner (online courses, side-project RAG) with skills skewed toward Salesforce CRM and OpenCV rather than embeddings or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044415",
+    "score": 0.0,
+    "rationale": "Entire 14-year career is non-technical marketing/HR/content roles at fictional companies (Pied Piper, Stark Industries) and IT services (Wipro, TCS), with zero engineering or ML production work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044422",
+    "score": 0.2,
+    "rationale": "Only 2.3 years of experience, sole employer is fictional company Initech, and the background is data-engineering (Snowflake, dbt) rather than IR/retrieval/ranking; LoRA and PEFT skills show some fine-tuning exposure but primary ML signal is ASR (speech domain, a negative for this NLP/IR role).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044525",
+    "score": 0.0,
+    "rationale": "11-year career is entirely non-technical — sales, operations management, accounting, and customer support — split between IT services giants (TCS, Infosys) with no software engineering or ML work at any stage.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044544",
+    "score": 0.2,
+    "rationale": "7.8 years of backend/.NET development, but the entire career is at IT services/consulting firms (Infosys, Accenture) and fictional company Initech; AI exposure is self-learner only (online courses, RAG side project) with no production retrieval, ranking, or evaluation-metric ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044553",
+    "score": 0.0,
+    "rationale": "6.4-year career comprises customer support and enterprise sales roles exclusively at IT services companies (Infosys, Wipro), with no software engineering or ML production work despite a Manipal B.E. in Machine Learning.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044737",
+    "score": 0.2,
+    "rationale": "IIT Delhi B.Tech CS is a strong educational signal, but the candidate has only 2.3 years of experience, the sole employer is Wipro (IT services), and the top skills are Speech Recognition and Image Classification — domains the JD explicitly flags as negative for an NLP/IR-focused role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044755",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — content writing, graphic design, and operations management — including a stint at fictional company Stark Industries, with no ML or software engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044775",
+    "score": 0.0,
+    "rationale": "Despite appearing in top dense-retrieval results (likely due to BentoML keyword), all three career roles are Mechanical Engineer at manufacturing companies with descriptions of sales, logistics operations, and customer support — zero ML engineering substance — and includes a stint at fictional company Initech.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0044794",
+    "score": 0.0,
+    "rationale": "3 years of Civil Engineer experience with the sole job description describing accounting work at Globex Inc; the candidate's summary and skills (GraphQL, Tailwind, JavaScript) show no ML or IR engineering background.",
+    "stratum": "random"
+  }
+]

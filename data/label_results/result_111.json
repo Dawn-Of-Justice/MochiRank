@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0044072",
+    "score": 0.2,
+    "rationale": "Software engineer with 4.9 years mostly in web/backend (React, Node.js), current role at fictional company Dunder Mifflin (honeypot signal), and AI exposure is self-learner level with no production IR or ranking experience despite LlamaIndex and LoRA skills listed.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0044098",
+    "score": 0.0,
+    "rationale": "Graphic Designer at fictional company Dunder Mifflin with 2 years of marketing/design work and zero engineering or ML production experience despite inflated skills listing BentoML as 'advanced'.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0044119",
+    "score": 0.0,
+    "rationale": "Marketing Manager at Infosys with only 2 years of non-technical experience, no engineering background, and AI exposure limited to online courses on RAG/vector databases with no production deployment of any ML system.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0044215",
+    "score": 0.2,
+    "rationale": "2-year career entirely at Tech Mahindra (IT services) in backend/data engineering with no production retrieval or ranking systems, and the advanced Embeddings skill duration (37 months) exceeds the candidate's total career length, indicating skill padding.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044222",
+    "score": 1.0,
+    "rationale": "7.7-year ML engineer at product companies (PolicyBazaar, InMobi) with production semantic search using sentence-transformers and FAISS at 500K-document scale, XGBoost/LightGBM ranking models for a discovery feed, expert-level OpenSearch, and IISc Bangalore ML education.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0044226",
+    "score": 0.0,
+    "rationale": "Holds an IIT Madras CS degree but entire 11-year career is in non-technical sales, HR, and project management at IT services firms (TCS, Wipro) and fictional company Dunder Mifflin, with no ML or engineering production work of any kind.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0044262",
+    "score": 0.4,
+    "rationale": "6.9-year ML career at product companies (Ola, Sarvam AI, upGrad) with Weaviate and NLP pipeline experience, but top skills skew toward YOLO and speech recognition — domains the JD explicitly disqualifies — and no clear ownership of a production IR/ranking system with evaluation metric rigor.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0044355",
+    "score": 0.0,
+    "rationale": "Marketing Manager with a civil engineering background whose entire career spans IT services (Wipro) and manufacturing operations, with skills limited to Photoshop, SAP, and Spring Boot and zero ML or AI engineering experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044359",
+    "score": 0.2,
+    "rationale": "Entire 6.3-year career at IT services firms (HCL, TCS) in Android development and DevOps roles with only self-taught AI exposure via online courses and a small RAG side project, and no production ML, IR, or ranking system experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0044363",
+    "score": 0.0,
+    "rationale": "Marketing and sales career spanning fictional-company red flags (Pied Piper, Wayne Enterprises) and IT services (Wipro, Infosys), with skills entirely in Agile, Go, Rust, and GraphQL and no ML or AI engineering work whatsoever.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0089856",
+    "score": 0.0,
+    "rationale": "Current title is Sales Executive at fictional company Pied Piper, career history is entirely non-technical (content writing, HR management), and the summary explicitly self-describes as a marketing manager with zero ML/IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0089889",
+    "score": 0.4,
+    "rationale": "IIT Roorkee MS with 4.3 years of ML experience including NLP pipelines and a 'Learning to Rank' skill listed as advanced, but entire career is at TCS (IT services) with no product-company or production retrieval/search system experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0089962",
+    "score": 0.2,
+    "rationale": "Only 2.7 years total experience with a .NET/frontend background; AI exposure is self-described as online courses and OpenAI API experiments, with no production ML, retrieval, or ranking systems work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0089982",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer with 1.8 years whose only career role is operations management at a warehouse/logistics company; summary self-identifies as a marketing manager with no engineering or ML experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0090051",
+    "score": 0.2,
+    "rationale": "8.5 years total experience but entire career spans Mindtree and Cognizant (IT services firms), focused on Android mobile development with no ML, retrieval, or ranking systems work despite having pgvector listed as a skill.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0090066",
+    "score": 0.2,
+    "rationale": "Current role is at fictional company Wayne Enterprises (honeypot signal), and while Elasticsearch is listed as a skill and there is some product-company exposure (Swiggy for 7 months), the career is predominantly Java backend/QA with no ML or IR systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090116",
+    "score": 0.2,
+    "rationale": "8.4 years of experience but career is entirely at Accenture (consulting) and Pied Piper (fictional company, honeypot signal), focused on cloud/mobile development with no ML, retrieval, or ranking experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0090124",
+    "score": 0.0,
+    "rationale": "Marketing Manager with 7.5 years whose career is entirely non-technical (operations management, graphic design at Infosys), currently at fictional company Initech (honeypot signal), with zero engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090163",
+    "score": 0.2,
+    "rationale": "Has Weaviate (advanced) and Hugging Face Transformers (advanced) skills with significant duration, suggesting ML tooling exposure, but career is DevOps/QA at CRED and fictional Dunder Mifflin (honeypot signal) with no evidence of production retrieval or ranking systems ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090239",
+    "score": 0.0,
+    "rationale": "Only 2.1 years of experience as a Full Stack Developer at fictional company Initech (honeypot signal), with skills entirely in Node.js, REST APIs, and Figma — no ML, retrieval, or AI engineering experience whatsoever.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0051378",
+    "score": 0.2,
+    "rationale": "8 years of backend/mobile experience but current role is at fictional company Dunder Mifflin, zero production ML/IR experience, and AI exposure is limited to a self-described small RAG side project with online courses only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051411",
+    "score": 0.2,
+    "rationale": "7 years as a Java/cloud backend engineer with no production ML or IR work, a stint at Cognizant (IT services), and current role at fictional Stark Industries — AI exposure is only self-learner level with no ranking or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051515",
+    "score": 0.2,
+    "rationale": "Full-stack background with most career at IT-services firms (Capgemini, Accenture, Infosys) and no substantive production ML or IR experience — Kubeflow and Reinforcement Learning skills listed but career descriptions show mobile/DevOps work, not ML ranking.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051592",
+    "score": 0.0,
+    "rationale": "Accountant/marketing-manager profile with only 3 years at Infosys in a non-technical accounting role, zero ML or engineering experience, and no foundation for production AI work.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0051593",
+    "score": 0.6,
+    "rationale": "3.7 years as AI Specialist at Zomato with hands-on production recommendation systems using collaborative filtering, and strong skills in PyTorch, scikit-learn, FAISS, and RAG — but only 3.7 years total and no explicit NDCG/evaluation framework ownership or hybrid retrieval experience weakens the fit.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051615",
+    "score": 0.8,
+    "rationale": "Search Engineer at Meta with direct ownership of e-commerce ranking evolution from hand-tuned scoring to learning-to-rank, plus sentence-transformers, Milvus, vector search, and fine-tuning LLM skills from IIIT Hyderabad (tier_1) — limited to 4.6 years total and only 11 months at Krutrim beyond Meta keeps it from a perfect score.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051630",
+    "score": 0.8,
+    "rationale": "6 years ML engineer with production learning-to-rank ownership at Razorpay and semantic search with sentence-transformers and FAISS at InMobi, expert-level Information Retrieval and OpenSearch skills, and demonstrated evaluation rigor — tier_2 education and no explicit NDCG metric ownership prevents a perfect score.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051657",
+    "score": 0.0,
+    "rationale": "Marketing Manager/Operations Manager career at fictional companies (Initech, Dunder Mifflin) with zero engineering or ML work — AI curiosity is limited to ChatGPT experimentation for productivity, making this a non-fit honeypot profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0051758",
+    "score": 0.2,
+    "rationale": "Entire 9.8-year career spent at IT-services firms (Wipro, Tech Mahindra, TCS) doing .NET/mobile/full-stack work with no product ML experience and only beginner-level AI-adjacent skills, matching the JD's explicit disqualifier for consulting-only backgrounds.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0051807",
+    "score": 0.0,
+    "rationale": "Accountant/Customer Support profile with roles at fictional companies (Wayne Enterprises, Hooli) in operations, sales, and support — no engineering or ML background whatsoever despite a listed PhD in AI.",
+    "stratum": "random"
+  }
+]

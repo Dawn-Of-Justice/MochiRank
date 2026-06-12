@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0092334",
+    "score": 0.0,
+    "rationale": "Sales/marketing professional with only 1.6 years of experience, no engineering or ML background, and beginner-level skills in ETL/GCP/Webpack with no relevance to IR or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092354",
+    "score": 0.2,
+    "rationale": "Despite a Stanford PhD and 'Embeddings advanced' skill claim, the actual career descriptions show Android development, Java backend, and DevOps work, with two fictional companies (Wayne Enterprises, Dunder Mifflin) flagging this as a honeypot profile with no real IR or retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092366",
+    "score": 0.0,
+    "rationale": "9.2 years entirely in non-technical operations management, project management, and business analyst consulting roles with no ML or engineering work, and a stint at fictional Stark Industries reinforcing this as an anti-persona candidate.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0092410",
+    "score": 0.4,
+    "rationale": "Solid data engineering background with XGBoost and sklearn experience at Freshworks (legit SaaS product company), but top skills are Computer Vision, Time Series, and ASR with no embedding-based retrieval, vector search, or NDCG/ranking evaluation experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092461",
+    "score": 0.0,
+    "rationale": "13+ years entirely in non-technical roles (Sales, HR Manager, Business Analyst) at IT-services firms (Wipro, Infosys) and fictional company Dunder Mifflin, with zero evidence of engineering or ML work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0092468",
+    "score": 0.6,
+    "rationale": "4.9 years of applied ML engineering at product companies InMobi (AdTech) and Mad Street Den (AI/ML startup), with production recommendation systems using collaborative filtering, XGBoost, NLP classification pipelines, pgvector advanced, and NIT Trichy tier_1 education — good applied ML foundation but lacks explicit BM25/hybrid retrieval and ranking evaluation metric (NDCG/MAP) experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092475",
+    "score": 0.2,
+    "rationale": "8 years of experience entirely in QA engineering, frontend development, and DevOps at IT-services firms Capgemini and Infosys plus fictional Initech, with SEO as a top skill and no ML or information retrieval work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092495",
+    "score": 0.0,
+    "rationale": "14.8 years in completely non-technical roles (Civil Engineer title, HR Manager, Sales Executive, Content Writer) at fictional companies Pied Piper and Wayne Enterprises, with no engineering or ML background whatsoever.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092647",
+    "score": 0.2,
+    "rationale": "Entire career is marketing/content writing at Wipro (IT services) with mechanical engineer titles mismatched to marketing descriptions; 'Information Retrieval advanced' skill has only 4 endorsements and 16 months duration, indicating keyword inflation with no actual IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092648",
+    "score": 0.0,
+    "rationale": "5.1 years in operations management, accounting, and customer support at fictional Dunder Mifflin and IT-services TCS, with no technical engineering or ML skills relevant to ranking or retrieval systems.",
+    "stratum": "random"
+  }
+]

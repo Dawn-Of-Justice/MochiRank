@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0050452",
+    "score": 0.2,
+    "rationale": "8 years of full-stack/backend engineering with only self-learner AI exposure (side-project RAG), no production IR or ranking experience, and two roles at fictional companies (Initech, Dunder Mifflin) that undermine credibility.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050454",
+    "score": 1.0,
+    "rationale": "Built semantic search with sentence-transformers + FAISS at Rephrase.ai, owned learning-to-rank evolution at Uber, holds BM25 expert and Qdrant advanced skills with 55+ months, and has an IIT Kanpur PhD — directly aligned with every core requirement.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0050741",
+    "score": 0.0,
+    "rationale": "Entire 11-year career is non-technical (marketing, operations, HR, content writing) at IT-services firms (Infosys, TCS) with RAG listed as only 8 months advanced — a classic anti-persona with zero production engineering or ML depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0050827",
+    "score": 0.4,
+    "rationale": "Strong data-engineering background at product companies (Swiggy, Meesho, upGrad) with lightweight ML (XGBoost/sklearn), but no production embedding-based retrieval, ranking systems, or evaluation metric ownership (NDCG/MRR/MAP).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0050876",
+    "score": 0.8,
+    "rationale": "Owned a learning-to-rank layer at Freshworks and built a 10M-user recommendation system with sentence-transformer embeddings at Yellow.ai, with expert-level Sentence Transformers and Qdrant skills backed by Stanford + IIT Kharagpur credentials.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0050898",
+    "score": 0.2,
+    "rationale": "Backend/cloud engineer with only self-learner AI exposure; current role at Infosys (IT services) and prior roles at Pied Piper and Dunder Mifflin (fictional companies), with no production ML, embeddings, or IR ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050901",
+    "score": 0.2,
+    "rationale": "Only 2.8 years of experience in full-stack web development with no AI/ML production work; one role at fictional Stark Industries and another at Cognizant (IT services), with skills entirely in web frameworks and no ranking or retrieval exposure.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0050922",
+    "score": 0.0,
+    "rationale": "8.7-year career consists entirely of marketing, brand design, and business analyst roles at fictional companies (Dunder Mifflin, Wayne Enterprises) and IT-services (TCS), with no engineering or ML depth whatsoever.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0050946",
+    "score": 0.2,
+    "rationale": "Spent 51 months as a .NET Developer at Mphasis (IT services) doing Android development, with only a self-learner AI summary and Vector Search listed at intermediate level for 28 months — no production IR, ranking, or embedding system evidence.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0050972",
+    "score": 0.0,
+    "rationale": "10.7-year career is entirely project management, HR, and brand/business analyst roles at Dunder Mifflin (fictional), Infosys (IT services), and similar non-technical firms with zero engineering or ML credentials.",
+    "stratum": "honeypot_flagged"
+  }
+]

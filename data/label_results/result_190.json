@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0076251",
+    "score": 0.8,
+    "rationale": "7.6 years of ML experience at product companies (Haptik, CRED, Microsoft), directly led migration from keyword-search to embedding-based retrieval using sentence-transformers (MiniLM to BGE) with FAISS, demonstrating hands-on production IR experience aligned with core JD requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0076261",
+    "score": 0.0,
+    "rationale": "Current role is Graphic Designer at fictional company Pied Piper with prior IT-services work at Wipro; no ML, NLP, or IR experience whatsoever — purely non-technical/operational background with zero relevance to AI engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076314",
+    "score": 0.2,
+    "rationale": "Only 1.9 years of experience as a Full Stack Developer with no production ML or IR work — skills list shows PyTorch and Weaviate but these are inconsistent with a web/API developer career at Flipkart, and any AI exposure is limited to self-learner side projects.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076389",
+    "score": 0.2,
+    "rationale": "Only 1.7 years as a Mobile Developer at fictional company Dunder Mifflin doing conventional Java backend work; Milvus listed as advanced skill with 60 months duration is implausible given total experience, suggesting keyword inflation with no real IR production background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076456",
+    "score": 0.4,
+    "rationale": "8.9 years of experience with RAG listed as an advanced skill, but career history is entirely in QA, .NET development, and Java at Flipkart/Accenture with no demonstrated production embedding-based retrieval or ranking system ownership, leaving significant gaps on core IR requirements.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076469",
+    "score": 0.0,
+    "rationale": "Marketing Manager / Mechanical Engineer background with no ML or software engineering experience; MLflow listed as advanced but career is entirely in mechanical design and marketing roles with no technical AI depth.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0076569",
+    "score": 0.0,
+    "rationale": "Business Analyst at fictional company Stark Industries followed by Operations Manager at Dunder Mifflin; non-technical profile in brand design and operations with zero ML, IR, or engineering relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076572",
+    "score": 0.0,
+    "rationale": "Civil Engineer at Wipro (IT-services) and Graphic Designer at Dunder Mifflin (fictional company); no ML, NLP, or engineering software background — entirely non-technical profile with no relevance to AI engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076639",
+    "score": 0.0,
+    "rationale": "13+ years split across enterprise sales, project management, HR, and content writing at TCS/Dunder Mifflin with no engineering or ML work; entirely non-technical career with no relevance to an AI engineering role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0076666",
+    "score": 0.2,
+    "rationale": "2.2 years as a DevOps/frontend engineer at Globex and Razorpay with solid CS education (Delhi College of Engineering M.S.), but no ML or IR experience — AI exposure limited to self-learner courses with no production ranking or retrieval work.",
+    "stratum": "random"
+  }
+]

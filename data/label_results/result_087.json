@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0033975",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (customer support, sales, marketing, HR) at multiple explicitly fictional companies (Initech x2, Stark Industries), with no ML, IR, or engineering work and only casual ChatGPT experimentation mentioned.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0033995",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager whose entire career spans HR management and enterprise sales at Stark Industries (fictional company) and Wipro, with no engineering, ML, or retrieval system experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034021",
+    "score": 0.2,
+    "rationale": "Career path of mechanical engineer → civil engineer → business analyst → customer support at TCS, with Wayne Enterprises (fictional) on the resume; recent AI interest is limited to online RAG courses and beginner LangChain usage (4 months LLMs, 17 months LangChain), reflecting a non-technical background pivoting to AI.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034044",
+    "score": 0.2,
+    "rationale": "Java/cloud backend engineer whose actual work at Stark Industries (fictional) and Capgemini (IT services) involves full-stack web and frontend development, with Embeddings listed as advanced skill for 29 months despite no corresponding production IR work described, indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034049",
+    "score": 0.0,
+    "rationale": "Career comprises civil engineering, HR management, customer support, and accounting (Infosys IT services), with Dunder Mifflin (explicitly fictional honeypot company) on the resume and no ML, IR, or software engineering experience of any kind.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034125",
+    "score": 0.2,
+    "rationale": "Cloud/backend engineer spending the bulk of their career at IT services firms (Tech Mahindra, Infosys) with no production ML or IR work, and YOLO listed as a skill signals a computer vision orientation that is a negative signal for this ranking/retrieval role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034148",
+    "score": 0.4,
+    "rationale": "ML engineer with 51 months at Zoho (product company) and Sentence Transformers (advanced, 19 months) which is a strong positive, but the described production work is computer vision image moderation (ResNet fine-tuning), not IR or ranking systems, leaving a core gap.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0034164",
+    "score": 0.6,
+    "rationale": "ML engineer across three real product companies (Haptik, PharmEasy, Swiggy) with advanced Weaviate vector-DB experience (46 months) and PEFT/NLP skills covering JD requirements, but only 3.6 years total experience and speech recognition as the longest-held skill (54 months) reduce overall fit.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0034177",
+    "score": 0.4,
+    "rationale": "IIT Delhi M.Tech is a strong positive and the single role at Mad Street Den includes production recommendation system work with collaborative filtering, but the top two skills are Diffusion Models (41 months) and Image Classification (33 months), indicating a CV-primary profile without explicit IR/retrieval tooling experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0034203",
+    "score": 0.2,
+    "rationale": "Entire 5.6-year career spans IT services firms only (Mindtree, Wipro, Cognizant) in frontend, DevOps, and cloud roles with no ML or IR experience; AI exposure is limited to a small RAG side project and prompt engineering as a skill.",
+    "stratum": "random"
+  }
+]

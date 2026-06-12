@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0085948",
+    "score": 0.2,
+    "rationale": "Primarily a data engineer at Paytm with Airflow/Spark/dbt work; lists LlamaIndex and Haystack skills but self-describes as 'a couple of small ML features' with no evidence of production retrieval, ranking, or evaluation systems; second role at fictional Stark Industries is a red flag.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085964",
+    "score": 0.0,
+    "rationale": "Customer Support / Mechanical Engineer / Graphic Designer career with zero ML or engineering depth; recent AI curiosity is LangChain-only (7 months) with no prior production ML; currently at fictional Wayne Enterprises, disqualifying as a honeypot.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085970",
+    "score": 0.0,
+    "rationale": "Career spans Business Analyst, HR Manager, and Accountant roles with no engineering or ML work; self-identifies as a marketing manager exploring AI tools; despite a tier_1 IIT Guwahati PhD, there is no technical ML production experience whatsoever.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085991",
+    "score": 0.2,
+    "rationale": "Only 2.9 years as a .NET Developer at Cognizant (IT services) with no production ML deployment; AI exposure is limited to a small RAG side project and online courses; lists PyTorch and ML skills but lacks any retrieval, ranking, or evaluation system experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0085997",
+    "score": 0.0,
+    "rationale": "Career is entirely Civil Engineer and Business Analyst roles at Hooli and Globex (fictional companies); self-describes as a marketing manager with ChatGPT curiosity; no engineering or ML production experience despite a BITS Pilani M.Tech in Data Science.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0086022",
+    "score": 1.0,
+    "rationale": "Senior Applied Scientist at Sarvam AI who built a BM25+dense (BGE/FAISS) hybrid RAG ranking pipeline serving 50M+ queries/month, and at Uber led migration from keyword to embedding-based search across 30M+ candidates with A/B testing — directly matching every core JD requirement including hybrid retrieval, evaluation metrics, and production scale.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0086028",
+    "score": 0.4,
+    "rationale": "6.2 years across product companies (Swiggy, Paytm, Vedantu) with production recommendation and NLP systems, and explicit 'Learning to Rank' skill with 46 months duration, but primary work has been computer vision and NLP classification rather than IR/search/retrieval, with no evidence of hybrid retrieval, NDCG evaluation, or vector database ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0086042",
+    "score": 0.0,
+    "rationale": "Eight years as a Sales Executive at Wayne Enterprises and Acme Corp (one fictional) with accounting and customer support descriptions; no engineering or ML work; AI keyword inflation (Kubeflow advanced) without any supporting technical career evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086062",
+    "score": 0.4,
+    "rationale": "4.1 years at product companies (Flipkart, Rephrase.ai) with NLP classification and recommendation-system production work, and some PEFT exposure, but experience is lightweight on deep retrieval — no vector DB, hybrid search, or NDCG evaluation ownership, and primary focus is collaborative filtering and classical methods rather than search/ranking.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0086120",
+    "score": 0.0,
+    "rationale": "Mobile Developer (Android/Kotlin) with 3.2 years, currently at HCL (IT services); AI exposure is self-described as online courses and a small RAG side project; no NLP, retrieval, ranking, or ML production experience whatsoever.",
+    "stratum": "title_mismatch"
+  }
+]

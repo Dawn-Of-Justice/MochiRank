@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0041265",
+    "score": 0.4,
+    "rationale": "Backend engineer at Vedantu (product company) with data pipeline experience, plus intermediate Learning to Rank skill (15 months) and advanced Weights & Biases, but only 3.6 years total and no production IR/embedding retrieval work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0041286",
+    "score": 0.0,
+    "rationale": "Sales Executive whose career spans content writing, operations, and business analysis entirely at IT services firms (Infosys, Wipro) and fictional company Pied Piper, with zero ML or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041362",
+    "score": 0.0,
+    "rationale": "Operations Manager with entirely non-technical background in logistics and customer support, worked at fictional company Wayne Enterprises, and holds no relevant ML or engineering skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041365",
+    "score": 0.0,
+    "rationale": "Entire career as HR Manager and Accountant at IT services firms Wipro and TCS, with non-technical roles and no ML or engineering work whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0041401",
+    "score": 0.0,
+    "rationale": "Marketing Manager whose career is split across fictional companies (Initech, Wayne Enterprises) and IT services firms (Infosys, Wipro) in mechanical engineering and operations roles, with no ML or AI engineering experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0041402",
+    "score": 0.6,
+    "rationale": "6.3 years of production ML at product companies (Ola fraud detection API, Observe.AI recommendation features) with advanced Information Retrieval (21 months) and LLMs skills, plus Georgia Tech undergraduate education, but lacks explicit hybrid search/vector DB and ranking evaluation metric (NDCG/MAP) experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0041414",
+    "score": 0.2,
+    "rationale": "Holds a Stanford M.S. CS (tier_1) but entire career has been mechanical engineering, accounting, and sales at Wipro and fictional company Pied Piper, with no production ML or IR work to support the inflated Kubeflow skill.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041429",
+    "score": 0.0,
+    "rationale": "HR Manager with career limited to HR and content writing at fictional company Stark Industries and Hooli, with no engineering or ML background despite a Ph.D in Data Science.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041512",
+    "score": 0.2,
+    "rationale": "M.Tech Computer Engineering from Thapar (tier_2) provides educational foundation, but entire career has been Marketing Manager and Customer Support with no production ML or AI engineering work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0041530",
+    "score": 0.0,
+    "rationale": "Business Analyst career spanning Wipro (IT services) and fictional companies Dunder Mifflin and Pied Piper, with work in accounting and operations rather than any ML or engineering capacity.",
+    "stratum": "random"
+  }
+]

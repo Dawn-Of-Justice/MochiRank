@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0082719",
+    "score": 0.2,
+    "rationale": "Entire career at IT-services firms (Accenture, Wipro) plus a fictional company (Dunder Mifflin), with only self-learner-level AI exposure and no production IR, embeddings, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082725",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Project Manager, Marketing Manager, Graphic Designer, HR Manager) with no engineering or ML work, and includes two fictional companies (Stark Industries, Dunder Mifflin), making this a clear honeypot.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0082811",
+    "score": 0.0,
+    "rationale": "Profile is a Content Writer and Customer Support rep with no engineering depth and roles at a fictional company (Wayne Enterprises), representing a non-technical marketing/writing background with zero IR or ML production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082852",
+    "score": 0.2,
+    "rationale": "8.7 years of backend/frontend engineering at product companies (Razorpay) shows solid software fundamentals, but the advanced OpenSearch skill is the only IR-adjacent signal while all ML experience remains at self-learner level with no production ranking or embeddings work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082924",
+    "score": 0.2,
+    "rationale": "Only 2.1 years of experience as a Full Stack Developer at Swiggy doing QA/test automation, with no production ML or IR work despite Kubeflow/MLflow skills that appear inflated relative to actual role description.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082928",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager background with Project Manager and Graphic Designer titles, no engineering experience, and a Ph.D in ML from a tier_4 institution that is contradicted entirely by a career history of customer support and mechanical design work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082961",
+    "score": 0.2,
+    "rationale": "8.6 years of frontend/mobile engineering with stints at product companies (Razorpay, Flipkart) shows solid engineering breadth, but no evidence of IR, search, ranking, or production ML work despite MLflow skills listed.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082973",
+    "score": 0.6,
+    "rationale": "6.4 years of applied ML including production Elasticsearch and OpenSearch experience (advanced, 44-54 months), Hugging Face Transformers, and recommendation-system work at a startup (Saarthi.ai), though primary focus has been computer vision and the role was at large IT-services firm (Genpact) rather than a pure product company with owned ranking metrics.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0083004",
+    "score": 0.0,
+    "rationale": "Operations Manager and Marketing Manager throughout career with no engineering or ML work, and roles at multiple fictional companies (Stark Industries, Pied Piper, Initech) flagging this as an anti-persona/honeypot candidate despite AI keyword mentions in the summary.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083056",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience as a Frontend Engineer at Cognizant (IT-services) doing QA automation with no ML or IR work, well below the minimum experience threshold and entirely wrong profile for a Senior AI Engineer role.",
+    "stratum": "random"
+  }
+]

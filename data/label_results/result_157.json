@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0062570",
+    "score": 0.0,
+    "rationale": "Operations Manager with 1.6 years of experience in warehouse logistics at Acme Corp with no ML, AI, or software engineering background — only beginner-level dbt and CI/CD skills with no relevance to IR or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062584",
+    "score": 0.4,
+    "rationale": "Data Engineer at product companies (PolicyBazaar, Unacademy, Ola) with solid Python/XGBoost exposure and Pinecone listed as an intermediate skill, but career has been primarily data pipelines and analytics infrastructure with no demonstrated production experience in embedding-based retrieval, ranking, or evaluation metrics like NDCG.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062751",
+    "score": 0.0,
+    "rationale": "Career history is mechanical engineering, customer support at Stark Industries (fictional company), and content writing with no software or ML engineering work — skills are SAP, CSS, and Redux with zero relevance to production AI or IR systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0062772",
+    "score": 0.6,
+    "rationale": "Senior Software Engineer (ML) at product companies Vedantu and Meesho with demonstrated production ML deployment (fraud detection API, collaborative-filtering recommendation systems) and strong MLOps skills, though lacks explicit embedding-based retrieval, hybrid search, or evaluation framework (NDCG/MAP) experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062774",
+    "score": 0.0,
+    "rationale": "Sales Executive with an 11.8-year career entirely in sales, accounting, and business analysis at Wayne Enterprises and Stark Industries (both fictional companies) plus TCS, with no software engineering or ML work anywhere in the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062808",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer whose career spans hardware design at Wayne Enterprises (fictional), marketing at another Wayne Enterprises role, and enterprise sales at Wipro with no AI, ML, or software engineering experience — skills are Tally, Angular, and Sales.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062810",
+    "score": 0.0,
+    "rationale": "Content Writer with 1.7 years of experience at Wayne Enterprises (fictional) writing SEO articles, with all technical skills (TypeScript, AWS, Flask, BentoML) listed at beginner level with no evidence of any engineering or ML work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062826",
+    "score": 0.2,
+    "rationale": "Entire 10.8-year career spent at IT-services firms (Infosys, TCS, Wipro) in non-technical business analyst and civil engineering roles with no product-company or ML engineering experience, though a CS degree from VJTI Mumbai and recently taking AI courses suggest some adjacent aptitude.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062972",
+    "score": 0.2,
+    "rationale": "Project Manager at TCS for 3.1 years in a business analyst role with no engineering depth, and the 'advanced' Vector Search skill listing (only 4 months, 4 endorsements) is classic keyword inflation with no supporting production evidence.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063067",
+    "score": 0.0,
+    "rationale": "Graphic Designer/Content Writer whose 10.2-year career spans Pied Piper (fictional), customer support, and IT services at Infosys with completely mismatched role descriptions and no ML, AI, or software engineering experience whatsoever.",
+    "stratum": "low_behavioral"
+  }
+]

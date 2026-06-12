@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0063521",
+    "score": 0.0,
+    "rationale": "Current title is Content Writer at a fictional company (Dunder Mifflin) with a career spanning content writing, operations, and marketing — zero ML, IR, or engineering experience relevant to this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063523",
+    "score": 0.0,
+    "rationale": "Career consists entirely of Marketing Manager, Graphic Designer, and Accountant roles with no engineering, ML, or IR experience, and skills are limited to Content Writing and basic web/data tools with no production ML work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0063540",
+    "score": 0.0,
+    "rationale": "Project Manager and Business Analyst at fictional companies (Stark Industries, Globex Inc) with non-technical skills (YOLO listed as advanced but career shows no ML/AI engineering work and descriptions are accounting/operations roles).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063541",
+    "score": 0.0,
+    "rationale": "Entire career is Project Manager and HR Manager roles at fictional companies (Initech, Dunder Mifflin) with no ML or engineering production experience; recent online courses on RAG do not compensate for zero technical depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063563",
+    "score": 0.2,
+    "rationale": "Has 6.3 years of software engineering experience (cloud/DevOps, frontend, QA) with Python background and a small RAG side project, but spent significant time at IT-services firms (TCS, HCL) with no production IR/ranking/embedding systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063571",
+    "score": 0.0,
+    "rationale": "Civil Engineer with only 2.7 years of experience at Globex Inc and TCS with no ML or IR work; despite a Ph.D in AI listed in education and Weights & Biases skill, the actual career descriptions are content writing and sales with zero production ML evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0063572",
+    "score": 0.0,
+    "rationale": "Graphic Designer at Wipro and TCS (IT-services firms) for the entirety of a 5.9-year career with skills limited to CSS, Excel, and Angular — no ML, IR, or engineering production experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0063575",
+    "score": 0.0,
+    "rationale": "Business Analyst and HR Manager roles at TCS, Stark Industries (fictional), and Initech (fictional) with no ML engineering experience; listed data pipeline and Snowflake skills do not offset a fundamentally non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063704",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer at Globex Inc with only 2.6 years of hardware product design experience; despite Time Series and FastAPI skills listed, there is no ML, IR, or software engineering production work in the career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063707",
+    "score": 0.0,
+    "rationale": "Operations Manager at fictional company Wayne Enterprises with only 1.2 years of experience in customer support team lead work; no ML, IR, or engineering background despite listing infrastructure-adjacent skills (Terraform, Apache Beam).",
+    "stratum": "random"
+  }
+]

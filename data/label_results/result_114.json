@@ -1,0 +1,62 @@
+﻿[
+    {
+        "candidate_id":  "CAND_0045027",
+        "score":  0.4,
+        "rationale":  "Has production ML experience at Paytm (XGBoost predictive modeling) and claims Milvus/RAG skills, but only 3 years total experience and career is focused on churn/forecasting rather than retrieval, ranking, or evaluation frameworks (NDCG/MAP) the JD requires.",
+        "stratum":  "high_behavioral"
+    },
+    {
+        "candidate_id":  "CAND_0045069",
+        "score":  0,
+        "rationale":  "Accountant at Wipro with a marketing manager background and no engineering or ML work; skills are limited to content writing and PowerPoint, with zero relevance to IR, embeddings, or ranking systems.",
+        "stratum":  "random"
+    },
+    {
+        "candidate_id":  "CAND_0045096",
+        "score":  0,
+        "rationale":  "Entire 13-year career spans marketing, operations, HR, and content writing roles exclusively at TCS and Infosys (IT-services firms) with no technical or ML work, matching the non-fit baseline.",
+        "stratum":  "random"
+    },
+    {
+        "candidate_id":  "CAND_0045118",
+        "score":  0,
+        "rationale":  "Marketing Manager at Stark Industries (a fictional company - hard disqualifier) with a non-technical background, no ML or IR experience, and career description describing accounting duties unrelated to the title.",
+        "stratum":  "random"
+    },
+    {
+        "candidate_id":  "CAND_0045120",
+        "score":  0,
+        "rationale":  "Career spans Mechanical Engineer, Customer Support, and Accountant roles at Wipro and Stark Industries (fictional company), with no engineering or ML substance and skills (Go, Photoshop, Agile) entirely irrelevant to retrieval or ranking.",
+        "stratum":  "random"
+    },
+    {
+        "candidate_id":  "CAND_0045154",
+        "score":  0.2,
+        "rationale":  "Claims advanced Elasticsearch experience (60 months) which is a positive signal, but actual career history is QA automation and full-stack web development at HCL/Accenture IT-services firms with only self-learner AI exposure and no production ML or ranking systems work.",
+        "stratum":  "random"
+    },
+    {
+        "candidate_id":  "CAND_0045180",
+        "score":  0.2,
+        "rationale":  "Full-stack web developer (Python/Django, Node.js) with 2.6 years entirely at Accenture consulting, with AI exposure limited to self-taught online courses and a small RAG side project, lacking any production ML, retrieval, or ranking experience.",
+        "stratum":  "consulting_only"
+    },
+    {
+        "candidate_id":  "CAND_0045204",
+        "score":  0.2,
+        "rationale":  "Despite advanced-level Vector Search and Weights and Biases skills claimed, the actual role is .NET/mobile developer at Swiggy with only 1.3 years of experience, and skill durations (50-58 months) vastly exceed career length indicating keyword inflation with no substantive IR or ranking work evident.",
+        "stratum":  "high_behavioral"
+    },
+    {
+        "candidate_id":  "CAND_0045250",
+        "score":  0.8,
+        "rationale":  "6.6-year ML engineer who led the migration from keyword-search to embedding-based retrieval at Rephrase.ai (AI startup), shipped XGBoost/LightGBM ranking models with production MLflow/Kubeflow pipelines at Paytm, and holds expert-level Sentence Transformers, Milvus, PEFT, and NLP skills closely matching all core JD requirements for production IR and ranking.",
+        "stratum":  "top_retrieval_dense"
+    },
+    {
+        "candidate_id":  "CAND_0045260",
+        "score":  0,
+        "rationale":  "Business Analyst with roles at Pied Piper and Hooli (both fictional companies - hard disqualifier), with a career history of civil/mechanical engineering and operations management roles and no ML or IR relevance.",
+        "stratum":  "top_anti_persona_sim"
+    }
+]

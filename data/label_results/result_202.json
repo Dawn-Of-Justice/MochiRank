@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0080919",
+    "score": 0.0,
+    "rationale": "Career history spans marketing leadership, sales, HR, and accounting with zero ML/IR engineering work, current role at fictional Stark Industries (honeypot signal), and skills limited to Sales/Excel/Illustrator with no relevance to retrieval or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080938",
+    "score": 0.2,
+    "rationale": "Web/backend generalist (6.5yr) whose entire career is at IT-services firms HCL and Mindtree plus fictional Hooli, with only self-learner AI exposure (online courses, small RAG side project) and no production experience in embeddings, retrieval, or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081188",
+    "score": 0.0,
+    "rationale": "Only 2.4 years of experience in a Customer Support role at Infosys with a marketing-manager self-description, and skills (Image Classification, TypeScript, FastAPI) show no production IR, ranking, or NLP/retrieval background.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0081218",
+    "score": 0.0,
+    "rationale": "Business Analyst career entirely at TCS (IT services) and fictional Dunder Mifflin (honeypot), with no ML engineering work; 'Semantic Search advanced' skill listed at only 5 months is clear keyword inflation on an otherwise non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0081224",
+    "score": 0.0,
+    "rationale": "11+ year career as Graphic Designer, Civil Engineer, and Accountant across Infosys and fictional Wayne Enterprises (honeypot), with skills limited to Agile/Spring Boot/CSS/ETL and zero ML, NLP, or information retrieval experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0081272",
+    "score": 0.0,
+    "rationale": "Operations Manager and Business Analyst career with roles at two fictional companies (Hooli and Pied Piper — dual honeypot signal) and no ML or software engineering work; skills are BigQuery/Azure/Sales/Redis/dbt with no IR or ranking relevance.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0081284",
+    "score": 0.2,
+    "rationale": "9.4yr software engineer (Java/DevOps/QA) at two fictional companies (Stark Industries, Wayne Enterprises — honeypot signal) with skills skewed toward Speech Recognition and GANs rather than NLP/IR, and no evidence of production retrieval, ranking, or embedding systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0081321",
+    "score": 0.8,
+    "rationale": "5.3yr ML engineer with production experience at three Indian product companies (Freshworks, Razorpay, PharmEasy) spanning recommendation systems, NLP pipelines, and CV model deployment; holds Weaviate (advanced, 20mo) and PyTorch skills, M.Tech CS from IIT Kanpur (tier_1), though explicit NDCG/hybrid-BM25 eval ownership is not stated.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0081338",
+    "score": 0.0,
+    "rationale": "8.8yr career in Business Analyst and HR Manager roles at Wipro (IT services) and fictional Initech/Hooli (dual honeypot signals), with no ML engineering work; 'Feature Engineering advanced' skill is keyword inflation inconsistent with a BA/HR profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0081366",
+    "score": 0.0,
+    "rationale": "12.6yr Civil Engineer career spanning two fictional companies (Wayne Enterprises, Pied Piper — honeypot signal) with roles as Content Writer, Customer Support, and Operations Manager; skills (TTS, Kubernetes, AWS, PowerPoint) show no IR, ranking, or applied ML production experience.",
+    "stratum": "random"
+  }
+]

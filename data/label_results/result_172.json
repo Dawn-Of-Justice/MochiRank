@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0069458",
+    "score": 0.2,
+    "rationale": "Frontend/QA engineer with only 4 years at Initech (fictional honeypot company) whose entire career is test automation and web development, with ML exposure purely at self-learner level and no production embedding or retrieval systems despite Computer Vision listed as a top skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069478",
+    "score": 0.0,
+    "rationale": "HR Manager with 14.7 years across non-technical roles (HR, accounting, marketing, project management) at no product companies, with skills limited to Agile and PowerPoint and zero ML, IR, or engineering production experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0069591",
+    "score": 0.2,
+    "rationale": "DevOps/infrastructure engineer with 8.4 years entirely at IT-services firms (Mphasis, Mindtree) doing cloud and Java backend work, with PEFT and Reinforcement Learning listed as advanced skills but no evidence of production ML or retrieval systems in any role description.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0069771",
+    "score": 0.4,
+    "rationale": "ML engineer with 5.7 years at legitimate product companies (Sarvam AI, Krutrim, Razorpay) with Elasticsearch and recommendation system production experience, but primary work is time-series forecasting and collaborative filtering with no evidence of embedding-based retrieval or ranking evaluation (NDCG/MAP) ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069828",
+    "score": 0.0,
+    "rationale": "Content Writer/Accountant/Graphic Designer whose entire career is at Dunder Mifflin (fictional honeypot company) and TCS in non-technical roles with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069842",
+    "score": 0.0,
+    "rationale": "Business Analyst at Wipro with 4.3 years in pure consulting and operations roles with no ML or engineering background, and career descriptions of business diagnostics and warehouse management have no overlap with retrieval or ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0069905",
+    "score": 0.8,
+    "rationale": "Applied ML Engineer with 6.6 years at product companies (Sarvam AI, Nykaa, Observe.AI) who directly led migration from keyword search to embedding-based retrieval using sentence-transformers and FAISS, built RAG pipelines with Pinecone, and holds expert-level skills in Python and Sentence Transformers.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0070028",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer/Marketing Manager whose career is entirely at fictional companies (Stark Industries, Initech) and TCS with no engineering or ML work, covering demand-generation marketing and warehouse operations with skills at beginner level in SAP, Excel, and Agile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070090",
+    "score": 0.0,
+    "rationale": "Customer Support professional with 12.8 years across completely unrelated roles (Civil Engineer, HR Manager, Customer Support) at fictional companies (Dunder Mifflin, Stark Industries, Hooli) with no ML, engineering, or IR experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0070120",
+    "score": 0.2,
+    "rationale": "Cloud/Frontend engineer with 5.2 years mostly at Wipro (IT services) and Flipkart doing infrastructure and frontend work, with self-learner AI exposure and LoRA listed as an intermediate skill but no production retrieval, embeddings, or ranking systems in any role description.",
+    "stratum": "title_match_strong"
+  }
+]

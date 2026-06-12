@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0052429",
+    "score": 0.0,
+    "rationale": "Mechanical engineer with 1.2 years of experience, career entirely in hardware/mechanical design with no ML, NLP, or IR skills; only beginner-level adjacent tools (Kafka, Java) with no relevance to embeddings-based retrieval or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052451",
+    "score": 0.0,
+    "rationale": "Sales/marketing background across 12+ years with roles at Wayne Enterprises (fictional company honeypot signal) and Wipro (IT services), no production ML or IR experience, and skills listed (Diffusion Models 'advanced') are inconsistent with a sales/accounting career trajectory.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052508",
+    "score": 0.2,
+    "rationale": "5 years of cloud/full-stack engineering (Razorpay, Cognizant) with solid Python and SaaS backend experience, but no hands-on ML or retrieval system work — only self-learner-level AI exposure via OpenAI APIs, and skills listed (GCP, Redux) show no embedding or ranking depth.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0052536",
+    "score": 0.2,
+    "rationale": "4 years as a data engineer with strong Spark/Airflow/pipeline skills, but career is entirely data infrastructure with self-directed ML projects only; skills listed (CNN, RL, PEFT at 'advanced') are inflated relative to a data engineering job description and show no retrieval or ranking production work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0052558",
+    "score": 0.2,
+    "rationale": "Only 1.2 years of experience as a DevOps engineer at Swiggy doing full-stack web work, with ASR listed as a top skill inconsistent with the role description; too junior and no demonstrated IR/embedding/ranking production experience despite some ML keyword presence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052570",
+    "score": 0.0,
+    "rationale": "Customer support and sales background at TCS (IT services), Initech, and Pied Piper (both fictional company honeypot signals) with no engineering or ML production work; skills are frontend/web with no retrieval or ranking relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052603",
+    "score": 0.0,
+    "rationale": "Graphic designer/operations manager background with roles at Stark Industries and Wayne Enterprises (multiple fictional company honeypot signals), Dunder Mifflin, and no ML/IR production experience despite RL listed as an 'advanced' skill.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0052658",
+    "score": 0.0,
+    "rationale": "Only 1 year of experience as a Cloud Engineer at Dunder Mifflin (fictional company honeypot signal) doing Java backend work, with GANs listed as 'advanced' skill that is entirely inconsistent with the stated role and duration, and no IR/retrieval or ranking production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052682",
+    "score": 0.8,
+    "rationale": "6.6 years of NLP/ML production experience across Aganitha and Salesforce, shipping a sentence-transformer-based content recommendation system serving 10M+ users and a RAG chatbot with Pinecone vector storage, with expert-level skills in Python, QLoRA, embeddings, and semantic search from tier_1 institutions (IIT Guwahati, NIT Warangal) — directly matches the JD's core requirements for production IR and hybrid retrieval.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0052701",
+    "score": 0.0,
+    "rationale": "HR Manager with 14.9 years of experience entirely in HR/operations/mechanical engineering at Wayne Enterprises (fictional company honeypot signal) and Pied Piper (fictional), with no ML, NLP, or IR skills — only beginner-level data tools (BigQuery, Snowflake) with no production engineering depth.",
+    "stratum": "random"
+  }
+]

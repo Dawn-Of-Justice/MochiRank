@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0052108",
+    "score": 0.0,
+    "rationale": "Career spans a Graphic Designer role at TCS and a Sales Executive role in manufacturing with no ML, IR, or software engineering experience; skills (Content Writing, Node.js) are entirely non-relevant to ranking or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052119",
+    "score": 0.0,
+    "rationale": "Operations Manager at TCS for 38 months with a marketing-focused summary and skills limited to ETL, SQL, and Accounting — no ML, NLP, or IR experience whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0052160",
+    "score": 0.2,
+    "rationale": "Primarily IT-services background (Capgemini, TCS) with one role at Pied Piper (fictional company flag); skills are DevOps/backend (dbt, CI/CD, FastAPI) with no demonstrated IR, ranking, or embeddings experience despite a CS/Data Science education.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052195",
+    "score": 0.4,
+    "rationale": "Has advanced Sentence Transformers experience (59 months) and built production recommendation features at Haptik, but the primary career focus is computer vision (ResNet fine-tuning, CNN) at PolicyBazaar and Sarvam AI — the JD explicitly flags CV-without-IR as a negative signal and no vector DB or evaluation framework experience is evidenced.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052221",
+    "score": 0.2,
+    "rationale": "Only 1.2 years of experience as a Cloud Engineer in manufacturing with self-learner-level AI exposure (RAG side project) and no production ML, ranking, or retrieval work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052276",
+    "score": 0.2,
+    "rationale": "2.7 years of experience split between frontend/devops work, with a role at Wayne Enterprises (fictional company flag); skills list Diffusion Models and Databricks but no IR, ranking, embeddings, or evaluation framework experience is demonstrated.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052328",
+    "score": 0.8,
+    "rationale": "6.5 years with expert-level Learning to Rank (44 months), Vector Search, and OpenSearch skills earned at Amazon (product company) plus Observe.AI, including hands-on RAG pipeline with Pinecone embeddings and production ML orchestration — closely matching the JD's core requirements for hybrid retrieval and ranking system ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052335",
+    "score": 0.8,
+    "rationale": "6.4 years with expert Learning to Rank (49 months) and Sentence Transformers (43 months), directly owned the e-commerce ranking layer evolution from hand-tuned scoring to LTR at Aganitha, and built semantic search with FAISS plus RAG with Pinecone at Wysa — covering nearly all of the JD's hard requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052353",
+    "score": 0.2,
+    "rationale": "4.9 years mostly at Infosys (IT services, 51 months) with generic backend/mobile work; while BM25 appears as an intermediate skill (35 months), there is no evidence of production IR system ownership, embeddings, vector DBs, or evaluation framework experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0052378",
+    "score": 0.0,
+    "rationale": "Non-technical Project Manager/Graphic Designer career split between Initech and Dunder Mifflin (both fictional companies) with content writing and SEO background and no engineering or ML experience.",
+    "stratum": "random"
+  }
+]
