@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0024793",
+    "score": 0.0,
+    "rationale": "Profile is a non-technical marketing manager background with career spanning civil engineering and content writing at Infosys; no ML, IR, or ranking experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024830",
+    "score": 0.0,
+    "rationale": "Career is non-technical sales and marketing roles, includes two fictional-company honeypots (Pied Piper, Initech), and has zero ML or information retrieval skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024847",
+    "score": 0.0,
+    "rationale": "Only 2 years of experience in project management and operations at Wipro with no ML, AI, or engineering depth; self-described marketing manager background with casual AI curiosity only.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024877",
+    "score": 0.2,
+    "rationale": "Entire career spent at IT-services firms (TCS, Cognizant) — an explicit JD disqualifier — with DevOps/infrastructure work only; listed advanced ML skills (Feature Engineering, Computer Vision) are inconsistent with the job descriptions and appear inflated.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0024878",
+    "score": 0.6,
+    "rationale": "Dual tier_1 education (NIT Trichy + IIT Guwahati), production recommendation system at Krutrim (AI startup) using collaborative filtering, and hands-on MLOps/PEFT/LoRA skills, though lacks explicit dense-retrieval or NDCG evaluation experience and spent 36 months at IT-services firm HCL.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0024887",
+    "score": 0.0,
+    "rationale": "Career spans two fictional honeypot companies (Dunder Mifflin, Wayne Enterprises) in non-technical operations and mechanical engineering roles, with no ML or IR skills.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0024950",
+    "score": 0.4,
+    "rationale": "Solid data engineering foundation at a reputable product company (Razorpay) with Kafka/Spark pipelines, but self-admits wanting to move into ML itself; advanced Learning-to-Rank and pgvector skills listed are inconsistent with the purely data-engineering job description, suggesting inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0024997",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (operations, graphic design, sales) at multiple fictional honeypot companies (Dunder Mifflin x2, Initech) with zero engineering or ML substance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025081",
+    "score": 0.0,
+    "rationale": "Entire career in operations and marketing roles at IT-services firms (Wipro, Infosys) and a fictional company (Dunder Mifflin); no ML, AI, or technical engineering experience despite the top_retrieval_dense stratum label suggesting it is a retrieval trap.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0025126",
+    "score": 0.2,
+    "rationale": "Only 2.5 years of experience, all at an IT-services firm (Mindtree) doing QA/test automation — not ML or IR; pgvector listed as advanced (32 months) is inconsistent with a test-automation role and likely inflated, with AI/ML limited to self-learner side projects.",
+    "stratum": "consulting_only"
+  }
+]

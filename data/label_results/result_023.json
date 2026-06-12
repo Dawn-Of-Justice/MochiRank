@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0009691",
+    "score": 0.8,
+    "rationale": "Built semantic search infrastructure from scratch using sentence-transformers and FAISS at LinkedIn and Amazon (product companies), with Qdrant expert-level skill and fine-tuning LLMs — strong IR/retrieval production background, slight discount for Genpact IT-services stint and no explicit eval-metric ownership mentioned.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0009713",
+    "score": 0.0,
+    "rationale": "Operations Manager at TCS with only 1.3 years experience in marketing/operations and content writing — zero ML engineering, no IR or ranking work, entirely non-technical profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009780",
+    "score": 0.0,
+    "rationale": "Entire career is IT-services (Wipro, TCS) in non-technical BA/marketing roles, includes a Pied Piper (fictional company) entry as Civil Engineer, and skills are Kubernetes/Tally/HTML with no ML or IR experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0009791",
+    "score": 0.2,
+    "rationale": "Full Stack Developer whose current role is at Wayne Enterprises (fictional company trap) with prior TCS IT-services work; AI exposure is entirely self-learner side projects with no production ML/IR deployment, and skills are React/LLM fine-tuning at only intermediate level with 8 months duration.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009834",
+    "score": 0.4,
+    "rationale": "Strong data engineering foundation at product companies (Swiggy, CRED) with Qdrant advanced skill and feature engineering experience, but career has been data pipelines rather than production IR/ranking systems, and the candidate explicitly states they want to transition into ML from data engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0009837",
+    "score": 0.8,
+    "rationale": "Shipped XGBoost/LightGBM ranking models for a production discovery feed at Rephrase.ai (AI/ML product company), holds FAISS expert and PyTorch expert skills, and has IIT Bombay + CMU pedigree — strong LTR and retrieval alignment, with minor discount for 4.3yr experience and single-employer history.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0009881",
+    "score": 0.2,
+    "rationale": "Cloud/DevOps/QA-focused engineer at Infosys and CRED with no production ML or IR work; AI involvement is limited to self-learner courses and a small RAG side project, and top skills are Python/CSS/Microservices with no NLP or retrieval tooling.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0010106",
+    "score": 0.0,
+    "rationale": "Entire career at TCS and Infosys in Business Analyst and Civil Engineer roles with skills in CNN/GCP/TypeScript at beginner level and a Chemical Engineering background — no ML engineering, no IR, and no relevant production experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0010123",
+    "score": 0.2,
+    "rationale": "Only 1.3 years of experience as a Cloud Engineer at Tech Mahindra (IT services), with AI exposure limited to self-learner courses and a RAG side project; IIT Kharagpur education is a positive signal but insufficient to offset the lack of production ML/IR experience at this seniority level.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0010149",
+    "score": 0.6,
+    "rationale": "ML Engineer with 6.9yr at product companies (Glance, InMobi, upGrad) holding Learning-to-Rank advanced, Milvus, Vector Search, and Elasticsearch skills, with recommendation systems shipped to production — good IR/ranking foundation, discounted for heavy computer vision focus, predictive modeling emphasis over retrieval, and limited NDCG/eval framework evidence.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

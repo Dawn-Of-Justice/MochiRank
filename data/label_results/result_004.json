@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0001930",
+    "score": 0.4,
+    "rationale": "Has 6.9 years of ML experience at product companies (Dream11, Flipkart, Nykaa) with recommendation systems and Milvus (vector DB) exposure, but primary focus is CV/collaborative filtering with only intermediate NLP and no clear NDCG/ranking evaluation or hybrid retrieval ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001950",
+    "score": 0.0,
+    "rationale": "Operations/marketing background with career at Wipro (IT services) and fictional companies (Stark Industries, Pied Piper); no engineering or ML skills — purely non-technical profile with zero relevance to IR/ranking.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0002000",
+    "score": 0.0,
+    "rationale": "Sales executive whose entire career spans Dunder Mifflin (fictional honeypot), Wayne Enterprises (fictional), and Pied Piper (fictional) in sales and civil engineering roles with no ML, IR, or software engineering experience whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0002065",
+    "score": 0.2,
+    "rationale": "Strong IIT Roorkee + Stanford education and 9 years of software experience, but entire career is at IT-services firms (Wipro, Cognizant) in DevOps/.NET/QA roles with no ML production experience — only self-reported RAG side project.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0002106",
+    "score": 0.0,
+    "rationale": "Content writer/accountant/customer support roles across manufacturing companies (Acme Corp, Globex) with no engineering or ML work; skills list (Salesforce CRM, SEO) confirms zero relevance to the AI engineering role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0002111",
+    "score": 0.0,
+    "rationale": "Sales executive and accountant at fictional companies (Initech, Dunder Mifflin) and Hooli with career entirely in sales, accounting, and project management — no technical or ML skills relevant to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002115",
+    "score": 0.0,
+    "rationale": "Sales executive at Stark Industries (fictional) and accountant at TCS with marketing/sales background and no ML or engineering experience; skills (SAP, ETL, React) show no IR/ranking depth.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002128",
+    "score": 0.0,
+    "rationale": "HR Manager and content writer at fictional company (Wayne Enterprises) and Hooli/Globex with career spanning HR, content writing, and business analysis — no ML, IR, or software engineering depth.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0002169",
+    "score": 0.0,
+    "rationale": "Mechanical engineer at fictional company Initech with only 2.7 years experience; summary self-describes as a marketing manager curious about AI tools — no engineering or ML production work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0002219",
+    "score": 0.0,
+    "rationale": "Project manager at TCS (IT services) and civil engineer at Stark Industries (fictional) with a PhD in Civil Engineering; career shows no ML, IR, or software engineering experience despite listing Weights & Biases as a skill.",
+    "stratum": "random"
+  }
+]

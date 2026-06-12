@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0007121",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (Customer Support, Operations Manager, content writing at IT services firms) with skills limited to Six Sigma, Accounting, and Tally — no ML, IR, or engineering background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007156",
+    "score": 0.4,
+    "rationale": "Has Haystack advanced proficiency (38 months) — a genuine IR/NLP framework signal — and product-company experience at Swiggy, but career work is QA/full-stack backend with no evidence of production retrieval systems, NDCG/ranking ownership, or embedding pipelines; education is tier_4 and one employer (Hooli) is fictional.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007163",
+    "score": 0.0,
+    "rationale": "Sales Executive with 1.7 years total experience, sole employer is Initech (fictional company), role description is logistics operations — no ML, IR, or engineering skills in evidence despite listed keywords.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007164",
+    "score": 0.0,
+    "rationale": "14.6 years across Customer Support, Operations, and Civil Engineering roles at companies including Pied Piper (fictional); skills are SAP, Photoshop, Java, and Vue.js with no ML, retrieval, or ranking experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0007196",
+    "score": 0.0,
+    "rationale": "Single Business Analyst role at Dunder Mifflin (fictional company) with a mechanical engineering job description; no ML or IR production experience despite some data-adjacent skill listings.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007226",
+    "score": 0.4,
+    "rationale": "Strong data engineering depth at product companies (BYJU'S, Ola) with Kafka/Spark/Snowflake pipelines and a tier_2 COEP education, but skills point to computer vision (CNN, Image Classification) rather than NLP/IR, and there is no evidence of retrieval systems, embedding-based ranking, or evaluation metric ownership.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0007231",
+    "score": 0.2,
+    "rationale": "Cloud/DevOps engineer at Zomato (product company) with solid infrastructure skills, but career is entirely AWS/Kubernetes/Terraform with no ML or IR work; AI/ML is self-learner level only and no production retrieval or ranking experience is present.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0007269",
+    "score": 0.0,
+    "rationale": "13-year career in Operations Manager, Project Manager, and Business Analyst roles across multiple fictional companies (Dunder Mifflin, Stark Industries) with brand/design/operations descriptions — completely non-technical with no ML or engineering experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0007369",
+    "score": 0.2,
+    "rationale": "Data Engineer with 3.5 years building Snowflake warehouses at a manufacturing firm; skills list Reinforcement Learning and Computer Vision (wrong domain) with no NLP/IR or retrieval system work, and experience is below the 5-year floor for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007376",
+    "score": 0.4,
+    "rationale": "Java/Android developer at Swiggy (product company) with FAISS intermediate proficiency (32 months) as a direct IR signal and summary mentioning a RAG side project, but production career is mobile and Spring Boot backend with no evidence of owning retrieval pipelines, NDCG evaluation, or embedding-based ranking systems.",
+    "stratum": "random"
+  }
+]

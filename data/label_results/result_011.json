@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0005059",
+    "score": 0.0,
+    "rationale": "HR Manager with a non-engineering career across operations, mechanical design, and civil engineering roles; no ML, retrieval, or AI engineering experience whatsoever, and current company (Pied Piper) is a fictional honeypot.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005095",
+    "score": 0.2,
+    "rationale": "5.5-year software engineer with full-stack/backend background who explicitly self-describes as a 'self-learner' on ML with only a small RAG side project — no production IR/search/ranking experience and prior company Initech is a fictional honeypot.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005124",
+    "score": 0.0,
+    "rationale": "Career is entirely in sales (Sales Executive at Globex/Hooli/TCS) with prior Customer Support at Wayne Enterprises (fictional company/honeypot) and graphic design at TCS — zero engineering or ML work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005260",
+    "score": 1.0,
+    "rationale": "Senior NLP Engineer at Netflix and Yellow.ai with direct production experience building BM25+dense hybrid retrieval (BGE embeddings, FAISS HNSW) serving 50M+ queries/month, LLM fine-tuning via LoRA/QLoRA, RAG eval frameworks, and IIIT Bangalore B.Tech — an exceptionally precise match for every core JD requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005303",
+    "score": 0.4,
+    "rationale": "3.1-year ML engineer at CRED and PolicyBazaar with production NLP pipelines and lightweight recommendation features using sklearn/transformers, but only 3 years of experience, no explicit IR/search/ranking or hybrid retrieval work, and no evaluation metric ownership (NDCG/MAP/MRR).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0005311",
+    "score": 0.4,
+    "rationale": "AI Research Engineer at Aganitha/Swiggy with 5.7 years and IIT Kharagpur B.Tech, but work is focused on computer vision (ResNet) and time-series forecasting — not IR/search/ranking — and the profile explicitly notes lighter NLP depth and no hybrid retrieval or evaluation framework experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005441",
+    "score": 0.0,
+    "rationale": "14.7-year career as Mechanical Engineer and Business Analyst split across Dunder Mifflin (fictional honeypot, twice), Infosys, and Wipro with no ML or AI engineering work, and the self-summary explicitly describes a marketing-manager identity with only casual ChatGPT curiosity.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0005460",
+    "score": 0.4,
+    "rationale": "7-year backend/data engineer at Meesho/Zomato/PhonePe with solid Python, Spark, XGBoost, and Milvus exposure, but the role is primarily data warehousing and analytics-engineering with only lightweight ML (~30% of time) and no production retrieval/ranking systems or evaluation metric ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0005481",
+    "score": 0.0,
+    "rationale": "Project Manager career across Globex, TCS (twice), and Stark Industries (fictional honeypot) in sales, marketing, and content roles with no engineering or ML background — YOLO listed as an advanced skill is incoherent with the actual career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005489",
+    "score": 0.0,
+    "rationale": "Sales Executive at Dunder Mifflin (fictional honeypot) and Graphic Designer at Stark Industries (fictional honeypot) with a career in SEO content writing and accounting — zero engineering depth despite holding M.Sc ML and M.Tech degrees from tier_2 institutions.",
+    "stratum": "random"
+  }
+]

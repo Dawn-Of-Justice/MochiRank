@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0000056",
+    "score": 0.2,
+    "rationale": "IIT Bombay AI M.E. is a strong education signal, but with only 1.3 years of experience entirely at TCS doing frontend/Node.js web development and no production ML or IR work, the candidate is far too junior and wrongly specialised; skill durations (e.g. 53 months image classification on a 15-month career) indicate keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000212",
+    "score": 0.0,
+    "rationale": "Entire 13-year career spans non-technical roles (Customer Support, HR Manager, Business Analyst) at fictional companies (Wayne Enterprises, Pied Piper) with zero engineering, ML, or IR work; only AI exposure is recent online courses.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0000232",
+    "score": 0.0,
+    "rationale": "Career is entirely in marketing/operations/SEO content writing at fictional Initech with no engineering or ML experience; flagged as honeypot and AI curiosity is limited to casual ChatGPT use.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0000273",
+    "score": 0.4,
+    "rationale": "5.8 years of applied ML at product companies (BYJU's recommendation systems, Yellow.ai forecasting with LightGBM/Prophet) shows real production ML experience, but no evidence of IR-specific work — no embeddings, vector search, FAISS, hybrid retrieval, or ranking evaluation metrics (NDCG/MAP) in any role.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0000311",
+    "score": 0.0,
+    "rationale": "Project Manager at Wipro (IT services) with prior Civil Engineer and Content Writer roles at fictional companies (Initech); career descriptions are entirely mismatched with titles and contain zero ML, IR, or engineering-relevant work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000406",
+    "score": 0.2,
+    "rationale": "Only 1.9 years experience doing full-stack web development at fictional Initech; skills list LLMs and Embeddings as 'advanced' with 47 and 27 months duration on a 22-month career — clear keyword inflation — and there is no actual production ML or IR work in the career description.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000417",
+    "score": 0.2,
+    "rationale": "7.8 years of solid software engineering (Java/Spring Boot microservices, AWS/Kubernetes, React) across product and IT-services companies, but career contains no ML, NLP, retrieval, or ranking work whatsoever; self-described as AI/ML self-learner only.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0000426",
+    "score": 0.4,
+    "rationale": "IIT Roorkee (tier_1) CS M.Tech and Razorpay (product company) experience are positive signals, and FAISS is listed as top advanced skill; however, all career descriptions show QA automation and Android mobile development with no actual retrieval, ranking, or ML production work visible.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0000427",
+    "score": 0.2,
+    "rationale": "2.6 years entirely at Wipro (IT services) doing test automation/QA with a DevOps title; feature engineering is listed as an advanced skill but the career shows no ML or IR work, and the profile lacks any production AI/ML engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0000491",
+    "score": 0.0,
+    "rationale": "14-year career entirely in non-technical roles (Marketing Manager, Accountant, HR Manager, Project Manager) at fictional companies (Pied Piper, Stark Industries); matches the non-fit baseline exactly with zero engineering or ML relevance.",
+    "stratum": "title_mismatch"
+  }
+]

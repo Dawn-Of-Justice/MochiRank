@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0017187",
+    "score": 0.2,
+    "rationale": "7 years of backend/web engineering with self-learner AI exposure only; current role at fictional Initech and prior stint at Cognizant (IT services) with no production embeddings, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017239",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager whose career spans fictional Wayne Enterprises, Stark Industries, and IT-services TCS in non-technical operations and accounting roles, with zero engineering or ML production experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0017245",
+    "score": 0.0,
+    "rationale": "12.9-year career entirely in customer support, accounting, and sales roles at TCS and Acme Corp with no technical engineering or ML work whatsoever, making this a clear non-fit honeypot profile.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0017288",
+    "score": 0.4,
+    "rationale": "Data/backend engineer at product companies PolicyBazaar and PhonePe with advanced Elasticsearch (21 months) and intermediate Milvus (11 months) skills, but career is data-pipeline focused rather than ML ranking or embedding retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017345",
+    "score": 0.2,
+    "rationale": "Only 3.9 years of experience predominantly in DevOps/QA roles at HCL (IT services) and fictional Dunder Mifflin, with self-learner AI only and no production NLP, retrieval, or ranking system deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017364",
+    "score": 0.0,
+    "rationale": "Project Manager with entire career split between fictional Wayne Enterprises and Infosys (IT services) in operations and accounting roles, with no technical ML or engineering background.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0017386",
+    "score": 0.0,
+    "rationale": "HR Manager whose full career is at Infosys and Wipro (IT services) in non-technical HR, graphic design, and project management roles with no ML, IR, or engineering production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017434",
+    "score": 0.2,
+    "rationale": "8.9 years of software engineering at product companies (Zomato, Flipkart) but skills are heavily CV-focused (CNN advanced 55 months, Diffusion Models) with no NLP, search, retrieval, or ranking system experience relevant to this IR-centric role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017439",
+    "score": 0.0,
+    "rationale": "6.6-year career as content writer and accountant at fictional Initech, fictional Wayne Enterprises, and TCS with no engineering or ML production work; skills are frontend-web and no IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017471",
+    "score": 0.2,
+    "rationale": "8.3 years of full-stack/backend engineering but entire career at fictional companies Globex Inc and Dunder Mifflin with self-learner AI only; scikit-learn intermediate skill but no production IR, embeddings, or ranking system experience.",
+    "stratum": "high_behavioral"
+  }
+]

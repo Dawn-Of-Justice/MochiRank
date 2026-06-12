@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0021962",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (customer support and operations manager) at IT-services firm Infosys and fictional company Pied Piper, with no ML, IR, or engineering production experience despite an 'advanced' Computer Vision skill claim that is inconsistent with the work history.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021977",
+    "score": 0.0,
+    "rationale": "Both career entries are at fictional companies (Pied Piper, Dunder Mifflin) in non-technical roles (customer support, accountant), with no ML, IR, or software engineering experience and a skill set limited to basic web tools and Six Sigma.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021997",
+    "score": 0.0,
+    "rationale": "Fourteen-year career spans only non-technical roles (civil engineer, HR manager, sales executive, graphic designer) at IT-services firms Wipro and TCS plus fictional companies Pied Piper and Initech, with no ML or IR production work beyond recent online courses.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0022074",
+    "score": 0.2,
+    "rationale": "IIT Roorkee tier_1 education and software engineering experience at product company Razorpay provide some adjacent foundation, but the entire career is in frontend/mobile development with no production ML, retrieval, or ranking experience, and the 'advanced' GANs/Computer Vision skills are inconsistent with a frontend engineer job history.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0022107",
+    "score": 0.2,
+    "rationale": "Has a software engineering foundation at Hooli (web/cloud) and mentions a small RAG side project, but the 59-month 'advanced' LangChain claim is implausible given 4.9 years total experience, all production work is DevOps/cloud/QA with no ML or IR ownership, and the AI exposure is limited to hobby projects calling OpenAI APIs.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022160",
+    "score": 0.2,
+    "rationale": "Tier_1 credentials from IIIT Hyderabad and IIT Guwahati indicate strong academic potential, but the sole 1.9-year career entry is an operations manager role at fictional company Pied Piper with no ML or engineering production work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022180",
+    "score": 0.0,
+    "rationale": "Eight-year career consists entirely of non-technical roles (civil engineer, project manager, graphic designer, marketing manager) spread across multiple fictional companies (Initech, Dunder Mifflin, Pied Piper) with no ML, IR, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022198",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience as a graphic designer at fictional company Stark Industries with no engineering or ML production work, and the claimed Diffusion Models skill is entirely inconsistent with the graphic design role and very short tenure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022237",
+    "score": 0.0,
+    "rationale": "Thirteen-year career is exclusively in non-technical roles (customer support, project manager, operations manager, content writer) at multiple fictional companies (Pied Piper, Wayne Enterprises, Initech) with no ML or IR production experience despite a Ph.D in AI from a tier_4 institution.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022254",
+    "score": 0.4,
+    "rationale": "Solid data engineering background at legitimate product companies (upGrad, InMobi, Paytm) with IIIT Hyderabad tier_1 education and hands-on XGBoost/sklearn ML exposure, but the candidate self-describes ML as 'not the core of my day' and there is no evidence of production retrieval systems, vector databases, embedding pipelines, or ranking evaluation metrics (NDCG/MAP/MRR) which are the hard requirements for this role.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

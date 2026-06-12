@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0018986",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Graphic Designer, Accountant, Customer Support) at fictional companies (Stark Industries, Dunder Mifflin) with skills limited to frontend web frameworks and zero ML, IR, or ranking experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0019039",
+    "score": 0.0,
+    "rationale": "Despite a nominal CMU B.Tech in ML, the entire 11.9-year career is non-technical (HR Manager, Marketing Manager, Content Writer, Business Analyst) at fictional companies (Dunder Mifflin x2, Pied Piper), with skills in Salesforce CRM and Six Sigma and no applied ML or IR work anywhere.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0019074",
+    "score": 0.4,
+    "rationale": "8.7 years of software engineering breadth paired with an advanced Sentence Transformers skill (19 months) provides real technical foundation, but all career roles are frontend/QA/DevOps at multiple fictional companies and AI exposure is self-described as only a small RAG side project with no production IR or ranking deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019098",
+    "score": 0.2,
+    "rationale": "Only 1.3 years total experience as a Frontend Engineer at IT-services firm Cognizant with no production ML work; Pinecone and Data Science claimed as advanced despite tenure far too short to support those ratings, indicating keyword inflation with no production retrieval or ranking evidence.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0019125",
+    "score": 0.0,
+    "rationale": "Eight-year career is entirely Mechanical Engineer and Sales Executive roles at IT-services firms TCS and Infosys with skills limited to SEO, Hadoop, and Next.js; no ML, IR, embeddings, or ranking system work is present despite an AI degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019129",
+    "score": 0.0,
+    "rationale": "11-year career spanning Business Analyst, Content Writer, Operations Manager, and Civil Engineer roles exclusively at fictional companies (Dunder Mifflin, Pied Piper, Initech) with Civil and Chemical Engineering education and zero ML, IR, or software engineering work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0019149",
+    "score": 0.6,
+    "rationale": "M.Sc CS from IIIT Hyderabad (tier_1) with advanced Information Retrieval (60 months, 45 endorsements) and FAISS (40 months) skills plus product-company experience at CRED; career descriptions focus on data warehousing and pipelines rather than explicit production ranking or embedding-retrieval system deployment, indicating meaningful ramp-up needed on the ML side.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0019152",
+    "score": 0.0,
+    "rationale": "12.8-year career is entirely Marketing Manager and Mechanical/Civil Engineer roles at fictional Wayne Enterprises (x2) and IT-services firm TCS, with skills in Java and Redis but zero ML, IR, embeddings, or ranking engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019167",
+    "score": 0.0,
+    "rationale": "13.9-year career consists of Operations Manager, Marketing Manager, and Content Writer roles at multiple fictional companies (Initech, Pied Piper, Stark Industries) and Infosys (IT services) with no ML, IR, or production engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0019198",
+    "score": 0.0,
+    "rationale": "Only 2.6 years as a Project Manager at fictional Pied Piper doing content/SEO work; advanced Recommendation Systems and Hugging Face Transformers skill claims have only 4 endorsements each with 9-13 month durations, showing clear keyword inflation with no production engineering or ML deployment background.",
+    "stratum": "title_mismatch"
+  }
+]

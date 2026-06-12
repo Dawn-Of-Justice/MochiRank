@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0023767",
+    "score": 0.0,
+    "rationale": "Content Writer at TCS with 1 year of experience, a marketing/SEO background, and no engineering or ML skills — entirely unable to perform the role.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0023823",
+    "score": 0.0,
+    "rationale": "Sales Executive/Mechanical Engineer/Accountant career with stints at fictional companies (Wayne Enterprises, Initech) and zero ML, IR, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023837",
+    "score": 0.2,
+    "rationale": "Cloud/Java engineer with 1.8 years entirely at IT-services firms (TCS, Cognizant) and only self-learner AI exposure — adjacent software skills but no ML/IR production depth.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0023870",
+    "score": 0.2,
+    "rationale": "M.S. from IIT Kanpur is a strong education signal, but the entire career is Sales/Civil Engineering/HR at Wipro with no ML, retrieval, or ranking work whatsoever.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0023877",
+    "score": 0.0,
+    "rationale": "Customer support and operations career spanning TCS, Wipro, and two fictional companies (Initech, Dunder Mifflin) with no technical or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023887",
+    "score": 0.4,
+    "rationale": "Advanced LoRA skill (35 months) and 44 months as a Java Developer at Swiggy (product company) provide ML and product-company signals, but career descriptions show Android/web work rather than IR or ranking systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0023897",
+    "score": 0.0,
+    "rationale": "Content Writer and Accountant roles exclusively at fictional Dunder Mifflin with no engineering, ML, or IR experience at any point in the career.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023966",
+    "score": 0.0,
+    "rationale": "Operations Manager at fictional Pied Piper and TCS with a logistics/business-analyst background; CNN listed as a skill but no production ML, retrieval, or ranking work evident.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0023983",
+    "score": 0.2,
+    "rationale": "Frontend/.NET developer with 5.6 years entirely at IT-services firms (Mphasis, Cognizant) and only a small self-built RAG side project — no production ML or IR experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0024057",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer and Business Analyst both at Wipro (IT services) for the full 6.2-year career, with only beginner data-tool skills and no ML, retrieval, or ranking work.",
+    "stratum": "title_match_strong"
+  }
+]

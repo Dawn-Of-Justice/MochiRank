@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0015478",
+    "score": 0.4,
+    "rationale": "Has a relevant Learning to Rank advanced skill (56 months, 59 endorsements) and recommendation-system work at Flipkart (product company), but only 3.6 years experience, primary CV work at IT-services firm Tech Mahindra, and no demonstrated embeddings-based retrieval or evaluation-metric ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015492",
+    "score": 0.0,
+    "rationale": "Civil Engineer title with actual career spent in content writing/SEO and accounting at Infosys; no engineering or ML work, and current role is at fictional company Hooli — complete non-fit for an AI/IR engineering role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015493",
+    "score": 0.4,
+    "rationale": "Six years across product companies (CRED, Niramai, InMobi) demonstrates solid applied ML breadth, but primary work is computer vision and fraud detection rather than retrieval or ranking, and the only IR signal (Semantic Search skill) is only 8 months deep.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015499",
+    "score": 0.2,
+    "rationale": "Nine years at strong product companies (CRED, Zomato, Swiggy) with tier_1 NIT Trichy education, but the entire career is DevOps/cloud-infra and full-stack web development with no production ML or IR work — Weaviate skill listed but unsupported by any relevant job description.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0015500",
+    "score": 0.0,
+    "rationale": "Java/Android developer whose career includes fictional companies Wayne Enterprises, Initech, and Pied Piper (honeypot signals), with no ML or information-retrieval work across any role.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0015528",
+    "score": 0.8,
+    "rationale": "Applied ML Engineer with 7.4 years at product AI companies who personally led the migration from keyword search to embedding-based retrieval at scale, holds expert-level Information Retrieval and advanced pgvector/LoRA skills, and has a PhD from IIIT Bangalore — closely matching the core requirements of this role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0015551",
+    "score": 0.0,
+    "rationale": "Operations Manager and Accountant whose entire career is in non-technical roles (customer support, logistics ops) with primary employer being fictional Dunder Mifflin — no engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015555",
+    "score": 0.0,
+    "rationale": "Accountant with only 1 year of experience at fictional Dunder Mifflin, whose actual work is marketing/demand-generation; no engineering depth whatsoever despite AI-sounding skills listed.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0015578",
+    "score": 0.8,
+    "rationale": "AI Engineer with 5.4 years at product companies (Zoho, Glance) who built production RAG and embedding pipelines using Pinecone and OpenAI embeddings, holds expert-level FAISS (92 months) and Pinecone (90 months) skills, and graduated from NIT Trichy tier_1 — strong hands-on match for the embedding-retrieval core of this role.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0015626",
+    "score": 0.0,
+    "rationale": "Sales Executive whose actual work is brand design and accounting at fictional company Initech, with no technical or ML experience despite AI-curious framing in the summary.",
+    "stratum": "random"
+  }
+]

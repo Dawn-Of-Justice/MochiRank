@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0030348",
+    "score": 0.8,
+    "rationale": "Led production migration from keyword search to embedding-based retrieval using sentence-transformers (bge-base) and FAISS at BYJU's, then built a semantic-search-powered recommendation system serving 10M+ users at PolicyBazaar, with pgvector and vector search skills backed by strong tenure at product companies — minor gap is slightly under the 5-year band and no explicit NDCG/MAP evaluation framework ownership mentioned.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030356",
+    "score": 0.0,
+    "rationale": "Non-technical HR manager profile with career spanning mechanical engineering, business analysis, and operations roles at fictional companies (Pied Piper, Initech) with zero ML or IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030375",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of DevOps/cloud infrastructure experience at Swiggy with no production ML work; ML exposure is limited to self-study online courses and a small RAG side project with no hands-on retrieval or ranking system depth.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0030401",
+    "score": 0.0,
+    "rationale": "Non-technical project manager and business analyst career at Infosys and two fictional companies (Dunder Mifflin, Stark Industries) with zero ML, AI, or software engineering experience relevant to IR or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030550",
+    "score": 0.4,
+    "rationale": "IISc M.Tech CS and product-company ML experience at Rephrase.ai and Mad Street Den are strong credentials, but career work centers on computer vision (ResNet image moderation) and time-series forecasting rather than the production IR, embedding retrieval, and learning-to-rank systems the role requires — a profile gap the JD explicitly flags as a disqualifier.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0030555",
+    "score": 0.2,
+    "rationale": "IIT Kanpur PhD in CS is a strong academic credential, but the entire career history is non-technical marketing manager and IT-services business analyst roles at Acme Corp and TCS with zero production ML or AI engineering work to complement it.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0030557",
+    "score": 0.0,
+    "rationale": "Eleven-year career entirely in non-technical operations, HR, and marketing roles at Wipro (IT services) and fictional companies (Initech) with no ML or AI engineering experience; career descriptions are inconsistent with titles, consistent with a honeypot profile.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0030565",
+    "score": 0.0,
+    "rationale": "Sole role is accounting at fictional company Initech across 1.2 years with no engineering, ML, or AI background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030586",
+    "score": 0.2,
+    "rationale": "Entire 4.6-year career at IT-services firms (Cognizant, Wipro, Infosys) in frontend, QA automation, and cloud roles — an explicit disqualifier per JD — with no ML/AI or IR engineering experience and no product-company exposure.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0030599",
+    "score": 0.2,
+    "rationale": "6.8-year career spans IT-services firms (HCL, Mphasis) and fictional company Dunder Mifflin in full-stack web, DevOps, and Android mobile roles with no production ML or IR experience, despite listing Data Science and OpenCV as advanced skills without career evidence to support them.",
+    "stratum": "top_retrieval_dense"
+  }
+]

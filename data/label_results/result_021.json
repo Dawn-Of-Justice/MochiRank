@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0008764",
+    "score": 0.2,
+    "rationale": "Career entirely in non-ML IT-services roles at Infosys plus a Pied Piper (fictional) stint, with only beginner/intermediate data-pipeline skills (Flink, dbt) and recent online RAG coursework — no production IR, ranking, or embedding experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008811",
+    "score": 0.0,
+    "rationale": "Career is entirely operations/customer-support roles at Dunder Mifflin and Initech (both fictional honeypot companies), with a marketing-manager self-description and no engineering or ML work whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0008842",
+    "score": 0.2,
+    "rationale": "IIT Delhi M.Tech is a positive signal but entire work history is at Wipro, TCS, and Dunder Mifflin (fictional) in cloud/web/backend roles with no production ML, IR, or ranking systems — Weights & Biases listed as advanced skill contradicts a career with zero ML job descriptions.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0008843",
+    "score": 0.0,
+    "rationale": "14 years in non-technical roles — sales executive, content writer, civil engineer, operations manager — across Pied Piper (fictional) and Wipro with zero ML, IR, or engineering experience relevant to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008845",
+    "score": 0.0,
+    "rationale": "Entire 11-year career is in HR management and customer support at Wipro, Infosys, TCS, and Pied Piper (fictional honeypot), with no engineering or ML skills beyond beginner SQL and HTML.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008889",
+    "score": 0.0,
+    "rationale": "12-year career spanning graphic design, operations management, marketing, and project management at manufacturing firms (Globex, Acme Corp) with no software engineering or ML background whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0008908",
+    "score": 0.2,
+    "rationale": "Career is entirely BA/PM roles at Infosys and TCS (IT services) plus fictional-company stints (Initech, Wayne Enterprises), with keyword inflation evident in 'Fine-tuning LLMs: advanced' listed alongside only 13 months duration and no supporting engineering work history.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0008918",
+    "score": 0.4,
+    "rationale": "Production recommendation system built at PhonePe (real fintech product company) using collaborative filtering with FAISS exposure are positive signals, but 3.6 years total experience is short, current role is at Genpact (large services firm) focused on computer vision/TTS rather than IR/ranking, and there is no evidence of evaluation-metric ownership (NDCG/MAP/MRR) or hybrid retrieval work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0008965",
+    "score": 0.0,
+    "rationale": "Only 1.4 years of experience in an HR Manager role at Hooli with skills limited to Illustrator, HTML, and Accounting — no technical engineering or ML background of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0008982",
+    "score": 0.0,
+    "rationale": "Career consists solely of an accountant role at Hooli with Salesforce CRM and PowerPoint as primary skills; despite M.E. Data Science and M.S. ML degrees listed, there is zero ML or engineering work in the career history.",
+    "stratum": "title_mismatch"
+  }
+]

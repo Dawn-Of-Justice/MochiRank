@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0021545",
+    "score": 0.4,
+    "rationale": "7.8-year data engineer at product companies (BYJU'S, Razorpay) with some ML exposure (XGBoost/sklearn at ~30% of one role) and Hugging Face Transformers skill, but core work is data pipelines/analytics infrastructure with no production IR, embedding retrieval, vector search, or ranking-evaluation experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021599",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical sales, accounting, brand design, and operations roles at fictional companies (Pied Piper, Initech) with zero ML, engineering, or information-retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021645",
+    "score": 0.0,
+    "rationale": "Operations Manager and Civil Engineer roles at fictional companies (Pied Piper, Hooli) doing business analysis and consulting work with no ML, Python, or retrieval-system experience despite some data-tool keywords in skills.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0021647",
+    "score": 0.0,
+    "rationale": "Entire career at IT-services firm (Infosys) and fictional company (Wayne Enterprises) in content writing and customer support roles, with all skills listed at beginner level and no production ML or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021655",
+    "score": 0.2,
+    "rationale": "IIT Roorkee B.E. in Data Science is a strong educational signal, but only 1.2 years of experience at fictional company Hooli doing content writing/SEO with no production ML, embeddings, or ranking-system work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0021678",
+    "score": 0.2,
+    "rationale": "IIT Bombay B.Tech in Artificial Intelligence is a strong educational signal, but 1.9 years of career spent as a Sales Executive at TCS (IT services) doing brand design/creative direction with no production ML or IR experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021717",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical PM, mechanical engineering, sales, and accounting roles at fictional companies (Stark Industries) and TCS IT services, with no ML, NLP, or retrieval-system experience; YOLO skill indicates CV not NLP/IR.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0021919",
+    "score": 0.0,
+    "rationale": "Customer support and operations roles at fictional company Hooli and TCS (IT services) with skills limited to sales, CSS, and Salesforce CRM — no engineering, ML, or AI relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021920",
+    "score": 0.0,
+    "rationale": "PM/civil/mechanical engineer and business analyst career spread across multiple fictional companies (Stark Industries, Dunder Mifflin x2, Hooli) with no ML or IR experience; strong honeypot signal.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021953",
+    "score": 0.2,
+    "rationale": "7.2 years as a business analyst and graphic designer at fictional company Wayne Enterprises and TCS with no production ML work; recent online courses on RAG/vector databases and an M.S. in Machine Learning (tier_4) do not substitute for hands-on IR/ranking system experience.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

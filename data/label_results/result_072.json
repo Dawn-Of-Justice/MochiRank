@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0028088",
+    "score": 0.0,
+    "rationale": "Marketing Manager with career spanning Wipro (IT services) and Initech (fictional company), with only peripheral web skills (React, Flask) and zero ML/IR/ranking experience; AI curiosity limited to ChatGPT productivity experiments.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0028095",
+    "score": 0.0,
+    "rationale": "Accountant/Content Writer/Civil Engineer whose entire career is at fictional companies (Pied Piper, Hooli) and non-technical roles with no engineering or ML output; skills list (Kafka, Marketing, SQL, Redux) shows no IR/ranking relevance.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0028116",
+    "score": 0.2,
+    "rationale": "Conventional backend/cloud engineer with product-company stints at Swiggy and CRED, but ML exposure is self-learner only (small RAG side project), top skills are Airflow beginner and Node.js beginner, and there is no production embeddings, vector-search, or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0028132",
+    "score": 0.0,
+    "rationale": "Entire 5.8-year career at IT-services giants Wipro and TCS in Accountant and Operations Manager roles with no ML or engineering work; skills (AWS beginner 5 months, ETL, Speech Recognition) show no IR/ranking depth.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0028180",
+    "score": 0.2,
+    "rationale": "Cloud/mobile engineer whose career includes Dunder Mifflin (fictional company), Wipro, and Cognizant (IT services), with top skill being GANs (CV-focused, not NLP/IR) and no production search, embeddings, or ranking system experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0028238",
+    "score": 0.2,
+    "rationale": "CMU B.E. Data Science (tier_1 education) and a Flipkart product-company stint are positive signals, but only 3.5 years total experience, role was cloud/DevOps not ML, and AI knowledge is self-learner level with no production retrieval or ranking work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028259",
+    "score": 0.2,
+    "rationale": "6.5 years predominantly at IT-services firms (Capgemini twice, Accenture) in mobile/frontend roles, with a brief Razorpay stint; skills are Salesforce CRM, React beginner, and REST APIs — no ML, embeddings, or ranking experience evident.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028308",
+    "score": 0.2,
+    "rationale": "IIT Roorkee M.S. Machine Learning is a strong education signal, but the only career role is Operations Manager at Hooli (fictional company) doing brand design and creative direction — no production ML or engineering work at all.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028359",
+    "score": 0.0,
+    "rationale": "Entire career at two fictional companies (Stark Industries, Initech), primary expertise is TTS and Speech Recognition which the JD explicitly excludes, and skills are heavily inflated (advanced Data Science/TTS for a 4.3-year career).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028422",
+    "score": 0.6,
+    "rationale": "5.5 years of production ML at product companies (Yellow.ai, Ola, Freshworks) with Learning to Rank listed as advanced (34 months), Pinecone advanced (31 months), XGBoost usage, and recommendation-system work at Ola; held back by a Computer Vision/YOLO focus as top skill, junior title despite tenure, and no explicit embeddings-based hybrid retrieval or NDCG evaluation ownership.",
+    "stratum": "high_behavioral"
+  }
+]

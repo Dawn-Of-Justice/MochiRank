@@ -4,10 +4,19 @@ dataset/candidates.jsonl.gz
 data/candidates.jsonl
 data/candidates.jsonl.gz
 
-# Large precomputed artifacts — embeddings regenerable via offline/ scripts
-# (keep small artifacts like ranker_model.json and hypothetical_resumes.json tracked)
+# Large precomputed artifacts — regenerable via offline/ scripts
+# Keep: ranker_model.json, hypothetical_resumes.json, jd_query_vectors.npy (small)
 artifacts/candidate_embeddings.npy
+artifacts/candidate_embeddings_sample.npy
 artifacts/bm25_index.pkl
+artifacts/bm25_index_sample.pkl
+artifacts/candidate_ids.json
+artifacts/candidate_ids_sample.json
+artifacts/flashrank/
+
+# Teacher labeling intermediates — keep final labels, not batch files
+data/label_batches/
+data/label_results/
 
 # Generated submissions (commit deliberately, not by default)
 submission*.csv

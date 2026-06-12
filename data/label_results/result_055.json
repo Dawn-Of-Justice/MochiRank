@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0020904",
+    "score": 0.2,
+    "rationale": "Entire 7.4-year career split across Infosys, Capgemini, and Accenture (all IT-services firms) with no product-company ML or IR work; AI exposure is purely self-learner level with a small RAG side project, and no production embeddings, ranking, or evaluation-framework experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0020986",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — sales executive, marketing, and operations roles — with a stint at fictional Stark Industries, and the only AI exposure is casual ChatGPT productivity use, making this candidate completely unable to perform the Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021060",
+    "score": 0.2,
+    "rationale": "9.7 years of experience but career is dominated by IT-services QA work (TCS, HCL) and a role at fictional Wayne Enterprises; the single Embeddings intermediate skill (22 months) is the only faint signal toward IR, with no production ranking, retrieval evaluation, or vector-search experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021110",
+    "score": 0.2,
+    "rationale": "Career spans Wipro, Mphasis, and Capgemini (all IT-services) plus fictional Initech, with work focused on cloud/DevOps and Java microservices; LlamaIndex is listed as advanced over 56 months but there is no production IR, ranking, or retrieval-evaluation work to support it.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021175",
+    "score": 0.0,
+    "rationale": "Career is non-technical throughout — graphic designer at fictional Dunder Mifflin, accountant at fictional Initech, marketing at TCS — with no software engineering or ML experience, and the summary confirms a marketing-manager self-identity with no AI engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021191",
+    "score": 0.0,
+    "rationale": "Civil engineer/operations manager whose actual career spans warehouse operations management and customer support at fictional Pied Piper, with skills limited to Snowflake and MongoDB at beginner level and zero ML, IR, or ranking exposure.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0021366",
+    "score": 0.0,
+    "rationale": "HR Manager and sales career across three fictional companies (Pied Piper, Stark Industries, Initech) with no technical engineering work; skills like gRPC and Airflow appear on the profile but the actual role descriptions are all marketing, sales, and operations with no ML or IR substance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021395",
+    "score": 0.0,
+    "rationale": "14.8-year career consists of customer support, mechanical/civil engineering, and graphic design at fictional Dunder Mifflin and Initech, with no production ML engineering; BentoML listed as advanced is inconsistent with every actual job description in the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021507",
+    "score": 0.2,
+    "rationale": "Only 3.2 years of experience, entire career at fictional Pied Piper doing cloud/DevOps work, no ML or AI skills whatsoever, and education in Commerce/MBA rather than engineering; basic software adjacency (REST APIs, Java) is the only marginal relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0021509",
+    "score": 0.0,
+    "rationale": "Career is content writing and SEO at Hooli, enterprise sales at fictional Stark Industries, and accounting at Wipro — entirely non-technical roles with no ML, IR, or software engineering work, and surface-level skills (CI/CD beginner, SQL beginner) that do not compensate for the complete absence of AI engineering experience.",
+    "stratum": "random"
+  }
+]

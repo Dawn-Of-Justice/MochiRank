@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0007383",
+    "score": 0.0,
+    "rationale": "Profile is entirely non-technical — titles span Mechanical Engineer, Business Analyst, and HR Manager with descriptions covering sales, customer support, and operations, zero ML/IR work; also lists Stark Industries (fictional company) as an employer.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007411",
+    "score": 1.0,
+    "rationale": "8 years at Amazon and Yellow.ai owning end-to-end ranking pipelines with BGE-large + Pinecone + LTR, NDCG/MRR/recall calibrated to live A/B at 8K QPS, LoRA/QLoRA fine-tuning, expert-level Information Retrieval and Learning to Rank skills, IIT Roorkee tier_1 CS — textbook fit for this role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007412",
+    "score": 0.8,
+    "rationale": "7.4 years across Zoho (RAG + OpenAI embeddings + Pinecone), Locobuzz (XGBoost/LightGBM ranking), and Swiggy (Search Engineer), with expert BM25 and advanced Milvus/PyTorch skills, dual IIT degrees (IIT Hyderabad + IIT Delhi), covering hybrid retrieval, learning-to-rank, and production deployment at product companies.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0007444",
+    "score": 0.2,
+    "rationale": "3.9 years exclusively as a full-stack React/Node.js engineer at Razorpay with no production ML or IR work; FAISS listed as a skill but only at self-learner level with no deployed ranking or retrieval systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007460",
+    "score": 0.6,
+    "rationale": "Owned the ranking layer for an e-commerce search product at Salesforce, evolving it from hand-tuned scoring to a learning-to-rank model, with expert Weaviate and Semantic Search skills; limited by a single employer, tier_3 VIT education, and heavy LangChain emphasis flagged as a negative signal.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0007497",
+    "score": 0.0,
+    "rationale": "9.3-year career spans operations management, SEO content writing, and customer support with no engineering or ML work; two of three employers are fictional companies (Pied Piper and Wayne Enterprises).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007568",
+    "score": 0.0,
+    "rationale": "Only 2.2 years of experience as a QA/test automation engineer at Pied Piper (fictional company), with no ML or IR work; current employer is a fictional company and the profile shows only self-learner AI exposure.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0007596",
+    "score": 0.4,
+    "rationale": "4.4 years at Flipkart and Meesho with lightweight recommendation and time-series work, but top skills are OpenCV and YOLO (computer vision — explicit JD negative signal), with no demonstrated NDCG/ranking evaluation ownership or hybrid retrieval experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0007652",
+    "score": 0.2,
+    "rationale": "Only 1.4 years as a Business Analyst with career history showing logistics operations management; AI interest is limited to online courses on RAG/vector DBs with no production ML or IR deployment despite a tier_2 PhD.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0007655",
+    "score": 0.2,
+    "rationale": "5.4-year career is data engineering (Spark, Airflow, Snowflake/dbt) with skills dominated by Computer Vision, GANs, and Diffusion Models — wrong domain with no IR/search/ranking work; current employer Initech is a fictional company.",
+    "stratum": "tier1_education"
+  }
+]

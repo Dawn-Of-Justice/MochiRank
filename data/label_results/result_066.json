@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0025129",
+    "score": 0.0,
+    "rationale": "HR Manager and Sales Executive with no ML or engineering background, career is entirely non-technical (HR, sales, marketing), and two of three employers are fictional honeypot companies (Initech, Dunder Mifflin).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025132",
+    "score": 0.4,
+    "rationale": "Data engineering background at product companies (CRED, Zomato, PhonePe) with advanced pgvector skill (58 months) is promising, but most recent role is at fictional Pied Piper and career focus is pipelines/warehousing rather than production IR or ranking systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0025166",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career spanning HR, mechanical engineering, graphic design, and content writing with zero ML or software engineering experience, and two roles at fictional companies (Initech, Hooli).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025317",
+    "score": 0.4,
+    "rationale": "Sentence Transformers listed as advanced skill (30 months) is relevant, but the role history is web/backend/DevOps (Mphasis, Mindtree — IT services), ML experience appears self-directed without evidence of production IR or ranking system deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025428",
+    "score": 0.0,
+    "rationale": "HR Manager and Content Writer with no technical or ML skills, and both employers are fictional honeypot companies (Stark Industries, Initech), making this a clear non-fit.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025466",
+    "score": 0.0,
+    "rationale": "Graphic Designer at Infosys (IT services) with operations-focused job description and no ML, NLP, or IR experience; skills (Tally, Vue.js, Speech Recognition) are entirely unrelated to the role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0025494",
+    "score": 0.2,
+    "rationale": "Mobile developer with only 2.8 years total experience at Flipkart, AI exposure limited to LangChain (a negative signal per JD), and educational background (PhD Civil Engineering, B.E. Chemical Engineering) provides no NLP/IR foundation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025640",
+    "score": 0.4,
+    "rationale": "Advanced Elasticsearch (42 months) and Semantic Search skills from NIT Trichy (tier_1) are directly relevant, but the most recent and longest role (45 months) is at HCL (IT services), limiting confidence in product-company-grade production IR work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0025643",
+    "score": 0.2,
+    "rationale": "Advanced scikit-learn and feature engineering skills exist, but the entire career is at IT services/consulting firms (Capgemini, Accenture) or fictional companies (Initech, Hooli), with no production IR, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025663",
+    "score": 0.6,
+    "rationale": "Advanced Pinecone (44 months), Haystack (35 months), and NLP (34 months) skills align well with production IR requirements, with genuine product-company stints at Rephrase.ai and Razorpay, though 37 months at Wipro (IT services) as longest tenure is a notable negative signal.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

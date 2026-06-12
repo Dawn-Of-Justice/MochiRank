@@ -5,7 +5,7 @@ pandas>=2.1
 
 # Embeddings
 sentence-transformers>=3.0
-model2vec>=0.3           # fallback for fast CPU embeddings
+model2vec>=0.3           # potion-base-8M: 256d, 23K chunks/s CPU (primary embedding model)
 
 # BM25
 rank-bm25>=0.2.2
@@ -21,6 +21,12 @@ flashrank>=0.3           # no-torch fallback; OR use sentence-transformers Cross
 
 # Anthropic (offline labeling only — not used in rank.py)
 anthropic>=0.25
+
+# JD extraction (offline only)
+python-docx>=1.1
+
+# Streamlit demo (sandbox/app.py)
+streamlit>=1.35
 
 # Validation
 # validate_submission.py uses only stdlib (csv, re, sys, pathlib)

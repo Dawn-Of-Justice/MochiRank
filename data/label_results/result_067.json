@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0025692",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (mechanical engineering, accounting, marketing at Hooli, customer support at Stark Industries — a fictional company); no production ML, retrieval, or ranking experience whatsoever.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0025737",
+    "score": 0.2,
+    "rationale": "Entire career (43 months) at HCL (IT-services) doing Java/backend work with no product-company ML exposure; AI knowledge is self-learner only (online courses, small RAG side project), with no production retrieval or ranking experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0025804",
+    "score": 0.2,
+    "rationale": "Civil engineer/project-manager/HR career at fictional companies (Initech, Pied Piper) with no real ML engineering history; FAISS 'advanced' and RAG 'intermediate' skill claims are unsupported by any corresponding work experience and read as keyword inflation from recent online courses.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0025880",
+    "score": 0.0,
+    "rationale": "Honeypot profile: marketing manager career entirely at fictional companies (Initech, Dunder Mifflin, Pied Piper) with BentoML listed as 'advanced' (35 months) — a claim wholly inconsistent with demand-generation and brand-design roles.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0025883",
+    "score": 0.2,
+    "rationale": "Despite a strong IIT Delhi PhD credential, the entire working career (67 months) is at IT-services firms (Infosys, Mindtree) doing Java/frontend development with no production ML or IR work; PEFT 'advanced' for 41 months is inconsistent with the actual frontend/mobile job descriptions.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0025976",
+    "score": 0.2,
+    "rationale": "Only 3.2 years of total experience (well below the 5-9 year requirement) with most work at Mindtree (IT-services) on backend/data engineering; Elasticsearch 'advanced' duration (59 months) exceeds the candidate's entire career length, flagging clear skill inflation despite a recent product-company stint at Freshworks.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026050",
+    "score": 0.0,
+    "rationale": "Non-technical career in project management, customer support, and HR entirely at fictional companies (Dunder Mifflin x2); no engineering background and the data/frontend skills listed (dbt, Apache Beam, PostgreSQL) are unsupported by any role description.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0026143",
+    "score": 0.2,
+    "rationale": "Majority of career (49 months) at TCS (IT-services) with a 16-month product-company stint at Swiggy, but all listed skills (Time Series, Object Detection, Redux) are unrelated to NLP/IR/ranking; no evidence of embedding-based retrieval, vector search, or evaluation framework work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0026201",
+    "score": 0.0,
+    "rationale": "Only 1.9 years of experience entirely at Capgemini (IT-services); GANs listed as 'advanced' with 60-month duration is impossible given a 22-month career, indicating severe keyword inflation, and all skills (GANs, YOLO, Illustrator) are computer-vision/design, not NLP/IR.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0026231",
+    "score": 0.0,
+    "rationale": "Career is entirely in business analysis and marketing at a fictional company (Initech); skills are Figma, Angular, Salesforce CRM — design/frontend/CRM tools with no engineering or ML relevance to a Senior AI Engineer role.",
+    "stratum": "random"
+  }
+]

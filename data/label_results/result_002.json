@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0001008",
+    "score": 0.0,
+    "rationale": "Current title is Marketing Manager with only 1.6 years of experience at Stark Industries (fictional company), and all career and skill evidence points to non-engineering work with zero ML, IR, or search exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001098",
+    "score": 0.0,
+    "rationale": "Career spans civil engineering, operations management, sales at TCS, and accounting — no AI/ML or IR engineering work whatsoever — and the primary employer is Wayne Enterprises, a fictional-company honeypot.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001201",
+    "score": 0.2,
+    "rationale": "Entire career is in content writing, operations management, and sales with no production ML or IR work; the advanced Image Classification skill (54 months) is inconsistent with the non-technical roles and likely keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001218",
+    "score": 0.6,
+    "rationale": "IIT Guwahati graduate with 6.4 years including production recommendation and semantic-search work at product companies (Nykaa, Paytm, Dream11), advanced pgvector (37 months) and Semantic Search (48 months) skills, though lacks explicit NDCG/hybrid-retrieval evaluation experience and has one IT-services stint at Tech Mahindra.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0001291",
+    "score": 0.2,
+    "rationale": "Five-year backend/cloud career (Java, Kafka, AWS) with only self-taught AI exposure via online courses and a small RAG side project, and one role at Initech (fictional company), with no production ML or retrieval systems shipped.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0001302",
+    "score": 0.4,
+    "rationale": "Solid applied ML background across product companies (Paytm, Observe.AI, Unacademy) with XGBoost/scikit-learn production experience, but primary expertise is computer vision (CNN, Diffusion Models top skills) rather than NLP/IR/ranking — which the JD explicitly flags as a disqualifier without significant IR exposure.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0001426",
+    "score": 0.2,
+    "rationale": "Entire 4.2-year career is at Cognizant (IT services) doing QA/test automation with no production ML or IR work; Computer Vision listed as an advanced skill but there is no supporting career evidence for any ML engineering role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0001436",
+    "score": 0.2,
+    "rationale": "Only 2.4 years of experience in DevOps and mobile development at CRED and Pied Piper (fictional company), with pgvector listed as an intermediate skill but no evidence of any production ML, NLP, or IR system work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0001461",
+    "score": 0.0,
+    "rationale": "Despite a UC Berkeley M.Sc, the 9.3-year career is entirely non-technical — enterprise sales at Pied Piper (fictional), content writing at Wipro, customer support, and accounting — with no engineering or ML work of any kind.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0001563",
+    "score": 0.0,
+    "rationale": "Career is entirely in sales and accounting at Dunder Mifflin (fictional company honeypot) and Globex Inc with no engineering or ML work; Weights & Biases listed as an advanced skill despite a wholly non-technical career, indicating keyword stuffing.",
+    "stratum": "random"
+  }
+]

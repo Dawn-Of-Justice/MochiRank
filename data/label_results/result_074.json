@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0028793",
+    "score": 1.0,
+    "rationale": "Directly matches every core requirement: shipped semantic search with sentence-transformers and FAISS at Google, built RAG pipeline using OpenAI embeddings + Pinecone at Amazon, trained XGBoost/LightGBM ranking models at Meesho (product company), and holds advanced Learning-to-Rank and LoRA/QLoRA fine-tuning skills with tier_1 education from BITS Pilani and MIT.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0028870",
+    "score": 0.0,
+    "rationale": "Career is entirely marketing, sales, and accounting with a stint at fictional Wayne Enterprises; skills are PowerPoint, Angular, and Agile — zero ML, IR, or Python engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028885",
+    "score": 0.0,
+    "rationale": "Only 1.8 years of experience as a graphic designer and operations manager at Initech (a fictional company), with no ML, NLP, or search engineering background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028890",
+    "score": 0.2,
+    "rationale": "Holds an IIT Kharagpur AI degree (tier_1) which signals technical foundation, but the entire 4.6-year career is content writing with no engineering or ML work delivered in production.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028972",
+    "score": 0.0,
+    "rationale": "Honeypot profile with roles at fictional Dunder Mifflin and Initech, a career spanning only accounting, operations, and mechanical engineering, and no evidence of any ML or IR work.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0028977",
+    "score": 0.0,
+    "rationale": "Three separate roles listed at fictional Dunder Mifflin (graphic design, operations, mechanical engineering) and skills limited to Computer Vision, Excel, and HTML — no NLP, search, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0029070",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (accountant, graphic designer, civil engineer, operations manager) with a recent role at fictional Stark Industries, and skills are Marketing, Photoshop, and Accounting — no ML relevance.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029198",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience as a content writer at fictional Stark Industries, with no engineering or ML background and skills limited to content writing and basic tooling.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0029213",
+    "score": 0.4,
+    "rationale": "Solid 7-year data-engineering career at legitimate product companies (Swiggy, InMobi) with strong Python and pipeline skills, and RAG listed as an advanced skill, but self-describes ML as non-core and shows no evidence of vector-database, NDCG/ranking-evaluation, or production embedding-retrieval work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0029265",
+    "score": 0.0,
+    "rationale": "Entire 10.6-year career is marketing, HR, and operations roles at IT-services firms (TCS, Wipro) with no engineering output; skills are PowerPoint and beginner-level cloud buzzwords with no ML substance.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0013026",
+    "score": 0.0,
+    "rationale": "Content Writer with 3.2 years at fictional companies (Stark Industries, Pied Piper) whose entire background is marketing/brand design with zero ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013055",
+    "score": 0.0,
+    "rationale": "Sales Executive at Wayne Enterprises (fictional honeypot company) with a purely non-technical sales/customer-support career and no ML, retrieval, or engineering skills whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013078",
+    "score": 0.2,
+    "rationale": "Entire 4.4-year career spent at IT-services firms (Accenture, Capgemini, HCL) in frontend/QA/DevOps roles with only self-learner AI exposure, hitting the explicit consulting-only disqualifier with no production ML or IR work.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0013096",
+    "score": 0.0,
+    "rationale": "Despite an IIT Madras M.Tech in AI, all career roles are Sales Executive, Graphic Designer, and Accountant at TCS/Infosys/Wayne Enterprises with no engineering or ML work — a clear honeypot keyword-mismatch profile.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0013128",
+    "score": 0.0,
+    "rationale": "13-year career entirely in HR Manager, Accountant, and Content Writer roles at non-technical companies (Infosys, Hooli, Stark Industries) with no engineering or ML production experience despite a nominal PhD in Machine Learning.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0013208",
+    "score": 0.4,
+    "rationale": "6.9 years at product companies (Hooli, Razorpay) with strong Python/web/cloud fundamentals and a LoRA skill (28 months), but career is predominantly web/DevOps with only a small self-built RAG side project — no production IR, ranking, or embedding systems ownership.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013213",
+    "score": 0.2,
+    "rationale": "Only 2.8 years of experience as a Mobile Developer at Flipkart (a product company) with solid Java/Spring Boot backend fundamentals but no ML, retrieval, embeddings, or ranking work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0013233",
+    "score": 0.2,
+    "rationale": "8.2 years primarily at IT-services firm HCL and fictional companies (Wayne Enterprises, Pied Piper) in .NET/DevOps/QA roles; Kubeflow and OpenCV skills listed but career evidence shows no ML or IR systems work, and computer vision is a negative signal for this NLP/IR role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0013249",
+    "score": 0.0,
+    "rationale": "Sales Executive whose most recent role is at Dunder Mifflin (explicitly listed fictional honeypot company), with a career entirely in sales, operations, and customer support — no technical or ML work despite an M.Tech in Data Science.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0013275",
+    "score": 0.0,
+    "rationale": "Accountant at Stark Industries (fictional company) with 3.7 years of pure accounting/finance work — GL, financial reporting, tax filings — and no engineering, ML, or IR experience despite superficial skills listed.",
+    "stratum": "random"
+  }
+]

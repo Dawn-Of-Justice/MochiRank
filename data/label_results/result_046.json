@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0017492",
+    "score": 0.4,
+    "rationale": "6.3yr backend/data engineer from IIT Hyderabad (tier_1) with product-company experience at Dream11 and FAISS listed as advanced skill, but career descriptions show data pipeline/ETL focus with only lightweight ML (churn, clustering) and no evidence of production IR/retrieval or ranking systems.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0017509",
+    "score": 0.2,
+    "rationale": "6.8yr engineer with Pied Piper (fictional company, honeypot signal) and Capgemini/Mindtree IT-services background, actual work in web/QA/DevOps/frontend with AI limited to a self-learner RAG side project, and top skills are HTML/Redux/Angular with no ML or IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017547",
+    "score": 0.0,
+    "rationale": "Only 1.1yr total experience, actual work is brand design and creative direction at a manufacturing company, self-described as a marketing manager with zero engineering or ML depth, and tier_4 education.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0017669",
+    "score": 0.0,
+    "rationale": "2.5yr Business Analyst at Infosys whose only career role is enterprise cloud software sales carrying a quota, with zero engineering or ML work despite BentoML listed as advanced — clear keyword inflation pattern.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0017683",
+    "score": 0.2,
+    "rationale": "Only 1.0yr total experience as an Android Java developer at Wipro, with Milvus listed as advanced for 54 months (impossible given tenure — keyword inflation), and AI exposure is self-learner RAG side projects only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017699",
+    "score": 0.0,
+    "rationale": "14.7yr career entirely in marketing, operations, and sales roles at TCS, Wayne Enterprises (fictional), and Globex with zero engineering or ML experience, matching the non-fit anchor perfectly.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0017722",
+    "score": 0.2,
+    "rationale": "5.7yr data scientist with XGBoost and PyTorch experience, but career is entirely computer vision (ResNet, YOLO image moderation) and predictive modeling with no IR/retrieval/ranking work, and the JD explicitly flags CV/speech specialists without NLP/IR exposure as not a fit.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0017751",
+    "score": 0.0,
+    "rationale": "7.6yr web/Android/DevOps engineer whose two longest roles are at Wayne Enterprises (fictional company, honeypot signal) with top skills being Scrum/PowerPoint/Marketing and no ML or IR skills whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0017757",
+    "score": 0.0,
+    "rationale": "Honeypot-flagged HR Manager whose career spans Stark Industries and Wayne Enterprises (both fictional companies) in HR/brand/sales/BA roles with zero engineering depth, and RL listed as advanced skill is contradicted entirely by actual work history.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0017836",
+    "score": 0.2,
+    "rationale": "Only 1.2yr experience as a .NET/full-stack developer at CRED (product company) doing React/Node.js web work, with AI limited to self-learner courses and RAG side projects, and object detection listed as advanced skill is unsupported by actual work description.",
+    "stratum": "top_retrieval_dense"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0027663",
+    "score": 0.4,
+    "rationale": "Has production vector-DB experience (Milvus advanced 26 months, pgvector advanced 48 months) and IIT Kharagpur tier-1 pedigree at product companies (Observe.AI, Paytm), but the candidate self-describes as strongest in predictive modeling and churn/conversion work with no mention of IR evaluation metrics (NDCG, MAP, MRR) or hybrid-retrieval systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0027691",
+    "score": 0.8,
+    "rationale": "Built production semantic search with sentence-transformers (bge-base) and FAISS at Vedantu (~500K-doc corpus) and owned the learning-to-rank ranking layer including a relevance labeling pipeline at Meta, with Weaviate expert-level experience (73 months); these directly match the role's core requirements for hybrid retrieval and LTR systems at product companies.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0027721",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager with no ML or engineering work; career spans accounting, SEO content writing, and customer support at TCS and the fictional company Initech, with skills limited to beginner-level Spark and front-end tools.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027723",
+    "score": 0.4,
+    "rationale": "Has Pinecone (intermediate, 32 months) and LlamaIndex experience at product companies (Wysa, Yellow.ai), but only 4.2 years total experience, primary work is time-series forecasting and lightweight collaborative filtering, and there is no evidence of NDCG/MAP evaluation framework ownership or production hybrid search.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0027799",
+    "score": 0.0,
+    "rationale": "Entirely non-technical background in customer support, project management, and operations across Infosys, Pied Piper (fictional), and Hooli (fictional), with no ML or engineering skills and only recent curiosity about AI tools.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0027846",
+    "score": 0.0,
+    "rationale": "Career consists of business analyst consulting at Wipro (IT-services) plus roles at the fictional companies Dunder Mifflin and Wayne Enterprises, with skills limited to JavaScript, Tailwind, and content writing — no ML, NLP, or IR experience whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0027855",
+    "score": 0.0,
+    "rationale": "All three career positions are at fictional companies (Pied Piper, Wayne Enterprises, Hooli) in non-technical roles (accounting, content/SEO, logistics operations), and the candidate's only AI exposure is recent self-study via LangChain courses — exactly the profile the JD explicitly disqualifies.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0027924",
+    "score": 0.4,
+    "rationale": "Holds IIT Guwahati M.Tech (tier-1) and has Qdrant advanced experience (26 months) at Swiggy (strong product company), but the candidate's 7.4-year career is primarily backend/data-warehouse engineering (Snowflake, dbt, Airflow) with only self-directed basic ML projects and no search, ranking, or IR evaluation work; Object Detection as a top advanced skill further signals a CV rather than IR focus.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0028011",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager in a mismatched Civil Engineer title, with the entire career spent in enterprise sales and business analysis at fictional companies Hooli and Dunder Mifflin, and skills limited to Photoshop, sales, and content writing — no engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0028066",
+    "score": 0.2,
+    "rationale": "Solid 7.3-year software engineering foundation at product companies (Flipkart, Razorpay) with strong Python/backend depth, but AI/ML is explicitly self-learner level (online courses, small RAG side project with OpenAI API) — the profile the JD says it will not move forward on — and a stint at the fictional company Stark Industries further flags this candidate.",
+    "stratum": "honeypot_flagged"
+  }
+]

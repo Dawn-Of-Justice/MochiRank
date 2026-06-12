@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0006717",
+    "score": 0.0,
+    "rationale": "Entire career spans IT-services (Wipro) and non-technical roles — content writing, operations management, accounting, and marketing — with no ML, IR, or engineering work whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0006737",
+    "score": 0.0,
+    "rationale": "Career consists entirely of HR management, graphic design, and content writing at Stark Industries, Infosys, and fictional Dunder Mifflin, with zero ML or engineering experience despite an IIT Bombay M.Tech credential.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0006792",
+    "score": 0.0,
+    "rationale": "All four roles are in sales, content writing, and HR across IT-services firms (TCS, Infosys) and manufacturing companies, with no ML, IR, or software engineering experience evident.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006810",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (customer support, sales, HR) at multiple fictional companies (Pied Piper, Wayne Enterprises), with no ML or engineering skills present.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0006925",
+    "score": 0.2,
+    "rationale": "Ph.D in Data Science from tier_2 COEP Pune provides some academic signal, but 4.5 years as Project Manager at Infosys (IT services) and the remaining career in brand design and operations management show no production ML or IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007009",
+    "score": 0.8,
+    "rationale": "7.9 years as Recommendation Systems Engineer at product companies (Netflix, PolicyBazaar, Wysa) with hands-on experience building RAG pipelines using OpenAI embeddings and Pinecone, semantic search with sentence-transformers/FAISS/BGE, and expert-level skills in Learning to Rank (75 months) and BM25 (71 months) directly matching the core JD requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0007058",
+    "score": 0.0,
+    "rationale": "13.6 years across marketing manager, HR, and sales roles at multiple fictional companies (Wayne Enterprises, Dunder Mifflin, Hooli) with no ML or IR engineering work, despite a Weights & Biases skill listing.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007093",
+    "score": 0.2,
+    "rationale": "4.3 years entirely at Mphasis (IT services) in full-stack web development (React/Node.js) with no production ML experience; Milvus listed as advanced skill but the sole role description describes REST API and frontend work, not ML/IR systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007097",
+    "score": 0.0,
+    "rationale": "Entire 13.4-year career in HR management and sales at TCS, Pied Piper (fictional), and Stark Industries (fictional), with no ML, IR, or engineering experience despite a Ph.D credential.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0007111",
+    "score": 0.0,
+    "rationale": "3.4 years as Mechanical Engineer at TCS (IT services) in a customer support role with marketing and database skills only — no ML, IR, or software engineering depth relevant to the role.",
+    "stratum": "low_behavioral"
+  }
+]

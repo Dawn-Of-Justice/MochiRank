@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0011856",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Business Analyst, Graphic Designer, Marketing Manager) at fictional honeypot companies (Wayne Enterprises, Dunder Mifflin) and Wipro IT services, with zero ML, IR, or engineering production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0011904",
+    "score": 0.2,
+    "rationale": "Software engineer with 6yr at CRED (product company) brings solid backend/cloud fundamentals, but AI/ML engagement is entirely self-learner level (OpenAI API, small RAG side project) with no production embeddings, retrieval, or ranking work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0011964",
+    "score": 0.0,
+    "rationale": "Sole role is Operations Manager at Initech (fictional company) with a career summary describing marketing/demand-gen work and no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011968",
+    "score": 0.2,
+    "rationale": "Career at Mindtree (IT services) and Stark Industries (fictional company) is entirely frontend/.NET/DevOps with no ML or IR work; the advanced Pinecone skill claim (26 months) is inconsistent with all role descriptions and appears to be keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0011990",
+    "score": 0.0,
+    "rationale": "Java Developer with 2.1yr entirely at Infosys (IT services) in full-stack web development; skills are Salesforce CRM, Image Classification, and Photoshop with no IR, ranking, or production ML experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0012105",
+    "score": 0.0,
+    "rationale": "Entire 14yr career is in HR management and business analyst roles at fictional companies (Pied Piper, Dunder Mifflin) and Wipro IT services with no engineering or ML production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012140",
+    "score": 0.0,
+    "rationale": "Accountant/Project Manager/Customer Support career at multiple fictional companies (Dunder Mifflin, Wayne Enterprises, Pied Piper) and Wipro with no engineering, ML, or IR experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0012256",
+    "score": 0.0,
+    "rationale": "Mechanical/Civil Engineer and Sales Executive career at fictional Initech and Wayne Enterprises plus Wipro IT services with no ML or IR production experience, despite an M.S. in AI from a tier_3 institution.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0012336",
+    "score": 0.2,
+    "rationale": "7.7yr career spanning Android mobile dev, QA, and full-stack web at Swiggy (real product company) and fictional firms; AI/ML engagement is self-learner only with no production IR, embeddings, or ranking work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0012399",
+    "score": 0.4,
+    "rationale": "Advanced hands-on skills in Sentence Transformers (27mo), Elasticsearch (43mo), and LLM fine-tuning signal genuine IR/ML depth, but the entire 4.6yr career is at Wipro (IT services only) in a Computer Vision role — both explicit negative signals per the JD — with no evidence of production retrieval or ranking systems shipped at a product company.",
+    "stratum": "high_behavioral"
+  }
+]

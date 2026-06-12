@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0005538",
+    "score": 0.8,
+    "rationale": "Production IR background across Adobe and Google with expert pgvector and advanced Information Retrieval Systems skills (56 endorsements), plus shipped a live A/B-tested recommendation system at Glance — directly matching the JD's core requirements for hybrid retrieval and ranking at product companies.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0005596",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Customer Support, Sales) at fictional honeypot companies (Dunder Mifflin, Initech) with zero ML, engineering, or information retrieval experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005619",
+    "score": 0.0,
+    "rationale": "Career spans accounting, sales, and content writing across TCS, Infosys, and fictional companies (Initech, Wayne Enterprises) with no ML or software engineering work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005633",
+    "score": 0.2,
+    "rationale": "Operations Manager and Marketing Manager roles with no production engineering experience; Diffusion Models listed as a skill but career history shows no ML engineering depth and includes a fictional company (Initech).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005702",
+    "score": 0.2,
+    "rationale": "9+ years of QA and DevOps work primarily at Cognizant (IT services) and multiple fictional companies (Wayne Enterprises, Pied Piper, Dunder Mifflin), with AI exposure limited to self-taught side projects and no production IR or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0005744",
+    "score": 0.0,
+    "rationale": "Entire 11-year career consists of Content Writer, Civil Engineer, and Mechanical Engineer titles at Hooli, Acme Corp, and Infosys, with no ML, NLP, or information retrieval skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005770",
+    "score": 0.2,
+    "rationale": "Only 2 years of experience in .NET development and DevOps at Wipro (IT services), with AI/ML exposure limited to online courses and a hobby RAG project — no production ML or ranking system work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0005783",
+    "score": 0.0,
+    "rationale": "HR Manager for 7 years entirely at TCS (IT services) and a manufacturing company, with no engineering or ML background; recent LangChain/RAG curiosity does not compensate for a wholly non-technical career.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0005841",
+    "score": 0.2,
+    "rationale": "Business Analyst and Project Manager roles at Hooli and Globex with no ML engineering depth; includes a stint at fictional Dunder Mifflin and skills limited to general business/project tools rather than IR or ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0005849",
+    "score": 0.2,
+    "rationale": "8.4 years of Java/Spring Boot backend development almost entirely at Infosys (IT services), with no production ML or IR experience and AI exposure limited to hobby-level RAG projects.",
+    "stratum": "random"
+  }
+]

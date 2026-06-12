@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0023412",
+    "score": 0.0,
+    "rationale": "HR Manager with a career spanning HR, civil engineering (Pied Piper — fictional), and sales — no ML, NLP, or information-retrieval skills; top skills are OpenCV, Webpack, and PowerPoint with no relevance to ranking or search systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023429",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career in HR, operations, and graphic design split across IT services (Infosys x2) and a fictional company (Stark Industries), with top skills being Marketing, SEO, and Photoshop at beginner level — zero ML or engineering relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023502",
+    "score": 0.0,
+    "rationale": "Career confined to customer support and marketing management (Dunder Mifflin — fictional company, Paper Products industry), with no production ML or IR work despite holding a nominal Ph.D in AI; top skills are Accounting and Vue.js at beginner level.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023559",
+    "score": 0.4,
+    "rationale": "Built production recommendation features at upGrad (collaborative filtering, matrix factorization) and has Elasticsearch listed as an advanced skill, but the top-skill profile is dominated by TTS and Object Detection rather than dense retrieval, and there is no evidence of embedding-based hybrid search, learning-to-rank, or NDCG/MAP evaluation ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0023572",
+    "score": 0.0,
+    "rationale": "Civil engineer whose entire career spans two fictional companies (Initech, Stark Industries), a manufacturing firm, and Infosys IT services — no ML, NLP, or retrieval engineering of any kind; skills are Agile, React, and Six Sigma.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0023587",
+    "score": 0.4,
+    "rationale": "ML Engineer at product companies (Swiggy, Aganitha) with NLP classification pipelines and production recommendation work using collaborative filtering, but only 3.2 years total experience (below the 5-year floor) and no evidence of embedding-based retrieval, vector search infrastructure, or offline ranking evaluation frameworks.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0023641",
+    "score": 0.2,
+    "rationale": "7.3-year full-stack/mobile developer with 4 years at Infosys (IT services) doing Android development — no production ML or IR work; Elasticsearch appears as an intermediate skill but career descriptions show only React/Node.js SaaS work, and AI exposure is entirely self-learner via online courses.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023652",
+    "score": 0.0,
+    "rationale": "13.7-year career as accountant, customer support, content writer, and sales executive split across Pied Piper (fictional), TCS (IT services), and manufacturing firms — no technical or ML experience whatsoever despite a nominal Ph.D in Computer Engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023706",
+    "score": 0.0,
+    "rationale": "Content writer covering developer/AI topics and then HR manager — both roles are non-engineering and non-technical; writing about ML does not constitute building ML systems, and skills are AWS (beginner) and Next.js at beginner level with no IR or ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0023739",
+    "score": 0.0,
+    "rationale": "Career entirely in marketing and operations across IT services firms (Wipro, TCS) and a fictional company (Stark Industries), with no engineering or ML background; top skills are CNN (intermediate, no supporting evidence) and Excel/Photoshop/Tally.",
+    "stratum": "title_mismatch"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0030639",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning customer support, marketing, content writing, and accounting with no ML or engineering work; one role is at fictional company Initech (honeypot signal) and AI exposure is limited to casual ChatGPT use.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030641",
+    "score": 0.2,
+    "rationale": "Primarily a data engineer with 50 of 59 career months at TCS (IT services), and top skills are OpenCV, TTS, and ASR — explicitly a negative signal per JD for CV/speech focus — with no production IR, ranking, or embedding retrieval experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0030664",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (graphic design, HR management, marketing, mechanical engineering) with one role at fictional company Wayne Enterprises (honeypot signal) and no ML, NLP, or IR skills whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030698",
+    "score": 0.0,
+    "rationale": "Entire career as a marketing manager and project manager at manufacturing companies with zero engineering or ML background; AI curiosity is limited to ChatGPT productivity experiments and tier_4 Civil Engineering degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030738",
+    "score": 0.2,
+    "rationale": "Entire 4.9-year career at Cognizant (IT services) disqualified by JD, and career descriptions show only data warehouse (Snowflake) and Airflow pipeline work — the Pinecone advanced skill (29 months) appears inconsistent with zero described vector/retrieval production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030827",
+    "score": 0.8,
+    "rationale": "Strong direct fit: owned the ranking layer at Freshworks (evolved hand-tuned scoring to a learning-to-rank model with relevance labeling pipeline) and built semantic search at Glance using sentence-transformers (bge-base) with FAISS, with expert-level Qdrant and Learning to Rank skills from both product-company roles.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0030858",
+    "score": 0.4,
+    "rationale": "Solid 8-year software engineering background with meaningful product-company tenure at Swiggy (48 months), but AI/ML is explicitly self-learner level — online courses and API experimentation only — with no production IR, embedding retrieval, or ranking systems built.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0030907",
+    "score": 0.2,
+    "rationale": "Only 1.6 years of experience at TCS (IT services) doing Java backend work, with top skill being Object Detection (CV — negative signal per JD) and no production ML, NLP, or IR experience despite a tier_1 IIIT Hyderabad undergraduate degree.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0030915",
+    "score": 0.0,
+    "rationale": "Sales Executive at fictional company Stark Industries (honeypot signal) carrying a quota-based sales role with zero technical or ML engineering experience; AI interest is purely casual ChatGPT use.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0030945",
+    "score": 0.2,
+    "rationale": "DevOps/infrastructure engineer whose 7.3 years span full-stack web and cloud ops at Acme Corp and HCL (IT services, 36 months), with PyTorch listed at intermediate level for only 8 months — no production ML, embedding retrieval, or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  }
+]

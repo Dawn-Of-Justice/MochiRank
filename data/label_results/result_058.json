@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0022268",
+    "score": 0.0,
+    "rationale": "Current role at fictional company Pied Piper with a sales/enterprise description behind a 'Civil Engineer' title, marketing-focused summary, and only 1.4 years of experience with zero ML or IR skills — completely unable to perform this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022340",
+    "score": 0.0,
+    "rationale": "Career consists entirely of Sales Executive and Marketing Manager roles at a manufacturing company and TCS IT services, with no engineering or ML experience — no overlap with the IR/ranking engineering requirements.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022351",
+    "score": 0.4,
+    "rationale": "Lists Milvus (vector DB) at advanced level for 42 months and QLoRA as a skill, with some product company experience at PharmEasy, but career is primarily data/analytics engineering without evidence of IR, search, or ranking systems in production, and is currently at IT services firm Tech Mahindra.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022356",
+    "score": 0.0,
+    "rationale": "Content Writer and Mechanical Engineer career with roles at multiple fictional companies (Wayne Enterprises, Initech) and no ML or IR engineering skills — zero relevant technical background for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022359",
+    "score": 0.2,
+    "rationale": "Holds an M.E. in Machine Learning from IIIT Bangalore (tier_1) providing some theoretical foundation, but 10+ year career is entirely in Marketing Manager and Operations roles with no production ML engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022392",
+    "score": 0.2,
+    "rationale": "Lists FAISS (advanced, 54 months) and BM25 (intermediate) as skills, which are relevant IR tools, but entire career has been at IT services firms (HCL and Capgemini) with role descriptions covering Android/DevOps/Java work — no credible production IR experience, matching the explicit consulting-only disqualifier.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0022408",
+    "score": 0.2,
+    "rationale": "Only 3.4 years of experience in frontend/backend Java roles including a position at fictional company Stark Industries, with primary skills being OpenCV and JavaScript rather than IR/ranking systems — insufficient depth and wrong focus area.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022434",
+    "score": 0.4,
+    "rationale": "Has RAG (intermediate, 25 months) and Weights & Biases (advanced, 49 months) skills with some product company experience at Acme Corp, but career is conventional full-stack/Java backend engineering with no evidence of production search, ranking, or evaluation metric ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022453",
+    "score": 0.0,
+    "rationale": "13-year career spent entirely as Business Analyst and HR Manager at IT services firms (Infosys, Wipro) and at fictional company Pied Piper, with no ML or IR engineering skills — non-technical profile completely misaligned with this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022582",
+    "score": 0.0,
+    "rationale": "Career is non-technical (civil engineering, accounting, sales, HR) split across multiple fictional companies (Pied Piper, Wayne Enterprises, Stark Industries) with a marketing manager summary — no relevant ML or IR experience whatsoever.",
+    "stratum": "low_behavioral"
+  }
+]

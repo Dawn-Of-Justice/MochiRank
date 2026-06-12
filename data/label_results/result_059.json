@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0022637",
+    "score": 0.2,
+    "rationale": "Career is entirely at IT-services firms (Accenture, Wipro, TCS) with no product-company ML work; self-described AI exposure is limited to online courses and a small RAG side project, with no production IR, ranking, or embeddings experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022661",
+    "score": 0.0,
+    "rationale": "Marketing Manager with 2.6 years of non-technical work; career includes a stint at fictional Wayne Enterprises, no engineering or ML background whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0022720",
+    "score": 0.4,
+    "rationale": "Has BM25 (advanced, 33 months) and LoRA/PyTorch skills, and built lightweight recommendation features at Razorpay (product company), but career descriptions focus on time-series forecasting and Computer Vision with no evidence of production dense-retrieval, vector-DB, or NDCG evaluation work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0022761",
+    "score": 0.0,
+    "rationale": "Sole career role is HR Manager at fictional Wayne Enterprises; profile is explicitly non-technical (stakeholder management, CRM) with zero ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022812",
+    "score": 0.8,
+    "rationale": "Built production ranking systems with XGBoost LTR at Dream11 and Razorpay (both product companies), shipped semantic search infrastructure using sentence-transformers and FAISS, and holds expert-level Pinecone and advanced Weaviate skills — directly covering the role's core requirements of hybrid retrieval and learning-to-rank.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0022831",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical (Business Analyst, HR Manager, Operations Manager, Content Writer) with stints at fictional companies Stark Industries and Dunder Mifflin, and no ML or engineering work of any kind.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0022868",
+    "score": 0.0,
+    "rationale": "Career spans Mechanical Engineer, Operations Manager, and Accountant roles, including at fictional companies Dunder Mifflin and Pied Piper; despite an IT degree from Manipal, there is no ML, IR, or production engineering work in the profile.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0022871",
+    "score": 0.0,
+    "rationale": "Content Writer and Sales Executive career (with a stint at fictional Stark Industries) with tier_4 education and no evidence of any ML, IR, or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0022877",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical roles (Content Writer, Graphic Designer, Marketing Manager, Mechanical Engineer) at IT-services firms Wipro and Infosys; despite an M.E. in Data Science from Jadavpur University (tier_2), there is no production ML or IR experience anywhere in the work history.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0022941",
+    "score": 0.4,
+    "rationale": "Solid data-engineering foundation at CRED (product company, 52 months) with strong credentials (BITS Pilani PhD), but career is purely pipeline/ETL work with no production experience in embeddings, vector search, ranking models, or retrieval evaluation — and the summary explicitly signals a career pivot into ML rather than existing ML depth.",
+    "stratum": "title_match_strong"
+  }
+]
