@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0084283",
+    "score": 0.6,
+    "rationale": "3.6 years at a product-stage AI startup (Sarvam AI) building recommendation/retrieval features with Pinecone (advanced, 60 endorsements) and Elasticsearch in production, plus QLoRA experience, but total experience is below the preferred band and the profile is light on evaluation-framework ownership (NDCG/MAP/MRR).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0084342",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Operations Manager, Business Analyst, Content Writer, Graphic Designer) with recent roles at fictional companies Initech, Stark Industries, and Wayne Enterprises, and the only AI exposure is recent online courses — no engineering or ML depth whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0084393",
+    "score": 0.2,
+    "rationale": "9.2 years of experience but entirely in web/mobile/DevOps engineering (Capgemini IT services, QA, cloud infrastructure) with no NLP or IR work; Weaviate listed as advanced skill but career descriptions show no evidence of embedding-based retrieval in production, and Object Detection as a top skill signals CV not NLP focus.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084394",
+    "score": 0.0,
+    "rationale": "Summary admits a marketing manager background and the career shows only content writing/SEO at Wipro and accounting at Infosys — entirely non-technical, with keyword-inflated skills (Weights & Biases advanced despite no ML role) and no engineering or ML production experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084444",
+    "score": 0.2,
+    "rationale": "Entire 4.9-year career spent as a Mobile Developer at Infosys and TCS (IT services only) doing Android/frontend work with no NLP, IR, or ranking system experience; PEFT listed as advanced skill but there is no supporting ML role in the career history.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0084467",
+    "score": 0.0,
+    "rationale": "Only 1.8 years of experience, current role is Customer Support at Hooli with a marketing-focused career description, and skills are entirely non-ML (JavaScript, Go, SAP, HTML, Kubernetes) with no evidence of engineering or AI work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0084521",
+    "score": 0.0,
+    "rationale": "8.5 years entirely in non-technical roles (Operations Manager, HR Manager, Accountant) at manufacturing and consulting firms with no engineering, ML, or IR experience, and skills are business/infrastructure tools (Flask beginner, Snowflake, Tally) unrelated to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084529",
+    "score": 0.0,
+    "rationale": "Career history shows Mechanical Engineer and Civil Engineer roles at Infosys and Globex with accounting and HR descriptions that are mismatched to titles — strong indicators of a honeypot profile — and top skills (Image Classification, Project Management, Go) show no NLP or IR relevance.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0084651",
+    "score": 0.0,
+    "rationale": "Civil Engineer at Wayne Enterprises (fictional company) and Mechanical Engineer at Globex with brand design and creative direction descriptions — entirely non-technical, non-engineering career with no ML or IR skills whatsoever.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084709",
+    "score": 0.0,
+    "rationale": "9.6 years across Customer Support, Marketing Manager at Pied Piper (fictional company), Accountant at TCS, and Graphic Designer at Stark Industries (fictional company) — entirely non-technical career with no ML or engineering depth, and skill list (Docker, BentoML, Figma) is inconsistent with the described work history.",
+    "stratum": "random"
+  }
+]

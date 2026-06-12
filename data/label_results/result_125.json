@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0049216",
+    "score": 0.0,
+    "rationale": "Career history shows business analyst and content/SEO roles with no engineering or ML experience, current role is at fictional company Pied Piper, and summary explicitly states marketing manager background with only casual ChatGPT curiosity.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0049262",
+    "score": 0.2,
+    "rationale": "8+ years of software engineering at product companies (Flipkart, Swiggy) provides legitimate backend depth, but all roles are Android dev, DevOps, QA, and full-stack web with no production IR, embeddings, or ranking systems — only a self-reported RAG side project.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0049308",
+    "score": 0.0,
+    "rationale": "Entire 11-year career spans customer support, accounting, HR, and brand design with no engineering or ML work whatsoever, and the summary explicitly describes a marketing manager background with only ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049351",
+    "score": 0.2,
+    "rationale": "Has Elasticsearch (24 months, intermediate) and NLP skills listed, and an M.Tech in AI, but career is dominated by 55 months of .NET/cloud work at Accenture plus Java backend roles at Initech (fictional company), with no evidence of production IR or ranking system ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049370",
+    "score": 0.0,
+    "rationale": "Only 1.6 years of experience in QA test automation (Selenium, pytest) at Swiggy with no ML or IR skills whatsoever, far below the required depth and experience threshold for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049495",
+    "score": 0.0,
+    "rationale": "Despite listing Diffusion Models and Databricks as skills, the actual career history shows accounting, logistics operations, customer support, and sales roles entirely at TCS and Infosys (IT services), with zero evidence of any engineering or ML work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0049548",
+    "score": 0.0,
+    "rationale": "HR Manager and Business Analyst roles exclusively at fictional companies (Wayne Enterprises, Dunder Mifflin) with career descriptions showing consulting and accounting work — no engineering, ML, or IR experience of any kind.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0049554",
+    "score": 0.0,
+    "rationale": "Only 1 year of experience in brand design/creative direction at Hooli, with summary explicitly stating a marketing manager background and skills limited to TypeScript, Content Writing, and HTML — no ML or engineering relevance.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049606",
+    "score": 0.0,
+    "rationale": "12+ years entirely in HR, accounting, and content writing roles at Stark Industries (fictional), TCS, and Globex with no engineering depth — skills are beginner-level Rust and AWS with no ML or IR signals.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0049719",
+    "score": 0.0,
+    "rationale": "10+ years as project manager and content writer at fictional companies (Pied Piper, Wayne Enterprises) with skills limited to Illustrator, Tailwind, and Terraform — no ML, IR, or engineering production experience whatsoever.",
+    "stratum": "honeypot_flagged"
+  }
+]

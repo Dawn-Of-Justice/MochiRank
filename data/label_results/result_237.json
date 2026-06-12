@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0095060",
+    "score": 0.4,
+    "rationale": "Has 6.3 years of applied ML production experience at product companies (Haptik, Flipkart) including recommendation-style features, but skills are oriented toward forecasting, diffusion models, and LlamaIndex rather than IR/ranking systems, vector databases, or evaluation metrics like NDCG/MAP.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095078",
+    "score": 0.2,
+    "rationale": "Entire 5.7-year career spent at IT-services firms (TCS, Capgemini) in mobile/cloud engineering roles with zero production ML experience; AI exposure is limited to self-study and a small RAG side project.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0095100",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning accounting, marketing, HR, and mechanical engineering with no ML or software engineering work; includes a role at Initech (fictional honeypot company) and zero AI/ML skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095111",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Business Analyst at Wipro, Customer Support, Operations Manager) with no engineering or ML production experience; GenAI interest is limited to online courses and LangChain experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095114",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical for AI purposes — Civil Engineer, Graphic Designer, Content Writer — with no ML engineering experience despite a tier_1 IIIT Hyderabad credential; skills show only Spring Boot, Tally, and Vue.js beginner-level entries.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095136",
+    "score": 0.2,
+    "rationale": "Only 1.2 years of total experience at a single IT-services firm (Tech Mahindra) in full-stack web dev; Hugging Face Transformers and pgvector skills suggest ML interest but lack any production IR/ranking deployment at meaningful scale.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0095174",
+    "score": 0.0,
+    "rationale": "Career is entirely in content writing and project management at non-engineering companies including Stark Industries (fictional honeypot), with no ML or software engineering background; skills are Apache Flink and Salesforce CRM at beginner/intermediate level unrelated to IR.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095176",
+    "score": 0.0,
+    "rationale": "12.8-year career spans mechanical engineering, operations, and business analysis at Wipro, Infosys, and Pied Piper (fictional honeypot company) with no ML or software engineering skills; top skills are React, SQL, and PowerPoint.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095207",
+    "score": 0.6,
+    "rationale": "4 years at product companies (Ola, Freshworks) with production NLP pipelines and recommendation features, advanced Weaviate proficiency (57 months) matching the vector DB requirement, and IIIT Hyderabad B.Tech; gaps are below the preferred experience range and title/summary suggests CV specialization, with no explicit NDCG/MAP evaluation framework experience cited.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095279",
+    "score": 0.0,
+    "rationale": "Career consists entirely of content writing, SEO, operations management, and graphic design at companies including Pied Piper and Stark Industries (fictional honeypots), with no software engineering or ML skills; web skills (PostgreSQL, JavaScript, Flask) are at beginner level with no AI/IR experience.",
+    "stratum": "random"
+  }
+]

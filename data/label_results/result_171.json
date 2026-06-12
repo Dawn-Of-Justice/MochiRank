@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0068811",
+    "score": 0.8,
+    "rationale": "Strong match: 8 years at product companies (Freshworks, Yellow.ai, Meesho, Salesforce) with hands-on embedding-based retrieval (sentence-transformers, Pinecone, Weaviate), RAG pipelines, and learning-to-rank ownership at Meesho including relevance labeling — directly covering the JD's core requirements; PhD from tier_2 with TTS/Speech skills as minor irrelevant detour.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0068895",
+    "score": 0.0,
+    "rationale": "Non-technical profile with career spanning marketing, HR, mechanical engineering, and content writing at Infosys/Wipro/Wayne Enterprises (fictional); no ML, IR, or engineering skills present, and Wayne Enterprises is a fictional-company honeypot.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0068932",
+    "score": 0.4,
+    "rationale": "5.2 years at product companies (Krutrim, Vedantu) with recommendation systems and OpenSearch skills, but primary work is classical collaborative filtering and time-series forecasting with no demonstrated embedding-based retrieval, vector DB production experience, or ranking evaluation framework ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0068985",
+    "score": 0.4,
+    "rationale": "5.2 years with some ML production experience at Locobuzz and Unacademy, but the work centers on classical collaborative filtering, fraud-detection APIs, and time-series forecasting; no evidence of embedding-based retrieval, vector databases, or ranking evaluation metrics despite tier_2 education (VJTI Mumbai).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0069076",
+    "score": 0.0,
+    "rationale": "HR Manager at Wayne Enterprises (fictional-company honeypot) with 3.9 years of purely non-technical experience in sales and support; skills are Node.js/SEO/content writing with no ML or engineering depth whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069241",
+    "score": 0.0,
+    "rationale": "14-year career entirely in non-technical roles (HR Manager, Operations Manager) at multiple fictional-company honeypots (Wayne Enterprises, Pied Piper, Dunder Mifflin); skills are all beginner-level AWS/JS/Kubernetes with zero ML or IR relevance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0069248",
+    "score": 0.4,
+    "rationale": "5.4 years at product companies (Unacademy, PharmEasy, Sarvam AI) with NLP pipelines, FAISS (advanced), and QLoRA skills, but work is concentrated on classification, sentiment analysis, and churn prediction rather than production retrieval/ranking systems with evaluation metric ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0069253",
+    "score": 0.2,
+    "rationale": "Only 2.3 years of experience, entirely at Wipro in DevOps/test-automation with no ML production work; AI exposure is self-learner level (online courses, OpenAI API experiments) with no embedding-based retrieval or ranking systems background.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0069274",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Mechanical Engineer, Business Analyst, Operations Manager, Marketing Manager) with multiple fictional-company appearances (Dunder Mifflin, Pied Piper, Initech honeypots); skills are content writing, HTML, and CI/CD with no ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0069396",
+    "score": 0.0,
+    "rationale": "Marketing Manager at Acme Corp/Dunder Mifflin (fictional-company honeypots) with background in accounting, graphic design, and business analysis; despite an M.Sc in Machine Learning from KIIT, no actual ML engineering experience is demonstrated in any role.",
+    "stratum": "random"
+  }
+]

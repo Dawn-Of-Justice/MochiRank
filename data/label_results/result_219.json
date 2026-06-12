@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0087583",
+    "score": 0.2,
+    "rationale": "Only 1.6 years of experience as a full-stack web engineer at TCS (IT services), with AI/ML exposure limited to self-taught online courses and API experimentation — no production IR, retrieval, or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0087622",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Marketing Manager, Operations Manager) with current role at Pied Piper (fictional company), no engineering or ML work, and zero IR/retrieval/ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087626",
+    "score": 0.2,
+    "rationale": "8.9 years of experience but entirely in QA engineering and mobile development at Wipro and Infosys (IT services only), with NLP listed as advanced skill but no evidence of production IR, embedding, or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0087735",
+    "score": 0.0,
+    "rationale": "Career consists entirely of accountant and sales executive roles at fictional company Initech, with MBA from tier_4 institution and no engineering or ML experience whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0087778",
+    "score": 0.4,
+    "rationale": "Solid ML engineering background with XGBoost and production model deployment at Nykaa (product e-commerce company) and NIT Trichy education, but experience is focused on predictive modeling (churn/fraud) rather than IR, retrieval, ranking systems, or evaluation metrics like NDCG.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087779",
+    "score": 0.2,
+    "rationale": "IIT Delhi B.Sc in Machine Learning is a strong education signal, but 3.5 years of career is entirely operations/project management at TCS with no evidence of any ML engineering or production system development.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0087788",
+    "score": 0.0,
+    "rationale": "Current role is Customer Support at TCS with actual career history in brand design and marketing leadership — entirely non-technical with no ML, IR, or engineering work despite Kubeflow listed as advanced skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087821",
+    "score": 0.2,
+    "rationale": "Entire career at Wipro and Accenture (IT services) doing Java backend and QA work, and while BITS Pilani M.S. Data Science and pgvector advanced skill suggest ML awareness, there is no production IR, retrieval, or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087848",
+    "score": 0.0,
+    "rationale": "12+ year career spans content writing, customer support, civil engineering, and operations management — entirely non-technical for ML/IR, with no engineering or AI/ML production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087885",
+    "score": 0.0,
+    "rationale": "Career history of customer support, mechanical engineer, graphic designer, and civil engineer roles at Pied Piper (fictional company) and Wipro with no ML, IR, or engineering depth, and tier_4 Civil Engineering education.",
+    "stratum": "low_behavioral"
+  }
+]

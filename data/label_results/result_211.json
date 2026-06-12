@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0084720",
+    "score": 0.0,
+    "rationale": "Career consists of HR Manager, Graphic Designer, Sales Executive, and Customer Support roles at fictional companies (Stark Industries, Pied Piper, Wayne Enterprises) and TCS, with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084741",
+    "score": 0.0,
+    "rationale": "Career spans Project Manager (Dunder Mifflin — fictional), Mechanical Engineer (TCS), HR Manager (Stark Industries — fictional), and Operations Manager with skills limited to HTML, Project Management, and Content Writing — zero ML or IR relevance.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084746",
+    "score": 0.0,
+    "rationale": "Only 1.9 years of experience entirely at IT-services firms (Infosys, TCS) in Civil Engineer and Business Analyst roles, with no ML or information retrieval skills present.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0084747",
+    "score": 0.0,
+    "rationale": "Entire 8.3-year career is in Customer Support roles at Wipro, Dunder Mifflin (fictional), and Globex, with no ML, NLP, or search engineering experience; skills (Microservices, FastAPI, Scrum) are peripheral and not backed by relevant job descriptions.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084760",
+    "score": 0.4,
+    "rationale": "Skills profile includes OpenSearch (advanced, 44 months), Weaviate (advanced, 41 months), and Embeddings (advanced, 20 months) at product-company CRED, but actual career titles are Computer Vision Engineer and ML Engineer with work descriptions focused on fraud detection APIs and time-series forecasting rather than ranking or IR systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084792",
+    "score": 0.0,
+    "rationale": "Only 1 year of experience as a DevOps Engineer at HCL (IT services) with skills limited to OpenCV, Machine Learning (self-learner level), and Java — no production ML, search, or ranking experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0084807",
+    "score": 0.4,
+    "rationale": "5.4 years at product company CRED with Semantic Search listed as an advanced skill (34 months), but actual career descriptions are full-stack React/Node.js and cloud/Kubernetes infrastructure with no evidence of building ranking, retrieval, or ML systems in production.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084819",
+    "score": 0.8,
+    "rationale": "Search Engineer at Dream11 and Senior Data Scientist at Razorpay (both product companies) with explicit career evidence of owning a learning-to-rank e-commerce search product, designing relevance labeling pipelines, and building RAG systems with Pinecone; BM25, OpenSearch, and Weaviate all listed at expert level with multi-year tenures.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084830",
+    "score": 0.2,
+    "rationale": "9.1 years of experience but career is .NET frontend, Java Android development, and test automation at Stark Industries (fictional), Accenture, and Mindtree; Sentence Transformers listed as intermediate skill but no career evidence of IR, search, or ranking work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0084845",
+    "score": 0.0,
+    "rationale": "10.4-year career entirely in Operations Manager, Accountant, HR Manager, and Graphic Designer roles with no engineering or ML background; skills (Scrum, Accounting, Rust, ETL, GANs) show no coherent technical depth relevant to AI/IR engineering.",
+    "stratum": "random"
+  }
+]

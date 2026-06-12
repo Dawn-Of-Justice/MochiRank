@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0097437",
+    "score": 0.2,
+    "rationale": "6.5 years as a Java/.NET developer with no production ML or IR experience; self-described AI exposure is limited to online courses and a small RAG side project, and current role at fictional Stark Industries is a honeypot signal.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097472",
+    "score": 0.6,
+    "rationale": "5.8 years with production NLP pipelines at InMobi (AdTech product company) and recommendation-style features at Flipkart, Information Retrieval listed as advanced skill with 32 months, and PyTorch experience, but heavier on classical methods and CV skills (CNN, YOLO) with limited evidence of hybrid search or ranking evaluation frameworks.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0097478",
+    "score": 0.0,
+    "rationale": "Civil Engineer at fictional Wayne Enterprises with only 2.2 years experience; summary explicitly describes a marketing manager background with zero ML or engineering depth, and AI exposure is solely ChatGPT for productivity.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0097576",
+    "score": 0.2,
+    "rationale": "2.8 years entirely as an Android/mobile developer at Accenture (consulting firm) with no production ML or IR work; sentence-transformers listed as intermediate skill but with no supporting career evidence of actual retrieval system deployment.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0097581",
+    "score": 0.0,
+    "rationale": "14.7 years in non-technical Operations Manager, Project Manager, Graphic Designer, and Sales roles across TCS, Infosys, Initech, and fictional Dunder Mifflin; no engineering or ML production experience whatsoever, and AI interest is only online courses.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097644",
+    "score": 0.4,
+    "rationale": "4.6 years as a backend/data engineer with strong Python and Sentence Transformers advanced skill (57 months), but career has been data pipelines and analytics at Mphasis (IT services) and Globex with no evidence of production ranking, retrieval evaluation frameworks, or hybrid search deployment.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0097669",
+    "score": 0.2,
+    "rationale": "5.7 years split entirely between Mphasis and Infosys (IT services firms) doing Java backend and DevOps work; no production ML or IR experience, and AI skills are self-learner level only per the summary.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0097699",
+    "score": 0.0,
+    "rationale": "13.7 years as Marketing Manager, Graphic Designer, Sales Executive, and accountant at Stark Industries, Globex, and Initech (fictional/non-product companies); despite a tier_1 CS degree from IIIT Hyderabad, career is entirely non-technical marketing and sales with zero engineering or ML work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0097722",
+    "score": 0.4,
+    "rationale": "8 years with data engineering background including XGBoost use, pgvector advanced skill (46 months), and QLoRA experience at product companies (Dream11, upGrad), but career is predominantly data pipelines and analytics engineering with no demonstrated production retrieval/ranking system ownership or NDCG/offline evaluation framework experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0097730",
+    "score": 0.0,
+    "rationale": "5.8 years as Marketing Manager and Accountant at fictional Dunder Mifflin and Wipro with no technical or ML work; despite a tier_1 Georgia Tech M.Tech in ML, actual career is entirely non-engineering roles with AI interest limited to ChatGPT experimentation.",
+    "stratum": "tier1_education"
+  }
+]

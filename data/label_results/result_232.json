@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0093049",
+    "score": 0.2,
+    "rationale": "Entire career at IT-services firms (Capgemini, Infosys) plus fictional companies (Stark Industries, Pied Piper) with no production IR or ranking work; AI exposure is self-learner only with no vector search or eval metric experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093098",
+    "score": 0.2,
+    "rationale": "Career predominantly at IT-services firms (Wipro, HCL) doing Java/cloud/mobile work; skills list LlamaIndex and ML but actual job descriptions show no production retrieval or ranking systems, indicating keyword inflation with no real IR depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093112",
+    "score": 0.4,
+    "rationale": "Lists Vector Search and MLflow as advanced skills with product-company experience at Razorpay, but summary explicitly states 'conventional backend engineering' with AI only at a self-learner level and no evidence of production retrieval systems or eval metric ownership (NDCG/MAP).",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093155",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career as HR Manager, Content Writer, and Marketing Manager with no engineering or ML work; current role is at fictional company Dunder Mifflin and AI curiosity is limited to using ChatGPT for productivity.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093178",
+    "score": 0.0,
+    "rationale": "Despite a CMU Ph.D, the actual career consists entirely of content writing/SEO at fictional Initech and enterprise sales at Infosys with zero production ML or engineering work, making this a non-fit regardless of educational credentials.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093186",
+    "score": 0.0,
+    "rationale": "Eleven-plus years entirely in non-technical roles (Marketing Manager, Content Writer, Customer Support, Sales) with no engineering background; employment at fictional Wayne Enterprises and no ML/IR skills of any relevance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0093193",
+    "score": 0.8,
+    "rationale": "Senior MLE with 7.9 years building production ranking and retrieval systems at product companies (Niramai HealthTech, Netflix); expert-level OpenSearch and Qdrant skills with vector representations and search backend experience directly matching the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0093243",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (operations, accounting, civil engineering) with employers including fictional Pied Piper and IT-services Infosys; skills are SAP and Tally with no ML, retrieval, or engineering work at all.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093275",
+    "score": 0.2,
+    "rationale": "Only 1.2 years of experience at Accenture (IT services) doing frontend work, yet claims 'Learning to Rank' at advanced proficiency for 56 months — clear keyword inflation that is mathematically impossible given total tenure, with no production ML capability.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093305",
+    "score": 0.0,
+    "rationale": "Career of 7.8 years spans Operations Manager at fictional Dunder Mifflin, HR at Wipro, and Marketing Manager at Hooli — entirely non-technical management roles with zero ML, engineering, or IR experience.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

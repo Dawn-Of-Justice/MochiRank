@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0036119",
+    "score": 0.2,
+    "rationale": "Project Manager with a mechanical engineering background (Stark Industries, Wayne Enterprises — both fictional honeypot companies); no production ML, IR, or embedding experience despite a tier_1 IIT Madras CS degree; recent AI interest is purely via online courses.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0036184",
+    "score": 0.8,
+    "rationale": "6 years at product companies (CRED, PolicyBazaar) with hands-on production semantic search using sentence-transformers (MiniLM, BGE), FAISS, and Pinecone; expert-level Semantic Search and advanced Vector Search skills with strong endorsement counts align directly with the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0036192",
+    "score": 0.0,
+    "rationale": "Entire career in non-technical roles (Customer Support, Accountant) at fictional companies (Initech, Pied Piper) and IT services (TCS); no engineering or ML work whatsoever, only casual ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036226",
+    "score": 0.2,
+    "rationale": "Only 1.1 years of experience as a frontend engineer with no production ML work; LangChain listed as advanced with 41 months duration despite only 1.1 years total experience (clear keyword inflation), and the JD explicitly disqualifies LangChain-as-primary-AI-experience profiles.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0036231",
+    "score": 0.0,
+    "rationale": "12.7-year career as Accountant/Business Analyst/Customer Support at a fictional company (Initech) and IT services (Infosys); no engineering or ML experience, only ChatGPT experimentation mentioned.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0036241",
+    "score": 0.0,
+    "rationale": "Entire 7.3-year career spent in Customer Support and Marketing Manager roles exclusively at IT services firms (TCS, Infosys), which is an explicit disqualifier in the JD; no ML or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036257",
+    "score": 0.2,
+    "rationale": "Only 1.6 years experience in QA/test automation at a fictional company (Stark Industries); Qdrant skill listed at intermediate with 34 months duration against only 1.6 years total suggests inflation; no production ML or IR work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0036437",
+    "score": 0.8,
+    "rationale": "4.8 years at product companies (Rephrase.ai, Nykaa, Ola) owning search ranking end-to-end — evolved e-commerce ranker from hand-tuned scoring to a learning-to-rank model, designed relevance labeling pipelines, and holds expert-level OpenSearch and Vector Search skills with FAISS and Milvus also advanced.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0036550",
+    "score": 0.0,
+    "rationale": "13.8-year career entirely in non-technical roles (Graphic Designer, Sales Executive, HR Manager, Business Analyst) at a single manufacturing company; MLOps 'advanced' skill is inconsistent with the actual career history and appears to be keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036561",
+    "score": 0.0,
+    "rationale": "Graphic Designer career at fictional company (Dunder Mifflin) with remaining stints at IT services firms (TCS, Infosys) and another fictional company (Initech); no ML or engineering work, and BentoML 'advanced' skill is implausible given the graphic design/sales job history.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

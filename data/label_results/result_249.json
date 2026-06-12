@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0099604",
+    "score": 0.0,
+    "rationale": "Career is entirely in customer support, marketing management, and operations at IT services (Infosys) and fictional company (Pied Piper/Initech), with zero engineering or ML experience and only beginner-level peripheral tech skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099625",
+    "score": 0.0,
+    "rationale": "4.1 years as Sales Executive and Graphic Designer with no engineering or ML work; skills like YOLO (advanced) are contradicted by a purely non-technical career history indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099626",
+    "score": 0.2,
+    "rationale": "6.2 years as Business Analyst and Accountant with no production ML or IR experience; self-reported LLMs (advanced) skill with only 10 months duration is recent keyword inflation with no evidence of building retrieval or ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0099779",
+    "score": 0.2,
+    "rationale": "2.3 years solely as a Business Analyst at Wipro (IT services) with no ML engineering or IR work; online courses on RAG and vector databases do not constitute production experience required by this role.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0099794",
+    "score": 0.4,
+    "rationale": "9.3 years of solid backend/full-stack engineering including stints at Swiggy and Zomato (product companies), but ML experience is entirely self-learner level with a small RAG side project and no production IR, ranking, or embedding system work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099886",
+    "score": 0.2,
+    "rationale": "Only 2.1 years of experience as a Frontend Engineer and Mobile Developer with no IR or ranking production work; CV skills (CNN, YOLO advanced for 42-55 months) massively exceed career tenure, indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099897",
+    "score": 0.0,
+    "rationale": "14 years across non-technical roles (Business Analyst, Project Manager, Sales Executive, Civil Engineer) with current role at fictional company Dunder Mifflin and prior role at Stark Industries, with zero ML or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099959",
+    "score": 0.0,
+    "rationale": "1.9 years as a Civil Engineer at Acme Corp with no engineering or ML background; Object Detection (advanced) skill claimed for 31 months vastly exceeds total career duration, indicating fabricated credentials.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099965",
+    "score": 0.6,
+    "rationale": "4.6 years of applied ML at product companies (Niramai HealthTech, InMobi AdTech) with hands-on OpenSearch (advanced, 53 months), semantic search, LoRA fine-tuning, XGBoost, and NIT Surathkal + Carnegie Mellon education, but current role is Junior ML Engineer with CV-focused work rather than production IR/ranking systems specifically.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099968",
+    "score": 0.0,
+    "rationale": "14.2 years entirely in non-technical sales, HR, and business analyst roles at IT services firms (Wipro, TCS) and fictional companies (Dunder Mifflin, Initech) with no ML or engineering work whatsoever.",
+    "stratum": "random"
+  }
+]

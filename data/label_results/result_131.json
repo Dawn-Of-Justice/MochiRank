@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0051816",
+    "score": 0.2,
+    "rationale": "9.7 years in backend/QA/DevOps engineering with a Stanford PhD but zero production ML or IR experience; AI exposure is limited to self-learner RAG side projects and online courses, with no embeddings, vector search, or ranking work in career history.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0051819",
+    "score": 0.0,
+    "rationale": "Career history as graphic designer, civil engineer, and accountant at TCS, Wipro, and the fictional company Dunder Mifflin with zero ML, IR, or engineering relevance to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051898",
+    "score": 0.0,
+    "rationale": "Operations and HR management background with no engineering or ML production experience; only AI exposure is experimenting with ChatGPT for productivity, and the profile is fundamentally a non-technical business role.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0051962",
+    "score": 0.2,
+    "rationale": "3.4 years as a full-stack software engineer at TCS and a SaaS company with no production ML/IR work; AI experience is self-learner only (online courses, OpenAI API, small RAG side project) with no embeddings, ranking, or search systems in production.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0051975",
+    "score": 0.0,
+    "rationale": "Customer support team lead and content writer at fictional company Dunder Mifflin with a marketing manager summary and no ML, IR, or technical engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051999",
+    "score": 0.0,
+    "rationale": "13+ year career entirely in marketing, HR, operations, and sales roles at multiple fictional companies (Initech, Pied Piper) with no ML or engineering background despite a nominal IIT Guwahati M.E. in Data Science.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052010",
+    "score": 0.2,
+    "rationale": "3.9 years in frontend/full-stack engineering at fictional company Dunder Mifflin with self-learner AI exposure only; despite advanced Diffusion Models skill listed, no production IR, retrieval, or ranking systems work is present in the career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052029",
+    "score": 0.0,
+    "rationale": "Business analyst and HR manager roles at fictional Stark Industries and Wipro with no engineering depth; AI interest is recent and consists only of online RAG/vector-database courses and LangChain experimentation, not production work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0052057",
+    "score": 0.0,
+    "rationale": "7.7 years as a civil engineer and operations manager with a marketing manager summary and no ML, NLP, IR, or AI skills — cloud tools (GCP, Snowflake) listed but with no ML application context.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0052092",
+    "score": 0.2,
+    "rationale": "7.1 years of backend/DevOps/QA engineering across Swiggy, TCS, and Hooli with strong software fundamentals but no production ML or IR experience; AI knowledge is self-learner level only with no embeddings, ranking, or search system work demonstrated.",
+    "stratum": "top_retrieval_dense"
+  }
+]

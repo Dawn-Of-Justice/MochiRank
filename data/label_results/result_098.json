@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0039160",
+    "score": 0.2,
+    "rationale": "6.1 years of data engineering (Swiggy, TCS, Tech Mahindra) with strong Python but skills are CV/speech-oriented (ASR, Object Detection, OpenCV) rather than NLP/IR, and there is no production retrieval, ranking, or embeddings work anywhere in the profile.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0039236",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career spanning HR Manager, Customer Support, and Graphic Designer, including a role at Pied Piper (fictional company honeypot flag), with zero ML, NLP, or information retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039272",
+    "score": 0.0,
+    "rationale": "Despite an IIT Roorkee M.S. credential, the entire career is in marketing, accounting, and project management with roles at Pied Piper (fictional company) and Wipro, and no ML or IR engineering work of any kind.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0039275",
+    "score": 0.0,
+    "rationale": "Career consists solely of Customer Support at TCS and Sales Executive at Wayne Enterprises (fictional company honeypot), with no engineering or ML work despite some data-tool keywords listed at beginner level.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039291",
+    "score": 0.2,
+    "rationale": "Only 2.8 years total at Wipro (IT services) as a Data Analyst, and the Pinecone skill claims 48 months of experience — longer than the candidate's entire career — indicating clear keyword inflation rather than genuine production IR experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039378",
+    "score": 0.2,
+    "rationale": "Only 2.4 years at Tech Mahindra (IT services) doing Java/Spring Boot backend work, with AI exposure limited to a self-directed RAG side project; no production embeddings, vector search, or ranking systems shipped to real users.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0039383",
+    "score": 0.8,
+    "rationale": "7.1 years entirely at product companies (Meesho, Swiggy, Paytm) shipping XGBoost/LightGBM ranking models and FAISS-backed semantic search with sentence-transformers (bge-base) in production, plus LoRA fine-tuning experience and IISc Bangalore education — missing only explicit BM25 hybrid retrieval and NDCG evaluation framework ownership to reach a perfect match.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0039417",
+    "score": 0.0,
+    "rationale": "13.7-year career in project management and sales across Hooli and Stark Industries (both fictional company honeypot flags) and Infosys, with no ML engineering work; the MLOps skill listed as advanced is entirely unsupported by the career history.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039422",
+    "score": 0.0,
+    "rationale": "Entire career is as a Business Analyst at Hooli (fictional company, appearing twice) and Infosys with descriptions of consulting and sales work, and no ML, NLP, or retrieval engineering experience despite some backend tool keywords.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039439",
+    "score": 0.0,
+    "rationale": "Sole role is Mechanical Engineer at Dunder Mifflin (fictional company honeypot) doing operations logistics work, with only 2.2 years of experience and no connection to ML, NLP, or information retrieval.",
+    "stratum": "honeypot_flagged"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0070124",
+    "score": 0.0,
+    "rationale": "Operations Manager with only 1.2 years of experience in content writing and SEO at Acme Corp (manufacturing), with no ML, NLP, or IR engineering work, only superficial AI curiosity via ChatGPT.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070129",
+    "score": 0.0,
+    "rationale": "Project Manager/Graphic Designer whose entire career is at Stark Industries (fictional company honeypot) and IT-services firms (Wipro, TCS) in sales and customer support roles with zero ML or engineering depth.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070133",
+    "score": 0.0,
+    "rationale": "Operations Manager spending 6.7 years entirely in content writing/SEO and graphic design roles at Infosys (IT services) and Acme Corp, with no ML, NLP, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070202",
+    "score": 0.8,
+    "rationale": "ML Engineer with 5.1 years at BYJU'S and Dream11 (product companies) who owned end-to-end learning-to-rank pipelines, built embedding-based retrieval migrations, and holds expert-level skills in BM25, RAG, and Learning to Rank from NIT Warangal/IIT Hyderabad.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0070232",
+    "score": 0.0,
+    "rationale": "Civil Engineer with only 1.2 years doing mechanical design at Acme Corp (manufacturing), self-describing as a marketing manager, with no ML, NLP, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070414",
+    "score": 0.2,
+    "rationale": "Backend/QA engineer with 5.9 years across mobile, Java, and full-stack work at Stark Industries (fictional company) and Swiggy, with only self-learner AI exposure and a small RAG side project — no production IR or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070485",
+    "score": 1.0,
+    "rationale": "Search Engineer with 6.4 years at Saarthi.ai and Dream11 (product companies) who built semantic search with sentence-transformers/BGE/FAISS and owned a learning-to-rank pipeline from hand-tuned scoring to LTR model, with dual IIT Madras/IIT Kharagpur pedigree and expert skills in deep learning, recommendation systems, and PEFT fine-tuning.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0070503",
+    "score": 0.2,
+    "rationale": "Backend/.NET developer with 3.8 years split between Wipro (IT services) full-stack work and Razorpay DevOps/infrastructure, with only self-learner AI exposure and no production ML or IR experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070514",
+    "score": 0.6,
+    "rationale": "AI Specialist with 5.5 years at Glance and BYJU'S (product companies) with advanced OpenSearch skills, NLP pipelines using transformers, and gradient-boosted models, though primarily in time-series forecasting and sentiment analysis rather than dedicated ranking/retrieval systems, from BITS Pilani.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0070525",
+    "score": 0.6,
+    "rationale": "Senior ML Engineer with 5.4 years at Mad Street Den and Wysa (product/AI startups) shipping NLP pipelines and recommendation features with Python and collaborative filtering, but lacking direct hands-on experience with hybrid retrieval, FAISS/vector DBs, or NDCG-based evaluation frameworks.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0060905",
+    "score": 0.0,
+    "rationale": "Entire career is at IT-services firms (TCS, Wipro) and a fictional company (Initech) in non-technical roles (civil engineer, content writer, customer support) with zero ML, IR, or engineering production work relevant to the JD.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0060934",
+    "score": 0.2,
+    "rationale": "Only 3.8 years of experience as an analytics/data engineer at a manufacturing company (Acme Corp) with no production IR or ranking work; skills list claims advanced Qdrant and Hugging Face Transformers but career history shows data pipelines and batch ETL only, with no evidence of deployed retrieval systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0060954",
+    "score": 0.0,
+    "rationale": "Career spans operations management, mechanical engineering, and content writing at fictional companies (Stark Industries, Wayne Enterprises) with zero ML or software engineering work, and skills are entirely non-technical (ETL, Webpack, Redux, Marketing).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060963",
+    "score": 0.0,
+    "rationale": "Non-technical career in sales and HR at Acme Corp and Initech (fictional) with no ML, IR, or engineering experience; skills include Airflow and Terraform at beginner level but career history shows no engineering roles whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060986",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience as a graphic designer at TCS (IT services) with no ML or engineering work; the PhD in Computer Engineering from a tier_4 college is inconsistent with the graphic designer role and the profile shows no AI/IR production work.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0061014",
+    "score": 0.0,
+    "rationale": "Career is entirely project management and operations at Wayne Enterprises (fictional) and Wipro (IT services) with no technical or ML work; skills (gRPC, Kafka, Kubernetes) at beginner level do not compensate for the complete absence of AI/IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061195",
+    "score": 0.0,
+    "rationale": "Career is business analyst at Dunder Mifflin (fictional/honeypot company) and a civil engineer role at TCS, with no ML or IR engineering production work; skills listed (Go, Terraform, Next.js) are unrelated to ranking or retrieval systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0061198",
+    "score": 0.2,
+    "rationale": "6.1 years as a mobile/Java developer with solid backend engineering (CRED fintech) and a self-directed RAG side project, but no production ML/IR systems, no embedding or vector-search deployment experience, and primary ML exposure is limited to API calls and online courses.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061244",
+    "score": 0.4,
+    "rationale": "6.2 years with genuine NLP pipeline work (transformers-based classification at CRED) and lightweight recommendation systems at PhonePe in production, but the current title is Computer Vision Engineer and skills skew toward diffusion models/GANs rather than IR/ranking; no evidence of hybrid retrieval, NDCG-based evaluation, or vector database deployment.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0061257",
+    "score": 1.0,
+    "rationale": "8 years of experience including ranking system ownership at LinkedIn (flagship product, millions of users) and end-to-end search/discovery at Yellow.ai, with expert-level skills in indexing algorithms, vector representations, and Python, plus an M.E. in Artificial Intelligence from IIT Roorkee — directly matches every hard requirement in the JD.",
+    "stratum": "top_retrieval_dense"
+  }
+]

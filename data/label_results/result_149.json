@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0059721",
+    "score": 0.0,
+    "rationale": "HR Manager with a career spanning HR, civil engineering, and marketing/SEO content writing — no ML, NLP, or IR engineering experience whatsoever, and their sole 'AI' exposure is casual ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059851",
+    "score": 0.0,
+    "rationale": "Sales Executive at Infosys with a career entirely in brand design and logistics operations, plus a fictional company (Dunder Mifflin) flag — zero engineering or ML background and no relevance to AI/IR systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059861",
+    "score": 0.0,
+    "rationale": "Business Analyst whose entire career is consulting/analytics (TCS, Pied Piper flagged as fictional) with roles in enterprise sales and process re-engineering — no ML engineering, retrieval, or ranking work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059933",
+    "score": 0.0,
+    "rationale": "Graphic Designer at Infosys and Pied Piper (fictional company flag) whose career covers business analysis, mechanical engineering design, and customer support — no AI/ML or IR engineering experience despite 9.5 years total.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0059990",
+    "score": 0.0,
+    "rationale": "Operations Manager with career roles at Wayne Enterprises and Stark Industries (both fictional company honeypots) covering brand design and warehouse logistics — no technical ML or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060054",
+    "score": 0.8,
+    "rationale": "ML engineer with 6.4 years at product companies (Uber, Zomato, Mad Street Den) who has shipped sentence-transformer + FAISS semantic search on 500K documents, built recommendation systems for 10M+ users with XGBoost/LightGBM ranking, and demonstrates hands-on hybrid retrieval and evaluation rigor — closely aligned with core JD requirements with only minor gaps around explicit NDCG/learning-to-rank ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060073",
+    "score": 0.0,
+    "rationale": "Content Writer whose career spans accounting, HR management (at fictional Stark Industries), and marketing leadership — no engineering or ML work, and current/prior roles are at fictional companies (Dunder Mifflin, Initech).",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0060081",
+    "score": 0.0,
+    "rationale": "Graphic Designer at TCS with only 2.1 years of experience in logistics operations management — only signals of AI interest are online courses in RAG/vector DBs with no production engineering background to support them.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0060126",
+    "score": 0.0,
+    "rationale": "Graphic Designer with 2.4 years at a manufacturing company doing SEO content writing — background is entirely non-technical creative/content work with no ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060202",
+    "score": 0.2,
+    "rationale": "Software engineer with 2.1 years of web/API development at HCL (IT services) and only self-learner AI exposure (online courses, small RAG side project) — too junior and lacking any production ML or IR system experience to meaningfully perform this role.",
+    "stratum": "consulting_only"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0096906",
+    "score": 0.0,
+    "rationale": "Current title is Project Manager at Initech (a fictional company/honeypot signal), career history shows business analyst, sales, mechanical engineering, and graphic designer roles with no ML/AI engineering depth, and despite listing 'Data Science' as a skill, the actual work descriptions are entirely non-technical consulting and operations work with zero evidence of production IR or ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0096907",
+    "score": 0.2,
+    "rationale": "Only 2.7 years of experience at a single IT-services firm (Tech Mahindra) doing frontend engineering, with AI exposure limited to a small RAG side project and online courses, placing this well below the production ML/IR depth required for a founding-team Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096945",
+    "score": 0.0,
+    "rationale": "Career history is entirely Sales Executive and Business Analyst roles at manufacturing companies including Stark Industries (a fictional/honeypot company), with no engineering, ML, or AI production experience whatsoever despite AI-curiosity language in the summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096964",
+    "score": 0.4,
+    "rationale": "Strong data engineering and MLOps background with TensorFlow, Kubeflow, and Spark at a mix of product companies and TCS, but the profile shows analytics/pipeline infrastructure work rather than production IR, retrieval, or ranking systems, and the stated goal of 'doing more ML itself' signals a transition rather than established expertise in embeddings/hybrid search/NDCG optimization.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0096966",
+    "score": 0.0,
+    "rationale": "Content Writer and Customer Support roles at Stark Industries and Dunder Mifflin (both fictional/honeypot companies), with no engineering or ML background; the technical skills listed (Data Pipelines, REST APIs, SQL) are beginner/intermediate with minimal duration and inconsistent with a non-technical career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097000",
+    "score": 0.0,
+    "rationale": "Career spans Graphic Designer, HR Manager, Marketing Manager, and Project Manager roles at Initech (fictional company) and TCS with no ML or software engineering work; skills listed are entirely beginner-level with 3-7 month durations indicating keyword inflation rather than real expertise.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097130",
+    "score": 0.0,
+    "rationale": "Civil Engineer and Operations Manager background at Infosys and Initech (fictional company) with no ML, AI, or software engineering experience; beginner-level cloud skills (GCP, AWS) with under 17 months duration do not constitute relevant technical depth for a Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097146",
+    "score": 0.0,
+    "rationale": "Career consists entirely of Mechanical Engineer, HR Manager, and Accountant roles at Wayne Enterprises (a fictional/honeypot company) and manufacturing companies, with no ML, AI, or software engineering background and skills like Six Sigma and SQL that are irrelevant to production ranking systems.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0097255",
+    "score": 0.0,
+    "rationale": "Accountant, HR Manager, and Customer Support roles at Initech (fictional company) and Globex with no engineering or ML production work; despite a B.E. in Artificial Intelligence from Jadavpur University (tier_2), the actual career shows zero application of that education in technical roles.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097410",
+    "score": 0.0,
+    "rationale": "Marketing Manager at Hooli with prior Accountant and Content Writer roles at TCS and Stark Industries (fictional company), representing a non-technical profile with no engineering or ML work; the AI curiosity in the summary and beginner gRPC/CI-CD skills do not offset a career with zero production ML experience.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0048760",
+    "score": 0.4,
+    "rationale": "Current product-company role at CRED (fintech) and intermediate Milvus experience (20mo) show some relevant exposure to vector infrastructure, but the prior career is QA/DevOps at IT-services firms (Capgemini, Wipro) with AI/ML only at a self-learner level and no production IR or ranking systems built.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0048790",
+    "score": 0.0,
+    "rationale": "Entire 9-year career is in enterprise sales and customer support at Infosys and Wipro with zero engineering, ML, or IR work — a non-technical profile with no relevant skills for a Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048988",
+    "score": 0.4,
+    "rationale": "Advanced Hugging Face Transformers skill (55 endorsements, 33mo) and product-company experience at Swiggy are positive signals, but the actual career history is mobile development, QA, and frontend work with no documented production retrieval, ranking, or vector search systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049005",
+    "score": 0.2,
+    "rationale": "Entire career is .NET development at IT-services firms (Accenture, HCL) with a stint at fictional Dunder Mifflin (honeypot signal), and skills show only peripheral relevance (MLOps listed as advanced but no evidence of production ML or IR work).",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0049023",
+    "score": 0.0,
+    "rationale": "Only 2 years of experience consisting entirely of content writing and SEO at Wipro with no engineering depth, no ML background, and beginner-level tool skills with minimal endorsements — fundamentally wrong profile for a Senior AI Engineer role.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0049025",
+    "score": 0.0,
+    "rationale": "Career spans project management, operations, and sales across fictional companies (Hooli, Initech) and Infosys, with no technical engineering or ML work, making this a non-technical profile with zero alignment to the role's requirements.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049029",
+    "score": 0.0,
+    "rationale": "14-year career is entirely non-technical — content writing, HR management, and mechanical engineering roles at TCS, Wipro, and fictional Dunder Mifflin — with no software engineering, ML, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049088",
+    "score": 0.0,
+    "rationale": "Career is entirely in accounting, marketing, and operations management across multiple fictional companies (Wayne Enterprises, Stark Industries) with no engineering or ML background and skills limited to Agile, CSS, and content writing.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049127",
+    "score": 0.4,
+    "rationale": "Advanced 'Learning to Rank' skill (13 endorsements, 18mo) is directly relevant, but the actual career is mostly QA/test automation and mobile development at IT-services firms (HCL, Mindtree, Cognizant) plus fictional Hooli, with no documented production IR or embedding systems built.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049204",
+    "score": 0.2,
+    "rationale": "Only 2.6 years of experience in QA/DevOps at a manufacturing company with advanced Diffusion Models skill that is CV-focused rather than IR/NLP, and no evidence of production ML, ranking, or retrieval work relevant to this role.",
+    "stratum": "random"
+  }
+]

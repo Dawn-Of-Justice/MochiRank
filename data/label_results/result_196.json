@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0078128",
+    "score": 0.0,
+    "rationale": "Career consists entirely of content writing, accounting, marketing, and customer support roles at fictional companies (Initech, Wayne Enterprises) with zero ML, AI, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078201",
+    "score": 0.4,
+    "rationale": "Strong data engineering background at product companies (BYJU'S, Freshworks, PharmEasy) with Python/Spark/Kafka expertise and LlamaIndex (advanced), but no demonstrated production IR/ranking/embedding retrieval systems or evaluation metric ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078209",
+    "score": 0.2,
+    "rationale": "IIT Kharagpur education and advanced Vector Search skill (55 months) are positive signals, but career is dominated by IT-services employers (Cognizant, TCS, Infosys) in QA/full-stack roles with no production IR or ranking system experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0078260",
+    "score": 0.0,
+    "rationale": "Entire career spans HR management, marketing, and customer support at fictional companies (Dunder Mifflin, Initech) with no technical, ML, or engineering work despite NIT Surathkal education.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0078272",
+    "score": 0.2,
+    "rationale": "FAISS (advanced, 42 months) and LLMs (advanced) skills are relevant signals, but the candidate has only 3.8 years experience entirely at HCL (IT services) with no evidence of production IR or ranking system deployment.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0078284",
+    "score": 0.0,
+    "rationale": "Career is entirely content writing and operations management at fictional companies (Initech, Dunder Mifflin, Stark Industries) with no ML, AI, IR, or engineering experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0078325",
+    "score": 0.0,
+    "rationale": "Career is entirely marketing management, content writing, and accounting at Wipro (IT services) and fictional Stark Industries — no ML or engineering work despite IIT Roorkee CS degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078452",
+    "score": 0.0,
+    "rationale": "Only 2 years of experience doing content writing/SEO at Infosys (IT services) with a recent AI pivot through online courses only — no production ML, IR, or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078509",
+    "score": 0.0,
+    "rationale": "Career consists solely of a sales executive role at fictional Dunder Mifflin doing marketing/demand-generation with no technical or ML engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078623",
+    "score": 0.2,
+    "rationale": "9.6 years at product companies (CRED, Hooli) with solid Java/Spring Boot/Kafka backend engineering, but zero ML, IR, ranking, or embedding system experience and skills are all beginner-level infrastructure tools.",
+    "stratum": "random"
+  }
+]

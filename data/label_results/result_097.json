@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0038716",
+    "score": 0.4,
+    "rationale": "Data Engineer at Meesho (product e-commerce company) with BM25 and QLoRA skills listed, but only 3.9 years total experience and self-described as wanting to transition into ML rather than having shipped production retrieval or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0038857",
+    "score": 0.0,
+    "rationale": "Summary describes a marketing manager background with no engineering depth, career spans Stark Industries (fictional honeypot), and two stints at Wipro in Mechanical Engineer and Accountant titles with zero ML or IR skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0038882",
+    "score": 0.2,
+    "rationale": "Nine years of backend/cloud work but the majority is at IT-services firms (HCL, Accenture) and includes a role at Dunder Mifflin (fictional honeypot); Recommendation Systems is listed as an advanced skill but no production embedding retrieval or ranking evaluation evidence exists.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0038938",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Graphic Designer, Content Writer, Marketing Manager) spread across TCS and the fictional Dunder Mifflin, with no ML, IR, or production engineering experience despite a Ph.D in Mathematics from Manipal.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0038968",
+    "score": 0.2,
+    "rationale": "Has a stint at Flipkart (product company, positive signal) and a tier_2 VJTI education, but includes a role at fictional Pied Piper, spent significant time at Infosys in .NET/QA work, and top skills are HTML/PowerPoint/Spring Boot with only 10 months of beginner-level Deep Learning — no production IR or ranking experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039004",
+    "score": 0.0,
+    "rationale": "Non-technical career as Graphic Designer and Content Writer with a marketing manager summary, includes a role at fictional Initech, and the only ML-adjacent skill is TTS (speech domain explicitly excluded by the JD).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039019",
+    "score": 0.0,
+    "rationale": "Business Analyst and Marketing Manager roles entirely at fictional Initech and Hooli with no engineering or ML work; skills are React/Webpack/AWS all at beginner level with brief durations, confirming no production AI engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039047",
+    "score": 0.0,
+    "rationale": "Career consists of Mechanical Engineer at fictional Wayne Enterprises and Sales Executive at fictional Pied Piper (two honeypot signals), a marketing manager summary, and no ML or IR skills — IIT Kanpur Ph.D in Computer Engineering is on paper but the actual work history is entirely non-technical.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0039084",
+    "score": 0.0,
+    "rationale": "Entire 13-year career is at IT-services firms (Infosys, TCS) in non-technical roles (Business Analyst, Accountant, Project Manager) — an explicit disqualifier per the JD — with all skills at beginner level and no ML or retrieval experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0039145",
+    "score": 0.0,
+    "rationale": "Twelve-year career split across Wipro/Infosys (IT services) in non-engineering roles (Business Analyst, Graphic Designer, Operations Manager) and fictional Initech, with Statistical Modeling listed as advanced but no production ML, IR, or ranking system work evident.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0036903",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical business analyst and operations manager roles at IT services firms (TCS, Wipro) and a fictional company (Initech), with zero ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036989",
+    "score": 0.0,
+    "rationale": "Career is in marketing leadership and content/SEO writing with no engineering or ML production work; skills show only beginner-level Kafka and Hadoop with no search, ranking, or embedding experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037000",
+    "score": 0.8,
+    "rationale": "Directly owns production search and ranking across CRED (XGBoost/LightGBM ranking models), upGrad (LTR pipeline with relevance labeling), and Unacademy (RAG with Pinecone), backed by advanced BM25, Pinecone, and Hugging Face Transformers skills aligned to the JD's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0037029",
+    "score": 0.4,
+    "rationale": "Solid data engineering and lightweight ML (XGBoost, sklearn) at product companies Swiggy and Vedantu, but career is analytics/data-pipeline focused with no production IR, search, or ranking system experience; Qdrant skill listed without supporting career evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0037048",
+    "score": 0.2,
+    "rationale": "4.2 years of experience is primarily QA automation (Selenium, Locust) at Acme Corp with self-learner-level AI exposure only; no production ML or IR deployment evidence despite intermediate MLOps and Recommendation Systems skill claims.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037160",
+    "score": 0.4,
+    "rationale": "Strong education (IIT Kanpur PhD) and 6 years of production ML experience, but primary expertise is computer vision and speech (YOLO, TTS, Image Classification top skills) which the JD explicitly flags as a re-learning risk; limited NLP/IR exposure only at Haptik.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0037238",
+    "score": 0.2,
+    "rationale": "Entire career at IT services firms (Cognizant, Mindtree) in QA automation and cloud/full-stack web roles with no ML, NLP, or IR experience and only beginner-level skills in unrelated technologies.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0037344",
+    "score": 0.2,
+    "rationale": "5.4 years as a mobile/Android and cloud infrastructure engineer with a self-described RAG side project as the only AI exposure; HCL (IT services) on the resume and no production ML or search system experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0037467",
+    "score": 0.2,
+    "rationale": "Career descriptions show cloud infrastructure (AWS/Terraform/Kubernetes) and Android mobile development roles; advanced Vector Search and Statistical Modeling skill claims are unsupported by any IR or ML work in the career history, and current employer Hooli is a fictional company.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0037556",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (accounting, customer support, graphic design, mechanical engineering) at fictional companies Pied Piper and Wayne Enterprises with zero ML, search, or engineering experience.",
+    "stratum": "random"
+  }
+]

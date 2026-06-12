@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0093638",
+    "score": 0.0,
+    "rationale": "Current title is Content Writer at the fictional company Dunder Mifflin, career history consists entirely of non-technical roles (marketing manager, accountant, customer support), and skills are Redux/Scrum/Marketing with zero IR, ML, or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093732",
+    "score": 0.2,
+    "rationale": "Entire career is DevOps at Cognizant (IT-services firm) with no product-company exposure; self-described AI/ML interest is limited to online courses and a small RAG side project, with no production embedding or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093759",
+    "score": 0.0,
+    "rationale": "Profile is a Civil Engineer whose actual roles are Graphic Designer and Marketing Manager at non-tech companies, with no ML or IR engineering work; top skills are Computer Vision and Photoshop, and the only AI mention is casual ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093779",
+    "score": 0.0,
+    "rationale": "Accountant with full career at Wipro and Infosys in non-technical roles, self-described as a marketing manager pivoting to AI via ChatGPT experimentation, with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093822",
+    "score": 0.0,
+    "rationale": "Customer Support and Operations Manager roles at fictional companies Wayne Enterprises and Pied Piper with a career entirely in non-technical functions; skills are Databricks/Snowflake/HTML with no evidence of any ML engineering or IR work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093838",
+    "score": 0.0,
+    "rationale": "All four career roles are non-engineering (Customer Support, Content Writer, Sales Executive) at fictional companies Pied Piper, Initech, Dunder Mifflin, and Stark Industries, with no production ML or search engineering despite backend-sounding skills listed.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0093883",
+    "score": 0.6,
+    "rationale": "Advanced hands-on skills in OpenSearch and Milvus (vector DB) with strong endorsements, LoRA fine-tuning experience, and production ML work at HealthTech product companies (Wysa, PharmEasy), though significant time at Wipro and primary focus on forecasting/recommendation rather than direct ranking/IR systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0093912",
+    "score": 0.9,
+    "rationale": "Owns ranking layer at Razorpay (evolved BM25 to learning-to-rank), shipped semantic search with sentence-transformers and FAISS at Flipkart, expert-level Milvus/Elasticsearch/Vector Search skills with 5+ years endorsements, and explicitly owns an RAG eval framework — directly matching every core JD requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093990",
+    "score": 0.2,
+    "rationale": "Entire career is .NET and mobile development at HCL and Mindtree (IT-services firms) with only 3.9 years experience; RAG and Feature Engineering skills listed with strong endorsements appear inflated relative to a backend-only work history and no production IR or ranking system evidence.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094008",
+    "score": 0.0,
+    "rationale": "Civil Engineer with sole employer being Wipro in a brand design/creative role, skills are beginner Spark/CSS/Angular/Tailwind, and the summary self-identifies as a marketing manager with only ChatGPT experimentation — no technical or ML engineering background.",
+    "stratum": "consulting_only"
+  }
+]

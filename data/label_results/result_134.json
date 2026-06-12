@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0052737",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Customer Support, Marketing Manager at Stark Industries — a fictional company) at IT services firms (Infosys, TCS) with no ML/IR/engineering work; skills like Kafka and Flask are superficial and disconnected from any relevant role history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052739",
+    "score": 0.2,
+    "rationale": "9.7 years as a mobile/QA/frontend engineer at IT services firms (Mphasis, HCL) and a fictional company (Pied Piper) with no ML or IR experience; self-learner AI exposure only and skills (Marketing, Tailwind, Snowflake) show no alignment with production ranking or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052744",
+    "score": 0.6,
+    "rationale": "4.9 years of applied ML at product companies (Ola, Freshworks, Niramai) with hands-on sentence-transformers and Pinecone skills at advanced/intermediate level, XGBoost experience, and an IIT Guwahati CS background, but career focus is computer vision and classical prediction rather than production IR/ranking/retrieval systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0052815",
+    "score": 0.0,
+    "rationale": "6.8 years of non-technical roles (Operations Manager at Wipro, Graphic Designer at Hooli — fictional, Business Analyst at TCS) with zero ML or engineering depth; skills (Photoshop, HTML, Tailwind) confirm no relevant AI/IR background.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0052873",
+    "score": 0.2,
+    "rationale": "8.2 years as a .NET/frontend engineer at Accenture and non-product firms with no ML production work; statistical modeling and Kubeflow appear as skills but career history is entirely web/mobile development with no evidence of ranking, retrieval, or embedding systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0052914",
+    "score": 0.0,
+    "rationale": "Career is entirely in Content Writing and Marketing Manager roles (at Wipro and Stark Industries — fictional) with mechanical/civil engineering education and no ML or engineering skills relevant to IR or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053020",
+    "score": 0.2,
+    "rationale": "7.2 years entirely at IT services firms (Tech Mahindra, Cognizant) doing Java backend and frontend work with no product-company ML experience; diffusion models and scikit-learn skills listed but entirely unsupported by career history, indicating keyword inflation.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0053048",
+    "score": 0.2,
+    "rationale": "Only 3.2 years of experience, all at IT services firms (Cognizant, TCS) doing frontend React work; Elasticsearch skill is relevant but career history shows no ML or IR production work, and NIT Trichy education is a positive signal undermined by the entirely services-firm, non-ML career.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0053143",
+    "score": 0.2,
+    "rationale": "6.4 years entirely at IT services firms (Infosys, TCS) in QA and DevOps roles; Information Retrieval listed as an advanced skill with 60 months duration but career descriptions show no actual IR or ML work, indicating likely keyword inflation against a non-ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053210",
+    "score": 0.0,
+    "rationale": "HR Manager at Pied Piper (fictional company) with only 3 years of experience in HR/sales roles and no engineering or ML background whatsoever; flagged as honeypot with skills (Feature Engineering, Azure) entirely disconnected from any role history.",
+    "stratum": "honeypot_flagged"
+  }
+]

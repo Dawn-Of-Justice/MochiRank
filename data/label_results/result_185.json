@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0074402",
+    "score": 0.0,
+    "rationale": "Graphic Designer at fictional Stark Industries with a career spanning operations, accounting, and mechanical design — no ML, IR, or engineering work relevant to this role despite listing FastAPI and Docker as beginner skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074449",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Accountant, HR Manager, Customer Support at Wipro and Stark Industries) with no ML or engineering experience; the AI interest is superficial ChatGPT experimentation only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074484",
+    "score": 0.0,
+    "rationale": "Entire career at IT services firms (Wipro, Infosys) in non-engineering roles (Mechanical Engineer, Graphic Designer, Content Writer) with no ML, IR, or production AI work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074559",
+    "score": 0.2,
+    "rationale": "Only 2.5 years of experience in non-technical operations and marketing roles (at Hooli/Initech); no production ML or IR engineering background — the mention of RAG/vector DB courses reflects very recent curiosity, not depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074570",
+    "score": 0.0,
+    "rationale": "Career of 14 years spans Sales, Civil Engineering, and Project Management roles at Stark Industries, Infosys, and fictional Wayne Enterprises — no ML, NLP, or IR experience despite an AI degree credential.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0074580",
+    "score": 0.2,
+    "rationale": "3.2 years as a Java Developer at Tech Mahindra (IT services) with self-learner AI exposure; pgvector listed as advanced but the career shows DevOps/cloud work rather than production embedding or ranking systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074621",
+    "score": 0.6,
+    "rationale": "5.2 years of applied ML at product companies (Flipkart, PharmEasy) with production recommendation systems using collaborative filtering, scikit-learn, and feature engineering, but lacks explicit IR/retrieval, NDCG-based evaluation, or dense embedding/hybrid search experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074624",
+    "score": 0.0,
+    "rationale": "Content Writer at Acme Corp with 2.2 years of non-technical experience; no ML, software engineering, or IR skills despite holding an M.S. in Statistics from a tier_4 institution.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074735",
+    "score": 0.8,
+    "rationale": "5.5 years at AI-native product companies (Rephrase.ai, Netflix) with production RAG pipelines using Pinecone and OpenAI embeddings, search engineering, NLP, and MLflow/Kubeflow-based ML infrastructure — directly covering the JD's core requirements, though explicit NDCG/LTR evaluation ownership is not evidenced.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074737",
+    "score": 0.0,
+    "rationale": "6.9 years entirely in Sales Executive and Accountant roles at fictional companies (Dunder Mifflin, Pied Piper) and Stark Industries — zero technical or ML content despite AI-keyword-heavy skills section.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0047087",
+    "score": 0.0,
+    "rationale": "Career entirely in non-technical marketing/operations roles (Content Writer, Operations Manager, Graphic Designer, Project Manager) at multiple fictional companies (Initech, Wayne Enterprises, Dunder Mifflin) with no engineering or ML work whatsoever — only surface-level curiosity about ChatGPT.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047100",
+    "score": 0.2,
+    "rationale": "8+ years of web/backend engineering (Python/Django, Node.js, DevOps) provides some adjacent engineering foundation, but the profile is dominated by IT-services firms (Tech Mahindra, Accenture, Cognizant), has no production ML/IR experience, and AI exposure is limited to self-learner RAG side projects with no embedding, retrieval, or ranking systems deployed.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047128",
+    "score": 0.0,
+    "rationale": "Entire career in non-technical roles (Civil Engineer, Accountant, Content Writer, HR Manager) at fictional companies (Stark Industries, Dunder Mifflin), with no engineering or ML experience — only superficial AI curiosity mentioned in summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047162",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical sales/marketing/creative roles (Sales Executive, Content Writer, Graphic Designer, Customer Support) at multiple fictional companies (Dunder Mifflin, Stark Industries) with zero relevance to ML, IR, or engineering.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047190",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career history (Graphic Designer, Content Writer, Customer Support, Civil Engineer) at fictional/IT-services companies (Initech, Wipro, Stark Industries) with no ML, IR, or software engineering work — AI curiosity is purely superficial.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047192",
+    "score": 0.0,
+    "rationale": "Despite a B.E. in Artificial Intelligence and some MLflow/Azure skills, the actual career history shows Graphic Designer, Accountant, and Customer Support roles at fictional/IT-services firms (Dunder Mifflin, TCS, Wipro) with no production ML or IR engineering work — classic keyword inflation on a non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047193",
+    "score": 0.2,
+    "rationale": "7.8 years of software engineering (frontend, full-stack, QA) at Razorpay (product company) provides a genuine engineering foundation, but AI exposure is limited to self-learner NLP/prompt engineering with no production embedding, retrieval, ranking, or vector search systems, and a fictional company (Pied Piper) as current employer raises honeypot concerns.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0047236",
+    "score": 0.0,
+    "rationale": "Career entirely in non-technical roles (Civil Engineer, Content Writer, Mechanical Engineer, Graphic Designer) at fictional/non-tech companies (Stark Industries, Initech) with no software engineering, ML, or IR work — only superficial AI curiosity in summary.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0047238",
+    "score": 0.2,
+    "rationale": "Only 3.8 years of experience with frontend/backend roles at Wipro (IT services) and Zomato (product company), and while skills list advanced proficiency in Semantic Search, Reinforcement Learning, and Statistical Modeling, the actual career descriptions show Java/Spring Boot backend work with no evidence of production IR, embeddings, or ranking systems — likely keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047240",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience as a Software Engineer at Mphasis (IT services) doing conventional backend web development, with Weights & Biases listed as advanced but no evidence of any production ML, search, or ranking work — far too junior and lacking any applied ML/IR experience.",
+    "stratum": "top_retrieval_dense"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0072516",
+    "score": 0.0,
+    "rationale": "Career spans accounting, graphic design, and mechanical engineering roles at IT-services firms (Infosys) and fictional companies (Initech, Stark Industries), with zero ML or software engineering experience relevant to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072520",
+    "score": 0.0,
+    "rationale": "Entire career is in HR, marketing, content writing, and customer support at fictional companies (Dunder Mifflin, Stark Industries) with no production ML or IR engineering work despite an M.Tech in ML.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0072544",
+    "score": 0.2,
+    "rationale": "IIT Delhi education is a positive signal but the entire career is in sales, graphic design, and civil engineering at IT-services firms (TCS, Wipro) and a fictional company (Pied Piper), with no production ML or IR work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0072547",
+    "score": 0.4,
+    "rationale": "Genuine ML production experience at product companies (Vedantu, Unacademy) covering time-series forecasting and computer vision, but career descriptions show no IR/search/ranking work and 'Information Retrieval' skill claim appears inconsistent with actual project history.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0072660",
+    "score": 0.8,
+    "rationale": "7.1 years at product companies (Adobe, Glance, Unacademy) including ownership of a learning-to-rank search product at Adobe, hands-on semantic search infrastructure with sentence-transformers and FAISS, and expert-level skills in Information Retrieval, PyTorch, LoRA, and QLoRA — closely matching the role's core requirements.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0072709",
+    "score": 0.0,
+    "rationale": "Career is entirely content writing, marketing management, and HR at Infosys (IT services) and fictional companies (Initech), with no engineering or ML experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0072779",
+    "score": 0.2,
+    "rationale": "Only 2.1 years of experience as a .NET developer at Wipro (IT services), with self-described AI exposure limited to online courses and a small RAG side project, lacking the production ML/IR depth the role requires.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0072781",
+    "score": 0.2,
+    "rationale": "Civil engineer with 3.9 years in a manufacturing role (career description actually describes brand design work), with AI exposure limited to online courses on RAG and LangChain experiments — no production ML or IR engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072912",
+    "score": 0.4,
+    "rationale": "Genuine product-company experience at Freshworks building backend Python services, with pgvector and FAISS skills listed as advanced, but only 3.2 years total experience and the primary work is data pipelines and analytics infrastructure rather than ML ranking or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072921",
+    "score": 0.0,
+    "rationale": "Non-technical career as project manager and sales executive at fictional companies (Dunder Mifflin, Acme Corp) and IT-services firms (Infosys, Wipro), with no engineering or ML experience.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0095366",
+    "score": 0.2,
+    "rationale": "5.4yr cloud/Android/Java engineer with self-learner AI exposure only; skills are YOLO, Webpack, Figma, and Content Writing with no production IR, embeddings, or ranking experience, and a role at fictional Dunder Mifflin signals a honeypot profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095449",
+    "score": 0.2,
+    "rationale": "2.4yr QA Engineer entirely at Mindtree (IT services) with no production ML or retrieval work; the implausibly long Semantic Search skill listing (59mo advanced) on a QA profile with no supporting career evidence reads as keyword inflation.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0095468",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career spanning customer support, brand design, and operations management at fictional companies (Initech, Wayne Enterprises) with no engineering or ML work beyond surface-level AI curiosity.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0095488",
+    "score": 0.4,
+    "rationale": "5.6yr data engineer at InMobi (AdTech product company) with lightweight ML experience (XGBoost/sklearn for clustering and churn) and 16mo of Semantic Search exposure, but no production IR/retrieval/ranking system ownership and no embedding or vector-search experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095511",
+    "score": 0.2,
+    "rationale": "3yr Cloud Engineer entirely at Accenture doing frontend/API work with skills limited to Microservices, Figma, Accounting, Hadoop, and Six Sigma — zero ML, NLP, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095528",
+    "score": 0.8,
+    "rationale": "5.3yr ML engineer at Netflix (content recommendation system with sentence-transformer embeddings at 10M+ users scale) and Adobe (production MLflow/Kubeflow pipelines); expert-level skills in pgvector, Elasticsearch, OpenSearch, Fine-tuning LLMs, and PyTorch from IIIT Bangalore (tier_1) — directly covers production hybrid retrieval and embedding systems required by the role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0095566",
+    "score": 0.0,
+    "rationale": "12.2yr career entirely in non-technical roles (marketing, operations, sales, civil engineering) at TCS and Wipro with a fictional company (Initech) and no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095619",
+    "score": 0.8,
+    "rationale": "NLP Engineer at Nykaa (e-commerce product company) who owned the ranking layer for a search product, evolving it from hand-tuned scoring to a learning-to-rank model, and designed a relevance labeling pipeline; advanced skills in Sentence Transformers, Hugging Face Transformers, and Fine-tuning LLMs with NIT Warangal (tier_1) education directly align with the role's IR and ranking requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095694",
+    "score": 0.0,
+    "rationale": "9.7yr non-technical career in sales, project management, and customer support at fictional companies (Dunder Mifflin, Pied Piper) with no engineering or ML background despite marketing-manager summary language.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095698",
+    "score": 0.0,
+    "rationale": "9.1yr career as an accountant, HR manager, and customer support lead at fictional companies (Stark Industries, Initech, Wayne Enterprises) with zero engineering depth; Reinforcement Learning listed as advanced (50mo) is implausible keyword inflation given the entirely non-technical work history.",
+    "stratum": "low_behavioral"
+  }
+]

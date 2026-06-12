@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0063081",
+    "score": 0.0,
+    "rationale": "Career spans Customer Support and Project Manager roles at Pied Piper (fictional company) and Wipro (IT services), with a marketing manager summary template and no ML, IR, or engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063109",
+    "score": 0.2,
+    "rationale": "Only 3.4 years of experience entirely at HCL (IT services), with self-learner AI exposure via online courses and API experimentation but zero production IR, ranking, or embedding systems experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0063150",
+    "score": 0.0,
+    "rationale": "Entire career is Project Manager and Customer Support at Pied Piper (fictional company), HR Manager, and Mechanical Engineer roles with a boilerplate marketing manager summary and no ML or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063167",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer at Initech (fictional company) for 1.6 years with a marketing manager summary template and skills (PowerPoint, Photoshop, Salesforce CRM) entirely unrelated to ML or information retrieval.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0063197",
+    "score": 0.0,
+    "rationale": "Career is Customer Support at Globex and Sales Executive at Stark Industries (fictional company), with a marketing manager boilerplate summary and no ML, IR, or technical engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063237",
+    "score": 0.0,
+    "rationale": "Roles are HR Manager at Dunder Mifflin (fictional company), Operations Manager at Stark Industries (fictional company), and Content Writer at Infosys — entirely non-technical with no ML or IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063270",
+    "score": 0.0,
+    "rationale": "Career spans Mechanical Engineer and Graphic Designer at Wayne Enterprises (fictional company), Customer Support at TCS, and Civil Engineer at Wipro — no ML or AI engineering experience despite marketing manager summary.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0063361",
+    "score": 0.2,
+    "rationale": "Only 1.2 years total experience at Cognizant (IT services) doing Java backend work, with LlamaIndex listed as 'advanced' (keyword inflation red flag) and only a small RAG side project indicating no production IR or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0063446",
+    "score": 0.0,
+    "rationale": "Operations Manager at Pied Piper (fictional company) and Project Manager at Acme Corp with a marketing manager boilerplate summary and no technical ML or IR skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063493",
+    "score": 0.0,
+    "rationale": "Career is Graphic Designer at Wayne Enterprises (fictional company), Accountant at Initech (fictional company), and Operations Manager — entirely non-technical roles with no ML, IR, or engineering experience.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0046085",
+    "score": 0.2,
+    "rationale": "Entire career (3.3 yrs) at TCS in IT services doing cloud/DevOps work with only self-directed AI exposure (online courses, small RAG side project) and no production IR, embedding retrieval, or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0046150",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (graphic design, accounting, marketing, sales, content writing) including two fictional companies (Dunder Mifflin, Stark Industries), with zero ML, IR, or engineering work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0046156",
+    "score": 0.0,
+    "rationale": "Non-technical career in sales and accounting at Infosys and fictional Wayne Enterprises, with no ML, software engineering, or IR experience of any kind.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0046231",
+    "score": 0.4,
+    "rationale": "Strong data engineering background (7.4 yrs) at product companies PolicyBazaar and Zomato with IIT Kharagpur M.S. ML, but no demonstrated production experience in embeddings, vector search, ranking, or retrieval systems — the core of this role.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0046235",
+    "score": 0.0,
+    "rationale": "14.8-year career entirely in non-technical roles (project management, marketing, sales, content writing) at Wipro and Acme Corp with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046238",
+    "score": 0.4,
+    "rationale": "Solid data engineering background at product companies PhonePe and InMobi with Hugging Face Transformers and TensorFlow experience, but primary ML skills are in CV/speech recognition rather than IR/ranking, and no evidence of production retrieval systems or NDCG/MAP evaluation ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0046339",
+    "score": 0.0,
+    "rationale": "Content writer role at Infosys with a self-described marketing background and no software engineering, ML, or IR experience despite possessing a B.Sc in Artificial Intelligence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046359",
+    "score": 0.2,
+    "rationale": "5.2 years of full-stack and QA work entirely at IT-services firms TCS and Mphasis, with only self-learner AI exposure (online courses, OpenAI API) and no production ML, retrieval, or ranking experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0046393",
+    "score": 0.0,
+    "rationale": "Non-technical career in sales, project management, and accounting across fictional companies Wayne Enterprises and Stark Industries with no engineering or ML experience and clear honeypot signals.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046480",
+    "score": 0.0,
+    "rationale": "Career spent entirely in non-technical roles (customer support, HR management, project management, sales) at TCS, Wipro, and Pied Piper with no engineering or ML work of any kind.",
+    "stratum": "random"
+  }
+]

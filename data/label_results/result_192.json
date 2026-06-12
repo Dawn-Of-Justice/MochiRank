@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0076946",
+    "score": 0.0,
+    "rationale": "Civil Engineer with only 1.2 years of experience at Stark Industries (fictional/honeypot company), with skills limited to Spring Boot, Figma, and CSS — zero ML, IR, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076947",
+    "score": 0.2,
+    "rationale": "9.2yr .NET/DevOps engineer whose entire career spans Mphasis and Cognizant (IT services) with self-learner-only AI exposure and no production ML, embeddings, or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076966",
+    "score": 0.2,
+    "rationale": "Java/QA backend engineer at Pied Piper (fictional/honeypot company) with only a small RAG side project and no production retrieval, ranking, or embedding system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076974",
+    "score": 0.2,
+    "rationale": "Frontend/DevOps engineer with entire career at HCL (IT Services) and Initech (fictional/honeypot), whose ML skills are primarily Image Classification and CNN — no production IR or ranking systems experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076995",
+    "score": 0.4,
+    "rationale": "AI Research Engineer at product companies (Haptik, Rephrase.ai) with production recommendation/collaborative filtering and XGBoost experience, but lacks dense retrieval, vector databases, hybrid search, and ranking evaluation metrics (NDCG/MRR) that the role requires.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077013",
+    "score": 0.2,
+    "rationale": "8.4yr mobile developer at Swiggy and CRED (product companies) with strong backend fundamentals and MLflow/BentoML in skills, but career is entirely mobile/backend with only self-learner RAG side project and no production ML or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077041",
+    "score": 0.2,
+    "rationale": "Backend/data engineer at Nykaa with only 2.3 years of experience focused on Snowflake warehousing and Airflow pipelines; Haystack appears in skills but there is no evidence of production IR, embedding, or ranking system deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077081",
+    "score": 0.0,
+    "rationale": "Sales Executive at Stark Industries (fictional/honeypot company) whose 9.9yr career spans sales, graphic design, and customer support — entirely non-technical with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077123",
+    "score": 0.2,
+    "rationale": "8.4yr developer whose entire career is at Infosys and TCS (IT services only) across mobile, DevOps, and .NET roles with no production ML, retrieval, or ranking experience despite a Ph.D in Computer Science.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0077199",
+    "score": 0.0,
+    "rationale": "Marketing Manager at TCS with 3.1 years in non-technical marketing and customer support roles, whose only AI exposure is experimenting with ChatGPT for productivity — no engineering or ML skills.",
+    "stratum": "low_behavioral"
+  }
+]

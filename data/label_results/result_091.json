@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0035814",
+    "score": 0.2,
+    "rationale": "9 years of backend/QA engineering with one product-company stint (Razorpay, test automation) but career majority at IT-services (Mindtree x2, HCL); AI/ML is entirely self-learner with a small RAG side project and no production embeddings, retrieval, or ranking systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0035874",
+    "score": 0.0,
+    "rationale": "Career is entirely marketing management and operations at IT-services firms (Infosys, TCS, Wipro) and fictional Globex Inc, with no engineering, ML, or IR work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035904",
+    "score": 0.2,
+    "rationale": "Ph.D in Data Science and an advanced Semantic Search skill listing provide surface relevance, but actual career shows accounting at TCS and a mechanical engineering role at fictional Wayne Enterprises, with AI interest limited to online courses and LangChain experiments.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0035916",
+    "score": 0.0,
+    "rationale": "Despite a claimed Ph.D in Computer Science, the career spans sales, marketing, and accounting at IT-services (TCS x2) and fictional companies (Stark Industries, Wayne Enterprises) with no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035933",
+    "score": 0.0,
+    "rationale": "Entire career is at fictional companies (Globex Inc, Stark Industries, Initech x2) with completely inconsistent role descriptions (e.g., Graphic Designer described as mechanical engineering), a marketing manager background, and zero ML or engineering substance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035940",
+    "score": 0.0,
+    "rationale": "All work experience is at IT-services firms (TCS x2, Infosys) in non-technical roles — content writing, operations management, and HR — with no Python, ML, or IR skills evident in skills or career descriptions.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035968",
+    "score": 0.2,
+    "rationale": "M.S. AI from IISc Bangalore (tier_1) is a genuine educational credential, but the entire 11-year career is in graphic design and content writing at fictional companies (Pied Piper, Wayne Enterprises, Hooli) with no production ML, retrieval, or ranking work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0036023",
+    "score": 0.0,
+    "rationale": "Career splits between fictional companies (Pied Piper, Wayne Enterprises) and IT-services (TCS, Infosys) in content writing, project management, and accounting roles; AI interest is only LangChain tutorials with no engineering depth and tier_4 education.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0036090",
+    "score": 0.2,
+    "rationale": "Software engineering background (IT-services QA at Mindtree) with ML self-learning interest, but only 1.6 years total experience and severe skill inflation — claims 48 months of Reinforcement Learning and 39 months of MLOps when total work history is 19 months.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036116",
+    "score": 0.0,
+    "rationale": "Customer support and marketing career at fictional companies (Dunder Mifflin, Pied Piper x2) with no engineering, Python, or ML skills; correctly identified as a honeypot candidate.",
+    "stratum": "honeypot_flagged"
+  }
+]

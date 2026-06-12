@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0097820",
+    "score": 0.0,
+    "rationale": "Career spans customer support, graphic design, HR, and sales exclusively at IT services firms (Infosys, Wipro) with no ML, IR, or engineering depth whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0097828",
+    "score": 0.0,
+    "rationale": "Entire career history is at fictional companies (Stark Industries, Dunder Mifflin, Initech) in accounting and support roles with no ML or IR experience despite a PhD credential.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097831",
+    "score": 0.0,
+    "rationale": "Sales and civil engineering roles at TCS (IT services) and Wayne Enterprises (fictional company) with no ML, NLP, or information retrieval experience in any role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097836",
+    "score": 0.0,
+    "rationale": "Only 1.8 years of experience in a sales role at Wayne Enterprises (fictional company) doing accounting work; IIT Kanpur AI PhD credential is contradicted by the non-technical job history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0097859",
+    "score": 0.2,
+    "rationale": "M.Sc Data Science from PES University provides some adjacent education, but the only role is a mechanical engineer at a manufacturing firm doing customer support work with no production ML or IR experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0097925",
+    "score": 0.0,
+    "rationale": "Business Analyst at Infosys (IT services) with only logistics operations work; PhD in ML from VIT Chennai is unsubstantiated by any ML production experience in the career history.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0098060",
+    "score": 0.0,
+    "rationale": "Accountant roles at Pied Piper and Wayne Enterprises (both fictional companies) with marketing and sales descriptions and no technical ML or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098085",
+    "score": 0.0,
+    "rationale": "HR Manager and content writer roles at entirely fictional companies (Wayne Enterprises, Pied Piper, Initech) with no genuine ML production work despite NIT Trichy education and an advanced BentoML skill claim.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098092",
+    "score": 0.0,
+    "rationale": "Pure marketing manager background across fictional companies (Stark Industries, Dunder Mifflin, Pied Piper, Wayne Enterprises) with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098107",
+    "score": 0.2,
+    "rationale": "9.9 years of backend/DevOps engineering including real product company experience at Swiggy, with self-taught LLM exposure via a small RAG side project, but no production IR, ranking, or embedding system work.",
+    "stratum": "random"
+  }
+]

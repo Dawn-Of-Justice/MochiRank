@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0043444",
+    "score": 0.0,
+    "rationale": "Current role at Initech (fictional/honeypot company) and career is entirely Android/mobile and Java backend development with no ML, IR, or ranking experience; AI exposure is self-described as 'self-learner level' with a small RAG side project only.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0043496",
+    "score": 0.0,
+    "rationale": "Career is entirely customer support and project management at Globex Inc and Infosys with no engineering or ML work; top skills are Excel, HTML, and beginner REST APIs with zero retrieval, ranking, or production AI experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043528",
+    "score": 0.4,
+    "rationale": "Data engineering background at Dream11 (product company) with Pinecone listed as an intermediate skill, but primary expertise is Airflow/Spark batch pipelines rather than production IR, embedding retrieval, or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0043540",
+    "score": 0.0,
+    "rationale": "12.5-year career spans customer support, sales, graphic design, and accounting with no engineering depth; AI interest is limited to recent online courses on RAG and vector databases with no production ML work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043564",
+    "score": 0.0,
+    "rationale": "Entire career is brand design and creative direction at Infosys (IT services) with a self-described marketing manager background; Chemical Engineering degree and no ML, IR, or software engineering work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043637",
+    "score": 0.6,
+    "rationale": "Advanced Learning to Rank skill with 55 months duration and advanced Milvus (vector DB) experience, combined with ML engineering roles at AI product companies Rephrase.ai and Yellow.ai, though primary project focus has been NLP classification and time-series forecasting rather than production search/retrieval pipeline ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0043648",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical roles (Business Analyst, Sales Executive, HR Manager) at Wayne Enterprises (fictional honeypot company) and TCS IT services, with no production engineering, ML, or IR experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0043660",
+    "score": 0.4,
+    "rationale": "IIT Bombay B.Tech and M.Sc Machine Learning are strong educational signals, but 6.9-year career has been full-stack web development at Accenture and Flipkart with no production ML or IR systems; LoRA advanced skill (50 months) appears inconsistent with actual work history.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0043728",
+    "score": 0.2,
+    "rationale": "Vector Search advanced skill with 55-month duration appears to be keyword inflation given a DevOps/mobile development career at Acme Corp and TCS; only 3.6 years total experience with no production IR, ranking, or ML systems work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043811",
+    "score": 0.0,
+    "rationale": "Current role at Dunder Mifflin (fictional honeypot company) and career is customer support, HR manager, and business analyst roles with no engineering work; Computer Vision advanced skill is entirely inconsistent with actual career history.",
+    "stratum": "random"
+  }
+]

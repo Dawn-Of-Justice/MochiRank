@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0073978",
+    "score": 0.2,
+    "rationale": "Entire 5.6-year career spent at IT-services firms (TCS, Capgemini, Wipro) doing QA/DevOps/mobile work with no ML or IR experience; AI exposure is self-learner only (online courses, small RAG side project).",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073983",
+    "score": 0.0,
+    "rationale": "Non-technical profile with roles at fictional companies (Pied Piper, Stark Industries) in sales, accounting, and graphic design; 'Feature Engineering advanced' skill is keyword inflation with no supporting engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073988",
+    "score": 0.2,
+    "rationale": "9.2 years primarily in frontend/full-stack web engineering at IT-services firms (Wipro, Mphasis) with no production ML, IR, or ranking systems experience; AI/ML is self-learner level only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074001",
+    "score": 0.2,
+    "rationale": "Career at Cognizant (IT services) and Initech (fictional company) in QA/frontend roles; LangChain listed as advanced skill but actual work shows no production IR/ranking or embeddings deployment experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074010",
+    "score": 0.0,
+    "rationale": "14.8-year career entirely in non-technical roles (sales, mechanical design, operations, customer support) at multiple fictional companies (Hooli, Initech, Stark Industries); no ML or software engineering background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074024",
+    "score": 0.6,
+    "rationale": "Built production recommendation systems at Haptik (collaborative filtering, matrix factorization) and NLP pipelines with transformers at InMobi — both product companies — with relevant PEFT and RAG skills, though only 3.9 years of experience and limited explicit IR/evaluation-framework ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074046",
+    "score": 0.0,
+    "rationale": "10.7-year career entirely in marketing manager, mechanical engineering, and customer support roles with no ML or software engineering work; tier_4 education and no technical skills relevant to AI/IR systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074049",
+    "score": 0.2,
+    "rationale": "Entire career at IT-services firms (Cognizant, Capgemini, Accenture) doing mobile/Java backend work; PyTorch and Reinforcement Learning listed as advanced skills but actual job descriptions show no ML production work, indicating keyword inflation.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0074066",
+    "score": 0.0,
+    "rationale": "Single 3.9-year career role at Stark Industries (fictional company) in enterprise sales; profile self-describes as a marketing manager with no engineering or ML experience, and skills (Photoshop, SAP, Figma) are entirely non-technical.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074092",
+    "score": 0.0,
+    "rationale": "2.5-year career as a content writer at Initech (fictional company) with a marketing background; despite a Ph.D listing from a tier_4 institution, the profile and skills (SAP, HTML, Scrum) show no ML engineering or IR systems experience.",
+    "stratum": "random"
+  }
+]

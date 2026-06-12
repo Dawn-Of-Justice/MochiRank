@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0086151",
+    "score": 0.8,
+    "rationale": "7.7 years of ML experience with direct production work on ranking (learning-to-rank at Wysa), content recommendation with sentence-transformer embeddings at Glance serving 10M+ users, and semantic search with FAISS+BGE at Meta — plus expert-level Qdrant and Elasticsearch skills; the primary gap is a tier_3 education and heavy LangChain mention.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0086154",
+    "score": 0.4,
+    "rationale": "6.8 years across product companies (Ola, Verloop, PharmEasy) with XGBoost and scikit-learn experience, but career is focused on predictive modeling (churn/fraud) rather than retrieval or ranking systems, and the OpenSearch skill is present but no evidence of embedding-based or hybrid search deployment.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0086163",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (sales, accounting, content writing) with no engineering or ML work, and two roles are at fictional companies (Pied Piper, Wayne Enterprises), flagging this as a honeypot profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0086174",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager background with no ML or engineering experience; career is in customer support and sales at TCS, Infosys, and fictional company Pied Piper, with no relevant technical skills for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086207",
+    "score": 0.2,
+    "rationale": "7.5 years of backend engineering experience but spent primarily in IT-services (Tech Mahindra, HCL) and QA roles with no production ML or retrieval systems; self-described AI exposure is only at self-learner/side-project level, and the 'Embeddings' skill lacks supporting production evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086243",
+    "score": 0.0,
+    "rationale": "Self-declared marketing manager with 4.2 years in non-technical roles at Infosys and fictional company Dunder Mifflin; zero ML or engineering depth, with only ChatGPT experimentation cited as AI exposure.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0086269",
+    "score": 0.2,
+    "rationale": "9.3 years of backend/DevOps experience across IT-services firms (Mphasis, HCL) and generic companies, with no evidence of ML, retrieval, or ranking work; Reinforcement Learning listed as an advanced skill but is entirely inconsistent with a DevOps career history, suggesting keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086371",
+    "score": 0.2,
+    "rationale": "Only 2.1 years total experience in a DevOps/QA role at Tech Mahindra IT-services with no production ML work; strong education (IIT Kharagpur, BITS Pilani) is a positive signal but the candidate self-acknowledges having no hands-on ML beyond hobby projects, making them too junior and misaligned.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086383",
+    "score": 0.0,
+    "rationale": "12.9 years in non-technical roles (HR manager, graphic designer, accountant, business analyst) with no ML or engineering experience; multiple roles at fictional companies (Initech, Dunder Mifflin, Stark Industries) confirm this is a honeypot profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0086455",
+    "score": 0.2,
+    "rationale": "4.8 years of frontend/cloud engineering experience mostly at IT-services firms (TCS, Capgemini) and fictional Pied Piper; FAISS listed as an advanced skill with 22 months but the career history shows no production ML or retrieval work to substantiate it, and the current role at a fictional company is a negative signal.",
+    "stratum": "title_match_strong"
+  }
+]

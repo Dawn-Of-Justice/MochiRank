@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0049743",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Civil Engineer title masking customer support, operations, HR, and project management roles at Acme Corp and Initech) with no ML, NLP, or IR experience, and the summary explicitly describes a marketing manager background with only casual ChatGPT curiosity.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0049752",
+    "score": 0.0,
+    "rationale": "Operations Manager with only 3.4 years of experience at Wayne Enterprises (fictional company flag) doing business analyst consulting work, with no ML or IR skills — beginner Java/Go listings and Excel are the only technical signals, and the AI interest is purely course-taking with no production evidence.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0049760",
+    "score": 0.0,
+    "rationale": "11.5-year career spans customer support at Pied Piper (fictional), sales, and accounting roles with a marketing manager self-description in the summary, and skills (BigQuery, Spark, YOLO) show no IR/ranking/NLP production work despite some data tool exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049798",
+    "score": 0.0,
+    "rationale": "Civil Engineer title masking enterprise sales, mechanical engineering, marketing manager, and customer support roles across Initech and Pied Piper (both fictional companies), with zero ML/NLP/IR skills and a summary explicitly describing a marketing manager background.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0049831",
+    "score": 0.4,
+    "rationale": "5.4 years of applied ML at product companies (BYJU'S, Meesho, Glance) covering NLP pipelines, XGBoost/LightGBM modeling, and BM25 listed as an advanced skill with 50 months exposure, but career descriptions focus on forecasting, churn prediction, and sentiment analysis rather than end-to-end ranking/retrieval system ownership, and evaluation metric fluency (NDCG, MAP) is absent.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0049896",
+    "score": 0.8,
+    "rationale": "7.3 years of ML production experience including a RAG chatbot with Pinecone+OpenAI embeddings at Unacademy and a 10M-user content recommendation system using sentence-transformer embeddings at Flipkart, with expert-level Information Retrieval endorsement (51 endorsements, 69 months) and PyTorch/LangChain/LlamaIndex depth — strong hybrid retrieval fit, with the main gap being no explicit NDCG/MAP evaluation framework ownership documented.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0049980",
+    "score": 0.0,
+    "rationale": "14.1-year career is entirely non-ML: customer support lead at Infosys, marketing at Acme Corp, enterprise sales at Stark Industries (fictional company), and SEO content writing at Wipro — all IT-services or non-technical roles — with skills (Photoshop, TypeScript, Snowflake) showing no IR, ranking, or NLP production work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0049992",
+    "score": 0.0,
+    "rationale": "11-year career consists of customer support at TCS (IT-services), marketing manager at Pied Piper (fictional), and graphic design roles, with frontend skills (React, Next.js, CSS, GraphQL) and a marketing manager self-description — no ML, NLP, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050006",
+    "score": 0.0,
+    "rationale": "Career mixes Civil Engineer titles at Pied Piper/Globex (one fictional) with content writing, business analysis at TCS, and a marketing manager background stated in the summary, and skills (Microservices, Marketing, Kubernetes, YOLO, CI/CD) show no NLP, retrieval, or ranking production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050015",
+    "score": 0.2,
+    "rationale": "5.6 years in backend/data engineering (Accenture consulting, PharmEasy) with solid Python/Spark/Kafka infrastructure skills and self-directed ML exposure, but skills listed (CNN, Deep Learning, Speech Recognition, Time Series) have no IR or ranking relevance, and the career history shows no embedding-based retrieval, vector search, or ranking system work.",
+    "stratum": "high_behavioral"
+  }
+]

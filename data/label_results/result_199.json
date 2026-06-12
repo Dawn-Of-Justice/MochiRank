@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0079461",
+    "score": 0.0,
+    "rationale": "Career spans marketing manager, civil engineering, HR, and sales roles at IT services firms (Infosys, TCS) and a fictional company (Stark Industries), with zero ML, IR, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079486",
+    "score": 0.2,
+    "rationale": "Entire career is a single 2.7-year data-engineering role at Wipro (IT services) building ETL pipelines; despite 'advanced' Pinecone and NLP skills listed, there is no evidence of production IR, retrieval systems, or ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079605",
+    "score": 0.0,
+    "rationale": "Customer Support role at fictional company Initech with a marketing manager background and 1.5 years total experience; no engineering, ML, or IR skills are evident.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079644",
+    "score": 0.2,
+    "rationale": "DevOps Engineer at Razorpay (a product company) with 2.5 years of cloud/mobile backend work and only self-learner-level AI exposure via online courses and API experiments, with no production ML or retrieval system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079701",
+    "score": 0.2,
+    "rationale": "Analytics Engineer at Infosys (IT services only) for 2.5 years building ETL pipelines; MLflow, Kubeflow, and PEFT appear as advanced skills but actual described work is entirely data engineering with no production ML ranking or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0079724",
+    "score": 0.2,
+    "rationale": "Full Stack Developer with 6.6 years entirely at consulting/IT services firms (Accenture, Mphasis) and fictional Stark Industries, with primary expertise in TTS and Speech Recognition — a domain the JD explicitly disqualifies without significant NLP/IR crossover.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0079850",
+    "score": 0.0,
+    "rationale": "Project Manager at Infosys with prior HR and accounting roles (at fictional Stark Industries and Initech), summarizing a marketing manager background with only casual ChatGPT experimentation and no engineering or ML work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0079877",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer and Graphic Designer at two fictional companies (Wayne Enterprises and Pied Piper) performing content writing and SEO work, with no engineering, ML, or IR background whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079888",
+    "score": 0.4,
+    "rationale": "Junior ML Engineer at InMobi and Swiggy (real product companies) with 4.3 years building Flask ML APIs, NLP transformer pipelines, and production fraud detection features, plus advanced pgvector and PEFT skills — but lacks explicit retrieval/ranking system ownership and NDCG/evaluation framework experience required by the JD.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0079963",
+    "score": 0.0,
+    "rationale": "Civil Engineer and Operations Manager titles with entire career at TCS and Wipro (IT services) in logistics and sales functions, with a marketing manager self-description and no ML, IR, or software engineering experience.",
+    "stratum": "title_match_strong"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0047758",
+    "score": 0.0,
+    "rationale": "Marketing Manager with entire career in non-technical roles (brand, SEO, content) at Dunder Mifflin (fictional honeypot) and Wipro IT services, with zero ML/IR/engineering work despite a Ph.D in ML on paper.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047872",
+    "score": 0.2,
+    "rationale": "General software engineer with 4.9 years across web/cloud/DevOps at Accenture and Wayne Enterprises (fictional honeypot), with only self-learner-level AI exposure and no production ML, retrieval, or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0047884",
+    "score": 0.0,
+    "rationale": "Operations/Business Analyst career entirely in non-technical management roles at Pied Piper (fictional honeypot), Stark Industries (fictional honeypot), and TCS IT services, with no ML or IR engineering whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047931",
+    "score": 0.0,
+    "rationale": "Content Writer/Accountant/Project Manager career with zero engineering or ML work; despite an M.Sc from Stanford listed, all roles are at Dunder Mifflin (fictional honeypot), Initech (fictional honeypot), and accounting/marketing functions.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0047945",
+    "score": 0.2,
+    "rationale": "8.3 years as mobile developer, QA engineer, and cloud engineer (primarily at Cognizant IT services and Accenture), with only a self-learner RAG side project and no production ML, embeddings, or ranking experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0048016",
+    "score": 0.0,
+    "rationale": "Project Manager and Mechanical Engineer career at Wayne Enterprises (fictional honeypot) and Stark Industries (fictional honeypot) with no technical ML or software engineering background relevant to AI/IR roles.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048079",
+    "score": 0.0,
+    "rationale": "Sales Executive for 7.8 years (at Stark Industries/Hooli in non-technical accounting and sales roles) with only recent online RAG/LangChain courses and no production ML or engineering depth.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0048088",
+    "score": 0.0,
+    "rationale": "Customer Support/Marketing Manager/Accountant career across Infosys IT services and Wipro IT services with no engineering or ML work; MLflow listed as advanced skill is inconsistent with a non-technical career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048157",
+    "score": 0.2,
+    "rationale": "Only 3.6 years experience as mobile developer and QA engineer at Cognizant IT services, with self-learner RAG side project and Qdrant advanced skill claim but no production ML deployment or ranking systems work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048166",
+    "score": 0.6,
+    "rationale": "5.2-year ML Engineer at product-stage AI companies (Aganitha, Sarvam AI, BYJU'S) with production recommendation/ranking features, Pinecone and Qdrant advanced skills, IIT Bombay M.S., and hands-on deployment experience — missing deep hybrid retrieval/NDCG ownership but otherwise a solid fit.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0056211",
+    "score": 0.4,
+    "rationale": "Has 6.5 years at product companies (Swiggy, InMobi) with backend and data pipeline experience, but career trajectory is data engineering rather than IR/ranking — no evidence of embeddings-based retrieval, vector search, NDCG/MAP evaluation, or learning-to-rank; top skills (YOLO, ASR, Kubeflow) signal CV/speech domain rather than NLP/IR.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0056260",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Customer Support, Content Writer, Accountant) at a fictional company (Pied Piper) and Wipro; no engineering or ML work whatsoever, making this profile completely unfit for a Senior AI Engineer role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0056262",
+    "score": 0.4,
+    "rationale": "Has BM25 as an advanced skill and built recommendation-style features in production at Swiggy (a product company), but significant gaps remain — career history leans heavily toward computer vision (YOLO, OpenCV, ResNet) and collaborative filtering rather than hybrid retrieval, NDCG/MAP evaluation frameworks, or dense embeddings for IR; Wipro stint adds an IT-services negative signal.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0056342",
+    "score": 0.0,
+    "rationale": "Entire career spans non-technical roles (Content Writer, Mechanical Engineer, Graphic Designer, Sales Executive) at multiple fictional/honeypot companies (Dunder Mifflin, Initech) with zero engineering or ML experience and no relevant technical skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056663",
+    "score": 0.2,
+    "rationale": "Only 2.2 years of experience entirely at Infosys (IT-services) in DevOps/infrastructure; AI exposure is purely self-learner level (online courses, small RAG side project using LlamaIndex) with no production ML, retrieval, or ranking experience, and no IR/evaluation skills in profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056665",
+    "score": 0.4,
+    "rationale": "Has Semantic Search as an advanced skill and product-company experience at Flipkart and Swiggy, but actual career work was QA/test automation (Selenium, Locust) rather than ML engineering; the inflated skills list (Image Classification, Speech Recognition, Reinforcement Learning all at 'advanced' with long durations despite no matching career descriptions) suggests keyword inflation and a CV/speech focus rather than genuine IR/ranking depth.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0056689",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical sales and content writing roles at fictional companies (Pied Piper, Stark Industries); no engineering or ML work, and skills are CSS, SEO, and Project Management — completely misaligned with a Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056694",
+    "score": 0.2,
+    "rationale": "8.5 years of experience but career is overwhelmingly at IT-services firms (TCS for 65 months, HCL) in frontend/mobile/DevOps roles; one product-company stint at Zomato was DevOps/infrastructure, not ML; RAG side project is self-learner only, with no embeddings, retrieval, or ranking production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056770",
+    "score": 0.0,
+    "rationale": "Entire 10.8-year career is in non-technical roles (Customer Support, Operations Manager, Business Analyst, Graphic Designer) at fictional companies (Stark Industries, Initech, Wayne Enterprises); no engineering or ML skills and a skills list of Sales, CSS, and Marketing make this a complete non-fit.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056828",
+    "score": 0.0,
+    "rationale": "12.4 years spent entirely as Content Writer/Civil Engineer/Graphic Designer/HR Manager at IT-services firms (Infosys, TCS) and fictional company (Dunder Mifflin); zero ML or engineering relevance, and skills like Diffusion Models listed as 'advanced' with only 20 months are keyword inflation on a fundamentally non-technical profile.",
+    "stratum": "random"
+  }
+]

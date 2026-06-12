@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0061269",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (customer support at Wipro, sales, HR management) with fictional companies (Initech, Wayne Enterprises) and zero ML or engineering experience despite listing BentoML as an advanced skill.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0061339",
+    "score": 0.8,
+    "rationale": "Built production embedding-based recommendation system with sentence-transformers for 10M+ users at Rephrase.ai (AI startup) and shipped XGBoost/LightGBM ranking models at Zoho, with expert-level Vector Search skills directly matching the JD's core requirements for hybrid retrieval and learning-to-rank.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0061341",
+    "score": 0.2,
+    "rationale": "Career is primarily frontend/backend/DevOps work across IT-services firms (Cognizant, Infosys, Accenture) with no production ML or IR experience; Vector Search skill listed but not substantiated by any actual ranking or retrieval work in their career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061355",
+    "score": 0.0,
+    "rationale": "Entire 13.9-year career is in non-technical roles (HR Manager, Civil Engineer, Business Analyst, Marketing Manager) at fictional companies (Pied Piper, Initech) with no engineering or ML foundation; recent online RAG courses do not constitute production experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0061364",
+    "score": 0.2,
+    "rationale": "Only 2.7 years of experience entirely in IT-services firms (Tech Mahindra, HCL) doing frontend/mobile development with no production ML or IR work; RAG side project mentioned in summary does not substitute for the required production retrieval/ranking experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0061433",
+    "score": 0.4,
+    "rationale": "Has Milvus (vector DB) as an advanced skill and a Java developer stint at Flipkart (product company), but the majority of 8.1-year career is consulting/IT-services work (Accenture, Mphasis) in web/backend roles with no demonstrated production IR or ranking system ownership.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061487",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical operations and project management roles at Acme Corp and Dunder Mifflin (fictional company), with no engineering or ML experience; Kubeflow listed as advanced skill is not supported by any technical role in their history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061503",
+    "score": 0.0,
+    "rationale": "11.4-year career spans only non-technical roles — customer support, content writing, graphic design, business analysis — including positions at fictional company Dunder Mifflin, with zero engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061508",
+    "score": 0.0,
+    "rationale": "Only 1.6 years of experience as a Sales Executive at fictional Wayne Enterprises with a marketing/operations background and no engineering or ML work; Object Detection listed as an advanced skill is inconsistent with their entire career history.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0061532",
+    "score": 0.4,
+    "rationale": "Strong educational pedigree (IIT Kanpur B.Sc) and 7.9 years of software engineering experience, but career is primarily test automation (CRED) and full-stack web development (Accenture consulting) with no demonstrated production ML, retrieval, or ranking system experience despite LlamaIndex listed as top skill.",
+    "stratum": "tier1_education"
+  }
+]

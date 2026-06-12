@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0076675",
+    "score": 0.0,
+    "rationale": "Business Analyst with 1.2 years of experience at Wayne Enterprises (fictional company/honeypot), career background in marketing roles with zero ML/IR engineering depth, and skills limited to dbt/Azure/Illustrator with no embeddings, retrieval, or ranking experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076778",
+    "score": 0.4,
+    "rationale": "7.3 years of solid data engineering experience (Meesho, Snowflake/dbt, Python) with Weaviate listed as an intermediate skill, but career is primarily data pipelines and analytics rather than production IR/search/ranking systems, and there is no evidence of NDCG/evaluation framework ownership or embeddings-based retrieval deployed to real users.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0076790",
+    "score": 0.0,
+    "rationale": "Civil Engineer title with entire career at TCS (IT services) in business analyst and operations management roles, no ML or IR engineering experience, and skills (gRPC beginner, Figma, Photoshop) are entirely irrelevant to production search/ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076799",
+    "score": 0.2,
+    "rationale": "2.6 years of Java/frontend engineering at Initech (fictional company/honeypot) with self-learner AI exposure only (small RAG side project, OpenAI API calls), no production IR/search experience, and the claimed Reinforcement Learning advanced skill with 24-month duration is inconsistent with a frontend-focused profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0076803",
+    "score": 0.2,
+    "rationale": "5.6 years of experience entirely across IT-services firms (Tech Mahindra, Infosys) in DevOps/frontend/Java backend roles with self-learner AI exposure only, no production ML or search/ranking systems, and skills (Feature Engineering advanced, W&B advanced) appear inflated relative to an entirely infrastructure/web-dev career.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0076828",
+    "score": 0.0,
+    "rationale": "11.6 years entirely in non-technical roles (business analyst, civil engineer title, HR manager, operations manager) at TCS/Wipro/Initech with no ML or engineering work, Commerce B.Sc education, and skills (Kubernetes, Airflow) appear keyword-inflated with no supporting career evidence.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076831",
+    "score": 0.8,
+    "rationale": "4 years as Search Engineer at product companies (Zomato, Krutrim) with hands-on experience shipping XGBoost/LightGBM ranking models, building semantic search with sentence-transformers and FAISS, and production skills in Milvus (expert), BM25 (advanced), and Weaviate (advanced) directly matching the JD's core requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0076842",
+    "score": 0.0,
+    "rationale": "9.7 years entirely in non-technical roles (business analyst, operations manager, civil engineer title, mechanical engineer at Dunder Mifflin — a fictional honeypot company) with no ML or IR engineering experience, and skills (Airflow, CI/CD, Go) are inconsistent with the business/operations career history.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0076904",
+    "score": 0.8,
+    "rationale": "4.2 years at product companies (Nykaa e-commerce, Mad Street Den AI) with directly relevant experience: owned the learning-to-rank ranking layer for e-commerce search, built semantic search with sentence-transformers and FAISS over 500K documents, and expert-level skills in Machine Learning, Hugging Face Transformers, OpenSearch, and NLP align precisely with the JD's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0076910",
+    "score": 0.0,
+    "rationale": "1.7 years of mobile/Android development at Accenture and Initech (fictional company) with zero ML or IR experience, self-learner AI exposure only, and skills (Excel, SAP, PowerPoint) are entirely misaligned with production search/ranking engineering requirements.",
+    "stratum": "high_behavioral"
+  }
+]

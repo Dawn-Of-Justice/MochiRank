@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0087911",
+    "score": 0.0,
+    "rationale": "Career consists entirely of sales and accounting roles at a fictional company (Stark Industries) with no engineering or ML experience whatsoever, and the summary explicitly describes a marketing manager background.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0087978",
+    "score": 0.2,
+    "rationale": "Has 4 years of backend web development and a self-described self-learner AI level with a small RAG side project, but current role is at a fictional company (Initech) and there is no production ML, IR, or ranking experience to qualify for this role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0087985",
+    "score": 0.0,
+    "rationale": "Career is Graphic Designer at Infosys followed by Marketing Manager at Wayne Enterprises (a fictional company), with no technical engineering or ML experience and skills limited to TypeScript/Figma/SEO.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0087990",
+    "score": 0.2,
+    "rationale": "Nearly 10 years of experience but entire career is at IT services firms (Wipro, Mindtree, HCL) in DevOps/QA/backend roles with no production ML or IR work, and claimed advanced Reinforcement Learning and Object Detection skills are inconsistent with the actual career history.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0088011",
+    "score": 0.0,
+    "rationale": "Only 1.8 years of experience in a Sales Executive role at Infosys with non-technical skills (Photoshop, SAP, Snowflake) and a summary describing a marketing manager background with no engineering or ML depth.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0088027",
+    "score": 0.0,
+    "rationale": "Entire 3.5-year career is as a Business Analyst and Project Manager at TCS with operations/logistics-focused work descriptions and no technical ML, engineering, or IR skills.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088043",
+    "score": 0.2,
+    "rationale": "Has Sentence Transformers listed as an intermediate skill (30 months) and backend engineering experience, but the current role is at Dunder Mifflin (fictional company) with no demonstrated production IR or ranking systems work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0088082",
+    "score": 0.0,
+    "rationale": "Career is entirely Customer Support and Graphic Designer roles at Initech and Hooli with no technical engineering work, and claimed advanced Reinforcement Learning is clearly keyword inflation with no supporting career evidence.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088110",
+    "score": 0.0,
+    "rationale": "Eight years of experience across marketing, sales, operations, and customer support roles at IT services firms (Wipro, Infosys) and fictional companies (Initech, Stark Industries) with no ML, AI, or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088186",
+    "score": 0.2,
+    "rationale": "Has 8.2 years of backend and cloud engineering experience with Python and some feature engineering exposure, but entire career is at IT services (Mindtree) and a fictional company (Wayne Enterprises) with no production ML, retrieval, or ranking systems work.",
+    "stratum": "high_behavioral"
+  }
+]

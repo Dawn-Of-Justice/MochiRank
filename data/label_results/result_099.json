@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0039442",
+    "score": 0.2,
+    "rationale": "Despite a tier_1 IIIT Bangalore M.E. in Data Science, the actual career is Android mobile development at Hooli and cloud/DevOps infra at CRED with zero production ML or IR work, and skills listed as PEFT/LLMs 'advanced' for 54-59 months are inconsistent with that career history, indicating keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039469",
+    "score": 0.2,
+    "rationale": "Career is entirely IT-services backend (.NET/full-stack at TCS and Wipro) plus a stint at fictional Stark Industries and frontend work at Swiggy — no production ML or IR experience, and AI exposure is self-learner level only.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0039517",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career: Sales Executive at fictional Pied Piper, Project Manager at fictional Stark Industries, Customer Support at TCS, and Marketing Manager at Wipro — no engineering depth whatsoever, and 'advanced' Recommendation Systems skill listed for only 7 months is pure keyword inflation.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0039521",
+    "score": 0.6,
+    "rationale": "Directly relevant work at Salesforce: shipped XGBoost/LightGBM ranking models for a discovery feed and built a RAG pipeline with OpenAI embeddings stored in Pinecone, but experience is only ~3 years, education is tier_3 Symbiosis, and some skill durations (Haystack expert at 74 months) exceed total career length suggesting inflation.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0039659",
+    "score": 0.2,
+    "rationale": "Entire 8-year career is frontend and mobile development exclusively at IT-services firms (TCS, Cognizant, Mindtree) with no ML or IR work, and the Chemical Engineering background further distances this profile from the role's requirements.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039731",
+    "score": 0.2,
+    "rationale": "Career is full-stack and DevOps at IT-services firms (Mindtree, Cognizant) plus QA automation at Zomato — no ML skills of substance, with top skills being PowerPoint (beginner) and SQL (beginner), and this candidate is flagged as a honeypot.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0039754",
+    "score": 1.0,
+    "rationale": "Exceptional fit: rebuilt candidate-JD matching pipeline achieving NDCG@10 from 0.72 to 0.91 serving 50M+ queries/month at Observe.AI, owned end-to-end ranking (BGE-large, Pinecone, LTR re-scoring) at Meta, and migrated BM25 to hybrid sparse+dense search at Apple, backed by IIT Hyderabad M.Sc and expert-level Python/BM25/Elasticsearch/NLP skills.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0039838",
+    "score": 0.6,
+    "rationale": "Relevant production experience at Amazon (ML pipelines, MLflow/Kubeflow) and Microsoft (XGBoost/LightGBM ranking models for discovery feed), plus summary describes building semantic search with sentence-transformers and FAISS; however, RAG listed as 'expert' for 79 months and Milvus for 76 months are impossible given a 4.9-year career, indicating significant skill inflation.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0039842",
+    "score": 0.2,
+    "rationale": "Entire career is DevOps at Cognizant and frontend at Capgemini — both explicit IT-services disqualifiers per the JD — with no production ML work despite excellent tier_1 education (IISc Bangalore Ph.D, IIIT Hyderabad M.E.).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039868",
+    "score": 0.2,
+    "rationale": "Career spans two fictional companies (Wayne Enterprises, Stark Industries) and HCL IT services in DevOps/full-stack roles with no ML or IR work, Computer Vision as the primary ML skill is explicitly a negative signal for this NLP/IR-focused role, and education is tier_3.",
+    "stratum": "high_behavioral"
+  }
+]

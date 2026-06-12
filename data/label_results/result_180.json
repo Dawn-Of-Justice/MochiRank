@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0073073",
+    "score": 0.0,
+    "rationale": "Career history is entirely non-technical (Operations Manager, Customer Support, Sales Executive) at multiple fictional companies (Stark Industries, Dunder Mifflin, Pied Piper, Initech), with no evidence of ML, retrieval, or engineering work despite an incongruous IISc Ph.D claim.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073083",
+    "score": 0.2,
+    "rationale": "Only 3.3 years of experience in DevOps/full-stack at fictional companies (Initech, Pied Piper) with no ML production work; self-reported AI exposure is limited to online courses and a small RAG side project, well below the production IR/ranking depth required.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0073099",
+    "score": 0.2,
+    "rationale": "Entire 5.7-year career spent at IT-services firms (Infosys, Tech Mahindra) in .NET/DevOps roles with no product-company ML work; pgvector and feature engineering skills appear on resume but career descriptions show only frontend and Java backend work, suggesting keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073136",
+    "score": 0.0,
+    "rationale": "Profile is entirely non-technical with roles as Business Analyst and Accountant at a logistics/manufacturing company, and the summary explicitly self-identifies as a marketing manager with only casual ChatGPT experimentation — no engineering or ML skills whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073153",
+    "score": 0.2,
+    "rationale": "Only 1.3 years of experience as a DevOps/QA engineer at Flipkart with no ML production work; despite 'advanced' feature engineering and reinforcement learning skill claims, the sole job description is test automation with Selenium/Locust, indicating severe keyword inflation.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073160",
+    "score": 0.0,
+    "rationale": "14-year career entirely in non-technical roles (Business Analyst, Content Writer, Project Manager, Customer Support at TCS) with only casual ChatGPT experimentation mentioned; no engineering, ML, or IR experience of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0073164",
+    "score": 0.2,
+    "rationale": "7.5 years of software engineering at CRED and TCS but entirely in full-stack web/mobile development (React, Node.js, Android); top skills are GANs, CSS, and TTS with no evidence of retrieval systems, ranking, embeddings, or NLP/IR work relevant to this role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0073187",
+    "score": 0.2,
+    "rationale": "3.3 years as a .NET developer at CRED doing frontend engineering (React, TypeScript) with only self-learner-level AI exposure and no production ML, retrieval, or ranking experience; too junior and too far from the required ML/IR skillset.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073202",
+    "score": 0.0,
+    "rationale": "Entire 10-year career at Infosys and Wipro in non-technical roles (Customer Support, HR Manager, Mechanical Engineer titles) with no ML or engineering work; only a marketing/CX background with casual AI tool experimentation and no relevant technical skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073250",
+    "score": 0.4,
+    "rationale": "7.2 years at strong product companies (Flipkart, Swiggy) providing real scale exposure, and Pinecone listed as an advanced skill with 39 months duration is a positive signal, but career descriptions show only infrastructure/DevOps/QA work with no direct evidence of shipped retrieval or ranking systems.",
+    "stratum": "honeypot_flagged"
+  }
+]

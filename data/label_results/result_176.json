@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0071191",
+    "score": 0.0,
+    "rationale": "Entire 7-year career spent at TCS, Accenture, and HCL in DevOps/QA roles with no ML, IR, or ranking experience; top skills are Excel and Content Writing, confirming zero alignment with production AI engineering requirements.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0071196",
+    "score": 0.2,
+    "rationale": "Cloud infra/DevOps background with no IR or ranking experience; one role at fictional company Stark Industries (honeypot signal), one at Mphasis (IT services), and skills are Hadoop, Tally, and GANs with no embeddings or retrieval work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0071239",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager background with career history in demand-generation and mechanical design roles; no software engineering, ML, or IR experience despite an M.Tech in Machine Learning from SRM.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071362",
+    "score": 0.0,
+    "rationale": "Only 3 years of experience in a single QA/frontend role at fictional company Pied Piper (honeypot flag); no ML, ranking, or IR work, and skills are Kafka, Project Management, SQL, and HTML.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0071399",
+    "score": 0.0,
+    "rationale": "Flagged honeypot candidate whose actual roles are Graphic Designer and HR Manager at Pied Piper (fictional company); career history is entirely non-technical operations and design work with no ML or engineering substance.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0071451",
+    "score": 0.2,
+    "rationale": "Has one product-company role at Zomato but actual work there was QA/test automation; top skill is LangChain 'advanced' which the JD explicitly warns against, with no production embedding, retrieval, or ranking experience demonstrated.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071457",
+    "score": 0.4,
+    "rationale": "Strong data engineering career across product companies (Zoho, BYJU'S, Unacademy, Zomato) with solid Python/Spark/Airflow/Kafka depth, but advanced skills are object detection and speech recognition (CV/speech domain) rather than NLP/IR, and no evidence of embedding retrieval, ranking systems, or NDCG evaluation work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0071475",
+    "score": 0.0,
+    "rationale": "Entire 6.6-year career at Wipro and Accenture (IT services only) in .NET/Cloud roles; top skills are Content Writing and Salesforce CRM with no ML, IR, or ranking work whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0071670",
+    "score": 0.2,
+    "rationale": "IIT Kanpur M.E. Data Science provides strong educational signal, but the actual 9.8-year career consists entirely of Project Manager, Accountant, Sales Executive, and Civil Engineer roles at Globex and Wipro with no technical ML or IR work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0071736",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager with 13.6 years in sales, HR, and operations roles across TCS, Wayne Enterprises (fictional company), and Wipro; no engineering or ML experience, and multiple fictional company and IT-services employer red flags.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0087046",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Business Analyst, Project Manager, Sales Executive) with no ML, NLP, or IR experience; only AI exposure is casual ChatGPT experimentation, and one role is at Initech (fictional company flag).",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087105",
+    "score": 0.0,
+    "rationale": "Only 1.8 years of experience as an Operations Manager at a manufacturing firm with no engineering or ML background; summary describes a marketing manager career pivot with zero relevant IR or ML production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087132",
+    "score": 0.0,
+    "rationale": "Career spans Customer Support at Wipro, HR Manager, and Operations Manager at Wayne Enterprises (fictional company flag) with no ML or engineering work; IIT Kharagpur CS degree is a positive signal but is entirely wasted on a non-technical career trajectory.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0087229",
+    "score": 0.0,
+    "rationale": "Career is entirely Marketing Manager and Mechanical Engineer roles with no ML or engineering depth, includes a stint at Dunder Mifflin and Wayne Enterprises (fictional company flags), and all skills are beginner-level non-ML tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087263",
+    "score": 0.2,
+    "rationale": "Only 1.8 years of experience as a .NET Developer at Infosys (IT services) with QA/test automation background; has a small RAG side project and Weights & Biases listed as advanced, but no production IR/search or ranking systems experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0087271",
+    "score": 0.0,
+    "rationale": "2.3 years as a Project Manager at Infosys doing mechanical engineering design with no ML or software engineering depth; summary explicitly describes a marketing manager background with only casual AI curiosity.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0087339",
+    "score": 0.2,
+    "rationale": "8.5 years of web/backend engineering (React, Node.js, Java/Spring Boot) across IT services firms (Mphasis, Capgemini) and Wayne Enterprises (fictional company flag), with only a self-learner RAG side project and no production ML or IR experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0087364",
+    "score": 0.8,
+    "rationale": "4.9 years building production recommendation and ranking systems at AI product companies (Glance, Rephrase.ai) with hands-on XGBoost/LightGBM ranking models, expert-level Pinecone/Qdrant/Milvus vector DB skills, RAG experience, and MLflow/Kubeflow production pipelines — strong alignment with the core IR and ranking requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0087436",
+    "score": 0.0,
+    "rationale": "Career is entirely HR Manager and Sales Executive roles with no engineering or ML experience; current role is at Stark Industries (fictional company flag) and all listed skills are beginner-level non-ML tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0087494",
+    "score": 0.4,
+    "rationale": "3.4 years of applied ML across NLP pipelines and lightweight recommendation systems at AI services firms (Genpact AI, Aganitha), with IIT Kanpur PhD and fine-tuning/LoRA skills, but no production IR/search/ranking or vector database experience, and primary work has been analytics-side modeling rather than retrieval system engineering.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

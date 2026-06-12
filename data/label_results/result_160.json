@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0063728",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Mechanical Engineer title at TCS, Marketing Manager at Hooli, Sales Executive at Wipro, Operations Manager at TCS) with zero ML, IR, or software engineering experience, and skills are superficial web/DB tools with no AI relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063732",
+    "score": 0.0,
+    "rationale": "Civil Engineer title with a career spanning only operations management and customer support roles at non-engineering companies, with no ML, search, or ranking experience despite an M.Tech in Machine Learning from Stanford listed in education.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063736",
+    "score": 0.2,
+    "rationale": "Only 3.7 years of experience with NLP pipelines limited to sentiment analysis and document classification at an AI/ML startup; skills heavily skewed toward computer vision and reinforcement learning with no production IR, ranking, vector search, or evaluation-framework experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063754",
+    "score": 0.2,
+    "rationale": "9.2 years of experience but almost entirely in web/frontend/QA engineering (Zomato QA, HCL frontend, Initech — a fictional company — frontend), with AI exposure limited to self-study and a small RAG side project, and no production ML or retrieval system work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063775",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Content Writer, Graphic Designer, Operations Manager) with two positions at Wayne Enterprises (fictional company), zero ML or engineering experience, and skills are generic web tools with no AI/IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063873",
+    "score": 0.0,
+    "rationale": "Operations Manager and Content Writer career entirely at Dunder Mifflin (fictional company) and Globex Inc with no technical engineering background; skills include Marketing and Sales with superficial Kafka and Node.js listings that lack any substantive ML or IR context.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0063964",
+    "score": 0.0,
+    "rationale": "Only 2.2 years of experience as a Graphic Designer at Wayne Enterprises (fictional company) with a marketing-focused role description; skills are computer vision / object detection oriented with no NLP, retrieval, ranking, or production ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0063980",
+    "score": 0.0,
+    "rationale": "13-year career spanning Project Manager at Infosys, Civil Engineer at Dunder Mifflin (fictional company), and Marketing Manager at TCS — all non-ML roles at IT-services or fictional firms, with only superficial data-tool skills (Airflow, Hadoop, Spark) and no IR or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0064020",
+    "score": 0.2,
+    "rationale": "Solid data engineering background at product companies (PolicyBazaar, Nykaa) with Kafka/Spark/XGBoost exposure and a Milvus skill listing, but core career is data pipelines and analytics infrastructure with minimal ML model work and no production retrieval, ranking, or NDCG/evaluation-framework experience; current role at Pied Piper (fictional company) is also a negative signal.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0064204",
+    "score": 0.0,
+    "rationale": "Civil Engineer title with career entirely at Dunder Mifflin (fictional company) and TCS IT services in content writing and business analyst roles, no ML or engineering work, and skills limited to infrastructure/web tools with no AI/IR relevance.",
+    "stratum": "low_behavioral"
+  }
+]

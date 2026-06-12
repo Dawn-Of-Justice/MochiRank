@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0098137",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (Sales Executive, Civil Engineer, Mechanical Engineer, Customer Support) with no ML or IR engineering work; fictional company flags (Pied Piper, Wayne Enterprises) and mismatched role descriptions confirm honeypot profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0098182",
+    "score": 0.2,
+    "rationale": "Eight years of experience but career spans Android development and .NET at IT-services firms (Capgemini, Mphasis) with only self-learner-level AI exposure via a small RAG side project and no production IR, embeddings, or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098242",
+    "score": 0.0,
+    "rationale": "Only 2.9 years of experience in a single marketing demand-generation role at Infosys with no engineering or ML work and only beginner-level tool skills unrelated to IR or ranking.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098264",
+    "score": 0.0,
+    "rationale": "Titles are Civil Engineer and Marketing Manager at fictional companies (Wayne Enterprises, Pied Piper); career descriptions show customer support and business analyst work with no ML or IR skills present.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098276",
+    "score": 0.0,
+    "rationale": "Despite an IIT Kharagpur M.Tech, the entire 11-year career is in operations management, content writing, and accounting at fictional companies (Initech, Wayne Enterprises) with no evidence of engineering or ML production work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0098320",
+    "score": 0.2,
+    "rationale": "Has a real fintech stint (Razorpay) doing cloud/DevOps infra, but primary roles are QA automation and Java development at fictional companies (Dunder Mifflin, Pied Piper) with no retrieval, ranking, or ML systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098330",
+    "score": 0.0,
+    "rationale": "Graphic designer with 2.5 years of experience entirely in design and accounting at fictional companies (Wayne Enterprises, Initech) with no ML, engineering, or IR-related skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098355",
+    "score": 0.0,
+    "rationale": "Career is in enterprise sales and accounting at a fictional company (Pied Piper) and Wipro IT-services, both non-technical, with no ML or IR engineering background.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0098409",
+    "score": 0.2,
+    "rationale": "Frontend/mobile engineer with 3.7 years and a QLoRA skill listed but no production IR, retrieval, or ranking work; current role is at fictional Wayne Enterprises and prior at a manufacturing company with no AI systems shipped.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0098490",
+    "score": 0.2,
+    "rationale": "Five years of full-stack and cloud experience mostly at Tech Mahindra IT-services (52 months) with only a LangChain side project for AI exposure and no production embeddings, vector search, or ranking systems.",
+    "stratum": "high_behavioral"
+  }
+]

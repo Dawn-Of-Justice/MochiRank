@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0066997",
+    "score": 0.0,
+    "rationale": "Profile is a Business Analyst/Accountant at Infosys with a fictional company (Initech) stint, marketing manager summary, and no ML, retrieval, or ranking experience whatsoever.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0066999",
+    "score": 0.8,
+    "rationale": "6 years at Microsoft and Amazon owning a ranking layer evolved from hand-tuned scoring to learning-to-rank, with expert-level FAISS and BM25 skills, Pinecone experience, and IIT Roorkee/IIIT Bangalore education — strong direct alignment with hybrid retrieval and ranking requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0067084",
+    "score": 0.0,
+    "rationale": "Customer Support role at Wipro IT Services with entirely non-technical skills (FastAPI beginner, SEO, Figma) and a marketing manager summary with no ML or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067136",
+    "score": 0.0,
+    "rationale": "Operations Manager/Content Writer/Graphic Designer career spanning TCS and fictional company Initech, with no ML or IR experience and only superficial tool mentions (Databricks beginner, Hadoop intermediate) unsupported by actual ML work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067166",
+    "score": 0.0,
+    "rationale": "Entire 12.8-year career is Project Manager and Operations Manager at IT services firms (TCS, Infosys) with a fictional company (Dunder Mifflin) stint and no production ML or retrieval experience despite listing MLOps as advanced.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067211",
+    "score": 0.2,
+    "rationale": "9.9 years as a Java/DevOps/QA engineer across Wayne Enterprises (fictional), Cognizant, TCS, and Zomato with no production ML or ranking work; pgvector and MLflow listed as skills but career history shows pure infrastructure and frontend roles with only self-learner AI exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067227",
+    "score": 0.0,
+    "rationale": "6 years as Mechanical Engineer and Civil Engineer at fictional companies (Dunder Mifflin, Pied Piper) and TCS, with only beginner-level infrastructure tools and no ML, NLP, or retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067332",
+    "score": 0.2,
+    "rationale": "IISc M.E. in Machine Learning provides strong educational signal, but 4.5 years of actual work is entirely web/backend/DevOps at Accenture and Acme Corp with no production ML deployment, and skills list (SAP, TTS, Vue.js) does not reflect the ML education.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0067353",
+    "score": 0.0,
+    "rationale": "10 years as Marketing Manager, Customer Support, and Graphic Designer across Pied Piper (fictional), Infosys, Wayne Enterprises (fictional), and TCS with zero engineering or ML work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0067362",
+    "score": 0.0,
+    "rationale": "1.6 years as Civil Engineer at Wayne Enterprises (fictional company) in a sales role, with only frontend beginner skills (React, Illustrator, Webpack) and no ML or engineering depth relevant to the role.",
+    "stratum": "random"
+  }
+]

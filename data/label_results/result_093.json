@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0036581",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer at Wipro (IT services) with only 2.2 years total experience, a self-described marketing manager background, past role at Stark Industries (fictional/honeypot company), and skills limited to Excel/JavaScript with no Python, ML, or IR exposure whatsoever.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0036586",
+    "score": 0.0,
+    "rationale": "Project Manager whose sole listed role is at Wayne Enterprises (fictional/honeypot company) doing brand design, with a marketing manager summary, YOLO (computer-vision) as the only notable ML skill, and zero evidence of any NLP, retrieval, or ranking production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036605",
+    "score": 0.0,
+    "rationale": "Despite 10.7 years, all roles are non-technical (Business Analyst, Graphic Designer, Operations Manager, Marketing Manager) split across IT-services firms and Dunder Mifflin (fictional/honeypot), with no production ML or IR experience and suspicious 54-month 'advanced Data Science' skill against entirely non-engineering titles.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0036617",
+    "score": 0.0,
+    "rationale": "Entire career is in operations, sales, and accounting across Infosys (IT services), Dunder Mifflin, and Wayne Enterprises (both fictional/honeypot companies), with no engineering or ML work and ASR listed as the only advanced ML skill, which is speech — not NLP/IR.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036633",
+    "score": 0.2,
+    "rationale": "6.1 years of software engineering at NIT Surathkal (tier-1 education is a positive), but the entire career is at IT-services firms (Mindtree, Cognizant) doing frontend/full-stack web work, AI/ML is explicitly self-learner level only, and the 'Learning to Rank advanced' skill claim appears inflated relative to roles that are purely React and Node.js development.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0036664",
+    "score": 0.2,
+    "rationale": "7.7 years of conventional backend/DevOps engineering with real software depth, but the DevOps role is at Stark Industries (fictional/honeypot flag), AI/ML is self-learner only with a small RAG side project, and there is no production ranking, retrieval, or evaluation-framework experience anywhere in the profile.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0036672",
+    "score": 0.0,
+    "rationale": "HR Manager whose roles span Civil Engineer, Business Analyst, and HR across TCS, Wipro, Dunder Mifflin, and Pied Piper (two fictional/honeypot companies), with a marketing manager summary and no ML, NLP, or IR engineering work despite holding Weights & Biases listed as a skill.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0036742",
+    "score": 0.0,
+    "rationale": "Civil Engineer/Marketing Manager/Sales Executive background at Infosys (IT services) and Dunder Mifflin (fictional/honeypot), with a marketing manager summary and skills (Redux, Rust, Accounting, Marketing, Spark) that have no relevance to NLP, retrieval, or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0036863",
+    "score": 0.8,
+    "rationale": "Directly owns production ranking layers at product companies upGrad and Zoho (learning-to-rank, relevance labeling pipeline), built a production RAG pipeline with OpenAI embeddings and Pinecone at Wysa startup, and lists FAISS and Qdrant as expert-level skills with 36 and 38 months respectively — covering the core hybrid retrieval and vector-DB requirements of the JD.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0036897",
+    "score": 0.0,
+    "rationale": "Customer Support/Project Manager career with a marketing manager summary, roles at Infosys (IT services) and Pied Piper (fictional/honeypot), and skills dominated by CNN (computer vision) and productivity tools, with no Python, NLP, retrieval, or ranking engineering anywhere in the profile.",
+    "stratum": "random"
+  }
+]

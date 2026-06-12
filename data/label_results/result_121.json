@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0047558",
+    "score": 0.0,
+    "rationale": "Despite 14 years of experience, this profile is entirely non-technical: career spans marketing, operations, and sales roles at Infosys and Wayne Enterprises (fictional company), with skills like Tally and Illustrator and no ML, IR, or engineering work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0047605",
+    "score": 0.0,
+    "rationale": "Only 2.4 years of experience as a Graphic Designer and HR Manager at Wayne Enterprises (fictional company) with skills in Marketing and Sales at beginner level — zero engineering or ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047606",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Business Analyst, Sales Executive, Civil Engineer, Project Manager) spanning IT-services firm Wipro and fictional companies Pied Piper and Stark Industries, with no ML or IR experience despite a claimed Ph.D in Machine Learning from a tier_4 institution.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0047633",
+    "score": 0.2,
+    "rationale": "Entire 4.9-year career is at TCS (IT-services, a stated negative signal) as a Java Developer with no production ML or IR work, and the AI skills (LangChain advanced, Diffusion Models) appear inflated with no evidence of shipped ranking or retrieval systems.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0047656",
+    "score": 0.0,
+    "rationale": "14-year career entirely in HR Manager and Accountant roles at fictional companies (Pied Piper, Initech, Wayne Enterprises) with no engineering or ML work whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0047673",
+    "score": 0.2,
+    "rationale": "9.4 years of backend/cloud engineering experience including a stint at Zomato (product company), but career is frontend/DevOps/mobile with no ML, embeddings, retrieval, or ranking work, and skills show Agile, Excel, and Salesforce CRM with no NLP or IR tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047680",
+    "score": 0.2,
+    "rationale": "4.6 years split between HCL (IT-services) and Stark Industries (fictional company) doing frontend and Java backend work, with self-described AI/ML exposure only at self-learner level and no production retrieval or ranking systems shipped.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0047684",
+    "score": 0.0,
+    "rationale": "7-year career entirely as Project Manager and HR Manager at Wipro (IT-services, a stated disqualifier) with skills limited to SAP, PowerPoint, and Excel — no engineering or ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0047721",
+    "score": 0.9,
+    "rationale": "7 years of production ML experience at Microsoft and Observe.AI building sentence-transformer-based recommendation systems and evolving e-commerce search from hand-tuned scoring to learning-to-rank, with expert-level skills in Learning to Rank, BM25, FAISS, NLP, and an IIT Kharagpur degree — highly aligned with the role's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0047752",
+    "score": 0.0,
+    "rationale": "11.9-year career spans Civil Engineer, HR Manager, Marketing Manager, and Accountant roles at fictional companies (Pied Piper, Stark Industries) and manufacturing firms, with no engineering or ML experience despite CNN listed as a skill.",
+    "stratum": "random"
+  }
+]

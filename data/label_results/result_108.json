@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0043063",
+    "score": 0.2,
+    "rationale": "Career is dominated by QA and .NET/Full Stack roles at IT-services firms (TCS, HCL, Accenture) with only a QA stint at Flipkart; AI exposure is purely self-learner (online courses, small RAG side project) with no production embeddings, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043066",
+    "score": 0.0,
+    "rationale": "Non-technical HR/Marketing profile with career stints at fictional companies (Stark Industries, Wayne Enterprises) and no engineering or ML work whatsoever — AI interest is limited to ChatGPT productivity experiments.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043068",
+    "score": 0.0,
+    "rationale": "Operations/Marketing/Civil Engineering background across fictional companies (Stark Industries, Wayne Enterprises) and TCS customer support with zero ML, IR, or software engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043106",
+    "score": 0.0,
+    "rationale": "Business Analyst with a marketing-manager summary whose entire listed career is at IT-services (TCS) and fictional companies (Initech, Pied Piper) in non-engineering roles; no production ML or IR experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0043119",
+    "score": 0.2,
+    "rationale": "Only 3.6 years of experience concentrated on data engineering (Snowflake, dbt, Kafka) with lightweight ML exposure at Meesho (XGBoost) and OpenSearch in skills, but no production retrieval/ranking systems, no embeddings work, and skills (YOLO, GANs, RL listed as advanced) appear inflated relative to the described career.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0043191",
+    "score": 0.2,
+    "rationale": "7.8 years as a Frontend/Java/.NET developer across Hooli and Accenture with no production ML or IR systems; AI interest is limited to online courses and a small RAG side project, leaving core requirements (embeddings, hybrid retrieval, ranking evaluation) entirely unmet.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0043216",
+    "score": 0.0,
+    "rationale": "Graphic Designer and HR Manager career entirely in non-technical roles at fictional companies (Pied Piper x2) and manufacturing firms with no software engineering, ML, or IR work despite an M.Sc ML credential.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043304",
+    "score": 0.4,
+    "rationale": "Has genuine production ML work at product companies (Locobuzz — LightGBM/LSTM forecasting; PolicyBazaar — collaborative-filtering recommendation systems) and lists BM25 as an advanced skill with 55 months, but shows no evidence of dense embeddings, vector database usage, or evaluation-metric (NDCG/MAP/MRR) ownership, and a TCS IT-services stint with inflated skills (RL, Diffusion Models advanced) undermines the profile.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0043362",
+    "score": 0.0,
+    "rationale": "Content Writer and Customer Support career at IT-services (Infosys) and fictional company (Wayne Enterprises) with only front-end/DB skills (React, MongoDB, Snowflake) and no ML, IR, or ranking engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043404",
+    "score": 0.0,
+    "rationale": "Business Analyst and Accountant across multiple fictional companies (Dunder Mifflin x2, Stark Industries) with no engineering or ML work; skills list (Photoshop, Figma, Agile) confirms a purely non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

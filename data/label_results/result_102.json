@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0040749",
+    "score": 0.0,
+    "rationale": "Operations Manager whose only employers are Dunder Mifflin (fictional honeypot) and Wipro, with a self-described marketing background and zero ML or IR engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040757",
+    "score": 0.2,
+    "rationale": "Eight years split across Wipro, Mindtree (IT services), and Swiggy covering frontend/DevOps/mobile work with no IR or ranking system experience; AI exposure is self-learner level only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040796",
+    "score": 0.0,
+    "rationale": "Non-technical accounting/engineering career at fictional companies (Pied Piper, Wayne Enterprises) and manufacturing firms, with skills limited to PowerPoint and Excel and no ML or IR exposure.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0040798",
+    "score": 0.4,
+    "rationale": "Claims advanced Learning to Rank (49 months) and Semantic Search (42 months) skills, but both career positions describe identical Snowflake data-warehousing work with no production IR or ranking system evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0040827",
+    "score": 0.4,
+    "rationale": "Advanced BM25 skill (34 months) and a tier_2 Ph.D from Delhi College of Engineering are positives, but career descriptions show only full-stack SaaS and Android mobile work with no production search or ranking system deployment.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0040845",
+    "score": 0.0,
+    "rationale": "Honeypot-flagged candidate: Content Writer at Stark Industries (fictional) and HR Manager at Infosys with a marketing-focused background and no ML or IR engineering skills.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0040859",
+    "score": 0.0,
+    "rationale": "Twelve-year career spanning content writing, sales, and marketing at Dunder Mifflin (fictional) and Infosys with skills limited to Salesforce CRM and Illustrator — no technical or ML/IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040870",
+    "score": 0.2,
+    "rationale": "Entire 4.1-year career at Wipro (IT services disqualifier), doing data engineering/warehousing work; top skills are Kubeflow and YOLO (computer vision), with no NLP, search, or ranking system experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040876",
+    "score": 0.0,
+    "rationale": "Sales Executive and Marketing Manager roles exclusively at TCS and Wipro (IT services disqualifiers) with non-technical career descriptions; tier_2 Data Science degree is the only marginal positive signal.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040887",
+    "score": 0.8,
+    "rationale": "Production semantic search over 500K documents using sentence-transformers (MiniLM/BGE) + FAISS at Netflix, plus RAG pipeline with Pinecone at Unacademy, directly covers the core JD requirements for embedding-based retrieval and vector database experience at product companies.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

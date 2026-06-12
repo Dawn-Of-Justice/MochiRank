@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0056838",
+    "score": 0.0,
+    "rationale": "Career consists entirely of customer support, operations, and graphic design roles at a fictional company (Dunder Mifflin), with no engineering or ML experience whatsoever.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0056851",
+    "score": 0.0,
+    "rationale": "Entire career spans mechanical engineering, HR, accounting, and marketing with no ML or software engineering experience, and the most recent role is at Wayne Enterprises (fictional company).",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0056974",
+    "score": 0.0,
+    "rationale": "Non-technical career across project management and sales at IT-services firms (TCS, Infosys) and a fictional company (Stark Industries), with no ML, IR, or engineering experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0056977",
+    "score": 0.2,
+    "rationale": "Only 2.1 years of DevOps/cloud infrastructure experience with no production ML work; scikit-learn skill duration (57 months) implausibly exceeds total career length, indicating keyword inflation despite tier_1 Stanford education.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0057134",
+    "score": 0.6,
+    "rationale": "Built production recommendation systems at PhonePe (product company) with hands-on Vector Search, Embeddings, and Qdrant (all listed as advanced with strong endorsements), but only 3 years total experience and no explicit ranking evaluation framework (NDCG/MAP) mentioned.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0057154",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (accountant, graphic designer, business analyst, content writer) across a fictional company (Wayne Enterprises) and IT-services firms, with no ML or engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057163",
+    "score": 0.2,
+    "rationale": "Entire 4.9-year career is full-stack .NET web development at Infosys (IT services only), with QLoRA listed as advanced despite zero ML production history, indicating keyword inflation and no relevant IR or ranking experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0057331",
+    "score": 0.0,
+    "rationale": "Non-technical career as accountant and sales executive at Infosys with only recent online courses in RAG/LangChain and no prior engineering depth, representing a career pivot to AI with no production ML foundation.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0057377",
+    "score": 0.0,
+    "rationale": "Operations and marketing career at fictional company Initech plus TCS, with no ML or software engineering experience and only beginner-level non-ML skills listed.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0057382",
+    "score": 0.2,
+    "rationale": "Primarily cloud/DevOps and .NET web development at Capgemini (IT services) with only 9 months at Flipkart (product) doing frontend work, and no evidence of ML, embeddings, or IR experience despite an AI-titled degree.",
+    "stratum": "top_retrieval_dense"
+  }
+]

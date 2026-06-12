@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0041971",
+    "score": 0.0,
+    "rationale": "Current role is Graphic Designer at Initech (fictional company) with entire career at IT services firms (TCS, Infosys) in non-technical operations and project management roles; self-described as 'marketing manager' with zero ML/IR engineering experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0042026",
+    "score": 0.0,
+    "rationale": "Career spans Civil Engineer at Dunder Mifflin (fictional company) and Project Manager at a manufacturing firm with a Ph.D in Mechanical Engineering; no ML/AI engineering background or any IR/ranking relevant experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042029",
+    "score": 0.8,
+    "rationale": "Built semantic search infrastructure from scratch (sentence-transformers, FAISS) and shipped a full RAG pipeline (OpenAI embeddings + Pinecone) at product companies Flipkart and Observe.AI, with expert NLP/PyTorch skills and advanced Learning-to-Rank experience spanning 34 months.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0042093",
+    "score": 0.2,
+    "rationale": "Five years split between IT services (Wipro, QA/test automation) and fictional company Pied Piper (frontend dev), with FAISS listed as an intermediate skill but no production ML/IR work and only self-learner-level AI exposure.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0042100",
+    "score": 0.8,
+    "rationale": "Owned the end-to-end e-commerce search ranking layer at Freshworks (evolved BM25 to LTR with a relevance labeling pipeline) and Netflix discovery feed ranking with XGBoost/LightGBM, holding expert Learning-to-Rank and advanced Semantic Search skills plus eval framework ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0042101",
+    "score": 0.0,
+    "rationale": "Project Manager at Infosys executing marketing and demand-generation work (SEO, content marketing, paid acquisition) for 37 months with 3.1 years total experience and zero ML/AI engineering or IR exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042110",
+    "score": 0.2,
+    "rationale": "Only 1.3 years experience as a .NET developer at HCL (IT services) with IIT Hyderabad education as the sole positive signal; no production ML/IR work, and skill durations for Forecasting and Image Classification (49 months each) far exceed total career length.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042234",
+    "score": 0.0,
+    "rationale": "Accountant at Wipro (IT services) for 21 months with a marketing manager self-description; no ML/AI engineering or IR experience of any kind despite M.S. Computer Engineering from VIT Vellore.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0042327",
+    "score": 0.0,
+    "rationale": "10.6-year career entirely in non-technical marketing and project management roles at IT services firms (Infosys) and fictional company Wayne Enterprises, with no ML/AI engineering work despite holding an M.E. in Machine Learning from VJTI Mumbai.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042404",
+    "score": 0.0,
+    "rationale": "Frontend engineer at Hooli (fictional company) with only 1.5 years total experience and self-learner-only AI exposure; Elasticsearch listed as advanced skill with 54-month duration far exceeds the 18-month total career, indicating keyword inflation.",
+    "stratum": "high_behavioral"
+  }
+]

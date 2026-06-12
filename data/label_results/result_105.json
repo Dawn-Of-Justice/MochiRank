@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0041544",
+    "score": 0.2,
+    "rationale": "Eight years of software engineering (cloud infra, Java backend, test automation) with zero production ML or IR experience; AI exposure is entirely self-learner/API-tinkering level, and current role is at fictional company Pied Piper.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0041593",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career spanning sales, customer support, and operations across fictional companies (Stark Industries, Hooli) and IT services (Wipro); no engineering or ML work of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041611",
+    "score": 0.8,
+    "rationale": "Staff ML Engineer with 6.4 years who owns an offline-online eval harness (NDCG/MRR/recall vs live A/B) at 50M+ queries/month, built BM25+dense hybrid retrieval using BGE embeddings and FAISS HNSW, and has hands-on expert-level skills in OpenSearch, Weaviate, Qdrant, and PyTorch across multiple AI-product companies.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0041649",
+    "score": 0.0,
+    "rationale": "Only 2.9 years of experience, current role is Sales Executive at fictional company Stark Industries, with a career consisting solely of customer support team lead work and no engineering or ML background.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0041669",
+    "score": 0.8,
+    "rationale": "Eight years of directly relevant experience including owning an e-commerce ranking layer evolved from hand-tuned scoring to LTR, RAG with Pinecone and sentence-transformers, and a 10M-user recommendation system at product companies CRED and Mad Street Den, backed by IIT Guwahati tier_1 education.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0041711",
+    "score": 0.0,
+    "rationale": "Eight-year career consists entirely of non-technical roles (content writing, HR management, operations) at IT services firms (TCS, Wipro) and fictional company Stark Industries, with no engineering or ML work despite inflated skill listings.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041714",
+    "score": 0.0,
+    "rationale": "Career is entirely accounting, operations management, and marketing roles at multiple fictional companies (Stark Industries, Wayne Enterprises) with no technical or ML engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041827",
+    "score": 0.2,
+    "rationale": "Seven-plus years of general software engineering (Android, full-stack, DevOps) with self-learner-level AI exposure only; no production ML or IR experience, and two of three career roles are at fictional companies (Stark Industries, Initech).",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0041902",
+    "score": 0.4,
+    "rationale": "Strong data engineering foundation with IIT Bombay tier_1 education and product company stints at Razorpay and Flipkart, plus Qdrant skills, but explicitly self-describes as wanting to transition into ML with only self-directed projects rather than production IR or ranking systems delivered.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0041904",
+    "score": 0.0,
+    "rationale": "Entire seven-plus year career is in non-technical project management, marketing, accounting, and operations roles exclusively at fictional companies (Hooli, Wayne Enterprises), with AI exposure limited to recent online courses on RAG and LangChain experimentation.",
+    "stratum": "random"
+  }
+]

@@ -14,10 +14,6 @@ artifacts/candidate_ids.json
 artifacts/candidate_ids_sample.json
 artifacts/flashrank/
 
-# Teacher labeling intermediates — keep final labels, not batch files
-data/label_batches/
-data/label_results/
-
 # Generated submissions (commit deliberately, not by default)
 submission*.csv
 !dataset/sample_submission.csv

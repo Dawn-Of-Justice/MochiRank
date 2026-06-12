@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0043845",
+    "score": 0.0,
+    "rationale": "3.3 years of frontend/full-stack work at Wipro (IT services) and Zomato with top-5 skills being Illustrator, SEO, and Photoshop - no ML, IR, embeddings, or ranking experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043860",
+    "score": 0.6,
+    "rationale": "Advanced Semantic Search (44 months, 49 endorsements) and Information Retrieval (30 months, 30 endorsements) skills backed by production recommendation work at Aganitha and NLP pipelines at Nykaa, though Nykaa role was computer vision and no explicit NDCG/MAP evaluation-framework ownership is confirmed.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0043867",
+    "score": 0.0,
+    "rationale": "Entire career at fictional companies (Pied Piper, Initech, Stark Industries) with underlying job descriptions revealing marketing, accounting, and operations work - zero engineering or ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043878",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager with 3.2 years at Hooli (fictional company) whose sole job description confirms demand-generation/content marketing; listed technical skills (ETL, Apache Beam, gRPC) are inconsistent with that history and show no ML or IR work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043939",
+    "score": 0.0,
+    "rationale": "8.1-year career at fictional companies (Wayne Enterprises, Pied Piper, Initech) in enterprise sales, marketing, mechanical engineering, and business analysis with zero production ML or IR engineering content.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0043958",
+    "score": 0.8,
+    "rationale": "IIT Bombay B.E. graduate with advanced Sentence Transformers (57 endorsements, 27mo) and FAISS (28 endorsements, 54mo) skills, production ML roles at product companies Dream11 and PhonePe, and LLM fine-tuning experience - strong dense-retrieval stack though career descriptions focus on predictive modeling and CV rather than search/ranking evaluation specifically.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0044030",
+    "score": 0.2,
+    "rationale": "IIT Kharagpur M.Sc. AI is a strong educational credential, but the entire 3.9-year career is at IT services firms (Mphasis, Cognizant) in QA automation and .NET development with no production ML or IR/retrieval work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0044038",
+    "score": 0.0,
+    "rationale": "Entirely non-technical 10.3-year career spanning marketing leadership, content writing, HR management, and customer support at fictional companies (Initech, Hooli) and TCS, with no engineering or ML experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0044046",
+    "score": 0.4,
+    "rationale": "IISc Bangalore tier_1 graduate with strong data engineering at product companies (upGrad Kafka/Spark, Razorpay FastAPI analytics) and advanced PyTorch/Deep Learning skills, but summary explicitly states aspiring to transition into ML and career shows no production embeddings, vector search, or ranking-evaluation (NDCG/MAP) experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0044063",
+    "score": 0.0,
+    "rationale": "7.8-year career entirely at fictional companies (Initech, Wayne Enterprises) in conventional full-stack and Java backend roles; Deep Learning listed as advanced with 57-month duration but no job description mentions any ML work, indicating keyword inflation with no production IR evidence.",
+    "stratum": "high_behavioral"
+  }
+]

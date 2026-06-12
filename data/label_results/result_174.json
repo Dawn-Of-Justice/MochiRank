@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0070551",
+    "score": 0.2,
+    "rationale": "Despite IISc M.S. and an 'advanced' Information Retrieval skill claim, the actual career is entirely Java backend and DevOps (including stints at Wipro and fictional Stark Industries) with no production embeddings or ranking work — only a self-described RAG side project.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0070625",
+    "score": 0.4,
+    "rationale": "NIT Surathkal grad with Qdrant advanced (22mo) and some XGBoost/ML exposure at HCL, but the career is primarily data engineering/analytics infrastructure at IT-services and Swiggy with no demonstrated production IR, hybrid retrieval, or ranking-evaluation work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070669",
+    "score": 0.2,
+    "rationale": "Listed Pinecone and LLM fine-tuning skills but spent 44 months at TCS in test automation/QA, and the current role is at fictional Pied Piper — career history does not substantiate any production IR or embedding retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070702",
+    "score": 0.2,
+    "rationale": "IISc M.Sc AI education is a positive signal but 3.2 years experience is entirely frontend/Java work at Infosys (IT services) with no ML production work, no IR/retrieval skills, and only self-learner-level AI exposure.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0070709",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — project management, accounting, civil engineering, and sales at fictional Wayne Enterprises and Acme Corp — with zero ML, engineering, or IR relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070716",
+    "score": 0.4,
+    "rationale": "Has Qdrant advanced skill (57mo) and product-company experience at PhonePe building streaming pipelines, but core career is data engineering/analytics rather than IR/ranking, and one role is at fictional Stark Industries — no evidence of NDCG/MAP evaluation or hybrid retrieval production work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0070736",
+    "score": 0.2,
+    "rationale": "BITS Pilani tier_1 education is a positive signal, but only 1.2 years total experience, the entire career is frontend React work, and the 'Vector Search advanced (26mo)' skill duration exceeds the career length — indicative of keyword inflation.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0070744",
+    "score": 0.2,
+    "rationale": "NLP and PEFT listed as advanced with 40-47 month durations but total career is only 3.3 years at fictional Stark Industries doing frontend React work — skill durations are inconsistent with career history, indicating inflation, and no production IR/retrieval work is evident.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0070745",
+    "score": 0.2,
+    "rationale": "6.1 years experience but focused entirely on data warehousing/BI at Globex and HCL (IT services), with top skills being Computer Vision (an explicit JD negative signal) and Reinforcement Learning — no IR, hybrid retrieval, or ranking-evaluation experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0070785",
+    "score": 0.0,
+    "rationale": "12.7-year career as Accountant, Graphic Designer, Content Writer, and Business Analyst at Wipro and Infosys with no engineering or ML work whatsoever — completely non-technical profile.",
+    "stratum": "random"
+  }
+]

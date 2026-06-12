@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0083630",
+    "score": 0.0,
+    "rationale": "Accountant/mechanical engineer at a fictional company (Dunder Mifflin) with no ML, IR, or search engineering experience; MLOps skill listed as intermediate for only 12 months with no supporting career evidence.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0083653",
+    "score": 0.0,
+    "rationale": "Operations Manager/Marketing Manager background at TCS and fictional Stark Industries with no engineering or ML experience; skills are Kafka and REST APIs with no depth in retrieval, ranking, or NLP.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083689",
+    "score": 0.2,
+    "rationale": "Business Analyst career spanning consulting, Wipro (IT services), and fictional Wayne Enterprises with no production ML engineering; summary mentions online courses in RAG but no hands-on IR or embedding system experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083727",
+    "score": 0.2,
+    "rationale": "Backend/.NET developer at IT services (Tech Mahindra) and fictional Stark Industries with self-described AI/ML at 'self-learner level only'; no production experience with embeddings, vector DBs, or ranking systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083761",
+    "score": 0.0,
+    "rationale": "13.6-year career spanning business analyst, mechanical engineer, sales executive, and civil engineer roles with no software engineering or ML work; skills top out at BigQuery and Docker with no IR relevance.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083813",
+    "score": 0.2,
+    "rationale": "Entire 5-year career at IT services firms (Mphasis, Infosys, Cognizant) doing frontend/mobile development with no production ML or IR work, despite advanced Hugging Face Transformers skill listed without corroborating career evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0083834",
+    "score": 0.2,
+    "rationale": "RAG (intermediate, 33 months) and FAISS (intermediate, 22 months) skills suggest some IR exposure, but the entire career is at IT services firms (Tech Mahindra, Mindtree, Mphasis) and fictional Wayne Enterprises with no production ranking or retrieval system deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083835",
+    "score": 0.2,
+    "rationale": "IIT Kanpur education (tier_1) and Swiggy product-company experience are positive signals, but skills are entirely backend/full-stack (PostgreSQL, Next.js, Angular) with no ML, embeddings, or IR experience listed.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083852",
+    "score": 0.6,
+    "rationale": "6 years at AI/ML product companies (Mad Street Den, Dream11) with advanced Sentence Transformers and intermediate Qdrant skills (both 30+ months), and production recommendation/collaborative filtering work at Dream11 — strong retrieval foundation but limited evidence of end-to-end ranking system ownership or NDCG/evaluation framework experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0083861",
+    "score": 0.0,
+    "rationale": "Civil engineer/marketing manager/customer support career at Infosys and fictional Initech with no ML or software engineering background; skills are accounting, SAP, and Hadoop with no IR relevance.",
+    "stratum": "top_retrieval_dense"
+  }
+]

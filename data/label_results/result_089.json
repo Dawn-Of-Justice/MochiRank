@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0034766",
+    "score": 0.0,
+    "rationale": "Despite tier_1 IIT Guwahati education, the entire career is at fictional companies (Dunder Mifflin, Stark Industries) in non-technical roles (enterprise sales, HR, business analyst) with zero ML, IR, or search engineering experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0034809",
+    "score": 0.2,
+    "rationale": "Only 1.2 years total experience at an IT-services firm (Capgemini) as a Mobile Developer, with skills listing 41 months of Recommendation Systems that is impossible given total tenure — clear keyword inflation and no production IR or embedding-based retrieval work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0034857",
+    "score": 0.0,
+    "rationale": "Career history is entirely Graphic Designer and Accountant roles at a fictional company (Pied Piper) and TCS IT services, with no ML, NLP, or information retrieval experience; recent online courses in RAG do not substitute for production engineering depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0034876",
+    "score": 0.4,
+    "rationale": "Has 3.5 years of applied ML experience at a real product company (InMobi AdTech) with LightGBM and MLOps skills, but primary domain is computer vision and time-series forecasting — no demonstrated experience in embedding-based retrieval, hybrid search, NDCG evaluation, or ranking systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0034906",
+    "score": 0.0,
+    "rationale": "Civil Engineer at a fictional company (Stark Industries) with only 1.7 years experience in mechanical design and a self-described marketing manager background, possessing no ML, NLP, or IR skills relevant to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035018",
+    "score": 0.0,
+    "rationale": "Marketing Manager and Graphic Designer career entirely at a fictional company (Pied Piper) with no engineering or ML background; AI interest is limited to ChatGPT experimentation for content creation, which does not meet any core requirement.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035192",
+    "score": 0.2,
+    "rationale": "Only 1.0 year of full-stack web development experience at a fictional company (Pied Piper) with self-learner AI interest via online courses and a small RAG side project — no production ML, retrieval, or ranking work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035360",
+    "score": 0.0,
+    "rationale": "Eight-year career entirely in operations management, customer support, and sales at fictional (Dunder Mifflin) and IT-services (Infosys) companies, with no technical engineering or ML skills; YOLO skill listed as advanced is entirely inconsistent with the career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035369",
+    "score": 0.0,
+    "rationale": "Fourteen-year career as Accountant, HR Manager, Business Analyst, and Sales Executive spread across multiple fictional companies (Pied Piper, Initech, Hooli) and Infosys IT services, with no ML or IR engineering experience; recent LangChain course interest does not compensate for zero technical foundation.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0035424",
+    "score": 0.0,
+    "rationale": "Eleven-year career as Content Writer, Civil Engineer, and Project Manager exclusively at fictional companies (Pied Piper, Dunder Mifflin, Hooli) with no ML, NLP, or search engineering experience; marketing manager background with ChatGPT curiosity is not relevant to this role.",
+    "stratum": "low_behavioral"
+  }
+]
