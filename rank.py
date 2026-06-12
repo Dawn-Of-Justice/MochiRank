@@ -168,6 +168,7 @@ def main(candidates_path: str, output_path: str) -> None:
         feature_rows.append(feats)
         cid_order.append(cid)
     X = np.array(feature_rows, dtype=np.float32)
+    cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
     tick(f"Stage C done: shape {X.shape}")
 
     # ------------------------------------------------------------------ #
@@ -237,12 +238,12 @@ def main(candidates_path: str, output_path: str) -> None:
         if cid in reranked_scores_map:
             score = reranked_scores_map[cid]
         else:
-            idx = cid_order.index(cid) if cid in cid_order else -1
+            idx = cid_to_matrix_idx.get(cid, -1)
             score = float(scores[idx]) if idx >= 0 else 0.0
 
         # Reasoning
-        if shap_values is not None and cid in cid_order:
-            idx = cid_order.index(cid)
+        if shap_values is not None and cid in cid_to_matrix_idx:
+            idx = cid_to_matrix_idx[cid]
             reasoning = generate_reasoning(
                 cid, c, shap_values[idx], FEATURE_NAMES, rank_pos
             )

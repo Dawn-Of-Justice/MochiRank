@@ -31,14 +31,14 @@
   },
   {
     "candidate_id": "CAND_0033678",
-    "score": 0.2,
-    "rationale": "Only 3.2 years of experience, primarily frontend/DevOps at fictional companies (Stark Industries, Pied Piper), with no evidence of production ML or IR work despite a Pinecone skill listing.",
+    "score": 0.0,
+    "rationale": "Both employers are fictional companies (Stark Industries, Pied Piper); 3.2 years of frontend/DevOps work with no production ML or IR experience, and the Pinecone intermediate skill is unsupported by any legitimate work history.",
     "stratum": "random"
   },
   {
     "candidate_id": "CAND_0033685",
-    "score": 0.2,
-    "rationale": "Mobile/full-stack developer with 4.1 years, including a stint at fictional Initech, with self-learner-only AI exposure and no production ML or IR systems despite some data-related skills listed.",
+    "score": 0.0,
+    "rationale": "Current and most recent role is at fictional company Initech; career descriptions show only frontend and full-stack web development with no production ML or IR work despite listing Data Science as an advanced skill.",
     "stratum": "random"
   },
   {
