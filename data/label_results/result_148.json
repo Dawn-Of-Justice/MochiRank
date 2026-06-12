@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0059298",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (sales, customer support, marketing manager) with no ML or engineering experience, and current employer is fictional (Wayne Enterprises).",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0059304",
+    "score": 0.4,
+    "rationale": "Data/analytics career (Snowflake, ETL, dashboards) with skills claims of Learning to Rank and Embeddings, but actual work history shows no production IR or retrieval system deployment, only BI and warehouse engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059313",
+    "score": 0.0,
+    "rationale": "Eleven-year career spans accounting, brand design, marketing manager, and mechanical engineer at Wipro with zero ML, NLP, or information retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059392",
+    "score": 0.0,
+    "rationale": "Sole role is accountant at Pied Piper (fictional company) with purely financial work and no engineering or ML background despite AI tool curiosity mentioned in summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059398",
+    "score": 0.2,
+    "rationale": "Career is split between Infosys IT-services and Dunder Mifflin (fictional company), with only lightweight ML exposure (sklearn/XGBoost classification) and no production IR or retrieval system work despite Haystack skill listing.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0059440",
+    "score": 0.6,
+    "rationale": "Full career at CRED (product fintech company) building NLP pipelines and fraud-detection ML with Haystack, Hugging Face Transformers, and production model deployment, plus IIT Bombay M.Tech, but only 3.6 years total experience with no explicit ranking/retrieval system or NDCG evaluation ownership shown.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0059442",
+    "score": 0.2,
+    "rationale": "Conventional software engineer (frontend, DevOps, backend) across Zomato, TCS, and Mphasis with only self-learner ML exposure and a small RAG side project, lacking any production IR or ranking system experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059536",
+    "score": 0.0,
+    "rationale": "Twelve-year career is entirely non-technical (sales, customer support, business analyst, graphic designer) at Wipro and TCS with no ML, NLP, or engineering work of any kind.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059698",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience as a frontend .NET developer at Cognizant with RAG and semantic search listed as skills but no evidence of production deployment, making this a nascent profile without the required IR engineering depth.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059720",
+    "score": 0.0,
+    "rationale": "Only 21 months of DevOps experience at Initech (fictional company) while claiming 59 months of Learning to Rank experience — a clear keyword-stuffing signal that invalidates the profile, with no real ML or IR work evident.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0050019",
+    "score": 0.0,
+    "rationale": "Career spans Accountant, HR Manager, Civil Engineer, and Sales Executive roles at IT services firms (Wipro, Infosys) and fictional company Initech, with zero ML/IR engineering experience and only recent online course dabbling in RAG.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0050093",
+    "score": 0.0,
+    "rationale": "Content Writer with 1.2 years of experience whose only AI exposure is ChatGPT experimentation; skills show OpenCV as 'advanced' for 41 months but the sole career role is customer support at Hooli, indicating keyword inflation with no engineering or ML substance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050098",
+    "score": 0.0,
+    "rationale": "Career is entirely graphic design and mechanical engineering at Wayne Enterprises (fictional) and Initech (fictional), with a Civil Engineering degree; GANs listed as 'advanced' is inconsistent with a design/non-technical career and no IR or ML production work exists.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0050112",
+    "score": 0.0,
+    "rationale": "14-year career split across Mechanical Engineer, Project Manager, and Marketing Manager roles at Pied Piper (fictional), Infosys, and Globex; no ML or IR engineering experience, and AI interest is limited to ChatGPT productivity experimentation.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0050165",
+    "score": 0.0,
+    "rationale": "Entire career is Project Manager, Mechanical Engineer, Civil Engineer, and Marketing Manager at Wayne Enterprises (fictional), Stark Industries (fictional), Wipro, and Infosys, with no software engineering or ML/IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050219",
+    "score": 0.0,
+    "rationale": "Civil Engineer at Acme Corp and Wayne Enterprises (fictional) with 3.4 years; Reinforcement Learning listed as 'advanced' for 29 months is implausible given a civil engineering career with zero ML or software engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050232",
+    "score": 0.2,
+    "rationale": "9.4 years of software engineering (web/backend: Python/Django, Node.js, Java) with stints at product companies (Flipkart, Globex) provides adjacent engineering depth, but AI experience is limited to self-learner courses and a small RAG side project with no production IR, ranking, or embedding system work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0050254",
+    "score": 0.2,
+    "rationale": "6.6 years at product companies (Hooli, Razorpay) with Sentence Transformers listed as 'advanced' for 56 months is a positive signal, but all career role descriptions are conventional web/backend (React, Java Spring Boot) with no production retrieval, ranking, or evaluation framework work evidenced.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0050309",
+    "score": 0.0,
+    "rationale": "Career is Graphic Designer, Marketing Manager, Civil Engineer, and Accountant at TCS (IT services), Dunder Mifflin (fictional), and Stark Industries (fictional), with skills limited to Excel, PowerPoint, and Marketing — no engineering or ML relevance.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0050428",
+    "score": 0.0,
+    "rationale": "Titled Civil Engineer and Mechanical Engineer at Hooli, but career descriptions reveal sales and customer support roles; Kubeflow listed as 'advanced' for 42 months is inconsistent with non-technical job descriptions and there is no IR, ranking, or ML production work.",
+    "stratum": "low_behavioral"
+  }
+]

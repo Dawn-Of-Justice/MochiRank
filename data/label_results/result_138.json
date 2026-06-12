@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0054497",
+    "score": 0.2,
+    "rationale": "Entire 6.3-year career spent at Cognizant and Wipro (IT services only) in DevOps/Cloud roles with no production ML, no IR/search experience, and AI exposure is limited to self-study courses and a small RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054522",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Content Writer, Graphic Designer, HR Manager) with roles at fictional companies (Pied Piper, Stark Industries) and no engineering or ML production experience whatsoever.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0054525",
+    "score": 0.0,
+    "rationale": "Profile is a marketing/sales career with roles at fictional companies (Dunder Mifflin, Initech) and no software engineering or ML background; skills like YOLO and Spark appear without supporting technical experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054615",
+    "score": 0.0,
+    "rationale": "Entire career spans HR Manager and Marketing Manager roles at Infosys and fictional companies (Pied Piper), with no engineering, ML, or IR experience of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054630",
+    "score": 0.2,
+    "rationale": "Backend/.NET developer at HCL (IT services) and Dunder Mifflin (fictional company) with no production ML or retrieval experience; AI exposure is limited to a self-described side RAG project and online courses.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0054738",
+    "score": 0.0,
+    "rationale": "14-year career entirely in Marketing Manager and Sales Executive roles at Wayne Enterprises and Dunder Mifflin (fictional companies), with no software engineering or ML work despite AI-themed keywords in skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054758",
+    "score": 0.0,
+    "rationale": "Only 2.2 years of experience in HR Manager and Graphic Designer roles at Wipro and Initech (fictional company), with no technical or ML engineering background at all.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0054829",
+    "score": 0.6,
+    "rationale": "5.7 years of applied ML experience including production recommendation systems at BYJU's and ML engineering at Zoho, with BM25 skill and computer vision depth, but limited explicit IR/ranking or embedding-based retrieval production experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0054852",
+    "score": 0.2,
+    "rationale": "8.4 years spent entirely at Capgemini (IT services) in Java/software engineering roles with no production ML or IR experience; AI exposure is self-study only despite a PhD in Machine Learning from SRM.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0054874",
+    "score": 0.2,
+    "rationale": "9.1-year career is primarily frontend/full-stack development at Acme Corp and DevOps at Mphasis (IT services) with no production ML or retrieval work; MLOps skill is listed with high endorsements but the actual roles do not support it.",
+    "stratum": "random"
+  }
+]

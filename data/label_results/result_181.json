@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0073260",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Content Writer, Graphic Designer, Marketing Manager, HR Manager) with the most recent position at fictional company Dunder Mifflin, and zero ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073264",
+    "score": 0.0,
+    "rationale": "Roles are Content Writer at Wipro (IT services), Mechanical Engineer, and Civil Engineer with enterprise-sales job descriptions, plus employment at fictional Stark Industries — no ML, embeddings, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073271",
+    "score": 0.2,
+    "rationale": "Has an M.Tech in Computer Engineering and mentions taking online courses on RAG and vector databases, but the actual career history spans Content Writing at fictional Initech, Sales at Infosys, Mechanical Engineering, and Accounting — no production ML or IR work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0073299",
+    "score": 0.0,
+    "rationale": "Entire career is in operations management and marketing at fictional companies (Wayne Enterprises, Dunder Mifflin, Pied Piper) with no engineering, ML, or IR background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073321",
+    "score": 0.2,
+    "rationale": "Has a software engineering background (4.1 years, QA/test automation at Hooli) and mentions building a small RAG side project, but has no production ML or IR experience and skills are dominated by SAP and DevOps tooling rather than embeddings or ranking.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073375",
+    "score": 0.2,
+    "rationale": "Software engineering background across QA (Razorpay) and DevOps (Mindtree) with MLOps listed as an intermediate skill, but no production embeddings, retrieval, or ranking experience is evident and the bulk of experience is IT-services QA/DevOps work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073390",
+    "score": 0.0,
+    "rationale": "Flagged honeypot profile with roles as Mechanical Engineer at Wipro and Accountant at fictional Stark Industries, a marketing-focused summary, and no ML or IR skills despite data-engineering tool names appearing in the skills list.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0073481",
+    "score": 0.2,
+    "rationale": "Claims advanced GANs and Statistical Modeling skills (9.9 years experience) but the actual career is Mobile Developer and Cloud Engineer exclusively at IT-services firms (Infosys, HCL, Mindtree) with no evidence of production search, retrieval, or ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073499",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Graphic Designer at Hooli, Civil Engineer at Acme Corp) with M.Tech degrees in Mechanical and Chemical Engineering, and no ML, NLP, or IR experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0073543",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Marketing Manager, HR Manager, Project Manager) at companies including fictional Pied Piper and Dunder Mifflin, with zero engineering or ML background.",
+    "stratum": "random"
+  }
+]

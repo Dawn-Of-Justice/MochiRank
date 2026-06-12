@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0082344",
+    "score": 0.2,
+    "rationale": "Career spans Civil/Mechanical engineering and Sales at non-product companies (TCS, Acme Corp) with no ML or IR production work; only surface-level AI interest via online courses on RAG/vector DBs noted in summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082383",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (Graphic Designer, Operations Manager, Accountant) at manufacturing/IT-services firms with no engineering or ML work whatsoever despite holding two postgraduate ML/AI degrees.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082417",
+    "score": 0.2,
+    "rationale": "Career entirely at IT-services firms (Tech Mahindra, Wipro) and fictional company Dunder Mifflin doing test automation and DevOps, with no production ML/IR work to substantiate the advanced Recommendation Systems and LLMs skill claims.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0082481",
+    "score": 0.2,
+    "rationale": "Only 2.4 years experience, current role at fictional company Stark Industries doing test automation, with Qdrant listed as an intermediate skill (29 months) but no evidence of production embedding/retrieval deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082494",
+    "score": 0.4,
+    "rationale": "Strong Learning-to-Rank and Feature Engineering skills (both advanced, 38 months) and real product-company experience at Ola building Kafka/Spark streaming pipelines, but only 2.6 years total experience with no demonstrated production embedding or vector-search deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082520",
+    "score": 0.0,
+    "rationale": "Sales Executive career at manufacturing (Globex) and IT-services (Infosys) companies focused on operations and business analysis, with no ML engineering work; AI interest limited to online courses mentioned in summary.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0082536",
+    "score": 0.0,
+    "rationale": "Career entirely in marketing and operations roles at fictional companies (Initech, Wayne Enterprises) and Wipro IT services with no engineering or ML production work, despite some tech skill listings.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0082599",
+    "score": 0.0,
+    "rationale": "7.9-year career spent entirely as Accountant and Content Writer at Wipro, Wayne Enterprises, and Acme Corp with zero engineering or ML work; tech skills listed (Node.js, FastAPI, Azure) are unsupported by any relevant role descriptions.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0082657",
+    "score": 0.2,
+    "rationale": "Entire 3.4-year career at Cognizant (IT services) doing Android mobile development with no production IR/ranking work; advanced Reinforcement Learning skill (51 months) is implausible given the role descriptions and does not align with the search/ranking requirements.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0082684",
+    "score": 0.0,
+    "rationale": "Sales Executive and Graphic Designer career entirely at fictional companies (Initech, Stark Industries) with no ML, engineering, or IR work; skill set is entry-level web/infra with no relevance to the role.",
+    "stratum": "random"
+  }
+]

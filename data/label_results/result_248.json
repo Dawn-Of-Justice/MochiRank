@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0099237",
+    "score": 0.0,
+    "rationale": "Career spans HR management, accounting, and operations at fictional companies (Initech, Wayne Enterprises) with zero ML or engineering experience, and skills are limited to Scrum and design tools entirely unrelated to IR/ranking.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099278",
+    "score": 0.2,
+    "rationale": "Only 3.4 years of web/frontend engineering at a fictional company (Dunder Mifflin) with self-learner AI exposure only; no production embeddings, retrieval, or ranking experience despite an advanced NLP skill listing.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0099282",
+    "score": 0.0,
+    "rationale": "Entire career is in accounting, operations, and civil/mechanical engineering at fictional companies (Pied Piper, Stark Industries) with no ML engineering work; the advanced GANs skill is contradicted by a non-technical career history.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099347",
+    "score": 0.4,
+    "rationale": "3.5 years at Swiggy (product company) building PyTorch CV models with strong Hugging Face Transformers and Haystack skills from NIT Trichy, but primary expertise is computer vision/ASR rather than IR/search/ranking, and experience is below the seniority threshold.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099382",
+    "score": 0.2,
+    "rationale": "Career split across Wipro (IT services) and HCL QA with a brief Swiggy mobile stint; top skills are Diffusion Models and Speech Recognition with no retrieval, embedding, or ranking production work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0099388",
+    "score": 0.2,
+    "rationale": "Only 2.8 years as a Java backend developer at Razorpay with self-described AI/ML as self-learner level; MLflow skill listed but no production IR, embeddings, or ranking systems experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0099401",
+    "score": 0.8,
+    "rationale": "7.7 years spanning Microsoft e-commerce ranking (learning-to-rank, relevance labeling pipeline) and Dream11 recommendation system using sentence-transformer embeddings, with expert-level Qdrant, Haystack, and Embeddings skills and tier_1 education (Georgia Tech, CMU).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0099443",
+    "score": 0.4,
+    "rationale": "6 years at product companies (InMobi, Nykaa) with XGBoost and FAISS experience in predictive modeling, but top skills are dominated by Speech Recognition, OpenCV, and GANs with no explicit IR/retrieval/ranking system ownership or NDCG-style evaluation work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0099526",
+    "score": 0.0,
+    "rationale": "Only 1.8 years as an operations manager at a fictional company (Pied Piper) with a marketing manager background; despite a Ph.D in Data Science, there is no ML engineering or IR work in the career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099601",
+    "score": 0.2,
+    "rationale": "8 years primarily at IT services firms (Tech Mahindra 45 months, Accenture 26 months) doing frontend/QA work at a fictional company (Stark Industries); top skills are Prompt Engineering and LoRA with no retrieval, ranking, or embedding systems production experience.",
+    "stratum": "title_match_strong"
+  }
+]

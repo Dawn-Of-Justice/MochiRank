@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0077784",
+    "score": 0.4,
+    "rationale": "Has Elasticsearch and Haystack exposure with 4.4 years at a product company (Verloop.io), but career is primarily computer vision and NLP classification rather than IR/ranking systems, and education is tier_3 with no clear NDCG/LTR experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0077801",
+    "score": 0.0,
+    "rationale": "Sales Executive / Operations Manager with no ML or engineering work; career spent in marketing, operations, and IT-services (Wipro), with only superficial ChatGPT experimentation — completely unable to perform this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077867",
+    "score": 0.0,
+    "rationale": "Operations Manager with only 2.5 years at Acme Corp and TCS in HR/BA roles, no ML or engineering depth, and only recent online course curiosity about RAG — no relevant technical foundation.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0077902",
+    "score": 0.0,
+    "rationale": "Marketing Manager whose most recent role is at fictional company Dunder Mifflin, with prior experience at TCS (IT services) and as a Graphic Designer — no ML or engineering experience whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0077956",
+    "score": 0.4,
+    "rationale": "6.4 years with IIT Bombay M.Sc and LlamaIndex/TensorFlow skills, but career is primarily computer vision (Niramai HealthTech AI) with IR/ranking only as lightweight recommendation work at Infosys (IT services) — CV-heavy profile explicitly flagged as a negative signal for this role.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0077982",
+    "score": 0.2,
+    "rationale": "2.8 years entirely at IT-services firms (Wipro, Infosys) doing cloud/QA/Android work with no production ML experience — only self-described RAG side projects, which the JD explicitly discounts.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0078002",
+    "score": 0.8,
+    "rationale": "6.3 years with IIT Guwahati B.E. and NIT Trichy M.E., shipped XGBoost/LightGBM ranking models at Meta and sentence-transformer-based recommendation at Genpact AI serving 10M+ users, owns RAG eval framework, and has expert-level QLoRA, Haystack, and Hugging Face Transformers — strong match for all core requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0078009",
+    "score": 0.2,
+    "rationale": "4.8 years as a backend/cloud engineer split across fictional company Stark Industries, TCS, and HCL (IT services) with no ML experience beyond self-taught RAG side projects and no IR or ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0078042",
+    "score": 0.8,
+    "rationale": "4.7 years with expert Pinecone, OpenSearch, and PyTorch skills, shipped learning-to-rank systems at Ola (e-commerce search) and XGBoost/LightGBM ranking models at PolicyBazaar — hands-on LTR, relevance labeling pipeline, and vector DB experience directly match the JD's core requirements.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0078106",
+    "score": 0.2,
+    "rationale": "7.7 years of strong data engineering (Swiggy, Kafka/Spark) but current role is at fictional Wayne Enterprises, prior role at fictional Pied Piper, and self-acknowledged ML transition seeker with no production ML, IR, or ranking system experience despite solid data pipeline skills.",
+    "stratum": "top_retrieval_bm25"
+  }
+]

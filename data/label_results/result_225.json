@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0090264",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (sales, marketing, accounting, operations) at two fictional companies (Wayne Enterprises, Stark Industries) with zero ML/IR engineering experience despite strong education credentials.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0090315",
+    "score": 0.0,
+    "rationale": "Marketing Manager with career in brand design and customer support at fictional companies (Initech), no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090378",
+    "score": 0.0,
+    "rationale": "Operations Manager whose entire career is in logistics ops, customer support, and graphic design at two fictional companies (Dunder Mifflin, Pied Piper), with no ML engineering depth despite a Ph.D in Data Science.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0090389",
+    "score": 0.2,
+    "rationale": "Software engineer with PyTorch (advanced) and IIIT Bangalore education, but career is primarily IT-services (Cognizant) doing DevOps and frontend with only self-learner AI exposure and no production IR or retrieval experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090419",
+    "score": 0.4,
+    "rationale": "3.8-year ML engineer at product companies (Glance, Razorpay) with advanced BM25 and Hugging Face Transformers skills, but career work is time-series forecasting rather than production IR/ranking systems, and total experience falls short of the 5-9 year target.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0090443",
+    "score": 0.4,
+    "rationale": "7.2-year data/backend engineer with advanced Information Retrieval (47 months) and Fine-tuning LLMs skills, but career narrative centers on data pipelines and warehouse engineering rather than production embedding retrieval or ranking, and two major stints are at IT-services firms (Wipro, Accenture).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0090515",
+    "score": 0.2,
+    "rationale": "Only 1.8 years of experience as a Java/mobile developer with no ML or IR background, just self-learner AI interest and skills in Spark and Rust unrelated to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090595",
+    "score": 0.0,
+    "rationale": "Sales Executive with career in content writing and SEO, no engineering or ML experience, and only 2.3 years of experience in entirely non-technical roles.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090608",
+    "score": 0.0,
+    "rationale": "Project Manager at fictional Wayne Enterprises with 1.3 years of enterprise sales experience and no technical or ML engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0090639",
+    "score": 0.2,
+    "rationale": "10-year software engineer whose entire career spans IT-services/consulting firms (Infosys, Accenture) doing QA, full-stack, and DevOps, with advanced ASR skill but no IR/ranking or production ML system experience.",
+    "stratum": "title_match_strong"
+  }
+]

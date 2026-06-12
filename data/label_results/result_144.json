@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0057441",
+    "score": 0.2,
+    "rationale": "Data pipeline engineer (Airflow/Spark) at upGrad and Zomato with only 2.8 years total experience and zero production IR/ranking or embeddings work; top skills are object detection and YOLO, fundamentally misaligned with the retrieval-and-ranking mandate.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057444",
+    "score": 0.0,
+    "rationale": "Entire 9-year career spent at IT-services firms (Capgemini, Tech Mahindra) and fictional company Hooli in DevOps/mobile/full-stack roles with no ML, IR, or ranking work; self-described AI experience is limited to a small RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057461",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning graphic design, operations, and sales at fictional companies (Dunder Mifflin, Pied Piper) with no engineering or ML background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057567",
+    "score": 0.0,
+    "rationale": "Project Manager with a purely marketing-and-operations background at fictional Wayne Enterprises; no engineering depth, no ML or IR experience, and self-described AI curiosity limited to ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057585",
+    "score": 0.0,
+    "rationale": "13-year career in sales, accounting, and content writing at Wipro (IT services), Globex, and fictional Pied Piper with no ML or engineering work; title and role descriptions are severely mismatched and non-technical throughout.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057622",
+    "score": 0.0,
+    "rationale": "12-year career in customer support, HR, and operations at Acme Corp, fictional Wayne Enterprises, and Infosys with zero engineering depth; recent online RAG/vector-database courses represent a shallow career pivot with no prior ML production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057701",
+    "score": 0.8,
+    "rationale": "4.1-year production ML engineer at Verloop.io (product company) who built semantic search with sentence-transformers + FAISS, shipped XGBoost/LightGBM ranking models with NDCG-based evaluation, and holds expert-level Learning to Rank skills; IIT Roorkee M.E. CS pedigree — strong fit with only minor gap on total years of experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0057729",
+    "score": 0.0,
+    "rationale": "Entire career as a non-technical business analyst, content writer, and HR manager at IT-services firms (Infosys, TCS) and fictional Stark Industries with no ML or engineering experience; MLOps listed as advanced skill is entirely unsupported by work history.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0057751",
+    "score": 0.2,
+    "rationale": "6.2-year career spanning QA engineering at Zomato and backend development at Accenture (IT services) with no production IR or ranking system ownership; LlamaIndex listed as advanced skill is inconsistent with actual QA/backend roles and Accenture tenure is a negative signal.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0057765",
+    "score": 0.2,
+    "rationale": "Frontend engineer at Cognizant and Accenture (IT services consulting) and fictional Stark Industries with Java backend/QA roles; FAISS and LoRA listed as advanced skills are not corroborated by any production IR or ranking work in the career history.",
+    "stratum": "random"
+  }
+]

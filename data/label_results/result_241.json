@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0096567",
+    "score": 0.0,
+    "rationale": "Entire 11.5-year career is in non-technical marketing, HR, and mechanical engineering roles at IT services firms (Infosys, Wipro, TCS) plus fictional Wayne Enterprises, with zero ML, IR, or engineering production experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0096614",
+    "score": 0.0,
+    "rationale": "5.9-year career consists entirely of accounting and enterprise sales roles at Wipro and Infosys — no ML, IR, or software engineering experience — and the 'advanced' Kubeflow skill is unsupported by any technical role in their history.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0096649",
+    "score": 0.2,
+    "rationale": "IIIT Hyderabad education and backend engineering foundation (Spring Boot, Kafka, Python) provide adjacent skills, but the career is mostly IT services/frontend work at Infosys and Tech Mahindra with no production IR, embeddings, or ranking system experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0096667",
+    "score": 0.2,
+    "rationale": "8 years of experience spans QA, frontend, and mobile work primarily at IT services firms (Mphasis, Infosys) with a brief Flipkart stint, and while QLoRA appears as a skill there is no evidence of production IR, search, or ranking system work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096698",
+    "score": 0.2,
+    "rationale": "Entire 4.5-year career is a single DevOps role at Wipro with no ML or IR work, and the advanced OpenCV/ASR skills indicate computer vision and speech domains explicitly called out as negative signals in the JD.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096726",
+    "score": 0.0,
+    "rationale": "12.7-year career is entirely non-technical (sales, customer support, content writing, operations) with a Dunder Mifflin entry flagging honeypot status, and despite a Georgia Tech M.Sc CS credential there is no engineering or ML work in any role.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0096750",
+    "score": 0.4,
+    "rationale": "7.9 years at product companies (Unacademy, BYJU's) with solid data engineering and backend skills (Python, FastAPI, Snowflake, dbt, Feature Engineering, Weights & Biases) showing genuine ML-adjacent work, but no explicit production IR, embeddings, vector search, or ranking system experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096758",
+    "score": 0.2,
+    "rationale": "Only 2.8 years of experience in a single full-stack role at Wipro IT services, with advanced Time Series and Image Classification skills unsupported by any corresponding work, indicating keyword inflation and no IR or ML production background.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0096774",
+    "score": 0.0,
+    "rationale": "8.7-year career is entirely non-technical customer support, project management, business analysis, and sales roles across Wipro, TCS, and fictional Dunder Mifflin, with no engineering or ML experience despite a Data Science M.Sc credential.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096899",
+    "score": 0.0,
+    "rationale": "Despite holding a Georgia Tech M.Tech CS credential, the 9.4-year career is entirely non-technical — civil engineering at Wipro, customer support, and operations management — with skills limited to Excel, CSS, and basic JavaScript, showing no ML or IR work.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0094009",
+    "score": 0.2,
+    "rationale": "Cloud/full-stack engineer with no ML or IR experience; current role is at Dunder Mifflin (fictional company honeypot), and self-described AI exposure is limited to online courses and API experimentation with zero production ML work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094015",
+    "score": 0.2,
+    "rationale": "QA/DevOps background across 7.6 years with no NLP, IR, or ranking systems experience; Infosys stint and fictional-company roles (Dunder Mifflin) dominate, and top skills (dbt, Snowflake, Six Sigma) are entirely unrelated to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094023",
+    "score": 0.4,
+    "rationale": "3.5 years of applied ML (XGBoost, recommendation systems at Observe.AI, NLP pipelines) with pgvector and vector search skills, but experience is short of the 5-year threshold, lacks production retrieval/hybrid-search depth, and no NDCG/ranking evaluation ownership is evidenced.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0094056",
+    "score": 0.8,
+    "rationale": "NLP Engineer with 5.9 years who built a production semantic search system using sentence-transformers (bge-base) and FAISS over 500K documents at Rephrase.ai, plus recommendation systems at Adobe, with expert-level embeddings skills — directly matching the role's hard requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0094060",
+    "score": 0.0,
+    "rationale": "Non-technical background spanning customer support, graphic design, and business analyst roles across 13.7 years; current role is at Stark Industries (fictional honeypot), and AI interest is purely curiosity-level with no engineering or ML work whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0094097",
+    "score": 0.0,
+    "rationale": "Operations Manager with only 2.8 years of experience in a customer support team-lead role; self-described marketing background with zero ML or engineering skills, and AI exposure limited to ChatGPT experimentation.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0094163",
+    "score": 0.2,
+    "rationale": "Software engineer with 2.8 years entirely at Cognizant (IT-services firm) doing Android/mobile development; only AI exposure is self-learner online courses and a small RAG side project, with no production ML or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094182",
+    "score": 0.2,
+    "rationale": "Project Manager at Hooli with 3.3 years whose actual work history is mechanical engineering hardware design; marketing-manager background per summary, OpenCV as top skill, and no NLP/IR/ranking experience despite CS/AI graduate degrees.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094231",
+    "score": 0.0,
+    "rationale": "Project Manager/Content Writer with 6.3 years split between brand/creative design at Globex Inc and TCS IT-services; skills are Tailwind, Six Sigma, SAP, and Accounting — zero engineering or ML relevance to a Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094274",
+    "score": 0.0,
+    "rationale": "Customer Support and Business Analyst across 4.4 years at Wayne Enterprises (fictional honeypot) and Hooli with a marketing/demand-gen work history; recent AI curiosity (RAG courses, LangChain) with no production engineering foundation makes this a non-fit.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0062289",
+    "score": 0.0,
+    "rationale": "Current role at fictional company Dunder Mifflin with an entirely non-technical career spanning sales, customer support, and business analysis; no ML, IR, or engineering skills present.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062369",
+    "score": 0.2,
+    "rationale": "Entire career at IT-services firms (Infosys, TCS) and fictional Stark Industries in BA/PM roles with no production ML work; summary mentions online RAG/vector DB courses but no technical evidence of applied engineering.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062372",
+    "score": 0.0,
+    "rationale": "Career consists entirely of graphic design, marketing, and customer support at fictional companies (Pied Piper, Dunder Mifflin) with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062394",
+    "score": 0.0,
+    "rationale": "14-year career entirely in BA consulting, project management, accounting, and civil engineering at Infosys (IT services) and fictional Pied Piper/Dunder Mifflin; no production ML or IR work despite an AI degree.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0062426",
+    "score": 0.2,
+    "rationale": "12-year career in operations, marketing, and sales management roles at Infosys (IT services) with no production ML or IR experience; Databricks and Hadoop skills are beginner-level and peripheral.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062462",
+    "score": 0.4,
+    "rationale": "Has production recommendation system experience at a startup (collaborative filtering with implicit, XGBoost) and Semantic Search/Milvus skills, but primary expertise is computer vision (YOLO, OpenCV) and the JD explicitly flags CV-only profiles as a weak fit for its IR/ranking focus.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0062472",
+    "score": 0.0,
+    "rationale": "Entire career in operations management at Infosys, Wipro (IT-services firms), and fictional Dunder Mifflin with no ML, NLP, or IR engineering experience at any point.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062477",
+    "score": 0.2,
+    "rationale": "Only 3.6 years of experience in frontend/cloud backend engineering at a manufacturing company with self-learner AI exposure only; no production ML, retrieval, or ranking systems built.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062541",
+    "score": 0.0,
+    "rationale": "Current and only role is Operations Manager at fictional Wayne Enterprises (honeypot signal) with 2.1 years total experience and no production ML work despite a listed Stanford M.Sc. in AI.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0062569",
+    "score": 0.0,
+    "rationale": "Career spans Civil Engineer and Marketing Manager roles at TCS (IT services) and fictional Stark Industries with no production ML or IR engineering experience whatsoever.",
+    "stratum": "title_match_strong"
+  }
+]

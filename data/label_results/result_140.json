@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0055257",
+    "score": 0.0,
+    "rationale": "Career spans Civil Engineer, HR Manager, and Content Writer roles at Stark Industries (fictional company) and Infosys, with no ML, IR, or engineering skills relevant to ranking or retrieval systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055300",
+    "score": 0.2,
+    "rationale": "Has Qdrant (advanced) and RAG (intermediate) skills listed, but current employer is Stark Industries (fictional) and all career descriptions focus on data pipelines, BI dashboards, and Kafka/Snowflake analytics with no evidence of owning retrieval or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055301",
+    "score": 0.2,
+    "rationale": "Lists Weaviate (advanced, 46mo) as a skill but the sole career role at Pied Piper (fictional company) is entirely cloud infrastructure/DevOps (AWS, Terraform, Kubernetes) with only self-learner-level AI exposure and insufficient depth in IR or ranking.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0055454",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career as Content Writer, Customer Support, and Accountant with a stint listed as Civil Engineer at Wipro; skills are SEO and BigQuery beginner with no ML, retrieval, or engineering experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055567",
+    "score": 0.0,
+    "rationale": "Full stack and QA engineering career at Dunder Mifflin (fictional company) with skills limited to Kafka/Redis beginner and Photoshop; no ML, embeddings, ranking, or IR experience anywhere in the profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055598",
+    "score": 0.0,
+    "rationale": "Entire career spent at Wipro and Infosys in Operations Manager and Marketing Manager roles; despite an M.S. in Data Science from a tier_2 institution, there is no engineering or ML production experience evident.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0055641",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Graphic Designer, Sales Executive, Operations Manager) across multiple fictional companies (Wayne Enterprises, Initech, Dunder Mifflin) with no ML or engineering skills whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0055668",
+    "score": 0.4,
+    "rationale": "Has hands-on pgvector (advanced, 44mo) and Pinecone (intermediate, 23mo) skills with product-company experience at CRED and Zoho, but career is squarely data engineering rather than IR/ranking system ownership, and lacks evidence of NDCG/evaluation framework work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0055739",
+    "score": 0.0,
+    "rationale": "Only 2.7 years of experience in an operations/logistics role at TCS with skills limited to TypeScript, Docker, and HTML; no ML, retrieval, or engineering depth relevant to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055756",
+    "score": 0.0,
+    "rationale": "Career of 13.4 years spans Business Analyst, Project Manager, Graphic Designer, and Marketing Manager roles at Acme Corp and Stark Industries (fictional), with no ML or IR engineering experience despite a B.Tech in AI.",
+    "stratum": "random"
+  }
+]

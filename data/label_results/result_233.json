@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0093331",
+    "score": 0.6,
+    "rationale": "Has hands-on production experience with sentence-transformers, FAISS, BM25, and embedding-based retrieval at InMobi and Observe.AI, and led a migration from keyword search to embedding retrieval, but most recent role is at Genpact AI (IT-services adjacent) and the career summary claims 7.2 years yet total listed experience is 16+ years with inconsistencies, reducing confidence.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093386",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Marketing Manager, Accountant, Sales Executive) with no ML or engineering work, the current company Pied Piper is a fictional honeypot company, and the only AI exposure mentioned is casual ChatGPT experimentation.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0093388",
+    "score": 0.2,
+    "rationale": "Only 2.9 years of experience in full-stack/cloud engineering at fictional company Pied Piper with no production ML work, self-describes as only a self-learner in AI/ML with a small RAG side project, and has no IR or ranking system experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0093465",
+    "score": 0.0,
+    "rationale": "Title is Civil Engineer with career history in marketing and accounting at fictional company Pied Piper and Infosys, skills are beginner-level Java/Kafka/Vue.js with no ML or IR relevance, and the summary is a generic marketing manager boilerplate mismatched to the stated title.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0093473",
+    "score": 0.2,
+    "rationale": "9+ years of experience but entirely in QA, DevOps, and cloud engineering at IT-services firms (Cognizant, Mphasis) and fictional company Stark Industries, with skills concentrated in Computer Vision/OpenCV rather than NLP/IR, and only self-learner level AI exposure.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0093501",
+    "score": 0.2,
+    "rationale": "Career is entirely at IT-services/consulting firms (HCL, Accenture x2) in cloud and full-stack roles with no product-company ML work, and while FAISS appears as an advanced skill, there is no evidence of production IR or ranking system deployment in the career descriptions.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093506",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Customer Support, Project Manager, Graphic Designer) at fictional companies Wayne Enterprises and Initech with no engineering or ML work, despite holding a Ph.D from IIIT Bangalore which is entirely undermined by a career of sales and design roles.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0093547",
+    "score": 1.0,
+    "rationale": "Directly rebuilt a candidate-JD matching pipeline improving NDCG@10 from 0.72 to 0.91 at PhonePe, with end-to-end ownership of embedding generation (fine-tuned BGE-large), Pinecone retrieval, learning-to-rank re-ranking, LoRA/QLoRA fine-tuning at Sarvam AI, and an M.S. from UC Berkeley — perfectly aligned with every core requirement of the role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0093562",
+    "score": 0.0,
+    "rationale": "Career is in Civil/Mechanical Engineering and Marketing at fictional companies Dunder Mifflin and Pied Piper with no ML engineering work, and despite an IIT Hyderabad M.E. in Machine Learning the entire career history shows zero application of those skills.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0093582",
+    "score": 0.0,
+    "rationale": "Only 3.3 years of experience entirely as Marketing Manager at Wipro (IT-services) with a business analyst role description, no engineering or ML work, and the AI skills (GANs) listed are irrelevant to IR/ranking with very short duration, making this a clear non-fit.",
+    "stratum": "consulting_only"
+  }
+]

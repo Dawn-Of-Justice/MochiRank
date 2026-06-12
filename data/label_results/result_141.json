@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0055759",
+    "score": 0.0,
+    "rationale": "Career is entirely in sales, customer support, and civil engineering with zero ML/IR engineering experience, and includes a stint at fictional company Pied Piper.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055790",
+    "score": 0.2,
+    "rationale": "Frontend/backend web developer with mostly Capgemini IT-services experience and only self-learner-level AI exposure (small RAG side project), with no production IR, retrieval, or ranking systems built.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055884",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience as a QA Engineer with all beginner-level skills and self-learner AI knowledge only, far below the depth required for production IR/ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055959",
+    "score": 0.2,
+    "rationale": "IIT Hyderabad MS in ML is a strong academic signal, but the entire career is in non-technical HR and operations management with no production ML or engineering work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055992",
+    "score": 0.8,
+    "rationale": "Built RAG system with Pinecone at CRED, semantic search with sentence-transformers and FAISS at Aganitha, a 10M-user recommendation system, and a learning-to-rank system at Ola — covering hybrid retrieval, embedding-based IR, and LTR across multiple product companies, with NIT Surathkal pedigree.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0056031",
+    "score": 0.0,
+    "rationale": "Entire career is in logistics/operations management at Wayne Enterprises (fictional company) and TCS, with no technical or ML engineering work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056042",
+    "score": 0.0,
+    "rationale": "Career consists entirely of HR Manager and Project Manager roles at Globex and Hooli with content writing and sales descriptions, zero engineering or ML experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0056055",
+    "score": 0.0,
+    "rationale": "Career is in operations management, business analysis, and civil engineering at Hooli (fictional) and Wayne Enterprises (fictional) with no ML or IR engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0056074",
+    "score": 0.0,
+    "rationale": "Business analyst and mechanical engineer background with no ML or IR experience, works at fictional companies (Hooli, Pied Piper), and skills are entirely non-technical relative to the role.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0056188",
+    "score": 0.2,
+    "rationale": "8.7 years as a backend/DevOps/QA engineer but career spans IT-services firms (Accenture, Mindtree) and fictional companies (Stark Industries, Initech) with no retrieval, ranking, or NLP production experience despite TTS/GANs skill listings.",
+    "stratum": "title_match_strong"
+  }
+]

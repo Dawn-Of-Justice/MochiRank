@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0054887",
+    "score": 0.0,
+    "rationale": "Civil Engineer title at a fictional company (Pied Piper) with a career description that is actually enterprise sales; summary admits marketing manager background with only casual ChatGPT experimentation — no ML, IR, or engineering relevance whatsoever.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0054900",
+    "score": 0.0,
+    "rationale": "Career spans Business Analyst at Wayne Enterprises (fictional), accounting, and brand/content roles with zero ML or IR experience; summary is a marketing manager profile with only ChatGPT curiosity, and skills list (dbt, Salesforce CRM, HTML, Excel) has no relevance to retrieval, ranking, or applied ML.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055005",
+    "score": 0.0,
+    "rationale": "Content Writer whose entire career is at fictional/IT-services companies (Dunder Mifflin, Stark Industries, Wipro, Wayne Enterprises) in non-technical roles (content, mechanical engineering, project management, marketing); no ML, Python, or IR skills present.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055035",
+    "score": 0.4,
+    "rationale": "7-year data engineer from BITS Pilani with strong Python/Spark/Airflow foundations and Weaviate listed as advanced skill (41 months), but all career is at fictional companies (Dunder Mifflin, Pied Piper) and work descriptions show no actual embedding-based retrieval or ranking system ownership — core IR/ranking production experience is absent despite relevant skill claims.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0055124",
+    "score": 0.0,
+    "rationale": "Project Manager whose career is entirely in marketing leadership, business analysis, and customer support at fictional companies (Stark Industries, Dunder Mifflin, Wayne Enterprises); no engineering or ML substance despite superficial tech skill listings.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0055168",
+    "score": 0.2,
+    "rationale": "3-year software engineer with full-stack web background (React, Node.js) at a single IT-services company (Mindtree) and only self-learner level AI exposure; 'Fine-tuning LLMs' listed as advanced despite no production ML work, with no IR/retrieval/ranking experience and insufficient depth for the role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0055220",
+    "score": 0.4,
+    "rationale": "4.7-year data engineer at real EdTech product companies (upGrad, Unacademy) with solid Python/SQL/Spark/Snowflake/dbt background and FAISS listed as intermediate skill (31 months), but career descriptions show purely analytics/data-warehouse work with no production retrieval, ranking, or embedding system experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0055223",
+    "score": 0.0,
+    "rationale": "Business Analyst/Sales Executive with entire career at IT-services (Wipro) and fictional companies (Stark Industries) in customer support and sales roles; skills are Agile/Salesforce/Docker with no ML or IR relevance, and PhD in Physics adds no applicable technical depth for this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0055236",
+    "score": 0.0,
+    "rationale": "9.9-year Sales Executive/Accountant at Stark Industries and Infosys with career descriptions in content writing, operations, and mechanical engineering — a classic anti-persona honeypot with recent LangChain/RAG course mentions masking a completely non-technical career.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0055251",
+    "score": 0.2,
+    "rationale": "7.9-year .NET Developer with MIT AI degree but career entirely in QA test automation and full-stack web at IT-services firms (HCL, Mphasis) plus a fintech product company (Razorpay); no production ML, retrieval, or ranking work — only a small self-built RAG side project mentioned in summary.",
+    "stratum": "high_behavioral"
+  }
+]

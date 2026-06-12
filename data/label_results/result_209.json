@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0083879",
+    "score": 0.8,
+    "rationale": "7.1-year ML engineer from NIT Surathkal who shipped semantic search infrastructure with sentence-transformers and FAISS, trained XGBoost/LightGBM ranking models at product companies PhonePe and Swiggy, and has hands-on Milvus and Hugging Face Transformers experience — directly matching the role's hard requirements for production IR and hybrid retrieval.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0083892",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical marketing manager, operations, and business analyst roles at TCS/Wipro/Dunder Mifflin (fictional), with no ML, IR, or engineering experience whatsoever beyond casual ChatGPT use.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083961",
+    "score": 0.0,
+    "rationale": "13.6 years spent in accounting, HR management, content writing, and business analyst roles at TCS and Globex with zero ML, NLP, or search engineering experience, and only beginner-level TypeScript/Node.js skills unrelated to the role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0083962",
+    "score": 0.0,
+    "rationale": "Despite an IIT Hyderabad degree, the actual career consists of civil engineer, graphic designer, and accountant roles at two fictional companies (Stark Industries, Pied Piper) and Wipro, with no ML, IR, or software engineering production work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0084054",
+    "score": 0.2,
+    "rationale": "9.6-year full-stack/QA engineer with Java, React, and some cloud experience, but three of four roles are at fictional companies (Dunder Mifflin, Wayne Enterprises, Pied Piper) and there is no ML, search, or ranking experience — only self-described API experimentation with AI tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084076",
+    "score": 0.0,
+    "rationale": "13.8-year career in customer support, marketing, and graphic design roles exclusively at IT-services firms (Infosys, TCS) and a fictional company (Stark Industries), with no technical engineering or ML experience and only a tier-4 education.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084145",
+    "score": 0.2,
+    "rationale": "8.8-year software engineer with cloud/DevOps work at Zomato and full-stack development experience, plus some MLOps and Airflow exposure, but no production ML, retrieval, ranking, or NLP work, and a tier-4 civil engineering degree providing no relevant foundation.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0084221",
+    "score": 0.0,
+    "rationale": "Only 1.3 years of experience as an operations manager at TCS in a marketing-focused role, with no ML or engineering work, making this profile fundamentally unqualified for a senior AI engineer position regardless of the COEP Pune education.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0084247",
+    "score": 0.0,
+    "rationale": "12.2-year career entirely in non-technical sales, HR, and project management roles at multiple fictional companies (Initech, Stark Industries, Pied Piper), with no engineering or ML experience and only beginner-level Java skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0084260",
+    "score": 0.2,
+    "rationale": "Civil engineer with only 2.5 years of experience and both roles at fictional companies (Hooli, Pied Piper), whose AI interest is limited to recent online RAG/LangChain courses — a recent career pivot with no prior engineering depth or production ML work.",
+    "stratum": "random"
+  }
+]

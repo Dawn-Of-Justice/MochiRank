@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0060211",
+    "score": 0.2,
+    "rationale": "Career at strong product companies (Swiggy, CRED) but entirely in DevOps/mobile/backend roles with no production ML or IR experience; IIT Kanpur MSc AI is a positive signal but self-described AI exposure is limited to online courses and a small RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060215",
+    "score": 0.2,
+    "rationale": "Most recent role is at Wayne Enterprises (fictional company, red flag) and career is data engineering focused on pipelines/warehousing with no production IR/retrieval/ranking work; skills list RAG and TensorFlow as advanced but career descriptions show no supporting evidence of NLP or search systems.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060271",
+    "score": 0.0,
+    "rationale": "Non-technical career spanning marketing, sales, and project management at Infosys, Pied Piper (fictional), and Initech (fictional) with zero engineering or ML experience despite listing Computer Vision as an advanced skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060295",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (project management, sales, accounting) at Wipro IT services and fictional companies (Hooli, Initech) with no engineering depth or ML/IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060302",
+    "score": 0.0,
+    "rationale": "Career consists entirely of operations, HR, and mechanical engineering roles at Wayne Enterprises (fictional) and Initech (fictional), with no software engineering, ML, or IR experience; skills like Kubernetes and Image Classification are listed but contradict the non-technical role history.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0060328",
+    "score": 0.0,
+    "rationale": "Only 1.5 years of experience as a Sales Executive at TCS with no technical or ML background; the summary describes a marketing manager profile and the skillset (React, Excel, PowerPoint) has no relevance to IR/ranking engineering.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0060359",
+    "score": 0.0,
+    "rationale": "Content Writer with 1.4 years experience at Wipro IT services in a non-technical role; listing ASR as an advanced skill with high endorsements is clear keyword inflation that contradicts the actual career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060423",
+    "score": 0.2,
+    "rationale": "Only 1.6 years of experience as a DevOps Engineer at Mindtree (IT services) doing pure cloud infrastructure work; PEFT listed as advanced with 48-month duration is implausible keyword inflation given the 19-month total career, and there is no evidence of ML or IR production work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0060472",
+    "score": 0.4,
+    "rationale": "Has genuine ML production experience — XGBoost predictive modeling at Paytm and recommendation systems (collaborative filtering) at Haptik, plus Weaviate listed with 58 months of usage — but primary focus is computer vision/predictive modeling rather than IR/retrieval/ranking, and there is no evidence of NDCG/evaluation framework ownership or hybrid search deployment.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060546",
+    "score": 0.2,
+    "rationale": "Entire 4.7-year career is at IT services firms (Cognizant, Tech Mahindra) in DevOps and frontend roles with no product-company ML work; Weaviate is listed as an advanced skill but career descriptions show only cloud infrastructure and mobile development with zero IR or ML production experience.",
+    "stratum": "random"
+  }
+]

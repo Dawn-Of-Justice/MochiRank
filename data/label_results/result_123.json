@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0048265",
+    "score": 0.4,
+    "rationale": "NIT Surathkal grad with product-company experience (Niramai, Observe.AI) and relevant tools (RAG, Haystack, LLMs) listed, but actual career work is computer vision and predictive modeling rather than IR/search/ranking, with no evidence of embedding-based retrieval or evaluation metric ownership in production.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0048289",
+    "score": 0.2,
+    "rationale": "Nine years of backend/DevOps/mobile experience but currently at Initech (fictional company flagging honeypot risk), heavy IT-services history (Infosys, Tech Mahindra), no production ML or IR work, and AI exposure is entirely self-learner level with no shipping evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0048313",
+    "score": 0.0,
+    "rationale": "Entire career is non-technical (HR management, project management, enterprise sales) at Infosys, Wipro, and Wayne Enterprises (fictional company), with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0048380",
+    "score": 0.0,
+    "rationale": "Career spans mechanical engineering, civil engineering, operations, and accounting across Wipro, Dunder Mifflin (fictional), and Wayne Enterprises (fictional x2), with no ML, IR, or software engineering experience relevant to this role.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0048434",
+    "score": 0.2,
+    "rationale": "Entire 3.5-year career at Accenture (IT-services consulting) doing analytics engineering and data pipelines, with no production ML or IR experience; advanced skills in QLoRA and Pinecone appear inflated relative to the actual role description of backend analytics dashboards.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0048469",
+    "score": 0.6,
+    "rationale": "Shipped production recommendation features at Vedantu (EdTech), ML deployment at Locobuzz (AI/ML product), and NLP pipelines at Zoho (SaaS), with hands-on skills in Qdrant, embeddings, and LoRA demonstrating real product-company ML depth, though experience skews toward CV/recommendation rather than dedicated IR/search/ranking with NDCG-style evaluation.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0048509",
+    "score": 0.4,
+    "rationale": "Strong vector-DB and retrieval tooling skills (Pinecone, FAISS, PyTorch) with some product-company exposure at Niramai, but 36 of 50 career months are at Tech Mahindra (IT services) doing predictive modeling rather than IR/search systems, and no evidence of evaluation metric ownership or hybrid retrieval in production.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0048522",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Marketing Manager, Sales Executive, Business Analyst) with two fictional companies (Pied Piper, Stark Industries) and no engineering or ML production experience despite listing AI-adjacent online course activity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0048578",
+    "score": 0.2,
+    "rationale": "Five years of backend and cloud engineering across fictional companies (Stark Industries, Initech) and CRED, with no production ML work; 'Learning to Rank' is listed as an intermediate skill but no supporting evidence exists in any role description.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0048691",
+    "score": 0.2,
+    "rationale": "Eight-plus years predominantly at TCS (52 months, IT services) and Wayne Enterprises (fictional company), doing full-stack and mobile work with no production ML or IR systems; FAISS listed as advanced skill is inconsistent with a career spent on web/mobile development at services firms.",
+    "stratum": "top_retrieval_dense"
+  }
+]

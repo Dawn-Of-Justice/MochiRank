@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0057805",
+    "score": 0.0,
+    "rationale": "Current title is Graphic Designer with a career spanning manufacturing operations, civil engineering, and project management at fictional/services companies (Wayne Enterprises, Pied Piper), zero ML/IR/retrieval experience, and only a beginner LangChain skill of 6 months indicating a very recent pivot with no engineering depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0057894",
+    "score": 0.2,
+    "rationale": "Full Stack Developer with 3.5 years at IT-services (Mphasis) and a fictional company (Initech), no production ML or retrieval experience, and AI exposure limited to online courses and LangChain tutorials — exactly the 'recent LangChain-to-OpenAI' profile the JD explicitly disqualifies.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0057907",
+    "score": 0.0,
+    "rationale": "Content Writer with 14 years in non-technical roles (content, mechanical engineering, accounting) split across Globex, Wipro IT services, and fictional Wayne Enterprises — no ML, NLP, retrieval, or engineering skills relevant to a Senior AI Engineer role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0057931",
+    "score": 0.0,
+    "rationale": "Entire 8-year career is at TCS IT services in non-technical roles (Content Writer, Mechanical Engineer titles with mismatched descriptions suggesting fabricated data), with skills like Salesforce CRM and Tally — no ML, NLP, or retrieval engineering experience whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0058047",
+    "score": 0.0,
+    "rationale": "Sales Executive / HR Manager background across Initech, Infosys, Hooli, and fictional Dunder Mifflin with skills limited to Go, Hadoop, MongoDB, and Excel — no ML or IR experience, and a current role at a known fictional company is a hard disqualifier.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058059",
+    "score": 0.2,
+    "rationale": "Frontend Engineer with only 2.1 years of experience, single role at fictional Stark Industries doing Android/mobile development, and AI exposure limited to self-taught online courses and a small RAG side project — far below the production ML/retrieval depth the role requires.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0058066",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer title with a career spanning consulting, customer support, and sales at Initech, Infosys, fictional Stark Industries, and fictional Dunder Mifflin — no technical ML or retrieval engineering background despite an M.S. in Machine Learning, and the summary describes a marketing manager profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058090",
+    "score": 0.0,
+    "rationale": "Content Writer with 3.2 years entirely in SEO/content strategy at fictional Stark Industries, with no engineering or ML skills — beginner-level Spring Boot and GCP with under 17 months each represent keyword inflation with zero relevance to production AI/IR systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058146",
+    "score": 0.6,
+    "rationale": "AI Research Engineer with 5.1 years including product-company experience at Flipkart (e-commerce) and PolicyBazaar, advanced skills in Qdrant (vector DB), Hugging Face Transformers, XGBoost, and LLMs with strong endorsements, plus an IIIT Bangalore M.S. — solid ML production background though the career descriptions suggest predictive modeling focus rather than explicit hybrid retrieval/ranking system ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058190",
+    "score": 0.2,
+    "rationale": "Cloud Engineer with 3.8 years in QA/test automation at a manufacturing company, with an implausibly advanced LoRA skill (60 endorsements, 53 months — longer than their entire career) suggesting keyword inflation, and no evidence of production retrieval, search, or ranking systems.",
+    "stratum": "title_match_strong"
+  }
+]

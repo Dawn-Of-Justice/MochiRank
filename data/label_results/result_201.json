@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0080535",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical operations/sales roles at Wayne Enterprises (fictional company) with no ML, IR, or engineering work; ChatGPT curiosity does not constitute relevant AI experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0080580",
+    "score": 0.0,
+    "rationale": "Entire career is content writing, SEO, and customer support at fictional companies (Wayne Enterprises, Initech) with no engineering or ML production experience despite an M.Tech in AI credential.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080685",
+    "score": 0.0,
+    "rationale": "Career consists of customer support team lead and mechanical engineering roles at fictional companies (Pied Piper, Acme Corp) with no ML, retrieval, or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080687",
+    "score": 0.2,
+    "rationale": "Ph.D CS degree and intermediate MLflow skill (26 months) are the only technical signals; the entire career history is marketing leadership, sales, and accounting roles at fictional companies (Pied Piper, Stark Industries) with no production ML or IR work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0080699",
+    "score": 0.0,
+    "rationale": "11+ year career is exclusively sales executive, mechanical engineering, and marketing manager roles with no ML, NLP, or information retrieval experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0080740",
+    "score": 0.4,
+    "rationale": "Solid data engineering background at product companies (PharmEasy, CRED) with lightweight XGBoost/sklearn ML work (~30% of role), but primary expertise is data pipelines and analytics infrastructure; top skills are TTS and Speech Recognition (a JD-explicit negative signal), with no embedding retrieval or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080765",
+    "score": 0.2,
+    "rationale": "Only 1.4 years of total experience in frontend engineering at Flipkart with no production ML or IR systems; PEFT listed as advanced skill despite insufficient tenure to substantiate it, and AI exposure is self-learner only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080766",
+    "score": 1.0,
+    "rationale": "8.8 years building ranking and retrieval systems at product companies (Swiggy, Haptik, Salesforce, Aganitha) including explicit BM25-to-hybrid migration for 35M+ item corpus, personalization A/B testing infrastructure, and expert-level OpenSearch and Search Infrastructure skills backed by NIT Surathkal tier-1 education.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0080788",
+    "score": 0.2,
+    "rationale": "Only 1.9 years of frontend engineering experience at Flipkart with no production ML or IR work; LlamaIndex listed as 'advanced' for 44 months and LoRA for 59 months despite total career of under 2 years, indicating clear keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080807",
+    "score": 0.2,
+    "rationale": "Career is entirely business analyst and operations manager roles at manufacturing companies (Acme Corp, Globex Inc) with no ML or IR work; M.S. in Information Technology from tier-2 Delhi College of Engineering is the only positive signal in an otherwise non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

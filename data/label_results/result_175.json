@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0070829",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (HR Manager, Sales Executive at fictional Wayne Enterprises) with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070892",
+    "score": 0.4,
+    "rationale": "FAISS listed as advanced skill (32 months) and M.Tech from COEP with product-company stints at Swiggy and Zomato, but actual career work is frontend/mobile/backend engineering with no production IR or ranking system evidence.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0070903",
+    "score": 0.0,
+    "rationale": "Entire career spans operations management, marketing, graphic design, and business analysis at fictional companies (Pied Piper, Stark Industries) with zero engineering or ML depth.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0070946",
+    "score": 0.0,
+    "rationale": "Sales and non-technical career across fictional companies (Dunder Mifflin, Wayne Enterprises, Pied Piper) with Feature Engineering listed as advanced but no engineering role history to substantiate it.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0070952",
+    "score": 0.0,
+    "rationale": "Mechanical/civil engineer turned Sales Executive with entire career at fictional companies (Stark Industries, Pied Piper) and no ML or IR engineering work in any role.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0070995",
+    "score": 0.2,
+    "rationale": "Mobile developer at Zomato (product company) with only 4.2 years experience and AI involvement limited to self-learner RAG side projects and Prompt Engineering; no production IR or ranking system work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0071031",
+    "score": 0.0,
+    "rationale": "Content Writer/SEO background at Acme Corp and Infosys with Image Classification listed as an advanced skill despite a career consisting entirely of writing and marketing roles.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071070",
+    "score": 0.4,
+    "rationale": "BM25 listed as advanced skill (23 months) and Georgia Tech tier_1 education are positive signals, but current role is .NET Developer at Infosys (IT services) with career descriptions showing only web/API backend work and no production IR or ranking system deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071115",
+    "score": 0.8,
+    "rationale": "Recommendation Systems Engineer at Meta with IIT Madras education, Semantic Search (expert, 66 months) and BM25 (expert, 92 months) skills, and 18-month production recommendation system project demonstrating strong IR depth and evaluation rigor.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0071156",
+    "score": 0.2,
+    "rationale": "Weaviate advanced skill (43 months) and Delhi College of Engineering education are positives, but career is IT-services dominant (Accenture, HCL) with LangChain-heavy profile and no evidence of production IR or ranking system work.",
+    "stratum": "high_behavioral"
+  }
+]

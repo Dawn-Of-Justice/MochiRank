@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0095748",
+    "score": 0.0,
+    "rationale": "Current role at fictional company Dunder Mifflin with operations/warehousing background and a marketing-manager summary; no ML, IR, or engineering skills relevant to this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095800",
+    "score": 0.2,
+    "rationale": "Despite IIT Delhi education, the actual career history is customer support team lead and business analyst with a marketing-manager summary, and no production ML or IR experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0095801",
+    "score": 0.0,
+    "rationale": "Career entirely in non-technical roles (mechanical engineer, sales executive, operations manager) at fictional companies Initech and Stark Industries, with no ML or IR skills whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0095814",
+    "score": 0.0,
+    "rationale": "Roles at fictional companies Initech and Stark Industries span marketing leadership, content writing, and BA work with no engineering or ML substance despite an AI-curious summary.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0095821",
+    "score": 0.2,
+    "rationale": "Only 1.5 years of experience at HCL (IT services) doing Java backend work, with AI exposure limited to online courses and a small personal RAG project — no production ML or retrieval system deployment.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0095826",
+    "score": 0.0,
+    "rationale": "Career split between Infosys (IT services) as Business Analyst and Initech (fictional) as HR Manager, with no technical ML or IR experience and a marketing-manager persona summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095830",
+    "score": 0.0,
+    "rationale": "Single role as Operations Manager handling logistics/warehouse fulfillment at Hooli, with a marketing-manager summary and no technical ML or engineering skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0095884",
+    "score": 0.6,
+    "rationale": "3.8 years of production ML at Sarvam AI and Saarthi.ai with advanced BM25, QLoRA, XGBoost, collaborative filtering, and gradient-boosted models shipped to real users, though the profile is lighter on dense-embedding hybrid retrieval and formal NDCG/evaluation-framework ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0095897",
+    "score": 0.2,
+    "rationale": "8.4 years of experience but predominantly in DevOps/web roles at IT-services firms (Cognizant, Mphasis, Tech Mahindra) and fictional Pied Piper, with self-learner AI exposure and no production ML or retrieval engineering.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0095908",
+    "score": 0.0,
+    "rationale": "14+ year career entirely in civil engineering, graphic design, and sales at fictional companies (Pied Piper, Acme Corp) with no technical ML, AI, or software engineering experience.",
+    "stratum": "random"
+  }
+]

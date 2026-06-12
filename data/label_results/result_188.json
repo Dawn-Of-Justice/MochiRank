@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0075574",
+    "score": 0.8,
+    "rationale": "Owned the ranking layer at Haptik (BM25 to LTR evolution), shipped XGBoost/LightGBM ranking models at Observe.AI with feature engineering across behavior/content/engagement signals, and built a RAG pipeline with Pinecone embeddings — directly matching the core JD requirements for production IR, hybrid retrieval, and LTR; CMU CS tier_1 education further supports the profile.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0075622",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Sales Executive, Content Writer, Project Manager) at IT-services firms and a fictional company (Dunder Mifflin), with no engineering or ML/IR experience — a clear non-fit honeypot profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075678",
+    "score": 0.0,
+    "rationale": "Career spans Graphic Designer, Project Manager, and Content Writer at TCS, Infosys, and fictional Stark Industries, with no engineering, ML, or IR work — a non-technical honeypot profile with zero alignment to the role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075726",
+    "score": 0.2,
+    "rationale": "7.6yr software engineer with solid backend/DevOps fundamentals (Swiggy) but two roles listed at fictional Dunder Mifflin and no production ML/IR experience — only self-learner AI exploration with a side RAG project, which the JD explicitly flags as insufficient.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075752",
+    "score": 0.2,
+    "rationale": "Entire 4.1yr career is at IT-services firms (Mphasis, HCL) doing Java backend and QA automation with no production ML or IR work, and the advanced LlamaIndex skill claim is contradicted by a career history devoid of any ML system deployment.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075760",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Mechanical Engineer title, HR Manager, Operations Manager) at IT-services firms and fictional Pied Piper, with a self-described marketing manager background and no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075826",
+    "score": 0.2,
+    "rationale": "Both career roles are frontend engineering (React/TypeScript) at fictional Pied Piper with no ML or IR production experience, and despite a scikit-learn skill listing there is no evidence of any applied ML work in the actual career history.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0075850",
+    "score": 0.2,
+    "rationale": "Only 2.4yr experience with a full-stack web role at fictional Wayne Enterprises and IT-services Tech Mahindra, and advanced QLoRA/NLP skill claims are wholly unsupported by a career consisting entirely of React/Node.js full-stack development.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0075859",
+    "score": 0.2,
+    "rationale": "Career is split between a fictional company (Dunder Mifflin) doing QA automation and Cognizant (IT services) doing DevOps/infra, with top skills in OpenCV and ASR — domains explicitly flagged as non-fits (computer vision/speech) in the JD with no NLP or IR exposure.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0075903",
+    "score": 0.2,
+    "rationale": "Entire 5.6yr career is at IT-services firms exclusively (Infosys, Capgemini) doing frontend and DevOps work, with no product-company or ML/IR production experience — the JD explicitly disqualifies candidates whose entire career is at consulting firms.",
+    "stratum": "consulting_only"
+  }
+]

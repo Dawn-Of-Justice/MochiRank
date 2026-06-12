@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0085719",
+    "score": 0.0,
+    "rationale": "Career spans Mechanical Engineer at fictional Pied Piper, Operations Manager at Infosys, Content Writer at Stark Industries (fictional), and Marketing Manager at Dunder Mifflin (fictional) — multiple honeypot companies, no engineering or ML skills, and zero relevance to IR/ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0085727",
+    "score": 0.2,
+    "rationale": "Android/full-stack developer (4.2yr) whose production experience is entirely mobile development at Dunder Mifflin (fictional company), with only self-learner-level AI exposure and no evidence of IR, ranking, embeddings, or evaluation-metric ownership.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085755",
+    "score": 0.2,
+    "rationale": "Sole career role is .NET Developer at Infosys (IT services, 2.6yr) doing cloud/DevOps work, with Pinecone listed as an advanced skill at odds with the entirely non-ML career description and no evidence of production IR or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085766",
+    "score": 0.0,
+    "rationale": "Graphic Designer with 13yr career spanning accounting, content writing, and HR at Wipro and fictional Pied Piper — entirely non-technical profile with no ML, engineering, or information retrieval experience despite listing Microservices as a skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085787",
+    "score": 0.0,
+    "rationale": "Accountant at Wipro with 1.8yr experience and a stated background in marketing management, with no ML, software engineering, or IR skills — only surface-level ChatGPT experimentation noted in the summary.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085811",
+    "score": 0.4,
+    "rationale": "Data engineer at BYJU'S (2.1yr) with solid Python/Spark/Airflow pipeline skills and FAISS listed as an intermediate skill (25 months), but experience is primarily data infrastructure rather than production ML ranking or retrieval systems, and career tenure is too short for a senior founding-team role.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0085840",
+    "score": 0.2,
+    "rationale": "Software engineer at Flipkart with only 1.6yr experience whose actual role description is Android mobile development, yet lists Vector Search as advanced with 47 months duration — a duration inconsistent with total experience, indicating skill inflation with no real production IR evidence.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0085851",
+    "score": 0.6,
+    "rationale": "ML Engineer with 7yr across Genpact AI and Saarthi.ai, with hands-on production recommendation systems using collaborative filtering and XGBoost at startup scale, plus predictive modeling experience — solid applied ML foundation but lacks explicit IR/ranking evaluation-metric ownership (NDCG/MAP) and dense-retrieval production experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0085857",
+    "score": 0.4,
+    "rationale": "Senior Software Engineer (8yr, NIT Trichy tier_1) with Sentence Transformers advanced skill and MLOps experience at Swiggy/Zoho, but career is predominantly data engineering and analytics warehousing rather than IR/ranking systems, and one role is at fictional Wayne Enterprises which is a honeypot signal.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0085928",
+    "score": 0.0,
+    "rationale": "Customer Support professional (11.5yr) with career history of sales, graphic design, and consulting analysis at TCS and two stints at fictional Pied Piper — no engineering or ML experience, only marketing-manager background with superficial AI curiosity.",
+    "stratum": "random"
+  }
+]

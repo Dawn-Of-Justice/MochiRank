@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0098526",
+    "score": 0.2,
+    "rationale": "9.4 years of backend/cloud engineering experience but entire career is at IT-services firms (Infosys, Wipro) with no product-company ML work, and AI exposure is limited to self-learner online courses and a small RAG side project with zero production IR/ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098552",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (sales executive, civil engineer, project manager, marketing) with no software engineering or ML background, and AI interest is limited to ChatGPT experimentation for productivity.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0098585",
+    "score": 0.2,
+    "rationale": "6.4 years of backend/cloud engineering experience spans Cognizant (IT services), Razorpay (QA), and Flipkart (cloud infra) but shows no ML/IR work, no embedding or retrieval system experience, and AI exposure is only self-learner courses and a small RAG side project.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098634",
+    "score": 0.0,
+    "rationale": "Non-technical background (operations manager, mechanical engineer, marketing manager) with current/recent role at fictional company Pied Piper and prior role at Dunder Mifflin, indicating a honeypot-style profile with zero ML or engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098643",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical roles (civil engineer, marketing manager) with a current role at fictional company Wayne Enterprises, no ML or software engineering experience, and AI interest is only ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098650",
+    "score": 0.0,
+    "rationale": "13.9 years spent in operations manager and accountant roles at IT-services firms (Wipro, Infosys, TCS) and fictional company Wayne Enterprises, with no engineering or ML experience and AI curiosity limited to ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098695",
+    "score": 0.4,
+    "rationale": "Strong skills in Milvus (advanced, 48 months) and FAISS (advanced, 52 months) are direct positives for vector search/IR roles, but the current role is at fictional company Pied Piper, career history shows QA and cloud infra work rather than ML/ranking system ownership, and the tier_3 education with no evident evaluation framework or LTR experience limits the score.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0098720",
+    "score": 0.0,
+    "rationale": "2.8 years of experience entirely in customer support at Wipro (IT services) with no engineering or ML work; claimed advanced Reinforcement Learning skill with only 30 months duration on a customer support profile is a clear keyword inflation flag.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0098734",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (civil engineer at fictional Wayne Enterprises, accountant at TCS) with no software engineering or ML background, and AI interest is only ChatGPT experimentation.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0098763",
+    "score": 0.0,
+    "rationale": "14.9 years in non-technical roles (sales executive, mechanical engineer, accountant) with stints at fictional companies Dunder Mifflin and Hooli, no ML or IR engineering experience, and AI curiosity limited to ChatGPT tools.",
+    "stratum": "random"
+  }
+]

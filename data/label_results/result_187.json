@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0075031",
+    "score": 0.0,
+    "rationale": "Career consists entirely of fictional-company roles (Wayne Enterprises, Dunder Mifflin) with mechanical engineering and graphic design titles; no ML, IR, or engineering skills relevant to the role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0075190",
+    "score": 0.0,
+    "rationale": "Operations Manager with entire career at fictional companies (Stark Industries, Dunder Mifflin, Pied Piper, Wayne Enterprises) in non-technical roles (customer support, business analyst, brand design); no ML or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075283",
+    "score": 0.0,
+    "rationale": "Content Writer with roles at fictional companies (Wayne Enterprises, Initech) and TCS in content writing, sales, and accounting; despite Kubeflow/Databricks in skills, no actual ML engineering work is evidenced in the career history.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0075315",
+    "score": 0.0,
+    "rationale": "Business Analyst with career at fictional companies (Dunder Mifflin, Pied Piper) in sales, accounting, and marketing manager roles; no ML, IR, or engineering depth whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075347",
+    "score": 0.0,
+    "rationale": "Customer Support role with career at Infosys (IT services), Initech (fictional), and Wayne Enterprises (fictional) in operations and content writing; Reinforcement Learning listed as advanced skill has no supporting career evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075379",
+    "score": 0.0,
+    "rationale": "HR Manager with entire career at fictional companies (Pied Piper, Wayne Enterprises) in operations and civil engineering roles; no ML, IR, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0075382",
+    "score": 0.2,
+    "rationale": "Graphic Designer with career entirely at fictional companies (Stark Industries, Wayne Enterprises) and IT-services firms (Infosys, Wipro) in non-engineering roles; summary mentions RAG and vector DB coursework but no production engineering experience exists to support it.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0075439",
+    "score": 0.8,
+    "rationale": "ML Engineer at Flipkart (major product e-commerce company) built RAG system with Pinecone and OpenAI embeddings and a recommendation system with sentence-transformer embeddings serving 10M+ users, with advanced skills in OpenSearch, Information Retrieval, and LoRA, and owns the eval framework for retrieval quality.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0075453",
+    "score": 0.0,
+    "rationale": "Operations Manager with entire career at IT-services firms (TCS, Wipro, Infosys) in accounting, business analysis, and graphic design roles; no product-company experience and no ML or IR engineering work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0075488",
+    "score": 0.0,
+    "rationale": "Graphic Designer with career split between IT-services firms (TCS, Wipro) and fictional companies (Stark Industries, Dunder Mifflin) in marketing, business analysis, and design roles; no ML or IR experience.",
+    "stratum": "random"
+  }
+]

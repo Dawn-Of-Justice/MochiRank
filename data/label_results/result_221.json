@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0088201",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Content Writer, Civil Engineer, Graphic Designer, Business Analyst) including stints at fictional companies Wayne Enterprises and Pied Piper, with zero ML, IR, or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088210",
+    "score": 0.2,
+    "rationale": "Solid backend/DevOps engineering background at SaaS companies (Hooli, Razorpay) but AI experience is entirely self-learner level (small RAG side project, online courses) with no production embeddings, retrieval, or ranking systems built.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0088237",
+    "score": 0.6,
+    "rationale": "Built production recommendation features at Freshworks (product SaaS) with advanced-rated Information Retrieval (57mo) and Learning to Rank (40mo) skills, though only 3.7 years total experience and heavy Computer Vision/YOLO focus dilutes the IR specialization.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0088247",
+    "score": 0.0,
+    "rationale": "Operations Manager with marketing and customer-support roles exclusively at Pied Piper (fictional company) and Acme Corp, with no engineering or ML experience despite inflated Image Classification skill listing.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088372",
+    "score": 0.0,
+    "rationale": "Entirely non-technical marketing career spanning 14+ years with roles at fictional companies Stark Industries and Initech, and zero ML, IR, or engineering experience despite a CMU B.Sc. in Information Technology.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088438",
+    "score": 0.6,
+    "rationale": "6.6 years at product companies (Saarthi.ai startup, Dream11) with production recommendation system experience and advanced Weaviate and Haystack skills indicating real vector search/NLP pipeline work, though significant CV/image moderation work at Dream11 and tier_4 education are gaps.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0088597",
+    "score": 0.2,
+    "rationale": "CMU M.E. in Machine Learning signals strong academic foundation, but 3.2 years of actual work experience is purely full-stack web/DevOps at Hooli with AI limited to self-learner RAG side projects and no production IR or ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0088660",
+    "score": 0.0,
+    "rationale": "Despite a PhD in Computer Engineering from Manipal, the entire 9.8-year career is non-technical (Marketing Manager, Customer Support, HR Manager, Business Analyst) at companies including fictional Pied Piper and Initech with no ML or engineering production work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0088754",
+    "score": 0.0,
+    "rationale": "Honeypot candidate with non-technical career (Business Analyst, Mechanical Engineer, Graphic Designer) entirely at fictional companies Pied Piper, Initech, and Dunder Mifflin, with no credible ML or engineering experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0088799",
+    "score": 0.0,
+    "rationale": "14.5 years as a Business Analyst/Mechanical Engineer at IT-services giants Wipro and Infosys with no production ML work; recent AI interest is purely online courses on RAG and LangChain experimentation with no demonstrated engineering depth.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

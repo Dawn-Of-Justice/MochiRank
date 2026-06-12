@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0091266",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (HR, customer support, operations, marketing) with multiple fictional-company red flags (Initech, Wayne Enterprises) and zero ML/AI engineering experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0091275",
+    "score": 0.0,
+    "rationale": "Roles are uniformly non-technical (customer support, operations, marketing, sales) across multiple fictional companies (Wayne Enterprises, Initech, Dunder Mifflin) with no ML or engineering depth whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091276",
+    "score": 0.2,
+    "rationale": "Entire 9.9-year career is at IT-services firms (Mphasis, Accenture, Infosys) doing frontend/backend/DevOps work with only self-learner-level AI exposure and no production IR or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0091391",
+    "score": 0.0,
+    "rationale": "Career spans graphic design, content writing, and sales with stints at fictional companies (Wayne Enterprises, Stark Industries); no ML or software engineering work despite a tier_2 CS degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091406",
+    "score": 0.0,
+    "rationale": "Entire career is in enterprise sales, operations management, and marketing at fictional companies (Initech, Dunder Mifflin) with no technical or ML work of any kind.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091534",
+    "score": 0.8,
+    "rationale": "Owned the ranking layer at Flipkart (LTR migration), built semantic search with sentence-transformers and FAISS at Adobe, and implemented a RAG system with Pinecone at Glance — directly matching the JD's core requirements, backed by an IIT Delhi M.Tech.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0091580",
+    "score": 0.4,
+    "rationale": "Solid applied ML background at product companies (Niramai, Meesho, Vedantu) with NLP and recommendation systems experience, but lacks depth in production embeddings-based retrieval, hybrid search, and evaluation metrics (NDCG/MAP) that are core JD requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091582",
+    "score": 0.2,
+    "rationale": "Only 1.7 years of experience (test automation at Infosys) with 'Information Retrieval advanced for 51 months' being clear keyword inflation that far exceeds total tenure, and no production ML work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0091601",
+    "score": 0.2,
+    "rationale": "Eight years of backend, mobile, and frontend engineering at a fictional company (Pied Piper) and IT-services firm (Tech Mahindra) with no ML/IR production experience despite pgvector appearing in skills.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0091662",
+    "score": 0.2,
+    "rationale": "IIT Madras B.Tech is a strong signal, but a 9.8-year career spent in mechanical engineering design, content writing, and business analysis with zero ML or software engineering output makes this a fundamental mismatch.",
+    "stratum": "random"
+  }
+]

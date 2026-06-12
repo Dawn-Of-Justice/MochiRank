@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0083085",
+    "score": 0.2,
+    "rationale": "8.5yr DevOps/backend engineer with no ML or IR experience; most recent stint is at fictional company Pied Piper, and self-learner AI exposure (online courses, API experiments) is insufficient for a production ranking/retrieval role.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083100",
+    "score": 0.2,
+    "rationale": "Only 2.7 years of experience in conventional cloud/backend engineering at Razorpay with no production ML or IR work; a RAG side project and beginner scikit-learn skill do not meet the production embeddings/retrieval requirements.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0083186",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career across customer support (at fictional Initech), Infosys BA, and accountant roles with zero engineering or ML production experience; 'Embeddings: advanced' claim is unsupported by any engineering background.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083292",
+    "score": 0.0,
+    "rationale": "2.1yr customer support/operations professional at fictional Pied Piper with a B.Sc Commerce background and no engineering or ML work whatsoever; AI curiosity is limited to ChatGPT for productivity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083395",
+    "score": 0.0,
+    "rationale": "12.5yr career entirely in IT services sales (TCS), marketing management (Hooli), and mechanical engineering with no production ML or IR work; IIT Kanpur PhD credential is contradicted by a career that is entirely non-technical sales and operations.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0083396",
+    "score": 0.4,
+    "rationale": "Shows 47 months advanced Elasticsearch and 22 months advanced Vector Search experience which are directly relevant IR skills, but the current title is Mobile Developer, career includes Mphasis (IT services) and fictional Hooli, tier_4 education, and only 4.9 years total — significant gaps remain for a founding-team IR role.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0083438",
+    "score": 0.0,
+    "rationale": "9.8yr career spans Wipro BA, customer support, and operations management with zero ML or IR engineering; 'LLMs: advanced' claim with only 7 months duration is keyword inflation on a fundamentally non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0083442",
+    "score": 0.0,
+    "rationale": "10.2yr career entirely in sales, operations, and IT services (TCS, Wipro, Infosys, fictional Initech) with no technical or ML work; 'Weights & Biases: advanced, 56 months' is implausible keyword inflation given a sales/marketing career history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0083464",
+    "score": 0.0,
+    "rationale": "Marketing manager at Infosys IT services with only 2.8 years of non-technical experience and no engineering or ML background; AI interest is limited to ChatGPT productivity experimentation.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0083535",
+    "score": 0.0,
+    "rationale": "Civil engineer and content writer career includes two fictional companies (Initech, Wayne Enterprises) and has no ML, IR, or software engineering experience; AI interest is purely curiosity-level ChatGPT experimentation.",
+    "stratum": "title_match_strong"
+  }
+]

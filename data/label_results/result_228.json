@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0091703",
+    "score": 0.0,
+    "rationale": "Current role is Mechanical Engineer at Dunder Mifflin (fictional company), career description is senior accounting work, summary self-identifies as a marketing manager with only casual ChatGPT experimentation — zero engineering or ML relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091712",
+    "score": 0.4,
+    "rationale": "Has sentence-transformers (13mo), recommendation systems, and LoRA skills, but entire 4.8-year career has been at HCL (IT services only) with no product-company production IR or ranking deployment experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091746",
+    "score": 0.2,
+    "rationale": "Only 1.2 years of experience as a DevOps/frontend engineer at Initech (fictional company), with no production ML or IR work — AI exposure is self-described as side-project RAG with OpenAI APIs only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091806",
+    "score": 0.0,
+    "rationale": "11-year career entirely in marketing, content writing, graphic design, and sales operations roles with no engineering or ML work whatsoever — AI-field degrees listed but career provides zero technical signal.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0091851",
+    "score": 0.0,
+    "rationale": "8.2-year career spans HR management, marketing, and project management roles at Stark Industries (fictional) and Wipro with no ML or IR engineering work, despite an inflated 'Data Science advanced' skill claim.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0091854",
+    "score": 0.0,
+    "rationale": "8.1-year career is entirely HR management, mechanical engineering, and business analysis at Pied Piper (fictional) and TCS, with skills limited to Tally, PowerPoint, and Scrum — no ML or IR relevance at all.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0091890",
+    "score": 0.6,
+    "rationale": "Current AI Research Engineer role at Verloop.io (product AI company) with advanced Elasticsearch (38mo) and OpenSearch (48mo) production experience, plus scikit-learn/XGBoost ML work, though prior 39 months at Tech Mahindra (IT services) and no explicit LTR/NDCG evaluation ownership temper the score.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091909",
+    "score": 1.0,
+    "rationale": "6.9-year career at Rephrase.ai and Meta with expert-level Sentence Transformers (57mo), Pinecone (84mo), OpenSearch (59mo), and advanced Learning to Rank (56mo), having shipped a 10M+ user recommendation system with sentence-transformer embeddings and XGBoost/LightGBM ranking models in production — from IIIT Bangalore (tier_1).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0091957",
+    "score": 0.0,
+    "rationale": "11-year career is operations management, project management, accounting, and HR roles across Infosys and Wayne Enterprises (fictional) with no ML or IR engineering background — FAISS listed as advanced after only 8 months is clear keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092057",
+    "score": 0.2,
+    "rationale": "8.4 years of conventional backend (.NET), QA, and frontend work at Zomato, HCL, and TCS with no ML or IR production experience — AI exposure is self-described as online courses and a small RAG side project only.",
+    "stratum": "random"
+  }
+]

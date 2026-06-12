@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0085216",
+    "score": 0.0,
+    "rationale": "Accountant with 1.8 years of experience whose entire career is financial reporting and statutory compliance, with no ML, IR, or engineering background whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0085234",
+    "score": 0.0,
+    "rationale": "Career spans BA at Wipro, sales, marketing, and operations roles with no ML or search/ranking experience, and includes a role at fictional company Pied Piper signaling a honeypot profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085255",
+    "score": 0.0,
+    "rationale": "Non-technical roles (accounting, HR, content writing) across multiple fictional companies (Wayne Enterprises, Stark Industries, Pied Piper) with zero ML or IR experience; strong honeypot signals.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085270",
+    "score": 0.0,
+    "rationale": "Sales Executive with 2.7 years at Stark Industries (fictional company) doing accounting work; skills are frontend web frameworks with no ML, search, or ranking relevance.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085278",
+    "score": 0.2,
+    "rationale": "6.2 years of backend/DevOps engineering with some product company experience (Zomato) but explicitly self-described as a self-learner on AI/ML with no production IR or ranking experience, and skills listed are frontend/DevOps with no ML libraries.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085381",
+    "score": 0.4,
+    "rationale": "NIT Trichy graduate with advanced Elasticsearch expertise (52 months, 52 endorsements) and data pipeline experience from a fintech product company (Razorpay), but primary career is .NET/web development and a significant stint at IT-services firm Capgemini with no evidence of embeddings, vector search, or ranking evaluation metrics.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0085433",
+    "score": 0.0,
+    "rationale": "Content Writer with 2.4 years at a manufacturing company whose skills are OpenCV (computer vision) and ETL with no NLP, IR, search, or ranking experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0085540",
+    "score": 0.0,
+    "rationale": "Sales and HR career entirely at IT-services firms (Infosys, TCS) and multiple fictional companies (Dunder Mifflin, Initech), with marketing and accounting roles and no ML or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0085641",
+    "score": 0.0,
+    "rationale": "Operations and graphic design roles at Globex Inc, Infosys, and fictional Initech with no ML or IR skills; Object Detection skill indicates computer vision not NLP/search, and there is no production ML experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0085703",
+    "score": 0.2,
+    "rationale": "Frontend Engineer at Cognizant (IT services only) with 2.9 years doing Android mobile development; self-learner AI skills include LangChain and ASR (both negative JD signals), with OpenCV indicating computer vision focus rather than NLP/IR.",
+    "stratum": "high_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0039940",
+    "score": 0.0,
+    "rationale": "Sales Executive with a marketing manager background and a role at fictional Stark Industries; skills are Go/Angular/Kafka with no ML, embeddings, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039971",
+    "score": 0.0,
+    "rationale": "HR Manager whose entire 6.8-year career spans HR and business analyst roles in manufacturing/IT services with zero engineering or ML output and skills capped at Illustrator and marketing.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0039993",
+    "score": 0.0,
+    "rationale": "Business Analyst with roles at three fictional companies (Dunder Mifflin, Stark Industries, Hooli) and one IT-services stint at Infosys; no ML/IR skills and honepot signals disqualify this profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0040022",
+    "score": 0.2,
+    "rationale": "Customer Support at Wipro (IT services) with only 1.3 years total experience and clear keyword inflation (MLOps listed as 'advanced' with 18 months despite no production ML role), placing this firmly in adjacent-but-wrong territory.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040053",
+    "score": 0.0,
+    "rationale": "Operations Manager at Infosys with 1.7 years of experience and a skill set (Redux, MongoDB, TypeScript, GraphQL, Tally) entirely absent of ML, embeddings, or retrieval work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040060",
+    "score": 0.0,
+    "rationale": "HR Manager across Wipro (IT services) and fictional Initech with a third role as Civil Engineer at Wipro; no ML or AI engineering experience of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040077",
+    "score": 0.0,
+    "rationale": "Content Writer across fictional Wayne Enterprises and Initech plus Infosys business analyst; 12+ years are entirely non-technical creative/operations roles with no ML or IR exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040103",
+    "score": 0.2,
+    "rationale": "Java developer at IT-services firm Mindtree with only 1.8 years total experience and obvious keyword inflation (Speech Recognition listed as 'advanced' with 59 months exceeding total career length); ML exposure is self-learner side-project level only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040117",
+    "score": 0.8,
+    "rationale": "Recommendation Systems Engineer at product companies PhonePe (10M+ user scale, sentence-transformer embeddings + BM25 hybrid) and Salesforce (RAG pipeline with Pinecone + A/B testing) for 6.5 years, with expert-level BM25 and Embeddings skills and an IIT Roorkee tier_1 CS PhD — strong match on every core requirement; slight gap on explicit NDCG/MAP evaluation ownership and LambdaMART prevents a perfect score.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0040204",
+    "score": 0.2,
+    "rationale": "Data/backend engineer (HCL IT services + PharmEasy pipelines) with 2.5 years of experience and keyword inflation (Image Classification listed as 'advanced' with 54 months exceeding total career); solid data-engineering fundamentals but no production ML, embeddings, or retrieval work.",
+    "stratum": "title_match_strong"
+  }
+]

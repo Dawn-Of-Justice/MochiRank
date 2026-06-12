@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0079999",
+    "score": 0.2,
+    "rationale": "DevOps engineer at Cognizant (IT services) with QA background; self-learner AI only and no embeddings, retrieval, or ranking experience in any production system.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0080052",
+    "score": 0.0,
+    "rationale": "Only role is customer support team lead at Pied Piper (fictional company), with a stated marketing manager background and zero engineering or ML depth.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0080098",
+    "score": 0.0,
+    "rationale": "11-year career entirely in civil/mechanical engineering and accounting roles at fictional company Initech and Infosys IT services, with no ML or IR experience beyond recent online courses.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0080128",
+    "score": 0.0,
+    "rationale": "Content writer and operations manager (Wipro IT services) with a marketing manager background; no engineering or ML work despite advanced Object Detection skill listed.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080353",
+    "score": 0.2,
+    "rationale": "7 years of experience split between Tech Mahindra IT services and Stark Industries (fictional), with frontend/QA work and scattered beginner skills (Salesforce, Photoshop, Accounting); no ML or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080371",
+    "score": 0.2,
+    "rationale": "8.8-year backend Java engineer with a stint at CRED (product fintech) but no production ML or IR work; Diffusion Models listed as advanced skill is inconsistent with an entirely Java/backend career and AI engagement is self-learner only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080393",
+    "score": 0.0,
+    "rationale": "2.5-year career as content writer/business analyst at Infosys IT services with a marketing manager background; ASR listed as advanced skill is implausible given the non-technical consulting role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080461",
+    "score": 0.2,
+    "rationale": "Skills list claims advanced Semantic Search and Milvus (49 months) but the sole career role is frontend engineering at fictional Stark Industries, making the IR skills unverifiable and the profile internally inconsistent.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080532",
+    "score": 0.2,
+    "rationale": "9.7-year full-stack/backend engineer with product-company stints at Flipkart and Hooli but no production ML or IR work; MLflow and Databricks indicate ML tooling exposure at a self-learner level only.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0080534",
+    "score": 0.4,
+    "rationale": "ML engineer with production Elasticsearch (advanced, 44mo) and OpenSearch (advanced, 34mo) experience plus recommendation-system work at PhonePe (product fintech), but only 3.8 years total experience and heavy LangChain reliance with no explicit NDCG/ranking-evaluation ownership.",
+    "stratum": "high_behavioral"
+  }
+]

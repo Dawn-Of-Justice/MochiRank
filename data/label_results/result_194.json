@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0077513",
+    "score": 0.2,
+    "rationale": "QA Engineer background with only surface-level AI exposure (LangChain, OpenAI API experimentation) and current role at fictional Stark Industries; no production IR, embedding, or ranking systems experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0077519",
+    "score": 0.0,
+    "rationale": "Entire 10-year career spans graphic design, content writing, customer support, and marketing at Wayne Enterprises (fictional company) with zero engineering or ML production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077542",
+    "score": 0.4,
+    "rationale": "Solid backend/data engineering background at PhonePe (product company) with strong data pipeline skills (Spark, Airflow, Snowflake, dbt, MLflow), but no production experience with embeddings, vector search, or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0077548",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical spanning sales, HR, and graphic design roles including a position at fictional Dunder Mifflin, with no engineering, ML, or IR experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077563",
+    "score": 0.2,
+    "rationale": "Despite an IIT Roorkee M.S. in AI, the entire 12-year career is non-technical (content writer, sales executive, project manager at TCS) with no production ML or IR work — the credential does not compensate for the career trajectory.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077572",
+    "score": 0.2,
+    "rationale": "IIIT Bangalore M.Tech in Computer Engineering is a positive signal, but 8.6 years of work history is entirely non-technical (business analyst, civil engineer roles, accountant, sales) including a position at fictional Initech, with no ML or IR production experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077623",
+    "score": 0.0,
+    "rationale": "Career of 9+ years spans graphic design and civil engineering with first role at IT-services firm Infosys, and skills (Kafka, Spark) appear mismatched against actual job descriptions that describe design and accounting work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0077708",
+    "score": 0.4,
+    "rationale": "IIT Hyderabad B.Tech with 7.6 years of backend engineering at product companies (CRED fintech), PEFT experience (35 months), and a RAG side project show engineering depth, but no production embedding retrieval or ranking systems work.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0077758",
+    "score": 0.2,
+    "rationale": "Claims advanced NLP and Semantic Search skills with high endorsements, but actual career is entirely test automation/QA engineering at Pied Piper (fictional company), indicating likely keyword inflation with no production IR evidence.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0077772",
+    "score": 0.4,
+    "rationale": "IIT Kanpur M.S. and cloud engineering experience at Flipkart (large product company) demonstrate strong CS fundamentals and product-company exposure, but the career is full-stack web/cloud with MLflow tooling only — no production embedding, retrieval, or ranking systems.",
+    "stratum": "high_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0053591",
+    "score": 0.8,
+    "rationale": "Built semantic search infrastructure from scratch (sentence-transformers, FAISS) at Ola and shipped XGBoost/LightGBM ranking models for a discovery feed, plus a RAG system with Pinecone at Swiggy — directly matching the JD's core requirements for production embedding retrieval and hybrid search with learning-to-rank experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0053605",
+    "score": 0.4,
+    "rationale": "Has RAG, pgvector, and semantic search skills from a product-company role (Verloop.io), but substantial time at TCS on computer vision (ResNet/CV) rather than IR/NLP, and career history shows no ownership of ranking evaluation metrics (NDCG, MAP, MRR) which are explicitly required.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0053612",
+    "score": 0.0,
+    "rationale": "Career spanning graphic design, mechanical engineering titles, accountancy, and content writing — all at Infosys or the fictional Pied Piper — with zero ML or engineering production experience; skills are Photoshop, GCP at intermediate, and SQL at beginner level.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0053619",
+    "score": 0.2,
+    "rationale": "Only 1.5 years of experience as a frontend engineer at HCL (IT services) with no ML or IR production work; self-described AI exposure is limited to online courses and a small RAG side project using LangChain, and top skills are LangChain/Sales/Vue.js with no ranking or retrieval depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053684",
+    "score": 0.0,
+    "rationale": "Sole career role is a marketing/demand-generation position at the fictional Pied Piper; background is entirely non-technical (content marketing, SEO, paid acquisition) with skills like Object Detection listed at intermediate that are inconsistent with the actual work described.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0053725",
+    "score": 0.2,
+    "rationale": "4.3 years as a mobile/full-stack developer at Razorpay building React admin UIs and REST APIs, with AI exposure only at self-learner level (online courses, small RAG project); skills show Fine-tuning LLMs and Speech Recognition but no production IR, embeddings, or ranking systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053749",
+    "score": 0.0,
+    "rationale": "Nearly 15 years in sales, graphic design, content writing, and project management roles across Wipro and the fictional Wayne Enterprises and Globex Inc, with no ML or engineering experience; beginner-level skills (Accounting, Agile, Kafka) are inconsistent with stated roles and indicate a honeypot profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0053810",
+    "score": 0.2,
+    "rationale": "4 years of web/backend development (QA automation, Java Spring Boot) with one role at the fictional Pied Piper; claims advanced ASR and MLOps skills but career history shows no ML production work, and the mismatched company (Pied Piper) is a red flag for profile authenticity.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053875",
+    "score": 0.0,
+    "rationale": "Current and only role is Accountant at fictional Pied Piper doing enterprise sales; described as 'marketing manager' background with skills of Tally (accounting software) at the top — completely non-technical with no ML or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053898",
+    "score": 0.0,
+    "rationale": "HR Manager and Operations Manager roles exclusively at Wipro (IT services) managing warehouse operations and HR functions; no technical or ML work whatsoever, and skills like Spark/Node.js/Airflow at beginner level are inconsistent with the actual operations management career described.",
+    "stratum": "consulting_only"
+  }
+]

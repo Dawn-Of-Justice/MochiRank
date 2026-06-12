@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0058305",
+    "score": 0.0,
+    "rationale": "Sales Executive at Infosys with 2.4 years focused on marketing/demand-generation; no ML, IR, or engineering skills relevant to the role — skills are Figma, SEO, and Content Writing.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0058320",
+    "score": 0.0,
+    "rationale": "Business Analyst at fictional company Stark Industries with a marketing/demand-gen background; despite an M.Sc in AI, the only notable technical skill is BentoML and the career shows zero ML engineering or IR work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058392",
+    "score": 0.0,
+    "rationale": "HR Manager whose entire career is non-technical roles (HR, Customer Support, Sales, Project Management) across Pied Piper (fictional), Infosys, and Stark Industries (fictional), with no ML or IR engineering work whatsoever.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0058404",
+    "score": 0.0,
+    "rationale": "Marketing Manager with 13 years across fictional companies (Pied Piper, Wayne Enterprises, Hooli) in pure marketing/brand/HR roles; technical skills (BentoML, Databricks) appear decorative with no engineering career evidence.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058426",
+    "score": 0.6,
+    "rationale": "6.5-year ML engineer with production experience at AI product companies (Wysa, Mad Street Den), Weaviate (advanced, 42 months) and QLoRA skills, XGBoost modeling, and recommendation system work — missing explicit hybrid retrieval / NDCG evaluation ownership but solid applied ML foundation.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0058523",
+    "score": 0.0,
+    "rationale": "Marketing Manager with 4.8 years entirely in marketing/PM/BA roles at Hooli and Pied Piper (both fictional); no ML engineering, retrieval, or IR work despite an M.Sc in AI from COEP Pune.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058571",
+    "score": 0.0,
+    "rationale": "Marketing Manager / Civil/Mechanical Engineer at fictional companies (Initech, Stark Industries) with no NLP or IR background; Computer Vision skill listed but career history shows zero ML engineering work.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0058575",
+    "score": 0.8,
+    "rationale": "AI Engineer with 5.8 years including production semantic search with sentence-transformers (bge-base) + FAISS at Krutrim, RAG pipeline with Pinecone at Aganitha, expert-level Hugging Face and Sentence Transformers skills, and owns an eval framework for retrieval — closely matches the JD's core requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0058693",
+    "score": 0.2,
+    "rationale": "Software engineer with only 2.4 years of web/API development at fictional company Hooli; Pinecone and Information Retrieval listed as advanced skills but career shows no production ML or retrieval work, only self-learner-level AI exposure.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0058709",
+    "score": 0.0,
+    "rationale": "Business Analyst / Mechanical Engineer across fictional companies (Dunder Mifflin, Wayne Enterprises, Initech) with no ML, NLP, or IR engineering experience; cloud and Flask skills are entry-level and unrelated to ranking systems.",
+    "stratum": "random"
+  }
+]

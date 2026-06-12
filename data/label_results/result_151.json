@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0060632",
+    "score": 0.0,
+    "rationale": "Career history consists entirely of marketing, accounting, and operations roles with no engineering or ML experience; works at fictional companies (Dunder Mifflin, Initech), and the advanced GANs skill is entirely unsupported by any technical role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0060656",
+    "score": 0.0,
+    "rationale": "Non-technical background as Project Manager and Mechanical Engineer at fictional companies (Stark Industries, Dunder Mifflin) with only beginner-level peripheral skills and no ML, IR, or production engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060704",
+    "score": 0.0,
+    "rationale": "Entire career in HR Manager and Business Analyst roles at IT services firms (TCS, Wipro) and fictional Wayne Enterprises with no ML, retrieval, or AI engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060715",
+    "score": 0.4,
+    "rationale": "Built production recommendation features with collaborative filtering and gradient-boosted models at Genpact AI, demonstrating some applied ML work, but only 3.3 years of experience, skills skew heavily toward LangChain and prompt engineering rather than IR/retrieval systems, and lacks evidence of NDCG/ranking evaluation ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0060778",
+    "score": 0.0,
+    "rationale": "Entire career is in Content Writing, Marketing Management, and Project Management at fictional companies (Hooli, Stark Industries) with zero engineering or ML depth; online RAG courses do not compensate for no technical foundation.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0060793",
+    "score": 0.2,
+    "rationale": "Strong 9.5-year software engineering career at product companies (Flipkart, CRED) shows solid backend fundamentals, but all AI/ML exposure is self-learner side projects with no production IR, retrieval, or ranking systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060799",
+    "score": 0.0,
+    "rationale": "Operations Manager and Civil Engineer career at fictional Initech and IT services firms (TCS, Wipro) with no ML or technical engineering work; skills list (Angular, GraphQL, Rust) is inconsistent with the non-technical role history.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060812",
+    "score": 0.0,
+    "rationale": "Only 3 years of experience in mobile and .NET development at an IT services firm (Tech Mahindra) and fictional Stark Industries, with no ML or AI engineering depth beyond self-learner RAG side projects.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0060816",
+    "score": 0.2,
+    "rationale": "8.8 years SWE experience including Zomato (product company), but all career role descriptions are frontend/React work contradicting the LlamaIndex advanced skill claim, with no evidence of production ML, retrieval, or ranking systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0060841",
+    "score": 0.4,
+    "rationale": "Has semantic search listed as advanced skill (56 months) and scikit-learn depth, with a 7.4-year SWE career including Hooli and a product company role, but primary experience is backend/frontend engineering and IT services (HCL, Cognizant) with computer vision as main ML focus rather than IR/ranking systems.",
+    "stratum": "top_retrieval_dense"
+  }
+]

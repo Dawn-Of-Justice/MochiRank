@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0064928",
+    "score": 0.4,
+    "rationale": "Has 5.2 years with data engineering and lightweight ML (sklearn/XGBoost) experience at product companies, but skills are dominated by OpenCV/CNN with only intermediate Information Retrieval exposure and no evidence of production embeddings-based retrieval, vector databases, or ranking evaluation metrics (NDCG/MAP/MRR).",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0065195",
+    "score": 0.8,
+    "rationale": "Strong match: led migration from keyword-search to embedding-based retrieval at CRED (product company), built RAG with Pinecone, expert-level Elasticsearch and Hugging Face Transformers, IIT Bombay education, and explicit evaluation rigor focus — missing direct LambdaMART/NDCG ownership and learning-to-rank depth.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0065215",
+    "score": 0.2,
+    "rationale": "Career is entirely backend/devops at IT-services firms (Tech Mahindra, Cognizant) plus a fictional company (Dunder Mifflin), with skills dominated by Next.js/HTML/TypeScript and only a self-described RAG side project — no production ML, embeddings, or retrieval system experience.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0065289",
+    "score": 0.2,
+    "rationale": "Only 2.2 years of experience, entirely in cloud/DevOps at Razorpay, with Haystack listed as advanced skill (53 months, inconsistent with total experience) and no demonstrated production embeddings or ranking work despite adjacent IR-adjacent tool claims.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0065299",
+    "score": 0.2,
+    "rationale": "Only 2.3 years total, spent at Mphasis (IT services) doing data warehouse/pipeline work, with Information Retrieval as intermediate skill but no production embedding or ranking system experience and no product-company ML deployment.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0065317",
+    "score": 0.0,
+    "rationale": "Non-technical profile spanning accounting, operations, and content writing at fictional companies (Dunder Mifflin, Pied Piper) with zero ML/AI engineering experience — only surface-level ChatGPT curiosity mentioned.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0065455",
+    "score": 0.0,
+    "rationale": "Background is mechanical engineering and content writing at Stark Industries (fictional company), with current title Accountant, no ML or software engineering production experience, and skills (Webpack/Flask/HTML) entirely unrelated to IR or AI systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065477",
+    "score": 0.2,
+    "rationale": "8.3 years of full-stack/QA/backend experience at product companies (Swiggy, CRED) demonstrates engineering depth, but skills are entirely web/infrastructure-oriented (CI/CD, Hadoop, Vue.js) with only a self-learner RAG side project and no production ML, embeddings, or ranking system work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0065495",
+    "score": 0.0,
+    "rationale": "Entire career at Wipro (IT services) in customer support and graphic design roles with no engineering or ML work — profile is a clear honeypot with non-technical titles and skills (Illustrator, Redis beginner) mismatched to the AI engineering role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0065539",
+    "score": 0.0,
+    "rationale": "HR Manager at Wayne Enterprises (fictional company) with a marketing/consulting background, zero ML or software engineering production experience, and only superficial AI curiosity via ChatGPT experimentation.",
+    "stratum": "random"
+  }
+]

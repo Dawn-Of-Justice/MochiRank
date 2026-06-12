@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0037566",
+    "score": 0.8,
+    "rationale": "ML Engineer at LinkedIn and Paytm (product companies) with production RAG pipelines using OpenAI embeddings and Pinecone, expert-level Elasticsearch (74 months), and direct ownership of the eval framework — covering all core JD requirements except explicit NDCG/LTR metric work.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0037596",
+    "score": 0.2,
+    "rationale": "Entire career at Cognizant and Accenture (IT services/consulting — an explicit JD disqualifier), with actual work in data warehousing and analytics engineering rather than production IR or ranking, despite listing 'Learning to Rank' as an advanced skill.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0037701",
+    "score": 0.0,
+    "rationale": "QA Engineer at Stark Industries (fictional company — honeypot signal) with only 3.4 years experience, primary skill is YOLO (computer vision), and self-described AI knowledge limited to side projects with OpenAI API — no ML engineering or IR depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037824",
+    "score": 0.0,
+    "rationale": "Sales Executive at Stark Industries (fictional company) with a marketing/sales background and only 1.1 years experience; AI exposure limited to ChatGPT productivity experimentation with zero engineering or ML production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037830",
+    "score": 0.0,
+    "rationale": "Career history shows Civil Engineer and Operations Manager roles at TCS, Wipro (IT services), and Wayne Enterprises (fictional company), with no ML or IR production work despite holding AI/ML degrees — skills are beginner-level cloud and web tools unrelated to ranking systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037879",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (Content Writer, Sales Executive, Operations Manager, Mechanical Engineer) spanning Pied Piper, Initech, and Stark Industries — all fictional companies — with no ML or IR production work and only beginner-level web/scripting skills.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037897",
+    "score": 0.0,
+    "rationale": "Accountant and Business Analyst at Initech and Wayne Enterprises (both fictional companies) with a marketing manager self-description, no ML skills beyond beginner SQL, and zero proximity to AI engineering or information retrieval.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0037900",
+    "score": 0.2,
+    "rationale": "9.1 years of engineering experience but career is split across Initech (fictional company), Mindtree, and Tech Mahindra (IT services firms), with only self-learner-level AI/ML depth and no production retrieval, ranking, or embedding systems work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0037980",
+    "score": 0.8,
+    "rationale": "Senior Applied Scientist from BITS Pilani (tier_1) with 9 years at product AI companies (Niramai, Verloop.io, Salesforce) explicitly designing ranking layers, shipping offline/online A/B testing infrastructure, and working with text encoders and model fine-tuning (LoRA) — directly aligned with the JD's core mandate.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0037982",
+    "score": 0.0,
+    "rationale": "13.5-year career entirely in non-technical roles (Civil Engineer, Content Writer, Marketing Manager, Mechanical Engineer) at multiple fictional companies (Stark Industries, Dunder Mifflin, Wayne Enterprises) with no ML or IR experience and skills limited to Illustrator and basic web frameworks.",
+    "stratum": "title_match_strong"
+  }
+]

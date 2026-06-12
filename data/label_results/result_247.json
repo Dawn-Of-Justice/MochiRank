@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0098846",
+    "score": 0.8,
+    "rationale": "7.6yr ML engineer with production learning-to-rank ownership at upGrad, RAG + Pinecone pipeline at Swiggy, Qdrant expertise, PEFT fine-tuning, and a tier_1 IIT Kanpur PhD — covers embeddings, hybrid retrieval, and recsys at product companies; docked from 1.0 because no explicit evaluation framework ownership (NDCG/MAP/MRR) is cited anywhere in the profile.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0098856",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (civil engineering title, sales executive, HR manager) with stints at fictional companies (Stark Industries, Initech) and zero ML or software engineering experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0098964",
+    "score": 0.2,
+    "rationale": "Primarily a Java/backend engineer from IT-services firms (Mindtree, Accenture) with a fictional-company stint (Pied Piper); embeddings listed as a skill but ML experience is self-learner level with no production IR or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0099003",
+    "score": 0.2,
+    "rationale": "Only 1.9 years of experience as a frontend React/TypeScript engineer at Razorpay; AI knowledge is purely self-learner (courses, small RAG side project) with no production ML and skills skewed toward computer vision rather than IR or ranking.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099049",
+    "score": 0.0,
+    "rationale": "Entire career at IT-services firms (TCS x3, Wipro) in non-engineering roles — operations, sales, accounting, business analysis — with only very recent casual AI curiosity and no ML or software engineering production work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0099084",
+    "score": 0.0,
+    "rationale": "1-year content writer at a manufacturing company with a marketing-manager background, no engineering or ML work, and skills limited to design tools and basic web tech.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099127",
+    "score": 0.0,
+    "rationale": "13+ years in non-technical roles (graphic designer, customer support, mechanical engineer, accountant) across multiple fictional companies (Pied Piper, Initech, Wayne Enterprises) with no ML or software engineering experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0099134",
+    "score": 0.2,
+    "rationale": "4.7-year frontend/DevOps engineer whose primary role was at fictional company Stark Industries; AI knowledge is self-learner level (courses, small RAG project) with skills in general web/data tooling and no production IR or ranking experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0099143",
+    "score": 0.0,
+    "rationale": "11.5-year career entirely in customer support, accounting, and HR roles across fictional companies (Dunder Mifflin, Pied Piper) with no ML or software engineering background despite a nominal M.S. in Machine Learning listed.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0099217",
+    "score": 0.0,
+    "rationale": "13+ years in marketing, sales, civil engineering, and business analysis roles spanning fictional companies (Pied Piper, Initech, Dunder Mifflin) and IT-services (Infosys), with only superficial SQL/AWS skills and no ML or IR engineering experience.",
+    "stratum": "honeypot_flagged"
+  }
+]

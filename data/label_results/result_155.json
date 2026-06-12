@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0061942",
+    "score": 0.2,
+    "rationale": "Mobile Android developer at fictional companies (Initech, Dunder Mifflin) with only self-learner AI exposure via APIs; no production IR, embeddings, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061992",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager with 1 year as a Civil Engineer at Acme Corp; skills are HTML, Photoshop, and Illustrator with zero ML, IR, or engineering depth.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0061997",
+    "score": 0.0,
+    "rationale": "Entire 10-year career spans sales, accounting, and operations at fictional companies (Stark Industries, Wayne Enterprises) with no technical or ML work whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0062003",
+    "score": 0.2,
+    "rationale": "Software engineer with QA/test-automation and full-stack background; claims advanced Machine Learning and Image Classification skills but career history shows no production ML or IR deployment.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0062016",
+    "score": 0.2,
+    "rationale": "5.9yr engineer whose actual roles are Android dev at fictional Stark Industries and DevOps at Mphasis (IT services); listed skills are Object Detection and Statistical Modeling with no IR or search system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062073",
+    "score": 0.0,
+    "rationale": "13.5-year career entirely as Graphic Designer and HR Manager at Wipro (IT services) and civil/mechanical engineering roles; no ML, retrieval, or software engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062105",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (sales, HR, operations) at Infosys, Wipro, and fictional companies (Pied Piper, Dunder Mifflin) with no engineering or ML credentials.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0062114",
+    "score": 0.2,
+    "rationale": "1.8yr .NET/DevOps engineer at Swiggy (product company) with cloud infrastructure experience, but top skills are OpenCV and Figma with no NLP, embeddings, or IR/ranking work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0062219",
+    "score": 0.0,
+    "rationale": "3-year career as Graphic Designer at Infosys and content/SEO writer at fictional Wayne Enterprises; no engineering, ML, or IR experience despite M.S. in Machine Learning from a tier_4 institution.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0062285",
+    "score": 0.0,
+    "rationale": "HR Manager for entire 6.8-year career at Hooli and TCS with a Ph.D in Civil Engineering; no software engineering, ML, or IR skills despite listing TTS as top skill.",
+    "stratum": "random"
+  }
+]

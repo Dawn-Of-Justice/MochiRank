@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0068351",
+    "score": 1.0,
+    "rationale": "Lead AI Engineer at Sarvam AI with 6.4 years total experience, owning end-to-end search/discovery and ranking systems at product companies (Sarvam AI, Verloop.io), with expert-level Qdrant and Elasticsearch skills and PEFT/deep learning depth from tier_1 institutions (IIIT Bangalore, Carnegie Mellon).",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0068489",
+    "score": 0.2,
+    "rationale": ".NET Developer at Mindtree (IT services) with only 2.2 years of experience focused on DevOps/cloud infrastructure, with skills in Computer Vision and Vue.js but zero IR/search/ranking or NLP experience relevant to this role.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0068526",
+    "score": 0.0,
+    "rationale": "HR Manager whose career is entirely non-technical (customer support, business analyst, marketing), currently at fictional company Pied Piper, with no engineering or ML credentials whatsoever despite listing BentoML as a skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068580",
+    "score": 0.0,
+    "rationale": "Graphic Designer with a career spanning non-technical roles (HR Manager, Accountant, Content Writer) at IT-services firms Infosys and Wipro plus fictional company Wayne Enterprises, with no ML/IR engineering skills and an M.Tech in Mechanical Engineering.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068588",
+    "score": 0.0,
+    "rationale": "Mechanical Engineer whose 12.7-year career consists entirely of non-technical roles (customer support, content writing, operations, marketing) at IT-services firm TCS and Wipro, with skills like Tally, Six Sigma, and SEO that have zero relevance to AI/ML engineering.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0068600",
+    "score": 0.0,
+    "rationale": "Graphic Designer with 14.6 years entirely in non-technical roles (business analyst, sales, HR, brand design) at fictional companies Pied Piper and Hooli plus TCS, with skills only in SAP, SQL, and SEO and no ML or engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068608",
+    "score": 0.0,
+    "rationale": "Sales Executive at TCS with only 2.1 years of experience in business analysis/consulting, self-described as a marketing manager experimenting with ChatGPT, with no engineering or ML skills relevant to this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068624",
+    "score": 0.0,
+    "rationale": "Civil Engineer whose career spans entirely non-technical roles (operations, sales, brand design) at fictional companies Dunder Mifflin and Initech, with skills only in Accounting, Tally, and Marketing and no ML/IR engineering background.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0068625",
+    "score": 0.0,
+    "rationale": "Project Manager with 14.4 years in non-technical roles (sales, accounting, marketing, content writing) at fictional companies Wayne Enterprises and Initech, with skills in HTML, Illustrator, and SEO but zero ML or engineering relevance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0068705",
+    "score": 0.2,
+    "rationale": ".NET Developer at Capgemini (IT services) and fictional Dunder Mifflin with 3.6 years in test automation and full-stack web dev; lists OpenSearch and Pinecone skills but no production IR/ranking experience, career is predominantly IT-services with no product ML work.",
+    "stratum": "top_retrieval_dense"
+  }
+]

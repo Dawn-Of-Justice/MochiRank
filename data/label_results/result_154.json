@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0061641",
+    "score": 0.2,
+    "rationale": "3.4 years as QA Engineer at IT-services firm Mphasis with no ML/IR experience; self-learner AI exposure only (RAG side project, API experiments) and skills are ETL/BigQuery/SAP — none relevant to embeddings, retrieval, or ranking systems.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0061645",
+    "score": 0.2,
+    "rationale": "1.8 years as Full Stack Developer entirely at Cognizant (IT services), with frontend/web skills (Flask, MongoDB) and only self-learner AI exposure — no IR, embeddings, ranking, or production ML experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0061655",
+    "score": 0.8,
+    "rationale": "4.6 years of production ML experience including learning-to-rank ownership at Krutrim and recommendation systems at Google using sentence-transformer embeddings at 10M+ user scale, with expert-level Elasticsearch and Pinecone skills and NIT Warangal M.S. education — strong match for IR/ranking depth though slightly below the 5-year threshold.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0061683",
+    "score": 0.2,
+    "rationale": "4.2 years primarily in data engineering (pipelines, Spark, Snowflake) at Dream11/PharmEasy, with one role listed at fictional company Stark Industries; ML exposure is lightweight (clustering/churn in sklearn) and no production IR, embeddings, or ranking systems experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0061707",
+    "score": 0.2,
+    "rationale": "Only 1.4 years of experience as a .NET Developer at Mindtree (IT services), with skills primarily in GANs/CNN (computer vision) rather than NLP/IR, and no production embedding retrieval or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061755",
+    "score": 0.0,
+    "rationale": "14.6 years in non-technical roles (Customer Support, Sales, Accounting, Content Writing) at companies including fictional Initech and Wayne Enterprises, with zero engineering or ML experience — entirely non-fit profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061780",
+    "score": 0.4,
+    "rationale": "5.9 years of software engineering with CMU M.S. in ML and skills including PyTorch and Qdrant (vector DB), but career is mostly Java backend/cloud at Razorpay/Cognizant/Swiggy with no demonstrated production IR, hybrid retrieval, or learning-to-rank experience.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0061814",
+    "score": 0.2,
+    "rationale": "4.2 years as QA Engineer with one role at fictional company Pied Piper; skills are Scrum/Kafka/Rust with no IR, embeddings, ranking, or production ML experience despite self-learner AI exposure.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061856",
+    "score": 0.0,
+    "rationale": "3.5 years as Content Writer at fictional company Wayne Enterprises in a non-technical marketing/content role with skills limited to SAP/SEO/Salesforce — completely unable to perform the AI engineering role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0061914",
+    "score": 0.0,
+    "rationale": "2 years as Project Manager in enterprise sales at a manufacturing company with a Commerce M.S. — non-technical background with no engineering, ML, or IR experience whatsoever.",
+    "stratum": "title_mismatch"
+  }
+]

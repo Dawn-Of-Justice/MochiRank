@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0071854",
+    "score": 0.0,
+    "rationale": "Frontend engineer at fictional company Pied Piper with no IR/ML/ranking experience; self-learner AI exposure only via online courses and a small RAG side project.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0071873",
+    "score": 0.2,
+    "rationale": "9.2yr career spanning Android mobile dev, QA automation, and Infosys IT services with no production search, retrieval, or ranking systems; LlamaIndex listed as a skill but career shows zero applied ML depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071918",
+    "score": 0.0,
+    "rationale": "Non-technical career in operations, sales, and civil engineering with current role at fictional company Stark Industries; GANs listed as advanced skill is keyword inflation with no supporting engineering work.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0071952",
+    "score": 0.0,
+    "rationale": "Entire career as civil engineer, accountant, and project manager at Wipro, Initech, and Dunder Mifflin (two fictional companies); no ML, IR, or software engineering work despite Kubeflow appearing in skills.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0071969",
+    "score": 0.0,
+    "rationale": "14.8yr career entirely in non-technical roles (operations manager, civil engineer, customer support, business analyst) with no ML or software engineering experience despite AI-curious summary.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0071974",
+    "score": 1.0,
+    "rationale": "7.8yr production ML career at Netflix, Meta, and Mad Street Den including end-to-end ranking pipelines with BGE fine-tuning, Pinecone retrieval, learning-to-rank, LLaMA/Mistral LoRA/QLoRA fine-tuning, and live A/B testing — directly matching every core requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0071985",
+    "score": 0.2,
+    "rationale": "Only 2yr total experience at Infosys in a DevOps/infrastructure role; 'Learning to Rank advanced, 42 months' skill claim far exceeds total career length, indicating keyword inflation with no supporting IR or ML production work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0072054",
+    "score": 0.0,
+    "rationale": "2.5yr sales executive at manufacturing company with career description citing mechanical engineering design and no ML or software engineering work, despite holding an IIT Madras B.Tech in IT.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0072111",
+    "score": 0.0,
+    "rationale": "13.4yr non-technical career in customer support, accounting, and HR management across multiple fictional companies (Wayne Enterprises, Stark Industries, Initech) with no engineering or ML experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0072206",
+    "score": 0.0,
+    "rationale": "13.5yr career as civil engineer, content writer, HR manager, and marketing manager at Stark Industries (fictional) and TCS with no software or ML engineering work whatsoever.",
+    "stratum": "title_match_strong"
+  }
+]

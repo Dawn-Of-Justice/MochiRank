@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0067363",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical marketing and operations roles at IT services firms (TCS, Wipro) with one stint at fictional Stark Industries, and no ML, IR, or engineering experience whatsoever.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0067372",
+    "score": 0.4,
+    "rationale": "Has PyTorch and MLOps skills and one product-company stint at Meesho, but career is predominantly IT services (Cognizant, TCS, Tech Mahindra) with data engineering focus and no evidence of production IR, search, ranking, or embedding-based retrieval work.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0067382",
+    "score": 0.0,
+    "rationale": "Entirely non-technical 12-year career spanning operations, customer support, content writing, and HR roles at IT services and manufacturing companies with no ML or engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067413",
+    "score": 0.0,
+    "rationale": "Graphic Designer with only 2.6 years of experience at Dunder Mifflin (fictional honeypot company), whose sole ML exposure is LangChain online courses with no production AI or IR engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067473",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical project management, accounting, and operations roles including at Pied Piper (fictional company), with no ML, IR, or engineering production experience despite listing Data Science as a skill.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067474",
+    "score": 0.2,
+    "rationale": "Software engineer with 4.7 years in Java backend and DevOps at IT services and fictional companies (Wayne Enterprises, Stark Industries), with self-learner AI exposure only and no production IR, ranking, or embedding-based retrieval experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0067577",
+    "score": 0.2,
+    "rationale": "QA and web engineer with 2.9 years split between Accenture and Globex, whose ML exposure is limited to a small RAG side project with no production search, ranking, or IR systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0067643",
+    "score": 0.8,
+    "rationale": "AI Research Engineer at PhonePe and PolicyBazaar with 6 years, advanced proficiency in Learning to Rank, BM25, and Qdrant with production recommendation systems at product companies, and strong tier_1 education (BITS Pilani, IIIT Bangalore) directly aligned with hybrid retrieval and ranking requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0067695",
+    "score": 0.0,
+    "rationale": "Operations Manager at Dunder Mifflin (fictional honeypot company) with a non-technical career spanning HR, graphic design, and operations roles and no ML or engineering experience.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0067700",
+    "score": 0.2,
+    "rationale": "Mechanical Engineer with only 1.8 years of experience at a manufacturing company, with basic Django/Flask web skills but no ML, IR, or ranking systems experience relevant to this role.",
+    "stratum": "random"
+  }
+]

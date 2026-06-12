@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0095928",
+    "score": 0.2,
+    "rationale": "While the candidate lists BM25 as an advanced skill with 48 months and has 6.9 years of experience, their actual career roles are QA Engineer and Mobile Developer with no production ML, IR, or ranking system work, and one role was at Initech (fictional company); their self-described AI exposure is limited to online courses and a small RAG side project.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096048",
+    "score": 0.0,
+    "rationale": "Despite a Mechanical Engineer title, the candidate's own summary and career descriptions reveal a background in marketing management, demand-generation, accounting, and SEO with zero engineering or ML work, and one role is at Wayne Enterprises (fictional company), making this a complete non-fit for a Senior AI Engineer role.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0096142",
+    "score": 0.8,
+    "rationale": "5 years of applied ML engineering at product companies (upGrad, BYJU'S), with production experience shipping XGBoost/LightGBM ranking models, sentence-transformer embeddings, Weaviate vector search, and a recommendation system serving 10M+ users, backed by an M.Tech from IIIT Bangalore (tier_1); gaps are limited IR evaluation metric depth and startup/founding-team context.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0096172",
+    "score": 0.8,
+    "rationale": "5.2 years at product companies (Krutrim, Dream11) with hands-on production semantic search using sentence-transformers + FAISS on 500K documents, expert-level Elasticsearch and OpenSearch skills, RAG experience, and dual tier_1 credentials (CMU B.Tech + IIT Kanpur M.Sc), demonstrating exactly the hybrid retrieval and IR depth the JD requires.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0096181",
+    "score": 0.4,
+    "rationale": "Solid data/backend engineering foundation with Python, Kafka, Spark, and a brief stint at Nykaa (product company), but two out of three roles are at IT-services firms (Cognizant, Tech Mahindra), ML involvement is self-directed rather than production, and skills like YOLO and TTS are misaligned with the IR/ranking focus of this role.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0096261",
+    "score": 0.0,
+    "rationale": "10+ years of career history spanning sales, content writing, HR management, and operations at TCS, Wipro, and Stark Industries (fictional company), with no engineering or ML experience whatsoever, making this an unambiguous non-fit.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096388",
+    "score": 0.0,
+    "rationale": "Content Writer at Stark Industries (fictional company) whose sole career role is operations management at a logistics company, with a summary admitting a marketing manager background and only casual ChatGPT experimentation, yielding zero relevance to AI engineering or IR systems.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096433",
+    "score": 0.0,
+    "rationale": "11 years as a Graphic Designer with roles in content writing, brand design, civil engineering, and mechanical engineering at Stark Industries (fictional company) and TCS, with only online courses in RAG/vector databases and no production ML or engineering work relevant to this role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0096494",
+    "score": 0.0,
+    "rationale": "Customer Support professional whose 8+ years span brand design, accounting, project management, and marketing at Initech and Pied Piper (both fictional companies), with no technical engineering skills and AI interest limited to casual ChatGPT use.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0096525",
+    "score": 0.2,
+    "rationale": "3.8 years as a .NET/full-stack developer at CRED (product company) with solid backend fundamentals and a self-built RAG side project, but no production ML, IR, or ranking system experience, insufficient years of experience for a 5-9 year role, and AI/ML knowledge remains at the hobbyist level.",
+    "stratum": "high_behavioral"
+  }
+]

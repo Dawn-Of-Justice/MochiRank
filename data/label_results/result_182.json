@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0073636",
+    "score": 0.2,
+    "rationale": "Despite IIT Roorkee CS education, the entire 2.1-year career is a single Operations Manager role at Infosys with accounting/compliance work, and MLflow/Databricks skills are implausibly listed with 56-month duration on a 25-month career — no actual ML or IR production experience.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0073768",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical sales/marketing roles across TCS, Wayne Enterprises (fictional), and Initech (fictional), with skills limited to Illustrator, Webpack, and React — zero ML, IR, or engineering relevance to this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073770",
+    "score": 0.0,
+    "rationale": "Project Manager/Content Writer career across Dunder Mifflin (fictional), Initech (fictional), and Infosys with no ML or IR experience, and beginner-level data skills (Kafka, Spark) each under 9 months — no technical depth relevant to this role.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0073792",
+    "score": 0.0,
+    "rationale": "14.5-year career as Accountant/Sales/Graphic Designer entirely at fictional companies (Dunder Mifflin x2, Initech x2) with no ML or engineering experience, and skills capped at beginner-level CSS, Redux, and Go with no IR or ranking exposure.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0073809",
+    "score": 0.4,
+    "rationale": "PhD from IIIT Hyderabad and solid data engineering background at upGrad (product company), but the 2.8-year career is focused on data warehousing (Snowflake/dbt) with self-directed ML projects rather than production IR, ranking, or embedding-based retrieval systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0073914",
+    "score": 0.0,
+    "rationale": "Career is HR Manager at a manufacturing firm and Civil Engineer at Wipro with no ML or IR work; YOLO listed as advanced skill is inconsistent with an HR/civil engineering background and signals keyword inflation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073917",
+    "score": 0.6,
+    "rationale": "5.8 years at product companies (InMobi AdTech, Glance, Haptik) with production recommendation systems using collaborative filtering and XGBoost, strong Python, and NLP work, but lacks explicit production experience with embeddings-based retrieval, vector databases, or ranking evaluation metrics like NDCG/MAP.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0073920",
+    "score": 0.0,
+    "rationale": "14.5-year career across entirely non-technical roles (Project Manager, Marketing Manager, Sales, HR) at multiple fictional companies (Initech, Pied Piper, Wayne Enterprises) with no ML, engineering, or IR experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0073922",
+    "score": 0.2,
+    "rationale": "2.4-year career is entirely DevOps/full-stack at Accenture (IT services consulting) with only self-learner-level AI exposure (online courses, small RAG side project), providing no production ML or IR experience relevant to this role.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0073961",
+    "score": 0.6,
+    "rationale": "PhD from COEP Pune (tier_2) with advanced-rated Embeddings (46mo) and Information Retrieval (21mo) skills, plus production analytics service at Vedantu (product company), but career is primarily data engineering/analytics rather than dedicated IR or ranking system ownership.",
+    "stratum": "title_match_strong"
+  }
+]

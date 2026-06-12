@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0058715",
+    "score": 0.2,
+    "rationale": "Despite listing Sentence Transformers as an advanced skill, the actual career history shows Android/web development at fictional Pied Piper and 49 months at Capgemini (IT services) with no evidence of production IR, ranking, or embedding-based retrieval systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0058783",
+    "score": 0.2,
+    "rationale": "Only 3.2 years of experience entirely at Tech Mahindra (IT services), current title is Computer Vision Engineer (a disqualifying domain mismatch per JD), and the actual work described is Flask API for fraud detection rather than any IR/ranking or hybrid retrieval system.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0058854",
+    "score": 0.0,
+    "rationale": "Career consists of a Business Analyst role at fictional Stark Industries and a Marketing Manager role at Infosys with zero engineering or ML work; skills are web frameworks only (Angular, Vue, Django) with no relevance to AI, retrieval, or ranking systems.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0058975",
+    "score": 0.0,
+    "rationale": "Current title is Accountant with an entire career at Acme Corp doing content writing and SEO, and skills are Vue.js, Azure, MongoDB with no ML, IR, or engineering depth whatsoever despite Stanford listed in education.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0058995",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (HR Manager at Infosys, Marketing Manager at fictional Dunder Mifflin, Graphic Designer and Sales at fictional Wayne Enterprises), with no engineering or ML work; skill list includes Diffusion Models and Airflow with no supporting career evidence, flagged as honeypot.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0059029",
+    "score": 0.0,
+    "rationale": "12.4 years entirely in non-technical operations, customer support, and business analyst roles spread across Infosys, fictional Dunder Mifflin, fictional Pied Piper, and fictional Hooli, with no ML, AI, or engineering experience; skills are CSS and Vue.js with no ML relevance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0059108",
+    "score": 0.0,
+    "rationale": "Entire 6.1-year career is in graphic design and enterprise sales at Acme Corp and fictional Stark Industries with no engineering or ML work, and skills (Next.js, CSS, Airflow, PowerPoint) show no IR or AI relevance.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0059146",
+    "score": 0.0,
+    "rationale": "12.6 years split between TCS (IT services, operations/customer support) and non-technical roles at Acme Corp and fictional Pied Piper as a mechanical engineer and business analyst, with tier_4 education and skills limited to CSS, Node.js, and PostgreSQL with no ML or IR experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0059212",
+    "score": 0.0,
+    "rationale": "13.1-year career is entirely non-technical (HR Manager, Marketing Manager at Wipro IT services, Content Writer, Graphic Designer across fictional companies Hooli and Stark Industries), with Statistical Modeling listed as advanced skill despite zero supporting engineering work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0059294",
+    "score": 0.0,
+    "rationale": "13 years in non-technical sales, civil engineering, graphic design, and accounting roles at fictional companies Initech and Dunder Mifflin; the summary mentions online RAG/vector DB courses but there is zero production ML engineering history to support any AI engineering role.",
+    "stratum": "random"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0042472",
+    "score": 0.0,
+    "rationale": "HR Manager/marketing background at IT services firms (Infosys) with skills limited to React (beginner), Excel, and Photoshop; zero ML, NLP, or IR engineering work across 13 years.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042506",
+    "score": 0.8,
+    "rationale": "Built production semantic search with sentence-transformers, FAISS, and Pinecone at Verloop.io, and a 10M-user recommendation system using sentence-transformer embeddings at Meesho — directly matching the core retrieval and hybrid-search requirements.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0042530",
+    "score": 0.2,
+    "rationale": "Only 2.4 years of experience with a backend/data-pipeline focus; second role was at fictional company Dunder Mifflin, and top skills (YOLO, GANs, Object Detection) are computer-vision oriented with no IR or ranking system production work.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0042670",
+    "score": 0.2,
+    "rationale": "Only 2 years of experience in backend/data-pipeline roles at Ola and PolicyBazaar; top skills (TTS, Six Sigma, FastAPI) have no overlap with IR, embeddings, or ranking systems, and summary explicitly acknowledges wanting to transition into ML.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042741",
+    "score": 0.0,
+    "rationale": "Entire career is in marketing and civil/mechanical engineering roles at fictional companies (Initech, Pied Piper) with skills limited to Scrum, Photoshop, and GraphQL; no engineering or ML work of any kind.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0042836",
+    "score": 0.2,
+    "rationale": "8.9 years split across frontend React, DevOps/Kubernetes, and QA roles at IT services firms (Wipro, Cognizant); AI/ML exposure is entirely self-taught via a small RAG side project with no production IR or ranking systems experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042877",
+    "score": 0.2,
+    "rationale": "Career is DevOps, Android mobile dev, and QA/test-automation roles with a stint at IT services firm Capgemini; the sole IR signal is a Weaviate intermediate skill (14 months) with no production retrieval or ranking system work.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0042923",
+    "score": 0.0,
+    "rationale": "Marketing Manager/HR professional whose career spans IT services (Infosys) and fictional company Wayne Enterprises in entirely non-technical roles; ChatGPT experimentation mentioned in summary does not constitute engineering depth.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042925",
+    "score": 0.2,
+    "rationale": "Project Manager/customer support roles entirely at fictional companies (Pied Piper, Initech); a B.Tech in Machine Learning from PES University (tier_2) and data skills (Databricks, Snowflake) show domain adjacency but no production ML or IR work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0042941",
+    "score": 0.0,
+    "rationale": "Project Manager with career at fictional companies (Dunder Mifflin, Stark Industries) in non-engineering roles (sales, operations, content writing); online RAG/vector-database courses do not substitute for production engineering experience.",
+    "stratum": "top_anti_persona_sim"
+  }
+]

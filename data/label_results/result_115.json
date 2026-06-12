@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0045306",
+    "score": 0.2,
+    "rationale": "QA Engineer with 4.2 years at CRED and Pied Piper (fictional company flag), Physics B.Sc from tier_3 institution, skills are Illustrator/PostgreSQL/AWS with only surface-level Prompt Engineering and no embeddings, retrieval, or ranking experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045341",
+    "score": 0.2,
+    "rationale": "Data Analyst whose entire career spans Capgemini (IT services) and Dunder Mifflin (fictional company), with data-engineering/analytics focus; despite Weaviate and Semantic Search skills listed, there is no evidence of production IR or ranking ownership and honeypot signals are present.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0045452",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical - Sales Executive, Marketing Manager, and HR Manager at Wipro, Wayne Enterprises (fictional), and Stark Industries (fictional) - with zero engineering or ML work at any stage.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045481",
+    "score": 0.4,
+    "rationale": "Data Engineer with 7.7 years at real product companies (PhonePe, Dream11, Ola) demonstrating strong backend/data engineering, but skills and descriptions are SQL-warehouse and Spark-heavy with no embeddings, vector search, or ranking systems experience; domain is wrong for this role.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045517",
+    "score": 0.2,
+    "rationale": "Only 1.6 years of experience as a .NET/frontend developer at Zomato with self-learner AI exposure only (online courses, small RAG side project), too junior and wrong technical domain for a senior AI engineer role despite a PhD credential from a tier_3 institution.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045518",
+    "score": 0.2,
+    "rationale": "Graphic Designer at Wipro (IT services) whose summary explicitly describes a marketing manager background and whose actual work was enterprise sales; skills list includes Reinforcement Learning but no production ML work is evidenced anywhere in the profile.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0045530",
+    "score": 0.2,
+    "rationale": "Software Engineer with 7.9 years split across Dunder Mifflin (fictional), Zomato, and Mphasis (IT services) in backend/QA roles; skills are in Object Detection, Forecasting, and Speech Recognition - wrong ML domain - with no IR, retrieval, or ranking production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0045577",
+    "score": 0.2,
+    "rationale": "DevOps Engineer with 2.9 years entirely at Tech Mahindra (IT services) focused on AWS/Terraform/Kubernetes infrastructure; Information Retrieval appears as an advanced skill but the entire career shows cloud/DevOps work with no production ML or ranking systems evidence.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0045613",
+    "score": 0.6,
+    "rationale": "IIT Kanpur + CMU-educated ML engineer with BM25 (advanced) and Pinecone (intermediate) skills and verifiable production recommendation/ranking work at Saarthi.ai startup, though current title is Computer Vision Engineer and one stint is at HCL (IT services), creating a mixed IR+CV profile.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0045619",
+    "score": 0.4,
+    "rationale": "Stanford MS AI (tier_1) is a strong education signal but only 2.9 years as a full-stack/mobile developer at Mindtree (IT services) and Flipkart with web-stack skills and purely self-learner AI exposure; no production IR, embeddings, or ranking experience despite the elite pedigree.",
+    "stratum": "tier1_education"
+  }
+]

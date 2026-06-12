@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0094353",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles at IT services firms (Infosys, TCS) — SEO/content writing, customer support, enterprise sales, and marketing — with no ML, IR, or engineering work whatsoever.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094660",
+    "score": 0.0,
+    "rationale": "Roles are entirely non-technical (enterprise sales, customer support, graphic design) at fictional companies (Initech, Wayne Enterprises), with no engineering or ML experience despite an AI degree.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094680",
+    "score": 0.0,
+    "rationale": "Only 2.7 years of experience with a single role doing customer support at fictional company Initech, top skill is TTS with no IR, ranking, or ML production experience of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094686",
+    "score": 0.2,
+    "rationale": "Career is a mix of non-technical roles (BA, marketing, mechanical design) at IT services firms (Infosys, Wipro) and a fictional company (Initech), with BentoML listed as advanced but no evidence of production IR/ranking or embedding-based retrieval work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0094732",
+    "score": 0.0,
+    "rationale": "14+ years spent entirely in non-technical roles (HR, project management, customer support, content writing) at IT services firms and the fictional company Stark Industries, with MLflow listed as a skill but zero evidence of any ML or IR production work.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0094759",
+    "score": 1.0,
+    "rationale": "8.6 years at Meta, Apple, and Locobuzz building production hybrid BM25+dense retrieval pipelines (BGE, FAISS HNSW, Weaviate), improved NDCG@10 from 0.72 to 0.91 at 8K peak QPS, with hands-on A/B testing, LambdaMART/XGBoost ranking, and embedding fine-tuning — directly matching every core requirement.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0094762",
+    "score": 0.2,
+    "rationale": "4.4 years as a data engineer at Tech Mahindra (IT services) building data pipelines and backend analytics with no production ML or IR experience, self-directed ML projects only, and an expressed desire to transition into ML rather than demonstrated delivery.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0094892",
+    "score": 0.2,
+    "rationale": "8 years of backend/DevOps/mobile development primarily at IT services firms (Tech Mahindra, TCS, Mphasis) and fictional company Stark Industries, with only a small RAG side project and no production ML, embeddings, or ranking system experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0094937",
+    "score": 0.0,
+    "rationale": "Only 1.4 years of experience as a Java developer at fictional company Wayne Enterprises doing Spring Boot microservices, with no ML or IR background and a commerce M.S. degree.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0095032",
+    "score": 0.0,
+    "rationale": "Career is entirely in non-technical roles (sales, HR) at IT services firms TCS and Wipro with no engineering work, despite listing AI-adjacent skills — a clear keyword-stuffer non-fit profile.",
+    "stratum": "low_behavioral"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0050976",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Project Manager at Infosys, Marketing Manager at fictional Dunder Mifflin) with zero ML, IR, or engineering depth; skills are beginner-level unrelated tools.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051004",
+    "score": 0.8,
+    "rationale": "Led keyword-to-embedding-retrieval migration at CRED (product company), built RAG pipelines with OpenAI embeddings + Pinecone at Niramai, strong NLP/semantic search skills, and IIT Kanpur tier_1 education — directly matches core JD requirements for production IR experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0051008",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical marketing, HR, and content writing roles across TCS and fictional Initech with beginner-only skills and no engineering or ML work whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051028",
+    "score": 0.2,
+    "rationale": "8.7 years of web/backend/DevOps engineering (React, .NET, Java) with Qdrant listed as an advanced skill but no actual ML, ranking, or retrieval work in career history; also spent time at fictional Stark Industries.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0051039",
+    "score": 0.0,
+    "rationale": "Only role is operations/warehouse management at fictional Wayne Enterprises with no engineering or ML experience; AI interest is limited to online courses and skills are all beginner-level non-ML tools.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0051041",
+    "score": 0.0,
+    "rationale": "13+ years spent in operations, HR, and business analyst roles at TCS and fictional Wayne Enterprises with no production ML or engineering work; paper AI credentials (PhD, M.Tech) from tier_4 colleges are unsupported by any matching experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0051070",
+    "score": 0.0,
+    "rationale": "Career consists entirely of mechanical engineering, graphic design, and business analyst roles at Infosys, Globex, and Wipro with no ML or IR work and only beginner web/database skills.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0051164",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience as Operations Manager at fictional Wayne Enterprises doing enterprise sales with no engineering, ML, or IR background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0051292",
+    "score": 0.8,
+    "rationale": "Owned ranking layer evolution from scoring function to LTR model at Freshworks (SaaS product company), built semantic search with sentence-transformers and FAISS at Vedantu, and deployed RAG with Pinecone — directly matching the JD's core requirements for production IR and ranking systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0051310",
+    "score": 0.4,
+    "rationale": "Advanced Vector Search and Elasticsearch skills with 3.5 years at Haptik (Conversational AI product company), but actual career work is time-series forecasting rather than ranking/retrieval, and experience depth is below the 5-year threshold for this role.",
+    "stratum": "random"
+  }
+]

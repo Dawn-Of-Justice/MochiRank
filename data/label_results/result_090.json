@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0035445",
+    "score": 0.0,
+    "rationale": "Career consists entirely of non-technical roles (Sales Executive, HR Manager, Accountant, Project Manager) at an IT-services firm and fictional companies, with no engineering or ML experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035473",
+    "score": 0.0,
+    "rationale": "All three career entries are at fictional honeypot companies (Dunder Mifflin, Pied Piper, Stark Industries), and the actual work described is data pipelines with only light ML — no production IR or ranking experience.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0035490",
+    "score": 0.2,
+    "rationale": "Only 3.2 years of experience, entire career at IT-services firms (Cognizant, HCL) doing Java and frontend development, with skills like QLoRA-advanced and Object Detection clearly inflated relative to a job history devoid of any ML or IR work.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0035546",
+    "score": 0.0,
+    "rationale": "Entire career is in non-technical Operations Manager and Marketing Manager roles at fictional companies (Stark Industries, Wayne Enterprises) and Infosys, with no engineering, ML, or IR experience.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035585",
+    "score": 0.4,
+    "rationale": "IIT Kharagpur M.S. Data Science (tier_1) and Sentence Transformers advanced skill (25 months) are genuine positives, but the entire 7-year career is at IT-services firms (TCS, Wipro) and the summary explicitly self-reports AI/ML only at a self-learner level with no production IR or ranking system deployment.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0035586",
+    "score": 0.0,
+    "rationale": "Only 1.1 years of experience as a Graphic Designer at fictional Wayne Enterprises, with a non-STEM M.S. in Mathematics from a tier_4 institution and no engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035587",
+    "score": 0.2,
+    "rationale": "M.E. in Machine Learning from VIT provides some educational relevance, but the 10.5-year career is entirely non-technical (Business Analyst, Project Manager, Content Writer, HR Manager) at fictional companies (Dunder Mifflin, Pied Piper), with AI interest confined to online courses rather than any production engineering.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0035767",
+    "score": 0.0,
+    "rationale": "All four career positions are at fictional honeypot companies (Initech, Pied Piper, Wayne Enterprises) in non-technical roles (Graphic Designer, Mechanical Engineer, Project Manager), with no ML, IR, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0035771",
+    "score": 0.0,
+    "rationale": "Career spans non-technical roles (Business Analyst, Graphic Designer, Customer Support, HR Manager) across fictional companies (Pied Piper, Initech, Wayne Enterprises) and Wipro, with tier_4 education and no ML or engineering skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0035809",
+    "score": 0.2,
+    "rationale": "Software engineering background (5.8 years) provides minimal adjacency, but the career is split between Accenture (IT-services consulting) and fictional Initech, skills are web/cloud-focused with no ML or IR content, and education is tier_4 with no signal of production ranking or search work.",
+    "stratum": "random"
+  }
+]

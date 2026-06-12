@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0046505",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical (Marketing Manager, Sales, Accountant at Infosys/Wayne Enterprises) with no engineering or ML experience; only AI exposure is casual ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046515",
+    "score": 0.0,
+    "rationale": "Entire career in non-technical roles (Business Analyst, Project Manager, Marketing Manager) at TCS (IT services) and Wayne Enterprises (fictional company); despite BentoML listed as a skill, there is no evidence of any ML or IR engineering work.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0046577",
+    "score": 0.2,
+    "rationale": "5.4 years of Java backend/mobile development at product-adjacent companies shows real engineering depth, but all ML/AI exposure is self-learner level with no production embeddings, retrieval, or ranking systems built.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046690",
+    "score": 0.0,
+    "rationale": "Sole employer is Dunder Mifflin (fictional honeypot company) in a Customer Support / sales role with no technical or ML background whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046750",
+    "score": 0.2,
+    "rationale": "3.2 years entirely at TCS (IT services) doing Android/mobile development; Data Science listed as advanced skill but no supporting career evidence of ML or IR work in production.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0046815",
+    "score": 0.0,
+    "rationale": "2.8-year career as a Graphic Designer in operations/logistics contexts with no software engineering or ML experience relevant to ranking or retrieval systems.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0046828",
+    "score": 0.0,
+    "rationale": "12-year career across Marketing Manager, Mechanical Engineer, and Sales roles at Infosys, Dunder Mifflin (fictional), and Wayne Enterprises (fictional) with zero ML or engineering depth.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0046895",
+    "score": 0.2,
+    "rationale": "6.2 years primarily at HCL (IT services) doing mobile/infra/web work; although LlamaIndex and BentoML appear as advanced skills, career descriptions show no production IR, ranking, or embeddings systems and AI skills appear inflated relative to actual work history.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0046924",
+    "score": 0.6,
+    "rationale": "6.3 years with production recommendation and retrieval systems at PharmEasy and Freshworks (product companies), advanced FAISS (57 months), Vector Search, and Semantic Search skills, though the Computer Vision title and lack of explicit evaluation-metric ownership (NDCG/MAP) and hybrid BM25+dense experience leave notable gaps for this IR-focused role.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0046949",
+    "score": 0.0,
+    "rationale": "10.8-year career spanning Customer Support, Mechanical Engineer, and Business Analyst roles entirely at fictional companies (Stark Industries) and manufacturing firms with no software engineering or ML experience.",
+    "stratum": "low_behavioral"
+  }
+]

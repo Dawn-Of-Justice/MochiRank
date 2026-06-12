@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0092692",
+    "score": 0.4,
+    "rationale": "Has Qdrant experience and M.Tech/Ph.D from IIT Madras/NIT Trichy (tier_1), but only 3.2 years total experience, NLP work was internal dashboards (not production IR/ranking), and top skills skew toward Speech Recognition and OpenCV rather than retrieval/ranking systems.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092740",
+    "score": 0.0,
+    "rationale": "Career is entirely non-technical — HR Manager, Content Writer, and Sales Executive roles with no engineering or ML work; AI curiosity is limited to casual ChatGPT experimentation.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092744",
+    "score": 0.2,
+    "rationale": "Only 3 years of experience, all at IT-services firms (Infosys, Mindtree) doing full-stack web and QA work with no production ML/IR experience; AI exposure is self-learner level via API calls only.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0092766",
+    "score": 0.0,
+    "rationale": "Despite an IIT Madras M.Tech, the entire career is non-technical (HR Manager, Operations Manager, Sales Executive) with no ML/AI engineering work, and current role is at the fictional company Dunder Mifflin.",
+    "stratum": "tier1_education"
+  },
+  {
+    "candidate_id": "CAND_0092865",
+    "score": 0.2,
+    "rationale": "6.5 years of experience but roles are Full Stack Developer and Cloud Engineer (QA/test automation in practice) with no ML/IR work, and one role is at the fictional company Stark Industries; top skills (Six Sigma, Accounting, MongoDB) show no alignment with ranking or retrieval.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092908",
+    "score": 0.0,
+    "rationale": "11.8 years of experience across entirely non-technical roles (Customer Support, Graphic Designer, Project Manager, Business Analyst) with current role at the fictional Wayne Enterprises, and no production ML/IR work despite AI keyword in skills.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0092926",
+    "score": 0.0,
+    "rationale": "Current role is Accountant; career spans only Accountant and Content Writer positions at fictional companies (Dunder Mifflin, Acme Corp) with zero engineering or ML experience.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0092934",
+    "score": 0.0,
+    "rationale": "Career is entirely non-engineering for the role — Civil Engineer, Mechanical Engineer, Sales Executive, and Operations Manager — at two fictional companies (Stark Industries, Pied Piper); Diffusion Models listed as advanced skill is implausible given the actual job history.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0092960",
+    "score": 0.0,
+    "rationale": "11.7 years of experience entirely in Operations Manager and Graphic Designer roles across Infosys IT-services, fictional Dunder Mifflin, and Wayne Enterprises, with no engineering or ML background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0092990",
+    "score": 0.0,
+    "rationale": "Only 2 years of experience, both at TCS in Mechanical Engineer and Sales Executive roles with no ML/AI engineering work; summary describes a marketing manager background and AI curiosity is surface-level only.",
+    "stratum": "low_behavioral"
+  }
+]

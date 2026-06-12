@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0040258",
+    "score": 0.2,
+    "rationale": "Holds a B.Tech in Artificial Intelligence (VIT, tier_2) and M.Sc Data Science, providing minor educational adjacency, but career is entirely as Operations Manager at Infosys (IT services) with no production ML, retrieval, or ranking experience whatsoever.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040297",
+    "score": 0.0,
+    "rationale": "Entire 8.4-year career spent at TCS and Infosys in non-technical roles (Marketing Manager, Graphic Designer, Project Manager, Operations Manager) with zero ML or IR engineering experience; top skill is Photoshop at beginner level.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0040338",
+    "score": 0.0,
+    "rationale": "Career spans accounting and graphic design roles at Stark Industries (fictional company, flagged as honeypot) and Wipro, with no ML or ranking systems experience and skills limited to ETL, SEO, and Hadoop at beginner/intermediate levels.",
+    "stratum": "honeypot_flagged"
+  },
+  {
+    "candidate_id": "CAND_0040396",
+    "score": 0.0,
+    "rationale": "Civil engineering background (3.2 years) with roles as Civil Engineer and Operations Manager at manufacturing and software companies; no ML, embeddings, retrieval, or ranking skills present.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040529",
+    "score": 0.0,
+    "rationale": "Career entirely in non-technical HR Manager and Operations Manager roles at fictional companies (Pied Piper, Wayne Enterprises), with skills capped at Salesforce CRM and SQL; no ML or IR engineering experience.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0040564",
+    "score": 0.0,
+    "rationale": "Entire career at IT services firms (TCS, Wipro) and fictional company Initech as Operations Manager and Sales Executive; the one technical signal — Speech Recognition (advanced, 49 months) — is explicitly the wrong domain per the JD.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040573",
+    "score": 0.2,
+    "rationale": "Claims advanced Data Science skill with 59 months of duration, but actual roles are Project Manager and Mechanical Engineer entirely at TCS and Infosys, with job descriptions about accounting and logistics — a classic consulting-only keyword-inflation profile.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0040640",
+    "score": 0.0,
+    "rationale": "Civil Engineer (2.4 years) with a single role at Infosys IT services; skills are Node.js, SAP, and Azure with no ML, embedding, or retrieval experience, and a Ph.D in Chemical Engineering is entirely orthogonal to the role.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0040710",
+    "score": 0.0,
+    "rationale": "14-year career as Sales Executive, Business Analyst, Civil Engineer, and Accountant across fictional companies (Stark Industries, Dunder Mifflin) and Wipro, with no ML or IR engineering experience and skills limited to beginner SQL and Excel.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0040748",
+    "score": 0.0,
+    "rationale": "Career spanning accounting, content writing, and marketing across multiple fictional companies (Dunder Mifflin x2, Stark Industries) with skills capped at Tailwind, HTML, and Sales; no ML, retrieval, or ranking systems involvement.",
+    "stratum": "random"
+  }
+]

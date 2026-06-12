@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0074123",
+    "score": 0.4,
+    "rationale": "Has NLP/transformers production work at product companies (CRED, Saarthi.ai, Vedantu) and Hugging Face transformers experience, but top skills skew toward Object Detection and TTS rather than IR/retrieval, with no evidence of vector databases, hybrid search, or ranking evaluation metrics (NDCG/MAP).",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0074135",
+    "score": 0.0,
+    "rationale": "Career history consists of non-technical roles (content writing, customer support, accounting) at fictional honeypot companies (Initech, Dunder Mifflin) and Wipro, with zero ML or engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074201",
+    "score": 0.0,
+    "rationale": "Graphic designer and business analyst at TCS (IT services) and Acme Corp with no ML, NLP, or information retrieval experience whatsoever.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074210",
+    "score": 0.0,
+    "rationale": "Entirely non-technical career (accountant, sales executive, operations) at fictional honeypot companies Wayne Enterprises and Initech, with no engineering or ML work.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074246",
+    "score": 0.0,
+    "rationale": "Only role is enterprise cloud software sales at TCS with a $1.8M ARR quota — no engineering, ML, or retrieval experience of any kind.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0074247",
+    "score": 0.0,
+    "rationale": "Sole employer is Wipro in an enterprise sales capacity; mechanical engineer title with no ML, NLP, or backend engineering substance in the profile.",
+    "stratum": "consulting_only"
+  },
+  {
+    "candidate_id": "CAND_0074262",
+    "score": 0.4,
+    "rationale": "Solid backend/data engineering background at product companies (Vedantu, PolicyBazaar) with Python, FastAPI, and Spark, but no production embeddings, vector databases, or ranking evaluation framework experience — purely data infrastructure rather than ML/IR.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0074317",
+    "score": 0.6,
+    "rationale": "Production ML at product companies (Razorpay, PharmEasy) with Milvus (vector DB) at advanced level, RAG experience, XGBoost usage, and tier_1 education (MIT + IIIT Bangalore), but at 4.2 years lacks explicit ranking evaluation metric ownership (NDCG/MAP) and production hybrid retrieval deployment.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0074346",
+    "score": 0.2,
+    "rationale": "Predominantly IT-services career (HCL 46 months, Mindtree) doing DevOps/cloud/QA work with only self-learner ML exposure and a small RAG side project; Information Retrieval listed as an intermediate skill but with no production IR system evidence.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0074350",
+    "score": 0.2,
+    "rationale": "Majority of career at Tech Mahindra (49 months, IT services) doing Java/Spring Boot backend work, with Initech (fictional company) as the other employer and no production ML or IR experience despite MLflow listed as an advanced skill.",
+    "stratum": "high_behavioral"
+  }
+]

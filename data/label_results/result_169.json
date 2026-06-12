@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0067717",
+    "score": 0.6,
+    "rationale": "Production ML deployments at Aganitha (fraud detection Flask API) and BYJU'S (collaborative filtering recommendation) at product companies, with advanced FAISS (32mo) and Semantic Search (38mo) skills, but lacks explicit hybrid retrieval, LTR/LambdaMART, and NDCG evaluation ownership.",
+    "stratum": "top_retrieval_bm25"
+  },
+  {
+    "candidate_id": "CAND_0067776",
+    "score": 0.0,
+    "rationale": "Entire career in marketing, sales, and operations roles at fictional companies (Wayne Enterprises, Dunder Mifflin) with no engineering or ML work; only AI exposure is casual ChatGPT experimentation.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067806",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager background with Civil Engineer titles at Infosys and Wayne Enterprises (fictional); career descriptions cover accounting and marketing leadership with zero ML or software engineering content.",
+    "stratum": "low_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0067819",
+    "score": 0.0,
+    "rationale": "Eleven years in non-technical roles (Content Writer, Operations Manager, Business Analyst) at IT-services firms (TCS, Infosys) and fictional companies (Pied Piper, Dunder Mifflin), with no ML or engineering depth despite MLOps keyword in skills.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067821",
+    "score": 0.0,
+    "rationale": "Nine years in non-technical roles (Business Analyst, Content Writer, Marketing Manager, Civil Engineer) across fictional companies (Stark Industries, Dunder Mifflin, Wayne Enterprises) with career descriptions showing only logistics operations and brand design work.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0067993",
+    "score": 0.0,
+    "rationale": "Sales and project management career at Wipro and fictional companies (Dunder Mifflin, Pied Piper) with career descriptions covering content writing, brand design, and customer support with no ML, IR, or software engineering experience.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068030",
+    "score": 0.0,
+    "rationale": "Self-described marketing manager with Content Writer, BA, PM, and HR Manager roles exclusively at Infosys and fictional companies (Dunder Mifflin, Initech, Hooli); career descriptions are enterprise sales and mechanical engineering with no ML or technical engineering background.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068054",
+    "score": 0.0,
+    "rationale": "Only 3.6 years total experience entirely at Infosys in Mechanical/Civil Engineer titles with sales and logistics operations descriptions, and no meaningful ML engineering work despite a suspicious BentoML advanced skill listing spanning 43 months on a 43-month career.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0068186",
+    "score": 0.0,
+    "rationale": "Thirteen years in mismatched non-technical roles (Content Writer, Mechanical Engineer) at fictional companies (Pied Piper x2, Dunder Mifflin, Wayne Enterprises) with customer support and operations work only; no ML or IR relevance.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0068309",
+    "score": 0.4,
+    "rationale": "Solid data engineering background at product companies (upGrad, BYJU'S) with Weaviate exposure (intermediate, 18mo) and FastAPI/Spark skills, but career is primarily data pipelines and analytics dashboards rather than production IR/ranking or embedding-based retrieval systems.",
+    "stratum": "random"
+  }
+]

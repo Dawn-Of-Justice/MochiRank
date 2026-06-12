@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "CAND_0053226",
+    "score": 0.0,
+    "rationale": "Graphic Designer at Infosys with a marketing manager background and only casual ChatGPT experimentation; skills are CI/CD (8mo), Sales, and Illustrator — zero ML, IR, or engineering depth relevant to this role.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053377",
+    "score": 0.2,
+    "rationale": "QA Engineer with only 1.9 years of experience, currently at fictional company Initech (honeypot signal), with web/frontend background and only a small self-built RAG side project — no production IR or ranking experience.",
+    "stratum": "high_behavioral"
+  },
+  {
+    "candidate_id": "CAND_0053379",
+    "score": 0.2,
+    "rationale": "9.4yr career spans DevOps at CRED, Java backend at Cognizant (IT services), and infrastructure at Wayne Enterprises (fictional company); MLflow appears as an advanced skill but there is no production embeddings, retrieval, or ranking experience.",
+    "stratum": "title_match_strong"
+  },
+  {
+    "candidate_id": "CAND_0053385",
+    "score": 0.0,
+    "rationale": "Business Analyst with 1.9 years in operations/logistics management at Acme Corp with no engineering background, citing only online courses on RAG and LangChain experimentation — fundamentally non-technical profile.",
+    "stratum": "top_anti_persona_sim"
+  },
+  {
+    "candidate_id": "CAND_0053396",
+    "score": 0.0,
+    "rationale": "Java Developer whose current company is fictional Dunder Mifflin (honeypot signal) and prior role is at TCS (IT services); top skills are Project Management, HTML, and Excel at beginner level with no ML or IR experience whatsoever.",
+    "stratum": "title_mismatch"
+  },
+  {
+    "candidate_id": "CAND_0053433",
+    "score": 0.0,
+    "rationale": "Project Manager with a career entirely in SEO content writing, marketing leadership at Acme Corp, and a Business Analyst role at fictional Stark Industries (honeypot signal) — no engineering or ML work of any kind.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053470",
+    "score": 0.0,
+    "rationale": "HR Manager with career at Wipro (IT services) in brand design and at fictional Dunder Mifflin in sales/accounting; FAISS listed as an advanced skill (13mo) is implausible keyword inflation on a non-technical HR/sales profile.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053524",
+    "score": 0.2,
+    "rationale": "Java Developer with 7.5yr career split across Wipro (IT services Java backend), Acme Corp (QA), and CRED (DevOps); primary ML skill is Speech Recognition advanced (53mo) — wrong domain for IR/ranking — with no retrieval or NLP production work.",
+    "stratum": "random"
+  },
+  {
+    "candidate_id": "CAND_0053555",
+    "score": 0.4,
+    "rationale": "6.7yr engineer with NLP advanced (31mo) and product-company experience at CRED and Flipkart, but primary AI skill is ASR (speech recognition, wrong domain) and career history shows no production IR, retrieval, or ranking systems.",
+    "stratum": "top_retrieval_dense"
+  },
+  {
+    "candidate_id": "CAND_0053578",
+    "score": 0.4,
+    "rationale": "6.7yr software engineer with Learning to Rank listed as an advanced skill (49mo, 59 endorsements) which is directly relevant, but the entire career — HCL, TCS, Mphasis — is at IT-services firms with no product-company ranking/retrieval production evidence.",
+    "stratum": "top_retrieval_dense"
+  }
+]
