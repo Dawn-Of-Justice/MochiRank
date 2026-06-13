@@ -1,73 +1,98 @@
-# MochiRank — Redrob Track 1: Intelligent Candidate Ranker
+# MochiRank — Intelligent Candidate Ranker
 
-Ranks **100,000 candidate profiles** against a "Senior AI Engineer — Founding Team" JD and
-produces a top-100 submission CSV (`candidate_id, rank, score, reasoning`).
-Built for the Redrob India Runs hackathon, Track 1.
+Ranks **100,000 candidate profiles** against a job description and produces a ranked top-100 list
+(`candidate_id, rank, score, reasoning`). Designed to surface genuinely qualified candidates, not
+just keyword-matched ones.
 
-## How it works (30-second version)
+## What it does
 
-Claude is used **offline only** as a teacher: it labels ~2,500 stratified candidates with a
-calibrated rubric, and those judgments are distilled into an **XGBoost LambdaMART** ranker.
-At ranking time, `rank.py` runs a pure-CPU pipeline — consistency/honeypot gating, hybrid
-BM25 + dense retrieval with RRF fusion, a ~48-feature matrix, XGBoost inference, optional
-ONNX cross-encoder re-rank, and SHAP-derived reasoning strings — with **zero LLM/network calls**,
-in under 5 minutes and 16 GB RAM.
+Given a large pool of candidate profiles and a job description, MochiRank identifies the best-fit
+candidates using a two-phase approach:
+
+- **Offline (precompute):** An LLM acts as a labeling workforce, scoring a stratified sample of
+  ~2,500 candidates against a calibrated rubric. Those judgments train an **XGBoost LambdaMART**
+  ranker that learns what "great fit" actually means for the role — including signals that don't
+  show up as literal keyword matches.
+
+- **At ranking time:** `rank.py` runs a pure-CPU pipeline with no LLM or network calls. It filters
+  out structurally inconsistent profiles, retrieves the most relevant candidates via hybrid BM25 +
+  dense search with RRF fusion, scores them with the trained model across ~48 features, and
+  generates SHAP-derived reasoning strings tied to the model's actual decisions.
 
 ```
-OFFLINE (internet OK)                      RANKING STEP (≤5 min, CPU, no network)
+OFFLINE (internet OK)                      RANKING (≤5 min, CPU, no network)
 embeddings → hypothetical resumes →        rank.py: honeypot filter → hybrid retrieval
-sampler → Claude teacher labels →          → features → XGBoost → re-rank → hard gates
-XGBoost LambdaMART → artifacts/            → SHAP reasoning → submission.csv
+sampler → LLM teacher labels →             → features → XGBoost → re-rank → hard gates
+XGBoost LambdaMART → artifacts/            → SHAP reasoning → ranked CSV
 ```
+
+## Why not just use embeddings?
+
+Pure cosine similarity over profile embeddings fails several real-world traps:
+
+- **Keyword stuffers** — skills list has every buzzword, but career history doesn't support them
+- **Plain-language great candidates** — strong fit, zero industry jargon in their profile
+- **Behavioral twins** — near-identical profiles that differ only in engagement signals
+- **Inconsistent profiles** — internally contradictory data that looks plausible at a glance
+
+MochiRank addresses all four: consistency checks gate out impossible profiles, the feature matrix
+captures behavioral signals and career trajectory (not just text overlap), and the LambdaMART
+ranker is trained to distinguish genuine fit from surface-level matches.
 
 ## Repository layout
 
-| Path | What's in it |
-|------|--------------|
-| `CLAUDE.md` | Project context + hard constraints for Claude Code sessions |
-| `architecture/` | System design: [spec.md](architecture/spec.md) (pipeline + `rank.py`), [features.md](architecture/features.md) (~48 features), [pipeline.md](architecture/pipeline.md) (stage implementations) |
-| `docs/` | [problem.md](docs/problem.md) (framing + eval), [offline-phase.md](docs/offline-phase.md) (teacher labeling + training), [build-plan.md](docs/build-plan.md) (build order + ablations), [submission.md](docs/submission.md) (declarations, risks, references) |
-| `dataset/` | Provided hackathon bundle: `candidates.jsonl` (~487 MB, not committed), 50-candidate sample, JD, schema, `validate_submission.py` |
+| Path | Contents |
+|------|----------|
+| `rank.py` | Single entry point — produces submission CSV |
+| `src/` | Runtime modules imported by `rank.py` (no torch/anthropic) |
+| `offline/` | Precompute scripts — embeddings, hypothetical resumes, teacher labeling, training |
+| `artifacts/` | Precomputed outputs — embeddings, BM25 index, trained model |
+| `dataset/` | Input data: `candidates.jsonl` (~487 MB), 50-candidate sample, JD, schema, validator |
+| `architecture/` | System design: [spec.md](architecture/spec.md), [features.md](architecture/features.md), [pipeline.md](architecture/pipeline.md) |
+| `docs/` | [problem.md](docs/problem.md), [offline-phase.md](docs/offline-phase.md), [build-plan.md](docs/build-plan.md) |
 | `requirements.txt` | Python dependencies |
-| `src/` *(planned)* | Runtime code imported by `rank.py` — no torch/anthropic |
-| `offline/` *(planned)* | Precompute scripts — internet + API calls allowed |
-| `artifacts/` *(planned)* | Precomputed embeddings, BM25 index, trained model |
-| `rank.py` *(planned)* | The single entry point |
 
-## Getting started (contributors)
+## Pipeline stages
 
-1. Read [docs/problem.md](docs/problem.md) first — the traps in the dataset drive every design decision.
-2. Then [architecture/spec.md](architecture/spec.md) for the big picture; open the other docs only as needed.
-3. Follow [docs/build-plan.md](docs/build-plan.md) — work is split into two parallel workstreams
-   (**A: runtime ranker** in `src/`+`rank.py`, **B: offline ML pipeline** in `offline/`+`artifacts/`)
-   with explicit interface contracts and sync points. First deliverables: `src/consistency_checks.py` (A)
-   and `offline/precompute_embeddings.py` (B).
+`rank.py` runs these stages in sequence:
+
+1. **Consistency engine** — flags honeypot and impossible profiles across all 100K candidates
+2. **Hybrid retrieval** — BM25 + dense vector search, fused with Reciprocal Rank Fusion → top ~2,000
+3. **Feature matrix** — ~48 features per candidate (skill depth, recency, behavioral signals, JD alignment)
+4. **XGBoost inference** — LambdaMART model scores the top-2,000
+5. **Cross-encoder re-rank** — optional ONNX int8 cross-encoder refines the top 200
+6. **Hard gates** — honeypots and disqualifiers are removed from the final top-100
+7. **SHAP reasoning** — each output row gets an explanation derived from the model's actual feature weights
+
+## Getting started
 
 ```powershell
 pip install -r requirements.txt
+```
 
-# Develop against the 50-candidate sample, never the full 487 MB file:
-#   dataset/sample_candidates.json
+Develop and test against the 50-candidate sample — never load the full 487 MB file during iteration:
 
-# Validate any generated submission before upload:
+```powershell
+# Validate any generated submission:
 python dataset/validate_submission.py submission.csv
 ```
 
-### Planned reproduce command
+### Reproduce command
 
 ```
 python rank.py --candidates ./dataset/candidates.jsonl --out ./submission.csv
 ```
 
-## Hard constraints (do not break)
+**Runtime constraints:** ≤5 min wall-clock, ≤16 GB RAM, CPU only, zero network calls.
 
-- `rank.py`: ≤5 min wall-clock, ≤16 GB RAM, CPU only, **zero network calls** (Docker-reproduced).
-- No LLM calls at ranking time — all Claude usage is offline (teacher labeling).
-- Eval: `0.50×NDCG@10 + 0.30×NDCG@50 + 0.15×MAP + 0.05×P@10` — top-10 precision is half the score.
-- >10% honeypots in the top-100 = disqualification — honeypots are hard-gated out.
-- Reasoning strings must be derived from the model's actual decision (SHAP), never free-written.
-- Reference date for all recency math: **2026-06-10**.
+## Design decisions
 
-## Status
-
-Docs/spec phase complete. No code yet — next step per the build plan is `src/consistency_checks.py`.
+- **LLM as labeler, not ranker.** The LLM's judgments are distilled into XGBoost weights during
+  training. At inference time, `rank.py` is pure numpy/scipy/xgboost — fast, reproducible,
+  and fully offline.
+- **SHAP for reasoning.** Every reasoning string is derived mechanically from the model's feature
+  contributions, ensuring specificity and consistency with the actual ranking decision.
+- **Strict offline/runtime split.** Nothing in `src/` imports torch or anthropic. All heavy
+  computation lives in `artifacts/` as precomputed files.
+- **Reference date: 2026-06-10** — used for all recency calculations (years of experience, activity
+  recency, etc.).
