@@ -1,0 +1,35 @@
+# Keep the rank image lean and provably free of the original dataset.
+
+# Virtualenvs / caches
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# The 487 MB dataset — never bake it in (judges mount their own at runtime)
+dataset/candidates.jsonl
+dataset/candidates.jsonl.gz
+data/
+
+# Offline-only artifacts — rank.py rebuilds these at runtime, so they must NOT
+# ship (also keeps us honest: the image cannot accidentally rank the original set)
+artifacts/candidate_embeddings.npy
+artifacts/candidate_embeddings_sample.npy
+artifacts/candidate_ids.json
+artifacts/candidate_ids_sample.json
+artifacts/bm25_index.pkl
+artifacts/bm25_index_sample.pkl
+artifacts/flashrank/
+
+# Not needed at rank time
+offline/
+tests/
+sandbox/
+architecture/
+docs/
+.git/
+.github/
+*.md
+submission*.csv
