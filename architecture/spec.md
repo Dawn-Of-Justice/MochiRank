@@ -15,6 +15,8 @@ OFFLINE PHASE (days/weeks, internet on, AI tools allowed)
 
 RANKING STEP (5-min window, CPU, no network)
 ├── rank.py                     — single entry point, produces submission CSV
+│   ├── Stage 0: build dense (model2vec) + BM25 indexes from the UPLOADED candidates
+│   │            (src/runtime_index.py — handles unseen judge datasets; ~30s/100K)
 │   ├── Stage A: consistency engine (honeypot filter)
 │   ├── Stage B: hybrid retrieval BM25 + dense → RRF → top ~2000
 │   ├── Stage C: full feature matrix on top-2000
@@ -27,7 +29,18 @@ RANKING STEP (5-min window, CPU, no network)
 
 The key insight: **Claude is a labeling workforce, not the ranker.**
 Its judgments get baked into XGBoost weights during training.
-`rank.py` has zero LLM calls — just numpy, scipy, and a 2MB model file.
+`rank.py` has zero LLM calls — just numpy, scipy, xgboost, and the torch-free
+model2vec embedder.
+
+> **Runtime indexing (handles unseen judge datasets).** The dense embeddings and
+> BM25 index are NOT loaded from by-`candidate_id` artifacts — they are rebuilt at
+> rank time from whatever candidates file is passed in (`src/runtime_index.py`).
+> An earlier design precomputed them keyed by id, which silently dropped any
+> candidate whose id wasn't in the original dataset. Only **dataset-independent**
+> artifacts stay precomputed: the trained ranker, `jd_query_vectors`,
+> `hypothetical_resumes`, and the vendored `potion-base-8M/` embedder. Chunking and
+> tokenization live in `src/utils.py` and are shared by offline precompute and the
+> runtime builder, so features match what the model was trained on.
 
 ## Repository Structure (target layout)
 
@@ -44,13 +57,15 @@ redrob-ranker/
 │   ├── job_description.md             # JD (commit this)
 │   └── teacher_labels.csv            # Claude-generated labels (commit this)
 │
-├── artifacts/                         # precomputed, committed
-│   ├── candidate_embeddings.npy       # shape (100000, 384) — bge-small
-│   ├── candidate_ids.json             # ordered list matching embeddings rows
-│   ├── hypothetical_resumes.json      # ideal + anti-persona resumes
-│   ├── jd_query_vectors.npy           # multi-query JD embeddings (ideals+anti)
-│   ├── bm25_index.pkl                 # pickled BM25Okapi index
-│   └── ranker_model.json              # trained XGBoost model
+├── artifacts/                         # only dataset-independent files are used at rank time
+│   ├── potion-base-8M/                # vendored model2vec embedder (256d), committed — loaded
+│   │                                  #   locally at runtime, zero network
+│   ├── hypothetical_resumes.json      # ideal + anti-persona resumes (committed)
+│   ├── jd_query_vectors.npy           # multi-query JD embeddings, ideals+anti (committed)
+│   ├── ranker_model.json              # trained XGBoost model (committed)
+│   ├── candidate_embeddings.npy       # OFFLINE TRAINING ONLY (256d model2vec), gitignored —
+│   ├── candidate_ids.json             #   rank.py rebuilds the dense index at runtime instead
+│   └── bm25_index.pkl                 # OFFLINE TRAINING ONLY, gitignored — rebuilt at runtime
 │
 ├── offline/
 │   ├── precompute_embeddings.py
