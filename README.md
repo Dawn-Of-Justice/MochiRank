@@ -14,10 +14,12 @@ candidates using a two-phase approach:
   ranker that learns what "great fit" actually means for the role — including signals that don't
   show up as literal keyword matches.
 
-- **At ranking time:** `rank.py` runs a pure-CPU pipeline with no LLM or network calls. It filters
-  out structurally inconsistent profiles, retrieves the most relevant candidates via hybrid BM25 +
-  dense search with RRF fusion, scores them with the trained model across ~48 features, and
-  generates SHAP-derived reasoning strings tied to the model's actual decisions.
+- **At ranking time:** `rank.py` runs a pure-CPU pipeline with no LLM or network calls. It builds
+  the dense and BM25 indexes **from the uploaded candidates file itself** (so any dataset the judges
+  supply — including unseen `candidate_id`s — ranks correctly), filters out structurally
+  inconsistent profiles, retrieves the most relevant candidates via hybrid BM25 + dense search with
+  RRF fusion, scores them with the trained model across ~48 features, and generates SHAP-derived
+  reasoning strings tied to the model's actual decisions.
 
 ```
 OFFLINE (internet OK)                      RANKING (≤5 min, CPU, no network)
@@ -46,7 +48,7 @@ ranker is trained to distinguish genuine fit from surface-level matches.
 | `rank.py` | Single entry point — produces submission CSV |
 | `src/` | Runtime modules imported by `rank.py` (no torch/anthropic) |
 | `offline/` | Precompute scripts — embeddings, hypothetical resumes, teacher labeling, training |
-| `artifacts/` | Precomputed outputs — embeddings, BM25 index, trained model |
+| `artifacts/` | Dataset-independent precomputed outputs — trained model, JD query vectors, hypothetical resumes, and the vendored `potion-base-8M/` embedder. (Dense embeddings + BM25 are built at runtime from the uploaded candidates.) |
 | `dataset/` | Input data: `candidates.jsonl` (~487 MB), 50-candidate sample, JD, schema, validator |
 | `architecture/` | System design: [spec.md](architecture/spec.md), [features.md](architecture/features.md), [pipeline.md](architecture/pipeline.md) |
 | `docs/` | [problem.md](docs/problem.md), [offline-phase.md](docs/offline-phase.md), [build-plan.md](docs/build-plan.md) |
