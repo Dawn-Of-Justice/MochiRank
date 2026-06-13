@@ -12,7 +12,6 @@ All heavy computation is precomputed into artifacts/.
 import argparse
 import csv
 import json
-import pickle
 import time
 from pathlib import Path
 
@@ -29,8 +28,10 @@ from src.feature_engineering import (
 from src.reasoning_generator import generate_reasoning
 from src.retrieval import bm25_retrieve, dense_retrieve, reciprocal_rank_fusion
 from src.reranker import rerank_top_n
+from src.runtime_index import attach_runtime_index
 
 ARTIFACTS = Path("artifacts")
+MODEL_DIR = ARTIFACTS / "potion-base-8M"
 
 NON_TECH_TITLES = (
     "marketing", "sales", "accountant", "account manager",
@@ -107,16 +108,16 @@ def main(candidates_path: str, output_path: str) -> None:
     tick(f"Loaded {len(candidates)} candidates")
 
     # ------------------------------------------------------------------ #
-    # Load artifacts
+    # Load artifacts — only JD-side, dataset-independent ones.
+    # The candidate-side dense + BM25 indexes are built at runtime from the
+    # uploaded candidates (see below), so the same model works on any dataset
+    # the judges supply, including unseen candidate_ids.
     # ------------------------------------------------------------------ #
     tick("Loading artifacts…")
-    precomputed = load_precomputed(ARTIFACTS)
+    precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
 
     model = xgb.Booster()
     model.load_model(ARTIFACTS / "ranker_model.json")
-
-    with open(ARTIFACTS / "bm25_index.pkl", "rb") as f:
-        bm25_data = pickle.load(f)
 
     jd_text = ""
     hyp_path = ARTIFACTS / "hypothetical_resumes.json"
@@ -125,6 +126,16 @@ def main(candidates_path: str, output_path: str) -> None:
             jd_text = json.load(f).get("jd_text", "")
 
     tick("Artifacts loaded")
+
+    # ------------------------------------------------------------------ #
+    # Build candidate-side indexes from the UPLOADED candidates.
+    # Dense embeddings (model2vec) + BM25 are computed here, not loaded from
+    # by-candidate_id pickles — this is what makes ranking correct on a fresh
+    # judge dataset. ~30s for 100K on CPU, zero network (model is local).
+    # ------------------------------------------------------------------ #
+    tick("Building runtime indexes from uploaded candidates…")
+    bm25_data = attach_runtime_index(precomputed, candidates, MODEL_DIR, tick=tick)
+    tick("Runtime indexes built")
 
     # ------------------------------------------------------------------ #
     # Stage A: consistency checks on all 100K candidates

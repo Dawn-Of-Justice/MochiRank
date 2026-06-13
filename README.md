@@ -14,10 +14,12 @@ candidates using a two-phase approach:
   ranker that learns what "great fit" actually means for the role — including signals that don't
   show up as literal keyword matches.
 
-- **At ranking time:** `rank.py` runs a pure-CPU pipeline with no LLM or network calls. It filters
-  out structurally inconsistent profiles, retrieves the most relevant candidates via hybrid BM25 +
-  dense search with RRF fusion, scores them with the trained model across ~48 features, and
-  generates SHAP-derived reasoning strings tied to the model's actual decisions.
+- **At ranking time:** `rank.py` runs a pure-CPU pipeline with no LLM or network calls. It builds
+  the dense and BM25 indexes **from the uploaded candidates file itself** (so any dataset the judges
+  supply — including unseen `candidate_id`s — ranks correctly), filters out structurally
+  inconsistent profiles, retrieves the most relevant candidates via hybrid BM25 + dense search with
+  RRF fusion, scores them with the trained model across ~48 features, and generates SHAP-derived
+  reasoning strings tied to the model's actual decisions.
 
 ```
 OFFLINE (internet OK)                      RANKING (≤5 min, CPU, no network)
@@ -46,7 +48,7 @@ ranker is trained to distinguish genuine fit from surface-level matches.
 | `rank.py` | Single entry point — produces submission CSV |
 | `src/` | Runtime modules imported by `rank.py` (no torch/anthropic) |
 | `offline/` | Precompute scripts — embeddings, hypothetical resumes, teacher labeling, training |
-| `artifacts/` | Precomputed outputs — embeddings, BM25 index, trained model |
+| `artifacts/` | Dataset-independent precomputed outputs — trained model, JD query vectors, hypothetical resumes, and the vendored `potion-base-8M/` embedder. (Dense embeddings + BM25 are built at runtime from the uploaded candidates.) |
 | `dataset/` | Input data: `candidates.jsonl` (~487 MB), 50-candidate sample, JD, schema, validator |
 | `architecture/` | System design: [spec.md](architecture/spec.md), [features.md](architecture/features.md), [pipeline.md](architecture/pipeline.md) |
 | `docs/` | [problem.md](docs/problem.md), [offline-phase.md](docs/offline-phase.md), [build-plan.md](docs/build-plan.md) |
@@ -57,7 +59,8 @@ ranker is trained to distinguish genuine fit from surface-level matches.
 `rank.py` runs these stages in sequence:
 
 1. **Consistency engine** — flags honeypot and impossible profiles across all 100K candidates
-2. **Hybrid retrieval** — BM25 + dense vector search, fused with Reciprocal Rank Fusion → top ~2,000
+2. **Hybrid retrieval** — dense (model2vec) + BM25 indexes built at runtime from the uploaded
+   candidates, fused with Reciprocal Rank Fusion → top ~2,000
 3. **Feature matrix** — ~48 features per candidate (skill depth, recency, behavioral signals, JD alignment)
 4. **XGBoost inference** — LambdaMART model scores the top-2,000
 5. **Cross-encoder re-rank** — optional ONNX int8 cross-encoder refines the top 200
@@ -92,7 +95,9 @@ python rank.py --candidates ./dataset/candidates.jsonl --out ./submission.csv
   and fully offline.
 - **SHAP for reasoning.** Every reasoning string is derived mechanically from the model's feature
   contributions, ensuring specificity and consistency with the actual ranking decision.
-- **Strict offline/runtime split.** Nothing in `src/` imports torch or anthropic. All heavy
-  computation lives in `artifacts/` as precomputed files.
+- **Strict offline/runtime split.** Nothing in `src/` imports torch or anthropic. The trained
+  model and JD-side vectors are precomputed in `artifacts/`; the dense + BM25 indexes are rebuilt
+  at runtime from the uploaded candidates (via the torch-free model2vec embedder), which is what
+  lets the ranker handle any judge dataset rather than only the one it was precomputed against.
 - **Reference date: 2026-06-10** — used for all recency calculations (years of experience, activity
   recency, etc.).

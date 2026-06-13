@@ -5,6 +5,7 @@ Reference date: 2026-06-10.
 
 import json
 import math
+import re
 from datetime import date
 from pathlib import Path
 from typing import Iterator
@@ -169,6 +170,46 @@ def career_text(candidate: dict) -> str:
     for job in candidate.get("career_history", []):
         parts.append(job.get("description", ""))
     return " ".join(parts).lower()
+
+
+def tokenize(text: str) -> list[str]:
+    """Lowercase alphanumeric tokenization — shared by BM25 build (offline + runtime)."""
+    return re.findall(r"[a-z0-9]+", text.lower())
+
+
+def candidate_to_chunks(c: dict) -> list[str]:
+    """
+    Text chunks fed to the dense embedder, one vector per chunk.
+
+    SINGLE SOURCE OF TRUTH — used by both offline.precompute_embeddings (training)
+    and src.runtime_index (rank time). The XGBoost model is trained on semantic
+    features derived from these exact chunks, so offline and runtime MUST chunk
+    identically or the feature distribution shifts and the model degrades.
+    """
+    chunks: list[str] = []
+    for job in c.get("career_history", []):
+        if job.get("description"):
+            chunks.append(f"{job['title']} at {job['company']}: {job['description']}")
+    if c["profile"].get("summary"):
+        chunks.append(c["profile"]["summary"])
+    if c["profile"].get("headline"):
+        chunks.append(c["profile"]["headline"])
+    return chunks or [c["profile"].get("current_title", "")]
+
+
+def candidate_to_bm25_text(c: dict) -> str:
+    """Concatenated text indexed by BM25. Shared by offline + runtime BM25 build."""
+    parts = [
+        c["profile"].get("headline", ""),
+        c["profile"].get("summary", ""),
+        c["profile"].get("current_title", ""),
+    ]
+    for job in c.get("career_history", []):
+        parts.append(job.get("title", ""))
+        parts.append(job.get("description", ""))
+    for s in c.get("skills", []):
+        parts.append(s.get("name", ""))
+    return " ".join(parts)
 
 
 def is_it_services_company(company_name: str) -> bool:

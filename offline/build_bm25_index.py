@@ -12,34 +12,22 @@ Usage:
 
 import argparse
 import pickle
-import re
 from pathlib import Path
 
 ARTIFACTS = Path("artifacts")
 DATASET = Path("dataset")
 
 
-def tokenize(text: str) -> list[str]:
-    return re.findall(r"[a-z0-9]+", text.lower())
-
-
-def candidate_to_bm25_text(c: dict) -> str:
-    parts = [
-        c["profile"].get("headline", ""),
-        c["profile"].get("summary", ""),
-        c["profile"].get("current_title", ""),
-    ]
-    for job in c.get("career_history", []):
-        parts.append(job.get("title", ""))
-        parts.append(job.get("description", ""))
-    for s in c.get("skills", []):
-        parts.append(s.get("name", ""))
-    return " ".join(parts)
-
-
 def main(sample_mode: bool = False) -> None:
     from rank_bm25 import BM25Okapi
-    from src.utils import load_candidates_json, stream_candidates
+    # tokenize / candidate_to_bm25_text are shared with src.runtime_index so the
+    # offline index and the rank-time index are built identically.
+    from src.utils import (
+        candidate_to_bm25_text,
+        load_candidates_json,
+        stream_candidates,
+        tokenize,
+    )
 
     ARTIFACTS.mkdir(exist_ok=True)
 

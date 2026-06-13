@@ -6,7 +6,13 @@ a top-100 submission CSV (`candidate_id, rank, score, reasoning`). Hackathon sub
 ## Hard constraints (never violate)
 
 - `rank.py` must run in **≤5 min wall-clock, ≤16 GB RAM, CPU only, ZERO network calls**
-  (reproduced inside Docker). All heavy work is precomputed into `artifacts/`.
+  (reproduced inside Docker). Dense embeddings + BM25 are built **at runtime from the
+  uploaded candidates** (`src/runtime_index.py`) — so a judge dataset with unseen
+  `candidate_id`s ranks correctly. This fits the budget because the embedder is model2vec
+  (`artifacts/potion-base-8M/`, vendored, torch-free, ~30s for 100K on CPU). Only
+  **dataset-independent** artifacts are precomputed: the trained ranker, `jd_query_vectors`,
+  `hypothetical_resumes`, and the vendored embedder. (`candidate_embeddings.npy` /
+  `bm25_index.pkl` remain for offline training only — `rank.py` no longer reads them.)
 - **No LLM calls at ranking time.** Claude is a teacher/labeler in the offline phase only;
   its judgment is distilled into an XGBoost LambdaMART model.
 - Eval metric: `0.50×NDCG@10 + 0.30×NDCG@50 + 0.15×MAP + 0.05×P@10` — optimize top-10 precision.
