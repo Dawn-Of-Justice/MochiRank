@@ -110,7 +110,8 @@ Usage:
     python rank.py --candidates ./candidates.jsonl --out ./submission.csv
 
 Constraints: ≤5 min, ≤16GB RAM, CPU only, no network.
-All heavy computation is in artifacts/ (precomputed).
+Dense + BM25 indexes are built at runtime from the uploaded candidates
+(src/runtime_index.py); only the trained model and JD-side vectors are precomputed.
 """
 
 import argparse
