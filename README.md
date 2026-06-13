@@ -59,7 +59,8 @@ ranker is trained to distinguish genuine fit from surface-level matches.
 `rank.py` runs these stages in sequence:
 
 1. **Consistency engine** — flags honeypot and impossible profiles across all 100K candidates
-2. **Hybrid retrieval** — BM25 + dense vector search, fused with Reciprocal Rank Fusion → top ~2,000
+2. **Hybrid retrieval** — dense (model2vec) + BM25 indexes built at runtime from the uploaded
+   candidates, fused with Reciprocal Rank Fusion → top ~2,000
 3. **Feature matrix** — ~48 features per candidate (skill depth, recency, behavioral signals, JD alignment)
 4. **XGBoost inference** — LambdaMART model scores the top-2,000
 5. **Cross-encoder re-rank** — optional ONNX int8 cross-encoder refines the top 200
@@ -94,7 +95,9 @@ python rank.py --candidates ./dataset/candidates.jsonl --out ./submission.csv
   and fully offline.
 - **SHAP for reasoning.** Every reasoning string is derived mechanically from the model's feature
   contributions, ensuring specificity and consistency with the actual ranking decision.
-- **Strict offline/runtime split.** Nothing in `src/` imports torch or anthropic. All heavy
-  computation lives in `artifacts/` as precomputed files.
+- **Strict offline/runtime split.** Nothing in `src/` imports torch or anthropic. The trained
+  model and JD-side vectors are precomputed in `artifacts/`; the dense + BM25 indexes are rebuilt
+  at runtime from the uploaded candidates (via the torch-free model2vec embedder), which is what
+  lets the ranker handle any judge dataset rather than only the one it was precomputed against.
 - **Reference date: 2026-06-10** — used for all recency calculations (years of experience, activity
   recency, etc.).
