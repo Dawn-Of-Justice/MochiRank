@@ -24,21 +24,11 @@ DATASET = Path("dataset")
 MODEL_ID = "minishlab/potion-base-8M"
 
 
-def candidate_to_chunks(c: dict) -> list[str]:
-    chunks = []
-    for job in c.get("career_history", []):
-        if job.get("description"):
-            chunks.append(f"{job['title']} at {job['company']}: {job['description']}")
-    if c["profile"].get("summary"):
-        chunks.append(c["profile"]["summary"])
-    if c["profile"].get("headline"):
-        chunks.append(c["profile"]["headline"])
-    return chunks or [c["profile"].get("current_title", "")]
-
-
 def main(sample_mode: bool = False) -> None:
     from model2vec import StaticModel
-    from src.utils import load_candidates_json, stream_candidates
+    # candidate_to_chunks lives in src.utils — the SAME helper src.runtime_index
+    # uses at rank time, so offline and runtime embeddings stay in lockstep.
+    from src.utils import candidate_to_chunks, load_candidates_json, stream_candidates
 
     ARTIFACTS.mkdir(exist_ok=True)
 

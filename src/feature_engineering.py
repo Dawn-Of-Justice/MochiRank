@@ -108,10 +108,18 @@ assert len(FEATURE_NAMES) == 48
 # Artifact loader
 # --------------------------------------------------------------------------- #
 
-def load_precomputed(artifacts_dir: Path) -> dict:
+def load_precomputed(artifacts_dir: Path, load_candidate_artifacts: bool = True) -> dict:
     """
-    Load all precomputed artifacts from artifacts/.
+    Load precomputed artifacts from artifacts/.
     Missing files are silently skipped — stubs kick in for those features.
+
+    load_candidate_artifacts:
+        True  — load the by-candidate_id dense embeddings + BM25 index (used by
+                offline training, which scores the original dataset).
+        False — skip them. rank.py uses this so it can build the dense + BM25
+                indexes at runtime from the *uploaded* candidates instead
+                (see src.runtime_index). Only JD-side, dataset-independent
+                artifacts (jd_query_vectors, hypothetical_resumes) are loaded.
     """
     pre: dict[str, Any] = {"feature_names": FEATURE_NAMES}
 
@@ -121,7 +129,7 @@ def load_precomputed(artifacts_dir: Path) -> dict:
     hyp_path = artifacts_dir / "hypothetical_resumes.json"
     bm25_path = artifacts_dir / "bm25_index.pkl"
 
-    if emb_path.exists() and ids_path.exists():
+    if load_candidate_artifacts and emb_path.exists() and ids_path.exists():
         import json
         from collections import defaultdict
         pre["candidate_embeddings"] = np.load(emb_path)
@@ -145,7 +153,7 @@ def load_precomputed(artifacts_dir: Path) -> dict:
         with open(hyp_path) as f:
             pre["hypothetical_resumes"] = json.load(f)
 
-    if bm25_path.exists():
+    if load_candidate_artifacts and bm25_path.exists():
         with open(bm25_path, "rb") as f:
             bm25_data = pickle.load(f)
         pre["bm25_index"] = bm25_data["bm25"]

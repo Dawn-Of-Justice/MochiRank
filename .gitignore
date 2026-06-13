@@ -5,7 +5,9 @@ data/candidates.jsonl
 data/candidates.jsonl.gz
 
 # Large precomputed artifacts — regenerable via offline/ scripts
-# Keep: ranker_model.json, hypothetical_resumes.json, jd_query_vectors.npy (small)
+# Keep: ranker_model.json, hypothetical_resumes.json, jd_query_vectors.npy (small),
+#       potion-base-8M/ (vendored embedder, ~30MB — needed by rank.py at runtime,
+#       zero-network; candidate_embeddings/bm25_index below are offline-training only)
 artifacts/candidate_embeddings.npy
 artifacts/candidate_embeddings_sample.npy
 artifacts/bm25_index.pkl
@@ -30,6 +32,12 @@ venv/
 # Local scratch / secrets
 note.txt
 .env
+
+# Runtime test scratch (sandbox/app.py is the real demo and stays tracked)
+sandbox/*.jsonl
+sandbox/judge_submission.csv
+sandbox/sample_submission.csv
+sandbox/val.txt
 
 # OS / editor
 Thumbs.db
