@@ -1,0 +1,23 @@
+candidate_id,rank,score,reasoning
+JUDGE_CAND_0000031,1,0.822359,"91% recruiter response rate, active as of 2026-05; 6yr Recommendation Systems Engineer with skills in FAISS, Pinecone, MLOps."
+JUDGE_CAND_0000015,2,0.252021,5yr Software Engineer across Razorpay and Hooli; skills include PyTorch.
+JUDGE_CAND_0000014,3,0.239373,"80% recruiter response rate, active as of 2026-04; 8yr Frontend Engineer with skills in FAISS, OpenSearch."
+JUDGE_CAND_0000043,4,0.236118,"8yr Cloud Engineer with founding-team experience at Initech; skills include Elasticsearch, OpenSearch, Fine-tuning LLMs."
+JUDGE_CAND_0000032,5,0.229281,"8yr .NET Developer at large company; evidenced in Embeddings, Python across career."
+JUDGE_CAND_0000038,6,0.228697,"7yr Java Developer across Swiggy and Globex Inc; skills include Weaviate, Docker, MLOps."
+JUDGE_CAND_0000018,7,0.206025,7yr Frontend Engineer with founding-team experience at Pied Piper; skills include core ML/NLP stack.
+JUDGE_CAND_0000044,8,0.204245,6yr Frontend Engineer at large company; evidenced in Python across career.
+JUDGE_CAND_0000025,9,0.190152,7yr Frontend Engineer at large company; evidenced in LangChain across career.
+JUDGE_CAND_0000035,10,0.183461,"4yr Full Stack Developer at mid-size company; evidenced in Recommendation Systems, Docker across career."
+JUDGE_CAND_0000048,11,0.169873,10yr Mobile Developer with founding-team experience at Initech; skills include core ML/NLP stack.
+JUDGE_CAND_0000011,12,0.146286,"2yr QA Engineer with founding-team experience at Pied Piper; skills include Recommendation Systems, Hugging Face Transformers."
+JUDGE_CAND_0000019,13,0.11869,6yr Project Manager with founding-team experience at Pied Piper; skills include core ML/NLP stack.
+JUDGE_CAND_0000050,14,0.078098,14yr Business Analyst across Hooli and Acme Corp; skills include core ML/NLP stack.
+JUDGE_CAND_0000036,15,0.037703,11yr Project Manager with founding-team experience at Initech; skills include core ML/NLP stack.
+JUDGE_CAND_0000021,16,0.029148,"14yr Project Manager across Stark Industries and Dunder Mifflin; skills include Recommendation Systems, Fine-tuning LLMs, LangChain."
+JUDGE_CAND_0000006,17,0.010433,6yr Business Analyst with founding-team experience at Pied Piper; skills include core ML/NLP stack.
+JUDGE_CAND_0000029,18,0.00774,7yr Business Analyst at large company; evidenced in core ML/NLP stack across career.
+JUDGE_CAND_0000034,19,0.007616,14yr Business Analyst with founding-team experience at Pied Piper; skills include core ML/NLP stack.
+JUDGE_CAND_0000045,20,0.002478,12yr Project Manager with founding-team experience at Initech; skills include core ML/NLP stack.
+JUDGE_CAND_0000026,21,0.002172,"7yr Graphic Designer with founding-team experience at Initech; skills include Docker, Kubernetes."
+JUDGE_CAND_0000033,22,1.1e-05,9yr Graphic Designer across Dunder Mifflin and Acme Corp; skills include Kubernetes.
