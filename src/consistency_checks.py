@@ -98,7 +98,24 @@ def check_consistency(c: dict) -> tuple[bool, int, list[str]]:
                 )
 
     # ------------------------------------------------------------------ #
-    # Check 5: Total career months >> YOE * 12  (soft)
+    # Check 5: YOE exceeds entire career span (hard — spec example type)
+    # e.g., claims 13yr experience but earliest job starts only 1yr ago
+    # ------------------------------------------------------------------ #
+    if career and yoe > 0:
+        start_years = [
+            int(j["start_date"][:4]) for j in career
+            if j.get("start_date", "")[:4].isdigit()
+        ]
+        if start_years:
+            max_possible_from_career = REFERENCE_DATE.year - min(start_years) + 2
+            if yoe > max_possible_from_career:
+                msg = (f"yoe={yoe} impossible given earliest career start "
+                       f"{min(start_years)} (max {max_possible_from_career:.0f}yr)")
+                violations.append(msg)
+                honeypot_flags.append(msg)
+
+    # ------------------------------------------------------------------ #
+    # Check 6: Total career months >> YOE * 12  (soft)
     # ------------------------------------------------------------------ #
     total_career_months = sum(j.get("duration_months", 0) for j in career)
     if yoe > 0 and total_career_months > yoe * 12 + 24:
