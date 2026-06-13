@@ -61,9 +61,12 @@ PREFERRED_CITIES: list[str] = [
 
 # Production-action words used for production_signal_count
 PRODUCTION_KEYWORDS: list[str] = [
-    "deployed", "deploy", "shipped", "ship", "scaled", "scale",
-    "served", "serving", "production", "prod", "users", "latency",
-    "throughput", "real-time", "realtime", "live",
+    "deployed", "deploy", "productionized", "shipped", "ship",
+    "scaled", "scale", "served", "serving", "production", "prod",
+    "users", "latency", "throughput", "real-time", "realtime", "live",
+    "live traffic", "a/b test", "a/b tested", "rollout", "launched",
+    "in production", "at scale", "millions", "billion", "qps", "rps",
+    "uptime", "reliability", "serving infrastructure",
 ]
 
 # --------------------------------------------------------------------------- #
