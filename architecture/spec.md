@@ -78,9 +78,10 @@ redrob-ranker/
 │   ├── consistency_checks.py          # honeypot + impossible-profile detection
 │   ├── feature_engineering.py         # all ~40 features
 │   ├── retrieval.py                   # BM25 + dense + RRF
+│   ├── runtime_index.py               # builds dense + BM25 indexes from uploaded candidates
 │   ├── reranker.py                    # optional ONNX cross-encoder
 │   ├── reasoning_generator.py         # SHAP → natural language
-│   └── utils.py
+│   └── utils.py                       # shared helpers + chunking/tokenization (offline+runtime)
 │
 ├── rank.py                            # THE entry point
 ├── validate_submission.py             # provided by Redrob
@@ -92,6 +93,13 @@ redrob-ranker/
 > validator) currently lives in `dataset/` at the repo root.
 
 ## rank.py — Entry Point
+
+> **Note:** the block below is an early design sketch and lags the implementation
+> (it predates runtime indexing and shows the old by-id artifact loads). The
+> authoritative source is [`rank.py`](../rank.py); the current pipeline builds the
+> dense + BM25 indexes from the uploaded candidates via `attach_runtime_index()`
+> instead of `pickle.load`-ing `bm25_index.pkl`. Kept here for the stage-by-stage
+> shape only.
 
 ```python
 #!/usr/bin/env python3
