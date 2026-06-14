@@ -9,6 +9,7 @@ import csv
 import io
 import json
 import sys
+import time
 import traceback
 from pathlib import Path
 
@@ -92,52 +93,155 @@ st.markdown(
     }
 
     /* ── Hide Streamlit chrome ────────────────── */
-    /* Only hide specific elements — never the whole header or toolbar,
-       as those contain the sidebar toggle button */
     #MainMenu                    { visibility: hidden !important; }
     footer                       { visibility: hidden !important; }
     [data-testid="stDecoration"] { display: none !important; }
-    /* Blend header into white page — keep it in DOM so toggle works */
+    /* Blend header into white page — never set visibility:hidden on header,
+       it would swallow the sidebar toggle button */
     [data-testid="stHeader"] {
         background-color: #ffffff !important;
         box-shadow: none !important;
         border-bottom: 1px solid #f0f2f6 !important;
     }
-    /* Hide deploy/share/settings buttons but NOT the sidebar toggle */
-    [data-testid="stToolbar"] { visibility: hidden !important; }
-    /* Force sidebar expand button always visible regardless of parent */
-    [data-testid="collapsedControl"],
-    [data-testid="stSidebarCollapsedControl"] {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        pointer-events: auto !important;
+    /* Hide deploy button only — never touch the whole toolbar with
+       opacity/visibility so the sidebar toggle is never affected */
+    [data-testid="stToolbar"] { background: transparent !important; }
+    [data-testid="stDeployButton"] { display: none !important; }
+
+    /* ── Sidebar expand button (shown by Streamlit only when sidebar is COLLAPSED)
+       Do NOT set display:flex here — that would force it visible even when
+       the sidebar is open, creating a duplicate arrow. Only style appearance. */
+    [data-testid="stSidebarCollapsedControl"],
+    [data-testid="collapsedControl"] {
+        background: #1a1a2e !important;
+        border-radius: 8px !important;
+        padding: 4px 10px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.28) !important;
+        z-index: 999999 !important;
+    }
+    [data-testid="stSidebarCollapsedControl"] svg,
+    [data-testid="collapsedControl"] svg,
+    [data-testid="stSidebarCollapsedControl"] svg *,
+    [data-testid="collapsedControl"] svg * {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+        color: #ffffff !important;
     }
 
-    /* ── Sidebar ──────────────────────────────── */
+    /* ── Sidebar — fixed 280 px, no resize ──────── */
     [data-testid="stSidebar"] {
         background: #f0f2f6 !important;
         border-right: 1px solid #e2e4e9 !important;
-        padding-top: 1rem !important;
+        width: 280px !important;
+        min-width: 280px !important;
+        max-width: 280px !important;
+        padding-top: 0 !important;
     }
-    [data-testid="stSidebar"] .stMarkdown p,
-    [data-testid="stSidebar"] .stMarkdown li {
-        color: #4a5568 !important;
-        font-size: 0.84rem !important;
+    [data-testid="stSidebarContent"] {
+        overflow-y: auto !important;
+        padding: 0.5rem 0.75rem 1.5rem !important;
     }
-    [data-testid="stSidebar"] [data-testid="stExpander"] {
-        background: #ffffff !important;
-        border: 1px solid #dde1e7 !important;
-        border-radius: 10px !important;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
-        margin-bottom: 0.5rem !important;
-        overflow: hidden !important;
+    /* Hide the drag-to-resize handle */
+    [data-testid="stSidebarResizeHandle"],
+    [data-testid="stSidebarCollapseHandle"] {
+        display: none !important;
+        pointer-events: none !important;
     }
-    [data-testid="stSidebar"] [data-testid="stExpanderDetails"] {
-        background: #ffffff !important;
+
+    /* ── Sidebar nav rows ─────────────────────── */
+    .sb-brand {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -0.02em;
+        padding: 1rem 0.1rem 0.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
     }
-    [data-testid="stSidebar"] [data-testid="stExpanderToggleIcon"] {
-        color: #94a3b8 !important;
+    .sb-divider {
+        height: 1px;
+        background: #e2e4e9;
+        margin: 0.35rem 0 0.75rem;
+    }
+    .sb-section-label {
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: #9ca3af;
+        padding: 0.1rem 0.1rem 0.4rem;
+        font-family: 'Inter', sans-serif;
+    }
+    .sb-nav-item {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        background: #ffffff;
+        border: 1px solid #e2e4e9;
+        border-radius: 8px;
+        padding: 0.58rem 0.8rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.82rem;
+        color: #374151;
+        font-family: 'Inter', sans-serif;
+        cursor: default;
+        transition: background 0.12s ease, box-shadow 0.12s ease;
+    }
+    .sb-nav-item:hover {
+        background: #f8fafc;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        color: #1a1a2e;
+    }
+    .sb-nav-chevron {
+        margin-left: auto;
+        color: #cbd5e1;
+        font-size: 0.95rem;
+        line-height: 1;
+    }
+    .sb-stage-code {
+        font-size: 0.68rem;
+        font-weight: 700;
+        color: #e63946;
+        background: rgba(230,57,70,0.07);
+        border: 1px solid rgba(230,57,70,0.18);
+        border-radius: 4px;
+        padding: 0.06rem 0.38rem;
+        font-family: 'JetBrains Mono', monospace;
+        letter-spacing: 0.02em;
+        flex-shrink: 0;
+    }
+    .sb-stage-dot {
+        width: 5px; height: 5px;
+        border-radius: 50%;
+        background: #22c55e;
+        flex-shrink: 0;
+    }
+    /* Legend section */
+    .sb-legend-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.45rem;
+        font-size: 0.77rem;
+        color: #6b7280;
+        font-family: 'Inter', sans-serif;
+        padding: 0.18rem 0;
+        line-height: 1.4;
+    }
+    .sb-legend-dot {
+        width: 5px; height: 5px;
+        border-radius: 50%;
+        background: #22c55e;
+        flex-shrink: 0;
+        margin-top: 0.32rem;
+    }
+    .sb-legend-box {
+        background: #ffffff;
+        border: 1px solid #e2e4e9;
+        border-radius: 8px;
+        padding: 0.6rem 0.75rem;
+        margin-top: 0.2rem;
     }
 
     /* ── Primary button ───────────────────────── */
@@ -199,15 +303,6 @@ st.markdown(
         font-family: 'Inter', sans-serif !important;
     }
 
-    /* ── Progress bar ─────────────────────────── */
-    [data-testid="stProgress"] > div > div > div > div {
-        background: linear-gradient(90deg, #e63946, #f87171) !important;
-        border-radius: 6px !important;
-    }
-    [data-testid="stProgress"] > div > div > div {
-        background: #e5e7eb !important;
-        border-radius: 6px !important;
-    }
 
     /* ── Tabs — underline style ───────────────── */
     [data-baseweb="tab-list"] {
@@ -442,37 +537,6 @@ st.markdown(
         font-family: 'Inter', sans-serif;
     }
 
-    /* ── Stage list (sidebar) ─────────────────── */
-    .stage {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        margin-bottom: 0.3rem;
-        font-size: 0.82rem;
-        color: #6b7280;
-        padding: 0.3rem 0.5rem;
-        border-radius: 7px;
-        transition: background 0.12s ease, color 0.12s ease;
-        font-family: 'Inter', sans-serif;
-    }
-    .stage:hover { background: #f0f2f6; color: #1a1a2e; }
-    .stage .dot {
-        width: 6px; height: 6px;
-        border-radius: 50%;
-        background: #22c55e;
-        flex-shrink: 0;
-    }
-    .stage .code {
-        font-weight: 700;
-        color: #e63946;
-        font-size: 0.74rem;
-        background: rgba(230,57,70,0.07);
-        padding: 0.1rem 0.4rem;
-        border-radius: 4px;
-        border: 1px solid rgba(230,57,70,0.18);
-        letter-spacing: 0.02em;
-        font-family: 'JetBrains Mono', monospace;
-    }
 
     /* ── Empty state ──────────────────────────── */
     .empty-state {
@@ -492,16 +556,41 @@ st.markdown(
         letter-spacing: -0.015em;
     }
 
-    /* ── Sidebar brand ────────────────────────── */
-    .sidebar-brand {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: #1a1a2e;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: -0.015em;
-        padding: 0.25rem 0 0.5rem;
-    }
     </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Inject JS to find the sidebar toggle button (whenever Streamlit creates it)
+# and paint it black so it's always visible on the white page.
+st.markdown(
+    """
+    <script>
+    (function() {
+        /* Paint the collapsed-state expand button dark so it's visible on white.
+           Runs once on load + watches for DOM changes (sidebar toggle re-renders). */
+        function styleToggle() {
+            ['[data-testid="stSidebarCollapsedControl"]','[data-testid="collapsedControl"]']
+            .forEach(function(sel) {
+                var el = document.querySelector(sel);
+                if (!el) return;
+                el.style.background   = '#1a1a2e';
+                el.style.borderRadius = '8px';
+                el.style.padding      = '4px 10px';
+                el.style.boxShadow    = '0 2px 8px rgba(0,0,0,0.28)';
+                el.style.zIndex       = '999999';
+                el.querySelectorAll('svg,svg *').forEach(function(n) {
+                    n.style.fill   = '#fff';
+                    n.style.stroke = '#fff';
+                    n.style.color  = '#fff';
+                });
+            });
+        }
+        styleToggle();
+        var obs = new MutationObserver(styleToggle);
+        obs.observe(document.body, { childList: true, subtree: true });
+    })();
+    </script>
     """,
     unsafe_allow_html=True,
 )
@@ -509,37 +598,40 @@ st.markdown(
 # ------------------------------------------------------------------ #
 # Sidebar
 # ------------------------------------------------------------------ #
-stages = [
-    ("A", "Honeypot / consistency filter"),
-    ("B", "Hybrid retrieval (BM25 + dense)"),
-    ("C", "Feature engineering (48 feats)"),
-    ("D", "XGBoost LambdaMART scoring"),
-    ("E", "Cross-encoder re-rank"),
-    ("F", "Hard JD gates"),
-    ("G", "SHAP reasoning"),
+_stages = [
+    ("A", "🛡️", "Honeypot filter"),
+    ("B", "🔍", "Hybrid retrieval"),
+    ("C", "⚙️", "Feature engineering"),
+    ("D", "🤖", "XGBoost scoring"),
+    ("E", "🔁", "Cross-encoder re-rank"),
+    ("F", "🚧", "Hard JD gates"),
+    ("G", "💡", "SHAP reasoning"),
 ]
 
 with st.sidebar:
-    st.markdown('<div class="sidebar-brand">🍡 MochiRank</div>', unsafe_allow_html=True)
-    st.markdown("---")
+    st.markdown('<div class="sb-brand">🍡 MochiRank</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sb-divider"></div>', unsafe_allow_html=True)
 
-    with st.expander("⚙️ Pipeline Stages", expanded=True):
-        for code, label in stages:
-            st.markdown(
-                f'<div class="stage">'
-                f'<span class="dot"></span>'
-                f'<span class="code">{code}</span>'
-                f'{label}'
-                f'</div>',
-                unsafe_allow_html=True,
-            )
-
-    with st.expander("💻 CLI Usage"):
-        st.code(
-            "python rank.py \\\n  --candidates candidates.jsonl \\\n  --out submission.csv",
-            language="bash",
+    # Pipeline stages as nav rows
+    st.markdown('<div class="sb-section-label">Pipeline Stages</div>', unsafe_allow_html=True)
+    for code, icon, label in _stages:
+        st.markdown(
+            f'<div class="sb-nav-item">'
+            f'<span class="sb-stage-dot"></span>'
+            f'<span class="sb-stage-code">{code}</span>'
+            f'{icon} {label}'
+            f'</div>',
+            unsafe_allow_html=True,
         )
-        st.caption("Accepts JSONL (one candidate per line) or a JSON array. Same schema as `dataset/sample_candidates.json`.")
+
+    st.markdown('<div class="sb-divider" style="margin-top:0.75rem"></div>', unsafe_allow_html=True)
+
+    # CLI usage
+    st.markdown('<div class="sb-section-label">CLI Usage</div>', unsafe_allow_html=True)
+    st.code(
+        "python rank.py \\\n  --candidates candidates.jsonl \\\n  --out submission.csv",
+        language="bash",
+    )
 
 # ------------------------------------------------------------------ #
 # Hero header
@@ -588,15 +680,19 @@ if uploaded is None:
 # ------------------------------------------------------------------ #
 # Parse upload
 # ------------------------------------------------------------------ #
-try:
-    raw = uploaded.read().decode("utf-8")
-    if uploaded.name.endswith(".jsonl"):
-        candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
-    else:
-        candidates = json.loads(raw)
-except Exception as e:
-    st.error(f"Could not parse file: {e}")
-    st.stop()
+with st.spinner(
+    f"🍡 Wading through **{uploaded.name}**… "
+    "large files take a moment, grab a ☕"
+):
+    try:
+        raw = uploaded.read().decode("utf-8")
+        if uploaded.name.endswith(".jsonl"):
+            candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
+        else:
+            candidates = json.loads(raw)
+    except Exception as e:
+        st.error(f"Could not parse file: {e}")
+        st.stop()
 
 if not isinstance(candidates, list):
     st.error("Expected a JSON array or JSONL file at the top level.")
@@ -615,7 +711,22 @@ if not st.button("Rank Candidates", type="primary", use_container_width=False):
 # ------------------------------------------------------------------ #
 # Pipeline execution  (mirrors rank.py stages A–G)
 # ------------------------------------------------------------------ #
-progress = st.progress(0, text="Initialising…")
+
+# Custom HTML progress bar — full style control, no Streamlit theme interference.
+_prog_slot = st.empty()
+
+def _prog(pct: int, text: str) -> None:
+    _prog_slot.markdown(
+        f'<div style="margin:0.5rem 0 1rem">'
+        f'<div style="font-size:0.82rem;color:#4b5563;margin-bottom:0.35rem">{text}</div>'
+        f'<div style="background:rgba(0,0,0,0.08);border-radius:6px;height:8px;overflow:hidden">'
+        f'<div style="background:linear-gradient(90deg,#1d4ed8,#3b82f6);'
+        f'width:{pct}%;height:100%;border-radius:6px"></div>'
+        f'</div></div>',
+        unsafe_allow_html=True,
+    )
+
+_prog(0, "Initialising…")
 
 # Convert list → {cid: candidate} dict, same as rank.py
 candidates_dict = {c["candidate_id"]: c for c in candidates}
@@ -641,7 +752,7 @@ try:
     from src.runtime_index import attach_runtime_index
 
     # Load JD-side artifacts only (no candidate embeddings/BM25 — built at runtime)
-    progress.progress(5, text="Loading artifacts…")
+    _prog(5, "Loading artifacts…")
     precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
     model = xgb.Booster()
     model.load_model(ARTIFACTS / "ranker_model.json")
@@ -654,12 +765,12 @@ try:
             jd_text = _json.load(_f).get("jd_text", "")
 
     # Build dense + BM25 indexes from the uploaded candidates at runtime
-    progress.progress(10, text="Building runtime indexes — embedding candidates…")
+    _prog(10, "Building runtime indexes — embedding candidates…")
     bm25_data = attach_runtime_index(precomputed, candidates_dict, ARTIFACTS / "potion-base-8M")
-    progress.progress(35, text="Runtime indexes built")
+    _prog(35, "Runtime indexes built")
 
     # Stage A: consistency checks
-    progress.progress(38, text="Stage A: consistency & honeypot detection…")
+    _prog(38, "Stage A: consistency & honeypot detection…")
     honeypot_ids: set = set()
     violation_counts: dict = {}
     is_honeypot_map: dict = {}
@@ -671,7 +782,7 @@ try:
             honeypot_ids.add(cid)
 
     # Stage B: hybrid retrieval → top 2000
-    progress.progress(48, text="Stage B: hybrid retrieval (BM25 + dense)…")
+    _prog(48, "Stage B: hybrid retrieval (BM25 + dense)…")
     all_ids = list(candidates_dict.keys())
     bm25_ranking   = bm25_retrieve(bm25_data, all_ids, top_n=5000)
     dense_ranking  = dense_retrieve(precomputed, all_ids, top_n=5000)
@@ -679,7 +790,7 @@ try:
     top_2000_ids   = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
 
     # Stage C: feature engineering on top-2000
-    progress.progress(58, text="Stage C: feature engineering on top 2000…")
+    _prog(58, "Stage C: feature engineering on top 2000…")
     feature_rows = []
     cid_order = []
     for cid in top_2000_ids:
@@ -691,13 +802,13 @@ try:
     cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
 
     # Stage D: XGBoost scoring
-    progress.progress(68, text="Stage D: XGBoost scoring…")
+    _prog(68, "Stage D: XGBoost scoring…")
     dmat = xgb.DMatrix(X, feature_names=FEATURE_NAMES)
     scores = model.predict(dmat)
     ranked_ids = [cid_order[i] for i in np.argsort(-scores)]
 
     # Stage E: cross-encoder re-rank on top 200
-    progress.progress(75, text="Stage E: cross-encoder re-rank…")
+    _prog(75, "Stage E: cross-encoder re-rank…")
     top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
     reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
     reranked_ids = [cid for cid, _ in reranked]
@@ -705,7 +816,7 @@ try:
     all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
 
     # Stage F: honeypot filter + JD hard gates → top 100
-    progress.progress(82, text="Stage F: hard gates…")
+    _prog(82, "Stage F: hard gates…")
     final_100: list = []
     skipped: set = set()
     for cid in all_ranked_ids:
@@ -723,7 +834,7 @@ try:
         final_100.append(cid)
 
     # Stage G: SHAP reasoning
-    progress.progress(90, text="Stage G: SHAP reasoning…")
+    _prog(90, "Stage G: SHAP reasoning…")
     shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
 
     results = []
@@ -746,18 +857,19 @@ try:
         })
 
     honeypot_ids_list = list(honeypot_ids)
-    progress.progress(100, text="Done!")
-    progress.empty()
+    _prog(100, "✅ Done! Pipeline complete.")
+    time.sleep(1.0)
+    _prog_slot.empty()
 
 except FileNotFoundError as e:
-    progress.empty()
+    _prog_slot.empty()
     st.error(
         f"Artifact not found: {e}\n\n"
         "Run the offline pipeline first to generate `artifacts/`."
     )
     st.stop()
 except Exception:
-    progress.empty()
+    _prog_slot.empty()
     st.error("Ranking failed.")
     st.code(traceback.format_exc())
     st.stop()
