@@ -728,6 +728,9 @@ def _prog(pct: int, text: str) -> None:
 
 _prog(0, "Initialising…")
 
+# Wall-clock timer — surfaced in the results as a speed badge.
+_t_start = time.time()
+
 # Convert list → {cid: candidate} dict, same as rank.py
 candidates_dict = {c["candidate_id"]: c for c in candidates}
 
@@ -857,6 +860,7 @@ try:
         })
 
     honeypot_ids_list = list(honeypot_ids)
+    _elapsed_s = time.time() - _t_start   # before the cosmetic sleep below
     _prog(100, "✅ Done! Pipeline complete.")
     time.sleep(1.0)
     _prog_slot.empty()
@@ -904,6 +908,59 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+# ------------------------------------------------------------------ #
+# Speed badge — sells the sub-5-min constraint
+# ------------------------------------------------------------------ #
+_thru = int(n_total / _elapsed_s) if _elapsed_s > 0 else 0
+st.markdown(
+    f'<div style="display:inline-flex;align-items:center;gap:0.5rem;'
+    f'background:rgba(34,197,94,0.10);border:1px solid rgba(34,197,94,0.30);'
+    f'color:#15803d;font-size:0.84rem;font-weight:600;'
+    f'padding:0.45rem 1rem;border-radius:20px;margin-bottom:1.5rem;'
+    f'font-family:Inter,sans-serif">'
+    f'⚡ Ranked <strong>{n_total:,}</strong> candidates in '
+    f'<strong>{_elapsed_s:.1f}s</strong>'
+    f'<span style="color:#9ca3af;font-weight:400">· ~{_thru:,}/s · CPU only</span>'
+    f'</div>',
+    unsafe_allow_html=True,
+)
+
+# ------------------------------------------------------------------ #
+# Score distribution — separation between strong and borderline
+# ------------------------------------------------------------------ #
+import altair as alt
+import pandas as pd
+
+st.markdown('<div class="results-heading">Score distribution</div>', unsafe_allow_html=True)
+_dist_df = pd.DataFrame({
+    "Rank":  [r["rank"]  for r in results],
+    "Score": [r["score"] for r in results],
+})
+_chart = (
+    alt.Chart(_dist_df)
+    .mark_area(
+        interpolate="monotone",
+        line={"color": "#2563eb", "strokeWidth": 2},
+        color=alt.Gradient(
+            gradient="linear",
+            stops=[
+                alt.GradientStop(color="#eff6ff", offset=0),
+                alt.GradientStop(color="#3b82f6", offset=1),
+            ],
+            x1=1, x2=1, y1=1, y2=0,
+        ),
+    )
+    .encode(
+        x=alt.X("Rank:Q", title="Rank", axis=alt.Axis(grid=False, tickMinStep=1)),
+        y=alt.Y("Score:Q", title="Model score", scale=alt.Scale(zero=False)),
+        tooltip=["Rank:Q", alt.Tooltip("Score:Q", format=".4f")],
+    )
+    .properties(height=200)
+    .configure_view(strokeOpacity=0)
+    .configure_axis(labelColor="#6b7280", titleColor="#6b7280", domainColor="#e5e7eb")
+)
+st.altair_chart(_chart, use_container_width=True)
 
 # ------------------------------------------------------------------ #
 # Download button
