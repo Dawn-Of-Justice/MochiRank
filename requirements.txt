@@ -17,7 +17,8 @@ xgboost>=2.0
 shap>=0.45
 
 # Reranking (optional but recommended)
-flashrank>=0.3           # no-torch fallback; OR use sentence-transformers CrossEncoder
+flashrank>=0.2.9         # no-torch fallback; OR use sentence-transformers CrossEncoder
+                         # (there is no flashrank 0.3 on PyPI — 0.2.x is the latest line)
 
 # Anthropic (offline labeling only — not used in rank.py)
 anthropic>=0.25

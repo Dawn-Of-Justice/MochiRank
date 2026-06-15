@@ -87,6 +87,25 @@ python rank.py --candidates ./dataset/candidates.jsonl --out ./submission.csv
 ```
 
 **Runtime constraints:** ≤5 min wall-clock, ≤16 GB RAM, CPU only, zero network calls.
+(Full 100K reference run: ~54 s on CPU, including ~30 s to build the dense + BM25
+indexes from the input file.)
+
+### Reproduce in Docker (network-isolated)
+
+The image installs only `requirements-runtime.txt` (no torch/anthropic) and bakes in
+the vendored `potion-base-8M/` embedder, so the run is provably network-free:
+
+```bash
+docker build -t mochirank .
+docker run --rm --network none \
+    -v "$PWD/dataset:/data:ro" -v "$PWD/out:/out" \
+    mochirank --candidates /data/candidates.jsonl --out /out/submission.csv
+```
+
+`--network none` is the actual proof of the zero-network constraint — the run
+succeeds because nothing reaches out: the embedder loads from the baked-in
+`artifacts/potion-base-8M/`, and the dense + BM25 indexes are rebuilt in-process
+from the mounted candidates file.
 
 ## Design decisions
 

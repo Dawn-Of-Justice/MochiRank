@@ -33,11 +33,10 @@ venv/
 note.txt
 .env
 
-# Runtime test scratch (sandbox/app.py is the real demo and stays tracked)
+# Runtime test scratch (sandbox/app.py + __init__.py are the real demo, stay tracked)
 sandbox/*.jsonl
-sandbox/judge_submission.csv
-sandbox/sample_submission.csv
-sandbox/val.txt
+sandbox/*.csv
+sandbox/val*.txt
 
 # OS / editor
 Thumbs.db
