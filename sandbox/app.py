@@ -9,6 +9,7 @@ import csv
 import io
 import json
 import sys
+import time
 import traceback
 from pathlib import Path
 
@@ -18,6 +19,49 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 ARTIFACTS = Path(__file__).parent.parent / "artifacts"
+
+# ------------------------------------------------------------------ #
+# JD hard-gate logic — inlined from rank.py to avoid importing the
+# entry-point module and triggering its full import chain at load time.
+# ------------------------------------------------------------------ #
+_NON_TECH_TITLES = (
+    "marketing", "sales", "accountant", "account manager",
+    "operations manager", "customer support", "hr ", "human resource",
+    "finance", "supply chain", "civil engineer", "mechanical engineer",
+    "electrical engineer", "procurement", "recruiter",
+)
+_CV_ONLY_TERMS = (
+    "computer vision", "object detection", "image segmentation",
+    "speech recognition", "text to speech", "robotics", "ros ",
+)
+_NLP_IR_TERMS = (
+    "nlp", "retrieval", "ranking", "search", "recommendation",
+    "text", "language model", "embedding", "information retrieval",
+    "llm", "transformer",
+)
+
+
+def _apply_jd_disqualifiers(candidate: dict, features: dict) -> tuple:
+    profile = candidate.get("profile", {})
+    career  = candidate.get("career_history", [])
+    sig     = candidate.get("redrob_signals", {})
+    title   = profile.get("current_title", "").lower()
+    if any(t in title for t in _NON_TECH_TITLES):
+        return True, f"non-technical title: {profile.get('current_title', '')}"
+    if career and features.get("ever_at_it_services_only", 0) > 0.5:
+        return True, "entire career at IT services, no product company"
+    if profile.get("years_of_experience", 0) < 2.0:
+        return True, f"insufficient experience: {profile.get('years_of_experience', 0)} yrs"
+    if profile.get("country") != "India" and not sig.get("willing_to_relocate"):
+        return True, "outside India, not willing to relocate"
+    all_text = " ".join([
+        profile.get("summary", ""), profile.get("headline", ""),
+        *[j.get("description", "") for j in career],
+    ]).lower()
+    if any(t in all_text for t in _CV_ONLY_TERMS) and not any(t in all_text for t in _NLP_IR_TERMS):
+        return True, "CV/speech/robotics without NLP/IR exposure"
+    return False, ""
+
 
 # ------------------------------------------------------------------ #
 # Page config
@@ -49,45 +93,155 @@ st.markdown(
     }
 
     /* ── Hide Streamlit chrome ────────────────── */
-    #MainMenu                    { visibility: hidden; }
-    footer                       { visibility: hidden; }
-    [data-testid="stToolbar"]    { display: none !important; }
+    #MainMenu                    { visibility: hidden !important; }
+    footer                       { visibility: hidden !important; }
     [data-testid="stDecoration"] { display: none !important; }
-    /* Keep header visible for sidebar toggle, but make it blend in */
-    header[data-testid="stHeader"] {
-        background: transparent !important;
+    /* Blend header into white page — never set visibility:hidden on header,
+       it would swallow the sidebar toggle button */
+    [data-testid="stHeader"] {
+        background-color: #ffffff !important;
         box-shadow: none !important;
+        border-bottom: 1px solid #f0f2f6 !important;
     }
-    /* Always show the collapsed-sidebar expand button */
+    /* Hide deploy button only — never touch the whole toolbar with
+       opacity/visibility so the sidebar toggle is never affected */
+    [data-testid="stToolbar"] { background: transparent !important; }
+    [data-testid="stDeployButton"] { display: none !important; }
+
+    /* ── Sidebar expand button (shown by Streamlit only when sidebar is COLLAPSED)
+       Do NOT set display:flex here — that would force it visible even when
+       the sidebar is open, creating a duplicate arrow. Only style appearance. */
+    [data-testid="stSidebarCollapsedControl"],
     [data-testid="collapsedControl"] {
-        display: block !important;
-        visibility: visible !important;
+        background: #1a1a2e !important;
+        border-radius: 8px !important;
+        padding: 4px 10px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.28) !important;
+        z-index: 999999 !important;
+    }
+    [data-testid="stSidebarCollapsedControl"] svg,
+    [data-testid="collapsedControl"] svg,
+    [data-testid="stSidebarCollapsedControl"] svg *,
+    [data-testid="collapsedControl"] svg * {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+        color: #ffffff !important;
     }
 
-    /* ── Sidebar ──────────────────────────────── */
+    /* ── Sidebar — fixed 280 px, no resize ──────── */
     [data-testid="stSidebar"] {
         background: #f0f2f6 !important;
         border-right: 1px solid #e2e4e9 !important;
-        padding-top: 1rem !important;
+        width: 280px !important;
+        min-width: 280px !important;
+        max-width: 280px !important;
+        padding-top: 0 !important;
     }
-    [data-testid="stSidebar"] .stMarkdown p,
-    [data-testid="stSidebar"] .stMarkdown li {
-        color: #4a5568 !important;
-        font-size: 0.84rem !important;
+    [data-testid="stSidebarContent"] {
+        overflow-y: auto !important;
+        padding: 0.5rem 0.75rem 1.5rem !important;
     }
-    [data-testid="stSidebar"] [data-testid="stExpander"] {
-        background: #ffffff !important;
-        border: 1px solid #dde1e7 !important;
-        border-radius: 10px !important;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
-        margin-bottom: 0.5rem !important;
-        overflow: hidden !important;
+    /* Hide the drag-to-resize handle */
+    [data-testid="stSidebarResizeHandle"],
+    [data-testid="stSidebarCollapseHandle"] {
+        display: none !important;
+        pointer-events: none !important;
     }
-    [data-testid="stSidebar"] [data-testid="stExpanderDetails"] {
-        background: #ffffff !important;
+
+    /* ── Sidebar nav rows ─────────────────────── */
+    .sb-brand {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -0.02em;
+        padding: 1rem 0.1rem 0.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
     }
-    [data-testid="stSidebar"] [data-testid="stExpanderToggleIcon"] {
-        color: #94a3b8 !important;
+    .sb-divider {
+        height: 1px;
+        background: #e2e4e9;
+        margin: 0.35rem 0 0.75rem;
+    }
+    .sb-section-label {
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: #9ca3af;
+        padding: 0.1rem 0.1rem 0.4rem;
+        font-family: 'Inter', sans-serif;
+    }
+    .sb-nav-item {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        background: #ffffff;
+        border: 1px solid #e2e4e9;
+        border-radius: 8px;
+        padding: 0.58rem 0.8rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.82rem;
+        color: #374151;
+        font-family: 'Inter', sans-serif;
+        cursor: default;
+        transition: background 0.12s ease, box-shadow 0.12s ease;
+    }
+    .sb-nav-item:hover {
+        background: #f8fafc;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        color: #1a1a2e;
+    }
+    .sb-nav-chevron {
+        margin-left: auto;
+        color: #cbd5e1;
+        font-size: 0.95rem;
+        line-height: 1;
+    }
+    .sb-stage-code {
+        font-size: 0.68rem;
+        font-weight: 700;
+        color: #e63946;
+        background: rgba(230,57,70,0.07);
+        border: 1px solid rgba(230,57,70,0.18);
+        border-radius: 4px;
+        padding: 0.06rem 0.38rem;
+        font-family: 'JetBrains Mono', monospace;
+        letter-spacing: 0.02em;
+        flex-shrink: 0;
+    }
+    .sb-stage-dot {
+        width: 5px; height: 5px;
+        border-radius: 50%;
+        background: #22c55e;
+        flex-shrink: 0;
+    }
+    /* Legend section */
+    .sb-legend-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.45rem;
+        font-size: 0.77rem;
+        color: #6b7280;
+        font-family: 'Inter', sans-serif;
+        padding: 0.18rem 0;
+        line-height: 1.4;
+    }
+    .sb-legend-dot {
+        width: 5px; height: 5px;
+        border-radius: 50%;
+        background: #22c55e;
+        flex-shrink: 0;
+        margin-top: 0.32rem;
+    }
+    .sb-legend-box {
+        background: #ffffff;
+        border: 1px solid #e2e4e9;
+        border-radius: 8px;
+        padding: 0.6rem 0.75rem;
+        margin-top: 0.2rem;
     }
 
     /* ── Primary button ───────────────────────── */
@@ -149,15 +303,6 @@ st.markdown(
         font-family: 'Inter', sans-serif !important;
     }
 
-    /* ── Progress bar ─────────────────────────── */
-    [data-testid="stProgress"] > div > div > div > div {
-        background: linear-gradient(90deg, #e63946, #f87171) !important;
-        border-radius: 6px !important;
-    }
-    [data-testid="stProgress"] > div > div > div {
-        background: #e5e7eb !important;
-        border-radius: 6px !important;
-    }
 
     /* ── Tabs — underline style ───────────────── */
     [data-baseweb="tab-list"] {
@@ -392,37 +537,6 @@ st.markdown(
         font-family: 'Inter', sans-serif;
     }
 
-    /* ── Stage list (sidebar) ─────────────────── */
-    .stage {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        margin-bottom: 0.3rem;
-        font-size: 0.82rem;
-        color: #6b7280;
-        padding: 0.3rem 0.5rem;
-        border-radius: 7px;
-        transition: background 0.12s ease, color 0.12s ease;
-        font-family: 'Inter', sans-serif;
-    }
-    .stage:hover { background: #f0f2f6; color: #1a1a2e; }
-    .stage .dot {
-        width: 6px; height: 6px;
-        border-radius: 50%;
-        background: #22c55e;
-        flex-shrink: 0;
-    }
-    .stage .code {
-        font-weight: 700;
-        color: #e63946;
-        font-size: 0.74rem;
-        background: rgba(230,57,70,0.07);
-        padding: 0.1rem 0.4rem;
-        border-radius: 4px;
-        border: 1px solid rgba(230,57,70,0.18);
-        letter-spacing: 0.02em;
-        font-family: 'JetBrains Mono', monospace;
-    }
 
     /* ── Empty state ──────────────────────────── */
     .empty-state {
@@ -442,16 +556,41 @@ st.markdown(
         letter-spacing: -0.015em;
     }
 
-    /* ── Sidebar brand ────────────────────────── */
-    .sidebar-brand {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: #1a1a2e;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: -0.015em;
-        padding: 0.25rem 0 0.5rem;
-    }
     </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Inject JS to find the sidebar toggle button (whenever Streamlit creates it)
+# and paint it black so it's always visible on the white page.
+st.markdown(
+    """
+    <script>
+    (function() {
+        /* Paint the collapsed-state expand button dark so it's visible on white.
+           Runs once on load + watches for DOM changes (sidebar toggle re-renders). */
+        function styleToggle() {
+            ['[data-testid="stSidebarCollapsedControl"]','[data-testid="collapsedControl"]']
+            .forEach(function(sel) {
+                var el = document.querySelector(sel);
+                if (!el) return;
+                el.style.background   = '#1a1a2e';
+                el.style.borderRadius = '8px';
+                el.style.padding      = '4px 10px';
+                el.style.boxShadow    = '0 2px 8px rgba(0,0,0,0.28)';
+                el.style.zIndex       = '999999';
+                el.querySelectorAll('svg,svg *').forEach(function(n) {
+                    n.style.fill   = '#fff';
+                    n.style.stroke = '#fff';
+                    n.style.color  = '#fff';
+                });
+            });
+        }
+        styleToggle();
+        var obs = new MutationObserver(styleToggle);
+        obs.observe(document.body, { childList: true, subtree: true });
+    })();
+    </script>
     """,
     unsafe_allow_html=True,
 )
@@ -459,37 +598,40 @@ st.markdown(
 # ------------------------------------------------------------------ #
 # Sidebar
 # ------------------------------------------------------------------ #
-stages = [
-    ("A", "Honeypot / consistency filter"),
-    ("B", "Hybrid retrieval (BM25 + dense)"),
-    ("C", "Feature engineering (48 feats)"),
-    ("D", "XGBoost LambdaMART scoring"),
-    ("E", "Cross-encoder re-rank"),
-    ("F", "Hard JD gates"),
-    ("G", "SHAP reasoning"),
+_stages = [
+    ("A", "🛡️", "Honeypot filter"),
+    ("B", "🔍", "Hybrid retrieval"),
+    ("C", "⚙️", "Feature engineering"),
+    ("D", "🤖", "XGBoost scoring"),
+    ("E", "🔁", "Cross-encoder re-rank"),
+    ("F", "🚧", "Hard JD gates"),
+    ("G", "💡", "SHAP reasoning"),
 ]
 
 with st.sidebar:
-    st.markdown('<div class="sidebar-brand">🍡 MochiRank</div>', unsafe_allow_html=True)
-    st.markdown("---")
+    st.markdown('<div class="sb-brand">🍡 MochiRank</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sb-divider"></div>', unsafe_allow_html=True)
 
-    with st.expander("⚙️ Pipeline Stages", expanded=True):
-        for code, label in stages:
-            st.markdown(
-                f'<div class="stage">'
-                f'<span class="dot"></span>'
-                f'<span class="code">{code}</span>'
-                f'{label}'
-                f'</div>',
-                unsafe_allow_html=True,
-            )
-
-    with st.expander("💻 CLI Usage"):
-        st.code(
-            "python rank.py \\\n  --candidates candidates.jsonl \\\n  --out submission.csv",
-            language="bash",
+    # Pipeline stages as nav rows
+    st.markdown('<div class="sb-section-label">Pipeline Stages</div>', unsafe_allow_html=True)
+    for code, icon, label in _stages:
+        st.markdown(
+            f'<div class="sb-nav-item">'
+            f'<span class="sb-stage-dot"></span>'
+            f'<span class="sb-stage-code">{code}</span>'
+            f'{icon} {label}'
+            f'</div>',
+            unsafe_allow_html=True,
         )
-        st.caption("Accepts the same JSON schema as `dataset/sample_candidates.json`.")
+
+    st.markdown('<div class="sb-divider" style="margin-top:0.75rem"></div>', unsafe_allow_html=True)
+
+    # CLI usage
+    st.markdown('<div class="sb-section-label">CLI Usage</div>', unsafe_allow_html=True)
+    st.code(
+        "python rank.py \\\n  --candidates candidates.jsonl \\\n  --out submission.csv",
+        language="bash",
+    )
 
 # ------------------------------------------------------------------ #
 # Hero header
@@ -514,14 +656,14 @@ col_upload, col_info = st.columns([2, 1])
 
 with col_upload:
     uploaded = st.file_uploader(
-        "Upload candidates JSON",
-        type=["json"],
-        help="JSON array of candidate objects. Same schema as sample_candidates.json.",
+        "Upload candidates JSONL or JSON",
+        type=["jsonl", "json"],
+        help="JSONL (one candidate per line) or a JSON array. No size limit.",
     )
 
 with col_info:
     st.info(
-        "**Format:** JSON array  \n"
+        "**Format:** JSONL or JSON array  \n"
         "**Schema:** `candidate_schema.json`"
     )
 
@@ -538,14 +680,22 @@ if uploaded is None:
 # ------------------------------------------------------------------ #
 # Parse upload
 # ------------------------------------------------------------------ #
-try:
-    candidates = json.load(uploaded)
-except Exception as e:
-    st.error(f"Could not parse JSON: {e}")
-    st.stop()
+with st.spinner(
+    f"🍡 Wading through **{uploaded.name}**… "
+    "large files take a moment, grab a ☕"
+):
+    try:
+        raw = uploaded.read().decode("utf-8")
+        if uploaded.name.endswith(".jsonl"):
+            candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
+        else:
+            candidates = json.loads(raw)
+    except Exception as e:
+        st.error(f"Could not parse file: {e}")
+        st.stop()
 
 if not isinstance(candidates, list):
-    st.error("Expected a JSON array at the top level.")
+    st.error("Expected a JSON array or JSONL file at the top level.")
     st.stop()
 
 st.success(f"Loaded **{len(candidates)}** candidate{'s' if len(candidates) != 1 else ''}.")
@@ -559,101 +709,171 @@ if not st.button("Rank Candidates", type="primary", use_container_width=False):
     st.stop()
 
 # ------------------------------------------------------------------ #
-# Pipeline execution
+# Pipeline execution  (mirrors rank.py stages A–G)
 # ------------------------------------------------------------------ #
-progress = st.progress(0, text="Initialising…")
+
+# Custom HTML progress bar — full style control, no Streamlit theme interference.
+_prog_slot = st.empty()
+
+def _prog(pct: int, text: str) -> None:
+    _prog_slot.markdown(
+        f'<div style="margin:0.5rem 0 1rem">'
+        f'<div style="font-size:0.82rem;color:#4b5563;margin-bottom:0.35rem">{text}</div>'
+        f'<div style="background:rgba(0,0,0,0.08);border-radius:6px;height:8px;overflow:hidden">'
+        f'<div style="background:linear-gradient(90deg,#1d4ed8,#3b82f6);'
+        f'width:{pct}%;height:100%;border-radius:6px"></div>'
+        f'</div></div>',
+        unsafe_allow_html=True,
+    )
+
+_prog(0, "Initialising…")
+
+# Wall-clock timer — surfaced in the results as a speed badge.
+_t_start = time.time()
+
+# Convert list → {cid: candidate} dict, same as rank.py
+candidates_dict = {c["candidate_id"]: c for c in candidates}
 
 try:
     import xgboost as xgb
+    # Clear any stale src.* modules Streamlit may have cached from a previous
+    # hot-reload cycle, so every src import below gets a fresh read from disk.
+    import sys as _sys
+    for _k in list(_sys.modules.keys()):
+        if _k == 'src' or _k.startswith('src.'):
+            del _sys.modules[_k]
     from src.consistency_checks import check_consistency
-    from src.feature_engineering import FEATURE_NAMES, compute_features, load_precomputed
+    from src.feature_engineering import (
+        FEATURE_NAMES,
+        compute_features,
+        compute_features_dict,
+        load_precomputed,
+    )
     from src.reasoning_generator import generate_reasoning
+    from src.retrieval import bm25_retrieve, dense_retrieve, reciprocal_rank_fusion
+    from src.reranker import rerank_top_n
+    from src.runtime_index import attach_runtime_index
 
-    progress.progress(10, text="Loading artifacts…")
-    precomputed = load_precomputed(ARTIFACTS)
+    # Load JD-side artifacts only (no candidate embeddings/BM25 — built at runtime)
+    _prog(5, "Loading artifacts…")
+    precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
     model = xgb.Booster()
     model.load_model(ARTIFACTS / "ranker_model.json")
-    cid_to_rows = precomputed.get("cid_to_rows", {})
 
-    # Warn about out-of-sample candidates (semantic features will be zero)
-    oos = [c["candidate_id"] for c in candidates if c.get("candidate_id") not in cid_to_rows]
-    if oos:
-        st.markdown(
-            f'<div class="warn-box">⚠️ <b>{len(oos)} candidate{"s" if len(oos) != 1 else ""} not found</b> '
-            f'in precomputed artifacts — semantic and BM25 features will be zero for these profiles. '
-            f'Scores may be lower than their true ranking.</div>',
-            unsafe_allow_html=True,
-        )
+    jd_text = ""
+    hyp_path = ARTIFACTS / "hypothetical_resumes.json"
+    if hyp_path.exists():
+        import json as _json
+        with open(hyp_path, encoding="utf-8") as _f:
+            jd_text = _json.load(_f).get("jd_text", "")
 
-    progress.progress(25, text="Stage A: consistency & honeypot detection…")
-    rows = []
-    honeypot_ids = []
-    for c in candidates:
-        is_hp, n_v, reasons = check_consistency(c)
-        feats = compute_features(c, precomputed, n_v, is_hp)
-        rows.append({
-            "candidate_id": c["candidate_id"],
-            "candidate":    c,
-            "feats":        feats,
-            "is_honeypot":  is_hp,
-        })
+    # Build dense + BM25 indexes from the uploaded candidates at runtime
+    _prog(10, "Building runtime indexes — embedding candidates…")
+    bm25_data = attach_runtime_index(precomputed, candidates_dict, ARTIFACTS / "potion-base-8M")
+    _prog(35, "Runtime indexes built")
+
+    # Stage A: consistency checks
+    _prog(38, "Stage A: consistency & honeypot detection…")
+    honeypot_ids: set = set()
+    violation_counts: dict = {}
+    is_honeypot_map: dict = {}
+    for cid, c in candidates_dict.items():
+        is_hp, n_v, _ = check_consistency(c)
+        violation_counts[cid] = n_v
+        is_honeypot_map[cid] = is_hp
         if is_hp:
-            honeypot_ids.append(c["candidate_id"])
+            honeypot_ids.add(cid)
 
-    progress.progress(50, text="Stage D: XGBoost scoring…")
-    X = np.array([r["feats"] for r in rows], dtype=np.float32)
+    # Stage B: hybrid retrieval → top 2000
+    _prog(48, "Stage B: hybrid retrieval (BM25 + dense)…")
+    all_ids = list(candidates_dict.keys())
+    bm25_ranking   = bm25_retrieve(bm25_data, all_ids, top_n=5000)
+    dense_ranking  = dense_retrieve(precomputed, all_ids, top_n=5000)
+    rrf_scores     = reciprocal_rank_fusion([bm25_ranking, dense_ranking])
+    top_2000_ids   = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
+
+    # Stage C: feature engineering on top-2000
+    _prog(58, "Stage C: feature engineering on top 2000…")
+    feature_rows = []
+    cid_order = []
+    for cid in top_2000_ids:
+        c = candidates_dict[cid]
+        feats = compute_features(c, precomputed, violation_counts.get(cid, 0), is_honeypot_map.get(cid, False))
+        feature_rows.append(feats)
+        cid_order.append(cid)
+    X = np.array(feature_rows, dtype=np.float32)
+    cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
+
+    # Stage D: XGBoost scoring
+    _prog(68, "Stage D: XGBoost scoring…")
     dmat = xgb.DMatrix(X, feature_names=FEATURE_NAMES)
     scores = model.predict(dmat)
+    ranked_ids = [cid_order[i] for i in np.argsort(-scores)]
 
-    progress.progress(65, text="Stage E: cross-encoder re-rank…")
-    try:
-        from src.reranker import rerank
-        top200_idx = np.argsort(scores)[::-1][:200].tolist()
-        top200_rows = [rows[i] for i in top200_idx]
-        top200_scores = [float(scores[i]) for i in top200_idx]
-        reranked = rerank(
-            [(r["candidate_id"], r["candidate"]) for r in top200_rows],
-            top200_scores,
-        )
-        score_map = {cid: s for cid, s in reranked}
-        for row, base_score in zip(rows, scores):
-            row["score"] = score_map.get(row["candidate_id"], float(base_score))
-    except Exception:
-        for row, base_score in zip(rows, scores):
-            row["score"] = float(base_score)
+    # Stage E: cross-encoder re-rank on top 200
+    _prog(75, "Stage E: cross-encoder re-rank…")
+    top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
+    reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
+    reranked_ids = [cid for cid, _ in reranked]
+    reranked_scores_map = {cid: score for cid, score in reranked}
+    all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
 
-    progress.progress(75, text="Stage F: hard gates…")
-    results = [r for r in rows if not r["is_honeypot"]]
-    results.sort(key=lambda x: -x["score"])
-    results = results[:100]
-    for rank_pos, r in enumerate(results, 1):
-        r["rank"] = rank_pos
+    # Stage F: honeypot filter + JD hard gates → top 100
+    _prog(82, "Stage F: hard gates…")
+    final_100: list = []
+    skipped: set = set()
+    for cid in all_ranked_ids:
+        if len(final_100) >= 100:
+            break
+        if cid in honeypot_ids:
+            skipped.add(cid)
+            continue
+        c = candidates_dict[cid]
+        feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
+        disqualified, _ = _apply_jd_disqualifiers(c, feat_dict)
+        if disqualified:
+            skipped.add(cid)
+            continue
+        final_100.append(cid)
 
-    progress.progress(88, text="Stage G: SHAP reasoning…")
-    X_all = np.array([r["feats"] for r in rows], dtype=np.float32)
-    dmat_all = xgb.DMatrix(X_all, feature_names=FEATURE_NAMES)
-    shap_matrix = model.predict(dmat_all, pred_contribs=True)
+    # Stage G: SHAP reasoning
+    _prog(90, "Stage G: SHAP reasoning…")
+    shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
 
-    cid_to_idx = {r["candidate_id"]: i for i, r in enumerate(rows)}
-    for r in results:
-        idx = cid_to_idx[r["candidate_id"]]
-        shap_row = shap_matrix[idx, :-1]
-        r["reasoning"] = generate_reasoning(
-            r["candidate_id"], r["candidate"], shap_row, FEATURE_NAMES, r["rank"]
-        )
+    results = []
+    for rank_pos, cid in enumerate(final_100, start=1):
+        c = candidates_dict[cid]
+        idx = cid_to_matrix_idx.get(cid, -1)
+        score = float(scores[idx]) if idx >= 0 else 0.0
+        if idx >= 0:
+            reasoning = generate_reasoning(cid, c, shap_matrix[idx], FEATURE_NAMES, rank_pos)
+        else:
+            yoe = c["profile"].get("years_of_experience", 0)
+            title = c["profile"].get("current_title", "professional")
+            reasoning = f"{yoe}yr {title}; ranked {rank_pos} by model score."
+        results.append({
+            "candidate_id": cid,
+            "candidate":    c,
+            "score":        score,
+            "rank":         rank_pos,
+            "reasoning":    reasoning,
+        })
 
-    progress.progress(100, text="Done!")
-    progress.empty()
+    honeypot_ids_list = list(honeypot_ids)
+    _elapsed_s = time.time() - _t_start   # before the cosmetic sleep below
+    _prog(100, "✅ Done! Pipeline complete.")
+    time.sleep(1.0)
+    _prog_slot.empty()
 
 except FileNotFoundError as e:
-    progress.empty()
+    _prog_slot.empty()
     st.error(
         f"Artifact not found: {e}\n\n"
         "Run the offline pipeline first to generate `artifacts/`."
     )
     st.stop()
 except Exception:
-    progress.empty()
+    _prog_slot.empty()
     st.error("Ranking failed.")
     st.code(traceback.format_exc())
     st.stop()
@@ -661,9 +881,9 @@ except Exception:
 # ------------------------------------------------------------------ #
 # Metrics
 # ------------------------------------------------------------------ #
-n_honeypots = len(honeypot_ids)
+n_honeypots = len(honeypot_ids_list)
 n_finalists = len(results)
-n_total     = len(candidates)
+n_total     = len(candidates_dict)
 
 st.markdown(
     f"""
@@ -688,6 +908,59 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+# ------------------------------------------------------------------ #
+# Speed badge — sells the sub-5-min constraint
+# ------------------------------------------------------------------ #
+_thru = int(n_total / _elapsed_s) if _elapsed_s > 0 else 0
+st.markdown(
+    f'<div style="display:inline-flex;align-items:center;gap:0.5rem;'
+    f'background:rgba(34,197,94,0.10);border:1px solid rgba(34,197,94,0.30);'
+    f'color:#15803d;font-size:0.84rem;font-weight:600;'
+    f'padding:0.45rem 1rem;border-radius:20px;margin-bottom:1.5rem;'
+    f'font-family:Inter,sans-serif">'
+    f'⚡ Ranked <strong>{n_total:,}</strong> candidates in '
+    f'<strong>{_elapsed_s:.1f}s</strong>'
+    f'<span style="color:#9ca3af;font-weight:400">· ~{_thru:,}/s · CPU only</span>'
+    f'</div>',
+    unsafe_allow_html=True,
+)
+
+# ------------------------------------------------------------------ #
+# Score distribution — separation between strong and borderline
+# ------------------------------------------------------------------ #
+import altair as alt
+import pandas as pd
+
+st.markdown('<div class="results-heading">Score distribution</div>', unsafe_allow_html=True)
+_dist_df = pd.DataFrame({
+    "Rank":  [r["rank"]  for r in results],
+    "Score": [r["score"] for r in results],
+})
+_chart = (
+    alt.Chart(_dist_df)
+    .mark_area(
+        interpolate="monotone",
+        line={"color": "#2563eb", "strokeWidth": 2},
+        color=alt.Gradient(
+            gradient="linear",
+            stops=[
+                alt.GradientStop(color="#eff6ff", offset=0),
+                alt.GradientStop(color="#3b82f6", offset=1),
+            ],
+            x1=1, x2=1, y1=1, y2=0,
+        ),
+    )
+    .encode(
+        x=alt.X("Rank:Q", title="Rank", axis=alt.Axis(grid=False, tickMinStep=1)),
+        y=alt.Y("Score:Q", title="Model score", scale=alt.Scale(zero=False)),
+        tooltip=["Rank:Q", alt.Tooltip("Score:Q", format=".4f")],
+    )
+    .properties(height=200)
+    .configure_view(strokeOpacity=0)
+    .configure_axis(labelColor="#6b7280", titleColor="#6b7280", domainColor="#e5e7eb")
+)
+st.altair_chart(_chart, use_container_width=True)
 
 # ------------------------------------------------------------------ #
 # Download button
@@ -757,8 +1030,8 @@ with tab_top10:
 # ------------------------------------------------------------------ #
 # Honeypot details (expandable)
 # ------------------------------------------------------------------ #
-if honeypot_ids:
-    with st.expander(f"🚫 Honeypots excluded ({len(honeypot_ids)})"):
+if honeypot_ids_list:
+    with st.expander(f"🚫 Honeypots excluded ({len(honeypot_ids_list)})"):
         st.caption("These candidates failed consistency checks and were removed from ranking.")
-        for cid in honeypot_ids:
+        for cid in honeypot_ids_list:
             st.markdown(f"- `{cid}`")
