@@ -6,6 +6,7 @@ Run:  C:/Users/udaya/AppData/Local/Programs/Python/Python311/python.exe -m strea
 """
 
 import csv
+import html
 import io
 import json
 import sys
@@ -13,7 +14,9 @@ import time
 import traceback
 from pathlib import Path
 
+import altair as alt
 import numpy as np
+import pandas as pd
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -70,568 +73,394 @@ st.set_page_config(
     page_title="MochiRank",
     page_icon="🍡",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 # ------------------------------------------------------------------ #
-# Global styles
+# Theme state  (persists across reruns so toggle doesn't lose results)
 # ------------------------------------------------------------------ #
-st.markdown(
-    """
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+if "theme" not in st.session_state:
+    st.session_state.theme = "dark"
+if "pipeline_results" not in st.session_state:
+    st.session_state.pipeline_results = None
+
+_dark = st.session_state.theme == "dark"
+
+
+def _toggle_theme() -> None:
+    """Flip the theme. Runs as an on_click callback (during Streamlit's
+    widget-processing phase, before the script body re-executes) so the
+    switch fires reliably no matter which view — upload, running, or
+    results — is currently on screen. Reads/writes session_state directly
+    rather than the module-level _dark snapshot, which is stale inside a
+    callback."""
+    st.session_state.theme = "light" if st.session_state.theme == "dark" else "dark"
+
+# ------------------------------------------------------------------ #
+# CSS — two complete palettes, switched at runtime
+# ------------------------------------------------------------------ #
+def _get_css(dark: bool) -> str:
+    if dark:
+        bg      = "#070B18";  card    = "#0C1525"
+        hero_bg = "linear-gradient(135deg,#0C1220 0%,#101A32 60%,#0C1220 100%)"
+        hero_bd = "rgba(59,130,246,0.12)"
+        hero_sh = "0 0 80px rgba(59,130,246,0.05),0 8px 48px rgba(0,0,0,0.6)"
+        h1c = "#E8EDF5";  subc = "#5A6580"
+        txt = "#E8EDF5";  txts = "#8B98B8";  txtm = "#5A6580";  txstr = "#CBD5E1"
+        hdr_bg = "#070B18";  hdr_bd = "rgba(255,255,255,0.04)"
+        brd = "rgba(255,255,255,0.06)";  brdh = "rgba(255,255,255,0.10)"
+        code_bg = "rgba(255,255,255,0.06)";  code_bd = "rgba(255,255,255,0.09)"
+        code_c = "#f87171";  cb_bg = "#0A1020"
+        tab_i = "#5A6580";  tab_h = "#E8EDF5";  tab_bd = "rgba(255,255,255,0.07)"
+        exp_bg = "rgba(255,255,255,0.025)";  exp_bd = "rgba(255,255,255,0.07)";  exp_lbl = "#8B98B8"
+        pip_bg = "rgba(13,20,37,0.80)";  pip_bd = "rgba(255,255,255,0.06)"
+        scc = "#f87171";  scbg = "rgba(248,113,113,0.10)";  scbd = "rgba(248,113,113,0.20)"
+        slbl = "#5A6580"
+        cng = "linear-gradient(90deg,rgba(59,130,246,0.25),rgba(59,130,246,0.06))"
+        emp_bg = "rgba(255,255,255,0.015)";  emp_bd = "rgba(255,255,255,0.07)";  emp_h3 = "#CBD5E1";  emp_p = "#5A6580"
+        m_bg = "#0C1525"
+        mv_b = "#60a5fa";  ms_b = "0 0 24px rgba(59,130,246,0.45)"
+        mv_r = "#f87171";  ms_r = "0 0 24px rgba(239,68,68,0.45)"
+        mv_g = "#4ade80";  ms_g = "0 0 24px rgba(34,197,94,0.45)"
+        m_lbl = "#5A6580";  m_sub = "#5A6580";  m_gop = "0.05"
+        sp_bg = "rgba(34,197,94,0.08)";  sp_bd = "rgba(34,197,94,0.18)";  sp_c = "#4ade80";  sp_m = "#5A6580"
+        pt = "rgba(255,255,255,0.06)"
+        pb = "linear-gradient(90deg,#1d4ed8,#3b82f6,#60a5fa)"
+        ptxt = "#8B98B8";  ppct = "#5A6580"
+        up_bg = "rgba(255,255,255,0.02)";  up_bd = "rgba(255,255,255,0.10)"
+        up_txt = "#8B98B8";  up_sm = "#5A6580";  fi = "#5A6580"
+        sc_t = "rgba(255,255,255,0.10)";  sc_h = "rgba(255,255,255,0.18)"
+        df_sh = "0 4px 24px rgba(0,0,0,0.35)"
+        tog_bg = "rgba(255,255,255,0.07)";  tog_c = "#CBD5E1"
+        tog_bd = "rgba(255,255,255,0.13)";  tog_hbg = "rgba(255,255,255,0.12)";  tog_sh = "none"
+        hr_c = "rgba(255,255,255,0.07)"
+        sel_bg = "rgba(255,255,255,0.04)";  sel_bd = "rgba(255,255,255,0.10)";  sel_c = "#E8EDF5"
+        tbl_head = "#0F1A2E";  tbl_rbd = "rgba(255,255,255,0.05)";  tbl_hov = "rgba(255,255,255,0.03)";  tbl_id = "#60a5fa"
+        ch_stop0 = "rgba(7,11,24,0)";  ch_ax = "#5A6580";  ch_dom = "rgba(255,255,255,0.07)";  ch_grid = "rgba(255,255,255,0.04)"
+    else:
+        bg      = "#F8FAFC";  card    = "#FFFFFF"
+        hero_bg = "linear-gradient(135deg,#eff6ff 0%,#dbeafe 55%,#e0f2fe 100%)"
+        hero_bd = "#bfdbfe"
+        hero_sh = "0 4px 20px rgba(59,130,246,0.08)"
+        h1c = "#1a1a2e";  subc = "#4b5563"
+        txt = "#0F172A";  txts = "#374151";  txtm = "#6B7280";  txstr = "#1a1a2e"
+        hdr_bg = "#F8FAFC";  hdr_bd = "#f0f2f6"
+        brd = "#e5e7eb";  brdh = "#d1d5db"
+        code_bg = "#f3f4f6";  code_bd = "#e5e7eb"
+        code_c = "#e63946";  cb_bg = "#f8f9fa"
+        tab_i = "#6b7280";  tab_h = "#1a1a2e";  tab_bd = "#e5e7eb"
+        exp_bg = "#ffffff";  exp_bd = "#e0e0e0";  exp_lbl = "#374151"
+        pip_bg = "#F1F5F9";  pip_bd = "#e2e4e9"
+        scc = "#e63946";  scbg = "rgba(230,57,70,0.07)";  scbd = "rgba(230,57,70,0.18)"
+        slbl = "#6B7280"
+        cng = "linear-gradient(90deg,rgba(59,130,246,0.20),rgba(59,130,246,0.05))"
+        emp_bg = "#f8fafc";  emp_bd = "#e2e4e9";  emp_h3 = "#1a1a2e";  emp_p = "#6B7280"
+        m_bg = "#FFFFFF"
+        mv_b = "#2563eb";  ms_b = "none"
+        mv_r = "#dc2626";  ms_r = "none"
+        mv_g = "#16a34a";  ms_g = "none"
+        m_lbl = "#6b7280";  m_sub = "#9ca3af";  m_gop = "0"
+        sp_bg = "rgba(22,163,74,0.08)";  sp_bd = "rgba(22,163,74,0.20)";  sp_c = "#15803d";  sp_m = "#6B7280"
+        pt = "rgba(0,0,0,0.07)"
+        pb = "linear-gradient(90deg,#1d4ed8,#3b82f6)"
+        ptxt = "#374151";  ppct = "#6B7280"
+        up_bg = "#fafafa";  up_bd = "#d1d5db"
+        up_txt = "#374151";  up_sm = "#6B7280";  fi = "#9ca3af"
+        sc_t = "rgba(0,0,0,0.12)";  sc_h = "rgba(0,0,0,0.20)"
+        df_sh = "0 2px 12px rgba(0,0,0,0.05)"
+        tog_bg = "#ffffff";  tog_c = "#374151"
+        tog_bd = "#e2e4e9";  tog_hbg = "#f3f4f6";  tog_sh = "0 1px 4px rgba(0,0,0,0.08)"
+        hr_c = "#e5e7eb"
+        sel_bg = "#ffffff";  sel_bd = "#d1d5db";  sel_c = "#1a1a2e"
+        tbl_head = "#F1F5F9";  tbl_rbd = "#eef1f5";  tbl_hov = "#f8fafc";  tbl_id = "#2563eb"
+        ch_stop0 = "rgba(248,250,252,0)";  ch_ax = "#6b7280";  ch_dom = "#e5e7eb";  ch_grid = "#f3f4f6"
+
+    return f"""
+    @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 
-    /* ── Base & font ──────────────────────────── */
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif !important;
-    }
-    .stApp {
-        background-color: #ffffff !important;
-        font-family: 'Inter', sans-serif !important;
-        color: #1a1a2e !important;
-    }
+    html, body, [class*="css"] {{ font-family: 'Inter', sans-serif !important; }}
+    .stApp {{ background-color: {bg} !important; color: {txt} !important; }}
 
-    /* ── Hide Streamlit chrome ────────────────── */
-    #MainMenu                    { visibility: hidden !important; }
-    footer                       { visibility: hidden !important; }
-    [data-testid="stDecoration"] { display: none !important; }
-    /* Blend header into white page — never set visibility:hidden on header,
-       it would swallow the sidebar toggle button */
-    [data-testid="stHeader"] {
-        background-color: #ffffff !important;
-        box-shadow: none !important;
-        border-bottom: 1px solid #f0f2f6 !important;
-    }
-    /* Hide deploy button only — never touch the whole toolbar with
-       opacity/visibility so the sidebar toggle is never affected */
-    [data-testid="stToolbar"] { background: transparent !important; }
-    [data-testid="stDeployButton"] { display: none !important; }
+    #MainMenu {{ visibility: hidden !important; }}
+    footer {{ visibility: hidden !important; }}
+    [data-testid="stDecoration"] {{ display: none !important; }}
+    [data-testid="stHeader"] {{ background-color: {hdr_bg} !important; box-shadow: none !important; border-bottom: 1px solid {hdr_bd} !important; }}
+    [data-testid="stToolbar"] {{ background: transparent !important; }}
+    [data-testid="stDeployButton"] {{ display: none !important; }}
+    [data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"],
+    [data-testid="collapsedControl"], [data-testid="stSidebarResizeHandle"] {{
+        display: none !important; visibility: hidden !important;
+    }}
 
-    /* ── Sidebar expand button (shown by Streamlit only when sidebar is COLLAPSED)
-       Do NOT set display:flex here — that would force it visible even when
-       the sidebar is open, creating a duplicate arrow. Only style appearance. */
-    [data-testid="stSidebarCollapsedControl"],
-    [data-testid="collapsedControl"] {
-        background: #1a1a2e !important;
-        border-radius: 8px !important;
-        padding: 4px 10px !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.28) !important;
-        z-index: 999999 !important;
-    }
-    [data-testid="stSidebarCollapsedControl"] svg,
-    [data-testid="collapsedControl"] svg,
-    [data-testid="stSidebarCollapsedControl"] svg *,
-    [data-testid="collapsedControl"] svg * {
-        fill: #ffffff !important;
-        stroke: #ffffff !important;
-        color: #ffffff !important;
-    }
+    .stButton > button {{
+        background: linear-gradient(135deg,#b91c1c 0%,#e63946 100%) !important;
+        color: #fff !important; border: none !important; border-radius: 10px !important;
+        padding: 0.65rem 2rem !important; font-weight: 600 !important; font-size: 0.92rem !important;
+        font-family: 'Inter', sans-serif !important; letter-spacing: 0.02em !important;
+        box-shadow: 0 4px 24px rgba(230,57,70,0.35) !important;
+        transition: transform 0.15s ease, box-shadow 0.15s ease !important; cursor: pointer !important;
+    }}
+    .stButton > button:hover {{ transform: translateY(-2px) !important; box-shadow: 0 8px 32px rgba(230,57,70,0.52) !important; }}
+    .stButton > button:active {{ transform: translateY(0) !important; }}
 
-    /* ── Sidebar — fixed 280 px, no resize ──────── */
-    [data-testid="stSidebar"] {
-        background: #f0f2f6 !important;
-        border-right: 1px solid #e2e4e9 !important;
-        width: 280px !important;
-        min-width: 280px !important;
-        max-width: 280px !important;
-        padding-top: 0 !important;
-    }
-    [data-testid="stSidebarContent"] {
-        overflow-y: auto !important;
-        padding: 0.5rem 0.75rem 1.5rem !important;
-    }
-    /* Hide the drag-to-resize handle */
-    [data-testid="stSidebarResizeHandle"],
-    [data-testid="stSidebarCollapseHandle"] {
-        display: none !important;
-        pointer-events: none !important;
-    }
+    .stDownloadButton > button {{
+        background: linear-gradient(135deg,#14532d 0%,#16a34a 100%) !important;
+        color: #fff !important; border: none !important; border-radius: 10px !important;
+        padding: 0.65rem 2rem !important; font-weight: 600 !important; font-size: 0.92rem !important;
+        font-family: 'Inter', sans-serif !important; box-shadow: 0 4px 24px rgba(22,163,74,0.30) !important;
+        transition: transform 0.15s ease, box-shadow 0.15s ease !important; cursor: pointer !important;
+    }}
+    .stDownloadButton > button:hover {{ transform: translateY(-2px) !important; box-shadow: 0 8px 32px rgba(22,163,74,0.46) !important; }}
 
-    /* ── Sidebar nav rows ─────────────────────── */
-    .sb-brand {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #1a1a2e;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: -0.02em;
-        padding: 1rem 0.1rem 0.6rem;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-    }
-    .sb-divider {
-        height: 1px;
-        background: #e2e4e9;
-        margin: 0.35rem 0 0.75rem;
-    }
-    .sb-section-label {
-        font-size: 0.62rem;
-        font-weight: 700;
-        letter-spacing: 0.13em;
-        text-transform: uppercase;
-        color: #9ca3af;
-        padding: 0.1rem 0.1rem 0.4rem;
-        font-family: 'Inter', sans-serif;
-    }
-    .sb-nav-item {
-        display: flex;
-        align-items: center;
-        gap: 0.55rem;
-        background: #ffffff;
-        border: 1px solid #e2e4e9;
-        border-radius: 8px;
-        padding: 0.58rem 0.8rem;
-        margin-bottom: 0.3rem;
-        font-size: 0.82rem;
-        color: #374151;
-        font-family: 'Inter', sans-serif;
-        cursor: default;
-        transition: background 0.12s ease, box-shadow 0.12s ease;
-    }
-    .sb-nav-item:hover {
-        background: #f8fafc;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-        color: #1a1a2e;
-    }
-    .sb-nav-chevron {
-        margin-left: auto;
-        color: #cbd5e1;
-        font-size: 0.95rem;
-        line-height: 1;
-    }
-    .sb-stage-code {
-        font-size: 0.68rem;
-        font-weight: 700;
-        color: #e63946;
-        background: rgba(230,57,70,0.07);
-        border: 1px solid rgba(230,57,70,0.18);
-        border-radius: 4px;
-        padding: 0.06rem 0.38rem;
-        font-family: 'JetBrains Mono', monospace;
-        letter-spacing: 0.02em;
-        flex-shrink: 0;
-    }
-    .sb-stage-dot {
-        width: 5px; height: 5px;
-        border-radius: 50%;
-        background: #22c55e;
-        flex-shrink: 0;
-    }
-    /* Legend section */
-    .sb-legend-row {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.45rem;
-        font-size: 0.77rem;
-        color: #6b7280;
-        font-family: 'Inter', sans-serif;
-        padding: 0.18rem 0;
-        line-height: 1.4;
-    }
-    .sb-legend-dot {
-        width: 5px; height: 5px;
-        border-radius: 50%;
-        background: #22c55e;
-        flex-shrink: 0;
-        margin-top: 0.32rem;
-    }
-    .sb-legend-box {
-        background: #ffffff;
-        border: 1px solid #e2e4e9;
-        border-radius: 8px;
-        padding: 0.6rem 0.75rem;
-        margin-top: 0.2rem;
-    }
+    /* Theme toggle pill — targets the auto-generated st-key-<key> wrapper
+       so it reliably overrides the global red button style */
+    .st-key-theme_toggle {{ position: relative; z-index: 1000; }}
+    .st-key-theme_toggle .stButton > button {{
+        background: {tog_bg} !important; color: {tog_c} !important;
+        border: 1px solid {tog_bd} !important; box-shadow: {tog_sh} !important;
+        border-radius: 20px !important; padding: 0.28rem 0.85rem !important;
+        font-size: 0.76rem !important; font-weight: 500 !important; letter-spacing: 0 !important;
+        min-height: 0 !important;
+    }}
+    .st-key-theme_toggle .stButton > button:hover {{
+        background: {tog_hbg} !important; transform: none !important;
+        box-shadow: {tog_sh} !important; border-color: {tog_bd} !important;
+    }}
 
-    /* ── Primary button ───────────────────────── */
-    .stButton > button {
-        background: linear-gradient(135deg, #c62a35 0%, #e63946 100%) !important;
-        color: #fff !important;
-        border: none !important;
-        border-radius: 8px !important;
-        padding: 0.58rem 1.8rem !important;
-        font-weight: 600 !important;
-        font-size: 0.9rem !important;
-        font-family: 'Inter', sans-serif !important;
-        letter-spacing: 0.01em !important;
-        box-shadow: 0 2px 10px rgba(230,57,70,0.25) !important;
-        transition: transform 0.15s ease, box-shadow 0.15s ease !important;
-    }
-    .stButton > button:hover {
-        transform: translateY(-1px) !important;
-        box-shadow: 0 5px 16px rgba(230,57,70,0.35) !important;
-    }
-    .stButton > button:active { transform: translateY(0) !important; }
-
-    /* ── Download button ──────────────────────── */
-    .stDownloadButton > button {
-        background: linear-gradient(135deg, #1a6b3c 0%, #22863a 100%) !important;
-        color: #fff !important;
-        border: none !important;
-        border-radius: 8px !important;
-        padding: 0.58rem 1.8rem !important;
-        font-weight: 600 !important;
-        font-size: 0.9rem !important;
-        font-family: 'Inter', sans-serif !important;
-        box-shadow: 0 2px 10px rgba(34,134,58,0.25) !important;
-        transition: transform 0.15s ease, box-shadow 0.15s ease !important;
-    }
-    .stDownloadButton > button:hover {
-        transform: translateY(-1px) !important;
-        box-shadow: 0 5px 16px rgba(34,134,58,0.35) !important;
-    }
-
-    /* ── File uploader ────────────────────────── */
-    [data-testid="stFileUploader"] {
-        background: #fafafa !important;
-        border: 2px dashed #d1d5db !important;
-        border-radius: 12px !important;
-        padding: 0.5rem 1rem !important;
-        transition: border-color 0.2s ease !important;
-    }
+    [data-testid="stFileUploader"] {{
+        background: {up_bg} !important; border: 2px dashed {up_bd} !important;
+        border-radius: 14px !important; padding: 0.5rem 1rem !important; transition: border-color 0.25s ease !important;
+    }}
     [data-testid="stFileUploader"]:hover,
-    [data-testid="stFileUploader"]:focus-within {
-        border-color: #e63946 !important;
-    }
-    [data-testid="stFileUploaderDropzoneInstructions"] { color: #9ca3af !important; }
+    [data-testid="stFileUploader"]:focus-within {{ border-color: rgba(230,57,70,0.45) !important; }}
+    [data-testid="stFileUploaderDropzoneInstructions"] {{ color: {fi} !important; }}
+    [data-testid="stFileUploaderDropzone"] {{ background: transparent !important; }}
+    [data-testid="stFileUploaderDropzone"] p {{ color: {up_txt} !important; }}
+    [data-testid="stFileUploaderDropzone"] small {{ color: {up_sm} !important; }}
 
-    /* ── Alerts ───────────────────────────────── */
-    [data-testid="stAlert"] {
-        border-radius: 8px !important;
-        font-size: 0.88rem !important;
-        font-family: 'Inter', sans-serif !important;
-    }
+    [data-testid="stAlert"] {{ border-radius: 10px !important; font-size: 0.88rem !important; font-family: 'Inter', sans-serif !important; }}
 
+    [data-baseweb="tab-list"] {{
+        background: transparent !important; border: none !important;
+        border-bottom: 1px solid {tab_bd} !important; border-radius: 0 !important;
+        padding: 0 !important; gap: 0.2rem !important; margin-bottom: 1.25rem !important;
+    }}
+    [data-baseweb="tab"] {{
+        background: transparent !important; color: {tab_i} !important; font-weight: 500 !important;
+        font-size: 0.9rem !important; font-family: 'Inter', sans-serif !important;
+        padding: 0.65rem 1.25rem !important; border-radius: 0 !important;
+        border-bottom: 2px solid transparent !important; margin-bottom: -1px !important;
+        transition: color 0.15s ease !important; cursor: pointer !important;
+    }}
+    [data-baseweb="tab"]:hover {{ color: {tab_h} !important; }}
+    [aria-selected="true"][data-baseweb="tab"] {{
+        background: transparent !important; color: #e63946 !important;
+        border-bottom: 2px solid #e63946 !important; font-weight: 600 !important;
+    }}
+    [data-baseweb="tab-highlight"] {{ display: none !important; }}
+    [data-baseweb="tab-border"]    {{ display: none !important; }}
 
-    /* ── Tabs — underline style ───────────────── */
-    [data-baseweb="tab-list"] {
-        background: transparent !important;
-        border: none !important;
-        border-bottom: 2px solid #e5e7eb !important;
-        border-radius: 0 !important;
-        padding: 0 !important;
-        gap: 0.25rem !important;
-        margin-bottom: 1.25rem !important;
-    }
-    [data-baseweb="tab"] {
-        background: transparent !important;
-        color: #6b7280 !important;
-        font-weight: 500 !important;
-        font-size: 0.9rem !important;
-        font-family: 'Inter', sans-serif !important;
-        padding: 0.65rem 1.25rem !important;
-        border-radius: 0 !important;
-        border-bottom: 2px solid transparent !important;
-        margin-bottom: -2px !important;
-        transition: color 0.15s ease !important;
-    }
-    [data-baseweb="tab"]:hover { color: #1a1a2e !important; }
-    [aria-selected="true"][data-baseweb="tab"] {
-        background: transparent !important;
-        color: #e63946 !important;
-        border-bottom: 2px solid #e63946 !important;
-        font-weight: 600 !important;
-    }
-    [data-baseweb="tab-highlight"] { display: none !important; }
-    [data-baseweb="tab-border"]    { display: none !important; }
+    [data-testid="stExpander"] {{
+        background: {exp_bg} !important; border: 1px solid {exp_bd} !important;
+        border-radius: 12px !important; box-shadow: none !important; overflow: hidden !important;
+    }}
+    [data-testid="stExpanderDetails"] {{ background: transparent !important; padding-top: 0.5rem !important; }}
+    summary {{ color: {exp_lbl} !important; }}
 
-    /* ── Expander (main content) ──────────────── */
-    [data-testid="stExpander"] {
-        background: #ffffff !important;
-        border: 1px solid #e0e0e0 !important;
-        border-radius: 10px !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
-        overflow: hidden !important;
-    }
-    [data-testid="stExpanderDetails"] {
-        background: #ffffff !important;
-        padding-top: 0.5rem !important;
-    }
+    [data-testid="stDataFrame"] {{
+        border: 1px solid {brd} !important; border-radius: 12px !important;
+        overflow: hidden !important; box-shadow: {df_sh} !important;
+    }}
 
-    /* ── Dataframe ────────────────────────────── */
-    [data-testid="stDataFrame"] {
-        border: 1px solid #e5e7eb !important;
-        border-radius: 12px !important;
-        overflow: hidden !important;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.05) !important;
-    }
+    code {{
+        font-family: 'JetBrains Mono', monospace !important; background: {code_bg} !important;
+        border: 1px solid {code_bd} !important; border-radius: 5px !important;
+        padding: 0.15rem 0.45rem !important; color: {code_c} !important; font-size: 0.82em !important;
+    }}
+    pre code {{ border-radius: 0 !important; padding: 0 !important; border: none !important; color: inherit !important; }}
+    [data-testid="stCodeBlock"] {{
+        background: {cb_bg} !important; border: 1px solid {exp_bd} !important;
+        border-radius: 10px !important; overflow: hidden !important;
+    }}
+    [data-testid="stCodeBlock"] * {{ font-family: 'JetBrains Mono', monospace !important; font-size: 0.83rem !important; }}
 
-    /* ── Code & monospace ─────────────────────── */
-    code {
-        font-family: 'JetBrains Mono', monospace !important;
-        background: #f3f4f6 !important;
-        border: 1px solid #e5e7eb !important;
-        border-radius: 5px !important;
-        padding: 0.15rem 0.45rem !important;
-        color: #e63946 !important;
-        font-size: 0.82em !important;
-    }
-    pre code {
-        border-radius: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        color: inherit !important;
-    }
-    [data-testid="stCodeBlock"] {
-        background: #f8f9fa !important;
-        border: 1px solid #e5e7eb !important;
-        border-radius: 10px !important;
-        overflow: hidden !important;
-    }
-    [data-testid="stCodeBlock"] * {
-        font-family: 'JetBrains Mono', monospace !important;
-        font-size: 0.83rem !important;
-    }
+    .stMarkdown p, .stMarkdown li {{ color: {txts} !important; line-height: 1.65 !important; }}
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {{ color: {txt} !important; font-weight: 700 !important; }}
+    .stMarkdown strong {{ color: {txstr} !important; }}
+    .stMarkdown a {{ color: #e63946 !important; }}
+    .stCaption, [data-testid="stCaptionContainer"] {{ color: {txtm} !important; font-size: 0.78rem !important; }}
+    hr {{ border-color: {hr_c} !important; }}
 
-    /* ── Markdown text ────────────────────────── */
-    .stMarkdown p, .stMarkdown li { color: #374151 !important; line-height: 1.65 !important; }
-    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 { color: #1a1a2e !important; font-weight: 700 !important; }
-    .stMarkdown strong { color: #1a1a2e !important; }
-    .stMarkdown a      { color: #e63946 !important; }
-    .stCaption, [data-testid="stCaptionContainer"] {
-        color: #9ca3af !important;
-        font-size: 0.78rem !important;
-    }
-    hr { border-color: #e5e7eb !important; }
+    [data-testid="stSelectbox"] > div > div {{
+        background: {sel_bg} !important; border: 1px solid {sel_bd} !important;
+        border-radius: 8px !important; color: {sel_c} !important;
+    }}
 
-    /* ── Selectbox ────────────────────────────── */
-    [data-testid="stSelectbox"] > div > div {
-        background: #ffffff !important;
-        border: 1px solid #d1d5db !important;
-        border-radius: 8px !important;
-        color: #1a1a2e !important;
-    }
+    ::-webkit-scrollbar {{ width: 5px; height: 5px; }}
+    ::-webkit-scrollbar-track {{ background: transparent; }}
+    ::-webkit-scrollbar-thumb {{ background: {sc_t}; border-radius: 3px; }}
+    ::-webkit-scrollbar-thumb:hover {{ background: {sc_h}; }}
 
-    /* ── Section headings ─────────────────────── */
-    .section-heading {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #1a1a2e;
-        margin-top: 2.25rem;
-        margin-bottom: 0.9rem;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: -0.02em;
-        display: flex;
-        align-items: center;
-        gap: 0.45rem;
-    }
-
-    /* ── Hero banner ──────────────────────────── */
-    .hero {
-        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%);
-        border: 1px solid #bfdbfe;
-        border-radius: 18px;
-        padding: 2.5rem 3rem;
-        margin-bottom: 0.5rem;
-        box-shadow: 0 4px 20px rgba(59,130,246,0.08);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    .hero::before {
-        content: '';
-        position: absolute;
-        top: -60px; right: -60px;
-        width: 250px; height: 250px;
-        background: radial-gradient(circle, rgba(230,57,70,0.06) 0%, transparent 70%);
+    /* ── Hero ── */
+    .hero {{
+        background: {hero_bg}; border: 1px solid {hero_bd}; border-radius: 20px;
+        padding: 2rem 3rem; margin-bottom: 0.75rem; box-shadow: {hero_sh};
+        text-align: center; position: relative; overflow: hidden;
+    }}
+    .hero::before {{
+        content: ''; position: absolute; top: -100px; right: -100px;
+        width: 350px; height: 350px;
+        background: radial-gradient(circle, rgba(230,57,70,0.07) 0%, transparent 65%);
         pointer-events: none;
-    }
-    .hero h1 {
-        color: #1a1a2e;
-        font-size: 2rem;
-        font-weight: 700;
-        margin: 0 0 0.35rem;
-        letter-spacing: -0.03em;
-        font-family: 'Inter', sans-serif;
-    }
-    .hero p {
-        color: #4b5563;
-        font-size: 0.95rem;
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-    }
-    .hero .badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        background: rgba(230,57,70,0.08);
-        color: #e63946;
-        font-size: 0.7rem;
-        font-weight: 700;
-        padding: 0.25rem 0.8rem;
-        border-radius: 20px;
-        border: 1px solid rgba(230,57,70,0.2);
-        margin-bottom: 0.9rem;
-        letter-spacing: 0.1em;
-        font-family: 'Inter', sans-serif;
-    }
-    .hero .badge .dot {
-        width: 5px; height: 5px;
-        border-radius: 50%;
-        background: #22c55e;
-    }
+    }}
+    .hero::after {{
+        content: ''; position: absolute; bottom: -80px; left: -80px;
+        width: 280px; height: 280px;
+        background: radial-gradient(circle, rgba(59,130,246,0.07) 0%, transparent 65%);
+        pointer-events: none;
+    }}
+    .hero-logo {{ font-size: 3rem; line-height: 1; margin-bottom: 0.6rem; }}
+    .hero h1 {{
+        color: {h1c}; font-size: 2.5rem; font-weight: 800; margin: 0;
+        letter-spacing: -0.04em; font-family: 'Exo', sans-serif;
+    }}
+    .hero p {{ color: {subc}; font-size: 0.95rem; margin: 0; font-family: 'Inter', sans-serif; }}
+    .hero .badge {{
+        display: inline-flex; align-items: center; gap: 0.4rem;
+        background: rgba(230,57,70,0.10); color: #f87171; font-size: 0.67rem; font-weight: 700;
+        padding: 0.28rem 0.9rem; border-radius: 20px; border: 1px solid rgba(230,57,70,0.22);
+        margin-bottom: 1.1rem; letter-spacing: 0.14em; font-family: 'Inter', sans-serif; text-transform: uppercase;
+    }}
+    .hero .badge .dot {{
+        width: 5px; height: 5px; border-radius: 50%; background: #22c55e;
+        box-shadow: 0 0 8px rgba(34,197,94,0.9); flex-shrink: 0;
+    }}
 
-    /* ── Metric cards ─────────────────────────── */
-    .metric-row {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    .metric-card {
-        background: #ffffff;
-        border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        padding: 1.25rem 1.5rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        position: relative;
-        overflow: hidden;
-    }
-    .metric-card::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        height: 3px;
-        border-radius: 12px 12px 0 0;
-    }
-    .metric-card.blue::before  { background: linear-gradient(90deg, #2563eb, #60a5fa); }
-    .metric-card.red::before   { background: linear-gradient(90deg, #dc2626, #f87171); }
-    .metric-card.green::before { background: linear-gradient(90deg, #16a34a, #4ade80); }
-    .metric-card .label {
-        color: #6b7280;
-        font-size: 0.7rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        margin-bottom: 0.4rem;
-        font-family: 'Inter', sans-serif;
-    }
-    .metric-card .value {
-        font-size: 2.4rem;
-        font-weight: 700;
-        line-height: 1;
-        margin-bottom: 0.3rem;
-        letter-spacing: -0.04em;
-        font-family: 'Inter', sans-serif;
-    }
-    .metric-card.blue .value  { color: #2563eb; }
-    .metric-card.red .value   { color: #dc2626; }
-    .metric-card.green .value { color: #16a34a; }
-    .metric-card .sub {
-        color: #9ca3af;
-        font-size: 0.74rem;
-        font-family: 'Inter', sans-serif;
-    }
+    /* ── Pipeline strip ── */
+    .pipeline-strip {{
+        display: flex; align-items: center; justify-content: center;
+        background: {pip_bg}; border: 1px solid {pip_bd}; border-radius: 14px;
+        padding: 1.1rem 1.75rem; margin-bottom: 1.75rem;
+        overflow-x: auto; flex-wrap: wrap; row-gap: 0.6rem; gap: 0;
+    }}
+    .pipeline-step {{ display: flex; flex-direction: column; align-items: center; gap: 0.28rem; flex-shrink: 0; }}
+    .pipeline-step-header {{ display: flex; align-items: center; gap: 0.35rem; }}
+    .pipeline-step-code {{
+        font-size: 0.6rem; font-weight: 700; color: {scc};
+        background: {scbg}; border: 1px solid {scbd}; border-radius: 4px;
+        padding: 0.05rem 0.38rem; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em;
+    }}
+    .pipeline-step-icon {{ font-size: 0.85rem; line-height: 1; }}
+    .pipeline-step-label {{ font-size: 0.64rem; color: {slbl}; font-family: 'Inter', sans-serif; white-space: nowrap; text-align: center; max-width: 80px; }}
+    .pipeline-connector {{ width: 22px; height: 1px; background: {cng}; flex-shrink: 0; margin: 0 0.2rem; margin-bottom: 0.85rem; }}
 
-    /* ── Warning box ──────────────────────────── */
-    .warn-box {
-        background: #fffbeb;
-        border: 1px solid #fde68a;
-        border-left: 3px solid #f59e0b;
-        border-radius: 10px;
-        padding: 0.85rem 1.25rem;
-        color: #92400e;
-        font-size: 0.85rem;
-        margin-bottom: 1rem;
-        font-family: 'Inter', sans-serif;
-    }
+    /* ── Section heading ── */
+    .section-heading {{
+        font-size: 1.15rem; font-weight: 700; color: {txt}; margin-top: 2rem; margin-bottom: 0.9rem;
+        font-family: 'Exo', sans-serif; letter-spacing: -0.02em; display: flex; align-items: center; gap: 0.5rem;
+    }}
 
+    /* ── Empty state ── */
+    .empty-state {{
+        text-align: center; padding: 4.5rem 2rem; background: {emp_bg};
+        border: 1px dashed {emp_bd}; border-radius: 16px; margin-top: 1rem;
+    }}
+    .empty-state .icon {{ font-size: 3.2rem; margin-bottom: 1rem; line-height: 1; }}
+    .empty-state h3 {{ font-size: 1.05rem; font-weight: 600; color: {emp_h3}; margin: 0 0 0.4rem; font-family: 'Exo', sans-serif; }}
+    .empty-state p {{ font-size: 0.88rem; color: {emp_p}; margin: 0; font-family: 'Inter', sans-serif; }}
 
-    /* ── Empty state ──────────────────────────── */
-    .empty-state {
-        text-align: center;
-        padding: 4rem 2rem;
-    }
-    .empty-state .icon { font-size: 2.8rem; margin-bottom: 0.75rem; line-height: 1; }
-    .empty-state p { font-size: 0.9rem; color: #9ca3af; margin: 0; font-family: 'Inter', sans-serif; }
+    /* ── Metric cards ── */
+    .metric-row {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }}
+    .metric-card {{
+        background: {m_bg}; border: 1px solid {brd}; border-radius: 14px;
+        padding: 1.5rem 1.75rem; position: relative; overflow: hidden;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease; cursor: default;
+    }}
+    .metric-card:hover {{ border-color: {brdh}; box-shadow: 0 10px 40px rgba(0,0,0,0.12); }}
+    .metric-card::before {{ content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; border-radius: 14px 14px 0 0; }}
+    .metric-card.blue::before  {{ background: linear-gradient(90deg,#1d4ed8,#60a5fa); }}
+    .metric-card.red::before   {{ background: linear-gradient(90deg,#dc2626,#f87171); }}
+    .metric-card.green::before {{ background: linear-gradient(90deg,#15803d,#4ade80); }}
+    .metric-card .bg-glow {{ position: absolute; top: -30px; right: -30px; width: 120px; height: 120px; border-radius: 50%; opacity: {m_gop}; pointer-events: none; }}
+    .metric-card.blue  .bg-glow {{ background: #3B82F6; }}
+    .metric-card.red   .bg-glow {{ background: #ef4444; }}
+    .metric-card.green .bg-glow {{ background: #22c55e; }}
+    .metric-card .label {{ color: {m_lbl}; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em; margin-bottom: 0.6rem; font-family: 'Inter', sans-serif; }}
+    .metric-card .value {{ font-size: 2.75rem; font-weight: 800; line-height: 1; margin-bottom: 0.4rem; letter-spacing: -0.05em; font-family: 'Exo', sans-serif; }}
+    .metric-card.blue  .value {{ color: {mv_b}; text-shadow: {ms_b}; }}
+    .metric-card.red   .value {{ color: {mv_r}; text-shadow: {ms_r}; }}
+    .metric-card.green .value {{ color: {mv_g}; text-shadow: {ms_g}; }}
+    .metric-card .sub {{ color: {m_sub}; font-size: 0.73rem; font-family: 'Inter', sans-serif; }}
 
-    /* ── Results heading ──────────────────────── */
-    .results-heading {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: #1a1a2e;
-        margin: 0 0 0.5rem;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: -0.015em;
-    }
+    /* ── Speed badge ── */
+    .speed-badge {{
+        display: inline-flex; align-items: center; gap: 0.45rem;
+        background: {sp_bg}; border: 1px solid {sp_bd}; color: {sp_c};
+        font-size: 0.83rem; font-weight: 600; padding: 0.48rem 1.1rem;
+        border-radius: 24px; margin-bottom: 1.75rem; font-family: 'Inter', sans-serif;
+    }}
+    .speed-badge .muted {{ color: {sp_m}; font-weight: 400; }}
 
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+    /* ── Results heading ── */
+    .results-heading {{ font-size: 1rem; font-weight: 700; color: {txt}; margin: 0 0 0.75rem; font-family: 'Exo', sans-serif; letter-spacing: -0.01em; }}
 
-# Inject JS to find the sidebar toggle button (whenever Streamlit creates it)
-# and paint it black so it's always visible on the white page.
-st.markdown(
+    /* ── Download group label ── */
+    .dl-group-label {{
+        font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+        color: {m_lbl}; margin: 0 0 0.6rem; font-family: 'Inter', sans-serif;
+    }}
+
+    /* ── Scrollable rankings table ── */
+    .rank-table-wrap {{
+        max-height: 600px; overflow-y: auto;
+        border: 1px solid {brd}; border-radius: 12px; box-shadow: {df_sh};
+    }}
+    .rank-table {{
+        width: 100%; border-collapse: collapse;
+        font-family: 'Inter', sans-serif; font-size: 0.85rem;
+    }}
+    .rank-table thead th {{
+        position: sticky; top: 0; z-index: 2;
+        background: {tbl_head}; color: {txts};
+        text-align: left; font-weight: 700; font-size: 0.68rem;
+        text-transform: uppercase; letter-spacing: 0.08em;
+        padding: 0.8rem 1rem; border-bottom: 1px solid {brd};
+    }}
+    .rank-table tbody td {{
+        padding: 0.7rem 1rem; border-bottom: 1px solid {tbl_rbd};
+        color: {txts}; vertical-align: top;
+    }}
+    .rank-table tbody tr:hover td {{ background: {tbl_hov}; }}
+    .rank-table tbody tr:last-child td {{ border-bottom: none; }}
+    .rank-table .c-rank   {{ width: 64px; font-weight: 700; color: {txt}; }}
+    .rank-table .c-id     {{ width: 160px; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: {tbl_id}; white-space: nowrap; }}
+    .rank-table .c-score  {{ width: 90px; font-family: 'JetBrains Mono', monospace; color: {txt}; white-space: nowrap; }}
+    .rank-table .c-reason {{ line-height: 1.55; color: {txts}; min-width: 280px; }}
     """
-    <script>
-    (function() {
-        /* Paint the collapsed-state expand button dark so it's visible on white.
-           Runs once on load + watches for DOM changes (sidebar toggle re-renders). */
-        function styleToggle() {
-            ['[data-testid="stSidebarCollapsedControl"]','[data-testid="collapsedControl"]']
-            .forEach(function(sel) {
-                var el = document.querySelector(sel);
-                if (!el) return;
-                el.style.background   = '#1a1a2e';
-                el.style.borderRadius = '8px';
-                el.style.padding      = '4px 10px';
-                el.style.boxShadow    = '0 2px 8px rgba(0,0,0,0.28)';
-                el.style.zIndex       = '999999';
-                el.querySelectorAll('svg,svg *').forEach(function(n) {
-                    n.style.fill   = '#fff';
-                    n.style.stroke = '#fff';
-                    n.style.color  = '#fff';
-                });
-            });
-        }
-        styleToggle();
-        var obs = new MutationObserver(styleToggle);
-        obs.observe(document.body, { childList: true, subtree: true });
-    })();
-    </script>
-    """,
-    unsafe_allow_html=True,
-)
+
+# Expose chart palette at module level so the altair block can read it
+_ch_stop0 = "rgba(7,11,24,0)" if _dark else "rgba(248,250,252,0)"
+_ch_ax    = "#5A6580" if _dark else "#6b7280"
+_ch_dom   = "rgba(255,255,255,0.07)" if _dark else "#e5e7eb"
+_ch_grid  = "rgba(255,255,255,0.04)" if _dark else "#f3f4f6"
+
+# Progress bar inline-style palette
+_ptxt = "#8B98B8" if _dark else "#374151"
+_ppct = "#5A6580" if _dark else "#6B7280"
+_pt   = "rgba(255,255,255,0.06)" if _dark else "rgba(0,0,0,0.07)"
+_pb   = "linear-gradient(90deg,#1d4ed8,#3b82f6,#60a5fa)" if _dark else "linear-gradient(90deg,#1d4ed8,#3b82f6)"
+
+st.markdown(f"<style>{_get_css(_dark)}</style>", unsafe_allow_html=True)
 
 # ------------------------------------------------------------------ #
-# Sidebar
+# Theme toggle — top-right pill
 # ------------------------------------------------------------------ #
-_stages = [
-    ("A", "🛡️", "Honeypot filter"),
-    ("B", "🔍", "Hybrid retrieval"),
-    ("C", "⚙️", "Feature engineering"),
-    ("D", "🤖", "XGBoost scoring"),
-    ("E", "🔁", "Cross-encoder re-rank"),
-    ("F", "🚧", "Hard JD gates"),
-    ("G", "💡", "SHAP reasoning"),
-]
-
-with st.sidebar:
-    st.markdown('<div class="sb-brand">🍡 MochiRank</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sb-divider"></div>', unsafe_allow_html=True)
-
-    # Pipeline stages as nav rows
-    st.markdown('<div class="sb-section-label">Pipeline Stages</div>', unsafe_allow_html=True)
-    for code, icon, label in _stages:
-        st.markdown(
-            f'<div class="sb-nav-item">'
-            f'<span class="sb-stage-dot"></span>'
-            f'<span class="sb-stage-code">{code}</span>'
-            f'{icon} {label}'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
-
-    st.markdown('<div class="sb-divider" style="margin-top:0.75rem"></div>', unsafe_allow_html=True)
-
-    # CLI usage
-    st.markdown('<div class="sb-section-label">CLI Usage</div>', unsafe_allow_html=True)
-    st.code(
-        "python rank.py \\\n  --candidates candidates.jsonl \\\n  --out submission.csv",
-        language="bash",
-    )
+_, _tog_col = st.columns([10, 2])
+with _tog_col:
+    _tog_label = "☀️  Light mode" if _dark else "🌙  Dark mode"
+    st.button(_tog_label, key="theme_toggle", on_click=_toggle_theme)
 
 # ------------------------------------------------------------------ #
 # Hero header
@@ -639,18 +468,43 @@ with st.sidebar:
 st.markdown(
     """
     <div class="hero">
-        <div class="badge"><span class="dot"></span>REDROB TRACK 1</div>
-        <h1>🍡 MochiRank</h1>
-        <p>Senior AI Engineer — Founding Team &nbsp;·&nbsp; Candidate Ranker</p>
+        <h1>MochiRank</h1>
     </div>
     """,
     unsafe_allow_html=True,
 )
 
 # ------------------------------------------------------------------ #
+# Job description (collapsed by default)
+# ------------------------------------------------------------------ #
+with st.expander("📋  Job Description — Senior AI Engineer (Founding Team)", expanded=False):
+    st.markdown(
+        """
+        **Job Description:** Senior AI Engineer — Founding Team
+
+        **Company:** Redrob AI (Series A AI-native talent intelligence platform)
+
+        **Location:** Pune/Noida, India (Hybrid — flexible cadence) &nbsp;|&nbsp; Open to relocation candidates from Tier-1 Indian cities
+
+        **Employment Type:** Full-time
+
+        **Experience Required:** 5–9 years
+        """
+    )
+
+st.markdown("<div style='margin-bottom:1.25rem'></div>", unsafe_allow_html=True)
+
+# ------------------------------------------------------------------ #
 # Upload section
 # ------------------------------------------------------------------ #
-st.markdown('<div class="section-heading">📂 Upload Candidates</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="section-heading">'
+    '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+    '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>'
+    '<polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>'
+    '</svg> Upload Candidates</div>',
+    unsafe_allow_html=True,
+)
 
 col_upload, col_info = st.columns([2, 1])
 
@@ -667,24 +521,34 @@ with col_info:
         "**Schema:** `candidate_schema.json`"
     )
 
+# Clear cached results when file changes or is removed
 if uploaded is None:
+    st.session_state.pipeline_results = None
     st.markdown(
         '<div class="empty-state">'
         '<div class="icon">📂</div>'
-        '<p>Upload a candidates JSON file above to get started.</p>'
+        '<h3>No file uploaded yet</h3>'
+        '<p>Upload a candidates JSON or JSONL file above to get started.</p>'
         '</div>',
         unsafe_allow_html=True,
     )
     st.stop()
+elif st.session_state.get("_last_file") != uploaded.name:
+    st.session_state.pipeline_results = None
+    st.session_state["_last_file"] = uploaded.name
 
 # ------------------------------------------------------------------ #
 # Parse upload
 # ------------------------------------------------------------------ #
 with st.spinner(
-    f"🍡 Wading through **{uploaded.name}**… "
-    "large files take a moment, grab a ☕"
+    f"Wading through **{uploaded.name}**… "
+    "large files take a moment, grab a coffee ☕"
 ):
     try:
+        # Re-seek: file_uploader returns the *same* buffer object across reruns,
+        # so a prior read left the pointer at EOF. Without this, a rerun (e.g.
+        # toggling the theme after ranking) would read an empty string.
+        uploaded.seek(0)
         raw = uploaded.read().decode("utf-8")
         if uploaded.name.endswith(".jsonl"):
             candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
@@ -703,203 +567,236 @@ st.success(f"Loaded **{len(candidates)}** candidate{'s' if len(candidates) != 1 
 # ------------------------------------------------------------------ #
 # Rank button
 # ------------------------------------------------------------------ #
-st.markdown('<div class="section-heading">🚀 Run Pipeline</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="section-heading">'
+    '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+    '<polygon points="5 3 19 12 5 21 5 3"/>'
+    '</svg> Run Pipeline</div>',
+    unsafe_allow_html=True,
+)
 
-if not st.button("Rank Candidates", type="primary", use_container_width=False):
-    st.stop()
+_run_pipeline = st.button("Rank Candidates", type="primary", use_container_width=False)
+
+if _run_pipeline:
+    # ------------------------------------------------------------------ #
+    # Pipeline execution  (mirrors rank.py stages A–G)
+    # ------------------------------------------------------------------ #
+
+    _prog_slot = st.empty()
+
+    def _prog(pct: int, text: str) -> None:
+        _prog_slot.markdown(
+            f'<div style="margin:0.5rem 0 1rem">'
+            f'<div style="font-size:0.82rem;color:{_ptxt};margin-bottom:0.4rem;font-family:Inter,sans-serif">{text}</div>'
+            f'<div style="background:{_pt};border-radius:6px;height:6px;overflow:hidden">'
+            f'<div style="background:{_pb};width:{pct}%;height:100%;border-radius:6px;transition:width 0.3s ease"></div>'
+            f'</div>'
+            f'<div style="font-size:0.68rem;color:{_ppct};margin-top:0.22rem;font-family:\'JetBrains Mono\',monospace">{pct}% complete</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
+    _prog(0, "Initialising…")
+
+    # Wall-clock timer — surfaced in the results as a speed badge.
+    _t_start = time.time()
+
+    # Convert list → {cid: candidate} dict, same as rank.py
+    candidates_dict = {c["candidate_id"]: c for c in candidates}
+
+    try:
+        import xgboost as xgb
+        # Clear any stale src.* modules Streamlit may have cached from a previous
+        # hot-reload cycle, so every src import below gets a fresh read from disk.
+        import sys as _sys
+        for _k in list(_sys.modules.keys()):
+            if _k == 'src' or _k.startswith('src.'):
+                del _sys.modules[_k]
+        from src.consistency_checks import check_consistency
+        from src.feature_engineering import (
+            FEATURE_NAMES,
+            compute_features,
+            compute_features_dict,
+            load_precomputed,
+        )
+        from src.reasoning_generator import generate_reasoning
+        from src.retrieval import bm25_retrieve, dense_retrieve, reciprocal_rank_fusion
+        from src.reranker import rerank_top_n
+        from src.runtime_index import attach_runtime_index
+
+        # Load JD-side artifacts only (no candidate embeddings/BM25 — built at runtime)
+        _prog(5, "Loading artifacts…")
+        precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
+        model = xgb.Booster()
+        model.load_model(ARTIFACTS / "ranker_model.json")
+
+        jd_text = ""
+        hyp_path = ARTIFACTS / "hypothetical_resumes.json"
+        if hyp_path.exists():
+            import json as _json
+            with open(hyp_path, encoding="utf-8") as _f:
+                jd_text = _json.load(_f).get("jd_text", "")
+
+        # Build dense + BM25 indexes from the uploaded candidates at runtime
+        _prog(10, "Building runtime indexes — embedding candidates…")
+        bm25_data = attach_runtime_index(precomputed, candidates_dict, ARTIFACTS / "potion-base-8M")
+        _prog(35, "Runtime indexes built")
+
+        # Stage A: consistency checks
+        _prog(38, "Stage A: consistency & honeypot detection…")
+        honeypot_ids: set = set()
+        violation_counts: dict = {}
+        is_honeypot_map: dict = {}
+        for cid, c in candidates_dict.items():
+            is_hp, n_v, _ = check_consistency(c)
+            violation_counts[cid] = n_v
+            is_honeypot_map[cid] = is_hp
+            if is_hp:
+                honeypot_ids.add(cid)
+
+        # Stage B: hybrid retrieval → top 2000
+        _prog(48, "Stage B: hybrid retrieval (BM25 + dense)…")
+        all_ids = list(candidates_dict.keys())
+        bm25_ranking   = bm25_retrieve(bm25_data, all_ids, top_n=5000)
+        dense_ranking  = dense_retrieve(precomputed, all_ids, top_n=5000)
+        rrf_scores     = reciprocal_rank_fusion([bm25_ranking, dense_ranking])
+        top_2000_ids   = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
+
+        # Stage C: feature engineering on top-2000
+        _prog(58, "Stage C: feature engineering on top 2000…")
+        feature_rows = []
+        cid_order = []
+        for cid in top_2000_ids:
+            c = candidates_dict[cid]
+            feats = compute_features(c, precomputed, violation_counts.get(cid, 0), is_honeypot_map.get(cid, False))
+            feature_rows.append(feats)
+            cid_order.append(cid)
+        X = np.array(feature_rows, dtype=np.float32)
+        cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
+
+        # Stage D: XGBoost scoring
+        _prog(68, "Stage D: XGBoost scoring…")
+        dmat = xgb.DMatrix(X, feature_names=FEATURE_NAMES)
+        scores = model.predict(dmat)
+        ranked_ids = [cid_order[i] for i in np.argsort(-scores)]
+
+        # Stage E: cross-encoder re-rank on top 200
+        _prog(75, "Stage E: cross-encoder re-rank…")
+        top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
+        reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
+        reranked_ids = [cid for cid, _ in reranked]
+        reranked_scores_map = {cid: score for cid, score in reranked}
+        all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
+
+        # Stage F: honeypot filter + JD hard gates → top 100
+        _prog(82, "Stage F: hard gates…")
+        final_100: list = []
+        skipped: set = set()
+        for cid in all_ranked_ids:
+            if len(final_100) >= 100:
+                break
+            if cid in honeypot_ids:
+                skipped.add(cid)
+                continue
+            c = candidates_dict[cid]
+            feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
+            disqualified, _ = _apply_jd_disqualifiers(c, feat_dict)
+            if disqualified:
+                skipped.add(cid)
+                continue
+            final_100.append(cid)
+
+        # Stage G: SHAP reasoning
+        _prog(90, "Stage G: SHAP reasoning…")
+        shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
+
+        results = []
+        for rank_pos, cid in enumerate(final_100, start=1):
+            c = candidates_dict[cid]
+            idx = cid_to_matrix_idx.get(cid, -1)
+            score = float(scores[idx]) if idx >= 0 else 0.0
+            if idx >= 0:
+                reasoning = generate_reasoning(cid, c, shap_matrix[idx], FEATURE_NAMES, rank_pos)
+            else:
+                yoe = c["profile"].get("years_of_experience", 0)
+                title = c["profile"].get("current_title", "professional")
+                reasoning = f"{yoe}yr {title}; ranked {rank_pos} by model score."
+            results.append({
+                "candidate_id": cid,
+                "candidate":    c,
+                "score":        score,
+                "rank":         rank_pos,
+                "reasoning":    reasoning,
+            })
+
+        _elapsed_s = time.time() - _t_start   # before the cosmetic sleep below
+        _prog(100, "Pipeline complete.")
+        time.sleep(1.0)
+        _prog_slot.empty()
+
+        # Cache results so theme toggle doesn't re-run the pipeline
+        st.session_state.pipeline_results = {
+            "results":          results,
+            "honeypot_ids_list": list(honeypot_ids),
+            "elapsed_s":        _elapsed_s,
+            "n_total":          len(candidates_dict),
+        }
+
+    except FileNotFoundError as e:
+        _prog_slot.empty()
+        st.error(
+            f"Artifact not found: {e}\n\n"
+            "Run the offline pipeline first to generate `artifacts/`."
+        )
+        st.stop()
+    except Exception:
+        _prog_slot.empty()
+        st.error("Ranking failed.")
+        st.code(traceback.format_exc())
+        st.stop()
 
 # ------------------------------------------------------------------ #
-# Pipeline execution  (mirrors rank.py stages A–G)
+# Results — loaded from session state (survives theme toggle rerun)
 # ------------------------------------------------------------------ #
-
-# Custom HTML progress bar — full style control, no Streamlit theme interference.
-_prog_slot = st.empty()
-
-def _prog(pct: int, text: str) -> None:
-    _prog_slot.markdown(
-        f'<div style="margin:0.5rem 0 1rem">'
-        f'<div style="font-size:0.82rem;color:#4b5563;margin-bottom:0.35rem">{text}</div>'
-        f'<div style="background:rgba(0,0,0,0.08);border-radius:6px;height:8px;overflow:hidden">'
-        f'<div style="background:linear-gradient(90deg,#1d4ed8,#3b82f6);'
-        f'width:{pct}%;height:100%;border-radius:6px"></div>'
-        f'</div></div>',
-        unsafe_allow_html=True,
-    )
-
-_prog(0, "Initialising…")
-
-# Wall-clock timer — surfaced in the results as a speed badge.
-_t_start = time.time()
-
-# Convert list → {cid: candidate} dict, same as rank.py
-candidates_dict = {c["candidate_id"]: c for c in candidates}
-
-try:
-    import xgboost as xgb
-    # Clear any stale src.* modules Streamlit may have cached from a previous
-    # hot-reload cycle, so every src import below gets a fresh read from disk.
-    import sys as _sys
-    for _k in list(_sys.modules.keys()):
-        if _k == 'src' or _k.startswith('src.'):
-            del _sys.modules[_k]
-    from src.consistency_checks import check_consistency
-    from src.feature_engineering import (
-        FEATURE_NAMES,
-        compute_features,
-        compute_features_dict,
-        load_precomputed,
-    )
-    from src.reasoning_generator import generate_reasoning
-    from src.retrieval import bm25_retrieve, dense_retrieve, reciprocal_rank_fusion
-    from src.reranker import rerank_top_n
-    from src.runtime_index import attach_runtime_index
-
-    # Load JD-side artifacts only (no candidate embeddings/BM25 — built at runtime)
-    _prog(5, "Loading artifacts…")
-    precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
-    model = xgb.Booster()
-    model.load_model(ARTIFACTS / "ranker_model.json")
-
-    jd_text = ""
-    hyp_path = ARTIFACTS / "hypothetical_resumes.json"
-    if hyp_path.exists():
-        import json as _json
-        with open(hyp_path, encoding="utf-8") as _f:
-            jd_text = _json.load(_f).get("jd_text", "")
-
-    # Build dense + BM25 indexes from the uploaded candidates at runtime
-    _prog(10, "Building runtime indexes — embedding candidates…")
-    bm25_data = attach_runtime_index(precomputed, candidates_dict, ARTIFACTS / "potion-base-8M")
-    _prog(35, "Runtime indexes built")
-
-    # Stage A: consistency checks
-    _prog(38, "Stage A: consistency & honeypot detection…")
-    honeypot_ids: set = set()
-    violation_counts: dict = {}
-    is_honeypot_map: dict = {}
-    for cid, c in candidates_dict.items():
-        is_hp, n_v, _ = check_consistency(c)
-        violation_counts[cid] = n_v
-        is_honeypot_map[cid] = is_hp
-        if is_hp:
-            honeypot_ids.add(cid)
-
-    # Stage B: hybrid retrieval → top 2000
-    _prog(48, "Stage B: hybrid retrieval (BM25 + dense)…")
-    all_ids = list(candidates_dict.keys())
-    bm25_ranking   = bm25_retrieve(bm25_data, all_ids, top_n=5000)
-    dense_ranking  = dense_retrieve(precomputed, all_ids, top_n=5000)
-    rrf_scores     = reciprocal_rank_fusion([bm25_ranking, dense_ranking])
-    top_2000_ids   = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
-
-    # Stage C: feature engineering on top-2000
-    _prog(58, "Stage C: feature engineering on top 2000…")
-    feature_rows = []
-    cid_order = []
-    for cid in top_2000_ids:
-        c = candidates_dict[cid]
-        feats = compute_features(c, precomputed, violation_counts.get(cid, 0), is_honeypot_map.get(cid, False))
-        feature_rows.append(feats)
-        cid_order.append(cid)
-    X = np.array(feature_rows, dtype=np.float32)
-    cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
-
-    # Stage D: XGBoost scoring
-    _prog(68, "Stage D: XGBoost scoring…")
-    dmat = xgb.DMatrix(X, feature_names=FEATURE_NAMES)
-    scores = model.predict(dmat)
-    ranked_ids = [cid_order[i] for i in np.argsort(-scores)]
-
-    # Stage E: cross-encoder re-rank on top 200
-    _prog(75, "Stage E: cross-encoder re-rank…")
-    top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
-    reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
-    reranked_ids = [cid for cid, _ in reranked]
-    reranked_scores_map = {cid: score for cid, score in reranked}
-    all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
-
-    # Stage F: honeypot filter + JD hard gates → top 100
-    _prog(82, "Stage F: hard gates…")
-    final_100: list = []
-    skipped: set = set()
-    for cid in all_ranked_ids:
-        if len(final_100) >= 100:
-            break
-        if cid in honeypot_ids:
-            skipped.add(cid)
-            continue
-        c = candidates_dict[cid]
-        feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
-        disqualified, _ = _apply_jd_disqualifiers(c, feat_dict)
-        if disqualified:
-            skipped.add(cid)
-            continue
-        final_100.append(cid)
-
-    # Stage G: SHAP reasoning
-    _prog(90, "Stage G: SHAP reasoning…")
-    shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
-
-    results = []
-    for rank_pos, cid in enumerate(final_100, start=1):
-        c = candidates_dict[cid]
-        idx = cid_to_matrix_idx.get(cid, -1)
-        score = float(scores[idx]) if idx >= 0 else 0.0
-        if idx >= 0:
-            reasoning = generate_reasoning(cid, c, shap_matrix[idx], FEATURE_NAMES, rank_pos)
-        else:
-            yoe = c["profile"].get("years_of_experience", 0)
-            title = c["profile"].get("current_title", "professional")
-            reasoning = f"{yoe}yr {title}; ranked {rank_pos} by model score."
-        results.append({
-            "candidate_id": cid,
-            "candidate":    c,
-            "score":        score,
-            "rank":         rank_pos,
-            "reasoning":    reasoning,
-        })
-
-    honeypot_ids_list = list(honeypot_ids)
-    _elapsed_s = time.time() - _t_start   # before the cosmetic sleep below
-    _prog(100, "✅ Done! Pipeline complete.")
-    time.sleep(1.0)
-    _prog_slot.empty()
-
-except FileNotFoundError as e:
-    _prog_slot.empty()
-    st.error(
-        f"Artifact not found: {e}\n\n"
-        "Run the offline pipeline first to generate `artifacts/`."
-    )
+if st.session_state.pipeline_results is None:
     st.stop()
-except Exception:
-    _prog_slot.empty()
-    st.error("Ranking failed.")
-    st.code(traceback.format_exc())
-    st.stop()
+
+_pr             = st.session_state.pipeline_results
+results         = _pr["results"]
+honeypot_ids_list = _pr["honeypot_ids_list"]
+_elapsed_s      = _pr["elapsed_s"]
+n_total         = _pr["n_total"]
+n_honeypots     = len(honeypot_ids_list)
+n_finalists     = len(results)
 
 # ------------------------------------------------------------------ #
 # Metrics
 # ------------------------------------------------------------------ #
-n_honeypots = len(honeypot_ids_list)
-n_finalists = len(results)
-n_total     = len(candidates_dict)
+st.markdown(
+    '<div class="section-heading">'
+    '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+    '<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>'
+    '</svg> Results</div>',
+    unsafe_allow_html=True,
+)
 
 st.markdown(
     f"""
-    <div class="section-heading">📊 Results</div>
     <div class="metric-row">
         <div class="metric-card blue">
+            <div class="bg-glow"></div>
             <div class="label">Candidates Processed</div>
             <div class="value">{n_total}</div>
             <div class="sub">from uploaded file</div>
         </div>
         <div class="metric-card red">
+            <div class="bg-glow"></div>
             <div class="label">Honeypots Detected</div>
             <div class="value">{n_honeypots}</div>
             <div class="sub">excluded from ranking</div>
         </div>
         <div class="metric-card green">
+            <div class="bg-glow"></div>
             <div class="label">Finalists Ranked</div>
             <div class="value">{n_finalists}</div>
             <div class="sub">top candidates</div>
@@ -910,28 +807,21 @@ st.markdown(
 )
 
 # ------------------------------------------------------------------ #
-# Speed badge — sells the sub-5-min constraint
+# Speed badge
 # ------------------------------------------------------------------ #
 _thru = int(n_total / _elapsed_s) if _elapsed_s > 0 else 0
 st.markdown(
-    f'<div style="display:inline-flex;align-items:center;gap:0.5rem;'
-    f'background:rgba(34,197,94,0.10);border:1px solid rgba(34,197,94,0.30);'
-    f'color:#15803d;font-size:0.84rem;font-weight:600;'
-    f'padding:0.45rem 1rem;border-radius:20px;margin-bottom:1.5rem;'
-    f'font-family:Inter,sans-serif">'
+    f'<div class="speed-badge">'
     f'⚡ Ranked <strong>{n_total:,}</strong> candidates in '
     f'<strong>{_elapsed_s:.1f}s</strong>'
-    f'<span style="color:#9ca3af;font-weight:400">· ~{_thru:,}/s · CPU only</span>'
+    f'<span class="muted">&nbsp;·&nbsp;~{_thru:,}/s&nbsp;·&nbsp;CPU only</span>'
     f'</div>',
     unsafe_allow_html=True,
 )
 
 # ------------------------------------------------------------------ #
-# Score distribution — separation between strong and borderline
+# Score distribution chart
 # ------------------------------------------------------------------ #
-import altair as alt
-import pandas as pd
-
 st.markdown('<div class="results-heading">Score distribution</div>', unsafe_allow_html=True)
 _dist_df = pd.DataFrame({
     "Rank":  [r["rank"]  for r in results],
@@ -941,12 +831,12 @@ _chart = (
     alt.Chart(_dist_df)
     .mark_area(
         interpolate="monotone",
-        line={"color": "#2563eb", "strokeWidth": 2},
+        line={"color": "#3b82f6", "strokeWidth": 2},
         color=alt.Gradient(
             gradient="linear",
             stops=[
-                alt.GradientStop(color="#eff6ff", offset=0),
-                alt.GradientStop(color="#3b82f6", offset=1),
+                alt.GradientStop(color=_ch_stop0, offset=0),
+                alt.GradientStop(color="#1d4ed8", offset=1),
             ],
             x1=1, x2=1, y1=1, y2=0,
         ),
@@ -956,76 +846,104 @@ _chart = (
         y=alt.Y("Score:Q", title="Model score", scale=alt.Scale(zero=False)),
         tooltip=["Rank:Q", alt.Tooltip("Score:Q", format=".4f")],
     )
-    .properties(height=200)
-    .configure_view(strokeOpacity=0)
-    .configure_axis(labelColor="#6b7280", titleColor="#6b7280", domainColor="#e5e7eb")
+    .properties(height=200, background="transparent")
+    .configure_view(strokeOpacity=0, fill="transparent")
+    .configure_axis(labelColor=_ch_ax, titleColor=_ch_ax, domainColor=_ch_dom, gridColor=_ch_grid)
 )
 st.altair_chart(_chart, use_container_width=True)
 
 # ------------------------------------------------------------------ #
-# Download button
+# Downloads — three grouped exports
 # ------------------------------------------------------------------ #
-buf = io.StringIO()
-writer = csv.DictWriter(buf, fieldnames=["candidate_id", "rank", "score", "reasoning"])
-writer.writeheader()
-for r in results:
-    writer.writerow({
-        "candidate_id": r["candidate_id"],
-        "rank":         r["rank"],
-        "score":        f"{r['score']:.6f}",
-        "reasoning":    r.get("reasoning", ""),
-    })
+def _results_to_csv(rows) -> str:
+    buf = io.StringIO()
+    writer = csv.DictWriter(buf, fieldnames=["candidate_id", "rank", "score", "reasoning"])
+    writer.writeheader()
+    for r in rows:
+        writer.writerow({
+            "candidate_id": r["candidate_id"],
+            "rank":         r["rank"],
+            "score":        f"{r['score']:.6f}",
+            "reasoning":    r.get("reasoning", ""),
+        })
+    return buf.getvalue()
 
-st.download_button(
-    label="⬇  Download ranked_candidates.csv",
-    data=buf.getvalue(),
-    file_name="ranked_candidates.csv",
-    mime="text/csv",
-    use_container_width=False,
-)
+def _honeypots_to_csv(ids) -> str:
+    buf = io.StringIO()
+    writer = csv.writer(buf)
+    writer.writerow(["candidate_id"])
+    for cid in ids:
+        writer.writerow([cid])
+    return buf.getvalue()
+
+_csv_all     = _results_to_csv(results)
+_csv_top10   = _results_to_csv(results[:10])
+_csv_honeypot = _honeypots_to_csv(honeypot_ids_list)
+
+st.markdown('<div class="dl-group-label">Downloads</div>', unsafe_allow_html=True)
+_dl1, _dl2, _dl3 = st.columns(3)
+with _dl1:
+    st.download_button(
+        label=f"⬇  All {n_finalists} Finalists (CSV)",
+        data=_csv_all,
+        file_name="finalists_all.csv",
+        mime="text/csv",
+        use_container_width=True,
+    )
+with _dl2:
+    st.download_button(
+        label="⬇  Top 10 (CSV)",
+        data=_csv_top10,
+        file_name="finalists_top10.csv",
+        mime="text/csv",
+        use_container_width=True,
+    )
+with _dl3:
+    st.download_button(
+        label=f"⬇  Honeypot-Excluded ({n_honeypots}) (CSV)",
+        data=_csv_honeypot,
+        file_name="honeypots_excluded.csv",
+        mime="text/csv",
+        use_container_width=True,
+        disabled=(n_honeypots == 0),
+    )
 
 # ------------------------------------------------------------------ #
 # Results table
 # ------------------------------------------------------------------ #
 st.markdown('<div class="results-heading">Rankings</div>', unsafe_allow_html=True)
 
+def _rank_badge(rank: int) -> str:
+    return {1: "🥇", 2: "🥈", 3: "🥉"}.get(rank, str(rank))
+
+def _build_rank_table(rows) -> str:
+    """Scrollable HTML table with sticky header and full (wrapped) reasoning."""
+    head = (
+        "<thead><tr>"
+        "<th class='c-rank'>Rank</th>"
+        "<th class='c-id'>Candidate ID</th>"
+        "<th class='c-score'>Score</th>"
+        "<th class='c-reason'>Reasoning</th>"
+        "</tr></thead>"
+    )
+    body = "".join(
+        "<tr>"
+        f"<td class='c-rank'>{_rank_badge(r['rank'])}</td>"
+        f"<td class='c-id'>{html.escape(str(r['candidate_id']))}</td>"
+        f"<td class='c-score'>{r['score']:.4f}</td>"
+        f"<td class='c-reason'>{html.escape(str(r.get('reasoning', '')))}</td>"
+        "</tr>"
+        for r in rows
+    )
+    return f"<div class='rank-table-wrap'><table class='rank-table'>{head}<tbody>{body}</tbody></table></div>"
+
 tab_all, tab_top10 = st.tabs([f"All {n_finalists} finalists", "Top 10"])
 
-table_data = [
-    {
-        "Rank":         f"{'🥇' if r['rank'] == 1 else '🥈' if r['rank'] == 2 else '🥉' if r['rank'] == 3 else r['rank']}",
-        "Candidate ID": r["candidate_id"],
-        "Score":        round(r["score"], 4),
-        "Reasoning":    r.get("reasoning", ""),
-    }
-    for r in results
-]
-
 with tab_all:
-    st.dataframe(
-        table_data,
-        use_container_width=True,
-        height=560,
-        column_config={
-            "Rank":         st.column_config.TextColumn("Rank",         width="small"),
-            "Candidate ID": st.column_config.TextColumn("Candidate ID", width="medium"),
-            "Score":        st.column_config.NumberColumn("Score",       format="%.4f", width="small"),
-            "Reasoning":    st.column_config.TextColumn("Reasoning",    width="large"),
-        },
-    )
+    st.markdown(_build_rank_table(results), unsafe_allow_html=True)
 
 with tab_top10:
-    st.dataframe(
-        table_data[:10],
-        use_container_width=True,
-        height=420,
-        column_config={
-            "Rank":         st.column_config.TextColumn("Rank",         width="small"),
-            "Candidate ID": st.column_config.TextColumn("Candidate ID", width="medium"),
-            "Score":        st.column_config.NumberColumn("Score",       format="%.4f", width="small"),
-            "Reasoning":    st.column_config.TextColumn("Reasoning",    width="large"),
-        },
-    )
+    st.markdown(_build_rank_table(results[:10]), unsafe_allow_html=True)
 
 # ------------------------------------------------------------------ #
 # Honeypot details (expandable)
