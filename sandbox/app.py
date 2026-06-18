@@ -573,9 +573,11 @@ with col_info:
         "**Schema:** `candidate_schema.json`"
     )
 
-# Clear cached results when file changes or is removed
+# Clear cached state when file changes or is removed
 if uploaded is None:
     st.session_state.pipeline_results = None
+    st.session_state.pop("_candidates", None)
+    st.session_state.pop("_last_file", None)
     st.markdown(
         '<div class="empty-state">'
         '<div class="icon">📂</div>'
@@ -586,33 +588,41 @@ if uploaded is None:
     )
     st.stop()
 elif st.session_state.get("_last_file") != uploaded.name:
+    # New/changed file → drop the cached parse and any old results.
     st.session_state.pipeline_results = None
+    st.session_state["_candidates"] = None
     st.session_state["_last_file"] = uploaded.name
 
 # ------------------------------------------------------------------ #
-# Parse upload
+# Parse upload — done ONCE per file and cached in session_state. The theme
+# toggle reruns the whole script; without caching, every toggle would re-read
+# and re-parse the (potentially huge) upload, freezing the UI for seconds.
+# Reusing the cached list makes the toggle instant.
 # ------------------------------------------------------------------ #
-with st.spinner(
-    f"Wading through **{uploaded.name}**… "
-    "large files take a moment, grab a coffee ☕"
-):
-    try:
-        # Re-seek: file_uploader returns the *same* buffer object across reruns,
-        # so a prior read left the pointer at EOF. Without this, a rerun (e.g.
-        # toggling the theme after ranking) would read an empty string.
-        uploaded.seek(0)
-        raw = uploaded.read().decode("utf-8")
-        if uploaded.name.endswith(".jsonl"):
-            candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
-        else:
-            candidates = json.loads(raw)
-    except Exception as e:
-        st.error(f"Could not parse file: {e}")
+candidates = st.session_state.get("_candidates")
+if candidates is None:
+    with st.spinner(
+        f"Wading through **{uploaded.name}**… "
+        "large files take a moment, grab a coffee ☕"
+    ):
+        try:
+            # Re-seek: file_uploader returns the *same* buffer object across
+            # reruns, so a prior read left the pointer at EOF.
+            uploaded.seek(0)
+            raw = uploaded.read().decode("utf-8")
+            if uploaded.name.endswith(".jsonl"):
+                candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
+            else:
+                candidates = json.loads(raw)
+        except Exception as e:
+            st.error(f"Could not parse file: {e}")
+            st.stop()
+
+    if not isinstance(candidates, list):
+        st.error("Expected a JSON array or JSONL file at the top level.")
         st.stop()
 
-if not isinstance(candidates, list):
-    st.error("Expected a JSON array or JSONL file at the top level.")
-    st.stop()
+    st.session_state["_candidates"] = candidates
 
 st.success(f"Loaded **{len(candidates)}** candidate{'s' if len(candidates) != 1 else ''}.")
 
