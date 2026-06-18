@@ -71,7 +71,6 @@ def _apply_jd_disqualifiers(candidate: dict, features: dict) -> tuple:
 # ------------------------------------------------------------------ #
 st.set_page_config(
     page_title="MochiRank",
-    page_icon="🍡",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -101,42 +100,44 @@ def _toggle_theme() -> None:
 # ------------------------------------------------------------------ #
 def _get_css(dark: bool) -> str:
     if dark:
-        bg      = "#070B18";  card    = "#0C1525"
-        hero_bg = "linear-gradient(135deg,#0C1220 0%,#101A32 60%,#0C1220 100%)"
-        hero_bd = "rgba(59,130,246,0.12)"
-        hero_sh = "0 0 80px rgba(59,130,246,0.05),0 8px 48px rgba(0,0,0,0.6)"
-        h1c = "#E8EDF5";  subc = "#5A6580"
-        txt = "#E8EDF5";  txts = "#8B98B8";  txtm = "#5A6580";  txstr = "#CBD5E1"
-        hdr_bg = "#070B18";  hdr_bd = "rgba(255,255,255,0.04)"
-        brd = "rgba(255,255,255,0.06)";  brdh = "rgba(255,255,255,0.10)"
-        code_bg = "rgba(255,255,255,0.06)";  code_bd = "rgba(255,255,255,0.09)"
-        code_c = "#f87171";  cb_bg = "#0A1020"
-        tab_i = "#5A6580";  tab_h = "#E8EDF5";  tab_bd = "rgba(255,255,255,0.07)"
-        exp_bg = "rgba(255,255,255,0.025)";  exp_bd = "rgba(255,255,255,0.07)";  exp_lbl = "#8B98B8"
-        pip_bg = "rgba(13,20,37,0.80)";  pip_bd = "rgba(255,255,255,0.06)"
-        scc = "#f87171";  scbg = "rgba(248,113,113,0.10)";  scbd = "rgba(248,113,113,0.20)"
-        slbl = "#5A6580"
-        cng = "linear-gradient(90deg,rgba(59,130,246,0.25),rgba(59,130,246,0.06))"
-        emp_bg = "rgba(255,255,255,0.015)";  emp_bd = "rgba(255,255,255,0.07)";  emp_h3 = "#CBD5E1";  emp_p = "#5A6580"
-        m_bg = "#0C1525"
-        mv_b = "#60a5fa";  ms_b = "0 0 24px rgba(59,130,246,0.45)"
-        mv_r = "#f87171";  ms_r = "0 0 24px rgba(239,68,68,0.45)"
-        mv_g = "#4ade80";  ms_g = "0 0 24px rgba(34,197,94,0.45)"
-        m_lbl = "#5A6580";  m_sub = "#5A6580";  m_gop = "0.05"
-        sp_bg = "rgba(34,197,94,0.08)";  sp_bd = "rgba(34,197,94,0.18)";  sp_c = "#4ade80";  sp_m = "#5A6580"
-        pt = "rgba(255,255,255,0.06)"
+        bg      = "#131C30";  card    = "#1C2741"
+        hero_bg = "linear-gradient(135deg,#1A2540 0%,#22335A 60%,#1A2540 100%)"
+        hero_bd = "rgba(59,130,246,0.18)"
+        hero_sh = "0 0 80px rgba(59,130,246,0.06),0 8px 48px rgba(0,0,0,0.45)"
+        h1c = "#F1F5FB";  subc = "#9AA6C4"
+        txt = "#F1F5FB";  txts = "#B4BFD6";  txtm = "#8794B2";  txstr = "#DCE3F0"
+        hdr_bg = "#131C30";  hdr_bd = "rgba(255,255,255,0.06)"
+        brd = "rgba(255,255,255,0.09)";  brdh = "rgba(255,255,255,0.16)"
+        code_bg = "rgba(255,255,255,0.07)";  code_bd = "rgba(255,255,255,0.11)"
+        code_c = "#f87171";  cb_bg = "#16213A"
+        tab_i = "#8794B2";  tab_h = "#F1F5FB";  tab_bd = "rgba(255,255,255,0.10)"
+        exp_bg = "rgba(255,255,255,0.04)";  exp_bd = "rgba(255,255,255,0.10)";  exp_lbl = "#B4BFD6"
+        pip_bg = "rgba(28,39,65,0.85)";  pip_bd = "rgba(255,255,255,0.09)"
+        scc = "#f87171";  scbg = "rgba(248,113,113,0.12)";  scbd = "rgba(248,113,113,0.24)"
+        slbl = "#8794B2"
+        cng = "linear-gradient(90deg,rgba(59,130,246,0.30),rgba(59,130,246,0.08))"
+        emp_bg = "rgba(255,255,255,0.025)";  emp_bd = "rgba(255,255,255,0.10)";  emp_h3 = "#DCE3F0";  emp_p = "#8794B2"
+        m_bg = "#1C2741"
+        mv_b = "#60a5fa";  ms_b = "0 0 24px rgba(59,130,246,0.40)"
+        mv_r = "#f87171";  ms_r = "0 0 24px rgba(239,68,68,0.40)"
+        mv_g = "#4ade80";  ms_g = "0 0 24px rgba(34,197,94,0.40)"
+        m_lbl = "#8794B2";  m_sub = "#8794B2";  m_gop = "0.07"
+        sp_bg = "rgba(34,197,94,0.10)";  sp_bd = "rgba(34,197,94,0.22)";  sp_c = "#5be58f";  sp_m = "#8794B2"
+        pt = "rgba(255,255,255,0.09)"
         pb = "linear-gradient(90deg,#1d4ed8,#3b82f6,#60a5fa)"
-        ptxt = "#8B98B8";  ppct = "#5A6580"
-        up_bg = "rgba(255,255,255,0.02)";  up_bd = "rgba(255,255,255,0.10)"
-        up_txt = "#8B98B8";  up_sm = "#5A6580";  fi = "#5A6580"
-        sc_t = "rgba(255,255,255,0.10)";  sc_h = "rgba(255,255,255,0.18)"
-        df_sh = "0 4px 24px rgba(0,0,0,0.35)"
-        tog_bg = "rgba(255,255,255,0.07)";  tog_c = "#CBD5E1"
-        tog_bd = "rgba(255,255,255,0.13)";  tog_hbg = "rgba(255,255,255,0.12)";  tog_sh = "none"
-        hr_c = "rgba(255,255,255,0.07)"
-        sel_bg = "rgba(255,255,255,0.04)";  sel_bd = "rgba(255,255,255,0.10)";  sel_c = "#E8EDF5"
-        tbl_head = "#0F1A2E";  tbl_rbd = "rgba(255,255,255,0.05)";  tbl_hov = "rgba(255,255,255,0.03)";  tbl_id = "#60a5fa"
-        ch_stop0 = "rgba(7,11,24,0)";  ch_ax = "#5A6580";  ch_dom = "rgba(255,255,255,0.07)";  ch_grid = "rgba(255,255,255,0.04)"
+        ptxt = "#B4BFD6";  ppct = "#8794B2"
+        up_bg = "rgba(255,255,255,0.04)";  up_bd = "rgba(255,255,255,0.16)"
+        up_txt = "#F1F5FB";  up_sm = "#AEB9D2";  fi = "#C2CCE0"
+        ub_bg = "rgba(255,255,255,0.05)";  ub_c = "#B4BFD6";  ub_bd = "rgba(255,255,255,0.16)"
+        ub_hbg = "rgba(255,255,255,0.10)";  ub_hbd = "rgba(255,255,255,0.26)"
+        sc_t = "rgba(255,255,255,0.12)";  sc_h = "rgba(255,255,255,0.20)"
+        df_sh = "0 4px 24px rgba(0,0,0,0.28)"
+        tog_bg = "rgba(255,255,255,0.08)";  tog_c = "#DCE3F0"
+        tog_bd = "rgba(255,255,255,0.16)";  tog_hbg = "rgba(255,255,255,0.14)";  tog_sh = "none"
+        hr_c = "rgba(255,255,255,0.10)"
+        sel_bg = "rgba(255,255,255,0.05)";  sel_bd = "rgba(255,255,255,0.14)";  sel_c = "#F1F5FB"
+        tbl_head = "#1E2B47";  tbl_rbd = "rgba(255,255,255,0.07)";  tbl_hov = "rgba(255,255,255,0.04)";  tbl_id = "#7cb3fb"
+        ch_stop0 = "rgba(19,28,48,0)";  ch_ax = "#8794B2";  ch_dom = "rgba(255,255,255,0.10)";  ch_grid = "rgba(255,255,255,0.06)"
     else:
         bg      = "#F8FAFC";  card    = "#FFFFFF"
         hero_bg = "linear-gradient(135deg,#eff6ff 0%,#dbeafe 55%,#e0f2fe 100%)"
@@ -166,6 +167,8 @@ def _get_css(dark: bool) -> str:
         ptxt = "#374151";  ppct = "#6B7280"
         up_bg = "#fafafa";  up_bd = "#d1d5db"
         up_txt = "#374151";  up_sm = "#6B7280";  fi = "#9ca3af"
+        ub_bg = "#ffffff";  ub_c = "#374151";  ub_bd = "#d1d5db"
+        ub_hbg = "#f3f4f6";  ub_hbd = "#9ca3af"
         sc_t = "rgba(0,0,0,0.12)";  sc_h = "rgba(0,0,0,0.20)"
         df_sh = "0 2px 12px rgba(0,0,0,0.05)"
         tog_bg = "#ffffff";  tog_c = "#374151"
@@ -182,6 +185,31 @@ def _get_css(dark: bool) -> str:
 
     html, body, [class*="css"] {{ font-family: 'Inter', sans-serif !important; }}
     .stApp {{ background-color: {bg} !important; color: {txt} !important; }}
+
+    /* Smooth light/dark theme swap — animate colour properties on the
+       elements that persist across Streamlit's rerun (React keeps the DOM
+       nodes, so the property change transitions instead of snapping). */
+    .stApp, [data-testid="stHeader"], [data-testid="stFileUploader"],
+    .hero, .hero h1, .hero p, .pipeline-strip, .empty-state,
+    .metric-card, .metric-card .value, .speed-badge,
+    .rank-table-wrap, .rank-table thead th, .rank-table tbody td,
+    [data-testid="stExpander"], [data-baseweb="tab"],
+    [data-testid="stFileUploaderDropzone"] button,
+    .st-key-theme_toggle .stButton > button {{
+        transition: background-color 0.35s ease, color 0.35s ease,
+                    border-color 0.35s ease, box-shadow 0.35s ease !important;
+    }}
+
+    @media (prefers-reduced-motion: reduce) {{
+        .stApp, [data-testid="stHeader"], [data-testid="stFileUploader"],
+        .hero, .hero h1, .hero p, .pipeline-strip, .empty-state,
+        .metric-card, .metric-card .value, .speed-badge,
+        .rank-table-wrap, .rank-table thead th, .rank-table tbody td,
+        [data-testid="stExpander"], [data-baseweb="tab"],
+        [data-testid="stFileUploaderDropzone"] button,
+        .st-key-theme_toggle .stButton > button,
+        .mochi-prog-bar {{ transition: none !important; animation: none !important; }}
+    }}
 
     #MainMenu {{ visibility: hidden !important; }}
     footer {{ visibility: hidden !important; }}
@@ -235,10 +263,34 @@ def _get_css(dark: bool) -> str:
     }}
     [data-testid="stFileUploader"]:hover,
     [data-testid="stFileUploader"]:focus-within {{ border-color: rgba(230,57,70,0.45) !important; }}
-    [data-testid="stFileUploaderDropzoneInstructions"] {{ color: {fi} !important; }}
     [data-testid="stFileUploaderDropzone"] {{ background: transparent !important; }}
+    /* Force every label/instruction line in the box to a visible colour.
+       The main "Drag and drop file here" is a span/div (not a <p>), so target
+       broadly; the secondary "Limit … per file" <small> stays a touch dimmer. */
+    [data-testid="stFileUploader"] label,
+    [data-testid="stFileUploaderDropzoneInstructions"],
+    [data-testid="stFileUploaderDropzoneInstructions"] span,
+    [data-testid="stFileUploaderDropzoneInstructions"] div,
     [data-testid="stFileUploaderDropzone"] p {{ color: {up_txt} !important; }}
+    [data-testid="stFileUploaderDropzoneInstructions"] svg {{ fill: {fi} !important; color: {fi} !important; }}
+    [data-testid="stFileUploaderDropzoneInstructions"] small,
     [data-testid="stFileUploaderDropzone"] small {{ color: {up_sm} !important; }}
+
+    /* Subtle "Browse files" button — neutral, not the loud red CTA */
+    [data-testid="stFileUploaderDropzone"] button,
+    [data-testid="stFileUploader"] [data-testid="stBaseButton-secondary"] {{
+        background: {ub_bg} !important; color: {ub_c} !important;
+        border: 1px solid {ub_bd} !important; box-shadow: none !important;
+        border-radius: 8px !important; padding: 0.4rem 1rem !important;
+        font-weight: 500 !important; font-size: 0.82rem !important;
+        letter-spacing: 0 !important; min-height: 0 !important;
+        transition: background-color 0.2s ease, border-color 0.2s ease !important;
+    }}
+    [data-testid="stFileUploaderDropzone"] button:hover,
+    [data-testid="stFileUploader"] [data-testid="stBaseButton-secondary"]:hover {{
+        background: {ub_hbg} !important; border-color: {ub_hbd} !important;
+        color: {ub_c} !important; transform: none !important; box-shadow: none !important;
+    }}
 
     [data-testid="stAlert"] {{ border-radius: 10px !important; font-size: 0.88rem !important; font-family: 'Inter', sans-serif !important; }}
 
@@ -441,15 +493,15 @@ def _get_css(dark: bool) -> str:
     """
 
 # Expose chart palette at module level so the altair block can read it
-_ch_stop0 = "rgba(7,11,24,0)" if _dark else "rgba(248,250,252,0)"
-_ch_ax    = "#5A6580" if _dark else "#6b7280"
-_ch_dom   = "rgba(255,255,255,0.07)" if _dark else "#e5e7eb"
-_ch_grid  = "rgba(255,255,255,0.04)" if _dark else "#f3f4f6"
+_ch_stop0 = "rgba(19,28,48,0)" if _dark else "rgba(248,250,252,0)"
+_ch_ax    = "#8794B2" if _dark else "#6b7280"
+_ch_dom   = "rgba(255,255,255,0.10)" if _dark else "#e5e7eb"
+_ch_grid  = "rgba(255,255,255,0.06)" if _dark else "#f3f4f6"
 
 # Progress bar inline-style palette
-_ptxt = "#8B98B8" if _dark else "#374151"
-_ppct = "#5A6580" if _dark else "#6B7280"
-_pt   = "rgba(255,255,255,0.06)" if _dark else "rgba(0,0,0,0.07)"
+_ptxt = "#B4BFD6" if _dark else "#374151"
+_ppct = "#8794B2" if _dark else "#6B7280"
+_pt   = "rgba(255,255,255,0.09)" if _dark else "rgba(0,0,0,0.07)"
 _pb   = "linear-gradient(90deg,#1d4ed8,#3b82f6,#60a5fa)" if _dark else "linear-gradient(90deg,#1d4ed8,#3b82f6)"
 
 st.markdown(f"<style>{_get_css(_dark)}</style>", unsafe_allow_html=True)
@@ -583,23 +635,116 @@ if _run_pipeline:
     # ------------------------------------------------------------------ #
 
     _prog_slot = st.empty()
+    _fact_slot = st.empty()
 
-    def _prog(pct: int, text: str) -> None:
+    # Wall-clock timer — surfaced in the results as a speed badge.
+    _t_start = time.time()
+
+    # The bar follows the real pipeline stages: each _prog(pct, …) sets a true
+    # checkpoint. To make sure it never *sits still* (even mid-stage while the
+    # Python thread is blocked), pass ``creep_to`` = just under the next
+    # checkpoint: the bar then trickles forward in the browser at a slow, steady
+    # linear rate (~_CREEP_RATE %/sec → the % ticks up every few seconds). The
+    # creep duration is sized so the cap is reached only far beyond any real
+    # stage time, so the bar is always inching forward and never freezes; the
+    # next _prog() snaps it to the true checkpoint. A rotating "fun facts"
+    # ticker underneath adds extra reassurance during the longest stage.
+    _CREEP_RATE = 0.3   # percent per second — slow trickle, never parked >~3s
+
+    def _prog(pct: int, text: str, creep_to: int = None) -> None:
+        if creep_to is not None and creep_to > pct:
+            nm = f"{pct}_{creep_to}"
+            dur = max(6.0, (creep_to - pct) / _CREEP_RATE)
+            style = (
+                f"<style>"
+                f"@property --mp{nm}{{syntax:'<integer>';initial-value:{pct};inherits:false;}}"
+                f"@keyframes mpw{nm}{{from{{width:{pct}%}}to{{width:{creep_to}%}}}}"
+                f"@keyframes mpn{nm}{{from{{--mp{nm}:{pct};}}to{{--mp{nm}:{creep_to};}}}}"
+                f".mpbar{nm}{{animation:mpw{nm} {dur:.1f}s linear forwards;}}"
+                f".mpnum{nm}{{counter-reset:mp var(--mp{nm});"
+                f"animation:mpn{nm} {dur:.1f}s linear forwards;}}"
+                f".mpnum{nm}::after{{content:counter(mp) '% complete';}}"
+                f"</style>"
+            )
+            bar = (
+                f'<div class="mochi-prog-bar mpbar{nm}" '
+                f'style="background:{_pb};width:{pct}%;height:100%;border-radius:6px"></div>'
+            )
+            num = (
+                f'<div class="mpnum{nm}" style="font-size:0.68rem;color:{_ppct};'
+                f'margin-top:0.22rem;font-family:\'JetBrains Mono\',monospace"></div>'
+            )
+        else:
+            style = ""
+            bar = (
+                f'<div class="mochi-prog-bar" style="background:{_pb};width:{pct}%;'
+                f'height:100%;border-radius:6px;'
+                f'transition:width 0.6s cubic-bezier(0.4,0,0.2,1)"></div>'
+            )
+            num = (
+                f'<div style="font-size:0.68rem;color:{_ppct};margin-top:0.22rem;'
+                f'font-family:\'JetBrains Mono\',monospace">{pct}% complete</div>'
+            )
         _prog_slot.markdown(
-            f'<div style="margin:0.5rem 0 1rem">'
-            f'<div style="font-size:0.82rem;color:{_ptxt};margin-bottom:0.4rem;font-family:Inter,sans-serif">{text}</div>'
-            f'<div style="background:{_pt};border-radius:6px;height:6px;overflow:hidden">'
-            f'<div style="background:{_pb};width:{pct}%;height:100%;border-radius:6px;transition:width 0.3s ease"></div>'
-            f'</div>'
-            f'<div style="font-size:0.68rem;color:{_ppct};margin-top:0.22rem;font-family:\'JetBrains Mono\',monospace">{pct}% complete</div>'
+            f'{style}'
+            f'<div style="margin:0.5rem 0 0.4rem">'
+            f'<div style="font-size:0.82rem;color:{_ptxt};margin-bottom:0.4rem;'
+            f'font-family:Inter,sans-serif">{text}</div>'
+            f'<div style="background:{_pt};border-radius:6px;height:6px;overflow:hidden">{bar}</div>'
+            f'{num}'
             f'</div>',
             unsafe_allow_html=True,
         )
 
-    _prog(0, "Initialising…")
+    # Reassurance ticker — rotates through fun facts about the pipeline so a
+    # long-running stage never *looks* stuck. Rendered exactly once; its CSS
+    # animation runs in the browser independently of the (possibly blocked)
+    # Python thread.
+    _FACTS = [
+        "Hang tight — good rankings are worth the little wait…",
+        "Crunching the numbers, one candidate at a time…",
+        "Separating the gold from the glitter…",
+        "Warming up the ranking engine…",
+        "Almost there — lining up your top picks…",
+        "Sifting through the stack so you don't have to…",
+        "Reticulating splines… (just kidding, ranking candidates)",
+        "Hold on — the best matches are rising to the top…",
+    ]
 
-    # Wall-clock timer — surfaced in the results as a speed badge.
-    _t_start = time.time()
+    def _render_facts() -> None:
+        n = len(_FACTS)
+        dwell = 3.6                     # seconds each fact stays on screen
+        total = n * dwell               # full loop duration
+        vis = 100.0 / n                 # % of the loop one fact is visible
+        fade = vis * 0.16               # fade-in / fade-out portion
+        items = "".join(
+            f'<div class="mfact" style="animation-delay:{i * dwell:.2f}s">'
+            f'<span class="mfact-dot"></span>{html.escape(f)}</div>'
+            for i, f in enumerate(_FACTS)
+        )
+        _fact_slot.markdown(
+            f"<style>"
+            f".mfact-wrap{{position:relative;height:1.35rem;margin:0 0 1.2rem;overflow:hidden;}}"
+            f".mfact{{position:absolute;inset:0;display:flex;align-items:center;gap:0.5rem;"
+            f"font-size:0.78rem;color:{_ptxt};font-family:Inter,sans-serif;opacity:0;"
+            f"animation:mfactCycle {total:.1f}s infinite;}}"
+            f".mfact-dot{{width:6px;height:6px;border-radius:50%;flex-shrink:0;"
+            f"background:#3b82f6;box-shadow:0 0 8px rgba(59,130,246,0.7);"
+            f"animation:mfactPulse 1.4s ease-in-out infinite;}}"
+            f"@keyframes mfactPulse{{0%,100%{{opacity:0.4;}}50%{{opacity:1;}}}}"
+            f"@keyframes mfactCycle{{"
+            f"0%{{opacity:0;transform:translateY(5px);}}"
+            f"{fade:.2f}%{{opacity:1;transform:translateY(0);}}"
+            f"{vis - fade:.2f}%{{opacity:1;transform:translateY(0);}}"
+            f"{vis:.2f}%{{opacity:0;transform:translateY(-5px);}}"
+            f"100%{{opacity:0;transform:translateY(-5px);}}}}"
+            f"</style>"
+            f'<div class="mfact-wrap">{items}</div>',
+            unsafe_allow_html=True,
+        )
+
+    _prog(2, "Initialising…", creep_to=5)
+    _render_facts()
 
     # Convert list → {cid: candidate} dict, same as rank.py
     candidates_dict = {c["candidate_id"]: c for c in candidates}
@@ -625,7 +770,7 @@ if _run_pipeline:
         from src.runtime_index import attach_runtime_index
 
         # Load JD-side artifacts only (no candidate embeddings/BM25 — built at runtime)
-        _prog(5, "Loading artifacts…")
+        _prog(6, "Loading artifacts…", creep_to=11)
         precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
         model = xgb.Booster()
         model.load_model(ARTIFACTS / "ranker_model.json")
@@ -637,13 +782,15 @@ if _run_pipeline:
             with open(hyp_path, encoding="utf-8") as _f:
                 jd_text = _json.load(_f).get("jd_text", "")
 
-        # Build dense + BM25 indexes from the uploaded candidates at runtime
-        _prog(10, "Building runtime indexes — embedding candidates…")
+        # Build dense + BM25 indexes from the uploaded candidates at runtime.
+        # This is the single longest stage — let the bar creep toward 33 while
+        # the (synchronous, thread-blocking) embedding runs.
+        _prog(12, "Building runtime indexes — embedding candidates…", creep_to=34)
         bm25_data = attach_runtime_index(precomputed, candidates_dict, ARTIFACTS / "potion-base-8M")
         _prog(35, "Runtime indexes built")
 
         # Stage A: consistency checks
-        _prog(38, "Stage A: consistency & honeypot detection…")
+        _prog(40, "Stage A: consistency & honeypot detection…", creep_to=49)
         honeypot_ids: set = set()
         violation_counts: dict = {}
         is_honeypot_map: dict = {}
@@ -655,7 +802,7 @@ if _run_pipeline:
                 honeypot_ids.add(cid)
 
         # Stage B: hybrid retrieval → top 2000
-        _prog(48, "Stage B: hybrid retrieval (BM25 + dense)…")
+        _prog(50, "Stage B: hybrid retrieval (BM25 + dense)…", creep_to=59)
         all_ids = list(candidates_dict.keys())
         bm25_ranking   = bm25_retrieve(bm25_data, all_ids, top_n=5000)
         dense_ranking  = dense_retrieve(precomputed, all_ids, top_n=5000)
@@ -663,7 +810,7 @@ if _run_pipeline:
         top_2000_ids   = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
 
         # Stage C: feature engineering on top-2000
-        _prog(58, "Stage C: feature engineering on top 2000…")
+        _prog(60, "Stage C: feature engineering on top 2000…", creep_to=69)
         feature_rows = []
         cid_order = []
         for cid in top_2000_ids:
@@ -675,13 +822,13 @@ if _run_pipeline:
         cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
 
         # Stage D: XGBoost scoring
-        _prog(68, "Stage D: XGBoost scoring…")
+        _prog(70, "Stage D: XGBoost scoring…", creep_to=77)
         dmat = xgb.DMatrix(X, feature_names=FEATURE_NAMES)
         scores = model.predict(dmat)
         ranked_ids = [cid_order[i] for i in np.argsort(-scores)]
 
         # Stage E: cross-encoder re-rank on top 200
-        _prog(75, "Stage E: cross-encoder re-rank…")
+        _prog(78, "Stage E: cross-encoder re-rank…", creep_to=85)
         top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
         reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
         reranked_ids = [cid for cid, _ in reranked]
@@ -689,7 +836,7 @@ if _run_pipeline:
         all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
 
         # Stage F: honeypot filter + JD hard gates → top 100
-        _prog(82, "Stage F: hard gates…")
+        _prog(86, "Stage F: hard gates…", creep_to=91)
         final_100: list = []
         skipped: set = set()
         for cid in all_ranked_ids:
@@ -707,7 +854,7 @@ if _run_pipeline:
             final_100.append(cid)
 
         # Stage G: SHAP reasoning
-        _prog(90, "Stage G: SHAP reasoning…")
+        _prog(92, "Stage G: SHAP reasoning…", creep_to=99)
         shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
 
         results = []
@@ -733,6 +880,7 @@ if _run_pipeline:
         _prog(100, "Pipeline complete.")
         time.sleep(1.0)
         _prog_slot.empty()
+        _fact_slot.empty()
 
         # Cache results so theme toggle doesn't re-run the pipeline
         st.session_state.pipeline_results = {
@@ -744,6 +892,7 @@ if _run_pipeline:
 
     except FileNotFoundError as e:
         _prog_slot.empty()
+        _fact_slot.empty()
         st.error(
             f"Artifact not found: {e}\n\n"
             "Run the offline pipeline first to generate `artifacts/`."
@@ -751,6 +900,7 @@ if _run_pipeline:
         st.stop()
     except Exception:
         _prog_slot.empty()
+        _fact_slot.empty()
         st.error("Ranking failed.")
         st.code(traceback.format_exc())
         st.stop()
