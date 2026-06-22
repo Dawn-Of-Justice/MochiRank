@@ -10,6 +10,7 @@ import html
 import io
 import json
 import sys
+import threading
 import time
 import traceback
 from pathlib import Path
@@ -292,6 +293,26 @@ def _get_css(dark: bool) -> str:
         color: {ub_c} !important; transform: none !important; box-shadow: none !important;
     }}
 
+    /* Popover trigger (score-band candidate-ID button) — subtle neutral chip,
+       clearly visible on hover, never the loud red CTA. */
+    [data-testid="stPopover"] button {{
+        background: {ub_bg} !important; color: {ub_c} !important;
+        border: 1px solid {ub_bd} !important; box-shadow: none !important;
+        border-radius: 9px !important; padding: 0.45rem 0.95rem !important;
+        font-weight: 500 !important; font-size: 0.82rem !important;
+        letter-spacing: 0 !important; min-height: 0 !important;
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease !important;
+    }}
+    [data-testid="stPopover"] button:hover,
+    [data-testid="stPopover"] button[aria-expanded="true"] {{
+        background: {ub_hbg} !important; border-color: {ub_hbd} !important;
+        color: {txstr} !important; transform: none !important; box-shadow: none !important;
+    }}
+    [data-testid="stPopoverBody"] {{
+        background: {m_bg} !important; border: 1px solid {brd} !important;
+        border-radius: 12px !important; box-shadow: {df_sh} !important;
+    }}
+
     [data-testid="stAlert"] {{ border-radius: 10px !important; font-size: 0.88rem !important; font-family: 'Inter', sans-serif !important; }}
 
     [data-baseweb="tab-list"] {{
@@ -319,7 +340,21 @@ def _get_css(dark: bool) -> str:
         border-radius: 12px !important; box-shadow: none !important; overflow: hidden !important;
     }}
     [data-testid="stExpanderDetails"] {{ background: transparent !important; padding-top: 0.5rem !important; }}
-    summary {{ color: {exp_lbl} !important; }}
+    /* Keep the header on the subtle expander surface in every state — Streamlit
+       otherwise flips it to a flat white background when open / hovered. */
+    [data-testid="stExpander"] details > summary,
+    [data-testid="stExpander"] details[open] > summary,
+    [data-testid="stExpander"] summary,
+    [data-testid="stExpander"] summary:hover,
+    [data-testid="stExpander"] summary:focus,
+    [data-testid="stExpander"] summary:active {{
+        background: transparent !important; box-shadow: none !important;
+        border-radius: 12px !important; color: {exp_lbl} !important;
+    }}
+    [data-testid="stExpander"] summary:hover {{ color: {txt} !important; }}
+    [data-testid="stExpander"] summary p,
+    [data-testid="stExpander"] summary span {{ color: inherit !important; }}
+    [data-testid="stExpander"] summary svg {{ fill: {exp_lbl} !important; color: {exp_lbl} !important; }}
 
     [data-testid="stDataFrame"] {{
         border: 1px solid {brd} !important; border-radius: 12px !important;
@@ -490,6 +525,73 @@ def _get_css(dark: bool) -> str:
     .rank-table .c-id     {{ width: 160px; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: {tbl_id}; white-space: nowrap; }}
     .rank-table .c-score  {{ width: 90px; font-family: 'JetBrains Mono', monospace; color: {txt}; white-space: nowrap; }}
     .rank-table .c-reason {{ line-height: 1.55; color: {txts}; min-width: 280px; }}
+
+    /* ── Candidate-ID chips (score-band drill-down) ── */
+    .cid-band-head {{
+        font-size: 0.82rem; color: {txts}; margin: 0.2rem 0 0.1rem;
+        font-family: 'Inter', sans-serif;
+    }}
+    .cid-band-head b {{ color: {tbl_id}; font-family: 'JetBrains Mono', monospace; }}
+    .cid-wrap {{ display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.5rem 0 0.4rem; }}
+    .cid-chip {{
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        background: {sel_bg}; border: 1px solid {sel_bd}; border-radius: 9px;
+        padding: 0.32rem 0.6rem; font-family: 'JetBrains Mono', monospace;
+        font-size: 0.76rem; color: {tbl_id}; white-space: nowrap;
+        transition: border-color 0.15s ease, background 0.15s ease;
+    }}
+    .cid-chip:hover {{ border-color: {brdh}; }}
+    .cid-chip .cid-rank {{ color: {txtm}; font-weight: 700; font-size: 0.68rem; }}
+    .cid-chip .cid-score {{ color: {txts}; font-size: 0.68rem; }}
+
+    /* ── HTML score histogram (hover = range + count, click = candidate IDs) ── */
+    .hist-ylabel {{ font-size: 0.68rem; color: {ch_ax}; margin: 0 0 0.3rem; font-family: 'Inter', sans-serif; }}
+    .hist {{ display: flex; align-items: stretch; gap: 5px; height: 240px; }}
+    .hcol {{ flex: 1 1 0; display: flex; flex-direction: column; min-width: 0; }}
+    .hbar-d {{ flex: 1; position: relative; }}
+    .hbar-d > summary {{
+        height: 100%; display: flex; flex-direction: column; justify-content: flex-end;
+        cursor: pointer; list-style: none;
+    }}
+    .hbar-d > summary::-webkit-details-marker {{ display: none; }}
+    .hbar {{
+        width: 100%; border-radius: 5px 5px 0 0; min-height: 0;
+        background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+        opacity: 0.9; transition: opacity 0.15s ease, filter 0.15s ease;
+    }}
+    .hbar-d > summary:hover .hbar {{ opacity: 1; filter: brightness(1.12); }}
+    .hbar-d[open] .hbar {{ opacity: 1; outline: 2px solid {tbl_id}; outline-offset: 1px; }}
+    .hbar-zero {{ background: {brd}; border-radius: 2px; opacity: 0.6; }}
+    .hbar-tip, .hbar-pop {{
+        position: absolute; background: {m_bg}; border: 1px solid {brd};
+        box-shadow: {df_sh}; z-index: 30;
+    }}
+    .hbar-tip {{
+        color: {txt}; font-size: 0.72rem; white-space: nowrap;
+        padding: 0.3rem 0.55rem; border-radius: 7px; opacity: 0;
+        pointer-events: none; transition: opacity 0.12s ease; font-family: 'Inter', sans-serif;
+    }}
+    .hbar-d > summary:hover .hbar-tip {{ opacity: 1; }}
+    .hbar-d[open] .hbar-tip {{ display: none; }}
+    .hbar-pop {{
+        border-radius: 10px; padding: 0.55rem 0.65rem; width: max-content;
+        max-width: 340px; max-height: 230px; overflow: auto; z-index: 40;
+    }}
+    /* Stack chips in a column so the panel hugs the widest chip — no ragged
+       empty space on the right that a wrapping flex row would leave. */
+    .hbar-pop .cid-wrap {{ flex-direction: column; align-items: flex-start; gap: 0.35rem; }}
+    .hbar-tip.l, .hbar-pop.l {{ left: 0; }}
+    .hbar-tip.r, .hbar-pop.r {{ right: 0; }}
+    .hbar-pop-head {{
+        font-size: 0.74rem; color: {tbl_id}; font-family: 'JetBrains Mono', monospace;
+        margin-bottom: 0.45rem; white-space: nowrap;
+    }}
+    .hbar-empty {{ font-size: 0.74rem; color: {txtm}; }}
+    .hcol-label {{
+        font-size: 0.56rem; color: {ch_ax}; margin-top: 5px; text-align: center;
+        white-space: nowrap; font-family: 'JetBrains Mono', monospace; overflow: hidden;
+    }}
+    .hist-xlabel {{ font-size: 0.68rem; color: {ch_ax}; margin-top: 0.35rem; text-align: right; font-family: 'Inter', sans-serif; }}
     """
 
 # Expose chart palette at module level so the altair block can read it
@@ -637,136 +739,96 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-_run_pipeline = st.button("Rank Candidates", type="primary", use_container_width=False)
+# ------------------------------------------------------------------ #
+# Pipeline runs in a BACKGROUND THREAD so a theme toggle (which reruns the
+# whole script) can never interrupt or reset it. The worker writes progress +
+# the final payload into a shared dict held in session_state; the main script
+# just polls and renders. Toggling the theme therefore stays instant and the
+# run continues untouched.
+# ------------------------------------------------------------------ #
+_FACTS = [
+    "Hang tight — good rankings are worth the little wait…",
+    "Crunching the numbers, one candidate at a time…",
+    "Separating the gold from the glitter…",
+    "Warming up the ranking engine…",
+    "Almost there — lining up your top picks…",
+    "Sifting through the stack so you don't have to…",
+    "Reticulating splines… (just kidding, ranking candidates)",
+    "Hold on — the best matches are rising to the top…",
+]
+_CREEP_RATE = 0.3   # %/sec the bar trickles within a stage so it never sits still
 
-if _run_pipeline:
-    # ------------------------------------------------------------------ #
-    # Pipeline execution  (mirrors rank.py stages A–G)
-    # ------------------------------------------------------------------ #
 
-    _prog_slot = st.empty()
-    _fact_slot = st.empty()
+def _render_progress(slot, width: float, text: str) -> None:
+    w = max(0.0, min(100.0, width))
+    pct = int(round(w))
+    slot.markdown(
+        f'<div style="margin:0.5rem 0 0.4rem">'
+        f'<div style="font-size:0.82rem;color:{_ptxt};margin-bottom:0.4rem;'
+        f'font-family:Inter,sans-serif">{html.escape(text)}</div>'
+        f'<div style="background:{_pt};border-radius:6px;height:6px;overflow:hidden">'
+        f'<div class="mochi-prog-bar" style="background:{_pb};width:{w:.1f}%;'
+        f'height:100%;border-radius:6px;transition:width 0.5s linear"></div>'
+        f'</div>'
+        f'<div style="font-size:0.68rem;color:{_ppct};margin-top:0.22rem;'
+        f'font-family:\'JetBrains Mono\',monospace">{pct}% complete</div>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
 
-    # Wall-clock timer — surfaced in the results as a speed badge.
-    _t_start = time.time()
 
-    # The bar follows the real pipeline stages: each _prog(pct, …) sets a true
-    # checkpoint. To make sure it never *sits still* (even mid-stage while the
-    # Python thread is blocked), pass ``creep_to`` = just under the next
-    # checkpoint: the bar then trickles forward in the browser at a slow, steady
-    # linear rate (~_CREEP_RATE %/sec → the % ticks up every few seconds). The
-    # creep duration is sized so the cap is reached only far beyond any real
-    # stage time, so the bar is always inching forward and never freezes; the
-    # next _prog() snaps it to the true checkpoint. A rotating "fun facts"
-    # ticker underneath adds extra reassurance during the longest stage.
-    _CREEP_RATE = 0.3   # percent per second — slow trickle, never parked >~3s
+def _render_facts(slot, elapsed: float) -> None:
+    # Negative animation-delays keyed to `elapsed` keep the ticker rotating
+    # continuously across the ~0.4s poll re-renders (otherwise each rerun would
+    # restart the CSS animation and the ticker would freeze on the first fact).
+    n = len(_FACTS)
+    dwell = 3.6
+    total = n * dwell
+    vis = 100.0 / n
+    fade = vis * 0.16
+    items = "".join(
+        f'<div class="mfact" style="animation-delay:{i * dwell - elapsed:.2f}s">'
+        f'<span class="mfact-dot" style="animation-delay:{-elapsed:.2f}s"></span>'
+        f'{html.escape(f)}</div>'
+        for i, f in enumerate(_FACTS)
+    )
+    slot.markdown(
+        f"<style>"
+        f".mfact-wrap{{position:relative;height:1.35rem;margin:0 0 1.2rem;overflow:hidden;}}"
+        f".mfact{{position:absolute;inset:0;display:flex;align-items:center;gap:0.5rem;"
+        f"font-size:0.78rem;color:{_ptxt};font-family:Inter,sans-serif;opacity:0;"
+        f"animation:mfactCycle {total:.1f}s infinite;}}"
+        f".mfact-dot{{width:6px;height:6px;border-radius:50%;flex-shrink:0;"
+        f"background:#3b82f6;box-shadow:0 0 8px rgba(59,130,246,0.7);"
+        f"animation:mfactPulse 1.4s ease-in-out infinite;}}"
+        f"@keyframes mfactPulse{{0%,100%{{opacity:0.4;}}50%{{opacity:1;}}}}"
+        f"@keyframes mfactCycle{{"
+        f"0%{{opacity:0;transform:translateY(5px);}}"
+        f"{fade:.2f}%{{opacity:1;transform:translateY(0);}}"
+        f"{vis - fade:.2f}%{{opacity:1;transform:translateY(0);}}"
+        f"{vis:.2f}%{{opacity:0;transform:translateY(-5px);}}"
+        f"100%{{opacity:0;transform:translateY(-5px);}}}}"
+        f"</style>"
+        f'<div class="mfact-wrap">{items}</div>',
+        unsafe_allow_html=True,
+    )
 
-    def _prog(pct: int, text: str, creep_to: int = None) -> None:
-        if creep_to is not None and creep_to > pct:
-            nm = f"{pct}_{creep_to}"
-            dur = max(6.0, (creep_to - pct) / _CREEP_RATE)
-            style = (
-                f"<style>"
-                f"@property --mp{nm}{{syntax:'<integer>';initial-value:{pct};inherits:false;}}"
-                f"@keyframes mpw{nm}{{from{{width:{pct}%}}to{{width:{creep_to}%}}}}"
-                f"@keyframes mpn{nm}{{from{{--mp{nm}:{pct};}}to{{--mp{nm}:{creep_to};}}}}"
-                f".mpbar{nm}{{animation:mpw{nm} {dur:.1f}s linear forwards;}}"
-                f".mpnum{nm}{{counter-reset:mp var(--mp{nm});"
-                f"animation:mpn{nm} {dur:.1f}s linear forwards;}}"
-                f".mpnum{nm}::after{{content:counter(mp) '% complete';}}"
-                f"</style>"
-            )
-            bar = (
-                f'<div class="mochi-prog-bar mpbar{nm}" '
-                f'style="background:{_pb};width:{pct}%;height:100%;border-radius:6px"></div>'
-            )
-            num = (
-                f'<div class="mpnum{nm}" style="font-size:0.68rem;color:{_ppct};'
-                f'margin-top:0.22rem;font-family:\'JetBrains Mono\',monospace"></div>'
-            )
-        else:
-            style = ""
-            bar = (
-                f'<div class="mochi-prog-bar" style="background:{_pb};width:{pct}%;'
-                f'height:100%;border-radius:6px;'
-                f'transition:width 0.6s cubic-bezier(0.4,0,0.2,1)"></div>'
-            )
-            num = (
-                f'<div style="font-size:0.68rem;color:{_ppct};margin-top:0.22rem;'
-                f'font-family:\'JetBrains Mono\',monospace">{pct}% complete</div>'
-            )
-        _prog_slot.markdown(
-            f'{style}'
-            f'<div style="margin:0.5rem 0 0.4rem">'
-            f'<div style="font-size:0.82rem;color:{_ptxt};margin-bottom:0.4rem;'
-            f'font-family:Inter,sans-serif">{text}</div>'
-            f'<div style="background:{_pt};border-radius:6px;height:6px;overflow:hidden">{bar}</div>'
-            f'{num}'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
 
-    # Reassurance ticker — rotates through fun facts about the pipeline so a
-    # long-running stage never *looks* stuck. Rendered exactly once; its CSS
-    # animation runs in the browser independently of the (possibly blocked)
-    # Python thread.
-    _FACTS = [
-        "Hang tight — good rankings are worth the little wait…",
-        "Crunching the numbers, one candidate at a time…",
-        "Separating the gold from the glitter…",
-        "Warming up the ranking engine…",
-        "Almost there — lining up your top picks…",
-        "Sifting through the stack so you don't have to…",
-        "Reticulating splines… (just kidding, ranking candidates)",
-        "Hold on — the best matches are rising to the top…",
-    ]
-
-    def _render_facts() -> None:
-        n = len(_FACTS)
-        dwell = 3.6                     # seconds each fact stays on screen
-        total = n * dwell               # full loop duration
-        vis = 100.0 / n                 # % of the loop one fact is visible
-        fade = vis * 0.16               # fade-in / fade-out portion
-        items = "".join(
-            f'<div class="mfact" style="animation-delay:{i * dwell:.2f}s">'
-            f'<span class="mfact-dot"></span>{html.escape(f)}</div>'
-            for i, f in enumerate(_FACTS)
-        )
-        _fact_slot.markdown(
-            f"<style>"
-            f".mfact-wrap{{position:relative;height:1.35rem;margin:0 0 1.2rem;overflow:hidden;}}"
-            f".mfact{{position:absolute;inset:0;display:flex;align-items:center;gap:0.5rem;"
-            f"font-size:0.78rem;color:{_ptxt};font-family:Inter,sans-serif;opacity:0;"
-            f"animation:mfactCycle {total:.1f}s infinite;}}"
-            f".mfact-dot{{width:6px;height:6px;border-radius:50%;flex-shrink:0;"
-            f"background:#3b82f6;box-shadow:0 0 8px rgba(59,130,246,0.7);"
-            f"animation:mfactPulse 1.4s ease-in-out infinite;}}"
-            f"@keyframes mfactPulse{{0%,100%{{opacity:0.4;}}50%{{opacity:1;}}}}"
-            f"@keyframes mfactCycle{{"
-            f"0%{{opacity:0;transform:translateY(5px);}}"
-            f"{fade:.2f}%{{opacity:1;transform:translateY(0);}}"
-            f"{vis - fade:.2f}%{{opacity:1;transform:translateY(0);}}"
-            f"{vis:.2f}%{{opacity:0;transform:translateY(-5px);}}"
-            f"100%{{opacity:0;transform:translateY(-5px);}}}}"
-            f"</style>"
-            f'<div class="mfact-wrap">{items}</div>',
-            unsafe_allow_html=True,
-        )
-
-    _prog(2, "Initialising…", creep_to=5)
-    _render_facts()
-
-    # Convert list → {cid: candidate} dict, same as rank.py
-    candidates_dict = {c["candidate_id"]: c for c in candidates}
+def _pipeline_worker(job: dict, candidates_dict: dict) -> None:
+    """Run the full ranking pipeline (rank.py stages A–G) off the main thread.
+    Writes progress + the final payload into ``job``; touches NO Streamlit APIs,
+    so it is safe to run outside the script-run context."""
+    def _stage(pct: int, text: str, creep_to: int = None) -> None:
+        job["stage_start"] = time.time()
+        job["pct"] = pct
+        job["creep_to"] = creep_to
+        job["text"] = text
 
     try:
         import xgboost as xgb
-        # Clear any stale src.* modules Streamlit may have cached from a previous
-        # hot-reload cycle, so every src import below gets a fresh read from disk.
-        import sys as _sys
-        for _k in list(_sys.modules.keys()):
-            if _k == 'src' or _k.startswith('src.'):
-                del _sys.modules[_k]
+        for _k in list(sys.modules.keys()):
+            if _k == "src" or _k.startswith("src."):
+                del sys.modules[_k]
         from src.consistency_checks import check_consistency
         from src.feature_engineering import (
             FEATURE_NAMES,
@@ -779,8 +841,7 @@ if _run_pipeline:
         from src.reranker import rerank_top_n
         from src.runtime_index import attach_runtime_index
 
-        # Load JD-side artifacts only (no candidate embeddings/BM25 — built at runtime)
-        _prog(6, "Loading artifacts…", creep_to=11)
+        _stage(6, "Loading artifacts…", 11)
         precomputed = load_precomputed(ARTIFACTS, load_candidate_artifacts=False)
         model = xgb.Booster()
         model.load_model(ARTIFACTS / "ranker_model.json")
@@ -788,19 +849,15 @@ if _run_pipeline:
         jd_text = ""
         hyp_path = ARTIFACTS / "hypothetical_resumes.json"
         if hyp_path.exists():
-            import json as _json
             with open(hyp_path, encoding="utf-8") as _f:
-                jd_text = _json.load(_f).get("jd_text", "")
+                jd_text = json.load(_f).get("jd_text", "")
 
-        # Build dense + BM25 indexes from the uploaded candidates at runtime.
-        # This is the single longest stage — let the bar creep toward 33 while
-        # the (synchronous, thread-blocking) embedding runs.
-        _prog(12, "Building runtime indexes — embedding candidates…", creep_to=34)
+        _stage(12, "Building runtime indexes — embedding candidates…", 34)
         bm25_data = attach_runtime_index(precomputed, candidates_dict, ARTIFACTS / "potion-base-8M")
-        _prog(35, "Runtime indexes built")
+        _stage(35, "Runtime indexes built")
 
         # Stage A: consistency checks
-        _prog(40, "Stage A: consistency & honeypot detection…", creep_to=49)
+        _stage(40, "Stage A: consistency & honeypot detection…", 49)
         honeypot_ids: set = set()
         violation_counts: dict = {}
         is_honeypot_map: dict = {}
@@ -812,15 +869,15 @@ if _run_pipeline:
                 honeypot_ids.add(cid)
 
         # Stage B: hybrid retrieval → top 2000
-        _prog(50, "Stage B: hybrid retrieval (BM25 + dense)…", creep_to=59)
+        _stage(50, "Stage B: hybrid retrieval (BM25 + dense)…", 59)
         all_ids = list(candidates_dict.keys())
-        bm25_ranking   = bm25_retrieve(bm25_data, all_ids, top_n=5000)
-        dense_ranking  = dense_retrieve(precomputed, all_ids, top_n=5000)
-        rrf_scores     = reciprocal_rank_fusion([bm25_ranking, dense_ranking])
-        top_2000_ids   = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
+        bm25_ranking = bm25_retrieve(bm25_data, all_ids, top_n=5000)
+        dense_ranking = dense_retrieve(precomputed, all_ids, top_n=5000)
+        rrf_scores = reciprocal_rank_fusion([bm25_ranking, dense_ranking])
+        top_2000_ids = sorted(rrf_scores, key=lambda c: -rrf_scores[c])[:2000]
 
         # Stage C: feature engineering on top-2000
-        _prog(60, "Stage C: feature engineering on top 2000…", creep_to=69)
+        _stage(60, "Stage C: feature engineering on top 2000…", 69)
         feature_rows = []
         cid_order = []
         for cid in top_2000_ids:
@@ -832,34 +889,30 @@ if _run_pipeline:
         cid_to_matrix_idx = {cid: i for i, cid in enumerate(cid_order)}
 
         # Stage D: XGBoost scoring
-        _prog(70, "Stage D: XGBoost scoring…", creep_to=77)
+        _stage(70, "Stage D: XGBoost scoring…", 77)
         dmat = xgb.DMatrix(X, feature_names=FEATURE_NAMES)
         scores = model.predict(dmat)
         ranked_ids = [cid_order[i] for i in np.argsort(-scores)]
 
         # Stage E: cross-encoder re-rank on top 200
-        _prog(78, "Stage E: cross-encoder re-rank…", creep_to=85)
+        _stage(78, "Stage E: cross-encoder re-rank…", 85)
         top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
         reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
         reranked_ids = [cid for cid, _ in reranked]
-        reranked_scores_map = {cid: score for cid, score in reranked}
         all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
 
         # Stage F: honeypot filter + JD hard gates → top 100
-        _prog(86, "Stage F: hard gates…", creep_to=91)
+        _stage(86, "Stage F: hard gates…", 91)
         final_100: list = []
-        skipped: set = set()
         for cid in all_ranked_ids:
             if len(final_100) >= 100:
                 break
             if cid in honeypot_ids:
-                skipped.add(cid)
                 continue
             c = candidates_dict[cid]
             feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
             disqualified, _ = _apply_jd_disqualifiers(c, feat_dict)
             if disqualified:
-                skipped.add(cid)
                 continue
             final_100.append(cid)
 
@@ -924,7 +977,7 @@ if _run_pipeline:
         final_100 = sorted(final_100, key=lambda cid: -normalized_score_map[cid])
 
         # Stage G: SHAP reasoning
-        _prog(92, "Stage G: SHAP reasoning…", creep_to=99)
+        _stage(92, "Stage G: SHAP reasoning…", 99)
         shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
 
         results = []
@@ -946,34 +999,71 @@ if _run_pipeline:
                 "reasoning":    reasoning,
             })
 
-        _elapsed_s = time.time() - _t_start   # before the cosmetic sleep below
-        _prog(100, "Pipeline complete.")
-        time.sleep(1.0)
-        _prog_slot.empty()
-        _fact_slot.empty()
-
-        # Cache results so theme toggle doesn't re-run the pipeline
-        st.session_state.pipeline_results = {
-            "results":          results,
+        job["payload"] = {
+            "results":           results,
             "honeypot_ids_list": list(honeypot_ids),
-            "elapsed_s":        _elapsed_s,
-            "n_total":          len(candidates_dict),
+            "elapsed_s":         time.time() - job["job_start"],
+            "n_total":           len(candidates_dict),
         }
+        job["pct"], job["creep_to"], job["text"] = 100, None, "Pipeline complete."
+        job["status"] = "done"
 
     except FileNotFoundError as e:
-        _prog_slot.empty()
-        _fact_slot.empty()
-        st.error(
+        job["error"] = (
             f"Artifact not found: {e}\n\n"
             "Run the offline pipeline first to generate `artifacts/`."
         )
-        st.stop()
+        job["status"] = "error"
     except Exception:
-        _prog_slot.empty()
-        _fact_slot.empty()
-        st.error("Ranking failed.")
-        st.code(traceback.format_exc())
-        st.stop()
+        job["error"] = traceback.format_exc()
+        job["status"] = "error"
+
+
+_job = st.session_state.get("_job")
+_running = _job is not None and _job.get("status") == "running"
+
+_run_pipeline = st.button("Rank Candidates", type="primary", use_container_width=False, disabled=_running)
+
+# Launch the worker on click (guarded so a stray click mid-run can't double-start).
+if _run_pipeline and not _running:
+    candidates_dict = {c["candidate_id"]: c for c in candidates}
+    _now = time.time()
+    _job = {
+        "status": "running", "pct": 2, "creep_to": 5, "text": "Initialising…",
+        "stage_start": _now, "job_start": _now, "payload": None, "error": None,
+    }
+    st.session_state["_job"] = _job
+    st.session_state.pipeline_results = None
+    threading.Thread(target=_pipeline_worker, args=(_job, candidates_dict), daemon=True).start()
+    _running = True
+
+# While running: render progress from the shared dict, then poll again. The bar
+# trickles in Python (time since the current stage started) so it keeps moving
+# even during a long blocking stage.
+if _running:
+    _prog_slot = st.empty()
+    _fact_slot = st.empty()
+    _now = time.time()
+    _base = _job["pct"]
+    _cap = _job.get("creep_to")
+    if _cap and _cap > _base:
+        _w = min(float(_cap), _base + _CREEP_RATE * (_now - _job["stage_start"]))
+    else:
+        _w = float(_base)
+    _render_progress(_prog_slot, _w, _job["text"])
+    _render_facts(_fact_slot, _now - _job["job_start"])
+    time.sleep(0.4)
+    st.rerun()
+
+if _job is not None and _job.get("status") == "error":
+    st.session_state["_job"] = None
+    st.error("Ranking failed.")
+    st.code(_job["error"])
+    st.stop()
+
+if _job is not None and _job.get("status") == "done":
+    st.session_state.pipeline_results = _job["payload"]
+    st.session_state["_job"] = None
 
 # ------------------------------------------------------------------ #
 # Results — loaded from session state (survives theme toggle rerun)
@@ -1043,34 +1133,81 @@ st.markdown(
 # Score distribution chart
 # ------------------------------------------------------------------ #
 st.markdown('<div class="results-heading">Score distribution</div>', unsafe_allow_html=True)
-_dist_df = pd.DataFrame({
-    "Rank":  [r["rank"]  for r in results],
-    "Score": [r["score"] for r in results],
-})
-_chart = (
-    alt.Chart(_dist_df)
-    .mark_area(
-        interpolate="monotone",
-        line={"color": "#3b82f6", "strokeWidth": 2},
-        color=alt.Gradient(
-            gradient="linear",
-            stops=[
-                alt.GradientStop(color=_ch_stop0, offset=0),
-                alt.GradientStop(color="#1d4ed8", offset=1),
-            ],
-            x1=1, x2=1, y1=1, y2=0,
-        ),
-    )
-    .encode(
-        x=alt.X("Rank:Q", title="Rank", axis=alt.Axis(grid=False, tickMinStep=1)),
-        y=alt.Y("Score:Q", title="Model score", scale=alt.Scale(zero=False)),
-        tooltip=["Rank:Q", alt.Tooltip("Score:Q", format=".4f")],
-    )
-    .properties(height=200, background="transparent")
-    .configure_view(strokeOpacity=0, fill="transparent")
-    .configure_axis(labelColor=_ch_ax, titleColor=_ch_ax, domainColor=_ch_dom, gridColor=_ch_grid)
+st.caption("Hover a bar for its score range and candidate count · click a bar to reveal the candidate IDs in it.")
+
+# Pre-bin scores into fixed bands so each bar maps to the candidates in it.
+_scores = np.array([r["score"] for r in results], dtype=float)
+_n_bins = int(min(15, max(4, len(results) // 7))) if len(results) > 1 else 1
+_lo, _hi = float(_scores.min()), float(_scores.max())
+if _hi <= _lo:
+    _hi = _lo + 1e-6
+_edges = np.linspace(_lo, _hi, _n_bins + 1)
+# digitize against interior edges so every score lands in [0, _n_bins-1]
+_band_of = np.clip(np.digitize(_scores, _edges[1:-1], right=False), 0, _n_bins - 1)
+_band_labels = [f"{_edges[i]:.3f} – {_edges[i + 1]:.3f}" for i in range(_n_bins)]
+
+# results grouped by band, each sorted by rank
+_bands: dict = {i: [] for i in range(_n_bins)}
+for _r, _b in zip(results, _band_of):
+    _bands[int(_b)].append(_r)
+for _i in _bands:
+    _bands[_i].sort(key=lambda x: x["rank"])
+
+_counts = [len(_bands[i]) for i in range(_n_bins)]
+_max_count = max(_counts) if _counts else 0
+_BAR_AREA = 210  # px of vertical room the tallest bar fills
+
+
+def _chips_html(rows) -> str:
+    if not rows:
+        return '<div class="hbar-empty">No candidates in this band.</div>'
+    return '<div class="cid-wrap">' + "".join(
+        f'<span class="cid-chip"><span class="cid-rank">#{r["rank"]}</span>'
+        f'{html.escape(str(r["candidate_id"]))}'
+        f'<span class="cid-score">{r["score"]:.3f}</span></span>'
+        for r in rows
+    ) + "</div>"
+
+
+# Build the bars. Each bar is a <details>: hovering shows a tooltip (range +
+# count), clicking opens a floating panel with the candidate IDs — all pure CSS,
+# so there are no Streamlit reruns and clicks always work.
+_cols = []
+for _i in range(_n_bins):
+    _cnt = _counts[_i]
+    _h = round(_cnt / _max_count * _BAR_AREA) if _max_count else 0
+    if _cnt > 0:
+        _h = max(_h, 4)
+    _rng = _band_labels[_i]
+    _cnt_txt = f"{_cnt} candidate{'s' if _cnt != 1 else ''}"
+    _side = "l" if _i < _n_bins / 2 else "r"          # avoid edge clipping
+    _low = f"{_edges[_i]:.2f}"
+    if _cnt > 0:
+        _cols.append(
+            '<div class="hcol"><details class="hbar-d" name="histband"><summary>'
+            f'<span class="hbar-tip {_side}" style="bottom:{_h + 8}px">'
+            f'{html.escape(_rng)} · {_cnt_txt}</span>'
+            f'<span class="hbar" style="height:{_h}px"></span>'
+            '</summary>'
+            f'<div class="hbar-pop {_side}" style="bottom:{_h + 8}px">'
+            f'<div class="hbar-pop-head">{html.escape(_rng)} · {_cnt_txt}</div>'
+            f'{_chips_html(_bands[_i])}'
+            '</div></details>'
+            f'<div class="hcol-label">{_low}</div></div>'
+        )
+    else:
+        _cols.append(
+            '<div class="hcol"><div class="hbar-d">'
+            '<span class="hbar hbar-zero" style="height:2px"></span></div>'
+            f'<div class="hcol-label">{_low}</div></div>'
+        )
+
+st.markdown(
+    '<div class="hist-ylabel">Number of candidates</div>'
+    '<div class="hist">' + "".join(_cols) + '</div>'
+    '<div class="hist-xlabel">Model score →</div>',
+    unsafe_allow_html=True,
 )
-st.altair_chart(_chart, use_container_width=True)
 
 # ------------------------------------------------------------------ #
 # Downloads — three grouped exports
