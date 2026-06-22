@@ -1,3 +1,14 @@
+---
+title: MochiRank
+emoji: 🏆
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: "1.35.0"
+app_file: sandbox/app.py
+pinned: false
+---
+
 # MochiRank — Intelligent Candidate Ranker
 
 Ranks **100,000 candidate profiles** against a job description and produces a ranked top-100 list
