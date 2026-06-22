@@ -904,15 +904,18 @@ def _pipeline_worker(job: dict, candidates_dict: dict) -> None:
         # Stage F: honeypot filter + JD hard gates → top 100
         _stage(86, "Stage F: hard gates…", 91)
         final_100: list = []
+        skipped: set = set()
         for cid in all_ranked_ids:
             if len(final_100) >= 100:
                 break
             if cid in honeypot_ids:
+                skipped.add(cid)
                 continue
             c = candidates_dict[cid]
             feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
             disqualified, _ = _apply_jd_disqualifiers(c, feat_dict)
             if disqualified:
+                skipped.add(cid)
                 continue
             final_100.append(cid)
 
