@@ -863,17 +863,25 @@ if _run_pipeline:
                 continue
             final_100.append(cid)
 
-        # Stage F2: finalist-level combined honeypot gate (runs on ~100 only).
-        # Removes candidates with 2+ soft signals: signup>last_active AND 10+ expert skills.
+        # Stage F2: finalist-level weighted honeypot gate (runs on ~100 only).
         # Backfills from the ranked pool.
         def _finalist_hp_score(c: dict) -> int:
+            """
+            Weighted honeypot score for finalists. >= 2 -> remove and backfill.
+            2-pt: signup>last_active (impossible), expert>=12 (implausible inflation).
+            1-pt: expert 10-11 (needs second signal to trigger).
+            """
             score = 0
             sig2 = c.get("redrob_signals", {})
+            skills2 = c.get("skills", [])
             su = sig2.get("signup_date", "")
             la = sig2.get("last_active_date", "")
             if su and la and su > la:
-                score += 1
-            if sum(1 for s in c.get("skills", []) if s.get("proficiency") == "expert") >= 10:
+                score += 2
+            expert_cnt = sum(1 for s in skills2 if s.get("proficiency") == "expert")
+            if expert_cnt >= 12:
+                score += 2
+            elif expert_cnt >= 10:
                 score += 1
             return score
 

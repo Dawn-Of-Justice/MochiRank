@@ -235,16 +235,32 @@ def main(candidates_path: str, output_path: str) -> None:
     # from the already-ranked pool (all_ranked_ids).
     # ------------------------------------------------------------------ #
     def _finalist_honeypot_score(c: dict) -> int:
-        """Return soft honeypot signal count (0-2+). >=2 → remove from top-100."""
+        """
+        Weighted honeypot signal score for finalists. Threshold >= 2 → remove.
+
+        2-point signals (standalone removal):
+          - signup_date > last_active_date: logical impossibility on the platform
+          - expert skill count >= 12: implausible self-reported inflation
+
+        1-point signals (need a second signal to trigger removal):
+          - expert skill count 10-11: keyword-stuffer indicator
+          - signup_date > last_active_date also counts here, but already gives 2
+        """
         score = 0
         sig = c.get("redrob_signals", {})
+        skills = c.get("skills", [])
+
         signup = sig.get("signup_date", "")
         last_active = sig.get("last_active_date", "")
         if signup and last_active and signup > last_active:
+            score += 2
+
+        expert_count = sum(1 for s in skills if s.get("proficiency") == "expert")
+        if expert_count >= 12:
+            score += 2
+        elif expert_count >= 10:
             score += 1
-        expert_count = sum(1 for s in c.get("skills", []) if s.get("proficiency") == "expert")
-        if expert_count >= 10:
-            score += 1
+
         return score
 
     final_100_set = set(final_100)
