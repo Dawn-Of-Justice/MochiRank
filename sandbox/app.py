@@ -863,6 +863,29 @@ if _run_pipeline:
                 continue
             final_100.append(cid)
 
+        # Build unified scores and re-sort final_100 so rank matches score order.
+        # Prefer reranker scores (bounded); fall back to XGBoost raw scores.
+        # Normalize everything to [0, 1] via min-max.
+        raw_score_map: dict = {}
+        for cid in final_100:
+            if cid in reranked_scores_map:
+                raw_score_map[cid] = reranked_scores_map[cid]
+            else:
+                _idx = cid_to_matrix_idx.get(cid, -1)
+                raw_score_map[cid] = float(scores[_idx]) if _idx >= 0 else 0.0
+
+        _vals = list(raw_score_map.values())
+        _s_min, _s_max = min(_vals), max(_vals)
+        if _s_max > _s_min:
+            normalized_score_map = {
+                cid: (raw_score_map[cid] - _s_min) / (_s_max - _s_min)
+                for cid in final_100
+            }
+        else:
+            normalized_score_map = {cid: 1.0 for cid in final_100}
+
+        final_100 = sorted(final_100, key=lambda cid: -normalized_score_map[cid])
+
         # Stage G: SHAP reasoning
         _prog(92, "Stage G: SHAP reasoning…", creep_to=99)
         shap_matrix = model.predict(dmat, pred_contribs=True)[:, :-1]
@@ -870,8 +893,8 @@ if _run_pipeline:
         results = []
         for rank_pos, cid in enumerate(final_100, start=1):
             c = candidates_dict[cid]
+            score = normalized_score_map[cid]
             idx = cid_to_matrix_idx.get(cid, -1)
-            score = float(scores[idx]) if idx >= 0 else 0.0
             if idx >= 0:
                 reasoning = generate_reasoning(cid, c, shap_matrix[idx], FEATURE_NAMES, rank_pos)
             else:
