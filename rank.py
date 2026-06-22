@@ -228,6 +228,32 @@ def main(candidates_path: str, output_path: str) -> None:
     tick(f"Stage F done: {len(final_100)} finalists, {len(seen_skipped)} filtered")
 
     # ------------------------------------------------------------------ #
+    # Build unified scores and re-sort final_100 by them.
+    # Reranker scores (cross-encoder) take priority; XGBoost fills the rest.
+    # Normalize to [0, 1] so the score column is always bounded and matches rank order.
+    # ------------------------------------------------------------------ #
+    raw_score_map: dict = {}
+    for cid in final_100:
+        if cid in reranked_scores_map:
+            raw_score_map[cid] = reranked_scores_map[cid]
+        else:
+            idx = cid_to_matrix_idx.get(cid, -1)
+            raw_score_map[cid] = float(scores[idx]) if idx >= 0 else 0.0
+
+    vals = list(raw_score_map.values())
+    s_min, s_max = min(vals), max(vals)
+    if s_max > s_min:
+        normalized_score_map = {
+            cid: (raw_score_map[cid] - s_min) / (s_max - s_min)
+            for cid in final_100
+        }
+    else:
+        normalized_score_map = {cid: 1.0 for cid in final_100}
+
+    # Sort by score descending so rank 1 == highest score
+    final_100 = sorted(final_100, key=lambda cid: -normalized_score_map[cid])
+
+    # ------------------------------------------------------------------ #
     # Stage G: SHAP reasoning
     # ------------------------------------------------------------------ #
     tick("Stage G: SHAP reasoning…")
@@ -246,9 +272,7 @@ def main(candidates_path: str, output_path: str) -> None:
     output_rows = []
     for rank_pos, cid in enumerate(final_100, start=1):
         c = candidates[cid]
-        # Score: XGBoost prediction (0–1 relevance). Reranker only changes order.
-        idx = cid_to_matrix_idx.get(cid, -1)
-        score = float(scores[idx]) if idx >= 0 else 0.0
+        score = normalized_score_map[cid]
 
         # Reasoning
         if shap_values is not None and cid in cid_to_matrix_idx:
