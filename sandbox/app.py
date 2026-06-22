@@ -899,6 +899,7 @@ def _pipeline_worker(job: dict, candidates_dict: dict) -> None:
         top_200_candidates = [candidates_dict[cid] for cid in ranked_ids[:200] if cid in candidates_dict]
         reranked = rerank_top_n(top_200_candidates, jd_text, n=200)
         reranked_ids = [cid for cid, _ in reranked]
+        reranked_scores_map = {cid: score for cid, score in reranked}
         all_ranked_ids = reranked_ids + [cid for cid in ranked_ids[200:]]
 
         # Stage F: honeypot filter + JD hard gates → top 100
