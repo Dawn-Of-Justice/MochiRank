@@ -947,6 +947,7 @@ def _pipeline_worker(job: dict, candidates_dict: dict) -> None:
         for cid in final_100:
             if _finalist_hp_score(candidates_dict[cid]) >= 2:
                 skipped.add(cid)
+                honeypot_ids.add(cid)  # count F2 removals alongside Stage A in UI
             else:
                 cleaned.append(cid)
 
