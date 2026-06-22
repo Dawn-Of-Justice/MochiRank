@@ -863,6 +863,43 @@ if _run_pipeline:
                 continue
             final_100.append(cid)
 
+        # Stage F2: finalist-level combined honeypot gate (runs on ~100 only).
+        # Removes candidates with 2+ soft signals: signup>last_active AND 10+ expert skills.
+        # Backfills from the ranked pool.
+        def _finalist_hp_score(c: dict) -> int:
+            score = 0
+            sig2 = c.get("redrob_signals", {})
+            su = sig2.get("signup_date", "")
+            la = sig2.get("last_active_date", "")
+            if su and la and su > la:
+                score += 1
+            if sum(1 for s in c.get("skills", []) if s.get("proficiency") == "expert") >= 10:
+                score += 1
+            return score
+
+        final_100_set = set(final_100)
+        cleaned: list = []
+        for cid in final_100:
+            if _finalist_hp_score(candidates_dict[cid]) >= 2:
+                skipped.add(cid)
+            else:
+                cleaned.append(cid)
+
+        if len(cleaned) < 100:
+            for cid in all_ranked_ids:
+                if len(cleaned) >= 100:
+                    break
+                if cid in final_100_set or cid in skipped or cid in honeypot_ids:
+                    continue
+                c = candidates_dict[cid]
+                feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
+                disq, _ = _apply_jd_disqualifiers(c, feat_dict)
+                if disq or _finalist_hp_score(c) >= 2:
+                    continue
+                cleaned.append(cid)
+
+        final_100 = cleaned
+
         # Build unified scores and re-sort final_100 so rank matches score order.
         # Prefer reranker scores (bounded); fall back to XGBoost raw scores.
         # Normalize everything to [0, 1] via min-max.

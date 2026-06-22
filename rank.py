@@ -228,6 +228,54 @@ def main(candidates_path: str, output_path: str) -> None:
     tick(f"Stage F done: {len(final_100)} finalists, {len(seen_skipped)} filtered")
 
     # ------------------------------------------------------------------ #
+    # Stage F2: finalist-level combined honeypot gate.
+    # Applied only to the ~100 finalists (not 100K) so we can afford tighter
+    # thresholds that would produce too many false positives on the full dataset.
+    # Removes candidates with 2+ soft honeypot signals and draws replacements
+    # from the already-ranked pool (all_ranked_ids).
+    # ------------------------------------------------------------------ #
+    def _finalist_honeypot_score(c: dict) -> int:
+        """Return soft honeypot signal count (0-2+). >=2 → remove from top-100."""
+        score = 0
+        sig = c.get("redrob_signals", {})
+        signup = sig.get("signup_date", "")
+        last_active = sig.get("last_active_date", "")
+        if signup and last_active and signup > last_active:
+            score += 1
+        expert_count = sum(1 for s in c.get("skills", []) if s.get("proficiency") == "expert")
+        if expert_count >= 10:
+            score += 1
+        return score
+
+    final_100_set = set(final_100)
+    cleaned: list = []
+    for cid in final_100:
+        if _finalist_honeypot_score(candidates[cid]) >= 2:
+            seen_skipped.add(cid)
+            tick(f"  Stage F2 removed: {cid} (2+ combined honeypot signals)")
+        else:
+            cleaned.append(cid)
+
+    # Backfill from the ranked pool if any were removed
+    if len(cleaned) < 100:
+        for cid in all_ranked_ids:
+            if len(cleaned) >= 100:
+                break
+            if cid in final_100_set or cid in seen_skipped or cid in honeypot_ids:
+                continue
+            c = candidates[cid]
+            feat_dict = compute_features_dict(c, precomputed, violation_counts.get(cid, 0))
+            disqualified, _ = apply_jd_disqualifiers(c, feat_dict)
+            if disqualified:
+                continue
+            if _finalist_honeypot_score(c) >= 2:
+                continue
+            cleaned.append(cid)
+
+    final_100 = cleaned
+    tick(f"Stage F2 done: {len(final_100)} finalists after combined-signal honeypot gate")
+
+    # ------------------------------------------------------------------ #
     # Build unified scores and re-sort final_100 by them.
     # Reranker scores (cross-encoder) take priority; XGBoost fills the rest.
     # Normalize to [0, 1] so the score column is always bounded and matches rank order.

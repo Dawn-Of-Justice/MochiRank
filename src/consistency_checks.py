@@ -47,7 +47,7 @@ def check_consistency(c: dict) -> tuple[bool, int, list[str]]:
             if yoe > max_possible_yoe + 1.5:  # 1.5 yr buffer
                 msg = (f"yoe={yoe} claimed but latest graduation {latest_grad} "
                        f"(max possible {max_possible_yoe:.0f}yr)")
-                violations.append(msg)  # soft only — noisy for hard-gate
+                violations.append(msg)  # soft only — legitimately noisy for a hard gate
 
     # ------------------------------------------------------------------ #
     # Check 2: Job duration_months >> actual date span (impossible tenure)
@@ -72,19 +72,38 @@ def check_consistency(c: dict) -> tuple[bool, int, list[str]]:
                 pass
 
     # ------------------------------------------------------------------ #
-    # Check 3: Multiple expert skills with 0 months (keyword inflation trap)
+    # Check 3: Any expert skill with 0 months experience (keyword inflation trap)
+    # Even a single instance is a planted inconsistency — no expert has 0mo usage.
     # ------------------------------------------------------------------ #
     zero_expert_count = sum(
         1 for s in skills
         if s.get("proficiency") == "expert" and s.get("duration_months", 1) == 0
     )
-    if zero_expert_count >= 3:
-        msg = f"{zero_expert_count} expert skills each with 0 months experience"
+    if zero_expert_count >= 1:
+        msg = f"{zero_expert_count} expert skill(s) with 0 months experience"
         violations.append(msg)
         honeypot_flags.append(msg)
 
     # ------------------------------------------------------------------ #
-    # Check 4: Overlapping non-concurrent employment (soft)
+    # Check 4: Expert skill with low assessment score (hard gate).
+    # Analysis of 100K dataset shows clean candidates never score below 50.4
+    # on a skill they claim as expert.  Honeypot floor is 28.8.
+    # Threshold = 50 → zero false positives in the full dataset.
+    # Only fires when the assessment score field is actually present for
+    # the skill (sparse field — ~229 cases across 100K).
+    # ------------------------------------------------------------------ #
+    assessment_scores: dict = sig.get("skill_assessment_scores", {})
+    for s in skills:
+        if s.get("proficiency") == "expert":
+            score = assessment_scores.get(s.get("name", ""))
+            if score is not None and float(score) < 50:
+                msg = (f"expert proficiency claimed for '{s.get('name','')}' "
+                       f"but assessment score only {score:.1f}/100")
+                violations.append(msg)
+                honeypot_flags.append(msg)
+
+    # ------------------------------------------------------------------ #
+    # Check 5: Overlapping non-concurrent employment (soft)
     # ------------------------------------------------------------------ #
     closed_roles = [j for j in career if not j.get("is_current")
                     and j.get("start_date") and j.get("end_date")]
