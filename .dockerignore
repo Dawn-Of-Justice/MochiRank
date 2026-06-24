@@ -26,7 +26,6 @@ artifacts/flashrank/
 # Not needed at rank time
 offline/
 tests/
-sandbox/
 architecture/
 docs/
 .git/
