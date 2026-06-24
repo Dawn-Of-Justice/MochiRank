@@ -712,10 +712,19 @@ if candidates is None:
     with st.spinner(f"Loading **{_label}**… large files take a moment, grab a coffee ☕"):
         try:
             if url_input:
-                import urllib.request
-                with urllib.request.urlopen(url_input, timeout=300) as resp:
-                    raw = resp.read().decode("utf-8")
-                _is_jsonl = url_input.endswith(".jsonl") or "\n" in raw[:500]
+                import re, tempfile, os, urllib.request
+                _gdrive = re.search(r'drive\.google\.com', url_input)
+                if _gdrive:
+                    import gdown
+                    _tmp = tempfile.mktemp(suffix=".tmp")
+                    gdown.download(url_input, _tmp, quiet=True, fuzzy=True)
+                    with open(_tmp, "r", encoding="utf-8") as _f:
+                        raw = _f.read()
+                    os.unlink(_tmp)
+                else:
+                    with urllib.request.urlopen(url_input, timeout=300) as resp:
+                        raw = resp.read().decode("utf-8")
+                _is_jsonl = url_input.endswith(".jsonl") or (raw.lstrip()[:1] != "[")
             else:
                 # Re-seek: file_uploader returns the *same* buffer object across
                 # reruns, so a prior read left the pointer at EOF.

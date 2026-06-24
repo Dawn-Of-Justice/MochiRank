@@ -22,3 +22,6 @@ xgboost>=2.0
 
 # Cross-encoder reranker (Stage E — optional; downloads model on first run if not cached)
 flashrank>=0.2.9
+
+# Large-file downloads (Google Drive confirmation handling)
+gdown>=5.1
