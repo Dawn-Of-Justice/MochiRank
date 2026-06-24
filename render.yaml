@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: mochirank
-    runtime: docker
-    dockerfilePath: ./Dockerfile.render
-    plan: standard
-    envVars:
-      - key: PYTHONUNBUFFERED
-        value: "1"
