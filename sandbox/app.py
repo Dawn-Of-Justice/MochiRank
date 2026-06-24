@@ -666,18 +666,23 @@ with col_upload:
     uploaded = st.file_uploader(
         "Upload candidates JSONL or JSON",
         type=["jsonl", "json"],
-        help="JSONL (one candidate per line) or a JSON array. No size limit.",
+        help="JSONL (one candidate per line) or a JSON array.",
+    )
+    st.caption(
+        "📎 **Large file? Paste a Google Drive or direct URL below** — "
+        "the server fetches it directly so there's no browser upload limit."
     )
     url_input = st.text_input(
-        "Or load from URL",
-        placeholder="https://example.com/candidates.jsonl",
-        help="Paste a direct download URL — fetched server-side, no upload size limit.",
+        "Load from URL (Google Drive, direct link, etc.)",
+        placeholder="https://drive.google.com/file/d/…/view?usp=sharing",
+        help="Supports Google Drive share links and any direct download URL.",
     ).strip()
 
 with col_info:
     st.info(
         "**Format:** JSONL or JSON array  \n"
-        "**Schema:** `candidate_schema.json`"
+        "**Schema:** `candidate_schema.json`  \n\n"
+        "**Tip:** Share your Google Drive file → copy link → paste above."
     )
 
 # Resolve source: URL takes priority over file upload
@@ -716,8 +721,15 @@ if candidates is None:
                 _gdrive = re.search(r'drive\.google\.com', url_input)
                 if _gdrive:
                     import gdown
+                    # Convert share URL → direct download URL
+                    _id_match = re.search(r'/d/([a-zA-Z0-9_-]+)', url_input) or \
+                                re.search(r'[?&]id=([a-zA-Z0-9_-]+)', url_input)
+                    if _id_match:
+                        _gdrive_url = f"https://drive.google.com/uc?export=download&id={_id_match.group(1)}"
+                    else:
+                        _gdrive_url = url_input
                     _tmp = tempfile.mktemp(suffix=".tmp")
-                    gdown.download(url_input, _tmp, quiet=True, fuzzy=True)
+                    gdown.download(_gdrive_url, _tmp, quiet=True)
                     with open(_tmp, "r", encoding="utf-8") as _f:
                         raw = _f.read()
                     os.unlink(_tmp)
