@@ -668,6 +668,11 @@ with col_upload:
         type=["jsonl", "json"],
         help="JSONL (one candidate per line) or a JSON array. No size limit.",
     )
+    url_input = st.text_input(
+        "Or load from URL",
+        placeholder="https://example.com/candidates.jsonl",
+        help="Paste a direct download URL — fetched server-side, no upload size limit.",
+    ).strip()
 
 with col_info:
     st.info(
@@ -675,8 +680,11 @@ with col_info:
         "**Schema:** `candidate_schema.json`"
     )
 
-# Clear cached state when file changes or is removed
-if uploaded is None:
+# Resolve source: URL takes priority over file upload
+_source_key = url_input if url_input else (uploaded.name if uploaded else None)
+
+# Clear cached state when source changes or is removed
+if _source_key is None:
     st.session_state.pipeline_results = None
     st.session_state.pop("_candidates", None)
     st.session_state.pop("_last_file", None)
@@ -684,40 +692,42 @@ if uploaded is None:
         '<div class="empty-state">'
         '<div class="icon">📂</div>'
         '<h3>No file uploaded yet</h3>'
-        '<p>Upload a candidates JSON or JSONL file above to get started.</p>'
+        '<p>Upload a candidates JSON or JSONL file above, or paste a URL.</p>'
         '</div>',
         unsafe_allow_html=True,
     )
     st.stop()
-elif st.session_state.get("_last_file") != uploaded.name:
-    # New/changed file → drop the cached parse and any old results.
+elif st.session_state.get("_last_file") != _source_key:
+    # New/changed source → drop the cached parse and any old results.
     st.session_state.pipeline_results = None
     st.session_state["_candidates"] = None
-    st.session_state["_last_file"] = uploaded.name
+    st.session_state["_last_file"] = _source_key
 
 # ------------------------------------------------------------------ #
-# Parse upload — done ONCE per file and cached in session_state. The theme
-# toggle reruns the whole script; without caching, every toggle would re-read
-# and re-parse the (potentially huge) upload, freezing the UI for seconds.
-# Reusing the cached list makes the toggle instant.
+# Parse source — done ONCE per file/URL and cached in session_state.
 # ------------------------------------------------------------------ #
 candidates = st.session_state.get("_candidates")
 if candidates is None:
-    with st.spinner(
-        f"Wading through **{uploaded.name}**… "
-        "large files take a moment, grab a coffee ☕"
-    ):
+    _label = url_input if url_input else uploaded.name
+    with st.spinner(f"Loading **{_label}**… large files take a moment, grab a coffee ☕"):
         try:
-            # Re-seek: file_uploader returns the *same* buffer object across
-            # reruns, so a prior read left the pointer at EOF.
-            uploaded.seek(0)
-            raw = uploaded.read().decode("utf-8")
-            if uploaded.name.endswith(".jsonl"):
+            if url_input:
+                import urllib.request
+                with urllib.request.urlopen(url_input, timeout=300) as resp:
+                    raw = resp.read().decode("utf-8")
+                _is_jsonl = url_input.endswith(".jsonl") or "\n" in raw[:500]
+            else:
+                # Re-seek: file_uploader returns the *same* buffer object across
+                # reruns, so a prior read left the pointer at EOF.
+                uploaded.seek(0)
+                raw = uploaded.read().decode("utf-8")
+                _is_jsonl = uploaded.name.endswith(".jsonl")
+            if _is_jsonl:
                 candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
             else:
                 candidates = json.loads(raw)
         except Exception as e:
-            st.error(f"Could not parse file: {e}")
+            st.error(f"Could not load file: {e}")
             st.stop()
 
     if not isinstance(candidates, list):
