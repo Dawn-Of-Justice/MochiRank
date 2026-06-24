@@ -669,8 +669,8 @@ with col_upload:
         help="JSONL (one candidate per line) or a JSON array.",
     )
     st.caption(
-        "📎 **File larger than 500MB? Paste a Google Drive or direct URL below** — "
-        "the server fetches it directly with no size limit."
+        "📎 **For large files, use the URL field below** (Google Drive, direct link) — "
+        "the server fetches it directly with no size limit. Browser upload is limited to ~100MB by the hosting proxy."
     )
     url_input = st.text_input(
         "Load from URL (Google Drive, direct link, etc.)",
