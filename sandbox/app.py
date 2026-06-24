@@ -716,37 +716,52 @@ if candidates is None:
     _label = url_input if url_input else uploaded.name
     with st.spinner(f"Loading **{_label}**… large files take a moment, grab a coffee ☕"):
         try:
-            if url_input:
-                import re, tempfile, os, urllib.request
-                _gdrive = re.search(r'drive\.google\.com', url_input)
-                if _gdrive:
-                    import gdown
-                    # Convert share URL → direct download URL
-                    _id_match = re.search(r'/d/([a-zA-Z0-9_-]+)', url_input) or \
-                                re.search(r'[?&]id=([a-zA-Z0-9_-]+)', url_input)
-                    if _id_match:
-                        _gdrive_url = f"https://drive.google.com/uc?export=download&id={_id_match.group(1)}"
-                    else:
-                        _gdrive_url = url_input
-                    _tmp = tempfile.mktemp(suffix=".tmp")
-                    gdown.download(_gdrive_url, _tmp, quiet=True)
-                    with open(_tmp, "r", encoding="utf-8") as _f:
-                        raw = _f.read()
-                    os.unlink(_tmp)
+            import re, tempfile, os, urllib.request
+
+            def _parse_file(path: str, name: str):
+                """Parse JSONL or JSON array from a file path — stream line-by-line for JSONL."""
+                with open(path, "r", encoding="utf-8") as fh:
+                    first = fh.read(1)
+                if first == "[":
+                    with open(path, "r", encoding="utf-8") as fh:
+                        return json.load(fh)
                 else:
-                    with urllib.request.urlopen(url_input, timeout=300) as resp:
-                        raw = resp.read().decode("utf-8")
-                _is_jsonl = url_input.endswith(".jsonl") or (raw.lstrip()[:1] != "[")
+                    with open(path, "r", encoding="utf-8") as fh:
+                        return [json.loads(ln) for ln in fh if ln.strip()]
+
+            if url_input:
+                _gdrive = re.search(r'drive\.google\.com', url_input)
+                _tmp = tempfile.mktemp(suffix=".tmp")
+                try:
+                    if _gdrive:
+                        import gdown
+                        _id_match = (re.search(r'/d/([a-zA-Z0-9_-]+)', url_input) or
+                                     re.search(r'[?&]id=([a-zA-Z0-9_-]+)', url_input))
+                        _gdrive_url = (
+                            f"https://drive.google.com/uc?export=download&id={_id_match.group(1)}"
+                            if _id_match else url_input
+                        )
+                        gdown.download(_gdrive_url, _tmp, quiet=True)
+                    else:
+                        with urllib.request.urlopen(url_input, timeout=300) as resp:
+                            with open(_tmp, "wb") as fh:
+                                while chunk := resp.read(8 * 1024 * 1024):
+                                    fh.write(chunk)
+                    candidates = _parse_file(_tmp, url_input)
+                finally:
+                    if os.path.exists(_tmp):
+                        os.unlink(_tmp)
             else:
-                # Re-seek: file_uploader returns the *same* buffer object across
-                # reruns, so a prior read left the pointer at EOF.
-                uploaded.seek(0)
-                raw = uploaded.read().decode("utf-8")
-                _is_jsonl = uploaded.name.endswith(".jsonl")
-            if _is_jsonl:
-                candidates = [json.loads(line) for line in raw.splitlines() if line.strip()]
-            else:
-                candidates = json.loads(raw)
+                # File upload path: write to temp file to avoid double-buffering
+                _tmp = tempfile.mktemp(suffix=".tmp")
+                try:
+                    uploaded.seek(0)
+                    with open(_tmp, "wb") as fh:
+                        fh.write(uploaded.read())
+                    candidates = _parse_file(_tmp, uploaded.name)
+                finally:
+                    if os.path.exists(_tmp):
+                        os.unlink(_tmp)
         except Exception as e:
             st.error(f"Could not load file: {e}")
             st.stop()
